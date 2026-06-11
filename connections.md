@@ -10,7 +10,7 @@ Registry of every system your AIOS can reach. Filled by `/onboard` from Q4-Q7 an
 | 4 | Communication | WhatsApp | not yet connected | — | — |
 | 5 | Project / task tracking | — (di kepala) | not yet connected | — | — |
 | 6 | Meeting intelligence | — | not yet connected | — | — |
-| 7 | Knowledge / files | Notion | not yet connected | — | — |
+| 7 | Knowledge / files | Notion | mcp (claude.ai Notion MCP) | connected | 2026-06-11 |
 
 **Mechanism options:** `mcp` (MCP server), `script` (Python/Bash hitting an API, in `scripts/`), `export` (CSV/JSON dump pipeline), `key+ref` (`.env` key + `references/{tool}-api.md` guide), `not yet connected`.
 
