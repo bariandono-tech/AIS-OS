@@ -20,6 +20,26 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 ---
 
+## 2026-06-11 — Produk: Jasa PPT Seminar/Skripsi Akuntansi via Twitter
+
+**Decision:** Pivot dari template CALK ke jasa pembuatan PPT seminar proposal dan skripsi (BAB 1–3) untuk mahasiswa akuntansi. Dikerjakan pakai AI, klien terima hasil jadi. Harga Rp 2.000–8.000/slide, target 20 slide/order = Rp 40rb–160rb per klien. Target: 1 klien/hari → Rp 50rb/hari minimum.
+
+**Why:** CALK pasarnya terlalu sempit (instansi pemerintah, procurement panjang). PPT seminar/skripsi pasarnya nyata, kebutuhan berulang tiap semester, pain-nya jelas. Bottleneck sekarang di demand (produksi sudah bisa pakai AI), bukan di kapabilitas.
+
+**Jalur akuisisi:** Twitter — feed diisi konten show-your-work (PPT, flowchart, visual menarik) + CTA jasa. Tone: campuran santai dan profesional. Sambil Twitter tumbuh, jalur cepat: teman kampus dan grup WA mahasiswa.
+
+**Automation yang dibangun:** Prompt template harian Twitter — paste sample kerja → Claude draft 3 opsi tweet (edukatif / show-work / CTA) → pilih satu → posting. Target: 10 menit/hari.
+
+**Autonomy level:** L2 — AI draft, Bariandono yang posting dan putuskan.
+
+**KPI:** More customers. Metrik: 1 klien pertama dalam 30 hari dari Twitter atau jalur WA.
+
+**Alternatives considered:** Template CALK (pasar terlalu sempit), joki PPT umum (crowded) — akuntansi sebagai niche spesifik memberikan edge.
+
+**Owner:** Bariandono.
+
+---
+
 ## 2026-06-10 — Weekly AI Opportunity Scan (Prompt Template)
 
 **Decision:** Build a morning prompt template. Paste Notion clippings → Claude filter dan suggest 1 kandidat AI profit + angle Twitter-nya.

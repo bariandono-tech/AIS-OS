@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eval Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js" integrity="sha384-EnyY0/GSHQGSxSgMwaIPzSESbqoOLSexfnSMN2AP+39Ckmn92stwABZynq1JyzdT" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --surface: #ffffff;
+      --border: #e8e6dc;
+      --text: #141413;
+      --text-muted: #b0aea5;
+      --accent: #d97757;
+      --accent-hover: #c4613f;
+      --green: #788c5d;
+      --green-bg: #eef2e8;
+      --red: #c44;
+      --red-bg: #fceaea;
+      --header-bg: #141413;
+      --header-text: #faf9f5;
+      --radius: 6px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---- Header ---- */
+    .header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    .header .instructions {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-top: 0.25rem;
+    }
+    .header .progress {
+      font-size: 0.875rem;
+      opacity: 0.8;
+      text-align: right;
+    }
+
+    /* ---- Main content ---- */
+    .main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    /* ---- Sections ---- */
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      flex-shrink: 0;
+    }
+    .section-header {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.75rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+    .section-body {
+      padding: 1rem;
+    }
+
+    /* ---- Config badge ---- */
+    .config-badge {
+      display: inline-block;
+      padding: 0.2rem 0.625rem;
+      border-radius: 9999px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-left: 0.75rem;
+      vertical-align: middle;
+    }
+    .config-badge.config-primary {
+      background: rgba(33, 150, 243, 0.12);
+      color: #1976d2;
+    }
+    .config-badge.config-baseline {
+      background: rgba(255, 193, 7, 0.15);
+      color: #f57f17;
+    }
+
+    /* ---- Prompt ---- */
+    .prompt-text {
+      white-space: pre-wrap;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+
+    /* ---- Outputs ---- */
+    .output-file {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .output-file + .output-file {
+      margin-top: 1rem;
+    }
+    .output-file-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .output-file-header .dl-btn {
+      font-size: 0.7rem;
+      color: var(--accent);
+      text-decoration: none;
+      cursor: pointer;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+    .output-file-header .dl-btn:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+    .output-file-content {
+      padding: 0.75rem;
+      overflow-x: auto;
+    }
+    .output-file-content pre {
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+    }
+    .output-file-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .output-file-content iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    .output-file-content table {
+      border-collapse: collapse;
+      font-size: 0.8125rem;
+      width: 100%;
+    }
+    .output-file-content table td,
+    .output-file-content table th {
+      border: 1px solid var(--border);
+      padding: 0.375rem 0.5rem;
+      text-align: left;
+    }
+    .output-file-content table th {
+      background: var(--bg);
+      font-weight: 600;
+    }
+    .output-file-content .download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+    .output-file-content .download-link:hover {
+      background: var(--border);
+    }
+    .empty-state {
+      color: var(--text-muted);
+      font-style: italic;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    /* ---- Feedback ---- */
+    .prev-feedback {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.625rem 0.75rem;
+      margin-top: 0.75rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .prev-feedback-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.25rem;
+      color: var(--text-muted);
+    }
+    .feedback-textarea {
+      width: 100%;
+      min-height: 100px;
+      padding: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      resize: vertical;
+      color: var(--text);
+    }
+    .feedback-textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+    .feedback-status {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+      min-height: 1.1em;
+    }
+
+    /* ---- Grades (collapsible) ---- */
+    .grades-toggle {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+    .grades-toggle:hover {
+      color: var(--accent);
+    }
+    .grades-toggle .arrow {
+      margin-right: 0.5rem;
+      transition: transform 0.15s;
+      font-size: 0.75rem;
+    }
+    .grades-toggle .arrow.open {
+      transform: rotate(90deg);
+    }
+    .grades-content {
+      display: none;
+      margin-top: 0.75rem;
+    }
+    .grades-content.open {
+      display: block;
+    }
+    .grades-summary {
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .grade-badge {
+      display: inline-block;
+      padding: 0.125rem 0.5rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .grade-pass { background: var(--green-bg); color: var(--green); }
+    .grade-fail { background: var(--red-bg); color: var(--red); }
+    .assertion-list {
+      list-style: none;
+    }
+    .assertion-item {
+      padding: 0.625rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.8125rem;
+    }
+    .assertion-item:last-child { border-bottom: none; }
+    .assertion-status {
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+    .assertion-status.pass { color: var(--green); }
+    .assertion-status.fail { color: var(--red); }
+    .assertion-evidence {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      padding-left: 1.5rem;
+    }
+
+    /* ---- View tabs ---- */
+    .view-tabs {
+      display: flex;
+      gap: 0;
+      padding: 0 2rem;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .view-tab {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.625rem 1.25rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: var(--text-muted);
+      border-bottom: 2px solid transparent;
+      transition: all 0.15s;
+    }
+    .view-tab:hover { color: var(--text); }
+    .view-tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+    .view-panel { display: none; }
+    .view-panel.active { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
+
+    /* ---- Benchmark view ---- */
+    .benchmark-view {
+      padding: 1.5rem 2rem;
+      overflow-y: auto;
+      flex: 1;
+    }
+    .benchmark-table {
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.8125rem;
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    .benchmark-table th, .benchmark-table td {
+      padding: 0.625rem 0.75rem;
+      text-align: left;
+      border: 1px solid var(--border);
+    }
+    .benchmark-table th {
+      font-family: 'Poppins', sans-serif;
+      background: var(--header-bg);
+      color: var(--header-text);
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .benchmark-table tr:hover { background: var(--bg); }
+    .benchmark-table tr.benchmark-row-with { background: rgba(33, 150, 243, 0.06); }
+    .benchmark-table tr.benchmark-row-without { background: rgba(255, 193, 7, 0.06); }
+    .benchmark-table tr.benchmark-row-with:hover { background: rgba(33, 150, 243, 0.12); }
+    .benchmark-table tr.benchmark-row-without:hover { background: rgba(255, 193, 7, 0.12); }
+    .benchmark-table tr.benchmark-row-avg { font-weight: 600; border-top: 2px solid var(--border); }
+    .benchmark-table tr.benchmark-row-avg.benchmark-row-with { background: rgba(33, 150, 243, 0.12); }
+    .benchmark-table tr.benchmark-row-avg.benchmark-row-without { background: rgba(255, 193, 7, 0.12); }
+    .benchmark-delta-positive { color: var(--green); font-weight: 600; }
+    .benchmark-delta-negative { color: var(--red); font-weight: 600; }
+    .benchmark-notes {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem;
+    }
+    .benchmark-notes h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+    }
+    .benchmark-notes ul {
+      list-style: disc;
+      padding-left: 1.25rem;
+    }
+    .benchmark-notes li {
+      font-size: 0.8125rem;
+      line-height: 1.6;
+      margin-bottom: 0.375rem;
+    }
+    .benchmark-empty {
+      color: var(--text-muted);
+      font-style: italic;
+      text-align: center;
+      padding: 3rem;
+    }
+
+    /* ---- Navigation ---- */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      flex-shrink: 0;
+    }
+    .nav-btn {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+      transition: all 0.15s;
+    }
+    .nav-btn:hover:not(:disabled) {
+      background: var(--bg);
+      border-color: var(--text-muted);
+    }
+    .nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .done-btn {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.5rem 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.15s;
+    }
+    .done-btn:hover {
+      background: var(--bg);
+      border-color: var(--text-muted);
+    }
+    .done-btn.ready {
+      border: none;
+      background: var(--accent);
+      color: white;
+      font-weight: 600;
+    }
+    .done-btn.ready:hover {
+      background: var(--accent-hover);
+    }
+    /* ---- Done overlay ---- */
+    .done-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 100;
+      justify-content: center;
+      align-items: center;
+    }
+    .done-overlay.visible {
+      display: flex;
+    }
+    .done-card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 2rem 3rem;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+    }
+    .done-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .done-card p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+    .done-card .btn-row {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    .done-card button {
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      cursor: pointer;
+      font-size: 0.875rem;
+    }
+    .done-card button:hover {
+      background: var(--bg);
+    }
+    /* ---- Toast ---- */
+    .toast {
+      position: fixed;
+      bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 0.625rem 1.25rem;
+      border-radius: var(--radius);
+      font-size: 0.875rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      z-index: 200;
+    }
+    .toast.visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="app" style="height:100vh; display:flex; flex-direction:column;">
+    <div class="header">
+      <div>
+        <h1>Eval Review: <span id="skill-name"></span></h1>
+        <div class="instructions">Review each output and leave feedback below. Navigate with arrow keys or buttons. When done, copy feedback and paste into Claude Code.</div>
+      </div>
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <!-- View tabs (only shown when benchmark data exists) -->
+    <div class="view-tabs" id="view-tabs" style="display:none;">
+      <button class="view-tab active" onclick="switchView('outputs')">Outputs</button>
+      <button class="view-tab" onclick="switchView('benchmark')">Benchmark</button>
+    </div>
+
+    <!-- Outputs panel (qualitative review) -->
+    <div class="view-panel active" id="panel-outputs">
+    <div class="main">
+      <!-- Prompt -->
+      <div class="section">
+        <div class="section-header">Prompt <span class="config-badge" id="config-badge" style="display:none;"></span></div>
+        <div class="section-body">
+          <div class="prompt-text" id="prompt-text"></div>
+        </div>
+      </div>
+
+      <!-- Outputs -->
+      <div class="section">
+        <div class="section-header">Output</div>
+        <div class="section-body" id="outputs-body">
+          <div class="empty-state">No output files found</div>
+        </div>
+      </div>
+
+      <!-- Previous Output (collapsible) -->
+      <div class="section" id="prev-outputs-section" style="display:none;">
+        <div class="section-header">
+          <div class="grades-toggle" onclick="togglePrevOutputs()">
+            <span class="arrow" id="prev-outputs-arrow">&#9654;</span>
+            Previous Output
+          </div>
+        </div>
+        <div class="grades-content" id="prev-outputs-content"></div>
+      </div>
+
+      <!-- Grades (collapsible) -->
+      <div class="section" id="grades-section" style="display:none;">
+        <div class="section-header">
+          <div class="grades-toggle" onclick="toggleGrades()">
+            <span class="arrow" id="grades-arrow">&#9654;</span>
+            Formal Grades
+          </div>
+        </div>
+        <div class="grades-content" id="grades-content"></div>
+      </div>
+
+      <!-- Feedback -->
+      <div class="section">
+        <div class="section-header">Your Feedback</div>
+        <div class="section-body">
+          <textarea
+            class="feedback-textarea"
+            id="feedback"
+            placeholder="What do you think of this output? Any issues, suggestions, or things that look great?"
+          ></textarea>
+          <div class="feedback-status" id="feedback-status"></div>
+          <div class="prev-feedback" id="prev-feedback" style="display:none;">
+            <div class="prev-feedback-label">Previous feedback</div>
+            <div id="prev-feedback-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav" id="outputs-nav">
+      <button class="nav-btn" id="prev-btn" onclick="navigate(-1)">&#8592; Previous</button>
+      <button class="done-btn" id="done-btn" onclick="showDoneDialog()">Submit All Reviews</button>
+      <button class="nav-btn" id="next-btn" onclick="navigate(1)">Next &#8594;</button>
+    </div>
+    </div><!-- end panel-outputs -->
+
+    <!-- Benchmark panel (quantitative stats) -->
+    <div class="view-panel" id="panel-benchmark">
+      <div class="benchmark-view" id="benchmark-content">
+        <div class="benchmark-empty">No benchmark data available. Run a benchmark to see quantitative results here.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Done overlay -->
+  <div class="done-overlay" id="done-overlay">
+    <div class="done-card">
+      <h2>Review Complete</h2>
+      <p>Your feedback has been saved. Go back to your Claude Code session and tell Claude you're done reviewing.</p>
+      <div class="btn-row">
+        <button onclick="closeDoneDialog()">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // ---- Embedded data (injected by generate_review.py) ----
+    const EMBEDDED_DATA = {"skill_name": "notion-homepage-redesign", "runs": [{"id": "eval-1-with_skill", "prompt": "Buatkan prompt untuk mengubah tampilan homepage Notion saya agar terlihat seperti Thomas Frank Ultimate Brain \u2014 tiga kolom, header hijau gelap, dan sidebar yang rapi. Saya punya halaman: Dashboard, My Day, Quick Capture, Process, Plan, Task Manager, Project Hub, Notes, Areas & Resources, Goals, Archive, Quick Links, Book Tracker, Recipe Book.", "eval_id": 1, "outputs": [{"name": "preview.html", "type": "text", "content": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>Notion Homepage Preview \u2014 Thomas Frank Style</title>\n<style>\n  * { margin: 0; padding: 0; box-sizing: border-box; }\n\n  body {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n    background: #111827;\n    color: #e5e7eb;\n    min-height: 100vh;\n    display: flex;\n    flex-direction: column;\n  }\n\n  .preview-label {\n    background: #1f2937;\n    border-bottom: 1px solid #374151;\n    padding: 8px 20px;\n    font-size: 11px;\n    color: #6b7280;\n    letter-spacing: 0.05em;\n    text-transform: uppercase;\n    display: flex;\n    align-items: center;\n    gap: 8px;\n  }\n  .preview-label .dot {\n    width: 8px; height: 8px;\n    border-radius: 50%;\n    background: #10b981;\n    display: inline-block;\n  }\n\n  .app-frame {\n    display: flex;\n    flex: 1;\n    min-height: 0;\n  }\n\n  /* SIDEBAR */\n  .sidebar {\n    width: 220px;\n    background: #1c2433;\n    border-right: 1px solid #2d3748;\n    padding: 16px 0;\n    flex-shrink: 0;\n    overflow-y: auto;\n  }\n  .sidebar-header {\n    padding: 0 12px 12px;\n    font-size: 11px;\n    color: #4b5563;\n    letter-spacing: 0.08em;\n    text-transform: uppercase;\n  }\n  .sidebar-item {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    padding: 5px 16px;\n    font-size: 13px;\n    color: #9ca3af;\n    cursor: pointer;\n    border-radius: 4px;\n    margin: 0 6px;\n    transition: background 0.15s;\n  }\n  .sidebar-item:hover { background: #2d3748; }\n  .sidebar-item.active {\n    background: #2d3748;\n    color: #f3f4f6;\n  }\n  .sidebar-item.root {\n    color: #e5e7eb;\n    font-weight: 600;\n    font-size: 13px;\n    padding: 6px 16px;\n  }\n  .sidebar-item .emoji { font-size: 14px; width: 18px; text-align: center; }\n  .sidebar-item .name { flex: 1; }\n  .sidebar-divider {\n    height: 1px;\n    background: #2d3748;\n    margin: 8px 16px;\n  }\n  .indent-1 { padding-left: 28px; }\n\n  /* MAIN CONTENT */\n  .main-content {\n    flex: 1;\n    overflow-y: auto;\n    background: #1a1f2e;\n  }\n\n  .page-cover {\n    width: 100%;\n    height: 120px;\n    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);\n    position: relative;\n  }\n  .page-cover-label {\n    position: absolute;\n    bottom: 8px;\n    right: 12px;\n    font-size: 10px;\n    color: rgba(255,255,255,0.3);\n    letter-spacing: 0.05em;\n  }\n\n  .page-body {\n    max-width: 900px;\n    margin: 0 auto;\n    padding: 0 40px 60px;\n  }\n\n  .page-icon {\n    font-size: 48px;\n    margin-top: -24px;\n    margin-bottom: 8px;\n    display: block;\n  }\n\n  .page-title {\n    font-size: 28px;\n    font-weight: 700;\n    color: #f9fafb;\n    margin-bottom: 28px;\n    letter-spacing: -0.02em;\n  }\n\n  /* THREE COLUMNS */\n  .columns-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 20px;\n    margin-top: 8px;\n  }\n\n  .column {}\n\n  .callout-header {\n    background: #14532d;\n    border-radius: 6px;\n    padding: 8px 14px;\n    margin-bottom: 10px;\n    font-weight: 600;\n    font-size: 13px;\n    color: #ffffff;\n    letter-spacing: 0.02em;\n    border-left: 3px solid #16a34a;\n  }\n\n  .page-list {\n    list-style: none;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    gap: 2px;\n  }\n\n  .page-list li {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    padding: 5px 8px;\n    border-radius: 4px;\n    font-size: 13px;\n    color: #d1d5db;\n    cursor: pointer;\n    transition: background 0.1s;\n  }\n  .page-list li:hover {\n    background: #2d3748;\n    color: #f9fafb;\n  }\n  .page-list li .emoji { font-size: 14px; }\n  .page-list li .link-name {\n    color: #93c5fd;\n    text-decoration: underline;\n    text-decoration-color: rgba(147, 197, 253, 0.3);\n  }\n\n  /* METADATA BADGES */\n  .meta-badges {\n    display: flex;\n    gap: 10px;\n    margin-top: 32px;\n    padding-top: 20px;\n    border-top: 1px solid #2d3748;\n    flex-wrap: wrap;\n  }\n  .badge {\n    background: #1f2937;\n    border: 1px solid #374151;\n    border-radius: 20px;\n    padding: 4px 12px;\n    font-size: 11px;\n    color: #6b7280;\n    display: flex;\n    align-items: center;\n    gap: 5px;\n  }\n  .badge .badge-icon { font-size: 12px; }\n  .badge.green { border-color: #14532d; color: #4ade80; background: #052e16; }\n</style>\n</head>\n<body>\n\n<div class=\"preview-label\">\n  <span class=\"dot\"></span>\n  Preview \u2014 setelah prompt diterapkan &nbsp;\u00b7&nbsp; Thomas Frank Ultimate Brain Style &nbsp;\u00b7&nbsp; 3-Column Layout\n</div>\n\n<div class=\"app-frame\">\n\n  <!-- SIDEBAR -->\n  <div class=\"sidebar\">\n    <div class=\"sidebar-header\">Workspace</div>\n\n    <div class=\"sidebar-item root active\">\n      <span class=\"emoji\">\ud83e\udde0</span>\n      <span class=\"name\">Ultimate Brain</span>\n    </div>\n\n    <div class=\"sidebar-divider\"></div>\n\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\ud83d\udcca</span>\n      <span class=\"name\">Dashboard</span>\n    </div>\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\ud83c\udf05</span>\n      <span class=\"name\">My Day</span>\n    </div>\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\u26a1</span>\n      <span class=\"name\">Quick Capture</span>\n    </div>\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\u2699\ufe0f</span>\n      <span class=\"name\">Process</span>\n    </div>\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\ud83d\ude80</span>\n      <span class=\"name\">Plan</span>\n    </div>\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\u2705</span>\n      <span class=\"name\">Task Manager</span>\n    </div>\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\u265f\ufe0f</span>\n      <span class=\"name\">Project Hub</span>\n    </div>\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\ud83d\udcdd</span>\n      <span class=\"name\">Notes</span>\n    </div>\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\ud83d\uddc2\ufe0f</span>\n      <span class=\"name\">Areas & Resources</span>\n    </div>\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\ud83c\udfc6</span>\n      <span class=\"name\">Goals</span>\n    </div>\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\ud83d\udd29</span>\n      <span class=\"name\">Archive</span>\n    </div>\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\u26a1</span>\n      <span class=\"name\">Quick Links</span>\n    </div>\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\ud83d\udcd6</span>\n      <span class=\"name\">Book Tracker</span>\n    </div>\n    <div class=\"sidebar-item indent-1\">\n      <span class=\"emoji\">\ud83c\udf73</span>\n      <span class=\"name\">Recipe Book</span>\n    </div>\n  </div>\n\n  <!-- MAIN CONTENT -->\n  <div class=\"main-content\">\n    <div class=\"page-cover\">\n      <span class=\"page-cover-label\">cover image: dark/abstract \u00b7 Unsplash</span>\n    </div>\n\n    <div class=\"page-body\">\n      <span class=\"page-icon\">\ud83e\udde0</span>\n      <div class=\"page-title\">Ultimate Brain for Notion</div>\n\n      <div class=\"columns-grid\">\n\n        <!-- COLUMN 1: DASHBOARDS -->\n        <div class=\"column\">\n          <div class=\"callout-header\">Dashboards</div>\n          <ul class=\"page-list\">\n            <li><span class=\"emoji\">\ud83d\udcca</span> <span class=\"link-name\">Dashboard</span></li>\n            <li><span class=\"emoji\">\ud83c\udf05</span> <span class=\"link-name\">My Day</span></li>\n            <li><span class=\"emoji\">\u26a1</span> <span class=\"link-name\">Quick Capture</span></li>\n            <li><span class=\"emoji\">\u2699\ufe0f</span> <span class=\"link-name\">Process</span></li>\n            <li><span class=\"emoji\">\ud83d\ude80</span> <span class=\"link-name\">Plan</span></li>\n          </ul>\n        </div>\n\n        <!-- COLUMN 2: PRODUCTIVITY VIEWS -->\n        <div class=\"column\">\n          <div class=\"callout-header\">Productivity Views</div>\n          <ul class=\"page-list\">\n            <li><span class=\"emoji\">\u2705</span> <span class=\"link-name\">Task Manager</span></li>\n            <li><span class=\"emoji\">\u265f\ufe0f</span> <span class=\"link-name\">Project Hub</span></li>\n            <li><span class=\"emoji\">\ud83d\udcdd</span> <span class=\"link-name\">Notes</span></li>\n            <li><span class=\"emoji\">\ud83d\uddc2\ufe0f</span> <span class=\"link-name\">Areas & Resources</span></li>\n            <li><span class=\"emoji\">\ud83c\udfc6</span> <span class=\"link-name\">Goals</span></li>\n            <li><span class=\"emoji\">\ud83d\udd29</span> <span class=\"link-name\">Archive</span></li>\n          </ul>\n        </div>\n\n        <!-- COLUMN 3: SPECIAL VIEWS -->\n        <div class=\"column\">\n          <div class=\"callout-header\">Special Views</div>\n          <ul class=\"page-list\">\n            <li><span class=\"emoji\">\u26a1</span> <span class=\"link-name\">Quick Links</span></li>\n            <li><span class=\"emoji\">\ud83d\udcd6</span> <span class=\"link-name\">Book Tracker</span></li>\n            <li><span class=\"emoji\">\ud83c\udf73</span> <span class=\"link-name\">Recipe Book</span></li>\n          </ul>\n        </div>\n\n      </div>\n\n      <!-- META BADGES -->\n      <div class=\"meta-badges\">\n        <div class=\"badge green\"><span class=\"badge-icon\">\ud83c\udfa8</span> Dark Theme</div>\n        <div class=\"badge green\"><span class=\"badge-icon\">\ud83d\udcd0</span> Full Width: ON</div>\n        <div class=\"badge green\"><span class=\"badge-icon\">\ud83d\udfe9</span> Callout: Green Dark</div>\n        <div class=\"badge\"><span class=\"badge-icon\">\ud83d\uddbc\ufe0f</span> Cover: Dark Abstract</div>\n        <div class=\"badge\"><span class=\"badge-icon\">\ud83e\udde0</span> Icon: \ud83e\udde0 Emoji</div>\n        <div class=\"badge\"><span class=\"badge-icon\">\ud83d\udccb</span> 3-Column Layout</div>\n        <div class=\"badge\"><span class=\"badge-icon\">\ud83d\udd17</span> 14 Linked Pages</div>\n      </div>\n    </div>\n  </div>\n\n</div>\n\n</body>\n</html>\n"}, {"name": "result.md", "type": "text", "content": "Berikut adalah prompt lengkap untuk redesign homepage Notion Anda ke gaya Thomas Frank Ultimate Brain \u2014 tiga kolom, header hijau gelap, dan sidebar terstruktur.\n\n```\n=== NOTION HOMEPAGE REDESIGN \u2014 THOMAS FRANK STYLE ===\n\n1. HALAMAN UTAMA\n   - Tambahkan cover image: pilih gambar gelap/abstract dari Unsplash gallery Notion\n   - Ubah icon halaman menjadi: \ud83e\udde0\n   - Judul halaman: \"Ultimate Brain for Notion\" (biarkan sebagai plain text H1)\n\n2. HAPUS SEMUA KONTEN LAMA di halaman utama (kecuali judul)\n\n3. BUAT TIGA KOLOM SEJAJAR\n   Klik di bawah judul \u2192 ketik /columns \u2192 pilih \"3 columns\"\n\n4. KOLOM 1 \u2014 DASHBOARDS\n   Di kolom pertama:\n   a. Ketik /callout \u2192 pilih warna background: Green (dark) \u2192 hapus emoji default\n   b. Ketik \"Dashboards\" di dalam callout \u2192 ubah text color: White\n   c. Di bawah callout (masih dalam kolom 1), tambahkan bullet list:\n      - Ketik /link \u2192 cari \"Dashboard\" \u2192 pilih halaman \u2192 tambahkan emoji \ud83d\udcca di depan\n      - Ulangi untuk:\n        \ud83c\udf05 My Day\n        \u26a1 Quick Capture\n        \u2699\ufe0f Process\n        \ud83d\ude80 Plan\n\n5. KOLOM 2 \u2014 PRODUCTIVITY VIEWS\n   Di kolom kedua:\n   a. Ketik /callout \u2192 Green (dark) background \u2192 hapus emoji \u2192 ketik \"Productivity Views\" \u2192 White text\n   b. Tambahkan bullet list linked pages:\n      \u2705 Task Manager\n      \u265f\ufe0f Project Hub\n      \ud83d\udcdd Notes\n      \ud83d\uddc2\ufe0f Areas & Resources\n      \ud83c\udfc6 Goals\n      \ud83d\udd29 Archive\n\n6. KOLOM 3 \u2014 SPECIAL VIEWS\n   Di kolom ketiga:\n   a. Ketik /callout \u2192 Green (dark) background \u2192 hapus emoji \u2192 ketik \"Special Views\" \u2192 White text\n   b. Tambahkan bullet list linked pages:\n      \u26a1 Quick Links\n      \ud83d\udcd6 Book Tracker\n      \ud83c\udf73 Recipe Book\n\n7. SIDEBAR \u2014 URUTKAN HALAMAN\n   Di sidebar Notion, drag & drop halaman agar urutannya:\n   \ud83e\udde0 Ultimate Brain (root)\n   \u251c\u2500\u2500 \ud83d\udcca Dashboard\n   \u251c\u2500\u2500 \ud83c\udf05 My Day\n   \u251c\u2500\u2500 \u26a1 Quick Capture\n   \u251c\u2500\u2500 \u2699\ufe0f Process\n   \u251c\u2500\u2500 \ud83d\ude80 Plan\n   \u251c\u2500\u2500 \u2705 Task Manager\n   \u251c\u2500\u2500 \u265f\ufe0f Project Hub\n   \u251c\u2500\u2500 \ud83d\udcdd Notes\n   \u251c\u2500\u2500 \ud83d\uddc2\ufe0f Areas & Resources\n   \u251c\u2500\u2500 \ud83c\udfc6 Goals\n   \u251c\u2500\u2500 \ud83d\udd29 Archive\n   \u251c\u2500\u2500 \u26a1 Quick Links\n   \u251c\u2500\u2500 \ud83d\udcd6 Book Tracker\n   \u2514\u2500\u2500 \ud83c\udf73 Recipe Book\n\n8. TIPS FINAL\n   - Aktifkan \"Full width\" di pengaturan halaman (... menu \u2192 Full width: ON)\n   - Aktifkan dark mode di Notion untuk tampilan terbaik\n   - Pin halaman utama di sidebar Favorites\n```\n\n---\n\n## Catatan Penempatan Halaman\n\nSemua 14 halaman Anda telah dipetakan ke kolom yang paling sesuai:\n\n| Kolom | Halaman |\n|-------|---------|\n| **Dashboards** | Dashboard, My Day, Quick Capture, Process, Plan |\n| **Productivity Views** | Task Manager, Project Hub, Notes, Areas & Resources, Goals, Archive |\n| **Special Views** | Quick Links, Book Tracker, Recipe Book |\n\nMapping ini mengikuti struktur Thomas Frank Ultimate Brain secara persis \u2014 kolom 1 untuk daily driver dan capture, kolom 2 untuk manajemen tugas dan proyek, kolom 3 untuk referensi dan koleksi khusus.\n\n---\n\n## HTML Preview\n\nLihat file `preview.html` di folder yang sama untuk tampilan visual mockup halaman setelah prompt diterapkan.\n"}], "grading": null}, {"id": "eval-1-without_skill", "prompt": "Buatkan prompt untuk mengubah tampilan homepage Notion saya agar terlihat seperti Thomas Frank Ultimate Brain \u2014 tiga kolom, header hijau gelap, dan sidebar yang rapi. Saya punya halaman: Dashboard, My Day, Quick Capture, Process, Plan, Task Manager, Project Hub, Notes, Areas & Resources, Goals, Archive, Quick Links, Book Tracker, Recipe Book.", "eval_id": 1, "outputs": [{"name": "result.md", "type": "text", "content": "# Prompt: Redesain Homepage Notion ala Thomas Frank Ultimate Brain\n\n---\n\n## PROMPT UTAMA (untuk Claude / ChatGPT / AI lainnya)\n\n---\n\nSaya ingin mendesain ulang halaman homepage Notion saya agar tampilannya menyerupai **Thomas Frank's Ultimate Brain** \u2014 dengan tiga kolom konten utama, header berwarna hijau gelap, dan sidebar navigasi yang rapi dan terstruktur.\n\n### Halaman yang saya miliki:\nDashboard, My Day, Quick Capture, Process, Plan, Task Manager, Project Hub, Notes, Areas & Resources, Goals, Archive, Quick Links, Book Tracker, Recipe Book\n\n### Yang saya inginkan:\n\n**1. HEADER / BANNER ATAS**\n- Latar belakang berwarna hijau gelap (disarankan: `#1A3A2A` atau `#1B4332`)\n- Nama halaman besar di tengah atau kiri: misalnya \"MY SECOND BRAIN\" atau nama pilihan saya\n- Subtitle kecil di bawahnya: misalnya tanggal hari ini atau tagline singkat\n- Gunakan cover image berwarna solid hijau tua dengan ikon yang sesuai (misalnya otak atau bintang)\n\n**2. SIDEBAR NAVIGASI (kiri)**\nBuat kolom kiri sebagai sidebar navigasi dengan ikon dan link ke semua halaman utama, dikelompokkan menjadi:\n\n- **CAPTURE & PROSES**\n  - Quick Capture\n  - Process\n  - Plan\n\n- **DAILY & FOCUS**\n  - My Day\n  - Dashboard\n\n- **PROYEK & TUGAS**\n  - Task Manager\n  - Project Hub\n\n- **KNOWLEDGE BASE**\n  - Notes\n  - Areas & Resources\n  - Book Tracker\n  - Recipe Book\n\n- **TUJUAN & REFERENSI**\n  - Goals\n  - Quick Links\n  - Archive\n\n**3. TIGA KOLOM KONTEN UTAMA**\n\nGunakan blok kolom 3 di Notion (Columns) untuk membagi konten utama menjadi:\n\n**Kolom 1 \u2014 TODAY / HARI INI**\n- Judul: `TODAY` (bold, hijau tua)\n- Widget tanggal (bisa menggunakan teks statis atau link ke My Day)\n- Callout box: \"Focus of the Day\" \u2014 tempat isi tugas prioritas harian\n- Link cepat ke: My Day, Quick Capture, Task Manager\n\n**Kolom 2 \u2014 ACTIVE PROJECTS / PROYEK AKTIF**\n- Judul: `ACTIVE` (bold, hijau tua)\n- Database view (Linked View) dari Project Hub \u2014 tampilkan hanya proyek yang statusnya \"Active\" atau \"In Progress\"\n- Filter: Status = Active\n- Tampilan: Gallery atau List view\n\n**Kolom 3 \u2014 QUICK ACCESS / AKSES CEPAT**\n- Judul: `QUICK ACCESS` (bold, hijau tua)\n- Daftar link dengan ikon ke: Goals, Notes, Book Tracker, Recipe Book, Quick Links, Archive\n- Callout box kecil untuk \"Weekly Intention\" atau quotes motivasi\n\n**4. BAGIAN BAWAH (Full Width)**\n- Section berjudul: `RECENT CAPTURES` \u2014 Linked database view dari Quick Capture, sorted by Created Time (terbaru di atas), tampilkan 5 entri terakhir\n- Section berjudul: `GOALS TRACKER` \u2014 Linked database view dari Goals, tampilkan sebagai Progress bar atau Board\n\n---\n\n### Gaya Visual yang Diinginkan:\n- Warna dominan: **Hijau tua** (`#1B4332`) untuk header dan judul section\n- Aksen: **Hijau muda / lime** untuk highlight\n- Background halaman: **Putih** atau **Abu-abu sangat terang**\n- Font heading: Default Notion (Sans-serif)\n- Gunakan **Divider** antar section agar rapi\n- Gunakan **Callout blocks** dengan emoji untuk mempercantik tampilan\n- Setiap judul kolom/section ditulis dengan **HURUF KAPITAL** dan diberi warna hijau tua\n\n---\n\n### Instruksi Tambahan untuk AI:\n1. Buatkan saya **struktur blok Notion lengkap** (dalam format teks/markdown) yang bisa saya copy-paste ke Notion\n2. Cantumkan **emoji yang sesuai** untuk setiap section dan link navigasi\n3. Sertakan **tips pengaturan cover dan ikon** halaman agar sesuai tema hijau tua\n4. Jika ada database yang perlu dibuat baru, sebutkan properti yang diperlukan\n\n---\n\n## CONTOH STRUKTUR BLOK NOTION (Siap Pakai)\n\nBerikut adalah template teks yang bisa Anda ketik/paste langsung ke Notion:\n\n```\n[Cover: Solid Dark Green | Icon: \ud83e\udde0]\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n# MY SECOND BRAIN\n> Capture \u00b7 Organize \u00b7 Do \u00b7 Review\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n[3 COLUMNS]\n\n--- KOLOM 1: SIDEBAR NAVIGASI ---\n\n## \ud83e\udded NAVIGATE\n\n**\ud83d\udce5 CAPTURE & PROSES**\n\u2192 \u26a1 Quick Capture\n\u2192 \u2699\ufe0f Process\n\u2192 \ud83d\udccb Plan\n\n**\u2600\ufe0f DAILY & FOCUS**\n\u2192 \ud83d\uddd3\ufe0f My Day\n\u2192 \ud83d\udcca Dashboard\n\n**\ud83d\ude80 PROYEK & TUGAS**\n\u2192 \u2705 Task Manager\n\u2192 \ud83d\uddc2\ufe0f Project Hub\n\n**\ud83d\udcda KNOWLEDGE BASE**\n\u2192 \ud83d\udcdd Notes\n\u2192 \ud83c\udf0d Areas & Resources\n\u2192 \ud83d\udcd6 Book Tracker\n\u2192 \ud83c\udf73 Recipe Book\n\n**\ud83c\udfaf TUJUAN & REFERENSI**\n\u2192 \ud83c\udfaf Goals\n\u2192 \ud83d\udd17 Quick Links\n\u2192 \ud83d\udce6 Archive\n\n--- KOLOM 2: TODAY ---\n\n## \u2600\ufe0f TODAY\n\n\ud83d\udcc5 [Hari ini: Sabtu, 7 Juni 2026]\n\n> \ud83d\udca1 **Focus of the Day**\n> _Tulis satu hal terpenting yang harus diselesaikan hari ini..._\n\n\ud83d\udd17 Buka My Day \u2192\n\ud83d\udd17 Quick Capture \u2192\n\ud83d\udd17 Task Manager \u2192\n\n--- KOLOM 3: ACTIVE + QUICK ACCESS ---\n\n## \ud83d\ude80 ACTIVE PROJECTS\n[Linked Database: Project Hub | Filter: Status=Active | View: List]\n\n---\n\n## \u26a1 QUICK ACCESS\n\u2192 \ud83c\udfaf Goals\n\u2192 \ud83d\udcdd Notes\n\u2192 \ud83d\udcd6 Book Tracker\n\u2192 \ud83c\udf73 Recipe Book\n\u2192 \ud83d\udd17 Quick Links\n\u2192 \ud83d\udce6 Archive\n\n> \u2728 **Weekly Intention**\n> _Tuliskan niat/fokus minggu ini..._\n\n[END COLUMNS]\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n## \ud83d\udce5 RECENT CAPTURES\n[Linked Database: Quick Capture | Sort: Created Time DESC | Limit: 5]\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n## \ud83c\udfaf GOALS TRACKER\n[Linked Database: Goals | View: Board / Progress]\n```\n\n---\n\n## TIPS IMPLEMENTASI DI NOTION\n\n### Cara Membuat 3 Kolom:\n1. Ketik `/columns` atau `/3 columns` di Notion\n2. Pilih **3 columns**\n3. Drag-and-drop blok konten ke masing-masing kolom\n\n### Cara Set Cover Hijau Tua:\n1. Hover di bagian atas halaman \u2192 klik **Add cover**\n2. Pilih **Color** \u2192 pilih **Green** (atau upload gambar solid hijau tua)\n3. Sesuaikan posisi cover jika perlu\n\n### Cara Set Ikon:\n1. Klik ikon di sebelah judul halaman\n2. Pilih emoji **\ud83e\udde0** atau **\ud83c\udf3f** untuk tema Second Brain\n\n### Cara Membuat Callout Berwarna Hijau:\n1. Ketik `/callout`\n2. Klik ikon callout \u2192 pilih emoji\n3. Klik warna latar \u2192 pilih **Green**\n\n### Cara Membuat Linked Database View:\n1. Di halaman homepage, ketik `/linked`\n2. Pilih **Create linked database**\n3. Cari database yang diinginkan (mis. Project Hub)\n4. Set filter dan tampilan sesuai kebutuhan\n\n---\n\n## PENGATURAN WARNA NOTION YANG TERSEDIA\n\nUntuk mendekati warna hijau tua Thomas Frank, gunakan kombinasi:\n- **Cover**: Upload gambar warna solid `#1B4332` (bisa buat di Canva gratis)\n- **Heading color**: Green (Notion built-in)\n- **Callout background**: Green\n- **Divider**: Default\n\n---\n\n*Prompt ini dibuat untuk membantu mendesain ulang homepage Notion dengan gaya Thomas Frank Ultimate Brain. Sesuaikan nama halaman, ikon, dan konten database sesuai kebutuhan Anda.*\n"}], "grading": null}, {"id": "eval-2-with_skill", "prompt": "I want to redesign my Notion second brain homepage to match Thomas Frank's style. My pages are: Dashboard, My Day, Quick Capture, Process, Plan, Task Manager, Project Hub, Notes, Resources, Goals, Archive, Book Tracker. Give me the exact Notion instructions and show me a preview.", "eval_id": 2, "outputs": [{"name": "preview.html", "type": "text", "content": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Notion Homepage Preview \u2014 Thomas Frank Style</title>\n  <style>\n    * { box-sizing: border-box; margin: 0; padding: 0; }\n\n    body {\n      font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif;\n      background: #111118;\n      color: #e2e2e8;\n      min-height: 100vh;\n      display: flex;\n      align-items: stretch;\n    }\n\n    /* \u2500\u2500 Sidebar \u2500\u2500 */\n    .sidebar {\n      width: 220px;\n      min-height: 100vh;\n      background: #1a1a24;\n      border-right: 1px solid #2a2a38;\n      padding: 16px 0;\n      flex-shrink: 0;\n    }\n\n    .sidebar-workspace {\n      display: flex;\n      align-items: center;\n      gap: 8px;\n      padding: 8px 14px 16px;\n      font-weight: 600;\n      font-size: 13px;\n      color: #fff;\n      border-bottom: 1px solid #2a2a38;\n      margin-bottom: 8px;\n    }\n\n    .sidebar-workspace .ws-icon {\n      font-size: 16px;\n    }\n\n    .sidebar-section {\n      padding: 4px 0;\n    }\n\n    .sidebar-label {\n      font-size: 10px;\n      font-weight: 600;\n      letter-spacing: .08em;\n      text-transform: uppercase;\n      color: #5a5a70;\n      padding: 6px 14px 4px;\n    }\n\n    .sidebar-item {\n      display: flex;\n      align-items: center;\n      gap: 7px;\n      padding: 5px 14px;\n      font-size: 13px;\n      color: #9a9aaa;\n      cursor: pointer;\n      border-radius: 4px;\n      margin: 1px 6px;\n      transition: background .12s;\n    }\n\n    .sidebar-item:hover { background: #23233a; color: #e2e2e8; }\n\n    .sidebar-item.active {\n      background: #1e3a28;\n      color: #6fcf97;\n      font-weight: 500;\n    }\n\n    .sidebar-item .icon { font-size: 14px; width: 18px; text-align: center; }\n\n    /* \u2500\u2500 Main content \u2500\u2500 */\n    .main {\n      flex: 1;\n      display: flex;\n      flex-direction: column;\n      min-height: 100vh;\n    }\n\n    /* Cover image */\n    .cover {\n      width: 100%;\n      height: 140px;\n      background: linear-gradient(135deg, #0d1f17 0%, #0a192f 40%, #1a0a2e 100%);\n      position: relative;\n      overflow: hidden;\n    }\n\n    .cover::before {\n      content: '';\n      position: absolute;\n      inset: 0;\n      background: radial-gradient(ellipse at 30% 60%, rgba(40, 120, 70, .25) 0%, transparent 60%),\n                  radial-gradient(ellipse at 70% 30%, rgba(30, 60, 120, .2) 0%, transparent 55%);\n    }\n\n    .cover-label {\n      position: absolute;\n      bottom: 10px;\n      right: 14px;\n      font-size: 10px;\n      color: rgba(255,255,255,.35);\n      letter-spacing: .05em;\n    }\n\n    /* Page header */\n    .page-header {\n      padding: 32px 60px 0;\n      display: flex;\n      align-items: center;\n      gap: 10px;\n    }\n\n    .page-icon { font-size: 32px; }\n\n    .page-title {\n      font-size: 28px;\n      font-weight: 700;\n      color: #fff;\n      letter-spacing: -.01em;\n    }\n\n    /* Three-column content */\n    .page-content {\n      padding: 24px 60px 40px;\n      flex: 1;\n    }\n\n    .columns {\n      display: grid;\n      grid-template-columns: 1fr 1fr 1fr;\n      gap: 24px;\n      margin-top: 8px;\n    }\n\n    .column { display: flex; flex-direction: column; gap: 8px; }\n\n    /* Callout header \u2014 dark green */\n    .callout-header {\n      background: #1e3a28;\n      border-radius: 6px;\n      padding: 9px 14px;\n      font-size: 13px;\n      font-weight: 600;\n      color: #fff;\n      letter-spacing: .02em;\n      border-left: 3px solid #2d6a42;\n    }\n\n    /* Linked page bullets */\n    .page-list {\n      list-style: none;\n      display: flex;\n      flex-direction: column;\n      gap: 2px;\n      padding: 4px 0;\n    }\n\n    .page-list li {\n      display: flex;\n      align-items: center;\n      gap: 8px;\n      padding: 5px 10px;\n      border-radius: 4px;\n      font-size: 13.5px;\n      color: #c8c8d8;\n      cursor: pointer;\n      transition: background .1s, color .1s;\n    }\n\n    .page-list li:hover {\n      background: #23233a;\n      color: #fff;\n    }\n\n    .page-list li .emoji { font-size: 14px; width: 18px; text-align: center; }\n\n    /* Bottom meta badges */\n    .meta-bar {\n      display: flex;\n      align-items: center;\n      gap: 10px;\n      padding: 12px 60px 20px;\n      border-top: 1px solid #232330;\n      flex-wrap: wrap;\n    }\n\n    .badge {\n      font-size: 11px;\n      color: #5a5a70;\n      background: #1e1e2c;\n      border: 1px solid #2a2a3a;\n      border-radius: 20px;\n      padding: 3px 10px;\n    }\n\n    .badge span { color: #6fcf97; font-weight: 600; }\n\n    /* Preview label */\n    .preview-label {\n      display: inline-block;\n      background: #1e3a28;\n      color: #6fcf97;\n      font-size: 11px;\n      font-weight: 600;\n      letter-spacing: .06em;\n      text-transform: uppercase;\n      padding: 3px 10px;\n      border-radius: 20px;\n      margin-bottom: 16px;\n    }\n  </style>\n</head>\n<body>\n\n  <!-- Sidebar -->\n  <aside class=\"sidebar\">\n    <div class=\"sidebar-workspace\">\n      <span class=\"ws-icon\">\ud83e\udde0</span>\n      Ultimate Brain\n    </div>\n\n    <div class=\"sidebar-section\">\n      <div class=\"sidebar-label\">Favorites</div>\n      <div class=\"sidebar-item active\">\n        <span class=\"icon\">\ud83e\udde0</span> Homepage\n      </div>\n    </div>\n\n    <div class=\"sidebar-section\">\n      <div class=\"sidebar-label\">Pages</div>\n      <div class=\"sidebar-item\"><span class=\"icon\">\ud83d\udcca</span> Dashboard</div>\n      <div class=\"sidebar-item\"><span class=\"icon\">\ud83c\udf05</span> My Day</div>\n      <div class=\"sidebar-item\"><span class=\"icon\">\u26a1</span> Quick Capture</div>\n      <div class=\"sidebar-item\"><span class=\"icon\">\u2699\ufe0f</span> Process</div>\n      <div class=\"sidebar-item\"><span class=\"icon\">\ud83d\ude80</span> Plan</div>\n      <div class=\"sidebar-item\"><span class=\"icon\">\u2705</span> Task Manager</div>\n      <div class=\"sidebar-item\"><span class=\"icon\">\u265f\ufe0f</span> Project Hub</div>\n      <div class=\"sidebar-item\"><span class=\"icon\">\ud83d\udcdd</span> Notes</div>\n      <div class=\"sidebar-item\"><span class=\"icon\">\ud83d\uddc2\ufe0f</span> Resources</div>\n      <div class=\"sidebar-item\"><span class=\"icon\">\ud83c\udfc6</span> Goals</div>\n      <div class=\"sidebar-item\"><span class=\"icon\">\ud83d\udd29</span> Archive</div>\n      <div class=\"sidebar-item\"><span class=\"icon\">\ud83d\udcd6</span> Book Tracker</div>\n    </div>\n  </aside>\n\n  <!-- Main page -->\n  <main class=\"main\">\n    <!-- Cover -->\n    <div class=\"cover\">\n      <div class=\"cover-label\">Cover: dark abstract</div>\n    </div>\n\n    <!-- Page header -->\n    <div class=\"page-header\">\n      <span class=\"page-icon\">\ud83e\udde0</span>\n      <h1 class=\"page-title\">Ultimate Brain for Notion</h1>\n    </div>\n\n    <!-- Three columns -->\n    <div class=\"page-content\">\n      <div class=\"preview-label\">Preview \u2014 after prompt applied</div>\n\n      <div class=\"columns\">\n\n        <!-- Column 1: Dashboards -->\n        <div class=\"column\">\n          <div class=\"callout-header\">Dashboards</div>\n          <ul class=\"page-list\">\n            <li><span class=\"emoji\">\ud83d\udcca</span> Dashboard</li>\n            <li><span class=\"emoji\">\ud83c\udf05</span> My Day</li>\n            <li><span class=\"emoji\">\u26a1</span> Quick Capture</li>\n            <li><span class=\"emoji\">\u2699\ufe0f</span> Process</li>\n            <li><span class=\"emoji\">\ud83d\ude80</span> Plan</li>\n          </ul>\n        </div>\n\n        <!-- Column 2: Productivity Views -->\n        <div class=\"column\">\n          <div class=\"callout-header\">Productivity Views</div>\n          <ul class=\"page-list\">\n            <li><span class=\"emoji\">\u2705</span> Task Manager</li>\n            <li><span class=\"emoji\">\u265f\ufe0f</span> Project Hub</li>\n            <li><span class=\"emoji\">\ud83d\udcdd</span> Notes</li>\n            <li><span class=\"emoji\">\ud83d\uddc2\ufe0f</span> Resources</li>\n            <li><span class=\"emoji\">\ud83c\udfc6</span> Goals</li>\n            <li><span class=\"emoji\">\ud83d\udd29</span> Archive</li>\n          </ul>\n        </div>\n\n        <!-- Column 3: Special Views -->\n        <div class=\"column\">\n          <div class=\"callout-header\">Special Views</div>\n          <ul class=\"page-list\">\n            <li><span class=\"emoji\">\ud83d\udcd6</span> Book Tracker</li>\n          </ul>\n        </div>\n\n      </div>\n    </div>\n\n    <!-- Meta badges -->\n    <div class=\"meta-bar\">\n      <div class=\"badge\">Theme: <span>Dark</span></div>\n      <div class=\"badge\">Layout: <span>3 Columns \u00b7 Full Width</span></div>\n      <div class=\"badge\">Headers: <span>Dark Green Callout</span></div>\n      <div class=\"badge\">Cover: <span>Dark Abstract (Unsplash)</span></div>\n      <div class=\"badge\">Icon: <span>\ud83e\udde0</span></div>\n      <div class=\"badge\">Pages: <span>12</span></div>\n    </div>\n  </main>\n\n</body>\n</html>\n"}, {"name": "result.md", "type": "text", "content": "# Notion Homepage Redesign \u2014 Thomas Frank Style\n\nHere is your customized redesign prompt based on your 12 pages, mapped into the three-column Thomas Frank layout. Your pages fit naturally: **Dashboards** column (daily ops), **Productivity Views** column (core work systems), and **Special Views** column (standalone trackers). The only adjustment: your \"Resources\" page is placed in Productivity Views as the equivalent of Thomas Frank's \"Areas & Resources\".\n\n---\n\n```\n=== NOTION HOMEPAGE REDESIGN \u2014 THOMAS FRANK STYLE ===\n\n1. HALAMAN UTAMA\n   - Tambahkan cover image: pilih gambar gelap/abstract dari Unsplash gallery Notion\n   - Ubah icon halaman menjadi: \ud83e\udde0\n   - Judul halaman: \"Ultimate Brain for Notion\" (biarkan sebagai plain text H1)\n\n2. HAPUS SEMUA KONTEN LAMA di halaman utama (kecuali judul)\n\n3. BUAT TIGA KOLOM SEJAJAR\n   Klik di bawah judul \u2192 ketik /columns \u2192 pilih \"3 columns\"\n\n4. KOLOM 1 \u2014 DASHBOARDS\n   Di kolom pertama:\n   a. Ketik /callout \u2192 pilih warna background: Green (dark) \u2192 hapus emoji default\n   b. Ketik \"Dashboards\" di dalam callout \u2192 ubah text color: White\n   c. Di bawah callout (masih dalam kolom 1), tambahkan bullet list:\n      - Ketik /link \u2192 cari \"Dashboard\" \u2192 pilih halaman \u2192 tambahkan emoji \ud83d\udcca di depan\n      - Ulangi untuk:\n        \ud83c\udf05 My Day\n        \u26a1 Quick Capture\n        \u2699\ufe0f Process\n        \ud83d\ude80 Plan\n\n5. KOLOM 2 \u2014 PRODUCTIVITY VIEWS\n   Di kolom kedua:\n   a. Ketik /callout \u2192 Green (dark) background \u2192 hapus emoji \u2192 ketik \"Productivity Views\" \u2192 White text\n   b. Tambahkan bullet list linked pages:\n      \u2705 Task Manager\n      \u265f\ufe0f Project Hub\n      \ud83d\udcdd Notes\n      \ud83d\uddc2\ufe0f Resources\n      \ud83c\udfc6 Goals\n      \ud83d\udd29 Archive\n\n6. KOLOM 3 \u2014 SPECIAL VIEWS\n   Di kolom ketiga:\n   a. Ketik /callout \u2192 Green (dark) background \u2192 hapus emoji \u2192 ketik \"Special Views\" \u2192 White text\n   b. Tambahkan bullet list linked pages:\n      \ud83d\udcd6 Book Tracker\n\n7. SIDEBAR \u2014 URUTKAN HALAMAN\n   Di sidebar Notion, drag & drop halaman agar urutannya:\n   \ud83e\udde0 Ultimate Brain (root)\n   \u251c\u2500\u2500 \ud83d\udcca Dashboard\n   \u251c\u2500\u2500 \ud83c\udf05 My Day\n   \u251c\u2500\u2500 \u26a1 Quick Capture\n   \u251c\u2500\u2500 \u2699\ufe0f Process\n   \u251c\u2500\u2500 \ud83d\ude80 Plan\n   \u251c\u2500\u2500 \u2705 Task Manager\n   \u251c\u2500\u2500 \u265f\ufe0f Project Hub\n   \u251c\u2500\u2500 \ud83d\udcdd Notes\n   \u251c\u2500\u2500 \ud83d\uddc2\ufe0f Resources\n   \u251c\u2500\u2500 \ud83c\udfc6 Goals\n   \u251c\u2500\u2500 \ud83d\udd29 Archive\n   \u2514\u2500\u2500 \ud83d\udcd6 Book Tracker\n\n8. TIPS FINAL\n   - Aktifkan \"Full width\" di pengaturan halaman (... menu \u2192 Full width: ON)\n   - Aktifkan dark mode di Notion untuk tampilan terbaik\n   - Pin halaman utama di sidebar Favorites\n```\n\n---\n\n## Column Mapping Notes\n\n| Column | Your Pages | Notes |\n|--------|-----------|-------|\n| Dashboards | Dashboard, My Day, Quick Capture, Process, Plan | Daily ops & workflow \u2014 identical to Thomas Frank's column 1 |\n| Productivity Views | Task Manager, Project Hub, Notes, Resources, Goals, Archive | \"Resources\" replaces Thomas Frank's \"Areas & Resources\" \u2014 same function |\n| Special Views | Book Tracker | You have 1 special tracker; column is ready to expand (e.g. add Habit Tracker, Journal later) |\n\n## Closing Tips\n\n- The Special Views column only has one page (Book Tracker). You can expand it later by adding pages like Habit Tracker, Journal, or Recipe Book without any restructuring.\n- For the best look: use a dark abstract cover image from Notion's built-in Unsplash gallery (search \"dark abstract\" or \"dark gradient\").\n- The preview HTML file (`preview.html`) shows exactly what the finished page will look like before you apply the changes.\n"}], "grading": null}, {"id": "eval-2-without_skill", "prompt": "I want to redesign my Notion second brain homepage to match Thomas Frank's style. My pages are: Dashboard, My Day, Quick Capture, Process, Plan, Task Manager, Project Hub, Notes, Resources, Goals, Archive, Book Tracker. Give me the exact Notion instructions and show me a preview.", "eval_id": 2, "outputs": [{"name": "result.md", "type": "text", "content": "# Notion Second Brain Homepage Redesign \u2014 Thomas Frank Style\n\n## Overview\n\nThomas Frank's Notion style is characterized by:\n- A bold cover photo at the top of the page\n- A large page icon (usually an emoji)\n- Clean, minimal layout with clear visual hierarchy\n- Sections separated by dividers (\u2014-) or callout blocks\n- Navigation links arranged in a grid using Notion's columns feature\n- Consistent use of emojis as visual anchors for each section\n- A \"control panel\" or \"navigation hub\" feel with grouped links\n- Minimal clutter \u2014 only the most essential info visible on the homepage\n- Use of callout blocks for featured or pinned items\n- Subtle color use (mostly white/light backgrounds with one accent color per section)\n\n---\n\n## Step-by-Step Notion Instructions\n\n### Step 1: Set Up the Page Foundation\n\n1. Open your **Dashboard** page in Notion.\n2. Click the **\"...\"** menu at the top right > choose **\"Full width\"** to enable wide layout.\n3. Click **\"Add cover\"** at the top of the page \u2014 choose a dark, minimal image. Thomas Frank typically uses dark abstract or gradient covers. Go to **Unsplash** inside Notion's cover picker, search \"dark minimal workspace\" or \"dark gradient abstract\".\n4. Click **\"Add icon\"** and set it to **\ud83e\udde0** (brain emoji) to represent Second Brain.\n5. Set your **page title** to: `Second Brain` (large, bold \u2014 Notion does this automatically as H1).\n\n---\n\n### Step 2: Add a Welcome/Status Callout\n\n1. Press **/** to open the command menu.\n2. Type `callout` and press Enter.\n3. Set the callout emoji to **\ud83d\udc4b**\n4. Type the following inside the callout:\n\n```\nGood [morning/afternoon], [Your Name]. Today is [date formula].\nFocus area: [your current priority or project]\n```\n\n5. To add a live date, inside the callout type `/date` and insert **@Today**.\n6. Change the callout background to **gray** (click the colored square on the left of the callout block, select gray).\n\n---\n\n### Step 3: Add a Divider\n\n1. Press **/** > type `divider` > Enter.\n   This creates a clean `---` separator line.\n\n---\n\n### Step 4: Build the Navigation Grid \u2014 Section 1: Daily Workflow\n\nThomas Frank groups pages into meaningful clusters. Create the first cluster:\n\n1. Type `## \ud83d\udcc5 Daily Workflow` \u2014 press **/** > `Heading 2` > type the text.\n2. Press Enter to go to the next line.\n3. Press **/** > type `columns` (or use the **\"+\" add block** handle on the left and drag to create columns). Notion allows 2\u20135 columns.\n4. Create **3 columns**.\n5. In **Column 1**, type `/page` link or just type the page name `[[My Day]]` \u2014 Notion will auto-link to your My Day page. Format it as follows:\n\n**Column 1:**\n```\n\ud83c\udf05 My Day\n```\nThen press Enter and add a short subtitle in smaller text: `Daily planning`\n\n**Column 2:**\n```\n\u26a1 Quick Capture\n```\nSubtitle: `Inbox & fleeting notes`\n\n**Column 3:**\n```\n\u2699\ufe0f Process\n```\nSubtitle: `Clear your inbox`\n\n6. To link each title to the actual page: select the title text > press **Ctrl+K** (or **Cmd+K** on Mac) > search and select the corresponding page.\n\n---\n\n### Step 5: Navigation Grid \u2014 Section 2: Planning & Execution\n\n1. Add another **Heading 2**: `## \ud83c\udfaf Planning & Execution`\n2. Create **3 columns** below it:\n\n**Column 1:**\n```\n\ud83d\uddd3\ufe0f Plan\n```\nSubtitle: `Weekly & monthly review`\n\n**Column 2:**\n```\n\u2705 Task Manager\n```\nSubtitle: `All your tasks`\n\n**Column 3:**\n```\n\ud83d\ude80 Project Hub\n```\nSubtitle: `Active projects`\n\n3. Link each title to its respective page using **Ctrl+K**.\n\n---\n\n### Step 6: Navigation Grid \u2014 Section 3: Knowledge & Resources\n\n1. Add **Heading 2**: `## \ud83d\udcda Knowledge`\n2. Create **3 columns**:\n\n**Column 1:**\n```\n\ud83d\udcdd Notes\n```\nSubtitle: `Permanent notes`\n\n**Column 2:**\n```\n\ud83d\udd17 Resources\n```\nSubtitle: `References & links`\n\n**Column 3:**\n```\n\ud83d\udcd6 Book Tracker\n```\nSubtitle: `Reading list`\n\n---\n\n### Step 7: Navigation Grid \u2014 Section 4: Growth & Archive\n\n1. Add **Heading 2**: `## \ud83c\udf31 Growth & Archive`\n2. Create **2 columns**:\n\n**Column 1:**\n```\n\ud83c\udfc6 Goals\n```\nSubtitle: `Long-term vision`\n\n**Column 2:**\n```\n\ud83d\uddc4\ufe0f Archive\n```\nSubtitle: `Completed & stored`\n\n---\n\n### Step 8: Style Each Navigation Card (Thomas Frank's Card Style)\n\nFor each navigation item in the columns, Thomas Frank often uses a **callout block** inside each column instead of plain text. This gives it a card-like appearance:\n\n1. Inside each column, instead of plain text, press **/** > `callout`.\n2. Set the emoji for each callout to match the section icon.\n3. Inside the callout, type the **page name as a link** (Ctrl+K to link).\n4. On the next line inside the callout, type the subtitle in smaller text.\n5. Set callout background to **default (white/light)** \u2014 no color. This keeps it clean.\n\nThis creates a subtle card effect with an emoji icon on the left.\n\n---\n\n### Step 9: Add a \"Today's Focus\" Section (Optional but Thomas Frank-style)\n\n1. Below the navigation grid, add a divider (`---`).\n2. Add **Heading 2**: `## \ud83c\udfaf Today's Focus`\n3. Add a **To-do list** block (press **/** > `to-do list`).\n4. Add 3\u20135 placeholder tasks. This section is where you manually write your top priorities each morning.\n\n---\n\n### Step 10: Add a Pinned/Featured Callout\n\nThomas Frank often has a \"pinned\" block for the most important current project:\n\n1. Add a divider.\n2. Press **/** > `callout`.\n3. Set emoji to **\ud83d\udccc**.\n4. Set the callout background to **yellow**.\n5. Inside, type: `Current Focus: [link to your most important active project]`\n6. On line 2: `Deadline: [date]`\n\n---\n\n### Step 11: Final Polish\n\n1. **Reorder sections** by dragging the **\u22ee\u22ee** handle (appears on hover to the left of each block) to rearrange if needed.\n2. **Add page icons to all sub-pages**: Go to each linked page (My Day, Quick Capture, etc.) and add a matching emoji icon so the links look polished.\n3. **Check full-width mode** is still on (the navigation grids look much better full-width).\n4. **Remove the page title line** if you want a cleaner look: Notion lets you hide the title by hovering near the top and disabling \"Show title\" \u2014 however this is not always available depending on your Notion version. Alternatively, just accept the title as a large heading.\n5. **Cover image repositioning**: Hover over the cover image > click **\"Reposition\"** to center it on the most visually interesting part.\n\n---\n\n## Complete Page Structure (Final Layout)\n\n```\n[Cover Image \u2014 dark, minimal]\n[Icon: \ud83e\udde0]\n# Second Brain\n\n[Callout: \ud83d\udc4b Good morning, [Name]. Today is [date]. Focus: [priority]]\n\n---\n\n## \ud83d\udcc5 Daily Workflow\n| [Callout: \ud83c\udf05 My Day]  | [Callout: \u26a1 Quick Capture] | [Callout: \u2699\ufe0f Process] |\n|  Daily planning        |  Inbox & fleeting notes     |  Clear your inbox     |\n\n## \ud83c\udfaf Planning & Execution\n| [Callout: \ud83d\uddd3\ufe0f Plan]         | [Callout: \u2705 Task Manager] | [Callout: \ud83d\ude80 Project Hub] |\n|  Weekly & monthly review    |  All your tasks             |  Active projects          |\n\n## \ud83d\udcda Knowledge\n| [Callout: \ud83d\udcdd Notes]  | [Callout: \ud83d\udd17 Resources]    | [Callout: \ud83d\udcd6 Book Tracker] |\n|  Permanent notes      |  References & links         |  Reading list              |\n\n## \ud83c\udf31 Growth & Archive\n| [Callout: \ud83c\udfc6 Goals]  | [Callout: \ud83d\uddc4\ufe0f Archive] |\n|  Long-term vision     |  Completed & stored    |\n\n---\n\n## \ud83c\udfaf Today's Focus\n\u2610 [Task 1]\n\u2610 [Task 2]\n\u2610 [Task 3]\n\n---\n\n[Callout: \ud83d\udccc (yellow) Current Focus: [Project Link] \u2014 Deadline: [date]]\n```\n\n---\n\n## Key Thomas Frank Design Principles Applied\n\n| Principle | How It's Applied |\n|---|---|\n| Dark cover photo | Sets a focused, professional tone |\n| Emoji icons | Every section and page link has a consistent emoji |\n| Callout cards | Used for navigation items \u2014 gives a card-like feel without a database |\n| Column layout | 3-column grids make the page scannable and space-efficient |\n| Minimal color | Only the pinned callout uses color (yellow); everything else is white/default |\n| Section headings (H2) | Clear visual hierarchy between workflow clusters |\n| Dividers | Used to separate major sections cleanly |\n| Full-width layout | Essential \u2014 the column grids require full width to look good |\n| Subtitles under links | Each nav card has a 1-line description so the purpose is instantly clear |\n| Today's Focus block | Daily entry point \u2014 forces intentionality each morning |\n\n---\n\n## Page Mapping Summary\n\n| Your Page | Section | Emoji | Column Position |\n|---|---|---|---|\n| Dashboard | (This IS the homepage) | \ud83e\udde0 | \u2014 |\n| My Day | Daily Workflow | \ud83c\udf05 | Col 1 |\n| Quick Capture | Daily Workflow | \u26a1 | Col 2 |\n| Process | Daily Workflow | \u2699\ufe0f | Col 3 |\n| Plan | Planning & Execution | \ud83d\uddd3\ufe0f | Col 1 |\n| Task Manager | Planning & Execution | \u2705 | Col 2 |\n| Project Hub | Planning & Execution | \ud83d\ude80 | Col 3 |\n| Notes | Knowledge | \ud83d\udcdd | Col 1 |\n| Resources | Knowledge | \ud83d\udd17 | Col 2 |\n| Book Tracker | Knowledge | \ud83d\udcd6 | Col 3 |\n| Goals | Growth & Archive | \ud83c\udfc6 | Col 1 |\n| Archive | Growth & Archive | \ud83d\uddc4\ufe0f | Col 2 |\n\n---\n\n## Pro Tips (Thomas Frank's Workflow)\n\n1. **Use the Daily Note template**: Link \"My Day\" to a template that auto-populates date, daily top 3, and gratitude. Thomas Frank calls this the \"Daily Note\".\n2. **Quick Capture is your inbox**: Everything unprocessed goes here. Process it once a week (Friday review).\n3. **Keep the homepage read-only in spirit**: Resist adding content directly to the homepage. It is a navigation hub only.\n4. **Weekly review ritual**: Every Sunday or Friday, open Plan > run your weekly review template.\n5. **Color discipline**: Thomas Frank almost never uses Notion's colored backgrounds except for 1\u20132 accent callouts. Resist the urge to color-code every section.\n"}], "grading": null}, {"id": "eval-3-with_skill", "prompt": "Saya sudah punya Ultimate Brain V1 dan mau bikin V2 \u2014 ubah tampilannya biar kayak Thomas Frank tapi versi lebih baru. Tambahkan halaman Habit Tracker dan Journal di kolom yang paling cocok. Tolong kasih promptnya dan preview tampilannya.", "eval_id": 3, "outputs": [{"name": "preview.html", "type": "text", "content": "<!DOCTYPE html>\n<html lang=\"id\">\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>Preview \u2014 Ultimate Brain V2</title>\n<style>\n  * { box-sizing: border-box; margin: 0; padding: 0; }\n  body {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n    background: #111118;\n    color: #e8e8e8;\n    display: flex;\n    min-height: 100vh;\n  }\n\n  /* SIDEBAR */\n  .sidebar {\n    width: 220px;\n    min-width: 220px;\n    background: #1a1a24;\n    border-right: 1px solid #2a2a3a;\n    padding: 16px 0;\n    display: flex;\n    flex-direction: column;\n    gap: 2px;\n  }\n  .sidebar-title {\n    font-size: 11px;\n    font-weight: 600;\n    color: #6b6b8a;\n    letter-spacing: 0.08em;\n    text-transform: uppercase;\n    padding: 8px 16px 4px;\n  }\n  .sidebar-item {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    padding: 5px 16px;\n    font-size: 13px;\n    color: #9898b8;\n    cursor: pointer;\n    border-radius: 4px;\n    margin: 0 6px;\n  }\n  .sidebar-item:hover { background: #24243a; color: #d0d0e8; }\n  .sidebar-item.active {\n    background: #2a2a40;\n    color: #e8e8f8;\n    font-weight: 500;\n  }\n  .sidebar-item .emoji { font-size: 14px; width: 20px; text-align: center; }\n  .sidebar-divider {\n    height: 1px;\n    background: #2a2a3a;\n    margin: 8px 16px;\n  }\n  .sidebar-section {\n    font-size: 11px;\n    color: #4a4a6a;\n    padding: 4px 16px 2px;\n    letter-spacing: 0.05em;\n  }\n\n  /* MAIN CONTENT */\n  .main {\n    flex: 1;\n    background: #16161e;\n    display: flex;\n    flex-direction: column;\n    overflow: hidden;\n  }\n  .topbar {\n    height: 44px;\n    border-bottom: 1px solid #2a2a3a;\n    display: flex;\n    align-items: center;\n    padding: 0 24px;\n    gap: 16px;\n  }\n  .breadcrumb {\n    font-size: 13px;\n    color: #6b6b8a;\n    display: flex;\n    align-items: center;\n    gap: 6px;\n  }\n  .breadcrumb span { color: #9898b8; }\n  .topbar-actions {\n    margin-left: auto;\n    display: flex;\n    gap: 8px;\n  }\n  .topbar-btn {\n    font-size: 12px;\n    color: #6b6b8a;\n    background: #2a2a3a;\n    border: none;\n    border-radius: 4px;\n    padding: 4px 10px;\n    cursor: pointer;\n  }\n\n  /* COVER */\n  .cover {\n    height: 140px;\n    background: linear-gradient(135deg, #0d2137 0%, #0a1628 40%, #0d1a0e 100%);\n    position: relative;\n    overflow: hidden;\n  }\n  .cover::after {\n    content: '';\n    position: absolute;\n    inset: 0;\n    background: radial-gradient(ellipse at 30% 60%, rgba(20,80,40,0.3) 0%, transparent 60%),\n                radial-gradient(ellipse at 70% 30%, rgba(15,40,80,0.4) 0%, transparent 50%);\n  }\n\n  /* PAGE CONTENT */\n  .page-content {\n    padding: 32px 40px 40px;\n    flex: 1;\n  }\n  .page-icon { font-size: 48px; margin-bottom: 8px; }\n  .page-title {\n    font-size: 32px;\n    font-weight: 700;\n    color: #f0f0f8;\n    margin-bottom: 4px;\n    letter-spacing: -0.5px;\n  }\n  .page-meta {\n    font-size: 12px;\n    color: #4a4a6a;\n    margin-bottom: 32px;\n  }\n  .version-badge {\n    display: inline-block;\n    background: #1e3a1e;\n    color: #5ab85a;\n    font-size: 11px;\n    font-weight: 600;\n    padding: 2px 8px;\n    border-radius: 12px;\n    margin-left: 8px;\n    vertical-align: middle;\n    letter-spacing: 0.05em;\n  }\n\n  /* THREE COLUMNS */\n  .columns {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    gap: 20px;\n  }\n  .column { display: flex; flex-direction: column; gap: 6px; }\n\n  /* CALLOUT HEADER */\n  .callout-header {\n    background: #1a3a1a;\n    border: 1px solid #2a5a2a;\n    border-radius: 6px;\n    padding: 8px 14px;\n    font-size: 13px;\n    font-weight: 600;\n    color: #e8f5e8;\n    letter-spacing: 0.02em;\n    margin-bottom: 4px;\n  }\n\n  /* PAGE LINKS */\n  .page-link {\n    display: flex;\n    align-items: center;\n    gap: 8px;\n    padding: 4px 8px;\n    font-size: 13px;\n    color: #a0a0c0;\n    border-radius: 4px;\n    cursor: pointer;\n    transition: background 0.1s, color 0.1s;\n  }\n  .page-link:hover { background: #222232; color: #d0d0e8; }\n  .page-link .emoji { font-size: 14px; width: 18px; text-align: center; }\n  .page-link .link-text { color: inherit; text-decoration: none; }\n\n  /* NEW BADGE */\n  .new-badge {\n    font-size: 10px;\n    background: #1a3a2a;\n    color: #5ab87a;\n    border: 1px solid #2a5a3a;\n    border-radius: 10px;\n    padding: 1px 6px;\n    margin-left: auto;\n    font-weight: 600;\n    letter-spacing: 0.04em;\n  }\n\n  /* FOOTER BADGES */\n  .page-badges {\n    margin-top: 36px;\n    display: flex;\n    gap: 8px;\n    flex-wrap: wrap;\n  }\n  .badge {\n    display: flex;\n    align-items: center;\n    gap: 5px;\n    font-size: 11px;\n    color: #5a5a7a;\n    background: #1e1e28;\n    border: 1px solid #2a2a3a;\n    border-radius: 20px;\n    padding: 3px 10px;\n  }\n  .badge .dot {\n    width: 6px; height: 6px;\n    border-radius: 50%;\n    background: #3a5a3a;\n  }\n\n  /* PREVIEW LABEL */\n  .preview-label {\n    position: fixed;\n    top: 12px;\n    right: 12px;\n    background: #1a3a1a;\n    color: #5ab85a;\n    font-size: 11px;\n    font-weight: 600;\n    padding: 4px 10px;\n    border-radius: 12px;\n    border: 1px solid #2a5a2a;\n    letter-spacing: 0.06em;\n    text-transform: uppercase;\n  }\n</style>\n</head>\n<body>\n\n<div class=\"preview-label\">Preview V2</div>\n\n<!-- SIDEBAR -->\n<div class=\"sidebar\">\n  <div class=\"sidebar-title\">Favorites</div>\n  <div class=\"sidebar-item active\">\n    <span class=\"emoji\">\ud83e\udde0</span> Ultimate Brain V2\n  </div>\n\n  <div class=\"sidebar-divider\"></div>\n  <div class=\"sidebar-section\">Dashboards</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\ud83d\udcca</span> Dashboard</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\ud83c\udf05</span> My Day</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\u26a1</span> Quick Capture</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\u2699\ufe0f</span> Process</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\ud83d\ude80</span> Plan</div>\n\n  <div class=\"sidebar-divider\"></div>\n  <div class=\"sidebar-section\">Productivity</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\u2705</span> Task Manager</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\u265f\ufe0f</span> Project Hub</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\ud83d\udcdd</span> Notes</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\ud83d\uddc2\ufe0f</span> Areas & Resources</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\ud83c\udfc6</span> Goals</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\ud83d\udd29</span> Archive</div>\n\n  <div class=\"sidebar-divider\"></div>\n  <div class=\"sidebar-section\">Special Views</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\u26a1</span> Quick Links</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\ud83d\udcd6</span> Book Tracker</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\ud83c\udf73</span> Recipe Book</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\ud83d\udcd3</span> Journal</div>\n  <div class=\"sidebar-item\"><span class=\"emoji\">\u2714\ufe0f</span> Habit Tracker</div>\n</div>\n\n<!-- MAIN -->\n<div class=\"main\">\n  <div class=\"topbar\">\n    <div class=\"breadcrumb\">\n      \ud83e\udde0 <span>Ultimate Brain V2</span>\n    </div>\n    <div class=\"topbar-actions\">\n      <button class=\"topbar-btn\">Full width \u2713</button>\n      <button class=\"topbar-btn\">Share</button>\n      <button class=\"topbar-btn\">\u00b7\u00b7\u00b7</button>\n    </div>\n  </div>\n\n  <div class=\"cover\"></div>\n\n  <div class=\"page-content\">\n    <div class=\"page-icon\">\ud83e\udde0</div>\n    <div class=\"page-title\">\n      Ultimate Brain V2\n      <span class=\"version-badge\">V2</span>\n    </div>\n    <div class=\"page-meta\">Last updated \u00b7 Juni 2026 \u00b7 Full width \u00b7 Dark mode</div>\n\n    <!-- THREE COLUMNS -->\n    <div class=\"columns\">\n\n      <!-- COLUMN 1: DASHBOARDS -->\n      <div class=\"column\">\n        <div class=\"callout-header\">Dashboards</div>\n        <div class=\"page-link\"><span class=\"emoji\">\ud83d\udcca</span><span class=\"link-text\">Dashboard</span></div>\n        <div class=\"page-link\"><span class=\"emoji\">\ud83c\udf05</span><span class=\"link-text\">My Day</span></div>\n        <div class=\"page-link\"><span class=\"emoji\">\u26a1</span><span class=\"link-text\">Quick Capture</span></div>\n        <div class=\"page-link\"><span class=\"emoji\">\u2699\ufe0f</span><span class=\"link-text\">Process</span></div>\n        <div class=\"page-link\"><span class=\"emoji\">\ud83d\ude80</span><span class=\"link-text\">Plan</span></div>\n      </div>\n\n      <!-- COLUMN 2: PRODUCTIVITY VIEWS -->\n      <div class=\"column\">\n        <div class=\"callout-header\">Productivity Views</div>\n        <div class=\"page-link\"><span class=\"emoji\">\u2705</span><span class=\"link-text\">Task Manager</span></div>\n        <div class=\"page-link\"><span class=\"emoji\">\u265f\ufe0f</span><span class=\"link-text\">Project Hub</span></div>\n        <div class=\"page-link\"><span class=\"emoji\">\ud83d\udcdd</span><span class=\"link-text\">Notes</span></div>\n        <div class=\"page-link\"><span class=\"emoji\">\ud83d\uddc2\ufe0f</span><span class=\"link-text\">Areas & Resources</span></div>\n        <div class=\"page-link\"><span class=\"emoji\">\ud83c\udfc6</span><span class=\"link-text\">Goals</span></div>\n        <div class=\"page-link\"><span class=\"emoji\">\ud83d\udd29</span><span class=\"link-text\">Archive</span></div>\n      </div>\n\n      <!-- COLUMN 3: SPECIAL VIEWS -->\n      <div class=\"column\">\n        <div class=\"callout-header\">Special Views</div>\n        <div class=\"page-link\"><span class=\"emoji\">\u26a1</span><span class=\"link-text\">Quick Links</span></div>\n        <div class=\"page-link\"><span class=\"emoji\">\ud83d\udcd6</span><span class=\"link-text\">Book Tracker</span></div>\n        <div class=\"page-link\"><span class=\"emoji\">\ud83c\udf73</span><span class=\"link-text\">Recipe Book</span></div>\n        <div class=\"page-link\">\n          <span class=\"emoji\">\ud83d\udcd3</span>\n          <span class=\"link-text\">Journal</span>\n          <span class=\"new-badge\">NEW</span>\n        </div>\n        <div class=\"page-link\">\n          <span class=\"emoji\">\u2714\ufe0f</span>\n          <span class=\"link-text\">Habit Tracker</span>\n          <span class=\"new-badge\">NEW</span>\n        </div>\n      </div>\n\n    </div>\n\n    <!-- FOOTER BADGES -->\n    <div class=\"page-badges\">\n      <div class=\"badge\"><div class=\"dot\"></div> Cover: Dark Abstract</div>\n      <div class=\"badge\"><div class=\"dot\"></div> Icon: \ud83e\udde0</div>\n      <div class=\"badge\"><div class=\"dot\"></div> Layout: 3 columns</div>\n      <div class=\"badge\"><div class=\"dot\"></div> Theme: Dark mode</div>\n      <div class=\"badge\"><div class=\"dot\"></div> Full width: ON</div>\n      <div class=\"badge\"><div class=\"dot\" style=\"background:#3a4a5a\"></div> Version: V2</div>\n    </div>\n  </div>\n</div>\n\n</body>\n</html>\n"}, {"name": "result.md", "type": "text", "content": "Berikut prompt siap-tempel untuk membangun Ultimate Brain V2 kamu dengan layout Thomas Frank yang diperbarui, lengkap dengan Habit Tracker dan Journal di kolom Special Views.\n\n```\n=== NOTION HOMEPAGE REDESIGN \u2014 ULTIMATE BRAIN V2 (THOMAS FRANK STYLE) ===\n\n1. HALAMAN UTAMA\n   - Tambahkan cover image: pilih gambar gelap/abstract dari Unsplash gallery Notion\n   - Ubah icon halaman menjadi: \ud83e\udde0\n   - Judul halaman: \"Ultimate Brain V2\" (biarkan sebagai plain text H1)\n\n2. HAPUS SEMUA KONTEN LAMA di halaman utama (kecuali judul)\n\n3. BUAT TIGA KOLOM SEJAJAR\n   Klik di bawah judul \u2192 ketik /columns \u2192 pilih \"3 columns\"\n\n4. KOLOM 1 \u2014 DASHBOARDS\n   Di kolom pertama:\n   a. Ketik /callout \u2192 pilih warna background: Green (dark) \u2192 hapus emoji default\n   b. Ketik \"Dashboards\" di dalam callout \u2192 ubah text color: White\n   c. Di bawah callout (masih dalam kolom 1), tambahkan bullet list:\n      - Ketik /link \u2192 cari \"Dashboard\" \u2192 pilih halaman \u2192 tambahkan emoji \ud83d\udcca di depan\n      - Ulangi untuk:\n        \ud83c\udf05 My Day\n        \u26a1 Quick Capture\n        \u2699\ufe0f Process\n        \ud83d\ude80 Plan\n\n5. KOLOM 2 \u2014 PRODUCTIVITY VIEWS\n   Di kolom kedua:\n   a. Ketik /callout \u2192 Green (dark) background \u2192 hapus emoji \u2192 ketik \"Productivity Views\" \u2192 White text\n   b. Tambahkan bullet list linked pages:\n      \u2705 Task Manager\n      \u265f\ufe0f Project Hub\n      \ud83d\udcdd Notes\n      \ud83d\uddc2\ufe0f Areas & Resources\n      \ud83c\udfc6 Goals\n      \ud83d\udd29 Archive\n\n6. KOLOM 3 \u2014 SPECIAL VIEWS\n   Di kolom ketiga:\n   a. Ketik /callout \u2192 Green (dark) background \u2192 hapus emoji \u2192 ketik \"Special Views\" \u2192 White text\n   b. Tambahkan bullet list linked pages:\n      \u26a1 Quick Links\n      \ud83d\udcd6 Book Tracker\n      \ud83c\udf73 Recipe Book\n      \ud83d\udcd3 Journal\n      \u2714\ufe0f Habit Tracker\n\n   [CATATAN V2] Habit Tracker dan Journal ditempatkan di kolom Special Views karena\n   keduanya adalah halaman personal/reflektif yang bukan bagian dari alur kerja\n   produktivitas utama \u2014 cocok bersanding dengan Book Tracker dan Recipe Book.\n\n7. SIDEBAR \u2014 URUTKAN HALAMAN\n   Di sidebar Notion, drag & drop halaman agar urutannya:\n   \ud83e\udde0 Ultimate Brain V2 (root)\n   \u251c\u2500\u2500 \ud83d\udcca Dashboard\n   \u251c\u2500\u2500 \ud83c\udf05 My Day\n   \u251c\u2500\u2500 \u26a1 Quick Capture\n   \u251c\u2500\u2500 \u2699\ufe0f Process\n   \u251c\u2500\u2500 \ud83d\ude80 Plan\n   \u251c\u2500\u2500 \u2705 Task Manager\n   \u251c\u2500\u2500 \u265f\ufe0f Project Hub\n   \u251c\u2500\u2500 \ud83d\udcdd Notes\n   \u251c\u2500\u2500 \ud83d\uddc2\ufe0f Areas & Resources\n   \u251c\u2500\u2500 \ud83c\udfc6 Goals\n   \u251c\u2500\u2500 \ud83d\udd29 Archive\n   \u251c\u2500\u2500 \u26a1 Quick Links\n   \u251c\u2500\u2500 \ud83d\udcd6 Book Tracker\n   \u251c\u2500\u2500 \ud83c\udf73 Recipe Book\n   \u251c\u2500\u2500 \ud83d\udcd3 Journal\n   \u2514\u2500\u2500 \u2714\ufe0f Habit Tracker\n\n8. TIPS FINAL\n   - Aktifkan \"Full width\" di pengaturan halaman (... menu \u2192 Full width: ON)\n   - Aktifkan dark mode di Notion untuk tampilan terbaik\n   - Pin halaman utama di sidebar Favorites\n   - Untuk V2: tambahkan \"Last updated\" date di bawah judul sebagai text block kecil\n     agar mudah melacak kapan kamu terakhir update homepage\n```\n\n---\n\n**Penempatan halaman baru:**\n- `\ud83d\udcd3 Journal` \u2192 Special Views (kolom 3): jurnal adalah ruang refleksi pribadi, bukan alur kerja produktivitas\n- `\u2714\ufe0f Habit Tracker` \u2192 Special Views (kolom 3): habit tracking adalah monitoring personal, sejajar dengan Book Tracker\n\n**Langkah berikutnya:** Salin prompt di atas, buka Notion, dan ikuti langkah 1\u20138 secara berurutan. Seluruh proses butuh sekitar 10\u201315 menit.\n"}], "grading": null}, {"id": "eval-3-without_skill", "prompt": "Saya sudah punya Ultimate Brain V1 dan mau bikin V2 \u2014 ubah tampilannya biar kayak Thomas Frank tapi versi lebih baru. Tambahkan halaman Habit Tracker dan Journal di kolom yang paling cocok. Tolong kasih promptnya dan preview tampilannya.", "eval_id": 3, "outputs": [{"name": "result.md", "type": "text", "content": "# Ultimate Brain V2 \u2014 Notion Homepage Redesign (Thomas Frank Style, Updated)\n\n## Overview\n\nPanduan ini berisi prompt lengkap untuk membangun **Ultimate Brain V2** di Notion \u2014 terinspirasi dari sistem Thomas Frank Explains, namun dengan estetika yang lebih modern, navigasi yang lebih bersih, dan penambahan **Habit Tracker** serta **Journal** di posisi yang paling strategis.\n\n---\n\n## Prompt untuk Membuat Ultimate Brain V2\n\nSalin dan gunakan prompt berikut saat membangun halaman utama di Notion:\n\n---\n\n### PROMPT UTAMA (untuk halaman Home / Dashboard)\n\n```\nBuat halaman Notion bernama \"\ud83e\udde0 Ultimate Brain V2\" sebagai dashboard utama pribadi.\n\nLayout menggunakan 3 kolom dengan struktur berikut:\n\n---\n\n## KOLOM KIRI \u2014 \"My Life HQ\"\nBerisi navigasi inti dan kontrol harian:\n\n- \ud83d\udccc Quick Capture (linked database, filter: created today)\n- \u2705 Tasks Today (linked database, filtered: due today, not done)\n- \ud83d\udd01 Habit Tracker (linked database atau toggle \u2014 lihat detail di bawah)\n- \ud83d\udcd3 Journal (linked database \u2014 lihat detail di bawah)\n\n## KOLOM TENGAH \u2014 \"Projects & Work\"\nBerisi sistem kerja dan produktivitas:\n\n- \ud83d\uddc2 Active Projects (gallery view, filter: status = Active)\n- \ud83d\udcda Areas (gallery atau list view)\n- \ud83d\udce5 Inbox / Notes (linked database, filter: unprocessed)\n\n## KOLOM KANAN \u2014 \"Learn & Review\"\nBerisi konten belajar dan refleksi:\n\n- \ud83d\udcd6 Reading List (linked database, gallery view)\n- \ud83e\udde9 Resources (linked database)\n- \ud83d\udd04 Weekly Review (button atau linked page)\n- \ud83d\udcca Stats / Progress (callout block dengan data mingguan)\n\n---\n\nTambahkan di bagian paling atas halaman (full-width):\n- Judul besar: \"\ud83e\udde0 Ultimate Brain\"\n- Subtitle kecil (italic): \"One system to rule them all.\"\n- Divider line\n- Row pendek berisi 4 tombol (button block): \u2795 Capture | \ud83d\udcdd Today | \ud83d\udcc5 Weekly Review | \ud83c\udfaf Goals\n\nGunakan warna latar gelap (dark mode Notion). \nGunakan ikon emoji yang konsisten.\nGunakan font sans-serif Notion default.\nTambahkan cover image minimalis (hitam atau abu gelap dengan aksen warna teal/hijau).\n```\n\n---\n\n### PROMPT TAMBAHAN: Habit Tracker Page\n\n```\nBuat halaman bernama \"\ud83d\udd01 Habit Tracker\" di dalam Ultimate Brain V2.\n\nStruktur halaman:\n\n1. Header: \"\ud83d\udd01 Habit Tracker\" \u2014 dengan cover image dan ikon yang konsisten\n2. Callout block: \"Track your habits daily. Small actions compound into big results.\"\n3. Database Habit dengan properti:\n   - Name (judul habit)\n   - Date (tanggal)\n   - Done? (checkbox)\n   - Category (select: Health / Mind / Work / Social)\n   - Streak (formula atau number)\n   - Notes (text)\n\n4. View yang disarankan:\n   - Board View (grouped by: Done?)\n   - Calendar View (by date)\n   - Gallery View (untuk visual motivasi)\n\n5. Filter default: \"Date = Today\"\n\nLetakkan shortcut/link ke halaman ini di KOLOM KIRI dashboard utama, \ntepat di bawah \"Tasks Today\" agar mudah diakses setiap pagi.\n```\n\n---\n\n### PROMPT TAMBAHAN: Journal Page\n\n```\nBuat halaman bernama \"\ud83d\udcd3 Journal\" di dalam Ultimate Brain V2.\n\nStruktur halaman:\n\n1. Header: \"\ud83d\udcd3 My Journal\" \u2014 cover image tenang (alam, minimal, atau polos gelap)\n2. Quote motivasi di callout block (update setiap minggu)\n3. Database Journal dengan properti:\n   - Title (judul entri, contoh: \"2026-06-07 \u2014 Morning Reflection\")\n   - Date (tanggal)\n   - Mood (select: \ud83d\ude04 Great / \ud83d\ude42 Good / \ud83d\ude10 Okay / \ud83d\ude14 Low / \ud83d\ude24 Stressed)\n   - Type (select: Morning / Evening / Weekly Review / Free Write)\n   - Tags (multi-select: gratitude, goal, idea, vent, insight)\n   - Entry (text panjang / body)\n\n4. View yang disarankan:\n   - List View (default, sorted by: Date descending)\n   - Calendar View (untuk melihat konsistensi menulis)\n   - Gallery View (dengan property Mood sebagai visual)\n\n5. Template entri harian (Morning Journal):\n   ---\n   ## \ud83c\udf05 Morning Reflection \u2014 {{Date}}\n   \n   **Saya bersyukur hari ini karena:**\n   1. \n   2. \n   3. \n   \n   **Satu hal yang akan membuat hari ini luar biasa:**\n   \n   **Afirmasi hari ini:**\n   \n   ---\n   ## \ud83c\udf19 Evening Reflection\n   \n   **3 hal terbaik yang terjadi hari ini:**\n   1. \n   2. \n   3. \n   \n   **Saya bisa lebih baik dalam hal:**\n   \n   **Catatan bebas:**\n   ---\n\nLetakkan shortcut/link ke halaman ini di KOLOM KIRI dashboard utama,\ntepat di bawah Habit Tracker agar rutinitas pagi terpusat di satu kolom.\n```\n\n---\n\n## Preview Struktur Ultimate Brain V2\n\n```\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502  \ud83e\udde0 ULTIMATE BRAIN V2                                           \u2502\n\u2502  \"One system to rule them all.\"                                 \u2502\n\u2502  \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500   \u2502\n\u2502  [\u2795 Capture]  [\ud83d\udcdd Today]  [\ud83d\udcc5 Weekly Review]  [\ud83c\udfaf Goals]      \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502  KOLOM KIRI   \u2502  KOLOM TENGAH    \u2502  KOLOM KANAN                 \u2502\n\u2502  My Life HQ   \u2502  Projects & Work \u2502  Learn & Review              \u2502\n\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524\n\u2502               \u2502                  \u2502                              \u2502\n\u2502  \ud83d\udccc Capture   \u2502  \ud83d\uddc2 Active       \u2502  \ud83d\udcd6 Reading List             \u2502\n\u2502               \u2502     Projects     \u2502                              \u2502\n\u2502  \u2705 Tasks     \u2502                  \u2502  \ud83e\udde9 Resources                \u2502\n\u2502     Today     \u2502  \ud83d\udcda Areas        \u2502                              \u2502\n\u2502               \u2502                  \u2502  \ud83d\udd04 Weekly Review            \u2502\n\u2502  \ud83d\udd01 Habit     \u2502  \ud83d\udce5 Inbox        \u2502                              \u2502\n\u2502     Tracker \u2190 \u2502                  \u2502  \ud83d\udcca Stats / Progress         \u2502\n\u2502               \u2502                  \u2502                              \u2502\n\u2502  \ud83d\udcd3 Journal \u2190 \u2502                  \u2502                              \u2502\n\u2502               \u2502                  \u2502                              \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n\n\u2190 Habit Tracker & Journal ditempatkan di KOLOM KIRI\n  karena ini adalah rutinitas HARIAN yang diakses setiap pagi.\n```\n\n---\n\n## Alasan Penempatan di Kolom Kiri\n\n| Halaman | Kolom | Alasan |\n|---|---|---|\n| Habit Tracker | Kiri (My Life HQ) | Diakses setiap hari, bagian dari rutinitas pagi bersama Tasks Today |\n| Journal | Kiri (My Life HQ) | Refleksi harian/malam, natural flow setelah cek habit & tasks |\n| Projects | Tengah | Fokus kerja terpisah dari rutinitas pribadi |\n| Resources/Reading | Kanan | Referensi & belajar, bukan tindakan harian |\n\n---\n\n## Tips Estetika Thomas Frank Style (Updated 2024-2026)\n\n1. **Cover image**: Gunakan gambar hitam solid, gradient gelap, atau foto alam minimalis. Tool: Unsplash di Notion, atau upload custom.\n2. **Ikon konsisten**: Pakai emoji satu keluarga (misal semua outline atau semua solid).\n3. **Divider + spacing**: Tambahkan divider dan baris kosong antar section agar tidak sesak.\n4. **Warna accent**: Teal (#0D9488) atau ungu (#7C3AED) untuk callout dan highlight.\n5. **Dark mode**: Aktifkan dark mode Notion untuk tampilan premium.\n6. **Callout blocks**: Gunakan warna berbeda untuk membedakan area (merah untuk urgent, hijau untuk selesai, biru untuk info).\n7. **Database views**: Gunakan Gallery View dengan card preview untuk visual yang menarik.\n8. **Font size judul**: Pakai H1 untuk judul section di setiap kolom agar terlihat terstruktur.\n\n---\n\n## Checklist Setup V2\n\n- [ ] Duplikat Ultimate Brain V1 sebagai backup\n- [ ] Buat halaman baru \"\ud83e\udde0 Ultimate Brain V2\"\n- [ ] Setup 3 kolom di halaman utama\n- [ ] Tambahkan tombol Quick Action di atas\n- [ ] Buat database Habit Tracker dengan properti di atas\n- [ ] Buat database Journal dengan template entri\n- [ ] Letakkan keduanya di Kolom Kiri\n- [ ] Atur cover + ikon + dark mode\n- [ ] Test navigasi dari dashboard ke setiap halaman\n- [ ] Share ke diri sendiri atau tim jika diperlukan\n\n---\n\n*Dibuat untuk: Ultimate Brain V2 Redesign \u2014 Thomas Frank Style (Updated)*  \n*Tanggal: 2026-06-07*\n"}], "grading": null}], "previous_feedback": {}, "previous_outputs": {}};
+
+    // ---- State ----
+    let feedbackMap = {};  // run_id -> feedback text
+    let currentIndex = 0;
+    let visitedRuns = new Set();
+
+    // ---- Init ----
+    async function init() {
+      // Load saved feedback from server — but only if this isn't a fresh
+      // iteration (indicated by previous_feedback being present). When
+      // previous feedback exists, the feedback.json on disk is stale from
+      // the prior iteration and should not pre-fill the textareas.
+      const hasPrevious = Object.keys(EMBEDDED_DATA.previous_feedback || {}).length > 0
+        || Object.keys(EMBEDDED_DATA.previous_outputs || {}).length > 0;
+      if (!hasPrevious) {
+        try {
+          const resp = await fetch("/api/feedback");
+          const data = await resp.json();
+          if (data.reviews) {
+            for (const r of data.reviews) feedbackMap[r.run_id] = r.feedback;
+          }
+        } catch { /* first run, no feedback yet */ }
+      }
+
+      document.getElementById("skill-name").textContent = EMBEDDED_DATA.skill_name;
+      showRun(0);
+
+      // Wire up feedback auto-save
+      const textarea = document.getElementById("feedback");
+      let saveTimeout = null;
+      textarea.addEventListener("input", () => {
+        clearTimeout(saveTimeout);
+        document.getElementById("feedback-status").textContent = "";
+        saveTimeout = setTimeout(() => saveCurrentFeedback(), 800);
+      });
+    }
+
+    // ---- Navigation ----
+    function navigate(delta) {
+      const newIndex = currentIndex + delta;
+      if (newIndex >= 0 && newIndex < EMBEDDED_DATA.runs.length) {
+        saveCurrentFeedback();
+        showRun(newIndex);
+      }
+    }
+
+    function updateNavButtons() {
+      document.getElementById("prev-btn").disabled = currentIndex === 0;
+      document.getElementById("next-btn").disabled =
+        currentIndex === EMBEDDED_DATA.runs.length - 1;
+    }
+
+    // ---- Show a run ----
+    function showRun(index) {
+      currentIndex = index;
+      const run = EMBEDDED_DATA.runs[index];
+
+      // Progress
+      document.getElementById("progress").textContent =
+        `${index + 1} of ${EMBEDDED_DATA.runs.length}`;
+
+      // Prompt
+      document.getElementById("prompt-text").textContent = run.prompt;
+
+      // Config badge
+      const badge = document.getElementById("config-badge");
+      const configMatch = run.id.match(/(with_skill|without_skill|new_skill|old_skill)/);
+      if (configMatch) {
+        const config = configMatch[1];
+        const isBaseline = config === "without_skill" || config === "old_skill";
+        badge.textContent = config.replace(/_/g, " ");
+        badge.className = "config-badge " + (isBaseline ? "config-baseline" : "config-primary");
+        badge.style.display = "inline-block";
+      } else {
+        badge.style.display = "none";
+      }
+
+      // Outputs
+      renderOutputs(run);
+
+      // Previous outputs
+      renderPrevOutputs(run);
+
+      // Grades
+      renderGrades(run);
+
+      // Previous feedback
+      const prevFb = (EMBEDDED_DATA.previous_feedback || {})[run.id];
+      const prevEl = document.getElementById("prev-feedback");
+      if (prevFb) {
+        document.getElementById("prev-feedback-text").textContent = prevFb;
+        prevEl.style.display = "block";
+      } else {
+        prevEl.style.display = "none";
+      }
+
+      // Feedback
+      document.getElementById("feedback").value = feedbackMap[run.id] || "";
+      document.getElementById("feedback-status").textContent = "";
+
+      updateNavButtons();
+
+      // Track visited runs and promote done button when all visited
+      visitedRuns.add(index);
+      const doneBtn = document.getElementById("done-btn");
+      if (visitedRuns.size >= EMBEDDED_DATA.runs.length) {
+        doneBtn.classList.add("ready");
+      }
+
+      // Scroll main content to top
+      document.querySelector(".main").scrollTop = 0;
+    }
+
+    // ---- Render outputs ----
+    function renderOutputs(run) {
+      const container = document.getElementById("outputs-body");
+      container.innerHTML = "";
+
+      const outputs = run.outputs || [];
+      if (outputs.length === 0) {
+        container.innerHTML = '<div class="empty-state">No output files</div>';
+        return;
+      }
+
+      for (const file of outputs) {
+        const fileDiv = document.createElement("div");
+        fileDiv.className = "output-file";
+
+        // Always show file header with download link
+        const header = document.createElement("div");
+        header.className = "output-file-header";
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = file.name;
+        header.appendChild(nameSpan);
+        const dlBtn = document.createElement("a");
+        dlBtn.className = "dl-btn";
+        dlBtn.textContent = "Download";
+        dlBtn.download = file.name;
+        dlBtn.href = getDownloadUri(file);
+        header.appendChild(dlBtn);
+        fileDiv.appendChild(header);
+
+        const content = document.createElement("div");
+        content.className = "output-file-content";
+
+        if (file.type === "text") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          content.appendChild(pre);
+        } else if (file.type === "image") {
+          const img = document.createElement("img");
+          img.src = file.data_uri;
+          img.alt = file.name;
+          content.appendChild(img);
+        } else if (file.type === "pdf") {
+          const iframe = document.createElement("iframe");
+          iframe.src = file.data_uri;
+          content.appendChild(iframe);
+        } else if (file.type === "xlsx") {
+          renderXlsx(content, file.data_b64);
+        } else if (file.type === "binary") {
+          const a = document.createElement("a");
+          a.className = "download-link";
+          a.href = file.data_uri;
+          a.download = file.name;
+          a.textContent = "Download " + file.name;
+          content.appendChild(a);
+        } else if (file.type === "error") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          pre.style.color = "var(--red)";
+          content.appendChild(pre);
+        }
+
+        fileDiv.appendChild(content);
+        container.appendChild(fileDiv);
+      }
+    }
+
+    // ---- XLSX rendering via SheetJS ----
+    function renderXlsx(container, b64Data) {
+      try {
+        const raw = Uint8Array.from(atob(b64Data), c => c.charCodeAt(0));
+        const wb = XLSX.read(raw, { type: "array" });
+
+        for (let i = 0; i < wb.SheetNames.length; i++) {
+          const sheetName = wb.SheetNames[i];
+          const ws = wb.Sheets[sheetName];
+
+          if (wb.SheetNames.length > 1) {
+            const sheetLabel = document.createElement("div");
+            sheetLabel.style.cssText =
+              "font-weight:600; font-size:0.8rem; color:#b0aea5; margin-top:0.5rem; margin-bottom:0.25rem;";
+            sheetLabel.textContent = "Sheet: " + sheetName;
+            container.appendChild(sheetLabel);
+          }
+
+          const htmlStr = XLSX.utils.sheet_to_html(ws, { editable: false });
+          const wrapper = document.createElement("div");
+          wrapper.innerHTML = htmlStr;
+          container.appendChild(wrapper);
+        }
+      } catch (err) {
+        container.textContent = "Error rendering spreadsheet: " + err.message;
+      }
+    }
+
+    // ---- Grades ----
+    function renderGrades(run) {
+      const section = document.getElementById("grades-section");
+      const content = document.getElementById("grades-content");
+
+      if (!run.grading) {
+        section.style.display = "none";
+        return;
+      }
+
+      const grading = run.grading;
+      section.style.display = "block";
+      // Reset to collapsed
+      content.classList.remove("open");
+      document.getElementById("grades-arrow").classList.remove("open");
+
+      const summary = grading.summary || {};
+      const expectations = grading.expectations || [];
+
+      let html = '<div style="padding: 1rem;">';
+
+      // Summary line
+      const passRate = summary.pass_rate != null
+        ? Math.round(summary.pass_rate * 100) + "%"
+        : "?";
+      const badgeClass = summary.pass_rate >= 0.8 ? "grade-pass" : summary.pass_rate >= 0.5 ? "" : "grade-fail";
+      html += '<div class="grades-summary">';
+      html += '<span class="grade-badge ' + badgeClass + '">' + passRate + '</span>';
+      html += '<span>' + (summary.passed || 0) + ' passed, ' + (summary.failed || 0) + ' failed of ' + (summary.total || 0) + '</span>';
+      html += '</div>';
+
+      // Assertions list
+      html += '<ul class="assertion-list">';
+      for (const exp of expectations) {
+        const statusClass = exp.passed ? "pass" : "fail";
+        const statusIcon = exp.passed ? "\u2713" : "\u2717";
+        html += '<li class="assertion-item">';
+        html += '<span class="assertion-status ' + statusClass + '">' + statusIcon + '</span>';
+        html += '<span>' + escapeHtml(exp.text) + '</span>';
+        if (exp.evidence) {
+          html += '<div class="assertion-evidence">' + escapeHtml(exp.evidence) + '</div>';
+        }
+        html += '</li>';
+      }
+      html += '</ul>';
+
+      html += '</div>';
+      content.innerHTML = html;
+    }
+
+    function toggleGrades() {
+      const content = document.getElementById("grades-content");
+      const arrow = document.getElementById("grades-arrow");
+      content.classList.toggle("open");
+      arrow.classList.toggle("open");
+    }
+
+    // ---- Previous outputs (collapsible) ----
+    function renderPrevOutputs(run) {
+      const section = document.getElementById("prev-outputs-section");
+      const content = document.getElementById("prev-outputs-content");
+      const prevOutputs = (EMBEDDED_DATA.previous_outputs || {})[run.id];
+
+      if (!prevOutputs || prevOutputs.length === 0) {
+        section.style.display = "none";
+        return;
+      }
+
+      section.style.display = "block";
+      // Reset to collapsed
+      content.classList.remove("open");
+      document.getElementById("prev-outputs-arrow").classList.remove("open");
+
+      // Render the files into the content area
+      content.innerHTML = "";
+      const wrapper = document.createElement("div");
+      wrapper.style.padding = "1rem";
+
+      for (const file of prevOutputs) {
+        const fileDiv = document.createElement("div");
+        fileDiv.className = "output-file";
+
+        const header = document.createElement("div");
+        header.className = "output-file-header";
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = file.name;
+        header.appendChild(nameSpan);
+        const dlBtn = document.createElement("a");
+        dlBtn.className = "dl-btn";
+        dlBtn.textContent = "Download";
+        dlBtn.download = file.name;
+        dlBtn.href = getDownloadUri(file);
+        header.appendChild(dlBtn);
+        fileDiv.appendChild(header);
+
+        const fc = document.createElement("div");
+        fc.className = "output-file-content";
+
+        if (file.type === "text") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          fc.appendChild(pre);
+        } else if (file.type === "image") {
+          const img = document.createElement("img");
+          img.src = file.data_uri;
+          img.alt = file.name;
+          fc.appendChild(img);
+        } else if (file.type === "pdf") {
+          const iframe = document.createElement("iframe");
+          iframe.src = file.data_uri;
+          fc.appendChild(iframe);
+        } else if (file.type === "xlsx") {
+          renderXlsx(fc, file.data_b64);
+        } else if (file.type === "binary") {
+          const a = document.createElement("a");
+          a.className = "download-link";
+          a.href = file.data_uri;
+          a.download = file.name;
+          a.textContent = "Download " + file.name;
+          fc.appendChild(a);
+        }
+
+        fileDiv.appendChild(fc);
+        wrapper.appendChild(fileDiv);
+      }
+
+      content.appendChild(wrapper);
+    }
+
+    function togglePrevOutputs() {
+      const content = document.getElementById("prev-outputs-content");
+      const arrow = document.getElementById("prev-outputs-arrow");
+      content.classList.toggle("open");
+      arrow.classList.toggle("open");
+    }
+
+    // ---- Feedback (saved to server -> feedback.json) ----
+    function saveCurrentFeedback() {
+      const run = EMBEDDED_DATA.runs[currentIndex];
+      const text = document.getElementById("feedback").value;
+
+      if (text.trim() === "") {
+        delete feedbackMap[run.id];
+      } else {
+        feedbackMap[run.id] = text;
+      }
+
+      // Build reviews array from map
+      const reviews = [];
+      for (const [run_id, feedback] of Object.entries(feedbackMap)) {
+        if (feedback.trim()) {
+          reviews.push({ run_id, feedback, timestamp: new Date().toISOString() });
+        }
+      }
+
+      fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ reviews, status: "in_progress" }),
+      }).then(() => {
+        document.getElementById("feedback-status").textContent = "Saved";
+      }).catch(() => {
+        // Static mode or server unavailable — no-op on auto-save,
+        // feedback will be downloaded on final submit
+        document.getElementById("feedback-status").textContent = "Will download on submit";
+      });
+    }
+
+    // ---- Done ----
+    function showDoneDialog() {
+      // Save current textarea to feedbackMap (but don't POST yet)
+      const run = EMBEDDED_DATA.runs[currentIndex];
+      const text = document.getElementById("feedback").value;
+      if (text.trim() === "") {
+        delete feedbackMap[run.id];
+      } else {
+        feedbackMap[run.id] = text;
+      }
+
+      // POST once with status: complete — include ALL runs so the model
+      // can distinguish "no feedback" (looks good) from "not reviewed"
+      const reviews = [];
+      const ts = new Date().toISOString();
+      for (const r of EMBEDDED_DATA.runs) {
+        reviews.push({ run_id: r.id, feedback: feedbackMap[r.id] || "", timestamp: ts });
+      }
+      const payload = JSON.stringify({ reviews, status: "complete" }, null, 2);
+      fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: payload,
+      }).then(() => {
+        document.getElementById("done-overlay").classList.add("visible");
+      }).catch(() => {
+        // Server not available (static mode) — download as file
+        const blob = new Blob([payload], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "feedback.json";
+        a.click();
+        URL.revokeObjectURL(url);
+        document.getElementById("done-overlay").classList.add("visible");
+      });
+    }
+
+    function closeDoneDialog() {
+      // Reset status back to in_progress
+      saveCurrentFeedback();
+      document.getElementById("done-overlay").classList.remove("visible");
+    }
+
+    // ---- Toast ----
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("visible");
+      setTimeout(() => toast.classList.remove("visible"), 2000);
+    }
+
+    // ---- Keyboard nav ----
+    document.addEventListener("keydown", (e) => {
+      // Don't capture when typing in textarea
+      if (e.target.tagName === "TEXTAREA") return;
+
+      if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        e.preventDefault();
+        navigate(-1);
+      } else if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+        e.preventDefault();
+        navigate(1);
+      }
+    });
+
+    // ---- Util ----
+    function getDownloadUri(file) {
+      if (file.data_uri) return file.data_uri;
+      if (file.data_b64) return "data:application/octet-stream;base64," + file.data_b64;
+      if (file.type === "text") return "data:text/plain;charset=utf-8," + encodeURIComponent(file.content);
+      return "#";
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement("div");
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // ---- View switching ----
+    function switchView(view) {
+      document.querySelectorAll(".view-tab").forEach(t => t.classList.remove("active"));
+      document.querySelectorAll(".view-panel").forEach(p => p.classList.remove("active"));
+      document.querySelector(`[onclick="switchView('${view}')"]`).classList.add("active");
+      document.getElementById("panel-" + view).classList.add("active");
+    }
+
+    // ---- Benchmark rendering ----
+    function renderBenchmark() {
+      const data = EMBEDDED_DATA.benchmark;
+      if (!data) return;
+
+      // Show the tabs
+      document.getElementById("view-tabs").style.display = "flex";
+
+      const container = document.getElementById("benchmark-content");
+      const summary = data.run_summary || {};
+      const metadata = data.metadata || {};
+      const notes = data.notes || [];
+
+      let html = "";
+
+      // Header
+      html += "<h2 style='font-family: Poppins, sans-serif; margin-bottom: 0.5rem;'>Benchmark Results</h2>";
+      html += "<p style='color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;'>";
+      if (metadata.skill_name) html += "<strong>" + escapeHtml(metadata.skill_name) + "</strong> &mdash; ";
+      if (metadata.timestamp) html += metadata.timestamp + " &mdash; ";
+      if (metadata.evals_run) html += "Evals: " + metadata.evals_run.join(", ") + " &mdash; ";
+      html += (metadata.runs_per_configuration || "?") + " runs per configuration";
+      html += "</p>";
+
+      // Summary table
+      html += '<table class="benchmark-table">';
+
+      function fmtStat(stat, pct) {
+        if (!stat) return "—";
+        const suffix = pct ? "%" : "";
+        const m = pct ? (stat.mean * 100).toFixed(0) : stat.mean.toFixed(1);
+        const s = pct ? (stat.stddev * 100).toFixed(0) : stat.stddev.toFixed(1);
+        return m + suffix + " ± " + s + suffix;
+      }
+
+      function deltaClass(val) {
+        if (!val) return "";
+        const n = parseFloat(val);
+        if (n > 0) return "benchmark-delta-positive";
+        if (n < 0) return "benchmark-delta-negative";
+        return "";
+      }
+
+      // Discover config names dynamically (everything except "delta")
+      const configs = Object.keys(summary).filter(k => k !== "delta");
+      const configA = configs[0] || "config_a";
+      const configB = configs[1] || "config_b";
+      const labelA = configA.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      const labelB = configB.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      const a = summary[configA] || {};
+      const b = summary[configB] || {};
+      const delta = summary.delta || {};
+
+      html += "<thead><tr><th>Metric</th><th>" + escapeHtml(labelA) + "</th><th>" + escapeHtml(labelB) + "</th><th>Delta</th></tr></thead>";
+      html += "<tbody>";
+
+      html += "<tr><td><strong>Pass Rate</strong></td>";
+      html += "<td>" + fmtStat(a.pass_rate, true) + "</td>";
+      html += "<td>" + fmtStat(b.pass_rate, true) + "</td>";
+      html += '<td class="' + deltaClass(delta.pass_rate) + '">' + (delta.pass_rate || "—") + "</td></tr>";
+
+      // Time (only show row if data exists)
+      if (a.time_seconds || b.time_seconds) {
+        html += "<tr><td><strong>Time (s)</strong></td>";
+        html += "<td>" + fmtStat(a.time_seconds, false) + "</td>";
+        html += "<td>" + fmtStat(b.time_seconds, false) + "</td>";
+        html += '<td class="' + deltaClass(delta.time_seconds) + '">' + (delta.time_seconds ? delta.time_seconds + "s" : "—") + "</td></tr>";
+      }
+
+      // Tokens (only show row if data exists)
+      if (a.tokens || b.tokens) {
+        html += "<tr><td><strong>Tokens</strong></td>";
+        html += "<td>" + fmtStat(a.tokens, false) + "</td>";
+        html += "<td>" + fmtStat(b.tokens, false) + "</td>";
+        html += '<td class="' + deltaClass(delta.tokens) + '">' + (delta.tokens || "—") + "</td></tr>";
+      }
+
+      html += "</tbody></table>";
+
+      // Per-eval breakdown (if runs data available)
+      const runs = data.runs || [];
+      if (runs.length > 0) {
+        const evalIds = [...new Set(runs.map(r => r.eval_id))].sort((a, b) => a - b);
+
+        html += "<h3 style='font-family: Poppins, sans-serif; margin-bottom: 0.75rem;'>Per-Eval Breakdown</h3>";
+
+        const hasTime = runs.some(r => r.result && r.result.time_seconds != null);
+        const hasErrors = runs.some(r => r.result && r.result.errors > 0);
+
+        for (const evalId of evalIds) {
+          const evalRuns = runs.filter(r => r.eval_id === evalId);
+          const evalName = evalRuns[0] && evalRuns[0].eval_name ? evalRuns[0].eval_name : "Eval " + evalId;
+
+          html += "<h4 style='font-family: Poppins, sans-serif; margin: 1rem 0 0.5rem; color: var(--text);'>" + escapeHtml(evalName) + "</h4>";
+          html += '<table class="benchmark-table">';
+          html += "<thead><tr><th>Config</th><th>Run</th><th>Pass Rate</th>";
+          if (hasTime) html += "<th>Time (s)</th>";
+          if (hasErrors) html += "<th>Crashes During Execution</th>";
+          html += "</tr></thead>";
+          html += "<tbody>";
+
+          // Group by config and render with average rows
+          const configGroups = [...new Set(evalRuns.map(r => r.configuration))];
+          for (let ci = 0; ci < configGroups.length; ci++) {
+            const config = configGroups[ci];
+            const configRuns = evalRuns.filter(r => r.configuration === config);
+            if (configRuns.length === 0) continue;
+
+            const rowClass = ci === 0 ? "benchmark-row-with" : "benchmark-row-without";
+            const configLabel = config.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+
+            for (const run of configRuns) {
+              const r = run.result || {};
+              const prClass = r.pass_rate >= 0.8 ? "benchmark-delta-positive" : r.pass_rate < 0.5 ? "benchmark-delta-negative" : "";
+              html += '<tr class="' + rowClass + '">';
+              html += "<td>" + configLabel + "</td>";
+              html += "<td>" + run.run_number + "</td>";
+              html += '<td class="' + prClass + '">' + ((r.pass_rate || 0) * 100).toFixed(0) + "% (" + (r.passed || 0) + "/" + (r.total || 0) + ")</td>";
+              if (hasTime) html += "<td>" + (r.time_seconds != null ? r.time_seconds.toFixed(1) : "—") + "</td>";
+              if (hasErrors) html += "<td>" + (r.errors || 0) + "</td>";
+              html += "</tr>";
+            }
+
+            // Average row
+            const rates = configRuns.map(r => (r.result || {}).pass_rate || 0);
+            const avgRate = rates.reduce((a, b) => a + b, 0) / rates.length;
+            const avgPrClass = avgRate >= 0.8 ? "benchmark-delta-positive" : avgRate < 0.5 ? "benchmark-delta-negative" : "";
+            html += '<tr class="benchmark-row-avg ' + rowClass + '">';
+            html += "<td>" + configLabel + "</td>";
+            html += "<td>Avg</td>";
+            html += '<td class="' + avgPrClass + '">' + (avgRate * 100).toFixed(0) + "%</td>";
+            if (hasTime) {
+              const times = configRuns.map(r => (r.result || {}).time_seconds).filter(t => t != null);
+              html += "<td>" + (times.length ? (times.reduce((a, b) => a + b, 0) / times.length).toFixed(1) : "—") + "</td>";
+            }
+            if (hasErrors) html += "<td></td>";
+            html += "</tr>";
+          }
+          html += "</tbody></table>";
+
+          // Per-assertion detail for this eval
+          const runsWithExpectations = {};
+          for (const config of configGroups) {
+            runsWithExpectations[config] = evalRuns.filter(r => r.configuration === config && r.expectations && r.expectations.length > 0);
+          }
+          const hasAnyExpectations = Object.values(runsWithExpectations).some(runs => runs.length > 0);
+          if (hasAnyExpectations) {
+            // Collect all unique assertion texts across all configs
+            const allAssertions = [];
+            const seen = new Set();
+            for (const config of configGroups) {
+              for (const run of runsWithExpectations[config]) {
+                for (const exp of (run.expectations || [])) {
+                  if (!seen.has(exp.text)) {
+                    seen.add(exp.text);
+                    allAssertions.push(exp.text);
+                  }
+                }
+              }
+            }
+
+            html += '<table class="benchmark-table" style="margin-top: 0.5rem;">';
+            html += "<thead><tr><th>Assertion</th>";
+            for (const config of configGroups) {
+              const label = config.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+              html += "<th>" + escapeHtml(label) + "</th>";
+            }
+            html += "</tr></thead><tbody>";
+
+            for (const assertionText of allAssertions) {
+              html += "<tr><td>" + escapeHtml(assertionText) + "</td>";
+
+              for (const config of configGroups) {
+                html += "<td>";
+                for (const run of runsWithExpectations[config]) {
+                  const exp = (run.expectations || []).find(e => e.text === assertionText);
+                  if (exp) {
+                    const cls = exp.passed ? "benchmark-delta-positive" : "benchmark-delta-negative";
+                    const icon = exp.passed ? "\u2713" : "\u2717";
+                    html += '<span class="' + cls + '" title="Run ' + run.run_number + ': ' + escapeHtml(exp.evidence || "") + '">' + icon + "</span> ";
+                  } else {
+                    html += "— ";
+                  }
+                }
+                html += "</td>";
+              }
+              html += "</tr>";
+            }
+            html += "</tbody></table>";
+          }
+        }
+      }
+
+      // Notes
+      if (notes.length > 0) {
+        html += '<div class="benchmark-notes">';
+        html += "<h3>Analysis Notes</h3>";
+        html += "<ul>";
+        for (const note of notes) {
+          html += "<li>" + escapeHtml(note) + "</li>";
+        }
+        html += "</ul></div>";
+      }
+
+      container.innerHTML = html;
+    }
+
+    // ---- Start ----
+    init();
+    renderBenchmark();
+  </script>
+</body>
+</html>
