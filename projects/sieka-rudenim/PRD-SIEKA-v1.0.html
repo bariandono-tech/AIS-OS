@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRD — SIEKA Rudenim Pontianak</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0f1117;
+    --paper: #f5f0e8;
+    --accent: #c0392b;
+    --accent2: #1a5276;
+    --rule: #2c3e50;
+    --muted: #7f8c8d;
+    --highlight: #f9e4b7;
+    --mono: 'IBM Plex Mono', monospace;
+    --sans: 'IBM Plex Sans', sans-serif;
+    --display: 'Playfair Display', serif;
+    --col-width: 860px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  /* === COVER === */
+  .cover {
+    background: var(--ink);
+    color: var(--paper);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 420px; height: 420px;
+    background: radial-gradient(circle at 80% 20%, rgba(192,57,43,0.25) 0%, transparent 65%);
+    pointer-events: none;
+  }
+
+  .cover-eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(192,57,43,0.4);
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cover-badge {
+    background: var(--accent);
+    color: white;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    padding: 3px 10px;
+    border-radius: 2px;
+  }
+
+  .cover-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0 40px;
+  }
+
+  .cover-product-id {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.15em;
+    margin-bottom: 24px;
+  }
+
+  .cover-title {
+    font-family: var(--display);
+    font-size: clamp(52px, 7vw, 88px);
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+
+  .cover-title span {
+    color: var(--accent);
+    display: block;
+  }
+
+  .cover-subtitle {
+    font-family: var(--display);
+    font-size: clamp(16px, 2.5vw, 22px);
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(245,240,232,0.65);
+    margin-top: 20px;
+    max-width: 580px;
+    line-height: 1.5;
+  }
+
+  .cover-meta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    border-top: 1px solid rgba(245,240,232,0.15);
+    padding-top: 40px;
+  }
+
+  .meta-item label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .meta-item value {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--paper);
+  }
+
+  /* === LAYOUT === */
+  .page {
+    max-width: var(--col-width);
+    margin: 0 auto;
+    padding: 80px 40px;
+  }
+
+  /* === CHAPTER HEADERS === */
+  .chapter {
+    margin-bottom: 64px;
+    page-break-before: auto;
+  }
+
+  .chapter-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.25em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .chapter-title {
+    font-family: var(--display);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--rule);
+    border-bottom: 3px solid var(--ink);
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+  }
+
+  /* === SECTION HEADERS === */
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+    border-left: 4px solid var(--accent);
+    padding-left: 12px;
+    margin-bottom: 16px;
+  }
+
+  .sub-title {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent2);
+    margin: 20px 0 8px;
+  }
+
+  /* === TEXT === */
+  p {
+    margin-bottom: 12px;
+    color: #2c3e50;
+    font-size: 13.5px;
+  }
+
+  /* === CALLOUT BOXES === */
+  .callout {
+    border-left: 4px solid var(--accent);
+    background: var(--highlight);
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .callout.blue {
+    border-color: var(--accent2);
+    background: #d6eaf8;
+  }
+
+  .callout.dark {
+    border-color: var(--ink);
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .callout.dark p { color: rgba(245,240,232,0.85); }
+
+  .callout strong {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  /* === TABLES === */
+  .table-wrapper {
+    overflow-x: auto;
+    margin: 20px 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+  }
+
+  thead tr {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  thead th {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  tbody tr:nth-child(even) { background: rgba(0,0,0,0.03); }
+  tbody tr:hover { background: var(--highlight); }
+
+  tbody td {
+    padding: 9px 14px;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    vertical-align: top;
+    line-height: 1.5;
+  }
+
+  /* === GRID CARDS === */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+  }
+
+  .card-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 20px 0;
+  }
+
+  .card {
+    border: 1.5px solid rgba(0,0,0,0.12);
+    border-radius: 4px;
+    padding: 18px 20px;
+    position: relative;
+  }
+
+  .card-icon {
+    font-size: 22px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .card h4 {
+    font-family: var(--sans);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  .card p {
+    font-size: 12.5px;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .card .card-num {
+    position: absolute;
+    top: 16px; right: 16px;
+    font-family: var(--mono);
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.06);
+  }
+
+  /* === FEATURE LIST === */
+  .feature-list {
+    list-style: none;
+    margin: 16px 0;
+  }
+
+  .feature-list li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    font-size: 13px;
+    align-items: flex-start;
+  }
+
+  .feature-list li:last-child { border-bottom: none; }
+
+  .feat-icon {
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .feat-body strong {
+    display: block;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 2px;
+  }
+
+  .feat-body span {
+    color: var(--muted);
+    font-size: 12px;
+  }
+
+  /* === PRIORITY BADGE === */
+  .badge {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-weight: 600;
+  }
+
+  .badge-must { background: #fadbd8; color: #922b21; }
+  .badge-should { background: #d5e8d4; color: #1e8449; }
+  .badge-could { background: #d6eaf8; color: #1a5276; }
+  .badge-wont { background: #f2f3f4; color: var(--muted); }
+
+  /* === TIMELINE === */
+  .timeline {
+    margin: 20px 0;
+    position: relative;
+    padding-left: 28px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px; top: 0; bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent), var(--accent2));
+  }
+
+  .tl-item {
+    position: relative;
+    margin-bottom: 28px;
+  }
+
+  .tl-item::before {
+    content: '';
+    position: absolute;
+    left: -24px; top: 6px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--paper);
+    box-shadow: 0 0 0 2px var(--accent);
+  }
+
+  .tl-sprint {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .tl-title {
+    font-weight: 600;
+    font-size: 13.5px;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  .tl-tasks {
+    list-style: none;
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+
+  .tl-tasks li::before { content: '→ '; color: var(--accent); }
+
+  /* === ARCH DIAGRAM === */
+  .arch {
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 6px;
+    padding: 32px;
+    margin: 20px 0;
+    font-family: var(--mono);
+    font-size: 12px;
+    line-height: 2;
+    white-space: pre;
+  }
+
+  .arch .layer { color: #f39c12; }
+  .arch .comp { color: #58d68d; }
+  .arch .arrow { color: var(--accent); }
+  .arch .note { color: #85c1e9; }
+
+  /* === DIVIDER === */
+  hr.thick {
+    border: none;
+    border-top: 3px solid var(--ink);
+    margin: 60px 0;
+  }
+
+  hr.thin {
+    border: none;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin: 32px 0;
+  }
+
+  /* === TOC === */
+  .toc-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6px 0;
+    border-bottom: 1px dotted rgba(0,0,0,0.2);
+    font-size: 13px;
+  }
+
+  .toc-item a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .toc-item a:hover { color: var(--accent); }
+
+  .toc-item .toc-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .toc-section {
+    font-weight: 600;
+    margin-top: 12px;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* === STATUS TABLE === */
+  .status-dot {
+    display: inline-block;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+  .dot-green { background: #27ae60; }
+  .dot-yellow { background: #f39c12; }
+  .dot-red { background: var(--accent); }
+  .dot-blue { background: var(--accent2); }
+
+  /* === FORMULA BOX === */
+  .formula {
+    background: #f8f9fa;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+    padding: 14px 18px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    margin: 12px 0;
+    color: var(--accent2);
+  }
+
+  /* === PRINT === */
+  @media print {
+    .cover { min-height: auto; }
+    .page { padding: 40px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ COVER -->
+<div class="cover">
+  <div class="cover-eyebrow">
+    <span>Rudenim Pontianak · Pengelolaan Keuangan Internal</span>
+    <span class="cover-badge">INTERNAL USE ONLY</span>
+  </div>
+
+  <div class="cover-main">
+    <div class="cover-product-id">PRD-SIEKA-RUDPTK-2025-001</div>
+    <h1 class="cover-title">
+      SIEKA
+      <span>Rudenim</span>
+    </h1>
+    <p class="cover-subtitle">
+      Sistem Informasi Evaluasi Kinerja Anggaran — Platform Analitik Berbasis AI untuk Monitoring Realisasi, IKPA, dan Evaluasi Triwulanan Satuan Kerja Detensi Imigrasi
+    </p>
+  </div>
+
+  <div class="cover-meta">
+    <div class="meta-item">
+      <label>Versi Dokumen</label>
+      <value>1.0 — Draft</value>
+    </div>
+    <div class="meta-item">
+      <label>Satker</label>
+      <value>Rudenim Pontianak<br><small style="color:var(--muted);font-size:10px;">Kode 692965</small></value>
+    </div>
+    <div class="meta-item">
+      <label>Pemilik Produk</label>
+      <value>Staf Pengelola Keuangan</value>
+    </div>
+    <div class="meta-item">
+      <label>Target Go-Live</label>
+      <value>Q1 2026</value>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════ BODY -->
+<div class="page">
+
+  <!-- TOC -->
+  <div class="chapter" id="toc">
+    <div class="chapter-num">Navigasi Dokumen</div>
+    <h2 class="chapter-title">Daftar Isi</h2>
+
+    <div class="toc-section">Bagian I — Konteks & Masalah</div>
+    <div class="toc-item"><a href="#s1">1. Latar Belakang & Konteks Organisasi</a><span class="toc-num">§ 1</span></div>
+    <div class="toc-item"><a href="#s2">2. Pernyataan Masalah</a><span class="toc-num">§ 2</span></div>
+    <div class="toc-item"><a href="#s3">3. Tujuan Produk</a><span class="toc-num">§ 3</span></div>
+
+    <div class="toc-section">Bagian II — Produk</div>
+    <div class="toc-item"><a href="#s4">4. Gambaran Produk & Arsitektur</a><span class="toc-num">§ 4</span></div>
+    <div class="toc-item"><a href="#s5">5. Pengguna & Persona</a><span class="toc-num">§ 5</span></div>
+    <div class="toc-item"><a href="#s6">6. Fitur & Persyaratan Fungsional</a><span class="toc-num">§ 6</span></div>
+    <div class="toc-item"><a href="#s7">7. Persyaratan Non-Fungsional</a><span class="toc-num">§ 7</span></div>
+    <div class="toc-item"><a href="#s8">8. Skema Data & Struktur Google Sheets</a><span class="toc-num">§ 8</span></div>
+    <div class="toc-item"><a href="#s9">9. Sistem Trigger & Aturan Analisis AI</a><span class="toc-num">§ 9</span></div>
+
+    <div class="toc-section">Bagian III — Implementasi</div>
+    <div class="toc-item"><a href="#s10">10. Roadmap & Timeline</a><span class="toc-num">§ 10</span></div>
+    <div class="toc-item"><a href="#s11">11. Estimasi Biaya & Sumber Daya</a><span class="toc-num">§ 11</span></div>
+    <div class="toc-item"><a href="#s12">12. Risiko & Mitigasi</a><span class="toc-num">§ 12</span></div>
+    <div class="toc-item"><a href="#s13">13. Kriteria Sukses (KPI Produk)</a><span class="toc-num">§ 13</span></div>
+    <div class="toc-item"><a href="#s14">14. Di Luar Cakupan (Out of Scope)</a><span class="toc-num">§ 14</span></div>
+    <div class="toc-item"><a href="#s15">15. Glosarium</a><span class="toc-num">§ 15</span></div>
+  </div>
+
+  <hr class="thick">
+
+  <!-- ─── §1 LATAR BELAKANG ─── -->
+  <div class="chapter" id="s1">
+    <div class="chapter-num">Bagian I · Konteks & Masalah</div>
+    <h2 class="chapter-title">1. Latar Belakang & Konteks Organisasi</h2>
+
+    <div class="section">
+      <div class="section-title">1.1 Profil Satker</div>
+      <p>Rumah Detensi Imigrasi (Rudenim) Pontianak adalah Unit Pelaksana Teknis (UPT) di bawah Direktorat Jenderal Imigrasi, Kementerian Imigrasi dan Pemasyarakatan, berkedudukan di Jalan Adi Sucipto Km. 15, Kabupaten Kubu Raya, Kalimantan Barat. Satker ini mengelola DIPA dengan kode satker <strong>692965</strong> (TA 2025) dengan total pagu yang tumbuh 120,6% dalam dua tahun — dari Rp8,58 miliar (TA 2023) menjadi Rp18,92 miliar (TA 2025).</p>
+      <p>Karakteristik unik satker ini adalah dominasi Belanja Modal (64,1% dari pagu pada TA 2025) akibat proyek konstruksi skala besar, dikombinasikan dengan Belanja Barang yang bersifat semi-variabel karena tergantung pada jumlah orang asing yang didetensikan (deteni) — variabel yang sangat fluktuatif dan sulit diprediksi.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">1.2 Kondisi Saat Ini</div>
+      <p>Saat ini, pengelola keuangan Rudenim Pontianak telah memiliki dua instrumen digital internal:</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <span class="card-icon">📊</span>
+          <h4>Dashboard Realisasi HTML</h4>
+          <p>Visualisasi realisasi anggaran bulanan yang dibangun di atas Google Sheets, mencakup grafik tren dan tabel RPD vs realisasi.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">📈</span>
+          <h4>Dashboard IKPA Otomatis</h4>
+          <p>Dashboard IKPA yang terintegrasi dengan Google Sheets, menampilkan nilai IKPA per bulan dan indikator komponen secara otomatis.</p>
+        </div>
+      </div>
+
+      <p>Keduanya merupakan alat <em>deskriptif</em> — menampilkan apa yang sudah terjadi. Yang belum ada adalah sistem <em>analitik</em> yang mampu: (a) mendeteksi kondisi kritis secara otomatis, (b) menghasilkan narasi analisis penyebab dan rekomendasi, dan (c) menyusun laporan evaluasi triwulanan secara struktural.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">1.3 Konteks IKPA & Pola Deviasi Historis</div>
+      <p>Data empiris TA 2023–2025 menunjukkan pola deviasi yang berulang dengan empat tipologi:</p>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Pola Temporal</th>
+              <th>Bulan</th>
+              <th>IKPA Rata-rata</th>
+              <th>Dev. B52 Rata-rata</th>
+              <th>Dev. B53 Rata-rata</th>
+              <th>Risiko</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>P1 — Front-loading</strong></td>
+              <td>Jan–Feb</td>
+              <td>100,00</td>
+              <td>1,9%</td>
+              <td>1,1%</td>
+              <td><span class="badge badge-should">RENDAH</span></td>
+            </tr>
+            <tr>
+              <td><strong>P2a — Mid-year Procurement</strong></td>
+              <td>Mar, Jun</td>
+              <td>94,77</td>
+              <td>7,6%</td>
+              <td>39,5%</td>
+              <td><span class="badge badge-must">TINGGI</span></td>
+            </tr>
+            <tr>
+              <td><strong>P2b — Q3 Construction</strong></td>
+              <td>Jul–Sep</td>
+              <td>92,05</td>
+              <td>16,7%</td>
+              <td>25,2%</td>
+              <td><span class="badge badge-must">TINGGI</span></td>
+            </tr>
+            <tr>
+              <td><strong>P3 — Back-loading Year-end</strong></td>
+              <td>Okt–Nov</td>
+              <td>92,94</td>
+              <td>5,9%</td>
+              <td>21,3%</td>
+              <td><span class="badge badge-could">SEDANG</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>Temuan kunci: <strong>Maret adalah bulan paling rawan</strong> (2 dari 3 tahun dengan deviasi kritis); <strong>Belanja Modal (B53) adalah kontributor deviasi dominan</strong> dengan rata-rata 20–29% per bulan pada TA 2023–2024; dan <strong>Agustus 2024 adalah outlier terparah</strong> dengan deviasi nominal Rp1,997 miliar.</p>
+    </div>
+  </div>
+
+  <!-- ─── §2 PERNYATAAN MASALAH ─── -->
+  <div class="chapter" id="s2">
+    <div class="chapter-num">Bagian I · Konteks & Masalah</div>
+    <h2 class="chapter-title">2. Pernyataan Masalah</h2>
+
+    <div class="callout dark">
+      <strong>Problem Statement</strong>
+      <p>Pengelola keuangan Rudenim Pontianak memiliki data realisasi dan IKPA yang cukup, tetapi tidak memiliki sistem yang secara otomatis menganalisis kondisi kritis, mengidentifikasi penyebab berdasarkan pola historis, dan menghasilkan laporan evaluasi triwulanan yang siap digunakan untuk pengambilan keputusan — sehingga analisis masih dilakukan secara manual, memakan waktu, dan rentan terhadap kelalaian pemantauan.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">2.1 Pain Points Teridentifikasi</div>
+
+      <ul class="feature-list">
+        <li>
+          <span class="feat-icon">🔴</span>
+          <div class="feat-body">
+            <strong>Tidak ada deteksi dini kondisi kritis</strong>
+            <span>Ketika IKPA bulan Maret atau Agustus turun di bawah 90, tidak ada sistem yang segera memberi notifikasi dan konteks penyebabnya.</span>
+          </div>
+        </li>
+        <li>
+          <span class="feat-icon">🔴</span>
+          <div class="feat-body">
+            <strong>Analisis naratif dilakukan sepenuhnya manual</strong>
+            <span>Laporan evaluasi membutuhkan waktu berjam-jam untuk menyusun narasi penyebab deviasi, padahal polanya berulang setiap tahun.</span>
+          </div>
+        </li>
+        <li>
+          <span class="feat-icon">🟡</span>
+          <div class="feat-body">
+            <strong>Data kualitatif (kegiatan, kendala) tidak terhubung ke data kuantitatif</strong>
+            <span>Kendala pengadaan, keterlambatan dokumen pihak ketiga, atau pemblokiran anggaran tidak tercatat secara sistematis sebagai konteks deviasi.</span>
+          </div>
+        </li>
+        <li>
+          <span class="feat-icon">🟡</span>
+          <div class="feat-body">
+            <strong>Laporan triwulanan tidak terstandar</strong>
+            <span>Format dan kedalaman analisis berbeda setiap triwulan tergantung kapasitas waktu penyusun pada periode tersebut.</span>
+          </div>
+        </li>
+        <li>
+          <span class="feat-icon">🟢</span>
+          <div class="feat-body">
+            <strong>Pengetahuan pola historis tidak tersimpan sebagai referensi sistem</strong>
+            <span>Pengalaman tentang pola deviasi di Maret, Agustus, dll. hanya ada di kepala pengelola, bukan di sistem yang bisa dikonsultasi.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">2.2 Pernyataan Kebutuhan (HMW)</div>
+      <div class="callout blue">
+        <strong>How Might We…</strong>
+        <p>Bagaimana kita bisa membuat sistem yang <em>secara otomatis</em> menggabungkan data kuantitatif (realisasi, IKPA, deviasi) dengan data kualitatif (kegiatan, kendala, kebijakan), lalu menggunakan AI untuk menghasilkan analisis evaluasi yang akurat, terstandar, dan siap pakai — sehingga pengelola keuangan bisa fokus pada tindak lanjut, bukan pada penyusunan laporan?</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── §3 TUJUAN ─── -->
+  <div class="chapter" id="s3">
+    <div class="chapter-num">Bagian I · Konteks & Masalah</div>
+    <h2 class="chapter-title">3. Tujuan Produk</h2>
+
+    <div class="card-grid-3">
+      <div class="card">
+        <span class="card-icon">🎯</span>
+        <h4>Tujuan Utama</h4>
+        <p>Membangun sistem evaluasi kinerja anggaran berbasis AI yang mengotomatiskan pemantauan, deteksi anomali, dan pelaporan triwulanan.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">⚡</span>
+        <h4>Efisiensi</h4>
+        <p>Mengurangi waktu penyusunan laporan evaluasi triwulanan dari ±8 jam menjadi ±30 menit dengan bantuan analisis AI.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🧠</span>
+        <h4>Kelembagaan</h4>
+        <p>Mengkodifikasikan pengetahuan pola historis Rudenim sebagai basis pengetahuan sistem yang dapat dikonsultasi kapan saja.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">3.1 Sasaran Terukur (OKR)</div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Objective</th><th>Key Result</th><th>Target</th><th>Cara Ukur</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3"><strong>Sistem beroperasi dan digunakan secara konsisten</strong></td>
+              <td>Input data bulanan dilakukan tepat waktu</td>
+              <td>≥ 10 dari 12 bulan/tahun</td>
+              <td>Log input Sheet</td>
+            </tr>
+            <tr>
+              <td>Laporan triwulanan digenerate otomatis</td>
+              <td>4 laporan/tahun tanpa pengingat eksternal</td>
+              <td>Timestamp generate</td>
+            </tr>
+            <tr>
+              <td>Laporan digunakan dalam rapat evaluasi</td>
+              <td>≥ 3 dari 4 triwulan</td>
+              <td>Catatan rapat</td>
+            </tr>
+            <tr>
+              <td rowspan="2"><strong>Kualitas analisis meningkat</strong></td>
+              <td>Kondisi kritis terdeteksi sebelum akhir bulan</td>
+              <td>100% bulan kritis tertangkap</td>
+              <td>Bandingkan alert vs data aktual</td>
+            </tr>
+            <tr>
+              <td>Waktu penyusunan laporan triwulanan</td>
+              <td>< 45 menit (termasuk review)</td>
+              <td>Self-report penyusun</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <hr class="thick">
+
+  <!-- ─── §4 GAMBARAN PRODUK & ARSITEKTUR ─── -->
+  <div class="chapter" id="s4">
+    <div class="chapter-num">Bagian II · Produk</div>
+    <h2 class="chapter-title">4. Gambaran Produk & Arsitektur</h2>
+
+    <div class="section">
+      <div class="section-title">4.1 Nama & Identitas Produk</div>
+      <div class="table-wrapper">
+        <table>
+          <tbody>
+            <tr><td style="width:200px;font-weight:600;color:var(--muted)">Nama Produk</td><td><strong>SIEKA-Rudenim</strong> (Sistem Informasi Evaluasi Kinerja Anggaran — Rudenim Pontianak)</td></tr>
+            <tr><td style="font-weight:600;color:var(--muted)">Tipe</td><td>Sistem internal kantor berbasis Google Workspace + Claude AI API</td></tr>
+            <tr><td style="font-weight:600;color:var(--muted)">Tidak terkait</td><td>Skripsi atau aktivitas akademik. Sistem ini murni untuk keperluan operasional kantor.</td></tr>
+            <tr><td style="font-weight:600;color:var(--muted)">Pengguna</td><td>Staf Pengelola Keuangan, Bendahara Pengeluaran, PPSPM, PPK, KPA</td></tr>
+            <tr><td style="font-weight:600;color:var(--muted)">Hosting</td><td>Google Sheets + Google Apps Script (cloud, tanpa server tambahan)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">4.2 Arsitektur Sistem</div>
+
+      <div class="arch"><span class="layer">┌─────────────────────────────────────────────────────────┐</span>
+<span class="layer">│                    LAYER INPUT DATA                     │</span>
+<span class="layer">└─────────────────────────────────────────────────────────┘</span>
+<span class="comp">  Google Sheets</span>              <span class="note">← Input manual bulanan oleh staf</span>
+  ├── Sheet: DATA_REALISASI   <span class="note">(RPD, Realisasi, per jenis belanja)</span>
+  ├── Sheet: DATA_KEGIATAN    <span class="note">(nama kegiatan, status, kendala)</span>
+  ├── Sheet: DATA_DETENI      <span class="note">(jumlah deteni per bulan)</span>
+  ├── Sheet: DATA_IKPA        <span class="note">(nilai IKPA komponen per bulan)</span>
+  └── Sheet: TRIGGER_RULES    <span class="note">(aturan kondisi → flag → prompt AI)</span>
+
+<span class="arrow">                        ↓ otomatis</span>
+
+<span class="layer">┌─────────────────────────────────────────────────────────┐</span>
+<span class="layer">│                  LAYER TRIGGER ENGINE                   │</span>
+<span class="layer">└─────────────────────────────────────────────────────────┘</span>
+<span class="comp">  Google Apps Script</span>
+  ├── onEdit Trigger          <span class="note">(jalankan saat data baru diinput)</span>
+  ├── Monthly Trigger (cron)  <span class="note">(evaluasi otomatis setiap akhir bulan)</span>
+  ├── Quarterly Trigger       <span class="note">(generate laporan setiap akhir triwulan)</span>
+  └── Flag Evaluator          <span class="note">(cocokkan kondisi dengan TRIGGER_RULES)</span>
+
+<span class="arrow">                        ↓ kirim prompt</span>
+
+<span class="layer">┌─────────────────────────────────────────────────────────┐</span>
+<span class="layer">│                   LAYER AI ANALISIS                     │</span>
+<span class="layer">└─────────────────────────────────────────────────────────┘</span>
+<span class="comp">  Claude API (claude-sonnet-4-20250514)</span>
+  ├── System Prompt           <span class="note">(konteks Rudenim, pola historis, aturan)</span>
+  ├── Data Payload            <span class="note">(data bulan/triwulan berjalan)</span>
+  └── Response: JSON          <span class="note">(temuan, analisis penyebab, rekomendasi)</span>
+
+<span class="arrow">                        ↓ simpan & tampilkan</span>
+
+<span class="layer">┌─────────────────────────────────────────────────────────┐</span>
+<span class="layer">│                   LAYER OUTPUT                          │</span>
+<span class="layer">└─────────────────────────────────────────────────────────┘</span>
+<span class="comp">  Sheet: LOG_ANALISIS</span>         <span class="note">(database histori analisis AI)</span>
+<span class="comp">  Dashboard HTML</span>              <span class="note">(visualisasi + narasi, update otomatis)</span>
+<span class="comp">  Laporan Triwulanan PDF</span>      <span class="note">(via Apps Script → HTML → print-to-PDF)</span>
+<span class="comp">  Email Notifikasi</span>            <span class="note">(alert ke KPA jika kondisi kritis)</span></div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">4.3 Stack Teknologi</div>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Komponen</th><th>Teknologi</th><th>Alasan Pemilihan</th><th>Biaya</th></tr></thead>
+          <tbody>
+            <tr><td>Database & Input</td><td>Google Sheets</td><td>Sudah digunakan, familiar, kolaboratif, gratis</td><td>Gratis</td></tr>
+            <tr><td>Otomasi & Trigger</td><td>Google Apps Script</td><td>Terintegrasi native, jadwal otomatis, tanpa server</td><td>Gratis</td></tr>
+            <tr><td>AI Analisis</td><td>Claude API (Sonnet)</td><td>Kemampuan narasi Indonesia sangat baik, structured output JSON</td><td>~Rp50–150rb/bulan</td></tr>
+            <tr><td>Dashboard Visual</td><td>HTML + Chart.js</td><td>Sudah terbukti berhasil di dashboard eksisting Rudenim</td><td>Gratis</td></tr>
+            <tr><td>Laporan Triwulanan</td><td>HTML → Print to PDF</td><td>Tidak butuh library tambahan, hasil rapi</td><td>Gratis</td></tr>
+            <tr><td>Notifikasi</td><td>Gmail via Apps Script</td><td>Native, tidak butuh integrasi tambahan</td><td>Gratis</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── §5 PENGGUNA ─── -->
+  <div class="chapter" id="s5">
+    <div class="chapter-num">Bagian II · Produk</div>
+    <h2 class="chapter-title">5. Pengguna & Persona</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-icon">💼</span>
+        <h4>Staf Keuangan / Bendahara</h4>
+        <p><strong>Pengguna Utama.</strong> Bertugas menginput data bulanan, memantau kondisi kritis, dan menyusun laporan triwulanan. Membutuhkan sistem yang mudah digunakan dan menghasilkan output langsung pakai.</p>
+        <p style="margin-top:8px;"><em>Frekuensi: Harian/Mingguan</em></p>
+      </div>
+      <div class="card">
+        <span class="card-icon">📋</span>
+        <h4>PPK / PPSPM</h4>
+        <p><strong>Pengguna Sekunder.</strong> Mengonsumsi notifikasi kondisi kritis yang berkaitan dengan pengadaan dan proses SPM. Membutuhkan alert tepat waktu tentang risiko deviasi kontraktual.</p>
+        <p style="margin-top:8px;"><em>Frekuensi: Mingguan</em></p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🏛️</span>
+        <h4>KPA / Kepala Rudenim</h4>
+        <p><strong>Pembaca Laporan.</strong> Mengonsumsi laporan triwulanan untuk pengambilan keputusan strategis dan bahan rapat evaluasi dengan Kanwil DJPb / KPPN Pontianak.</p>
+        <p style="margin-top:8px;"><em>Frekuensi: Bulanan/Triwulanan</em></p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🔧</span>
+        <h4>Administrator Sistem</h4>
+        <p><strong>Pemelihara.</strong> Staf keuangan yang memiliki akses penuh untuk mengubah TRIGGER_RULES, memperbarui system prompt AI, dan mengelola konfigurasi Apps Script.</p>
+        <p style="margin-top:8px;"><em>Frekuensi: Bulanan atau saat ada perubahan regulasi</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── §6 FITUR ─── -->
+  <div class="chapter" id="s6">
+    <div class="chapter-num">Bagian II · Produk</div>
+    <h2 class="chapter-title">6. Fitur & Persyaratan Fungsional</h2>
+
+    <div class="callout">
+      <strong>Prioritas MoSCoW</strong>
+      <p>
+        <span class="badge badge-must">MUST</span> = harus ada di v1.0 &nbsp;
+        <span class="badge badge-should">SHOULD</span> = sangat disarankan &nbsp;
+        <span class="badge badge-could">COULD</span> = nice to have &nbsp;
+        <span class="badge badge-wont">WON'T</span> = tidak dalam cakupan saat ini
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">6.1 Modul Input Data</div>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th style="width:40px">#</th><th>Fitur</th><th>Deskripsi</th><th>Prioritas</th></tr></thead>
+          <tbody>
+            <tr><td>F1.1</td><td>Form Input Realisasi Bulanan</td><td>Input RPD, realisasi, dan deviasi per jenis belanja (B51, B52, B53) per bulan dalam Google Sheets dengan validasi data otomatis</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F1.2</td><td>Input Data Kegiatan & Kendala</td><td>Form terstruktur untuk mencatat kegiatan yang dilaksanakan, status (selesai/terhambat/gagal), dan deskripsi kendala per bulan</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F1.3</td><td>Input Jumlah Deteni</td><td>Pencatatan jumlah deteni aktual vs. target per bulan sebagai konteks variabel operasional</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F1.4</td><td>Input Nilai IKPA Komponen</td><td>Pencatatan nilai IKPA total dan per komponen (7 indikator) dari dashboard OMSPAN setiap bulan</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F1.5</td><td>Validasi & Perlindungan Data</td><td>Proteksi cell formula, validasi range nilai (0–100 untuk IKPA, nilai positif untuk realisasi), dan lock kolom historis</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F1.6</td><td>Catatan Kebijakan/Regulasi</td><td>Kolom untuk mencatat kebijakan yang berdampak di bulan tersebut (contoh: pemblokiran anggaran, revisi DIPA ke-n)</td><td><span class="badge badge-should">SHOULD</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">6.2 Modul Trigger & Deteksi Anomali</div>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th style="width:40px">#</th><th>Fitur</th><th>Deskripsi</th><th>Prioritas</th></tr></thead>
+          <tbody>
+            <tr><td>F2.1</td><td>Evaluasi Kondisi Otomatis</td><td>Apps Script membaca data baru dan mencocokkan dengan TRIGGER_RULES setiap kali ada input baru atau pada jadwal akhir bulan</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F2.2</td><td>Sistem Flag Berlapis</td><td>Flag 🔴 KRITIS (IKPA &lt; 90 atau deviasi B53 &gt; 30%), 🟡 WASPADA (IKPA 90–94 atau deviasi &gt; 15%), 🟢 NORMAL (IKPA ≥ 95)</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F2.3</td><td>Deteksi Pola Historis</td><td>Sistem mengenali bulan yang secara historis berisiko (Maret, Agustus) dan menambahkan flag peringatan preventif 2 minggu sebelumnya</td><td><span class="badge badge-should">SHOULD</span></td></tr>
+            <tr><td>F2.4</td><td>Alert Email ke KPA</td><td>Email otomatis ke KPA dan PPK ketika flag 🔴 KRITIS terdeteksi, berisi ringkasan kondisi dan rekomendasi segera</td><td><span class="badge badge-should">SHOULD</span></td></tr>
+            <tr><td>F2.5</td><td>Trigger Context Builder</td><td>Sebelum memanggil AI, sistem mengumpulkan: data realisasi, flag aktif, catatan kegiatan/kendala, data deteni, dan pola bulan yang sama tahun sebelumnya</td><td><span class="badge badge-must">MUST</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">6.3 Modul Analisis AI</div>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th style="width:40px">#</th><th>Fitur</th><th>Deskripsi</th><th>Prioritas</th></tr></thead>
+          <tbody>
+            <tr><td>F3.1</td><td>Analisis Bulanan Otomatis</td><td>Setiap akhir bulan, AI menganalisis kondisi bulan tersebut dan menghasilkan: (1) ringkasan temuan, (2) identifikasi penyebab, (3) dampak terhadap IKPA, (4) rekomendasi tindak lanjut</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F3.2</td><td>Analisis Triwulanan Komprehensif</td><td>Setiap akhir triwulan, AI menganalisis 3 bulan secara agregat dan menghasilkan laporan evaluasi lengkap berformat standar yang siap disajikan ke KPA</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F3.3</td><td>Kontekstualisasi Berbasis Pola Rudenim</td><td>System prompt menyertakan pengetahuan pola historis Rudenim (P1–P3) sehingga AI dapat memberikan analisis yang kontekstual, bukan generik</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F3.4</td><td>Output JSON Terstruktur</td><td>AI menghasilkan JSON terstruktur yang diparse oleh Apps Script untuk disimpan di LOG_ANALISIS dan dirender ke Dashboard HTML</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F3.5</td><td>Skenario "Bagaimana Jika"</td><td>Pengguna dapat memasukkan skenario hipotetis (misal: "jika termin Oktober bergeser ke November") dan AI menghitung proyeksi dampak terhadap IKPA</td><td><span class="badge badge-could">COULD</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">6.4 Modul Dashboard & Visualisasi</div>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th style="width:40px">#</th><th>Fitur</th><th>Deskripsi</th><th>Prioritas</th></tr></thead>
+          <tbody>
+            <tr><td>F4.1</td><td>Dashboard Utama HTML</td><td>Halaman utama yang menampilkan: kartu KPI bulanan, grafik tren IKPA 12 bulan, grafik RPD vs Realisasi per jenis belanja, dan tabel deviasi</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F4.2</td><td>Panel Narasi AI</td><td>Bagian khusus di dashboard yang menampilkan narasi analisis AI terbaru (bulanan) dengan tanggal generate dan status flag</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F4.3</td><td>Halaman Laporan Triwulanan</td><td>Tampilan laporan triwulanan terformat yang dapat di-print langsung menjadi PDF dari browser</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F4.4</td><td>Halaman Histori & Tren Multi-Tahun</td><td>Perbandingan IKPA dan deviasi lintas TA 2023–2025 untuk identifikasi pola jangka panjang</td><td><span class="badge badge-should">SHOULD</span></td></tr>
+            <tr><td>F4.5</td><td>Indikator Status Real-time</td><td>Badge status di header dashboard (🔴/🟡/🟢) yang diperbarui setiap kali data baru diinput</td><td><span class="badge badge-should">SHOULD</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">6.5 Modul Laporan Triwulanan</div>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th style="width:40px">#</th><th>Fitur</th><th>Deskripsi</th><th>Prioritas</th></tr></thead>
+          <tbody>
+            <tr><td>F5.1</td><td>Template Laporan Terstandar</td><td>Template HTML laporan evaluasi triwulanan dengan struktur baku: (1) ringkasan eksekutif, (2) analisis per bulan, (3) analisis triwulanan agregat, (4) faktor penyebab, (5) rekomendasi, (6) rencana tindak lanjut</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F5.2</td><td>Auto-populate dari Data & AI</td><td>Semua tabel, angka, dan narasi di laporan terisi otomatis dari data Google Sheets dan output Claude API</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F5.3</td><td>Export PDF</td><td>Tombol "Cetak Laporan" yang membuka print dialog browser dengan setting A4 portrait, siap cetak atau save as PDF</td><td><span class="badge badge-must">MUST</span></td></tr>
+            <tr><td>F5.4</td><td>Kolom Verifikasi Manual</td><td>Bidang yang dapat diedit oleh pengelola keuangan untuk menambahkan catatan atau koreksi sebelum laporan diserahkan ke KPA</td><td><span class="badge badge-should">SHOULD</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── §7 NON-FUNGSIONAL ─── -->
+  <div class="chapter" id="s7">
+    <div class="chapter-num">Bagian II · Produk</div>
+    <h2 class="chapter-title">7. Persyaratan Non-Fungsional</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-icon">⚡</span>
+        <h4>Performa</h4>
+        <p>Analisis AI bulanan selesai dalam &lt; 30 detik. Dashboard HTML load dalam &lt; 3 detik. Generate laporan triwulanan &lt; 2 menit.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🔒</span>
+        <h4>Keamanan</h4>
+        <p>Google Sheets hanya dapat diakses oleh akun Google resmi Rudenim. Claude API key disimpan di Apps Script Properties, tidak pernah di Sheets.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🛡️</span>
+        <h4>Kerahasiaan Data</h4>
+        <p>Data yang dikirim ke Claude API hanya berupa angka agregat dan deskripsi kegiatan, <strong>tidak mengandung identitas personal deteni</strong> atau data yang dilindungi UU Keimigrasian.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🔧</span>
+        <h4>Kemudahan Pemeliharaan</h4>
+        <p>TRIGGER_RULES dapat diubah langsung di Sheets tanpa menyentuh kode. System prompt AI dapat diperbarui oleh admin tanpa keahlian pemrograman.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">📱</span>
+        <h4>Aksesibilitas</h4>
+        <p>Dashboard HTML responsif untuk desktop. Google Sheets dapat diakses via Google Sheets mobile app untuk input darurat.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">💾</span>
+        <h4>Ketersediaan Data</h4>
+        <p>Google Drive menjamin 99.9% uptime. Semua data tersimpan di cloud, tidak bergantung pada komputer lokal satu orang.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── §8 SKEMA DATA ─── -->
+  <div class="chapter" id="s8">
+    <div class="chapter-num">Bagian II · Produk</div>
+    <h2 class="chapter-title">8. Skema Data & Struktur Google Sheets</h2>
+
+    <p>Workbook Google Sheets SIEKA-Rudenim terdiri dari <strong>7 sheet</strong> dengan peran yang berbeda:</p>
+
+    <div class="section">
+      <div class="sub-title">Sheet 1: DATA_REALISASI</div>
+      <div class="formula">Bulan | Tahun | Pagu_B51 | RPD_B51 | Real_B51 | Dev_B51 | %Dev_B51 |
+Pagu_B52 | RPD_B52 | Real_B52 | Dev_B52 | %Dev_B52 |
+Pagu_B53 | RPD_B53 | Real_B53 | Dev_B53 | %Dev_B53 |
+Total_Pagu | Total_RPD | Total_Real | %Serapan_YTD</div>
+      <p>Sumber: OMSPAN / SPAN / sistem SAKTI. Kolom Dev dan %Dev dihitung otomatis oleh formula Sheets.</p>
+    </div>
+
+    <div class="section">
+      <div class="sub-title">Sheet 2: DATA_KEGIATAN</div>
+      <div class="formula">Bulan | Tahun | Kode_Kegiatan | Nama_Kegiatan | Jenis_Belanja |
+Status [Selesai/Terhambat/Gagal/Berjalan] | Deskripsi_Kendala |
+Dampak_Terhadap_Realisasi | Catatan_Tambahan</div>
+      <p>Input oleh PPK dan staf keuangan. Ini adalah "data kualitatif" yang menjadi konteks bagi analisis AI.</p>
+    </div>
+
+    <div class="section">
+      <div class="sub-title">Sheet 3: DATA_DETENI</div>
+      <div class="formula">Bulan | Tahun | Jumlah_Deteni_Target | Jumlah_Deteni_Aktual |
+Jml_TAK_Deportasi | Jml_TAK_Pengawasan | Catatan_Khusus</div>
+      <p>Variabel operasional kunci yang mempengaruhi realisasi B52 (biaya perawatan, makan, kesehatan deteni).</p>
+    </div>
+
+    <div class="section">
+      <div class="sub-title">Sheet 4: DATA_IKPA</div>
+      <div class="formula">Bulan | Tahun | IKPA_Total | Skor_RevisiDIPA | Skor_DevHalIII |
+Skor_PenyerapanAngk | Skor_BelanjaKontrak | Skor_PenyelTagihan |
+Skor_UP_TUP | Skor_CapaianOutput | Flag_Kategori</div>
+      <p>Flag_Kategori dihitung otomatis: ≥95 = "Sangat Baik", 89–94 = "Baik", 70–88 = "Cukup", &lt;70 = "Kurang" (sesuai PER-5/PB/2024).</p>
+    </div>
+
+    <div class="section">
+      <div class="sub-title">Sheet 5: TRIGGER_RULES</div>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Rule ID</th><th>Kondisi</th><th>Flag</th><th>Prompt Template AI</th><th>Kirim Email?</th></tr></thead>
+          <tbody>
+            <tr><td>TR-01</td><td>IKPA_Total &lt; 90</td><td>🔴 KRITIS</td><td>Analisis mendalam kondisi kritis IKPA — identifikasi komponen penyebab utama penurunan</td><td>Ya → KPA, PPK</td></tr>
+            <tr><td>TR-02</td><td>%Dev_B53 &gt; 30%</td><td>🔴 KRITIS</td><td>Analisis deviasi tinggi Belanja Modal — identifikasi tahap kontrak yang terdampak dan estimasi pergeseran termin</td><td>Ya → PPK</td></tr>
+            <tr><td>TR-03</td><td>IKPA_Total 90–94</td><td>🟡 WASPADA</td><td>Identifikasi risiko penurunan IKPA lebih lanjut dan langkah pencegahan</td><td>Tidak</td></tr>
+            <tr><td>TR-04</td><td>%Dev_B52 &gt; 20%</td><td>🟡 WASPADA</td><td>Analisis deviasi B52 — kaitkan dengan data deteni aktual vs. target</td><td>Tidak</td></tr>
+            <tr><td>TR-05</td><td>Bulan = Maret atau Agustus</td><td>⚠️ PREVENTIF</td><td>Peringatan pra-bulan berisiko — ingatkan pola historis dan langkah antisipasi spesifik</td><td>Ya → Staf Keuangan</td></tr>
+            <tr><td>TR-06</td><td>%Serapan_YTD &lt; 40% di bulan Jun</td><td>🔴 SERAPAN LAMBAT</td><td>Analisis penyebab serapan rendah semester I dan proyeksi risiko akhir tahun</td><td>Ya → KPA</td></tr>
+            <tr><td>TR-07</td><td>Status_Kegiatan = "Gagal"</td><td>🟡 KEGIATAN GAGAL</td><td>Analisis dampak kegagalan kegiatan terhadap realisasi dan IKPA komponen terkait</td><td>Tidak</td></tr>
+            <tr><td>TR-08</td><td>Catatan_Kebijakan terisi (blokir/revisi)</td><td>📋 KEBIJAKAN</td><td>Analisis dampak kebijakan eksternal terhadap RPD dan skenario penyesuaian yang disarankan</td><td>Tidak</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="sub-title">Sheet 6: LOG_ANALISIS</div>
+      <div class="formula">ID_Log | Timestamp | Periode | Tipe [Bulanan/Triwulanan] | Flag_Aktif |
+Temuan_Utama | Penyebab_Teridentifikasi | Dampak_IKPA |
+Rekomendasi | Status_Tindak_Lanjut | Catatan_Manual</div>
+      <p>Database permanen semua output AI. Status_Tindak_Lanjut dapat diisi manual oleh staf keuangan setelah laporan digunakan.</p>
+    </div>
+
+    <div class="section">
+      <div class="sub-title">Sheet 7: KONFIGURASI</div>
+      <div class="formula">Parameter sistem: nama satker, kode satker, KPA, email notifikasi,
+threshold flag, TA aktif, Claude API model, max_tokens</div>
+      <p>Satu-satunya tempat mengubah konfigurasi global. Semua kode Apps Script membaca dari sheet ini.</p>
+    </div>
+  </div>
+
+  <!-- ─── §9 TRIGGER & AI ─── -->
+  <div class="chapter" id="s9">
+    <div class="chapter-num">Bagian II · Produk</div>
+    <h2 class="chapter-title">9. Sistem Trigger & Aturan Analisis AI</h2>
+
+    <div class="section">
+      <div class="section-title">9.1 System Prompt AI (Basis Pengetahuan)</div>
+      <p>System prompt adalah "dokumen trigger" utama yang mengkodifikasikan pengetahuan kontekstual Rudenim. Ini diperbarui setiap awal tahun anggaran.</p>
+
+      <div class="callout dark">
+        <strong>Contoh Isi System Prompt (diringkas)</strong>
+        <p>Kamu adalah analis keuangan ahli untuk Rumah Detensi Imigrasi (Rudenim) Pontianak, satker UPT Ditjen Imigrasi dengan kode 692965. Tugasmu adalah menganalisis data kinerja anggaran dan menghasilkan evaluasi yang akurat, kontekstual, dan actionable dalam Bahasa Indonesia formal.</p>
+        <p style="margin-top:8px;">KONTEKS SATKER: Rudenim memiliki tiga jenis belanja utama — B51 (Pegawai, rigid/stabil), B52 (Barang, semi-variabel tergantung jumlah deteni), B53 (Modal, kontraktual/volatil)...</p>
+        <p style="margin-top:8px;">POLA HISTORIS YANG DIKETAHUI: (1) Januari-Februari selalu IKPA 100 karena hanya B51 berjalan. (2) Maret adalah bulan paling rawan deviasi B53 karena pengadaan baru dimulai. (3) Agustus-September rawan karena termin konstruksi Q3. (4) Penurunan deteni drastis dapat menyebabkan deviasi positif B52...</p>
+        <p style="margin-top:8px;">FORMAT OUTPUT: Kembalikan hanya JSON valid dengan struktur: {temuan_utama, penyebab, dampak_ikpa, rekomendasi_segera, rekomendasi_jangka_panjang, flag_level}</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">9.2 Alur Kerja Trigger Bulanan</div>
+      <div class="arch"><span class="comp">AKHIR BULAN (cron: tanggal 28 setiap bulan)</span>
+        <span class="arrow">↓</span>
+<span class="note">1. Apps Script membaca DATA_REALISASI, DATA_KEGIATAN, DATA_DETENI, DATA_IKPA</span>
+        <span class="arrow">↓</span>
+<span class="note">2. Evaluator mencocokkan kondisi dengan TRIGGER_RULES</span>
+        <span class="arrow">↓</span>
+<span class="note">3. Context Builder menyusun payload:</span>
+   <span class="comp">• Data bulan berjalan</span>
+   <span class="comp">• Data bulan yang sama tahun sebelumnya (perbandingan)</span>
+   <span class="comp">• Flag aktif yang terdeteksi</span>
+   <span class="comp">• Catatan kegiatan & kendala bulan ini</span>
+   <span class="comp">• Jumlah deteni aktual vs target</span>
+   <span class="comp">• Catatan kebijakan (jika ada)</span>
+        <span class="arrow">↓</span>
+<span class="note">4. Kirim ke Claude API dengan system prompt Rudenim + payload</span>
+        <span class="arrow">↓</span>
+<span class="note">5. Parse JSON response</span>
+        <span class="arrow">↓</span>
+<span class="note">6. Simpan ke LOG_ANALISIS</span>
+        <span class="arrow">↓</span>
+<span class="note">7a. Update Dashboard HTML (panel narasi AI)</span>
+<span class="note">7b. Kirim email jika flag 🔴 KRITIS</span></div>
+    </div>
+  </div>
+
+  <hr class="thick">
+
+  <!-- ─── §10–15 PLACEHOLDER ─── -->
+  <div class="chapter" id="s10">
+    <div class="chapter-num">Bagian III · Implementasi</div>
+    <h2 class="chapter-title">10–15. Roadmap, Biaya, Risiko, KPI, Out of Scope, Glosarium</h2>
+    <div class="callout">
+      <strong>Catatan</strong>
+      <p>Bagian §10–§15 (Roadmap, Estimasi Biaya, Risiko & Mitigasi, KPI Produk, Out of Scope, Glosarium) dari PRD asli tidak tercantum karena pesan terpotong saat transfer. Tambahkan dari dokumen sumber jika diperlukan.</p>
+    </div>
+  </div>
+
+</div><!-- /page -->
+</body>
+</html>

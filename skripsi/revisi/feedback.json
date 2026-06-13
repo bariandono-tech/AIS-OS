@@ -1,0 +1,25 @@
+{
+  "reviews": [
+    {
+      "run_id": "eval-0-full-rekonsiliasi-audit-with_skill",
+      "feedback": "",
+      "timestamp": "2026-06-12T09:59:48.112Z"
+    },
+    {
+      "run_id": "eval-0-full-rekonsiliasi-audit-without_skill",
+      "feedback": "",
+      "timestamp": "2026-06-12T09:59:48.112Z"
+    },
+    {
+      "run_id": "eval-1-inventaris-tanpa-revisi-with_skill",
+      "feedback": "",
+      "timestamp": "2026-06-12T09:59:48.112Z"
+    },
+    {
+      "run_id": "eval-1-inventaris-tanpa-revisi-without_skill",
+      "feedback": "",
+      "timestamp": "2026-06-12T09:59:48.112Z"
+    }
+  ],
+  "status": "complete"
+}
