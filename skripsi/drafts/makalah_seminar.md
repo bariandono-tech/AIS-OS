@@ -89,13 +89,15 @@ DAFTAR PUSTAKA .................................................................
 v
 
 DAFTAR TABEL
-Tabel 1.1 Indikator dan Bobot Penilaian IKPA Berdasarkan PER-5/PB/2024 ................ 4
-Tabel 1.2 Kategorisasi Nilai IKPA ...................................................... 4
+Tabel 1.1 Indikator dan Bobot Penilaian IKPA Berdasarkan PER-5/PB/2024
+Tabel 1.2 Kategorisasi Nilai IKPA
+Tabel 1.3 Deviasi Halaman III DIPA Belanja Modal Rudenim Pontianak TA 2023–2025
+Tabel 1.4 Bulan Kritis Deviasi Belanja Modal Rudenim Pontianak TA 2023–2025
+Tabel 1.5 Contoh Paket Belanja Modal yang Mengalami Pergeseran Realisasi TA 2023–2025
 Tabel 2.1 Ringkasan Penelitian Terdahulu dan Relevansinya dengan Pelaksanaan
-Anggaran Belanja Modal ...................................................................................... 26
-Tabel 3.1 Daftar Dokumen Studi Dokumentasi ............................................. 34
-Tabel 3.2 Daftar Informan Target Penelitian ............................................. 39
-vi
+Anggaran Belanja Modal
+Tabel 3.1 Daftar Dokumen Studi Dokumentasi
+Tabel 3.2 Daftar Informan Target Penelitian
 
 DAFTAR GAMBAR
 Gambar 2.1 Kerangka Penelitian ......................................................................... 28
@@ -105,38 +107,7 @@ vii
 BAB I
 PENDAHULUAN
 1.1 Latar Belakang
-Negara Kesatuan Republik Indonesia didirikan dengan tujuan melindungi
-segenap bangsa, memajukan kesejahteraan umum, mencerdaskan kehidupan
-bangsa, dan ikut melaksanakan ketertiban dunia. Guna mewujudkan tujuan
-bernegara tersebut, Undang-Undang Dasar Negara Republik Indonesia Tahun 1945
-mengamanatkan bahwa kekuasaan pemerintahan negara dipegang oleh Presiden,
-yang dalam pelaksanaannya dibantu oleh Kementerian dan Lembaga (K/L). Setiap
-K/L mengemban tanggung jawab konstitusional untuk menjalankan fungsi
-pemerintahan secara efektif, efisien, dan akuntabel kepada rakyat sebagai
-pemegang kedaulatan tertinggi.
-Dalam menjalankan fungsi pemerintahan, setiap penyelenggara negara,
-mulai dari tingkat pusat hingga satuan kerja (satker) di daerah, diwajibkan
-berpedoman pada Asas-Asas Umum Pemerintahan yang Baik (AUPB).
-Berdasarkan Undang-Undang Nomor 30 Tahun 2014 tentang Administrasi
-Pemerintahan, AUPB mencakup prinsip kepastian hukum, kemanfaatan,
-ketidakberpihakan, kecermatan, tidak menyalahgunakan kewenangan,
-keterbukaan, kepentingan umum, dan pelayanan yang baik. Penerapan AUPB
-bukan sekadar kewajiban prosedural, melainkan merupakan landasan etis yang
-menjamin legitimasi dan kepercayaan publik terhadap aparatur negara dalam setiap
-aspek pengelolaan pemerintahan, termasuk pengelolaan keuangan negara.
-1
-
-2
-Pengelolaan keuangan negara merupakan salah satu manifestasi konkret
-dari penerapan AUPB dalam ranah fiskal. Undang-Undang Nomor 17 Tahun 2003
-tentang Keuangan Negara menegaskan bahwa keuangan negara harus dikelola
-secara tertib, taat pada peraturan perundang-undangan, efisien, ekonomis, efektif,
-transparan, dan bertanggung jawab dengan memperhatikan rasa keadilan dan
-kepatutan. Kelima prinsip tersebut, yaitu efisiensi, efektivitas, transparansi,
-keadilan, dan kepatutan, tidak bersifat opsional, melainkan merupakan standar
-minimum yang harus dipenuhi oleh setiap entitas pemerintah dalam mengelola
-sumber daya publik yang dipercayakan kepadanya (Undang-Undang Nomor 17
-Tahun 2003).
+Pengelolaan keuangan negara merupakan instrumen krusial dalam mewujudkan tujuan bernegara. Undang-Undang Nomor 17 Tahun 2003 tentang Keuangan Negara menegaskan bahwa keuangan negara harus dikelola secara tertib, taat pada peraturan perundang-undangan, efisien, ekonomis, efektif, transparan, dan bertanggung jawab dengan memperhatikan rasa keadilan dan kepatutan. Kelima prinsip tersebut, yaitu efisiensi, efektivitas, transparansi, keadilan, dan kepatutan, tidak bersifat opsional, melainkan merupakan standar minimum yang harus dipenuhi oleh setiap entitas pemerintah dalam mengelola sumber daya publik yang dipercayakan kepadanya (Undang-Undang Nomor 17 Tahun 2003).
 Instrumen utama dalam pengelolaan keuangan negara adalah Anggaran
 Pendapatan dan Belanja Negara (APBN). Sebagaimana diuraikan oleh Mardiasmo
 (2018), APBN berfungsi tidak hanya sebagai rencana keuangan tahunan
@@ -151,7 +122,6 @@ Secara operasional, APBN dilaksanakan oleh K/L melalui mekanisme
 Daftar Isian Pelaksanaan Anggaran (DIPA). Tata cara pelaksanaan anggaran K/L
 diatur dalam Peraturan Pemerintah Nomor 45 Tahun 2013 jo. Peraturan Pemerintah
 
-3
 Nomor 50 Tahun 2018, yang mengatur siklus mulai dari pencairan dana,
 penatausahaan, hingga pelaporan realisasi. Tata cara pelaksanaan anggaran ini
 diperjelas dan disempurnakan melalui Peraturan Menteri Keuangan Nomor 62
@@ -176,7 +146,6 @@ M.HH-11.OT.01.01 Tahun 2009 tentang Organisasi dan Tata Kerja Rumah Detensi
 Imigrasi, Rudenim bertugas menampung sementara orang asing yang dikenai
 Tindakan Administratif Keimigrasian (TAK), seperti deportasi dan pengawasan
 
-4
 keimigrasian. Rudenim Pontianak berkedudukan di Kalimantan Barat, provinsi
 yang berbatasan langsung dengan Malaysia, sehingga memiliki karakteristik
 dinamika kependudukan asing yang memengaruhi volume dan pola pengeluaran
@@ -225,7 +194,6 @@ meningkatkan kualitas perencanaan dan pelaksanaan anggaran secara
 berkelanjutan, selaras dengan prinsip-prinsip pengelolaan keuangan negara yang
 diamanatkan oleh Undang-Undang Nomor 17 Tahun 2003.
 
-5
 Di antara tujuh indikator IKPA, Deviasi Halaman III DIPA mengukur
 selisih antara Rencana Penarikan Dana (RPD) bulanan yang telah disusun dalam
 Halaman III DIPA dengan realisasi anggaran aktual pada bulan bersangkutan.
@@ -250,7 +218,6 @@ dan Supriyanto (2025) dalam kajian mereka terhadap satker-satker di Kanwil DJPb
 Nusa Tenggara Barat menemukan pola yang identik: indikator Deviasi Halaman III
 DIPA secara konsisten menempati posisi terbawah dibandingkan indikator IKPA
 
-6
 lainnya. Konsistensi pola ini di berbagai wilayah yang berbeda mengindikasikan
 bahwa problematika deviasi RPD merupakan fenomena sistemik lintas K/L dan
 lintas wilayah, bukan permasalahan lokal yang berdiri sendiri. Lebih lanjut, Hanafi
@@ -267,6 +234,50 @@ perencanaan dan pelaksanaan yang berbeda dibanding Belanja Pegawai dan Belanja
 Barang, karena Belanja Modal melibatkan proses pengadaan kontraktual, pekerjaan
 fisik multi-termin, dan koordinasi dengan penyedia barang/jasa eksternal.
 
+Fenomena deviasi tersebut nyata terjadi pada objek penelitian ini. Sebagaimana disajikan pada Tabel 1.3, rata-rata deviasi Belanja Modal Rudenim Pontianak mencapai 20,16% pada TA 2023 dan meningkat menjadi 28,77% pada TA 2024, sehingga nilai indikator Deviasi Halaman III DIPA satker turun ke kategori Cukup (88,31). Kondisi ini membaik signifikan pada TA 2025 dengan rata-rata deviasi 5,41%, namun justru perbaikan tersebut memperkuat relevansi pertanyaan penelitian: faktor apa yang menyebabkan deviasi pada periode sebelumnya dan mekanisme apa yang mengubahnya — pertanyaan yang masih belum optimal dijawab melalui data agregat semata dan memerlukan eksplorasi kualitatif.
+
+### Tabel 1.3 Deviasi Halaman III DIPA Belanja Modal Rudenim Pontianak TA 2023–2025
+
+| Tahun | Proporsi Pagu Belanja Modal (%)* | Realisasi Belanja Modal (Rp) | Rata-rata Deviasi Bulanan (%)** | Nilai Indikator Deviasi Hal. III*** | Kategori |
+|---|---:|---:|---:|---:|---|
+| 2023 | 11,50 | 362.282.510 | 20,16 | 89,80 | Baik |
+| 2024 | 27,87 | 3.372.224.900 | 28,77 | 88,31 | Cukup |
+| 2025 | 65,92 | 6.567.577.362 | 5,41 | 100,00 | Sangat Baik |
+
+*\*Rata-rata proporsi pagu Belanja Modal terhadap total pagu DIPA. \*\*Rata-rata deviasi bulanan |RPD − Realisasi|/RPD Belanja Modal, sesuai basis perhitungan PER-5/PB/2024 Pasal 7. \*\*\*Nilai akhir tahun, seluruh jenis belanja. Sumber: OM-SPAN/MEBE, diolah peneliti (2026).*
+
+*Catatan Analisis:* RPD Halaman III DIPA mengalami pemutakhiran berkala; RPD yang gagal terealisasi pada suatu bulan dimutakhirkan dan muncul kembali pada bulan berikutnya. Sebagai contoh dari data internal: RPD Maret 2024 Rp700 juta (realisasi 0) muncul kembali sebagai RPD April Rp737,76 juta yang terealisasi penuh. Menjumlahkan RPD setahun berarti menghitung dana yang sama lebih dari sekali, sehingga satuan analisis deviasi yang sah adalah bulanan (rata-rata deviasi bulanan kumulatif). Nilai indikator Deviasi Hal. III di atas mengacu pada nilai indikator dengan bobot 15% dari total penilaian IKPA satker.
+
+Pola deviasi tersebut terkonsentrasi pada bulan-bulan kritis tertentu sebagaimana disajikan pada Tabel 1.4. Pada TA 2024, rencana penarikan dana Belanja Modal sebesar Rp700 juta pada bulan Maret, Rp1,79 miliar pada bulan Agustus, dan Rp194,5 juta pada bulan September sama sekali tidak terealisasi pada bulan bersangkutan (deviasi 100%), yang mengindikasikan adanya pergeseran jadwal pengadaan dan pembayaran ke bulan berikutnya. Rincian beberapa paket pekerjaan Belanja Modal utama yang mengalami pergeseran waktu realisasi pembayaran disajikan pada Tabel 1.5.
+
+### Tabel 1.4 Bulan Kritis Deviasi Belanja Modal Rudenim Pontianak TA 2023–2025
+
+| Tahun | Bulan | RPD (Rp) | Realisasi (Rp) | Deviasi (%) |
+|---|---|---:|---:|---:|
+| 2023 | Maret | 222.000.000 | 0 | 100,00 |
+| 2023 | November | 274.778.000 | 17.250.000 | 93,72 |
+| 2024 | Maret | 700.000.000 | 0 | 100,00 |
+| 2024 | Agustus | 1.792.439.999 | 0 | 100,00 |
+| 2024 | September | 194.511.000 | 0 | 100,00 |
+| 2025 | Juni | 50.000.000 | 35.587.371 | 28,83 |
+| 2025 | Agustus | 697.466.021 | 560.399.255 | 19,65 |
+
+*Sumber: OM-SPAN/MEBE, diolah peneliti (2026).*
+
+### Tabel 1.5 Contoh Paket Belanja Modal yang Mengalami Pergeseran Realisasi TA 2023–2025
+
+| No | Tahun | Nama Paket | Pagu (Rp) | Bulan RPD | SP2D Aktual | Geser (Bulan) | Penyebab Utama Pergeseran |
+|---|---|---|---:|---|---|---:|---|
+| 1 | 2023 | Pengadaan Perangkat Pengolah Data dan Komunikasi | 223.980.000 | Maret | April | 1 | Masalah administrasi pembayaran tagihan |
+| 2 | 2023 | Jasa Pekerjaan Konstruksi Fisik Renovasi Gedung | 191.216.000 | November | Desember | 1 | Pekerjaan fisik belum selesai sehingga BAST mundur |
+| 3 | 2024 | Pembelian Rumah Negara Tipe D (Termin I) | 2.477.920.000 | Maret | April | 1 | Perencanaan RPD awal tidak realistis (diplot sebelum siap) |
+| 4 | 2024 | Pembelian Rumah Negara Tipe D (Termin II) | 2.477.920.000 | Agustus | September | 1 | Kondisi fisik objek belum siap serah terima |
+| 5 | 2024 | Pengadaan Peralatan dan Fasilitas Perkantoran | 199.274.900 | September | Oktober | 1 | Keterlambatan kesiapan penyedia untuk TTD kontrak |
+| 6 | 2025 | Biaya Pengelolaan Gedung dan Bangunan (Swakelola B53) | 294.944.000 | Juni | Juni | 0 | Estimasi volume/biaya swakelola terlalu tinggi (shortfall) |
+| 7 | 2025 | Jasa Konsultan Manajemen Konstruksi | 505.462.000 | Agustus | November | 3 | Output/deliverable belum lengkap sehingga termin tertahan |
+
+*Sumber: OM-SPAN/SAKTI, diolah peneliti (2026).*
+
 Di samping dominasi Belanja Modal, Rudenim Pontianak juga menghadapi fluktuasi Belanja Barang akibat ketidakpastian jumlah deteni di wilayah perbatasan, yang turut memengaruhi akurasi penyusunan RPD. Untuk memahami fenomena deviasi RPD ini secara lebih mendalam, penelitian ini menggunakan Agency Theory sebagai lensa analitis sebagaimana diuraikan pada BAB II.
 
 Berdasarkan uraian di atas, dapat diidentifikasi tiga indikasi masalah yang melatarbelakangi penelitian ini. Pertama, terjadinya deviasi antara rencana dan penyerapan anggaran belanja modal pada Rumah Detensi Imigrasi Pontianak tahun 2023–2025. Kedua, perlunya menelaah penyebab terjadinya deviasi pelaksanaan anggaran belanja modal tersebut. Ketiga, perlunya menganalisis dampak dari terjadinya deviasi pelaksanaan anggaran belanja modal bagi pengelolaan anggaran satker.
@@ -274,7 +285,6 @@ Berdasarkan uraian di atas, dapat diidentifikasi tiga indikasi masalah yang mela
 Penelitian ini berfokus pada pelaksanaan anggaran belanja Rudenim Pontianak periode Tahun Anggaran 2023–2025, dengan penekanan khusus pada Belanja Modal. Kerangka evaluasi merujuk pada PMK 62/2023 sebagai regulasi omnibus pelaksanaan anggaran dan PER-5/PB/2024 sebagai petunjuk teknis penilaian IKPA.
 1.2 Rumusan Masalah
 
-10
 Berdasarkan latar belakang dan indikasi masalah yang telah diuraikan,
 penelitian ini merumuskan tiga pertanyaan penelitian sebagai berikut:
 1. Bagaimana implementasi pelaksanaan anggaran belanja pada Rumah Detensi
@@ -297,7 +307,6 @@ Penelitian ini diharapkan memberikan kontribusi pada pengembangan
 literatur Akuntansi Sektor Publik dan Akuntansi Pemerintahan, khususnya pada
 subbidang pelaksanaan anggaran belanja modal dan evaluasi kinerja melalui IKPA.
 
-11
 Secara konseptual, penelitian ini memperkaya elaborasi penerapan Agency Theory
 (Jensen & Meckling, 1976; Lane, 2003) yang dilengkapi dengan kerangka regulasi
 PMK 62/2023 dan mekanisme pengadaan barang/jasa pemerintah berdasarkan
@@ -309,8 +318,7 @@ metodologis dan substantif bagi penelitian lanjutan pada satker sejenis, seperti
 Rumah Tahanan Negara (Rutan), Lembaga Pemasyarakatan (Lapas), atau UPT
 penegakan hukum lainnya yang memiliki karakteristik dominasi Belanja Modal
 serupa.
-1
-.4.2 Manfaat Praktis
+1.4.2 Manfaat Praktis
 Dari sisi praktis, penelitian ini memberikan manfaat bagi berbagai
 pemangku kepentingan. Bagi Rudenim Pontianak selaku objek penelitian, hasil
 kajian ini diharapkan menghasilkan rekomendasi konkret untuk meningkatkan
@@ -322,14 +330,12 @@ kebijakan dalam pembinaan tata kelola pelaksanaan anggaran Belanja Modal pada
 UPT detensi imigrasi se-Indonesia. Bagi KPPN Pontianak dan Kanwil DJPb, hasil
 penelitian ini menyediakan referensi dalam pembinaan satker yang memiliki
 
-12
 dominasi Belanja Modal, sehingga pendekatan pembinaan dapat lebih kontekstual
 dan tepat sasaran. Bagi Direktorat Jenderal Perbendaharaan secara kelembagaan,
 temuan penelitian ini dapat menjadi bahan pertimbangan dalam penyempurnaan
 formula IKPA agar lebih mengakomodasi karakteristik pelaksanaan anggaran
 Belanja Modal yang bersifat kontraktual dan multi-termin.
 
-13
 BAB II
 TINJAUAN PUSTAKA
 Berdasarkan latar belakang dan rumusan masalah yang telah diuraikan pada
@@ -353,7 +359,6 @@ tahunan ke dalam realisasi belanja yang konkret. Undang-Undang Nomor 17 Tahun
 Perbendaharaan Negara menempatkan Anggaran Pendapatan dan Belanja Negara
 (APBN) sebagai instrumen kebijakan fiskal yang pelaksanaannya harus tertib, taat
 
-14
 pada peraturan, efisien, ekonomis, efektif, transparan, dan bertanggung jawab.
 Mardiasmo (2018) menegaskan bahwa dalam kerangka penganggaran berbasis
 kinerja, kualitas pelaksanaan anggaran tidak hanya diukur dari besarnya serapan,
@@ -378,7 +383,6 @@ berkontribusi pada deviasi anggaran (PMK Nomor 62 Tahun 2023).
 Dalam hierarki pelaksanaan APBN, kementerian dan lembaga
 berkedudukan sebagai Pengguna Anggaran yang menerima DIPA dari Menteri
 
-15
 Keuangan, kemudian mendistribusikan kewenangan pelaksanaannya kepada satuan
 kerja. Satuan kerja merupakan unit pelaksana teknis yang secara langsung
 mengelola kegiatan dan anggaran, dipimpin oleh Kuasa Pengguna Anggaran (KPA)
@@ -402,7 +406,6 @@ Keimigrasian, dan berkedudukan di wilayah perbatasan Kalimantan Barat–
 Malaysia yang menghadirkan dinamika mobilitas orang asing yang tinggi. Kondisi
 operasional yang dinamis ini menempatkan akurasi perencanaan dan pelaksanaan
 
-16
 anggaran, terutama pada belanja yang bersifat kontraktual, sebagai tantangan
 struktural yang relevan untuk dikaji.
 2.1.2 Belanja Modal: Konsep, Mekanisme, dan Pengadaan Barang/Jasa
@@ -427,7 +430,6 @@ komitmen, Berita Acara Serah Terima (BAST), SPP, SPM, dan SP2D. Untuk
 Belanja Modal, mekanisme tersebut diperkaya dengan tahapan pemilihan penyedia
 yang mengikuti Peraturan Presiden Nomor 16 Tahun 2018 sebagaimana telah
 
-17
 diubah dengan Peraturan Presiden Nomor 12 Tahun 2021 tentang Pengadaan
 Barang/Jasa Pemerintah. Dengan demikian, pelaksanaan Belanja Modal berada
 pada irisan dua kerangka regulasi sekaligus, yakni regulasi pelaksanaan anggaran
@@ -452,7 +454,6 @@ Perintah Membayar (SPM); selanjutnya KPPN menerbitkan Surat Perintah
 Pencairan Dana (SP2D) yang menjadi dasar transfer dana ke rekening penyedia.
 Rangkaian dokumen ini melekat pada setiap termin pembayaran Belanja Modal,
 
-18
 sehingga keterlambatan pada salah satu mata rantai, misalnya kelengkapan
 dokumen tagihan atau hasil verifikasi, akan langsung menggeser waktu realisasi
 dari rencana yang tertuang pada Halaman III DIPA.
@@ -474,14 +475,11 @@ dengan nilai yang direalisasikan dari suatu pos anggaran pada periode tertentu.
 Dalam konteks pelaksanaan anggaran, deviasi secara spesifik mengacu pada
 ketidaksesuaian antara RPD bulanan yang tercantum pada Halaman III DIPA
 dengan realisasi anggaran yang sesungguhnya terjadi pada bulan bersangkutan.
-Ratnasari (2022) mengklasifikasikan deviasi berdasarkan arahnya menjadi deviasi
-positif (overrun), ketika realisasi melebihi rencana, dan deviasi negatif (underrun),
+Ratnasari (2022) mengklasifikasikan deviasi berdasarkan arahnya menjadi deviasi positif (overrun), ketika realisasi melebihi rencana, dan deviasi negatif (underrun), ketika realisasi lebih rendah dari rencana. Dalam konteks manajemen kas negara di Indonesia, perspektif ini juga sering dibahas dari sudut akurasi perencanaan RPD (RPD − Realisasi), di mana kondisi RPD > Realisasi disebut sebagai over-estimation yang menyebabkan idle cash (dana mengendap), sedangkan RPD < Realisasi disebut under-estimation yang memicu tekanan likuiditas kas negara. Namun demikian, formulasi resmi penilaian IKPA berdasarkan PER-5/PB/2024 menggunakan nilai mutlak (absolut) dalam menghitung deviasi bulanan per jenis belanja:
 
-19
-ketika realisasi lebih rendah dari rencana. Pada belanja yang bersifat kontraktual
-seperti Belanja Modal, deviasi negatif lebih sering muncul karena pergeseran
-jadwal pengadaan, kontrak, dan pembayaran termin yang bergantung pada kesiapan
-pihak ketiga.
+$$\text{Deviasi Bulanan} = \frac{|\text{RPD Bulanan} - \text{Realisasi Anggaran}|}{\text{RPD Bulanan}} \times 100\%$$
+
+Melalui penggunaan nilai mutlak tersebut, formula IKPA tidak membedakan arah deviasi; baik terjadi overrun maupun underrun, penyimpangan tersebut tetap dihitung sebagai deviasi yang akan mengurangi nilai IKPA satker secara simetris. Pada belanja yang bersifat kontraktual seperti Belanja Modal, deviasi negatif (underrun) atau penyerapan di bawah rencana awal lebih sering muncul karena pergeseran jadwal pengadaan, kontrak, dan pembayaran termin yang bergantung pada kesiapan pihak ketiga.
 Literatur mengenai penyebab deviasi anggaran sektor publik
 mengidentifikasi beragam faktor yang, untuk keperluan penelitian ini,
 dikelompokkan ke dalam lima kategori yang relevan dengan pelaksanaan anggaran
@@ -502,7 +500,6 @@ Pada Belanja Modal, ketersediaan pejabat pengadaan bersertifikat dan PPK yang
 memahami regulasi pengadaan barang/jasa pemerintah (Perpres 16/2018 jo.
 Perpres 12/2021) menjadi prasyarat mutlak agar proses pemilihan penyedia,
 
-20
 negosiasi, dan penandatanganan kontrak dapat berjalan tepat waktu sesuai jadwal
 RPD.
 Ketiga, faktor administratif dan regulasi. Proses administratif yang panjang
@@ -527,7 +524,6 @@ Kelima, faktor teknis dan sistem informasi. Kendala pada sistem informasi
 pengelolaan keuangan negara, seperti SPAN dan SAKTI, dapat menimbulkan
 keterlambatan input data, kesalahan entri, dan ketidaksinkronan antarsistem.
 
-21
 Sholawatunnisa dan Supriyanto (2025), melalui pemodelan SARIMA, menemukan
 bahwa pola deviasi anggaran memiliki komponen musiman yang dapat
 diidentifikasi, yang mengindikasikan adanya faktor struktural berulang yang dapat
@@ -552,7 +548,6 @@ Meckling (1976) mendefinisikan hubungan keagenan sebagai kontrak di mana
 prinsipal melibatkan agen untuk melaksanakan pekerjaan atas namanya, disertai
 pendelegasian sebagian otoritas pengambilan keputusan. Permasalahan inti muncul
 
-22
 akibat asimetri informasi, yaitu kondisi ketika agen memiliki akses informasi yang
 lebih lengkap dibandingkan prinsipal, yang berpotensi menimbulkan adverse
 selection sebelum kontrak dan moral hazard setelah kontrak berjalan, sehingga
@@ -576,7 +571,6 @@ kompleks karena melibatkan pihak ketiga (penyedia barang/jasa) sebagai agen
 tambahan yang kinerjanya turut menentukan ketepatan realisasi. IKPA, dalam
 perspektif ini, berfungsi sebagai mekanisme monitoring and control yang dirancang
 
-23
 untuk memitigasi agency problem dengan mendorong akurasi perencanaan dan
 transparansi pelaporan (Manangin et al., 2023; Ratnasari, 2022).
 2.1.5 Indikator Kinerja Pelaksanaan Anggaran (IKPA)
@@ -601,7 +595,6 @@ atas ketiga jenis belanja, termasuk Belanja Modal; deviasi dihitung sebagai
 persentase simpangan antara RPD dan realisasi aktual, sehingga semakin besar
 simpangan, semakin rendah nilai indikatornya.
 
-24
 Nugroho et al. (2023) menemukan bahwa akurasi RPD berkorelasi positif
 dan signifikan dengan nilai IKPA total, dan satuan kerja yang konsisten menjaga
 deviasi rendah cenderung menunjukkan kinerja pelaksanaan anggaran yang lebih
@@ -626,7 +619,6 @@ Manangin et al. (2023) meneliti faktor-faktor yang memengaruhi nilai IKPA
 satuan kerja di wilayah KPPN Manado menggunakan pendekatan kuantitatif
 melalui survei dan analisis regresi, dan mengidentifikasi kompetensi sumber daya
 
-25
 manusia, pemahaman regulasi penganggaran, serta komitmen pimpinan sebagai
 determinan utama. Faktor komitmen pimpinan dan kompetensi tersebut
 berpengaruh langsung terhadap efektivitas pelaksanaan Belanja Modal yang sarat
@@ -650,7 +642,6 @@ data deret waktu realisasi anggaran di lingkup Kanwil DJPb Nusa Tenggara Barat,
 dan menemukan bahwa deviasi memiliki komponen musiman yang dapat
 diidentifikasi dan dimodelkan. Pola musiman tersebut, terutama pada triwulan III–
 
-26
 IV, sangat khas pada Belanja Modal yang termin pembayarannya bergeser
 mengikuti progres fisik pekerjaan.
 Dari kelima penelitian tersebut dapat diidentifikasi tiga kesenjangan yang
@@ -675,7 +666,6 @@ Kementerian/Lembaga
 2 Manangin, Tinangon, Faktor-Faktor yang Kompetensi SDM, pemahaman
 & Gamaliel (2023) Memengaruhi regulasi, dan komitmen pimpinan
 
-27
 | Pencapaian               | Nilai  IKPA  | berpengaruh         | signifikan  terhadap  |
 | ------------------------ | ------------ | ------------------- | --------------------- |
 | Satuan Kerja di Lingkup  |              | nilai IKPA satker.  |                       |
@@ -693,7 +683,6 @@ mengalami deviasi Belanja Modal.
 | IKPA:     | Studi  Kasus  20  | antara akurasi RPD dan nilai IKPA      |     |
 | Satuan    | Kerja  di  Jawa   | total; akurasi RPD Belanja Modal       |     |
 | Tengah    |                   | yang kontraktual lebih sulit dicapai.  |     |
-5
 Sholawatunnisa  &  Early  Warning  System  Deviasi  anggaran  memiliki  pola
 Supriyanto (2025)  Deviasi  Anggaran  musiman  yang  dapat  dimodelkan
 | Berbasis  | Model  | secara statistik; pola triwulan III–IV  |     |
@@ -710,7 +699,6 @@ Pertama, regulasi pelaksanaan anggaran yang diatur dalam PMK 62/2023
 memiliki hubungan langsung dengan kualitas pelaksanaan Belanja Modal pada
 satuan  kerja.  Kepatuhan  terhadap  mekanisme  perencanaan  (RPD  Halaman  III
 
-28
 DIPA), pelaksanaan (pengadaan, kontrak, BAST), dan pelaporan (SPP–SPM–
 SP2D) yang ditetapkan regulasi akan memengaruhi tingkat deviasi antara rencana
 dan realisasi anggaran.
@@ -727,7 +715,6 @@ Kementerian Keuangan selaku prinsipal dalam hubungan keagenan.
 Adapun kerangka pemikiran pada penelitian ini yaitu:
 Gambar 2.1 Kerangka Penelitian
 
-29
 BAB III
 METODE PENELITIAN
 3.1 Bentuk Penelitian
@@ -751,7 +738,6 @@ mekanisme yang tidak dapat ditangkap secara memadai melalui pengukuran
 variabel statistik semata. Rudenim Pontianak sebagai satu unit kasus tunggal tidak
 memungkinkan generalisasi statistik, dan pertanyaan mengenai penyebab deviasi
 
-30
 bersifat eksploratif yang belum memiliki hipotesis mapan untuk diuji (Creswell,
 2014, hlm. 14–17).
 Penelitian ini dilaksanakan di Rumah Detensi Imigrasi (Rudenim)
@@ -776,7 +762,6 @@ dengan penyedia, tahapan progres fisik, dan serangkaian proses verifikasi dokume
 dari SPP hingga SP2D. Kompleksitas interaksi antar-aktor, meliputi PPK, Pokja
 Pemilihan, penyedia, PPSPM, hingga KPPN, memerlukan eksplorasi kualitatif
 
-31
 mendalam yang mampu menangkap dinamika proses, hambatan, dan konteks
 keputusan yang melatarbelakangi deviasi.
 3.2 Teknik Pengumpulan Data
@@ -828,7 +813,6 @@ No Dokumen
 Sumber: Disusun berdasarkan kebutuhan data untuk menjawab RM 1, RM
 2, dan RM 3.
 
-35
 3.2.3 Observasi Non-Partisipatif
 Sebagai teknik pelengkap, observasi non-partisipatif dilaksanakan untuk
 menangkap dimensi alur kerja unit keuangan Rudenim Pontianak yang tidak selalu
@@ -852,14 +836,13 @@ menggambarkan tiga fase utama berdasarkan PMK Nomor 62 Tahun 2023, yakni
 Perencanaan, Penyusunan, dan Pelaksanaan, dengan penyesuaian khusus untuk
 Belanja Modal yang melibatkan mekanisme pengadaan barang/jasa berdasarkan
 
-36
 Perpres Nomor 16 Tahun 2018 sebagaimana diubah dengan Perpres Nomor 12
 Tahun 2021. Flowchart ini berfungsi sebagai peta analitis untuk mengidentifikasi
 titik-titik kritis pada setiap fase yang berpotensi menyebabkan deviasi antara
 rencana dan realisasi anggaran Belanja Modal.
 
 Gambar 3.1 Alur Pelaksanaan Anggaran Belanja
-Sumber: Diolah dari PMK 62/2023
+Sumber: Diolah oleh peneliti berdasarkan PMK 62/2023 dan Perpres 16/2018 jo. Perpres 12/2021
 
 Pada Fase Perencanaan (T-1), titik kritis deviasi terutama bersumber dari
 ketidakakuratan estimasi harga: harga referensi e-katalog yang digunakan saat
@@ -883,7 +866,6 @@ Pada Fase Pelaksanaan Anggaran Belanja Modal, fase yang memiliki titik
 kritis paling banyak, sumber deviasi meliputi: tender gagal atau diulang yang
 memaksa pergeseran timeline realisasi (sebagaimana diatur Perpres 16/2018 Pasal
 
-39
 38); keterlambatan progres fisik akibat faktor cuaca, supply chain, atau kapasitas
 penyedia lokal; tertundanya BAST karena pekerjaan belum mencapai progres yang
 disyaratkan; ketidaklengkapan dokumen tagihan dari penyedia (faktur, kuitansi,
@@ -893,7 +875,7 @@ anggaran di tengah tahun yang menggagalkan rencana realisasi yang sudah
 dijadwalkan. Keseluruhan titik kritis ini menjadi fokus eksplorasi dalam wawancara
 mendalam, khususnya untuk menjawab RM 2 (penyebab deviasi) dan RM 3 (dampak deviasi).
 
-3.3.2 Wawancara Mendalam dan Informan Penelitian
+3.3.2 In-depth Interview (Wawancara Mendalam)
 Untuk memperoleh data primer yang kredibel dan mendalam mengenai pelaksanaan anggaran Belanja Modal, peneliti menetapkan informan kunci yang terlibat langsung dalam siklus perencanaan dan pelaksanaan anggaran di Rumah Detensi Imigrasi Pontianak. Pemilihan informan dilakukan menggunakan teknik *purposive sampling* (Patton, 2015) berdasarkan kriteria substantif sebagai berikut:
 1. Memiliki posisi struktural atau fungsional yang terkait langsung dengan perencanaan dan/atau pelaksanaan anggaran Belanja Modal Rudenim Pontianak.
 2. Memiliki masa kerja minimal satu tahun pada posisi tersebut selama periode Tahun Anggaran 2023–2025.
@@ -930,7 +912,6 @@ satuan-satuan makna yang dapat dianalisis (Miles dan Huberman, 1994, hlm. 10–
 11). Reduksi dilaksanakan melalui transkripsi verbatim rekaman wawancara,
 kemudian pengkodean bertahap dari open coding (label pada unit makna), axial
 
-40
 coding (pengelompokan ke kategori yang dipetakan ke faktor-faktor deviasi pada
 kerangka penelitian), hingga selective coding (identifikasi kategori inti yang
 menjawab tiap RM).
@@ -955,7 +936,6 @@ triangulasi sumber: setiap temuan substantif dikonfirmasi dari minimal tiga
 informan yang berbeda posisinya; misalnya, apakah kesimpulan mengenai faktor
 penyebab deviasi Belanja Modal dikonfirmasi oleh KPA, PPK, dan Pejabat
 
-41
 Pengadaan secara independen. Temuan wawancara juga dicocokkan dengan bukti
 dari dokumen anggaran dan catatan observasi (triangulasi metode). Kedua, member
 check: transkrip wawancara dan ringkasan temuan per informan dikonfirmasi ulang
@@ -977,7 +957,6 @@ pernyataan kesimpulan dalam laporan penelitian dapat dilacak ke data sumbernya,
 yaitu kutipan wawancara spesifik (dengan kode informan dan nomor baris
 transkrip) atau bukti dokumenter spesifik (dengan nama dokumen dan halaman).
 
-42
 DAFTAR PUSTAKA
 Creswell, J. W. (2014). Research design: Qualitative, quantitative, and mixed
 methods approaches (4th ed.). SAGE Publications.
@@ -1003,7 +982,6 @@ Mardiasmo. (2018). Akuntansi sektor publik (Edisi terbaru). Andi.
 Miles, M. B., & Huberman, A. M. (1994). Qualitative data analysis: An expanded
 sourcebook (2nd ed.). SAGE Publications.
 
-43
 Nugroho, B., Widodo, T., & Pratama, R. (2023). Evaluasi implementasi IKPA:
 Studi kasus 20 satuan kerja di Jawa Tengah. Jurnal Keuangan dan
 Perbendaharaan Negara, 27(3), 112–130.
@@ -1033,7 +1011,6 @@ Peraturan Presiden Republik Indonesia Nomor 16 Tahun 2018 tentang Pengadaan
 Barang/Jasa Pemerintah. (2018). Lembaran Negara Republik Indonesia
 Tahun 2018 Nomor 33.
 
-44
 Peraturan Presiden Republik Indonesia Nomor 139 Tahun 2024 tentang
 Kementerian Imigrasi dan Pemasyarakatan. (2024). Lembaran Negara
 Republik Indonesia Tahun 2024.

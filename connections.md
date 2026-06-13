@@ -8,7 +8,7 @@ Registry of every system your AIOS can reach. Filled by `/onboard` from Q4-Q7 an
 | 2 | Customer interactions | WhatsApp | not yet connected | — | — |
 | 3 | Calendar | — | not yet connected | — | — |
 | 4 | Communication | WhatsApp | not yet connected | — | — |
-| 5 | Project / task tracking | — (di kepala) | not yet connected | — | — |
+| 5 | Project / task tracking | Notion (Tasks [UT]) | mcp (claude.ai Notion MCP) | connected | 2026-06-13 |
 | 6 | Meeting intelligence | — | not yet connected | — | — |
 | 7 | Knowledge / files | Notion | mcp (claude.ai Notion MCP) | connected | 2026-06-11 |
 

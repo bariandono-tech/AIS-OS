@@ -20,6 +20,34 @@ Keep it terse. Future-you will thank present-you for capturing the *why*, not ju
 
 ---
 
+## 2026-06-13 — Skill: inject-register-pergeseran (Level-Up #2)
+
+**Decision:** Buat skill AI-assisted untuk generate satu baris Register Pergeseran Paket dari input manual user (nama paket, bulan RPD, realisasi, alasan dari kontrak/inventaris). Autonomy L2 — AI draft, user review.
+
+**Why:** Proses isi register saat ini ~15 menit/paket karena harus rekonsiliasi ingatan + cek kontrak + format kolom manual. Dengan skill ini target jadi ~3 menit/paket. Bottleneck utama skripsi ada di pengumpulan data kasus BAB IV.
+
+**Alternatives considered:** L3 autonomous (ditolak — alasan pergeseran harus dari fakta lapangan user, bukan asumsi AI); skip otomasi (ditolak — ada 7+ paket kritis yang harus diisi).
+
+**Owner:** Bariandono.
+
+**KPI:** Less cost — waktu per baris register turun dari ~15 menit ke ~3 menit.
+
+---
+
+## 2026-06-13 — Standarkan relasi PARA Notion jadi dua arah (Mythos Brain)
+
+**Decision:** Mythos Brain (data source 37c) jadi satu-satunya struktur PARA aktif. Semua relasi hierarki Area–Project–Task–Note dijadikan dua arah (DUAL): Project↔Area dan Note↔Project diperbaiki dari satu-arah jadi dua-arah; Note↔Area, Task↔Project, Task↔Note sudah benar. Note→Tags sengaja dibiarkan satu-arah (kurang krusial).
+
+**Why:** Tag project ke Area tidak otomatis muncul karena relasi sebenarnya dua relasi satu-arah terpisah. Ada dua salinan template ("Max Brain" 37b lama, "Mythos Brain" 37c aktif) — sempat salah perbaiki di 37b. Pelajaran: selalu verifikasi collection ID berawalan 37c sebelum mengubah.
+
+**Alternatives considered:** Bikin dashboard "satu pintu" tanpa ubah schema (dilakukan tapi tidak cukup); mulai PARA dari nol (ditolak, data sudah ada).
+
+**Follow-up:** REVOKE GitHub token yang ter-embed di URL remote git; pertimbangkan arsip Max Brain (37b). Worklog detail tersimpan di Notion Area "Worklog — 13 Juni 2026".
+
+**Owner:** Bariandono.
+
+---
+
 ## 2026-06-11 — Produk: Jasa PPT Seminar/Skripsi Akuntansi via Twitter
 
 **Decision:** Pivot dari template CALK ke jasa pembuatan PPT seminar proposal dan skripsi (BAB 1–3) untuk mahasiswa akuntansi. Dikerjakan pakai AI, klien terima hasil jadi. Harga Rp 2.000–8.000/slide, target 20 slide/order = Rp 40rb–160rb per klien. Target: 1 klien/hari → Rp 50rb/hari minimum.
