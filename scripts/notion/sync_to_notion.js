@@ -6,8 +6,19 @@ require('dotenv').config();
 const notion = new Client({ auth: process.env.NOTION_TOKEN });
 
 const NOTES_DATABASE_ID = '37c78c4c-e388-81b0-bf1f-dca07fba6f3f'; // Pro Max Notes (Database ID)
-const PROJECT_PAGE_ID = '37c78c4c-e388-8149-ba66-fbd0ea94aaf8'; // Skripsi Deviasi Anggaran project
-const AREA_PAGE_ID = '37c78c4c-e388-8162-814b-ef33783d7ab3'; // Metodologi Penelitian area
+const AREA_PAGE_ID = '37c78c4c-e388-8162-814b-ef33783d7ab3'; // Pendidikan & Akuntansi area ID
+
+// Get project name from command line arguments (default to 'sieka-rudenim')
+const projectArg = process.argv[2] || 'sieka-rudenim';
+
+let PROJECT_PAGE_ID = '37c78c4c-e388-8149-ba66-fbd0ea94aaf8'; // Default: Skripsi Deviasi Anggaran project
+let workLogFolder = 'sieka-rudenim';
+
+if (projectArg === 'jasa-ppt' || projectArg === 'jasa-ppt-akuntansi') {
+  PROJECT_PAGE_ID = '37f78c4c-e388-81d1-837a-dad887723e8e'; // Jasa PPT & Layouting Skripsi Akuntansi
+  workLogFolder = 'jasa-ppt-akuntansi';
+}
+
 
 // Helper to convert Markdown inline formatting (bold, italic, code) into Notion rich_text
 function parseMarkdownToRichText(text) {
@@ -55,8 +66,8 @@ function parseMarkdownToRichText(text) {
 }
 
 async function sync() {
-  console.log('Reading work-log.md...');
-  const workLogPath = path.join(__dirname, '..', '..', 'projects', 'sieka-rudenim', 'work-log.md');
+  console.log(`Reading work-log.md for project [${workLogFolder}]...`);
+  const workLogPath = path.join(__dirname, '..', '..', 'projects', workLogFolder, 'work-log.md');
   if (!fs.existsSync(workLogPath)) {
     console.error(`Error: Could not find work-log.md at ${workLogPath}`);
     return;
