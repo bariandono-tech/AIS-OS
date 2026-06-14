@@ -475,11 +475,15 @@ dengan nilai yang direalisasikan dari suatu pos anggaran pada periode tertentu.
 Dalam konteks pelaksanaan anggaran, deviasi secara spesifik mengacu pada
 ketidaksesuaian antara RPD bulanan yang tercantum pada Halaman III DIPA
 dengan realisasi anggaran yang sesungguhnya terjadi pada bulan bersangkutan.
-Ratnasari (2022) mengklasifikasikan deviasi berdasarkan arahnya menjadi deviasi positif (overrun), ketika realisasi melebihi rencana, dan deviasi negatif (underrun), ketika realisasi lebih rendah dari rencana. Dalam konteks manajemen kas negara di Indonesia, perspektif ini juga sering dibahas dari sudut akurasi perencanaan RPD (RPD − Realisasi), di mana kondisi RPD > Realisasi disebut sebagai over-estimation yang menyebabkan idle cash (dana mengendap), sedangkan RPD < Realisasi disebut under-estimation yang memicu tekanan likuiditas kas negara. Namun demikian, formulasi resmi penilaian IKPA berdasarkan PER-5/PB/2024 menggunakan nilai mutlak (absolut) dalam menghitung deviasi bulanan per jenis belanja:
+Dalam literatur akuntansi secara umum, deviasi dapat dikelompokkan berdasarkan arahnya. Jika dihitung dari sudut pandang realisasi terhadap rencana ($\text{Realisasi} - \text{Rencana}$), deviasi positif terjadi ketika realisasi melebihi rencana (overrun), sedangkan deviasi negatif terjadi ketika realisasi lebih rendah dari rencana (underrun). Namun, dalam konteks manajemen kas negara di Indonesia yang dikelola oleh Kementerian Keuangan, arah deviasi dianalisis dari sudut pandang rencana dikurangi realisasi ($\text{RPD} - \text{Realisasi}$). Dalam perspektif perbendaharaan ini:
+1. Deviasi Positif (Over-estimation / Underrun) terjadi ketika RPD > Realisasi, yang mengakibatkan adanya dana mengendap (idle cash) karena dana yang telah disiapkan di kas negara tidak ditarik sesuai rencana (penyerapan di bawah rencana).
+2. Deviasi Negatif (Under-estimation / Overrun) terjadi ketika RPD < Realisasi, yang memicu tekanan likuiditas kas negara karena penarikan dana riil melebihi rencana awal yang diajukan.
+
+Namun demikian, formulasi resmi penilaian IKPA berdasarkan PER-5/PB/2024 menggunakan nilai mutlak (absolut) dalam menghitung deviasi bulanan per jenis belanja:
 
 $$\text{Deviasi Bulanan} = \frac{|\text{RPD Bulanan} - \text{Realisasi Anggaran}|}{\text{RPD Bulanan}} \times 100\%$$
 
-Melalui penggunaan nilai mutlak tersebut, formula IKPA tidak membedakan arah deviasi; baik terjadi overrun maupun underrun, penyimpangan tersebut tetap dihitung sebagai deviasi yang akan mengurangi nilai IKPA satker secara simetris. Pada belanja yang bersifat kontraktual seperti Belanja Modal, deviasi negatif (underrun) atau penyerapan di bawah rencana awal lebih sering muncul karena pergeseran jadwal pengadaan, kontrak, dan pembayaran termin yang bergantung pada kesiapan pihak ketiga.
+Melalui penggunaan nilai mutlak tersebut, formula IKPA tidak membedakan arah deviasi; baik terjadi overrun maupun underrun, penyimpangan tersebut tetap dihitung sebagai deviasi yang akan mengurangi nilai IKPA satker secara simetris. Pada belanja yang bersifat kontraktual seperti Belanja Modal, deviasi positif (underrun atau penyerapan di bawah rencana awal) lebih sering muncul karena pergeseran jadwal pengadaan, kontrak, dan pembayaran termin yang bergantung pada kesiapan pihak ketiga.
 Literatur mengenai penyebab deviasi anggaran sektor publik
 mengidentifikasi beragam faktor yang, untuk keperluan penelitian ini,
 dikelompokkan ke dalam lima kategori yang relevan dengan pelaksanaan anggaran
@@ -841,7 +845,7 @@ Tahun 2021. Flowchart ini berfungsi sebagai peta analitis untuk mengidentifikasi
 titik-titik kritis pada setiap fase yang berpotensi menyebabkan deviasi antara
 rencana dan realisasi anggaran Belanja Modal.
 
-Gambar 3.1 Alur Pelaksanaan Anggaran Belanja
+![Gambar 3.1 Alur Pelaksanaan Anggaran Belanja](../data/flowchart_alur_anggaran_1781345233177.png)
 Sumber: Diolah oleh peneliti berdasarkan PMK 62/2023 dan Perpres 16/2018 jo. Perpres 12/2021
 
 Pada Fase Perencanaan (T-1), titik kritis deviasi terutama bersumber dari
