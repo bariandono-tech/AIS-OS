@@ -1,0 +1,25 @@
+# Community 55
+
+> 4 nodes
+
+## Key Concepts
+
+- **reroute_views** (5 connections)
+- **decodeMap** (1 connections)
+- **translateAllPropertyIds** (1 connections)
+- **rerouteAllViews** (1 connections)
+
+## Relationships
+
+- [[Community 11]] (1 shared connections)
+- [[Community 10]] (1 shared connections)
+
+## Audit Trail
+
+- EXTRACTED: 8 (100%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
+
+---
+
+*Part of the graphify knowledge wiki. See [[index]] to navigate.*

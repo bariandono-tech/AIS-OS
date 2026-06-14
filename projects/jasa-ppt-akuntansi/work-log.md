@@ -39,3 +39,24 @@
 - `landing-page/style.css` — 1200+ baris CSS (dark theme, glassmorphism, responsive breakpoints).
 - `landing-page/script.js` — Navbar scroll, mobile menu, tab switching, FAQ accordion, count-up animation, scroll-reveal.
 - Commit & push ke branch `chore/notion-relations-and-projects-2026-06-13`.
+
+---
+
+## 2026-06-15
+
+### Migrasi Produk Digital Pajak Dasar & Pembersihan Graphify
+**Dikerjakan:**
+- **Pivot Produk Pajak Dasar:** Menyusun materi digital baru "Mastery Kit Pajak Dasar" di folder `projects/mastery-kit-pajak-dasar/` yang mencakup:
+  - Resume & Cheat Sheet Regulasi Pajak Dasar (KUP, PPh, PPN, Coretax System/PMK 81/2024, Nilai Buku/PMK 01/2026).
+  - Soal Latihan & Pembahasan lengkap Sidang Skripsi/Ujian Pajak.
+  - Alur Diagram & Flowchart Administrasi Pajak (NPWP, Withholding Tax, PPN PK-PM).
+  - Presentasi Slide Sidang PPT Outline (12 Slide).
+- **Pengembangan Landing Page:** Mengembangkan simulator PPh 21 TER interaktif di landing page bertema warna earth-tone "Mocha Warm" (Pantone 2025). Menggunakan sistem pembayaran manual dialihkan ke checkout WhatsApp.
+- **Pembersihan Workspace:** Memindahkan berkas `_COMMUNITY_Community 149.md` hasil ekstraksi Graphify dari root direktori ke dalam folder `graphify-out/` agar root workspace tetap bersih dan tidak mengganggu visualisasi di editor, dengan memastikan tautan di Obsidian tetap berfungsi menggunakan pencarian subfolder (*shortest path*).
+- **Instalasi Obsidian:** Memasang aplikasi Obsidian via `winget` untuk visualisasi peta hubungan catatan.
+
+**Output:**
+- Seluruh aset "Mastery Kit Pajak Dasar" siap dipromosikan.
+- Landing page simulator pajak aktif dengan checkout WhatsApp.
+- Folder root rapi tanpa berkas sampah `_COMMUNITY_*`.
+

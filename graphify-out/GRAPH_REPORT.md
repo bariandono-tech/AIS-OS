@@ -1,404 +1,1089 @@
-# Graph Report - .  (2026-06-14)
+# Graph Report - AIS-OS  (2026-06-14)
 
 ## Corpus Check
-- 175 files · ~217,429 words
+- 174 files · ~228,792 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1236 nodes · 1288 edges · 101 communities (62 shown, 39 thin omitted)
+- 2640 nodes · 2578 edges · 280 communities (193 shown, 87 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
+## Graph Freshness
+- Built from commit: `7925d37b`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
+
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Skripsi FEB UPB Pedoman & Ketentuan Akademik|Skripsi FEB UPB Pedoman & Ketentuan Akademik]]
-- [[_COMMUNITY_Jasa PPT & Layouting Skripsi Akuntansi|Jasa PPT & Layouting Skripsi Akuntansi]]
-- [[_COMMUNITY_Notion API Sync & Audit Scripts|Notion API Sync & Audit Scripts]]
-- [[_COMMUNITY_Jasa PPT Work Log & Agency Theory|Jasa PPT Work Log & Agency Theory]]
-- [[_COMMUNITY_Notion Ultimate Brain System Reference|Notion Ultimate Brain System Reference]]
-- [[_COMMUNITY_Regulasi PP 502018 & PMK 622023|Regulasi PP 50/2018 & PMK 62/2023]]
-- [[_COMMUNITY_Notion Ultimate Brain Lite PRD|Notion Ultimate Brain Lite PRD]]
-- [[_COMMUNITY_Presentasi PPT PMK 622023|Presentasi PPT PMK 62/2023]]
-- [[_COMMUNITY_AI 3M & EAD Productivity Framework|AI 3M & EAD Productivity Framework]]
-- [[_COMMUNITY_Notion Ultimate Brain Setup Roadmap|Notion Ultimate Brain Setup Roadmap]]
-- [[_COMMUNITY_Notion Database Inspection Scripts|Notion Database Inspection Scripts]]
-- [[_COMMUNITY_Notion Database Properties & Homepage Setup|Notion Database Properties & Homepage Setup]]
-- [[_COMMUNITY_AIOS Memory & Skripsi Deviasi Anggaran|AIOS Memory & Skripsi Deviasi Anggaran]]
-- [[_COMMUNITY_Notion Ultimate Brain Pro v2.0 PRD|Notion Ultimate Brain Pro v2.0 PRD]]
-- [[_COMMUNITY_Brain Pro Max Reference Structure|Brain Pro Max Reference Structure]]
-- [[_COMMUNITY_Notion Workspace Audit & PARA|Notion Workspace Audit & PARA]]
-- [[_COMMUNITY_AI OS Configuration & Connections|AI OS Configuration & Connections]]
-- [[_COMMUNITY_Makalah Seminar Akuntansi & Catatan Dosen|Makalah Seminar Akuntansi & Catatan Dosen]]
-- [[_COMMUNITY_Konteks Bisnis & Strategi Komunikasi|Konteks Bisnis & Strategi Komunikasi]]
-- [[_COMMUNITY_Panduan Penulisan & EYD Skripsi|Panduan Penulisan & EYD Skripsi]]
-- [[_COMMUNITY_Daftar Revisi & Catatan Dosen Makalah|Daftar Revisi & Catatan Dosen Makalah]]
-- [[_COMMUNITY_Teori & Metodologi Skripsi|Teori & Metodologi Skripsi]]
-- [[_COMMUNITY_Notion PARA Workspace Clean Up|Notion PARA Workspace Clean Up]]
-- [[_COMMUNITY_AI OS Expansion & Level-up Guidelines|AI OS Expansion & Level-up Guidelines]]
-- [[_COMMUNITY_Graphify Traversal & Query Expansion|Graphify Traversal & Query Expansion]]
-- [[_COMMUNITY_Notion Relations & Decisions Log|Notion Relations & Decisions Log]]
-- [[_COMMUNITY_Ultimate Brain Pro Notes Rerouting|Ultimate Brain Pro Notes Rerouting]]
-- [[_COMMUNITY_AI Opportunity Scan Prompt|AI Opportunity Scan Prompt]]
-- [[_COMMUNITY_Bedah PMK 622023 & IKPA Diagram|Bedah PMK 62/2023 & IKPA Diagram]]
-- [[_COMMUNITY_Notion Integration & Claude MCP Configuration|Notion Integration & Claude MCP Configuration]]
-- [[_COMMUNITY_Graphify Neo4j & Wiki Export Options|Graphify Neo4j & Wiki Export Options]]
-- [[_COMMUNITY_Tabel IKPA & Belanja Modal Rudenim|Tabel IKPA & Belanja Modal Rudenim]]
-- [[_COMMUNITY_Jurnal Harian & Kurasi Referensi|Jurnal Harian & Kurasi Referensi]]
-- [[_COMMUNITY_Format Data Kasus Rudenim & Register Pergeseran|Format Data Kasus Rudenim & Register Pergeseran]]
-- [[_COMMUNITY_Graphify Git Repos & Merge Flow|Graphify Git Repos & Merge Flow]]
-- [[_COMMUNITY_Graphify Incremental Update Logic|Graphify Incremental Update Logic]]
-- [[_COMMUNITY_AIOS Intake & Q&A Prompts|AIOS Intake & Q&A Prompts]]
-- [[_COMMUNITY_Web UI Components & Animations|Web UI Components & Animations]]
-- [[_COMMUNITY_Whisper AudioVideo Transcription|Whisper Audio/Video Transcription]]
-- [[_COMMUNITY_Package JSON Dependencies|Package JSON Dependencies]]
-- [[_COMMUNITY_Claude Voice Reference & Response Style|Claude Voice Reference & Response Style]]
-- [[_COMMUNITY_Graphify Add URL & Watch Folders|Graphify Add URL & Watch Folders]]
-- [[_COMMUNITY_Q3 2026 Priorities & Goals|Q3 2026 Priorities & Goals]]
-- [[_COMMUNITY_Business Context & Rudenim Job|Business Context & Rudenim Job]]
-- [[_COMMUNITY_Modal & UI Scroll Components|Modal & UI Scroll Components]]
-- [[_COMMUNITY_Notion Para Dashboard Deep Inspection|Notion Para Dashboard Deep Inspection]]
-- [[_COMMUNITY_Notion Block Search Utility|Notion Block Search Utility]]
-- [[_COMMUNITY_Notion Page Creation & Step 241 Code|Notion Page Creation & Step 241 Code]]
-- [[_COMMUNITY_Notion Page Creation & Step 241 Decoded|Notion Page Creation & Step 241 Decoded]]
-- [[_COMMUNITY_Graphify Commit Hooks & Git Integration|Graphify Commit Hooks & Git Integration]]
-- [[_COMMUNITY_Notion Duplicate Views Audit|Notion Duplicate Views Audit]]
-- [[_COMMUNITY_Notion Duplicate DBs Check|Notion Duplicate DBs Check]]
-- [[_COMMUNITY_Notion ParentChildren Blocks Inspection|Notion Parent/Children Blocks Inspection]]
-- [[_COMMUNITY_Notion Populate ProjectsTasks (PT)|Notion Populate Projects/Tasks (PT)]]
-- [[_COMMUNITY_Notion Reconstruct PARA Dashboard|Notion Reconstruct PARA Dashboard]]
-- [[_COMMUNITY_Notion Reroute Page Views|Notion Reroute Page Views]]
-- [[_COMMUNITY_Notion Scan Callout Blocks|Notion Scan Callout Blocks]]
-- [[_COMMUNITY_Notion Server Settings & Permissions|Notion Server Settings & Permissions]]
-- [[_COMMUNITY_Graphify Subagent Prompts & Specs|Graphify Subagent Prompts & Specs]]
-- [[_COMMUNITY_Feedback & Status Reviews|Feedback & Status Reviews]]
-- [[_COMMUNITY_Notion Pro Pages Scanner|Notion Pro Pages Scanner]]
-- [[_COMMUNITY_Notion Page Path Tracer|Notion Page Path Tracer]]
-- [[_COMMUNITY_Community 62 (.mcp)|Community 62 (.mcp)]]
-- [[_COMMUNITY_Community 63 (About Me)|Community 63 (About Me)]]
-- [[_COMMUNITY_Community 64 (add edited property)|Community 64 (add edited property)]]
-- [[_COMMUNITY_Community 65 (check page details)|Community 65 (check page details)]]
-- [[_COMMUNITY_Community 66 (check para views)|Community 66 (check para views)]]
-- [[_COMMUNITY_Community 67 (check real connections)|Community 67 (check real connections)]]
-- [[_COMMUNITY_Community 68 (clean callout children)|Community 68 (clean callout children)]]
-- [[_COMMUNITY_Community 69 (clean remaining tf)|Community 69 (clean remaining tf)]]
-- [[_COMMUNITY_Community 70 (compare para schemas)|Community 70 (compare para schemas)]]
-- [[_COMMUNITY_Community 71 (create notion project)|Community 71 (create notion project)]]
-- [[_COMMUNITY_Community 72 (dump para blocks)|Community 72 (dump para blocks)]]
-- [[_COMMUNITY_Community 73 (find all databases)|Community 73 (find all databases)]]
-- [[_COMMUNITY_Community 74 (fix recurring nav)|Community 74 (fix recurring nav)]]
-- [[_COMMUNITY_Community 75 (inspect failed views)|Community 75 (inspect failed views)]]
-- [[_COMMUNITY_Community 76 (inspect view blocks)|Community 76 (inspect view blocks)]]
-- [[_COMMUNITY_Community 77 (list all pages)|Community 77 (list all pages)]]
-- [[_COMMUNITY_Community 78 (list areas)|Community 78 (list areas)]]
-- [[_COMMUNITY_Community 79 (print all ds schemas)|Community 79 (print all ds schemas)]]
-- [[_COMMUNITY_Community 80 (print page properties)|Community 80 (print page properties)]]
-- [[_COMMUNITY_Community 81 (relink para page views)|Community 81 (relink para page views)]]
-- [[_COMMUNITY_Community 82 (retrieve new db)|Community 82 (retrieve new db)]]
-- [[_COMMUNITY_Community 83 (scan workspace)|Community 83 (scan workspace)]]
-- [[_COMMUNITY_Community 84 (search all)|Community 84 (search all)]]
-- [[_COMMUNITY_Community 85 (search brain)|Community 85 (search brain)]]
-- [[_COMMUNITY_Community 86 (search mythos)|Community 86 (search mythos)]]
-- [[_COMMUNITY_Community 87 (settings.local)|Community 87 (settings.local)]]
-- [[_COMMUNITY_Community 88 (test query)|Community 88 (test query)]]
-- [[_COMMUNITY_Community 89 (unarchive blocks)|Community 89 (unarchive blocks)]]
-- [[_COMMUNITY_Community 90 (Html)|Community 90 (Html)]]
-- [[_COMMUNITY_Community 91 (PRD SIEKA v1.0)|Community 91 (PRD SIEKA v1.0)]]
-- [[_COMMUNITY_Community 92 (audit structure)|Community 92 (audit structure)]]
-- [[_COMMUNITY_Community 93 (databases audit)|Community 93 (databases audit)]]
-- [[_COMMUNITY_Community 94 (dokumen22)|Community 94 (dokumen22)]]
-- [[_COMMUNITY_Community 95 (flowchart alur anggaran 178...)|Community 95 (flowchart alur anggaran 178...)]]
-- [[_COMMUNITY_Community 96 (kerangka penelitian)|Community 96 (kerangka penelitian)]]
-- [[_COMMUNITY_Community 97 (mastery kit bundle mockup)|Community 97 (mastery kit bundle mockup)]]
-- [[_COMMUNITY_Community 98 (notion skill review)|Community 98 (notion skill review)]]
-- [[_COMMUNITY_Community 99 (para blocks)|Community 99 (para blocks)]]
-- [[_COMMUNITY_Community 100 (review skill rekonsiliasi)|Community 100 (review skill rekonsiliasi)]]
+- [[_COMMUNITY_Community 0|Community 0]]
+- [[_COMMUNITY_Community 1|Community 1]]
+- [[_COMMUNITY_Community 2|Community 2]]
+- [[_COMMUNITY_Community 3|Community 3]]
+- [[_COMMUNITY_Community 4|Community 4]]
+- [[_COMMUNITY_Community 5|Community 5]]
+- [[_COMMUNITY_Community 6|Community 6]]
+- [[_COMMUNITY_Community 7|Community 7]]
+- [[_COMMUNITY_Community 8|Community 8]]
+- [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
+- [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Community 15|Community 15]]
+- [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 17|Community 17]]
+- [[_COMMUNITY_Community 18|Community 18]]
+- [[_COMMUNITY_Community 19|Community 19]]
+- [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
+- [[_COMMUNITY_Community 28|Community 28]]
+- [[_COMMUNITY_Community 29|Community 29]]
+- [[_COMMUNITY_Community 30|Community 30]]
+- [[_COMMUNITY_Community 31|Community 31]]
+- [[_COMMUNITY_Community 32|Community 32]]
+- [[_COMMUNITY_Community 33|Community 33]]
+- [[_COMMUNITY_Community 34|Community 34]]
+- [[_COMMUNITY_Community 35|Community 35]]
+- [[_COMMUNITY_Community 36|Community 36]]
+- [[_COMMUNITY_Community 37|Community 37]]
+- [[_COMMUNITY_Community 38|Community 38]]
+- [[_COMMUNITY_Community 39|Community 39]]
+- [[_COMMUNITY_Community 40|Community 40]]
+- [[_COMMUNITY_Community 41|Community 41]]
+- [[_COMMUNITY_Community 42|Community 42]]
+- [[_COMMUNITY_Community 43|Community 43]]
+- [[_COMMUNITY_Community 44|Community 44]]
+- [[_COMMUNITY_Community 45|Community 45]]
+- [[_COMMUNITY_Community 46|Community 46]]
+- [[_COMMUNITY_Community 47|Community 47]]
+- [[_COMMUNITY_Community 48|Community 48]]
+- [[_COMMUNITY_Community 49|Community 49]]
+- [[_COMMUNITY_Community 50|Community 50]]
+- [[_COMMUNITY_Community 51|Community 51]]
+- [[_COMMUNITY_Community 52|Community 52]]
+- [[_COMMUNITY_Community 53|Community 53]]
+- [[_COMMUNITY_Community 54|Community 54]]
+- [[_COMMUNITY_Community 55|Community 55]]
+- [[_COMMUNITY_Community 56|Community 56]]
+- [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Community 58|Community 58]]
+- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 60|Community 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 65|Community 65]]
+- [[_COMMUNITY_Community 66|Community 66]]
+- [[_COMMUNITY_Community 67|Community 67]]
+- [[_COMMUNITY_Community 68|Community 68]]
+- [[_COMMUNITY_Community 69|Community 69]]
+- [[_COMMUNITY_Community 70|Community 70]]
+- [[_COMMUNITY_Community 71|Community 71]]
+- [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Community 74|Community 74]]
+- [[_COMMUNITY_Community 75|Community 75]]
+- [[_COMMUNITY_Community 76|Community 76]]
+- [[_COMMUNITY_Community 77|Community 77]]
+- [[_COMMUNITY_Community 78|Community 78]]
+- [[_COMMUNITY_Community 79|Community 79]]
+- [[_COMMUNITY_Community 80|Community 80]]
+- [[_COMMUNITY_Community 81|Community 81]]
+- [[_COMMUNITY_Community 82|Community 82]]
+- [[_COMMUNITY_Community 83|Community 83]]
+- [[_COMMUNITY_Community 84|Community 84]]
+- [[_COMMUNITY_Community 85|Community 85]]
+- [[_COMMUNITY_Community 86|Community 86]]
+- [[_COMMUNITY_Community 87|Community 87]]
+- [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 89|Community 89]]
+- [[_COMMUNITY_Community 90|Community 90]]
+- [[_COMMUNITY_Community 91|Community 91]]
+- [[_COMMUNITY_Community 92|Community 92]]
+- [[_COMMUNITY_Community 93|Community 93]]
+- [[_COMMUNITY_Community 94|Community 94]]
+- [[_COMMUNITY_Community 95|Community 95]]
+- [[_COMMUNITY_Community 96|Community 96]]
+- [[_COMMUNITY_Community 97|Community 97]]
+- [[_COMMUNITY_Community 98|Community 98]]
+- [[_COMMUNITY_Community 99|Community 99]]
+- [[_COMMUNITY_Community 100|Community 100]]
+- [[_COMMUNITY_Community 101|Community 101]]
+- [[_COMMUNITY_Community 102|Community 102]]
+- [[_COMMUNITY_Community 103|Community 103]]
+- [[_COMMUNITY_Community 104|Community 104]]
+- [[_COMMUNITY_Community 105|Community 105]]
+- [[_COMMUNITY_Community 106|Community 106]]
+- [[_COMMUNITY_Community 107|Community 107]]
+- [[_COMMUNITY_Community 108|Community 108]]
+- [[_COMMUNITY_Community 109|Community 109]]
+- [[_COMMUNITY_Community 110|Community 110]]
+- [[_COMMUNITY_Community 111|Community 111]]
+- [[_COMMUNITY_Community 112|Community 112]]
+- [[_COMMUNITY_Community 113|Community 113]]
+- [[_COMMUNITY_Community 114|Community 114]]
+- [[_COMMUNITY_Community 115|Community 115]]
+- [[_COMMUNITY_Community 116|Community 116]]
+- [[_COMMUNITY_Community 117|Community 117]]
+- [[_COMMUNITY_Community 118|Community 118]]
+- [[_COMMUNITY_Community 119|Community 119]]
+- [[_COMMUNITY_Community 120|Community 120]]
+- [[_COMMUNITY_Community 121|Community 121]]
+- [[_COMMUNITY_Community 122|Community 122]]
+- [[_COMMUNITY_Community 123|Community 123]]
+- [[_COMMUNITY_Community 124|Community 124]]
+- [[_COMMUNITY_Community 125|Community 125]]
+- [[_COMMUNITY_Community 126|Community 126]]
+- [[_COMMUNITY_Community 127|Community 127]]
+- [[_COMMUNITY_Community 128|Community 128]]
+- [[_COMMUNITY_Community 129|Community 129]]
+- [[_COMMUNITY_Community 130|Community 130]]
+- [[_COMMUNITY_Community 131|Community 131]]
+- [[_COMMUNITY_Community 132|Community 132]]
+- [[_COMMUNITY_Community 133|Community 133]]
+- [[_COMMUNITY_Community 134|Community 134]]
+- [[_COMMUNITY_Community 135|Community 135]]
+- [[_COMMUNITY_Community 136|Community 136]]
+- [[_COMMUNITY_Community 137|Community 137]]
+- [[_COMMUNITY_Community 138|Community 138]]
+- [[_COMMUNITY_Community 140|Community 140]]
+- [[_COMMUNITY_Community 141|Community 141]]
+- [[_COMMUNITY_Community 142|Community 142]]
+- [[_COMMUNITY_Community 143|Community 143]]
+- [[_COMMUNITY_Community 144|Community 144]]
+- [[_COMMUNITY_Community 145|Community 145]]
+- [[_COMMUNITY_Community 146|Community 146]]
+- [[_COMMUNITY_Community 147|Community 147]]
+- [[_COMMUNITY_Community 148|Community 148]]
+- [[_COMMUNITY_Community 149|Community 149]]
+- [[_COMMUNITY_Community 150|Community 150]]
+- [[_COMMUNITY_Community 151|Community 151]]
+- [[_COMMUNITY_Community 152|Community 152]]
+- [[_COMMUNITY_Community 153|Community 153]]
+- [[_COMMUNITY_Community 154|Community 154]]
+- [[_COMMUNITY_Community 155|Community 155]]
+- [[_COMMUNITY_Community 156|Community 156]]
+- [[_COMMUNITY_Community 157|Community 157]]
+- [[_COMMUNITY_Community 158|Community 158]]
+- [[_COMMUNITY_Community 159|Community 159]]
+- [[_COMMUNITY_Community 160|Community 160]]
+- [[_COMMUNITY_Community 161|Community 161]]
+- [[_COMMUNITY_Community 162|Community 162]]
+- [[_COMMUNITY_Community 163|Community 163]]
+- [[_COMMUNITY_Community 164|Community 164]]
+- [[_COMMUNITY_Community 165|Community 165]]
+- [[_COMMUNITY_Community 166|Community 166]]
+- [[_COMMUNITY_Community 167|Community 167]]
+- [[_COMMUNITY_Community 168|Community 168]]
+- [[_COMMUNITY_Community 169|Community 169]]
+- [[_COMMUNITY_Community 170|Community 170]]
+- [[_COMMUNITY_Community 171|Community 171]]
+- [[_COMMUNITY_Community 172|Community 172]]
+- [[_COMMUNITY_Community 173|Community 173]]
+- [[_COMMUNITY_Community 174|Community 174]]
+- [[_COMMUNITY_Community 175|Community 175]]
+- [[_COMMUNITY_Community 176|Community 176]]
+- [[_COMMUNITY_Community 177|Community 177]]
+- [[_COMMUNITY_Community 178|Community 178]]
+- [[_COMMUNITY_Community 179|Community 179]]
+- [[_COMMUNITY_Community 180|Community 180]]
+- [[_COMMUNITY_Community 181|Community 181]]
+- [[_COMMUNITY_Community 182|Community 182]]
+- [[_COMMUNITY_Community 183|Community 183]]
+- [[_COMMUNITY_Community 184|Community 184]]
+- [[_COMMUNITY_Community 185|Community 185]]
+- [[_COMMUNITY_Community 186|Community 186]]
+- [[_COMMUNITY_Community 187|Community 187]]
+- [[_COMMUNITY_Community 188|Community 188]]
+- [[_COMMUNITY_Community 189|Community 189]]
+- [[_COMMUNITY_Community 190|Community 190]]
+- [[_COMMUNITY_Community 191|Community 191]]
+- [[_COMMUNITY_Community 192|Community 192]]
+- [[_COMMUNITY_Community 193|Community 193]]
+- [[_COMMUNITY_Community 194|Community 194]]
+- [[_COMMUNITY_Community 195|Community 195]]
+- [[_COMMUNITY_Community 196|Community 196]]
+- [[_COMMUNITY_Community 197|Community 197]]
+- [[_COMMUNITY_Community 198|Community 198]]
+- [[_COMMUNITY_Community 199|Community 199]]
+- [[_COMMUNITY_Community 200|Community 200]]
+- [[_COMMUNITY_Community 201|Community 201]]
+- [[_COMMUNITY_Community 202|Community 202]]
+- [[_COMMUNITY_Community 203|Community 203]]
+- [[_COMMUNITY_Community 204|Community 204]]
+- [[_COMMUNITY_Community 205|Community 205]]
+- [[_COMMUNITY_Community 206|Community 206]]
+- [[_COMMUNITY_Community 207|Community 207]]
+- [[_COMMUNITY_Community 208|Community 208]]
+- [[_COMMUNITY_Community 209|Community 209]]
+- [[_COMMUNITY_Community 210|Community 210]]
+- [[_COMMUNITY_Community 211|Community 211]]
+- [[_COMMUNITY_Community 212|Community 212]]
+- [[_COMMUNITY_Community 213|Community 213]]
+- [[_COMMUNITY_Community 214|Community 214]]
+- [[_COMMUNITY_Community 215|Community 215]]
+- [[_COMMUNITY_Community 216|Community 216]]
+- [[_COMMUNITY_Community 217|Community 217]]
+- [[_COMMUNITY_Community 218|Community 218]]
+- [[_COMMUNITY_Community 219|Community 219]]
+- [[_COMMUNITY_Community 220|Community 220]]
+- [[_COMMUNITY_Community 221|Community 221]]
+- [[_COMMUNITY_Community 222|Community 222]]
+- [[_COMMUNITY_Community 223|Community 223]]
+- [[_COMMUNITY_Community 224|Community 224]]
+- [[_COMMUNITY_Community 225|Community 225]]
+- [[_COMMUNITY_Community 226|Community 226]]
+- [[_COMMUNITY_Community 227|Community 227]]
+- [[_COMMUNITY_Community 228|Community 228]]
+- [[_COMMUNITY_Community 229|Community 229]]
+- [[_COMMUNITY_Community 230|Community 230]]
+- [[_COMMUNITY_Community 231|Community 231]]
+- [[_COMMUNITY_Community 232|Community 232]]
+- [[_COMMUNITY_Community 233|Community 233]]
+- [[_COMMUNITY_Community 234|Community 234]]
+- [[_COMMUNITY_Community 235|Community 235]]
+- [[_COMMUNITY_Community 236|Community 236]]
+- [[_COMMUNITY_Community 237|Community 237]]
+- [[_COMMUNITY_Community 238|Community 238]]
+- [[_COMMUNITY_Community 239|Community 239]]
+- [[_COMMUNITY_Community 240|Community 240]]
+- [[_COMMUNITY_Community 241|Community 241]]
+- [[_COMMUNITY_Community 242|Community 242]]
+- [[_COMMUNITY_Community 243|Community 243]]
+- [[_COMMUNITY_Community 244|Community 244]]
+- [[_COMMUNITY_Community 245|Community 245]]
+- [[_COMMUNITY_Community 246|Community 246]]
+- [[_COMMUNITY_Community 247|Community 247]]
+- [[_COMMUNITY_Community 248|Community 248]]
+- [[_COMMUNITY_Community 249|Community 249]]
+- [[_COMMUNITY_Community 250|Community 250]]
+- [[_COMMUNITY_Community 251|Community 251]]
+- [[_COMMUNITY_Community 252|Community 252]]
+- [[_COMMUNITY_Community 253|Community 253]]
+- [[_COMMUNITY_Community 254|Community 254]]
+- [[_COMMUNITY_Community 255|Community 255]]
+- [[_COMMUNITY_Community 256|Community 256]]
+- [[_COMMUNITY_Community 257|Community 257]]
+- [[_COMMUNITY_Community 258|Community 258]]
+- [[_COMMUNITY_Community 259|Community 259]]
+- [[_COMMUNITY_Community 260|Community 260]]
+- [[_COMMUNITY_Community 261|Community 261]]
+- [[_COMMUNITY_Community 262|Community 262]]
+- [[_COMMUNITY_Community 263|Community 263]]
+- [[_COMMUNITY_Community 264|Community 264]]
+- [[_COMMUNITY_Community 265|Community 265]]
+- [[_COMMUNITY_Community 266|Community 266]]
+- [[_COMMUNITY_Community 267|Community 267]]
+- [[_COMMUNITY_Community 268|Community 268]]
+- [[_COMMUNITY_Community 269|Community 269]]
+- [[_COMMUNITY_Community 270|Community 270]]
+- [[_COMMUNITY_Community 271|Community 271]]
+- [[_COMMUNITY_Community 278|Community 278]]
+- [[_COMMUNITY_Community 279|Community 279]]
 
 ## God Nodes (most connected - your core abstractions)
+1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
+2. `A8. Module Specifications` - 19 edges
+3. `🎞️ DETAIL SLIDE PER SLIDE (Slide 1 - 15)` - 16 edges
+4. `Ultimate Brain — Complete Second Brain System in Notion` - 16 edges
+5. `A6. Target Architecture — Canonical Databases & Full Schemas` - 14 edges
+6. `📽️ Struktur & Konten Slide` - 13 edges
+7. `PART B — NOTION BUILD GUIDE (EXECUTION)` - 13 edges
+8. `What You Must Do When Invoked` - 11 edges
+9. `/graphify` - 11 edges
+10. `What You Must Do When Invoked` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `CLAUDE` --defines--> `graphify`  [EXTRACTED]
+   →   _Bridges community 253 → community 16_
 - `SKILL` --defines--> `Automate second:`  [EXTRACTED]
    →   _Bridges community 0 → community 8_
 - `SKILL` --contains_section--> `BAB II — Tinjauan Pustaka`  [EXTRACTED]
    →   _Bridges community 0 → community 1_
 - `SKILL` --defines--> `Connections`  [EXTRACTED]
-   →   _Bridges community 0 → community 16_
+   →   _Bridges community 0 → community 191_
 - `SKILL` --defines--> `Date:`  [EXTRACTED]
    →   _Bridges community 0 → community 13_
-- `SKILL` --defines--> `Maksud:`  [EXTRACTED]
-   →   _Bridges community 0 → community 17_
 
 ## Import Cycles
 - None detected.
 
-## Communities (101 total, 39 thin omitted)
+## Communities (280 total, 87 thin omitted)
 
-### Community 0 - "Skripsi FEB UPB Pedoman & Ketentuan Akademik"
+### Community 0 - "Community 0"
 Cohesion: 0.01
 Nodes (345): 133 SKS, 1,0 spasi, 1.1 Pengertian Skripsi, 1.2 Tujuan dan Manfaat Skripsi, 1.3 Karakteristik Skripsi, 1.4 Proposal, 1,5 spasi, 1. INGEST — user says "add this" (or drops a link/file/text) (+337 more)
 
-### Community 1 - "Jasa PPT & Layouting Skripsi Akuntansi"
+### Community 1 - "Community 1"
 Cohesion: 0.04
 Nodes (47): 1. Katalog Layanan & Harga, 1. Team-reaches-out:, 2. Alur Kerja Promosi Twitter/X, 2. Context-switching reduction:, 3. Knowledge-leaves-your-head:, 3. Sumber Daya Terkait, AIS-OS, AIS-OS — AI Operating System starter kit for Claude Code (+39 more)
 
-### Community 2 - "Notion API Sync & Audit Scripts"
+### Community 2 - "Community 2"
 Cohesion: 0.05
-Nodes (37): audit_all_databases, checkTJText, getBlockChildren, runAudit, scanPageBlocks, audit_para, checkTJText, getBlockChildren (+29 more)
+Nodes (28): build_makalah, centered, emptyRow, heading1, heading2, heading3, justifiedPara, pageBreak (+20 more)
 
-### Community 3 - "Jasa PPT Work Log & Agency Theory"
+### Community 3 - "Community 3"
 Cohesion: 0.06
 Nodes (35): 1.5 lines/1,5 spasi, 2026-06-13, 2026-06-14, 2026-06-14 (Sesi 2), Analisis Dampak Deviasi — Tabel Penyebab Pergeseran, Analisis Peluang:, Daftar Isi Statis & Spasi 1.5, Diagram Kerangka Penelitian (Gambar 2.1) (+27 more)
 
-### Community 4 - "Notion Ultimate Brain System Reference"
+### Community 4 - "Community 4"
 Cohesion: 0.08
 Nodes (26): 1. Halaman Utama (Homepage), 2. Quick Capture (Tangkap Cepat), Cara menggunakan Save to Notion:, Daftar Isi, Dashboard, Dua Tampilan di Quick Capture:, Fitur utama sistem ini:, Form ke inbox (+18 more)
 
-### Community 5 - "Regulasi PP 50/2018 & PMK 62/2023"
+### Community 5 - "Community 5"
 Cohesion: 0.08
 Nodes (26): 1. Kenapa PMK ini Sangat Heboh? (The Omnibus Effect), 1. Kenapa PP ini Diterbitkan? (Latar Belakang), 29 peraturan berbeda, 2. Poin-Poin Krusial yang Wajib Dikuasai:, 2. Poin-Poin Perubahan Krusial:, Akselerasi Pengadaan Barang/Jasa (Pra-DIPA / Sebelum Tahun Anggaran):, Aturan Sisa Pekerjaan Akhir Tahun (Pasal 163):, Bedah PP 50/2018 & PMK 62/2023 (Versi Cepat Paham Mahasiswa & Praktisi) (+18 more)
 
-### Community 6 - "Notion Ultimate Brain Lite PRD"
+### Community 6 - "Community 6"
 Cohesion: 0.10
 Nodes (25): 1. Latar Belakang, 2. Tujuan, 3.1 Database yang Ada, 3.2 Gap yang Ada, 3. Kondisi Saat Ini, 4.1 Database Canonical (yang dipakai), 4.2 Relasi yang Perlu Ditambahkan, 4. Arsitektur Target (+17 more)
 
-### Community 7 - "Presentasi PPT PMK 62/2023"
+### Community 7 - "Community 7"
 Cohesion: 0.08
 Nodes (24): 01. Latar Belakang:, 02. PP 50/2018:, 03. PMK 62/2023:, Bedah PP 50/2018 & PMK 62/2023 (Siap Pakai untuk Tugas Kuliah, Sempro, atau Sidang), Judul Utama:, Layout:, Oleh:, Panduan Penggunaan: (+16 more)
 
-### Community 8 - "AI 3M & EAD Productivity Framework"
+### Community 8 - "Community 8"
 Cohesion: 0.08
 Nodes (24): 1. Find the Constraint, 1. The Default Shift, 2. EAD: Eliminate, Automate, Delegate, 2. The Function Breakdown, 3. The Curiosity Rule, 3ms-framework, 60/30/10 Golden Rule:, Automate second: (+16 more)
 
-### Community 9 - "Notion Ultimate Brain Setup Roadmap"
+### Community 9 - "Community 9"
 Cohesion: 0.08
 Nodes (24): Dep:, Fase 1.0 — Pondasi (WAJIB duluan, semua lain bergantung di sini), Fase 1.1 — Skema database (PARALEL setelah T1.2), Fase 1.2 — Relasi antar-database (SEQ — butuh semua skema siap), Fase 1.3 — Formula (PARALEL — formula independen), Fase 1.4 — Views & Dashboard (SEQ — butuh data & relasi final), Fase 1.5 — Konten jual (PARALEL — tidak sentuh database), Fase 1.6 — Rilis (SEQ — gerbang akhir) (+16 more)
 
-### Community 10 - "Notion Database Inspection Scripts"
-Cohesion: 0.08
-Nodes (24): @notionhq/client, check_pt_schemas, checkPTSchemas, enrich_dbs, enrichNotes, inspect_archive_blocks, inspect, inspect_block (+16 more)
+### Community 10 - "Community 10"
+Cohesion: 0.07
+Nodes (28): @notionhq/client, check_note_content, checkNoteContent, check_para_views, checkViews, clean_callout_children, cleanCalloutChildren, compare_para_schemas (+20 more)
 
-### Community 11 - "Notion Database Properties & Homepage Setup"
-Cohesion: 0.09
-Nodes (23): add_created_property, addCreated, check_note_content, checkNoteContent, check_note_properties, checkNote, compare_schemas, compare (+15 more)
+### Community 11 - "Community 11"
+Cohesion: 0.07
+Nodes (27): check_real_connections, inspectViewBlock, create_notion_project, createProject, dotenv, fix_recurring_nav, fixNav, inspect_old_property (+19 more)
 
-### Community 12 - "AIOS Memory & Skripsi Deviasi Anggaran"
+### Community 12 - "Community 12"
 Cohesion: 0.09
 Nodes (22): 1. Gotchas & Solusi Teknis (Pelajaran Penting), 2. Struktur Teoretis Skripsi, 3. Progress State (Terakhir Diperbarui: 2026-06-14), AIOS Memory — Persistent Context & Lessons Learned, Agency Problem (Output):, Daftar Isi (Table of Contents):, Dropdown Spasi Rusak di MS Word:, Faktor Internal Satker (Input): (+14 more)
 
-### Community 13 - "Notion Ultimate Brain Pro v2.0 PRD"
+### Community 13 - "Community 13"
 Cohesion: 0.09
 Nodes (22): A1. Executive Summary & Product Vision, A2. Goals, Non-Goals, and Success Metrics, A3. Personas & Jobs-to-be-Done, Author:, Canonical database names, Date:, Design Decisions (preamble), Goals (+14 more)
 
-### Community 14 - "Brain Pro Max Reference Structure"
+### Community 14 - "Community 14"
 Cohesion: 0.10
 Nodes (20): 1. Peta Halaman (Page Tree), 2. Database Inti & Perannya, 3. Fitur per Database (level konsep), 4. Daftar Celah / Hutang Teknis (yang TIDAK boleh diwariskan ke V1), Archived, Areas & Resources (PARA), BRAIN-PRO-MAX-REFERENCE, Catatan legal: (+12 more)
 
-### Community 15 - "Notion Workspace Audit & PARA"
+### Community 15 - "Community 15"
 Cohesion: 0.11
 Nodes (19): 1. Peta Struktur Lengkap, 2. Database Inventory — Status Setelah Audit, 3. Schema Notes [PT] Setelah Enrichment, 4. Schema Projects [UT] Setelah Enrichment, 5. Relasi Final Antar Database, 6. Gap Analysis — Status Resolusi, Areas/Resources [PT], Database yang Di-retire (+11 more)
 
-### Community 16 - "AI OS Configuration & Connections"
-Cohesion: 0.11
-Nodes (19): Bariandono's AI Operating System, CLAUDE, Connections, Formal:, How you work with me, Knowledge base, Mechanism options:, Pekerjaan teknis: (+11 more)
+### Community 16 - "Community 16"
+Cohesion: 0.14
+Nodes (14): Bariandono's AI Operating System, CLAUDE, Formal:, How you work with me, Knowledge base, Pekerjaan teknis:, Santai:, Siapa: (+6 more)
 
-### Community 17 - "Makalah Seminar Akuntansi & Catatan Dosen"
+### Community 17 - "Community 17"
 Cohesion: 0.12
 Nodes (17): 3.3.2 In-depth Interview, A. Inventaris Catatan Dosen (hasil rekonsiliasi), Audit Rekonsiliasi Catatan Dosen — Makalah Seminar Akuntansi, Catatan 1 — hlm. 4 docx: "Data dalam bentuk tabel", Catatan 2 — hlm. 6 docx: "Terlalu luas, tidak spesifik untuk indikasi", Catatan 3 — hlm. 6 docx (bawah): "Pendahuluan terlalu luas, bisa runut apa yang menjadi fokus", Catatan 4 — hlm. 7 docx: dua paragraf di-X (HAPUS), Catatan 5 — hlm. 7 docx (bawah): "Karena penelitiannya kualitatif, gap analisis tidak perlu disampaikan, tetapi case/kasus yang ada pada objek yang diteliti" (+9 more)
 
-### Community 18 - "Konteks Bisnis & Strategi Komunikasi"
+### Community 18 - "Community 18"
 Cohesion: 0.12
 Nodes (17): CEO & Growth Strategist, Edge (Keunggulan):, Fokus pada Hasil (Result-Oriented):, Formulasikan Hook yang Kuat, Gaya Komunikasi & Sikap, Harga:, Konteks Bisnis & Produk, Kreatif tapi Realistis: (+9 more)
 
-### Community 19 - "Panduan Penulisan & EYD Skripsi"
+### Community 19 - "Community 19"
 Cohesion: 0.12
 Nodes (16): 1. Aturan Dasar Bahasa & Gaya Penulisan, 2. Standardisasi Istilah Keuangan Pemerintah & Birokrasi, 3. Cara Mengubah Ide Kasar ke Kalimat Akademis (Contoh Alur), 4. Format Sitasi & Kutipan (Default: APA Style), 5. Instruksi Operasional untuk AIOS, Bahasa Indonesia Baku (EYD Terbaru):, Contoh 1: Latar Belakang Masalah (Bab I), Contoh 2: Justifikasi Lokasi (Bab I) (+8 more)
 
-### Community 20 - "Daftar Revisi & Catatan Dosen Makalah"
+### Community 20 - "Community 20"
 Cohesion: 0.12
 Nodes (16): 1. Hlm. 4 — "DATA DALAM BENTUK TABEL", 2. Hlm. 6 — "PENDAHULUAN TERLALU LUAS, BISA RUNUT APA YANG MENJADI FOKUS", 3. Hlm. 7 — "HAPUS" (dua kali), 4. Hlm. 8 — "HAPUS" (dua kali lagi), 5. Hlm. 9 — "HAPUS" (lagi), 6. Hlm. 32 — "TIDAK DI PENGUMPULAN DATA", 7. Hlm. 33 — "TIDAK DI BAB INI", 8. Hlm. 36 — "DUPLIKAT GAMBAR, SIMPAN YG LEBIH JELAS" (+8 more)
 
-### Community 21 - "Teori & Metodologi Skripsi"
+### Community 21 - "Community 21"
 Cohesion: 0.12
 Nodes (16): Bahasa ilmiah, Basis akuntansi:, Cara output, Konsistensi teori, Konteks skripsi, Masalah utama penulis:, Metodologi, Penulis: (+8 more)
 
-### Community 22 - "Notion PARA Workspace Clean Up"
+### Community 22 - "Community 22"
 Cohesion: 0.12
 Nodes (16): CLEANUP (2026-06-07):, Catatan properti Notes asli (`collection://c2378c4c-e388-821c-a3b2-0756845e7238`):, Current visible state of "Pro" home (messy, needs cleanup):, Decision log:, FRESH CLEAN BUILD — DONE (2026-06-07):, HOME TIDIED + ONBOARDING (2026-06-07):, LIFE DBs + PARA (2026-06-07):, Linked-view mechanism (LEARNED): (+8 more)
 
-### Community 23 - "AI OS Expansion & Level-up Guidelines"
+### Community 23 - "Community 23"
 Cohesion: 0.12
 Nodes (16): Could `/level-up` route a future skill into here naturally?, Don't add `notes/`, `misc/`, `tmp/`, or `inbox/`., Don't build folder-of-folders for organization theater., Don't dump raw email/Slack archives into `references/`., Don't fork your operating manual., Don't have parallel `decisions.md` and `decisions/log.md`., Don't pre-create folders you don't need yet., EXPANSIONS (+8 more)
 
-### Community 24 - "Graphify Traversal & Query Expansion"
+### Community 24 - "Community 24"
 Cohesion: 0.12
 Nodes (16): Find best-matching start nodes, Find best matching node, For /graphify explain, For /graphify path, Score each node by term overlap for ranked output, Step 0 — Constrained query expansion (REQUIRED before traversal), Step 1 — Traversal, Token-budget aware output: rank by relevance, cut at budget (~4 chars/token) (+8 more)
 
-### Community 25 - "Notion Relations & Decisions Log"
+### Community 25 - "Community 25"
 Cohesion: 0.13
 Nodes (15): 2026-06-10 — Produk pertama: Template CALK dari Kemenkeu diupgrade, 2026-06-10 — Weekly AI Opportunity Scan (Prompt Template), 2026-06-11 — Produk: Jasa PPT Seminar/Skripsi Akuntansi via Twitter, 2026-06-13 — Skill: inject-register-pergeseran (Level-Up #2), 2026-06-13 — Standarkan relasi PARA Notion jadi dua arah (Mythos Brain), Alternatives considered:, Decision:, Decisions Log (+7 more)
 
-### Community 26 - "Ultimate Brain Pro Notes Rerouting"
+### Community 26 - "Community 26"
 Cohesion: 0.13
 Nodes (15): Catatan:, FASE 1 — Database Enrichment, FASE 2 — Reroute Views Pro Notes, Keputusan Arsitektur (Final), MAX Brain (1) — Task Plan, SIAP EKSEKUSI, Status:, T1.1 — Enrichment Notes [PT] (+7 more)
 
-### Community 27 - "AI Opportunity Scan Prompt"
+### Community 27 - "Community 27"
 Cohesion: 0.14
 Nodes (14): AI Opportunity Scan — Morning Prompt, Cara pakai:, Filter, Output per kandidat:, PROMPT, Pilih 1, Prompt, Shortlist (+6 more)
 
-### Community 28 - "Bedah PMK 62/2023 & IKPA Diagram"
+### Community 28 - "Community 28"
 Cohesion: 0.14
 Nodes (14): Bedah PP 50/2018 & PMK 62/2023 (Koleksi Diagram untuk Skripsi & Tugas), Cara Penggunaan:, IKPA (Indikator Kinerja Pelaksanaan Anggaran):, Ketepatan Waktu Penyampaian SPM, Mermaid.js, PNG, SVG, atau PDF, Pengujian Formal (Oleh PPSPM & KPPN):, Pengujian Material (Oleh PPK): (+6 more)
 
-### Community 29 - "Notion Integration & Claude MCP Configuration"
+### Community 29 - "Community 29"
 Cohesion: 0.14
 Nodes (14): Connected:, Databases, Instalasi:, Khusus, Konfigurasi:, MCP Tools yang Tersedia (via Claude app), Mechanism:, Menjalankan Script: (+6 more)
 
-### Community 30 - "Graphify Neo4j & Wiki Export Options"
+### Community 30 - "Community 30"
 Cohesion: 0.14
 Nodes (14): If `--falkordb-push <uri>`, If `--falkordb`, If `--neo4j-push <uri>`, If `--neo4j`, Only run this step if `--wiki` was explicitly given in the original command., Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag) (+6 more)
 
-### Community 31 - "Tabel IKPA & Belanja Modal Rudenim"
+### Community 31 - "Community 31"
 Cohesion: 0.18
 Nodes (13): 100%, Catatan penempatan di Word, Draft Tabel: Indikator dan Bobot IKPA (PER-5/PB/2024), Tabel 1.1 Indikator dan Bobot Penilaian IKPA Berdasarkan PER-5/PB/2024, Tabel 1.2 Kategorisasi Nilai IKPA, Tabel 1.3 Deviasi Halaman III DIPA Belanja Modal Rudenim Pontianak TA 2023–2025, Tabel 1.4 Bulan Kritis Deviasi Belanja Modal Rudenim Pontianak TA 2023–2025, Tabel 1.5 Contoh Paket Belanja Modal yang Mengalami Pergeseran Realisasi TA 2023–2025 (+5 more)
 
-### Community 32 - "Jurnal Harian & Kurasi Referensi"
+### Community 32 - "Community 32"
 Cohesion: 0.15
 Nodes (13): Jurnal Harian — Kurasi Referensi, Link:, Penerbit:, Ringkasan:, "Act Blur, Live Longer" — Muslim Women Artists & Censorship Evasion in Singapore, "Rate Softening in Rice Grains & Smart Material Engineering", "The Anatomy of Stablecoin Transactions", 📅 11 Juni 2026 (+5 more)
 
-### Community 33 - "Format Data Kasus Rudenim & Register Pergeseran"
+### Community 33 - "Community 33"
 Cohesion: 0.17
 Nodes (12): 1. SEKARANG — Tabel untuk BAB I (data sudah lengkap, tinggal tempel), 2. KE DEPAN — Register Pergeseran Paket (data belum ada, template siap isi), 3. REGISTER PERGESERAN PAKET — Draft BAB IV (diisi 2026-06-13), Draft narasi pengantar (gaya semi-formal, siap edit), Mengapa RPD dan deviasi nominal TIDAK dijumlahkan setahun:, Penamaan kolom:, Rekomendasi Format Data Kasus Rudenim — BAB I & Register Pergeseran, Sisa yang perlu dilengkapi: (+4 more)
 
-### Community 34 - "Graphify Git Repos & Merge Flow"
+### Community 34 - "Community 34"
 Cohesion: 0.17
 Nodes (12): Add --backend gemini|kimi|openai|deepseek|claude-cli depending on which API key you have set, Clone each repo, run the full pipeline on each, then merge, Multiple local subfolders (monorepo or multi-service layout):, Multiple repos (cross-repo graph):, Run /graphify on each local path to produce their graph.json files, Single repo:, Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given), Then merge: (+4 more)
 
-### Community 35 - "Graphify Incremental Update Logic"
+### Community 35 - "Community 35"
 Cohesion: 0.17
 Nodes (12): Also prune old nodes for re-extracted (changed) files before inserting fresh AST., For --update (incremental re-extraction), Load new extraction and incremental state, Save manifest so next --update diffs against today's state, not the, Use build_merge() — reads graph.json directly without NetworkX round-trip, Without this, build_merge's dedup pass tries to reconcile old and new versions of, Write merged result back to .graphify_extract.json so Step 4 sees the full graph, d} for n, d in G.nodes(data=True)],
     'edges': [
         # Explicit source/target last so they win over any stale attrs in d.
         { (+4 more)
 
-### Community 36 - "AIOS Intake & Q&A Prompts"
+### Community 36 - "Community 36"
 Cohesion: 0.20
 Nodes (10): AIS-OS Intake, Hard cap: 7 questions., Q1 — Who are you, what do you sell, who do you sell it to?, Q2 — Paste 1-2 things you've written recently. Don't edit them., Q3 — What are your 2-3 biggest priorities for the next 90 days?, Q4 — Where does revenue actually land, and where is it tracked?, Q5 — Where do you talk to customers, your team, and the outside world day-to-day?, Q6 — Where do meeting recordings, notes, and important docs live? (+2 more)
 
-### Community 37 - "Web UI Components & Animations"
+### Community 37 - "Community 37"
 Cohesion: 0.22
 Nodes (9): script, animateCounter, initCountUp, initFAQ, initMobileMenu, initNavbar, initScrollReveal, initTabs (+1 more)
 
-### Community 38 - "Whisper Audio/Video Transcription"
+### Community 38 - "Community 38"
 Cohesion: 0.25
 Nodes (8): However, Step 1 - Write the Whisper prompt yourself., Step 2 - Transcribe:, Step 2.5 - Transcribe video / audio files (only if video files detected), Strategy:, Whisper model:, graphify reference: transcribe video and audio, transcribe
 
-### Community 39 - "Package JSON Dependencies"
+### Community 39 - "Community 39"
 Cohesion: 0.29
 Nodes (7): package, dependencies, description, main, name, scripts, version
 
-### Community 40 - "Claude Voice Reference & Response Style"
+### Community 40 - "Community 40"
 Cohesion: 0.33
 Nodes (6): Cara Claude harus respond, Ciri khas, Register, Sample tulisan (formal — laporan keuangan instansi), Voice Reference, voice
 
-### Community 41 - "Graphify Add URL & Watch Folders"
+### Community 41 - "Community 41"
 Cohesion: 0.33
 Nodes (6): Code files only (.py, .ts, .go, etc.):, Docs, papers, or images:, For --watch, For /graphify add, add-watch, graphify reference: add a URL and watch a folder
 
-### Community 42 - "Q3 2026 Priorities & Goals"
+### Community 42 - "Community 42"
 Cohesion: 0.40
 Nodes (5): 1. Selesaikan Skripsi, 2. Mulai Profit dari AI, Catatan, Priorities — Q3 2026 (Juni–September), priorities
 
-### Community 43 - "Business Context & Rudenim Job"
+### Community 43 - "Community 43"
 Cohesion: 0.40
 Nodes (5): About Business / Work Context, Income Non-Formal (Target), Pekerjaan Utama — PNS Rudenim Pontianak, Skripsi, about-business
 
-### Community 44 - "Modal & UI Scroll Components"
+### Community 44 - "Community 44"
 Cohesion: 0.40
 Nodes (5): app, closeModal, onScroll, openModal, resetModal
 
-### Community 45 - "Notion Para Dashboard Deep Inspection"
+### Community 45 - "Community 45"
 Cohesion: 0.40
 Nodes (5): index, deepInspectParaDashboard, getBlockChildren, getRichText, printBlockInfo
 
-### Community 46 - "Notion Block Search Utility"
+### Community 46 - "Community 46"
 Cohesion: 0.40
 Nodes (5): search_all_blocks, getBlockChildren, matchKeywords, run, scanDeep
 
-### Community 47 - "Notion Page Creation & Step 241 Code"
+### Community 47 - "Community 47"
 Cohesion: 0.40
 Nodes (5): step_241_code, createPageInDatabase, getRichText, isTutorialItem, runCleanupAndPopulate
 
-### Community 48 - "Notion Page Creation & Step 241 Decoded"
+### Community 48 - "Community 48"
 Cohesion: 0.40
 Nodes (5): step_241_code_decoded, createPageInDatabase, getRichText, isTutorialItem, runCleanupAndPopulate
 
-### Community 49 - "Graphify Commit Hooks & Git Integration"
+### Community 49 - "Community 49"
 Cohesion: 0.50
 Nodes (4): For git commit hook, For native CLAUDE.md integration, graphify reference: commit hook and native CLAUDE.md integration, hooks
 
-### Community 50 - "Notion Duplicate Views Audit"
+### Community 50 - "Community 50"
 Cohesion: 0.50
 Nodes (4): audit_duplicated_views, getBlockChildren, run, scanPageRecursive
 
-### Community 51 - "Notion Duplicate DBs Check"
+### Community 51 - "Community 51"
 Cohesion: 0.50
 Nodes (4): check_duplicated_dbs, getBlockChildren, run, scanDeep
 
-### Community 52 - "Notion Parent/Children Blocks Inspection"
+### Community 52 - "Community 52"
 Cohesion: 0.50
 Nodes (4): inspect_para_children_deep, deepScan, getBlockChildren, run
 
-### Community 53 - "Notion Populate Projects/Tasks (PT)"
+### Community 53 - "Community 53"
 Cohesion: 0.50
 Nodes (4): populate_pt, cleanDataSource, createPageInDatabase, runReconstruction
 
-### Community 54 - "Notion Reconstruct PARA Dashboard"
+### Community 54 - "Community 54"
 Cohesion: 0.50
 Nodes (4): reconstruct_para, cleanDataSource, createPageInDatabase, runReconstruction
 
-### Community 55 - "Notion Reroute Page Views"
+### Community 55 - "Community 55"
 Cohesion: 0.50
 Nodes (4): reroute_views, decodeMap, rerouteAllViews, translateAllPropertyIds
 
-### Community 56 - "Notion Scan Callout Blocks"
+### Community 56 - "Community 56"
 Cohesion: 0.50
 Nodes (4): scan_all_callouts, getBlockChildren, runScan, scanPageBlocks
 
-### Community 57 - "Notion Server Settings & Permissions"
+### Community 57 - "Community 57"
 Cohesion: 0.50
 Nodes (4): settings, enabledMcpjsonServers, hooks, permissions
 
-### Community 58 - "Graphify Subagent Prompts & Specs"
+### Community 58 - "Community 58"
 Cohesion: 0.67
 Nodes (3): extraction-spec, graphify reference: extraction subagent prompt, immediate
 
-### Community 59 - "Feedback & Status Reviews"
+### Community 59 - "Community 59"
 Cohesion: 0.67
 Nodes (3): feedback, reviews, status
 
-### Community 60 - "Notion Pro Pages Scanner"
+### Community 60 - "Community 60"
 Cohesion: 0.67
 Nodes (3): scan_pro_pages, run, scanPage
 
-### Community 61 - "Notion Page Path Tracer"
+### Community 61 - "Community 61"
 Cohesion: 0.67
 Nodes (3): trace_page_paths, getRootAndPath, tracePaths
 
+### Community 66 - "Community 66"
+Cohesion: 0.04
+Nodes (44): 1.1 Pengertian Skripsi, 1.2 Tujuan dan Manfaat Skripsi, 1.3 Karakteristik Skripsi, 1.4 Proposal, 2.1 Kedudukan dan Bobot SKS, 2.2 Persyaratan Akademik, 2.3 Persyaratan Sidang Skripsi, 3.1 Pelaksanaan Seminar Proposal (+36 more)
+
+### Community 67 - "Community 67"
+Cohesion: 0.05
+Nodes (36): 10. Risiko, 1. Latar Belakang, 2. Tujuan, 3.1 Database yang Ada, 3.2 Gap yang Ada, 3. Kondisi Saat Ini, 4.1 Database Canonical (yang dipakai), 4.2 Relasi yang Perlu Ditambahkan (+28 more)
+
+### Community 68 - "Community 68"
+Cohesion: 0.06
+Nodes (30): FASE 1 — Database Enrichment, FASE 2 — Reroute Views Pro Notes, FASE 3 — Reroute Views PARA, FASE 4 — Homepage Command Center, FASE 5 — Polish, FASE 6 — Review Final, Keputusan Arsitektur (Final), MAX Brain (1) — Task Plan (+22 more)
+
+### Community 69 - "Community 69"
+Cohesion: 0.12
+Nodes (15): 🏛️ 1. KETENTUAN UMUM & TATA CARA PERPAJAKAN (KUP), 💸 2. PPh 21 METODE TER (TARIF EFEKTIF RATA-RATA), 💼 3. WITHHOLDING TAX PPh (PEMOTONGAN/PEMUNGUTAN PIHAK KETIGA), 🛒 4. PAJAK PERTAMBAHAN NILAI (PPN), 🌐 5. CORETAX SYSTEM & PMK 1/2026 (RESTRUKTURISASI BUMN), 🧠 6. CHEAT-SHEETS & TRIK CEPAT MAHASISWA, A. Formula Pengkreditan Pajak PPN (Masa Bulanan), A. Jembatan Keledai Mengingat Jenis PPh (+7 more)
+
+### Community 70 - "Community 70"
+Cohesion: 0.07
+Nodes (28): 1A. Tags (PARA backbone), 1B. Tasks, 1C. Projects, 1D. Notes, Appendix B — New-Database Schema DDL (for API/MCP build), Appendix C — Live Database & Data-Source IDs (audited 2026-06-01), Appendix D — Live-Build Reconciliation (executed 2026-06-02), B12 — End-to-End Smoke Test (+20 more)
+
+### Community 71 - "Community 71"
+Cohesion: 0.08
+Nodes (25): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+17 more)
+
+### Community 72 - "Community 72"
+Cohesion: 0.08
+Nodes (25): 1. Find the Constraint, 1. The Default Shift, 1. The Lego Principle, 2. EAD: Eliminate, Automate, Delegate, 2. The Assembly Line, 2. The Function Breakdown, 3. Map the Process, 3. The Curiosity Rule (+17 more)
+
+### Community 74 - "Community 74"
+Cohesion: 0.08
+Nodes (23): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+15 more)
+
+### Community 75 - "Community 75"
+Cohesion: 0.08
+Nodes (23): 1. Pahami Konteks & Input Pengguna, 2. Pilih Mode Output, 3. Lakukan Analisis, 4. Hasilkan Output, A. Analisis Realisasi Anggaran, B. Evaluasi Kinerja (NKA), C. Analisis Rasio Keuangan, CONTOH PENGGUNAAN (+15 more)
+
+### Community 80 - "Community 80"
+Cohesion: 0.09
+Nodes (16): decode_manual, decode_step_241, fs, fs, fs, fs, fs, fs (+8 more)
+
+### Community 81 - "Community 81"
+Cohesion: 0.10
+Nodes (20): Fase 1.0 — Pondasi (WAJIB duluan, semua lain bergantung di sini), Fase 1.1 — Skema database (PARALEL setelah T1.2), Fase 1.2 — Relasi antar-database (SEQ — butuh semua skema siap), Fase 1.3 — Formula (PARALEL — formula independen), Fase 1.4 — Views & Dashboard (SEQ — butuh data & relasi final), Fase 1.5 — Konten jual (PARALEL — tidak sentuh database), Fase 1.6 — Rilis (SEQ — gerbang akhir), Fase 2.0 — DB baru (PARALEL) (+12 more)
+
+### Community 82 - "Community 82"
+Cohesion: 0.10
+Nodes (19): 1. Kenapa PMK ini Sangat Heboh? (The Omnibus Effect), 1. Kenapa PP ini Diterbitkan? (Latar Belakang), 2. Poin-Poin Krusial yang Wajib Dikuasai:, 2. Poin-Poin Perubahan Krusial:, ⚡ BAGIAN 1: PP NOMOR 50 TAHUN 2018 (Tata Cara Pelaksanaan APBN), ⚡ BAGIAN 2: PMK NOMOR 62/PMK.05/2023 (Omnibus Keuangan Negara), 🎯 BAGIAN 3: 10 PERTANYAAN JEBAKAN DOSEN PENGUJI (SIDANG/SEMPRO) & CARA MENJAWABNYA, Bedah PP 50/2018 & PMK 62/2023 (Versi Cepat Paham Mahasiswa & Praktisi) (+11 more)
+
+### Community 83 - "Community 83"
+Cohesion: 0.10
+Nodes (19): 🎨 ATURAN DESAIN SLIDE PREMIUM (Gaya CEO):, Bedah PP 50/2018 & PMK 62/2023 (Siap Pakai untuk Tugas Kuliah, Sempro, atau Sidang), 🎞️ DETAIL SLIDE PER SLIDE (Slide 1 - 15), 🖥️ FOLDER 3: OUTLINE & SCRIPT SLIDE PRESENTASI (PPT), SLIDE 10: IMPLEMENTASI APLIKASI SAKTI SECARA PENUH, SLIDE 11: VALUE FOR MONEY (FOKUS PADA CAPAIAN OUTPUT), SLIDE 12: MEMAHAMI INDIKATOR KINERJA (IKPA), SLIDE 13: STUDI KASUS / ANATOMI DEVIASI ANGGARAN (+11 more)
+
+### Community 86 - "Community 86"
+Cohesion: 0.11
+Nodes (19): A8.10 Reviews (Daily / Weekly / Monthly / Quarterly) `[Beyond UB]`, A8.11 People / CRM (UB #26–29), A8.12 Books + Reading Log (UB #30–31), A8.13 Recipes + Meal Plan (UB #32), A8.14 Archive (Cold / Snoozed / Someday) (UB #25), A8.15 Task History (UB #34), A8.16 Analytics / Intelligence `[Beyond UB]`, A8.17 AI Layer `[Beyond UB]` `[Paid: Notion Business]` (+11 more)
+
+### Community 101 - "Community 101"
+Cohesion: 0.11
+Nodes (17): A. Inventaris Catatan Dosen (hasil rekonsiliasi), Audit Rekonsiliasi Catatan Dosen — Makalah Seminar Akuntansi, B. Hasil Audit makalah_seminar.md, C. Tiga Perbaikan Prioritas, Catatan 10 — hlm. 37 docx (flowchart): "Duplikat punya siapa?", Catatan 1 — hlm. 4 docx: "Data dalam bentuk tabel", Catatan 2 — hlm. 6 docx: "Terlalu luas, tidak spesifik untuk indikasi", Catatan 3 — hlm. 6 docx (bawah): "Pendahuluan terlalu luas, bisa runut apa yang menjadi fokus" (+9 more)
+
+### Community 102 - "Community 102"
+Cohesion: 0.12
+Nodes (16): 1. INGEST — user says "add this" (or drops a link/file/text), 2. QUERY — user asks "what do I know about X?", 3. DREAM SEQUENCE — lint / health check, 4. INDEX + LOG — always keep current, 5. SESSION CAPTURE — user says "save this session", Architecture, Before Building: Tell the Plan First, Core Philosophy (read before doing anything) (+8 more)
+
+### Community 103 - "Community 103"
+Cohesion: 0.12
+Nodes (15): OUTLINE SLIDE PRESENTASI & SPEAKER NOTES, 🎨 Panduan Desain Slide (Mocha Warm Theme), Slide 10: Sistem Withholding Tax Lainnya (PPh 22 & PPh 23), Slide 11: Pelaporan Pajak & Sanksi Keterlambatan, Slide 12: Penutup & Tanya Jawab, Slide 1: Judul Presentasi, Slide 2: Urgensi Perpajakan Bagi Negara, Slide 3: Pintu Gerbang Pajak: NPWP & Integrasi NIK (+7 more)
+
+### Community 104 - "Community 104"
+Cohesion: 0.13
+Nodes (14): Cadence (25 pts), Capabilities (25 pts), Connections (25 pts) — domain-aware, mechanism-agnostic, Context (25 pts), Execution, Notes, Step 1: Discover the project shape, Step 2: Score each C (25 points each) (+6 more)
+
+### Community 105 - "Community 105"
+Cohesion: 0.13
+Nodes (14): Blok 1 — Masalah & Motivasi, Blok 2 — Pertanyaan Penelitian, Blok 3 — Teori & Konsep, Blok 4 — Metode & Data, Blok 5 — Kontribusi & Batasan, Checkpoint Rule (non-negotiable), Di Akhir Sesi, Grill Me — Skripsi Vision (+6 more)
+
+### Community 106 - "Community 106"
+Cohesion: 0.13
+Nodes (14): Alur Kerja (Workflow), Catatan Penting, Konteks Penggunaan, LANGKAH 1 — Inventarisasi Input, LANGKAH 2 — Baca & Pahami Pedoman Skripsi, LANGKAH 3 — Analisis Gap per BAB, LANGKAH 4 — Revisi Targeted per BAB, LANGKAH 5 — Integrasi Transcript Wawancara (+6 more)
+
+### Community 107 - "Community 107"
+Cohesion: 0.11
+Nodes (17): 1. Klasifikasi Subjek Pajak, 1. NPWP (Nomor Pokok Wajib Pajak) & Integrasi NIK, 1. Pengusaha Kena Pajak (PKP), 1. Rumus Pintar Menghafal Golongan PPh Pot/Put, 2. Batas Waktu Setor & Lapor SPT Masa, 2. Klasifikasi Objek Pajak (Penghasilan), 2. Mekanisme Kredit Pajak (Jantung PPN), 2. Tiga Sistem Pemungutan Pajak di Indonesia (+9 more)
+
+### Community 108 - "Community 108"
+Cohesion: 0.15
+Nodes (12): AREAS_PARA_MAP, { Client }, migrations, NOTES_MAP, NOTES_PARA_MAP, notion, PROJECTS_MAP, PROJECTS_PARA_MAP (+4 more)
+
+### Community 109 - "Community 109"
+Cohesion: 0.14
+Nodes (14): A6.10 Meal Plan (new), A6.11 Task History (new; free-plan compatible), A6.12 Journal & Reviews (new) `[Beyond UB]`, A6.13 Habits & Habit Log (new, optional) `[Beyond UB]`, A6.1 Tasks (canonical; evolve `Tasks [UT]`), A6.2 Projects (canonical; evolve `Projects [UT]`), A6.3 Notes (canonical; evolve `Notes [UN]`), A6.4 Tags (canonical PARA backbone; evolve `Areas/Resources [PT]`) (+6 more)
+
+### Community 110 - "Community 110"
+Cohesion: 0.14
+Nodes (13): 1. STRUKTUR MAKALAH SEMINAR AKUNTANSI, 2. ATURAN SPASI PENGETIKAN (LINE SPACING), 3. FORMAT DAFTAR ISI, 4. SISTEM SITASI (IN-TEXT CITATION), 5. FORMAT DAFTAR PUSTAKA, 6. ATURAN TEKS MIRING (ITALIC), 7. PENULISAN SUBBAB DAN HEADING, 8. TIPS PENERAPAN DALAM DOCX (NODE.JS) (+5 more)
+
+### Community 111 - "Community 111"
+Cohesion: 0.14
+Nodes (13): BAB I — Pendahuluan, BAB II — Tinjauan Pustaka, BAB III — Metode Penelitian, Checklist Sebelum Output, Panduan Per BAB, Pembuka Paragraf, Penanda Negatif Halus, Penanda Transisi Gap (+5 more)
+
+### Community 112 - "Community 112"
+Cohesion: 0.15
+Nodes (12): 10. Tampilan Khusus (Special Views), 11. Dashboard Umum & Quick Links, 12. Tugas Berulang (Recurring Tasks), 9. Pengarsipan (Archiving), Book Tracker (Pelacak Buku), Daftar Isi, Dashboard Umum, Halaman Archive (+4 more)
+
+### Community 113 - "Community 113"
+Cohesion: 0.15
+Nodes (12): 1. Hlm. 4 — "DATA DALAM BENTUK TABEL", 2. Hlm. 6 — "PENDAHULUAN TERLALU LUAS, BISA RUNUT APA YANG MENJADI FOKUS", 3. Hlm. 7 — "HAPUS" (dua kali), 4. Hlm. 8 — "HAPUS" (dua kali lagi), 5. Hlm. 9 — "HAPUS" (lagi), 6. Hlm. 32 — "TIDAK DI PENGUMPULAN DATA", 7. Hlm. 33 — "TIDAK DI BAB INI", 8. Hlm. 36 — "DUPLIKAT GAMBAR, SIMPAN YG LEBIH JELAS" (+4 more)
+
+### Community 114 - "Community 114"
+Cohesion: 0.17
+Nodes (11): Critical implementation rules, Execution — three phases, Inputs the skill reads, Output contract, Phase 1 — Mindset interview (find the candidate), Phase 2 — Method interview (scope one), Phase 3 — Machine handoff (build it), Verification (for the implementer) (+3 more)
+
+### Community 115 - "Community 115"
+Cohesion: 0.23
+Nodes (11): auditedBlocks, checkTJText(), { Client }, fs, getBlockChildren(), getRichText(), notion, pagesToScan (+3 more)
+
+### Community 116 - "Community 116"
+Cohesion: 0.17
+Nodes (11): 1. Peta Halaman (Page Tree), 2. Database Inti & Perannya, 3. Fitur per Database (level konsep), 4. Daftar Celah / Hutang Teknis (yang TIDAK boleh diwariskan ke V1), 5. Cakupan fitur yang harus DITANDINGI versi orisinal, Areas & Resources (PARA), 📋 Brain Pro MAX — Dokumen Referensi Struktur, Notes (+3 more)
+
+### Community 117 - "Community 117"
+Cohesion: 0.17
+Nodes (12): A12. User Flows, A13. Beyond Ultimate Brain — Labeled Innovation Layer, A14. Migration & Consolidation Plan (data-preserving), A15. Risks & Mitigations, A16. Rollout Roadmap (phased; dependency-ordered), A17. Acceptance Criteria & Test Plan, A18. Glossary, A1. Executive Summary & Product Vision (+4 more)
+
+### Community 118 - "Community 118"
+Cohesion: 0.17
+Nodes (11): 10. Risiko, 1. Latar Belakang, 2. Tujuan, 3.1 Database yang Ada, 3.2 Gap yang Ada, 3. Kondisi Saat Ini, 4. Arsitektur Target (rencana Lite saat ini), 5. Hub Utama: PARA Dashboard (rencana Lite) (+3 more)
+
+### Community 119 - "Community 119"
+Cohesion: 0.17
+Nodes (11): Batasan Skill Ini, Cara Menggunakan Skill Ini, Glosarium Cepat (Singkatan Paling Sering Muncul), Langkah 1 — Muat referensi utama, Langkah 2 — Identifikasi mode tugasnya, Mode Analisis Kondisi Satker, Mode Penelitian Akademis, Mode Produksi Dokumen (+3 more)
+
+### Community 120 - "Community 120"
+Cohesion: 0.14
+Nodes (13): 🔑 1. KONSEP DASAR ATURAN TER PPh 21, 🗂️ 2. PEMBAGIAN KATEGORI PTKP UNTUK TARIF TER, 📈 3. DAFTAR TARIF TER BULANAN UNTUK PENGHASILAN UMUM, ✍️ 4. PERBANYAK DETAIL: SIMULASI LANGKAH PERHITUNGAN, ⚡ 5. TARIF PROGRESIF PASAL 17 UU PPh (UNTUK DESEMBER), KATEGORI A, KATEGORI B, KATEGORI C (+5 more)
+
+### Community 121 - "Community 121"
+Cohesion: 0.18
+Nodes (11): 6 Daftar dalam GTD, 6. Workflow GTD (Getting Things Done), Delegated, Diagram Alur GTD, Do Next, Halaman Process di Notion, Next Month (Delegated View versi tanggal), Pemrosesan Catatan dengan GTD (+3 more)
+
+### Community 122 - "Community 122"
+Cohesion: 0.18
+Nodes (10): AIS-OS — AI Operating System starter kit for Claude Code, How you'll know it's working, License + attribution, Quick start, Repo layout, The Four Cs — architecture (what you build), The litmus test, The Three Ms — operator brain (how you think) (+2 more)
+
+### Community 123 - "Community 123"
+Cohesion: 0.20
+Nodes (9): Bariandono's AI Operating System, Connections, graphify, How you work with me, Knowledge base, Voice, Where things live, Your operator brain — the 3Ms (+1 more)
+
+### Community 124 - "Community 124"
+Cohesion: 0.20
+Nodes (9): Bagian 1: PPh 21 Masa Januari - November (TER), Bagian 2: PPh 21 Masa Desember (Rekonsiliasi Pajak Tahunan), LATIHAN SOAL PERPAJAKAN & PEMBAHASAN TAKTIS, Rekapitulasi Akhir Masa PPN:, 📝 Soal 1: Perhitungan PPh 21 Karyawan Tetap (TER & Desember), 📝 Soal 2: PPh Pasal 23 atas Jasa, Sewa, & Dividen, 📝 Soal 3: PPh Pasal 22 atas Impor Barang, 📝 Soal 4: PPh Pasal 4 ayat 2 (Final) Sewa Bangunan (+1 more)
+
+### Community 125 - "Community 125"
+Cohesion: 0.29
+Nodes (9): checkTJText(), { Client }, dbIds, fs, getBlockChildren(), notion, runAudit(), scanPageBlocks() (+1 more)
+
+### Community 126 - "Community 126"
+Cohesion: 0.20
+Nodes (9): 1. Peta Struktur Lengkap, 2. Database Inventory — Status Setelah Audit, 3. Schema Notes [PT] Setelah Enrichment, 4. Schema Projects [UT] Setelah Enrichment, 5. Relasi Final Antar Database, 6. Gap Analysis — Status Resolusi, Database yang Di-retire, Master Database (SETELAH merge) (+1 more)
+
+### Community 127 - "Community 127"
+Cohesion: 0.20
+Nodes (9): Critical implementation rules, Execution, Step 1: Read the intake, Step 2: The interview (7 questions, hard cap), Step 3: Scaffold the Day-1 file set, Step 4: The closing screen, Verification (for the implementer), What this skill does (+1 more)
+
+### Community 128 - "Community 128"
+Cohesion: 0.22
+Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
+
+### Community 129 - "Community 129"
+Cohesion: 0.22
+Nodes (8): AIS-OS Intake, Q1 — Who are you, what do you sell, who do you sell it to?, Q2 — Paste 1-2 things you've written recently. Don't edit them., Q3 — What are your 2-3 biggest priorities for the next 90 days?, Q4 — Where does revenue actually land, and where is it tracked?, Q5 — Where do you talk to customers, your team, and the outside world day-to-day?, Q6 — Where do meeting recordings, notes, and important docs live?, Q7 — What's the one task that eats your week, and where do you currently track work?
+
+### Community 130 - "Community 130"
+Cohesion: 0.22
+Nodes (8): graphify reference: extra exports and benchmark, Step 6b - Wiki (only if --wiki flag), Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag), Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag), Step 7b - SVG export (only if --svg flag), Step 7c - GraphML export (only if --graphml flag), Step 7d - MCP server (only if --mcp flag), Step 8 - Token reduction benchmark (only if total_words > 5000)
+
+### Community 131 - "Community 131"
+Cohesion: 0.22
+Nodes (8): Customization rules, How to generate the prompt, How to render the visual preview, Output order, Prompt template to output, Understanding the target layout, What this skill produces, Notion Homepage Redesign — Thomas Frank Style
+
+### Community 132 - "Community 132"
+Cohesion: 0.22
+Nodes (8): Cara Kerja Skill, Langkah 1: MAKRO (Konteks Kebijakan & Isu Nasional), Langkah 2: MESO (Konteks Sektor / Kementerian / Pemda Daerah), Langkah 3: JEMBATAN FENOMENA UMUM (Bukti Empiris & Kasus Lain), Langkah 4: MIKRO (Objek Spesifik & Kendala Lokal), Langkah 5: LANDASAN TEORI & FORMULASI JUDUL (Pisau Analisis), Output Template Review / Penulisan, Struktur 5 Langkah Latar Belakang Deduktif
+
+### Community 133 - "Community 133"
+Cohesion: 0.22
+Nodes (8): Notion Homepage Redesign — Ultimate Brain Style, Customization rules, How to generate the prompt, How to render the visual preview, Output order, Prompt template to output, Understanding the target layout, What this skill produces
+
+### Community 134 - "Community 134"
+Cohesion: 0.22
+Nodes (9): A9. Formula Library (Notion Formula 2.0 — copy-paste ready), Books / Recipes, Goals (cascade), Habits `[Beyond UB]`, Notes, People, Projects, Task History (analytics) (+1 more)
+
+### Community 135 - "Community 135"
+Cohesion: 0.22
+Nodes (9): 3. Perencanaan Harian (My Day), Daily Journal, Daily Note Template (Template Catatan Harian), Do Next List, Komponen Halaman My Day, Priority Projects, Self-Care Area, Synced Block (Blok Tersinkronisasi) (+1 more)
+
+### Community 136 - "Community 136"
+Cohesion: 0.22
+Nodes (8): BAB I — Pendahuluan, BAB II — Tinjauan Pustaka, BAB III — Metode Penelitian, Lampiran, Log kerja, Skripsi — Deviasi Anggaran Rudenim Pontianak, Status revisi saat ini, Struktur folder
+
+### Community 137 - "Community 137"
+Cohesion: 0.22
+Nodes (8): 1. Aturan Dasar Bahasa & Gaya Penulisan, 2. Standardisasi Istilah Keuangan Pemerintah & Birokrasi, 3. Cara Mengubah Ide Kasar ke Kalimat Akademis (Contoh Alur), 4. Format Sitasi & Kutipan (Default: APA Style), 5. Instruksi Operasional untuk AIOS, Contoh 1: Latar Belakang Masalah (Bab I), Contoh 2: Justifikasi Lokasi (Bab I), SOP Parafrase Akademis Skripsi
+
+### Community 138 - "Community 138"
+Cohesion: 0.25
+Nodes (7): 8 Kategori Penyebab (dropdown skripsi), Bike Method — Phase 1, Cara pakai, inject-register-pergeseran, Output format, Referensi format, Yang AI lakukan
+
+### Community 140 - "Community 140"
+Cohesion: 0.36
+Nodes (7): { Client }, getBlockChildren(), keywords, matchKeywords(), notion, run(), scanDeep()
+
+### Community 141 - "Community 141"
+Cohesion: 0.25
+Nodes (8): A11. Views Catalog, Dashboard pages (linked views), Goals, Notes, People · Books · Reading Log · Recipes · Meal Plan · Task History · Journal, Projects, Tags (PARA), Tasks
+
+### Community 142 - "Community 142"
+Cohesion: 0.25
+Nodes (7): Databases, Khusus, MCP Tools yang Tersedia (via Claude app), Notion — Reference Guide, Otomasi Offline (Lokal), Root Page, Struktur Mythos Brain
+
+### Community 143 - "Community 143"
+Cohesion: 0.25
+Nodes (7): Format laporan, Hal yang mudah terlewat, Input yang dibutuhkan, Rekonsiliasi Catatan Reviewer & Audit Revisi, Tahap 1 — Baca semua halaman scan, Tahap 2 — Interpretasi dan rekonsiliasi, Tahap 3 — Audit draft revisi (jika ada)
+
+### Community 144 - "Community 144"
+Cohesion: 0.25
+Nodes (7): 1. SEKARANG — Tabel untuk BAB I (data sudah lengkap, tinggal tempel), 2. KE DEPAN — Register Pergeseran Paket (data belum ada, template siap isi), 3. REGISTER PERGESERAN PAKET — Draft BAB IV (diisi 2026-06-13), Draft narasi pengantar (gaya semi-formal, siap edit), Rekomendasi Format Data Kasus Rudenim — BAB I & Register Pergeseran, Tabel 1.3 Deviasi Halaman III DIPA Belanja Modal Rudenim Pontianak TA 2023–2025, Tabel 1.4 Bulan Kritis Deviasi Belanja Modal Rudenim Pontianak TA 2023–2025
+
+### Community 145 - "Community 145"
+Cohesion: 0.29
+Nodes (6): 2026-06-10 — Produk pertama: Template CALK dari Kemenkeu diupgrade, 2026-06-10 — Weekly AI Opportunity Scan (Prompt Template), 2026-06-11 — Produk: Jasa PPT Seminar/Skripsi Akuntansi via Twitter, 2026-06-13 — Skill: inject-register-pergeseran (Level-Up #2), 2026-06-13 — Standarkan relasi PARA Notion jadi dua arah (Mythos Brain), Decisions Log
+
+### Community 146 - "Community 146"
+Cohesion: 0.29
+Nodes (6): EXPANSIONS — what to add as you grow, How to tell when it's time to add a folder, Suggested cadences, What NOT to add, What ships in the kit (don't remove), What to add as you grow
+
+### Community 147 - "Community 147"
+Cohesion: 0.29
+Nodes (6): Bedah PP 50/2018 & PMK 62/2023 (Koleksi Diagram untuk Skripsi & Tugas), 📌 Diagram 1: Alur Makro Pelaksanaan Anggaran Belanja Negara, 📌 Diagram 2: Alur Penerbitan SPP - SPM - SP2D (Sistem Pengeluaran Kas Negara), 📌 Diagram 3: Alur Fleksibilitas Revisi Anggaran (Berdasarkan PMK 62/2023), 📊 FOLDER 2: VISUAL FLOWCHART ALUR PELAKSANAAN APBN, 💡 Kunci Penjelasan untuk Ujian/Bab Skripsi:
+
+### Community 148 - "Community 148"
+Cohesion: 0.29
+Nodes (6): 1. Gotchas & Solusi Teknis (Pelajaran Penting), 2. Struktur Teoretis Skripsi, 3. Progress State (Terakhir Diperbarui: 2026-06-14), AIOS Memory — Persistent Context & Lessons Learned, Integrasi Notion API (Mythos Brain), Pembuatan Dokumen Word (`build_makalah.js`)
+
+### Community 149 - "Community 149"
+Cohesion: 0.48
+Nodes (6): { Client }, deepInspectParaDashboard(), getBlockChildren(), getRichText(), notion, printBlockInfo()
+
+### Community 150 - "Community 150"
+Cohesion: 0.29
+Nodes (6): description, main, name, scripts, start, version
+
+### Community 151 - "Community 151"
+Cohesion: 0.38
+Nodes (6): { Client }, getBlockChildren(), notion, pages, runScan(), scanPageBlocks()
+
+### Community 152 - "Community 152"
+Cohesion: 0.33
+Nodes (6): { Client }, fs, notion, parseMarkdownToRichText(), path, sync()
+
+### Community 153 - "Community 153"
+Cohesion: 0.29
+Nodes (7): 4. Organisasi Kehidupan: Metode PARA, Definisi PARA, Halaman Areas & Resources, Kustomisasi di Dalam Notion, PARA di Alat Lain (Konvensional), PARA yang Ditingkatkan di Notion, Resource Tanpa Area
+
+### Community 154 - "Community 154"
+Cohesion: 0.29
+Nodes (7): 5. Manajemen Tugas (Task Management), Cold Tasks (Tugas Dingin), Completed Tasks, Priority Projects List, Project Hub, Tampilan Khusus, Task Manager Dashboard
+
+### Community 155 - "Community 155"
+Cohesion: 0.29
+Nodes (5): { Client }, filter1, filter2, NOTES_MAP, PROJECTS_MAP
+
+### Community 156 - "Community 156"
+Cohesion: 0.29
+Nodes (6): 📅 11 Juni 2026, 🎭 Budaya, Jurnal Harian — Kurasi Referensi, 💰 Keuangan, 🔬 Sains, 💻 Teknologi
+
+### Community 157 - "Community 157"
+Cohesion: 0.33
+Nodes (5): For /graphify explain, For /graphify path, graphify reference: query, path, explain, Step 0 — Constrained query expansion (REQUIRED before traversal), Step 1 — Traversal
+
+### Community 158 - "Community 158"
+Cohesion: 0.33
+Nodes (6): audit_para, checkTJText, getBlockChildren, getRichText, runAudit, scanBlock
+
+### Community 159 - "Community 159"
+Cohesion: 0.33
+Nodes (5): 2026-06-14, 2026-06-14 (Sesi 2), Inisialisasi Proyek Pemasaran Jasa PPT & Layouting Skripsi, Pembuatan Landing Page Mastery Kit, Work Log — Jasa PPT & Layouting Skripsi Akuntansi
+
+### Community 160 - "Community 160"
+Cohesion: 0.47
+Nodes (5): { Client }, getBlockChildren(), notion, run(), scanPageRecursive()
+
+### Community 161 - "Community 161"
+Cohesion: 0.47
+Nodes (5): { Client }, getBlockChildren(), notion, run(), scanDeep()
+
+### Community 162 - "Community 162"
+Cohesion: 0.47
+Nodes (5): { Client }, deepScan(), getBlockChildren(), notion, run()
+
+### Community 163 - "Community 163"
+Cohesion: 0.47
+Nodes (5): cleanDataSource(), { Client }, createPageInDatabase(), notion, runReconstruction()
+
+### Community 164 - "Community 164"
+Cohesion: 0.47
+Nodes (5): cleanDataSource(), { Client }, createPageInDatabase(), notion, runReconstruction()
+
+### Community 165 - "Community 165"
+Cohesion: 0.33
+Nodes (4): { Client }, notion, oldBlocks, targets
+
+### Community 167 - "Community 167"
+Cohesion: 0.33
+Nodes (6): 7. Pengambilan Catatan (Note Taking), Favorites, Fleeting Notes, Inbox, Notes Dashboard, Recents
+
+### Community 168 - "Community 168"
+Cohesion: 0.33
+Nodes (5): Cara Claude harus respond, Ciri khas, Register, Sample tulisan (formal — laporan keuangan instansi), Voice Reference
+
+### Community 169 - "Community 169"
+Cohesion: 0.33
+Nodes (5): 2026-06-13, 2026-06-14, Analisis Dampak Deviasi — Tabel Penyebab Pergeseran, Pembenaran Spasi, Daftar Isi Statis, & Diagram Kerangka Penelitian (Agency Theory), Work Log — Skripsi Deviasi Anggaran
+
+### Community 170 - "Community 170"
+Cohesion: 0.40
+Nodes (5): audit_all_databases, checkTJText, getBlockChildren, runAudit, scanPageBlocks
+
+### Community 171 - "Community 171"
+Cohesion: 0.40
+Nodes (4): About Business / Work Context, Income Non-Formal (Target), Pekerjaan Utama — PNS Rudenim Pontianak, Skripsi
+
+### Community 172 - "Community 172"
+Cohesion: 0.40
+Nodes (4): 1. Selesaikan Skripsi, 2. Mulai Profit dari AI, Catatan, Priorities — Q3 2026 (Juni–September)
+
+### Community 173 - "Community 173"
+Cohesion: 0.40
+Nodes (4): 1. Katalog Layanan & Harga, 2. Alur Kerja Promosi Twitter/X, 3. Sumber Daya Terkait, Project: Jasa PPT & Layouting Skripsi Akuntansi
+
+### Community 174 - "Community 174"
+Cohesion: 0.40
+Nodes (3): { Client }, notion, views
+
+### Community 175 - "Community 175"
+Cohesion: 0.40
+Nodes (3): { Client }, dataSources, notion
+
+### Community 176 - "Community 176"
+Cohesion: 0.40
+Nodes (3): { Client }, notion, pagesToArchive
+
+### Community 177 - "Community 177"
+Cohesion: 0.40
+Nodes (3): { Client }, notion, targets
+
+### Community 178 - "Community 178"
+Cohesion: 0.40
+Nodes (3): { Client }, notion, targets
+
+### Community 179 - "Community 179"
+Cohesion: 0.40
+Nodes (3): { Client }, fs, notion
+
+### Community 180 - "Community 180"
+Cohesion: 0.40
+Nodes (3): archiveBlocks, { Client }, notion
+
+### Community 181 - "Community 181"
+Cohesion: 0.40
+Nodes (3): { Client }, notion, viewIds
+
+### Community 182 - "Community 182"
+Cohesion: 0.40
+Nodes (3): { Client }, notion, paraBlocks
+
+### Community 183 - "Community 183"
+Cohesion: 0.40
+Nodes (3): { Client }, dataSources, notion
+
+### Community 184 - "Community 184"
+Cohesion: 0.40
+Nodes (3): { Client }, databases, notion
+
+### Community 185 - "Community 185"
+Cohesion: 0.40
+Nodes (3): { Client }, dataSources, notion
+
+### Community 186 - "Community 186"
+Cohesion: 0.40
+Nodes (3): { Client }, notion, viewsToCreate
+
+### Community 187 - "Community 187"
+Cohesion: 0.50
+Nodes (4): { Client }, notion, run(), scanPage()
+
+### Community 188 - "Community 188"
+Cohesion: 0.40
+Nodes (5): A10.1 Buttons & templates (free, load-bearing), A10.2 Recurring tasks — three free paths + paid upgrade, A10.3 Task History logging — free vs paid, A10.4 AI features — exact prompts `[Paid: Notion Business]` + free-LLM workaround, A10. Automations, Buttons & AI
+
+### Community 189 - "Community 189"
+Cohesion: 0.40
+Nodes (5): 2. Quick Capture (Tangkap Cepat), Dua Tampilan di Quick Capture:, Ekstensi Web Clipper, Filter 24 Jam, Halaman Quick Capture
+
+### Community 190 - "Community 190"
+Cohesion: 0.40
+Nodes (3): { Client }, notion, oldBlocks
+
+### Community 191 - "Community 191"
+Cohesion: 0.50
+Nodes (3): Connections, Mechanism options:, Connections
+
+### Community 192 - "Community 192"
+Cohesion: 0.50
+Nodes (3): Gaya Komunikasi & Sikap, Konteks Bisnis & Produk, Tugasmu saat Membantu Bariandono
+
+### Community 193 - "Community 193"
+Cohesion: 0.50
+Nodes (3): For /graphify add, For --watch, graphify reference: add a URL and watch a folder
+
+### Community 194 - "Community 194"
+Cohesion: 0.50
+Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify reference: commit hook and native CLAUDE.md integration
+
+### Community 195 - "Community 195"
+Cohesion: 0.50
+Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
+
+### Community 196 - "Community 196"
+Cohesion: 0.50
+Nodes (3): Cara output, Konteks skripsi, Tugasmu saat mereview
+
+### Community 197 - "Community 197"
+Cohesion: 0.50
+Nodes (3): For /graphify add, For --watch, graphify reference: add a URL and watch a folder
+
+### Community 198 - "Community 198"
+Cohesion: 0.50
+Nodes (3): For git commit hook, For native CLAUDE.md integration, graphify reference: commit hook and native CLAUDE.md integration
+
+### Community 199 - "Community 199"
+Cohesion: 0.50
+Nodes (3): For /graphify explain, For /graphify path, graphify reference: query, path, explain
+
+### Community 200 - "Community 200"
+Cohesion: 0.50
+Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphify reference: incremental update and cluster-only
+
+### Community 201 - "Community 201"
+Cohesion: 0.50
+Nodes (3): Tabel 1.3 Deviasi Halaman III DIPA Belanja Modal Rudenim Pontianak TA 2023–2025, Tabel 1.4 Bulan Kritis Deviasi Belanja Modal Rudenim Pontianak TA 2023–2025, Tabel 1.5 Contoh Paket Belanja Modal yang Mengalami Pergeseran Realisasi TA 2023–2025
+
+### Community 202 - "Community 202"
+Cohesion: 0.50
+Nodes (3): 📝 Deskripsi Alur Proses, FLOWCHART ALUR ADMINISTRASI PAJAK (KUP), 📊 Kode Mermaid Diagram
+
+### Community 203 - "Community 203"
+Cohesion: 0.50
+Nodes (3): FLOWCHART MEKANISME PAJAK PERTAMBAHAN NILAI (PPN), 📊 Kode Mermaid Diagram, 📝 Konsep & Terminologi PPN yang Wajib Dipahami
+
+### Community 204 - "Community 204"
+Cohesion: 0.50
+Nodes (3): FLOWCHART MEKANISME WITHHOLDING TAX SYSTEM, 📊 Kode Mermaid Diagram, 📝 Penjelasan Penting Mekanisme Withholding Tax
+
+### Community 233 - "Community 233"
+Cohesion: 0.50
+Nodes (4): A2. Goals, Non-Goals, and Success Metrics, Goals, Non-Goals, Success Metrics (measurable)
+
+### Community 234 - "Community 234"
+Cohesion: 0.50
+Nodes (4): A4.1 What actually exists (live audit, 2026-06-01), A4.2 Confirmed schema of the canonical sources (as-is), A4.3 Gaps vs. the target, A4. Current-State Audit (factual)
+
+### Community 235 - "Community 235"
+Cohesion: 0.50
+Nodes (4): 13. Informasi Template Ultimate Brain, Apa yang Didapat, Cara Mendapatkan Template, Konten Tutorial Video Meliputi:
+
+### Community 236 - "Community 236"
+Cohesion: 0.50
+Nodes (4): 1. Halaman Utama (Homepage), Smart Dashboards, Tampilan Khusus, Tampilan Produktivitas Tradisional
+
+### Community 237 - "Community 237"
+Cohesion: 0.50
+Nodes (4): 8. Tujuan dan Perencanaan Masa Depan (Goals & Future Planning), Database Goals (Tujuan), Halaman Plan, Priorities Area (Area Prioritas)
+
+### Community 242 - "Community 242"
+Cohesion: 0.50
+Nodes (4): path, sync_to_notion, parseMarkdownToRichText, sync
+
+### Community 249 - "Community 249"
+Cohesion: 0.67
+Nodes (3): dependencies, dotenv, @notionhq/client
+
+### Community 278 - "Community 278"
+Cohesion: 0.20
+Nodes (9): 🌐 1. APA ITU CORETAX SYSTEM?, 1. Metode Nilai Pasar (Market Value), 🏛️ 2. BEDAH PMK NOMOR 1 TAHUN 2026: RESTRUKTURISASI BUMN, 2. Metode Nilai Buku (Book Value) - Insentif Pajak, 📈 3. INSENTIF PENGGUNAAN NILAI BUKU (BOOK VALUE), 🧠 4. CHECKLIST MATERI KULIAH RESTRUKTURISASI PERUSAHAAN (UTS/UAS), A. Latar Belakang Penerbitan Regulasi, B. Definsi Baru BUMN di PMK 1/2026 (Pasal 1 angka 135) (+1 more)
+
 ## Knowledge Gaps
-- **39 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **918 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `{ Client }`, `notion`, `{ Client }`, `notion` (+913 more)
+  These have ≤1 connection - possible missing edges or undocumented components.
+- **87 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Should `Skripsi FEB UPB Pedoman & Ketentuan Akademik` be split into smaller, more focused modules?**
+- **Why does `PART A — PRD: ULTIMATE BRAIN PRO v2.0` connect `Community 117` to `Community 70`, `Community 134`, `Community 233`, `Community 234`, `Community 141`, `Community 109`, `Community 86`, `Community 188`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `A8. Module Specifications` connect `Community 86` to `Community 117`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `{ Client }`, `notion` to the rest of the system?**
+  _918 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
-- **Should `Jasa PPT & Layouting Skripsi Akuntansi` be split into smaller, more focused modules?**
+- **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
-- **Should `Notion API Sync & Audit Scripts` be split into smaller, more focused modules?**
-  _Cohesion score 0.05405405405405406 - nodes in this community are weakly interconnected._
-- **Should `Jasa PPT Work Log & Agency Theory` be split into smaller, more focused modules?**
+- **Should `Community 2` be split into smaller, more focused modules?**
+  _Cohesion score 0.048484848484848485 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
   _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
-- **Should `Notion Ultimate Brain System Reference` be split into smaller, more focused modules?**
-  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
-- **Should `Regulasi PP 50/2018 & PMK 62/2023` be split into smaller, more focused modules?**
-  _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
-- **Should `Notion Ultimate Brain Lite PRD` be split into smaller, more focused modules?**
-  _Cohesion score 0.09666666666666666 - nodes in this community are weakly interconnected._

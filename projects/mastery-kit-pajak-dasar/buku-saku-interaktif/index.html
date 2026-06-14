@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buku Saku Perpajakan Dasar Interaktif. Media belajar digital interaktif untuk mahasiswa akuntansi dan praktisi pajak. Dilengkapi kalkulator TER PPh 21, kuis, dan pencarian cepat.">
+    <title>Buku Saku Perpajakan Dasar Interaktif - MASTERY KIT</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- App Container -->
+    <div class="app-container">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="app-sidebar">
+            <div class="sidebar-header">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-book-bookmark"></i> TAX<span>POCKET</span>
+                </a>
+                <button class="sidebar-close-btn" id="sidebar-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <!-- Search Bar -->
+            <div class="sidebar-search">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search-input" placeholder="Cari materi perpajakan...">
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <nav class="sidebar-nav">
+                <span class="nav-title">Materi Utama</span>
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-item active" data-chapter="1"><i class="fa-solid fa-gavel"></i> 1. Ketentuan Umum & KUP</a></li>
+                    <li><a href="#" class="nav-item" data-chapter="2"><i class="fa-solid fa-calculator"></i> 2. PPh 21 Metode TER</a></li>
+                    <li><a href="#" class="nav-item" data-chapter="3"><i class="fa-solid fa-hand-holding-dollar"></i> 3. Withholding Tax</a></li>
+                    <li><a href="#" class="nav-item" data-chapter="4"><i class="fa-solid fa-cart-shopping"></i> 4. Pajak Pertambahan Nilai</a></li>
+                    <li><a href="#" class="nav-item" data-chapter="5"><i class="fa-solid fa-network-wired"></i> 5. Coretax & PMK 01/2026</a></li>
+                    <li><a href="#" class="nav-item" data-chapter="6"><i class="fa-solid fa-lightbulb"></i> 6. Cheat-Sheet & Trik Ujian</a></li>
+                </ul>
+
+                <span class="nav-title">Fitur Interaktif</span>
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-item" data-tool="calculator"><i class="fa-solid fa-percent"></i> Simulator PTKP & TER PPh 21</a></li>
+                    <li><a href="#" class="nav-item" data-tool="withholding"><i class="fa-solid fa-search-dollar"></i> Cari Tarif Potong/Pungut</a></li>
+                    <li><a href="#" class="nav-item" data-tool="quiz"><i class="fa-solid fa-graduation-cap"></i> Uji Pemahaman (Kuis)</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>&copy; 2026 Mastery Kit Pajak</p>
+                <a href="../landing-page/index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Kembali ke Landing Page</a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Topbar Header -->
+            <header class="topbar">
+                <div class="topbar-left">
+                    <button class="sidebar-toggle-btn" id="sidebar-toggle-btn"><i class="fa-solid fa-bars"></i></button>
+                    <h2 id="current-section-title">Ketentuan Umum & Tata Cara Perpajakan (KUP)</h2>
+                </div>
+                <div class="topbar-right">
+                    <button class="topbar-btn" id="btn-toggle-theme" title="Ubah Tema"><i class="fa-solid fa-moon"></i></button>
+                    <button class="topbar-btn" id="btn-bookmark" title="Tandai Halaman Ini"><i class="fa-regular fa-bookmark"></i></button>
+                    <div class="bookmark-dropdown-container">
+                        <button class="topbar-btn" id="btn-show-bookmarks" title="Daftar Bookmark"><i class="fa-solid fa-list-ul"></i></button>
+                        <div class="bookmark-dropdown" id="bookmark-dropdown">
+                            <span class="dropdown-title">Halaman Ditandai</span>
+                            <ul id="bookmarks-list">
+                                <li class="empty-msg">Belum ada halaman ditandai</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Scrollable Content Frame -->
+            <div class="content-body" id="content-body">
+                <!-- Search Result Panel (Hidden by default) -->
+                <div id="search-results-panel" class="search-results-panel hidden">
+                    <div class="panel-header">
+                        <h3><i class="fa-solid fa-magnifying-glass"></i> Hasil Pencarian untuk "<span id="search-query-text"></span>"</h3>
+                        <button class="btn-close-search" id="btn-close-search">&times; Tutup</button>
+                    </div>
+                    <div class="results-list" id="search-results-list">
+                        <!-- Search matches dynamically go here -->
+                    </div>
+                </div>
+
+                <!-- Chapter Contents (Rendered Dynamically via JS or Swapped) -->
+                <article class="chapter-content" id="chapter-pane">
+                    <!-- Default Chapter 1 Content -->
+                    <div class="chapter-section active" id="chapter-1">
+                        <div class="chapter-header">
+                            <span class="chapter-badge">Bab 01</span>
+                            <h1>Ketentuan Umum & Tata Cara Perpajakan (KUP)</h1>
+                            <p class="chapter-intro">Pemahaman dasar mengenai sistem perpajakan di Indonesia, batas waktu penyetoran, pelaporan, dan sanksi administrasinya.</p>
+                        </div>
+                        <hr class="section-divider">
+                        
+                        <h2>A. Tiga Sistem Pemungutan Pajak</h2>
+                        <p>Indonesia menggunakan tiga sistem pemungutan pajak yang disesuaikan dengan jenis objek dan wajib pajaknya:</p>
+                        <div class="card-grid">
+                            <div class="info-card">
+                                <div class="card-icon"><i class="fa-solid fa-user-check"></i></div>
+                                <h3>Self Assessment System</h3>
+                                <p>Wajib Pajak (WP) diberikan kepercayaan penuh untuk menghitung, menyetor, dan melaporkan pajaknya sendiri secara mandiri. Contoh: PPh Badan, PPh Orang Pribadi, dan PPN.</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="card-icon"><i class="fa-solid fa-building-columns"></i></div>
+                                <h3>Official Assessment System</h3>
+                                <p>Fiskus atau aparat perpajakan yang menetapkan besaran jumlah pajak yang terutang melalui Surat Ketetapan Pajak. Contoh: Pajak Bumi dan Bangunan (PBB).</p>
+                            </div>
+                            <div class="info-card">
+                                <div class="card-icon"><i class="fa-solid fa-handshake"></i></div>
+                                <h3>Withholding Tax System</h3>
+                                <p>Pemotongan atau pemungutan besaran pajak terutang dilakukan oleh pihak ketiga (pemberi kerja atau bendahara pembayar). Contoh: PPh Pasal 21, PPh Pasal 23, PPh 4(2).</p>
+                            </div>
+                        </div>
+
+                        <h2>B. Kalender Batas Setor & Lapor Pajak</h2>
+                        <p>Ketepatan waktu adalah kunci utama kepatuhan wajib pajak. Berikut ringkasan batas akhir penyetoran dan pelaporan SPT pajak masa dan tahunan:</p>
+                        
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Jenis Pajak</th>
+                                        <th>Batas Penyetoran Masa</th>
+                                        <th>Batas Pelaporan SPT Masa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>PPh Masa (21, 23, 4(2))</strong></td>
+                                        <td>Tanggal 10 bulan berikutnya</td>
+                                        <td>Tanggal 20 bulan berikutnya</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>PPN Masa</strong></td>
+                                        <td>Akhir bulan berikutnya (sebelum lapor)</td>
+                                        <td>Akhir bulan berikutnya</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>SPT Tahunan Orang Pribadi (OP)</strong></td>
+                                        <td>Sebelum lapor SPT (Maks 31 Maret)</td>
+                                        <td>Tanggal 31 Maret tahun berikutnya</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>SPT Tahunan Badan</strong></td>
+                                        <td>Sebelum lapor SPT (Maks 30 April)</td>
+                                        <td>Tanggal 30 April tahun berikutnya</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <div class="alert-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                            <div class="alert-content">
+                                <h4>Sanksi Keterlambatan Lapor SPT Tahunan:</h4>
+                                <p>Sesuai UU KUP, keterlambatan pelaporan SPT dikenakan denda administrasi sebesar <strong>Rp 100.000</strong> untuk Wajib Pajak Orang Pribadi, dan <strong>Rp 1.000.000</strong> untuk Wajib Pajak Badan. Terlambat menyetor pajak dikenakan sanksi bunga per bulan sesuai tarif acuan KMK ditambah surcharge (maksimal 24 bulan).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic placeholders for other chapters/tools to keep JS swap clean -->
+                    <div class="chapter-section hidden" id="chapter-2"></div>
+                    <div class="chapter-section hidden" id="chapter-3"></div>
+                    <div class="chapter-section hidden" id="chapter-4"></div>
+                    <div class="chapter-section hidden" id="chapter-5"></div>
+                    <div class="chapter-section hidden" id="chapter-6"></div>
+
+                    <!-- Tool Section: Calculator -->
+                    <div class="chapter-section hidden" id="tool-calculator">
+                        <div class="chapter-header">
+                            <span class="chapter-badge">Simulator</span>
+                            <h1>Kalkulator PTKP & TER PPh 21 (PMK 168/2023)</h1>
+                            <p class="chapter-intro">Gunakan simulator ini untuk menguji pemahaman skema hitung TER bulanan PPh 21 karyawan tetap berdasarkan regulasi terbaru.</p>
+                        </div>
+                        <hr class="section-divider">
+
+                        <div class="tool-grid">
+                            <div class="tool-form-card">
+                                <h3><i class="fa-solid fa-sliders"></i> Parameter Penghitungan</h3>
+                                <form id="interactive-calc-form" onsubmit="return false;">
+                                    <div class="form-group">
+                                        <label for="calc-gross-salary">Gaji Bruto Bulanan (Rp):</label>
+                                        <input type="number" id="calc-gross-salary" placeholder="Masukkan gaji kotor bulanan..." min="0" required>
+                                        <div class="input-helper">Termasuk gaji pokok, tunjangan, lembur, dan premi BPJS dibayar perusahaan.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="calc-ptkp-status">Status PTKP Awal Tahun:</label>
+                                        <select id="calc-ptkp-status" required>
+                                            <option value="" disabled selected>Pilih Status PTKP...</option>
+                                            <option value="TK/0">TK/0 (Lajang, 0 Tanggungan) - PTKP Rp 54M</option>
+                                            <option value="TK/1">TK/1 (Lajang, 1 Tanggungan) - PTKP Rp 58.5M</option>
+                                            <option value="K/0">K/0 (Kawin, 0 Tanggungan) - PTKP Rp 58.5M</option>
+                                            <option value="TK/2">TK/2 (Lajang, 2 Tanggungan) - PTKP Rp 63M</option>
+                                            <option value="TK/3">TK/3 (Lajang, 3 Tanggungan) - PTKP Rp 67.5M</option>
+                                            <option value="K/1">K/1 (Kawin, 1 Tanggungan) - PTKP Rp 63M</option>
+                                            <option value="K/2">K/2 (Kawin, 2 Tanggungan) - PTKP Rp 67.5M</option>
+                                            <option value="K/3">K/3 (Kawin, 3 Tanggungan) - PTKP Rp 72M</option>
+                                        </select>
+                                    </div>
+                                    <button type="button" class="btn-primary btn-full" id="btn-run-calc"><i class="fa-solid fa-calculator"></i> Hitung Potongan Pajak</button>
+                                </form>
+                            </div>
+
+                            <div class="tool-result-card" id="calc-result-panel">
+                                <div class="empty-result-state" id="calc-empty-state">
+                                    <i class="fa-solid fa-calculator"></i>
+                                    <p>Masukkan gaji dan status PTKP di panel kiri untuk melakukan simulasi perhitungan TER.</p>
+                                </div>
+                                <div class="actual-results hidden" id="calc-actual-results">
+                                    <h3>Hasil Perhitungan Bulanan</h3>
+                                    <div class="result-list">
+                                        <div class="result-item">
+                                            <span>Status PTKP:</span>
+                                            <strong id="res-ptkp">-</strong>
+                                        </div>
+                                        <div class="result-item">
+                                            <span>Batas PTKP Setahun:</span>
+                                            <strong id="res-ptkp-val">-</strong>
+                                        </div>
+                                        <div class="result-item">
+                                            <span>Kategori TER:</span>
+                                            <strong id="res-ter-cat">-</strong>
+                                        </div>
+                                        <div class="result-item">
+                                            <span>Persentase Tarif Efektif:</span>
+                                            <strong class="text-accent" id="res-ter-rate">-</strong>
+                                        </div>
+                                        <div class="result-item total">
+                                            <span>Potongan PPh 21:</span>
+                                            <strong id="res-tax-amount">-</strong>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-info compact">
+                                        <div class="alert-icon"><i class="fa-solid fa-circle-info"></i></div>
+                                        <div class="alert-content">
+                                            <p>Skema TER ini berlaku untuk bulan Januari sampai dengan November. Untuk bulan Desember, perhitungan menggunakan mekanisme tarif progresif UU PPh Pasal 17 dikurangi total pajak yang telah dibayarkan.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tool Section: Withholding Tax Finder -->
+                    <div class="chapter-section hidden" id="tool-withholding">
+                        <div class="chapter-header">
+                            <span class="chapter-badge">Cheat-Sheet</span>
+                            <h1>Cari Tarif Withholding Tax (Potong & Pungut)</h1>
+                            <p class="chapter-intro">Temukan tarif pajak, objek, dan ketentuan sanksi non-NPWP untuk transaksi pihak ketiga secara instan.</p>
+                        </div>
+                        <hr class="section-divider">
+
+                        <div class="search-withholding-wrapper">
+                            <div class="search-header-box">
+                                <div class="form-group">
+                                    <label for="wht-select-type">Pilih Kategori PPh:</label>
+                                    <select id="wht-select-type">
+                                        <option value="ALL">Tampilkan Semua PPh</option>
+                                        <option value="21">PPh Pasal 21 (Pekerjaan / Jasa OP)</option>
+                                        <option value="22">PPh Pasal 22 (Impor / Belanja Negara)</option>
+                                        <option value="23">PPh Pasal 23 (Dividen, Bunga, Royalti, Jasa Badan)</option>
+                                        <option value="26">PPh Pasal 26 (Wajib Pajak Luar Negeri)</option>
+                                        <option value="4(2)">PPh Pasal 4(2) (Pajak Bersifat Final)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="wht-search-text">Cari Objek/Kata Kunci:</label>
+                                    <div class="search-box">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" id="wht-search-text" placeholder="Contoh: royalti, jasa sewa, impor, bunga...">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="wht-results-grid" id="wht-results-grid">
+                                <!-- Cards generated dynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tool Section: Quiz -->
+                    <div class="chapter-section hidden" id="tool-quiz">
+                        <div class="chapter-header">
+                            <span class="chapter-badge">Latihan Ujian</span>
+                            <h1>Uji Kompetensi Perpajakan Dasar</h1>
+                            <p class="chapter-intro">Selesaikan 5 studi kasus perpajakan dasar ini untuk mematangkan pemahaman teori dan hitungan lo menghadapi UTS/UAS.</p>
+                        </div>
+                        <hr class="section-divider">
+
+                        <div class="quiz-wrapper">
+                            <!-- Quiz Progress -->
+                            <div class="quiz-progress-bar">
+                                <div class="progress-fill" id="quiz-progress-fill" style="width: 20%"></div>
+                            </div>
+                            <div class="quiz-meta">
+                                <span id="quiz-question-count">Soal 1 dari 5</span>
+                                <span id="quiz-score-indicator">Skor: 0</span>
+                            </div>
+
+                            <!-- Quiz Card Container -->
+                            <div class="quiz-card" id="quiz-card">
+                                <div class="quiz-question" id="quiz-question">
+                                    Loading pertanyaan...
+                                </div>
+                                <div class="quiz-options-list" id="quiz-options-list">
+                                    <!-- Options generated dynamically -->
+                                </div>
+                                <div class="quiz-explanation hidden" id="quiz-explanation">
+                                    <h4><i class="fa-solid fa-circle-info"></i> Pembahasan Jawaban:</h4>
+                                    <p id="quiz-explanation-text">Pembahasan lengkap kasus...</p>
+                                </div>
+                                <div class="quiz-nav">
+                                    <button class="btn-primary" id="btn-submit-answer">Verifikasi Jawaban</button>
+                                    <button class="btn-primary hidden" id="btn-next-question">Soal Selanjutnya <i class="fa-solid fa-arrow-right"></i></button>
+                                    <button class="btn-primary hidden" id="btn-restart-quiz"><i class="fa-solid fa-rotate-left"></i> Ulangi Kuis</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
