@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { Client } = require('@notionhq/client');
-require('dotenv').config();
+require('dotenv').config({ path: require('path').join(__dirname, '.env') });
 
 const notion = new Client({ auth: process.env.NOTION_TOKEN });
 
@@ -83,9 +83,10 @@ async function sync() {
   for (const line of lines) {
     if (line.startsWith('## 2026-06-14')) {
       isTargetSection = true;
+      sectionLines.push(line); // include the heading itself for title parsing
       continue;
-    } else if (line.startsWith('## ') && isTargetSection) {
-      break; // End of section
+    } else if (line.startsWith('## ') && !line.startsWith('## 2026-06-14') && isTargetSection) {
+      break; // End of section (next date)
     }
 
     if (isTargetSection) {
