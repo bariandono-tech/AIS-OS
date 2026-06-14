@@ -20,6 +20,9 @@ Buku catatan memori jangka panjang untuk merekam state proyek, pelajaran penting
   * Project Page: **Skripsi Deviasi Anggaran** (ID: `37c78c4c-e388-8149-ba66-fbd0ea94aaf8`).
   * Area Page: **Metodologi Penelitian** (ID: `37c78c4c-e388-8162-814b-ef33783d7ab3`).
 * **Konfigurasi Lokal:** Kunci API (`NOTION_TOKEN`) disimpan aman di `.env` lokal di dalam folder `scripts/notion/` dan di-ignore dari git commit.
+* **Aturan Pengarsipan Worklog:** Ketika menyinkronkan/menyimpan worklog di database Pro Max Notes Notion (Mythos Brain):
+  * Hubungkan relation `Area/Resource` ke Halaman **"AiS OS"** (ID: `37c78c4c-e388-81f1-99a3-d9e3b16d3d86`).
+  * Hubungkan relation `Project` ke Halaman **"Twitter Digital"** (ID: `37f78c4c-e388-8064-abbc-d4df85b7eda0`) di bagian task.
 
 ---
 
@@ -33,12 +36,12 @@ Buku catatan memori jangka panjang untuk merekam state proyek, pelajaran penting
 
 ---
 
-## 3. Progress State (Terakhir Diperbarui: 2026-06-14)
+## 3. Progress State (Terakhir Diperbarui: 2026-06-15)
 
 * **Git Branch:** `chore/notion-relations-and-projects-2026-06-13` (sudah di-push ke origin).
-* **Dokumen Terakhir:** Makalah seminar Proposal Akuntansi berhasil di-generate secara sinkron (`makalah_seminar_AJIE_BARIANDONO_2110426823.docx`) dengan diagram kerangka penelitian terpasang rapi di dalamnya.
-* **Log Terakhir:** Catatan kerja tanggal 14 Juni 2026 dan insight deviasi anggaran sudah sinkron ke Notion.
+* **Dokumen Terakhir:** Materi digital baru "Mastery Kit Pajak Dasar" selesai disusun beserta visual flowchart dan slide presentasi Word.
+* **Log Terakhir:** Catatan kerja tanggal 15 Juni 2026 dan pembersihan folder root telah berhasil disinkronkan ke Notion.
 * **Otomasi & Asisten Baru:**
   - Skill **`latarbelakang-deduktif`** aktif untuk memandu penulisan Bab I secara deduktif dengan Jembatan Fenomena.
   - Agent **`ceo-digital-selling`** aktif untuk menyusun draf promosi dan taktik penjualan jasa/produk akuntansi di Twitter/X.
-
+  - Script **`sync_worklog_today.js`** aktif untuk mempermudah sinkronisasi catatan harian ke Mythos Brain (AiS OS / Twitter Digital).
