@@ -12,3 +12,5 @@ audits/
 *.xlsm
 *.pdf
 ~$*
+.obsidian/
+
