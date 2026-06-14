@@ -1,0 +1,339 @@
+=================== FULL AUDIT STRUCT REPORT ===================
+Total blocks scanned: 67
+
+1. Path: PARA
+   ID: 86c78c4c-e388-8321-a4e0-01a9a574a957
+   Type: callout
+   Details: [Callout] "This template gives you a simple, minimalist PARA Method dashboard. Inspired by Tiago Forte’s Building a Second Brain course, it creates a structure you can use to organize your entire life."
+   [FLAGGED: TJ KEYWORDS]
+----------------------------------------------------
+2. Path: PARA
+   ID: 3ff78c4c-e388-82d9-99ba-81d33763a56d
+   Type: toggle
+   Details: [Toggle] "Quick Links"
+----------------------------------------------------
+3. Path: PARA > [toggle]
+   ID: 7a378c4c-e388-83f8-abc2-8140c30bceee
+   Type: table_of_contents
+   Details: [Type: table_of_contents]
+----------------------------------------------------
+4. Path: PARA
+   ID: 76278c4c-e388-83bb-953a-81a4366e09a4
+   Type: column_list
+   Details: [Column List]
+----------------------------------------------------
+5. Path: PARA > [column_list]
+   ID: d0d78c4c-e388-8250-82f5-812efd6519bf
+   Type: column
+   Details: [Column]
+----------------------------------------------------
+6. Path: PARA > [column_list] > [column]
+   ID: b3078c4c-e388-83b5-9ce9-819bc3962ad9
+   Type: heading_1
+   Details: [H1] "Task Inbox"
+----------------------------------------------------
+7. Path: PARA > [column_list] > [column]
+   ID: 56478c4c-e388-8229-a3bf-0183167627e6
+   Type: divider
+   Details: [Divider]
+----------------------------------------------------
+8. Path: PARA > [column_list] > [column]
+   ID: f2d78c4c-e388-82d0-8ccb-811c7ce4f37a
+   Type: child_database
+   Details: [Database] "Untitled"
+----------------------------------------------------
+9. Path: PARA > [column_list]
+   ID: 1a578c4c-e388-8397-a92c-017f7bac910a
+   Type: column
+   Details: [Column]
+----------------------------------------------------
+10. Path: PARA > [column_list] > [column]
+   ID: 4c578c4c-e388-82cd-820f-01a158c8cc37
+   Type: heading_1
+   Details: [H1] "Note Inbox"
+----------------------------------------------------
+11. Path: PARA > [column_list] > [column]
+   ID: 3ed78c4c-e388-825b-8980-8106c5ea7f8c
+   Type: divider
+   Details: [Divider]
+----------------------------------------------------
+12. Path: PARA > [column_list] > [column]
+   ID: f7178c4c-e388-83c3-8a1e-01668083929e
+   Type: child_database
+   Details: [Database] "Untitled"
+----------------------------------------------------
+13. Path: PARA
+   ID: 91878c4c-e388-83fe-b43f-81c1cbfdfb51
+   Type: column_list
+   Details: [Column List]
+----------------------------------------------------
+14. Path: PARA > [column_list]
+   ID: c4078c4c-e388-82a8-a9b1-01a66f0b2e0e
+   Type: column
+   Details: [Column]
+----------------------------------------------------
+15. Path: PARA > [column_list] > [column]
+   ID: 08e78c4c-e388-8312-8149-8126312f1ecf
+   Type: heading_1
+   Details: [H1] "Projects"
+----------------------------------------------------
+16. Path: PARA > [column_list] > [column]
+   ID: 95e78c4c-e388-839e-bb03-0184f43a42fe
+   Type: divider
+   Details: [Divider]
+----------------------------------------------------
+17. Path: PARA > [column_list] > [column]
+   ID: a3178c4c-e388-822e-bab7-01b31e24d84c
+   Type: child_database
+   Details: [Database] "Untitled"
+----------------------------------------------------
+18. Path: PARA > [column_list]
+   ID: 82678c4c-e388-82a5-ac81-01632a3883e9
+   Type: column
+   Details: [Column]
+----------------------------------------------------
+19. Path: PARA > [column_list] > [column]
+   ID: 10178c4c-e388-838f-8a33-01b1f804b20b
+   Type: heading_1
+   Details: [H1] "Areas & Resources"
+----------------------------------------------------
+20. Path: PARA > [column_list] > [column]
+   ID: 4f478c4c-e388-82ab-9f87-818f230a9ab7
+   Type: divider
+   Details: [Divider]
+----------------------------------------------------
+21. Path: PARA > [column_list] > [column]
+   ID: b4f78c4c-e388-82b2-8ec9-010f02bbf1dd
+   Type: child_database
+   Details: [Database] "Untitled"
+----------------------------------------------------
+22. Path: PARA
+   ID: 57e78c4c-e388-8398-bd62-0174d01b0182
+   Type: column_list
+   Details: [Column List]
+----------------------------------------------------
+23. Path: PARA > [column_list]
+   ID: f2978c4c-e388-83c4-9638-011953afe034
+   Type: column
+   Details: [Column]
+----------------------------------------------------
+24. Path: PARA > [column_list] > [column]
+   ID: 8fa78c4c-e388-83fe-8226-010af7352492
+   Type: child_page
+   Details: [Sub-Page] "Archive"
+----------------------------------------------------
+25. Path: PARA > [column_list]
+   ID: 16178c4c-e388-836b-adf5-01846b17b6de
+   Type: column
+   Details: [Column]
+----------------------------------------------------
+26. Path: PARA > [column_list] > [column]
+   ID: 94378c4c-e388-8340-aec4-019869a0478b
+   Type: child_page
+   Details: [Sub-Page] "Databases"
+----------------------------------------------------
+27. Path: PARA > [column_list] > [column]
+   ID: 4ca78c4c-e388-8271-ba7b-8185a2e248c7
+   Type: child_page
+   Details: [Sub-Page] "PARA Dashboard"
+----------------------------------------------------
+28. Path: PARA
+   ID: 8fe78c4c-e388-83f4-9997-81b12a13aa86
+   Type: paragraph
+   Details: [Paragraph] ""
+----------------------------------------------------
+29. Path: PARA > [column_list] > [column] > Archive
+   ID: 42a78c4c-e388-8358-bb59-01abe5a1071a
+   Type: toggle
+   Details: [Toggle] "Quick Links"
+----------------------------------------------------
+30. Path: PARA > [column_list] > [column] > Archive > [toggle]
+   ID: db878c4c-e388-8224-9e9a-01442cb3c8a7
+   Type: table_of_contents
+   Details: [Type: table_of_contents]
+----------------------------------------------------
+31. Path: PARA > [column_list] > [column] > Archive
+   ID: 78a78c4c-e388-830a-829b-81fc7f7ef1a1
+   Type: heading_1
+   Details: [H1] "Completed Tasks"
+----------------------------------------------------
+32. Path: PARA > [column_list] > [column] > Archive
+   ID: bbb78c4c-e388-82ad-aa1f-814b496e5c33
+   Type: divider
+   Details: [Divider]
+----------------------------------------------------
+33. Path: PARA > [column_list] > [column] > Archive
+   ID: 25978c4c-e388-83df-ba9a-8165339eeaaa
+   Type: child_database
+   Details: [Database] "Untitled"
+----------------------------------------------------
+34. Path: PARA > [column_list] > [column] > Archive
+   ID: 6bc78c4c-e388-83be-9fdd-81c461159129
+   Type: heading_1
+   Details: [H1] "Archived Notes"
+----------------------------------------------------
+35. Path: PARA > [column_list] > [column] > Archive
+   ID: cf878c4c-e388-835a-ae40-81c3a8010bc5
+   Type: divider
+   Details: [Divider]
+----------------------------------------------------
+36. Path: PARA > [column_list] > [column] > Archive
+   ID: 7e778c4c-e388-829f-bcfb-81ea9df1c1df
+   Type: child_database
+   Details: [Database] "Untitled"
+----------------------------------------------------
+37. Path: PARA > [column_list] > [column] > Archive
+   ID: 96d78c4c-e388-822b-837a-01065dd8878f
+   Type: heading_1
+   Details: [H1] "Archived Projects"
+----------------------------------------------------
+38. Path: PARA > [column_list] > [column] > Archive
+   ID: bee78c4c-e388-8218-af08-811d97aa4c95
+   Type: divider
+   Details: [Divider]
+----------------------------------------------------
+39. Path: PARA > [column_list] > [column] > Archive
+   ID: 45878c4c-e388-8217-abfd-818e972b0814
+   Type: child_database
+   Details: [Database] "Untitled"
+----------------------------------------------------
+40. Path: PARA > [column_list] > [column] > Archive
+   ID: b0778c4c-e388-825e-bbb9-0103a906bdd3
+   Type: heading_1
+   Details: [H1] "Archived Areas/Resources"
+----------------------------------------------------
+41. Path: PARA > [column_list] > [column] > Archive
+   ID: aac78c4c-e388-835a-b7dc-01fcba1ccd22
+   Type: divider
+   Details: [Divider]
+----------------------------------------------------
+42. Path: PARA > [column_list] > [column] > Archive
+   ID: eda78c4c-e388-83dd-be19-81dd02364162
+   Type: child_database
+   Details: [Database] "Untitled"
+----------------------------------------------------
+43. Path: PARA > [column_list] > [column] > Databases
+   ID: 67f78c4c-e388-821f-9263-81d511dcb2f2
+   Type: child_database
+   Details: [Database] "Tasks [PT]"
+----------------------------------------------------
+44. Path: PARA > [column_list] > [column] > Databases
+   ID: 8a378c4c-e388-830b-8154-017b0a0c96f7
+   Type: child_database
+   Details: [Database] "Notes [PT]"
+----------------------------------------------------
+45. Path: PARA > [column_list] > [column] > Databases
+   ID: 3fb78c4c-e388-8219-9430-01612e494abc
+   Type: child_database
+   Details: [Database] "Projects [PT]"
+----------------------------------------------------
+46. Path: PARA > [column_list] > [column] > Databases
+   ID: bf978c4c-e388-822b-adba-017759df1259
+   Type: child_database
+   Details: [Database] "Areas/Resources [PT]"
+----------------------------------------------------
+47. Path: PARA > [column_list] > [column] > PARA Dashboard
+   ID: a9678c4c-e388-821e-bfbe-81e192cbf0de
+   Type: toggle
+   Details: [Toggle] "Quick Links"
+----------------------------------------------------
+48. Path: PARA > [column_list] > [column] > PARA Dashboard
+   ID: 85078c4c-e388-827e-a160-0185e1da6378
+   Type: heading_1
+   Details: [H1] "Tasks"
+----------------------------------------------------
+49. Path: PARA > [column_list] > [column] > PARA Dashboard
+   ID: 56478c4c-e388-82fd-b772-011124a16063
+   Type: child_database
+   Details: [Database] "Untitled"
+----------------------------------------------------
+50. Path: PARA > [column_list] > [column] > PARA Dashboard
+   ID: 6e378c4c-e388-821e-8662-81a2daf88d60
+   Type: heading_1
+   Details: [H1] "Notes"
+----------------------------------------------------
+51. Path: PARA > [column_list] > [column] > PARA Dashboard
+   ID: 97b78c4c-e388-82ce-8135-012d7be5194f
+   Type: child_database
+   Details: [Database] "Untitled"
+----------------------------------------------------
+52. Path: PARA > [column_list] > [column] > PARA Dashboard
+   ID: f4478c4c-e388-828f-b3e5-81ba3e5a8237
+   Type: heading_1
+   Details: [H1] "Projects"
+----------------------------------------------------
+53. Path: PARA > [column_list] > [column] > PARA Dashboard
+   ID: 81c78c4c-e388-8298-a64a-817e80b92fa3
+   Type: child_database
+   Details: [Database] "Untitled"
+----------------------------------------------------
+54. Path: PARA > [column_list] > [column] > PARA Dashboard
+   ID: 37578c4c-e388-822a-bbf0-810bc4467600
+   Type: heading_1
+   Details: [H1] "Areas & Resources"
+----------------------------------------------------
+55. Path: PARA > [column_list] > [column] > PARA Dashboard
+   ID: f8178c4c-e388-82c2-a9a7-013cdfb5c53a
+   Type: child_database
+   Details: [Database] "Untitled"
+----------------------------------------------------
+56. Path: PARA > [column_list] > [column] > PARA Dashboard
+   ID: 0e678c4c-e388-827c-9577-8145bfd1d7fb
+   Type: divider
+   Details: [Divider]
+----------------------------------------------------
+57. Path: PARA > [column_list] > [column] > PARA Dashboard
+   ID: f9a78c4c-e388-822c-b0d0-8133b08f0a81
+   Type: column_list
+   Details: [Column List]
+----------------------------------------------------
+58. Path: PARA > [column_list] > [column] > PARA Dashboard > [column_list]
+   ID: 08378c4c-e388-8313-aaa3-817d7a70ffe7
+   Type: column
+   Details: [Column]
+----------------------------------------------------
+59. Path: PARA > [column_list] > [column] > PARA Dashboard > [column_list] > [column]
+   ID: 59a78c4c-e388-83f9-bff1-01c5b189f667
+   Type: child_page
+   Details: [Sub-Page] "Archive"
+----------------------------------------------------
+60. Path: PARA > [column_list] > [column] > PARA Dashboard > [column_list]
+   ID: e0e78c4c-e388-8365-a74b-01d64cc4861c
+   Type: column
+   Details: [Column]
+----------------------------------------------------
+61. Path: PARA > [column_list] > [column] > PARA Dashboard > [column_list] > [column]
+   ID: 1c678c4c-e388-83a5-9cb0-01b6c2a51cb3
+   Type: child_page
+   Details: [Sub-Page] "Databases"
+----------------------------------------------------
+62. Path: PARA > [column_list] > [column] > PARA Dashboard > [column_list] > [column]
+   ID: a8078c4c-e388-839c-9f32-81321dcde2c7
+   Type: paragraph
+   Details: [Paragraph] ""
+----------------------------------------------------
+63. Path: PARA > [column_list] > [column] > PARA Dashboard > [column_list] > [column] > Archive
+   ID: ccb78c4c-e388-82ec-8461-01b3bbfb632d
+   Type: paragraph
+   Details: [Paragraph] ""
+----------------------------------------------------
+64. Path: PARA > [column_list] > [column] > PARA Dashboard > [column_list] > [column] > Databases
+   ID: 17f78c4c-e388-82e6-befb-01f49d5ebe82
+   Type: child_database
+   Details: [Database] "Tasks [PARA]"
+----------------------------------------------------
+65. Path: PARA > [column_list] > [column] > PARA Dashboard > [column_list] > [column] > Databases
+   ID: 38e78c4c-e388-82e4-a66e-818769620475
+   Type: child_database
+   Details: [Database] "Notes [PARA]"
+----------------------------------------------------
+66. Path: PARA > [column_list] > [column] > PARA Dashboard > [column_list] > [column] > Databases
+   ID: 27778c4c-e388-8281-bb8c-014bab2582d7
+   Type: child_database
+   Details: [Database] "Projects [PARA]"
+----------------------------------------------------
+67. Path: PARA > [column_list] > [column] > PARA Dashboard > [column_list] > [column] > Databases
+   ID: 0f378c4c-e388-8253-b33e-815844282c1a
+   Type: child_database
+   Details: [Database] "Areas/Resources [PARA]"
+----------------------------------------------------

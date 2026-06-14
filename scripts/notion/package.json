@@ -1,0 +1,13 @@
+{
+  "name": "notion-v3",
+  "version": "1.0.0",
+  "description": "Notion Integration Testing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@notionhq/client": "*",
+    "dotenv": "*"
+  }
+}

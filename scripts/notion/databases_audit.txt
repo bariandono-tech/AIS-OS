@@ -1,0 +1,177 @@
+=================== DATABASE AUDIT REPORT ===================
+
+Database Label: Tasks [PT]
+Database View ID: 67f78c4c-e388-821f-9263-81d511dcb2f2
+Database Title: Tasks [PT]
+Underlying Data Source ID: d3078c4c-e388-82ba-b06e-87afad95803d
+Items Found: 0
+------------------------------------------------------------
+Database Label: Notes [PT]
+Database View ID: 8a378c4c-e388-830b-8154-017b0a0c96f7
+Database Title: Notes [PT]
+Underlying Data Source ID: a2b78c4c-e388-82df-a6b2-079f51483cc1
+Items Found: 0
+------------------------------------------------------------
+Database Label: Projects [PT]
+Database View ID: 3fb78c4c-e388-8219-9430-01612e494abc
+Database Title: Projects [PT]
+Underlying Data Source ID: 45078c4c-e388-83e2-aad8-07f4d8067fb9
+Items Found: 0
+------------------------------------------------------------
+Database Label: Areas/Resources [PT]
+Database View ID: bf978c4c-e388-822b-adba-017759df1259
+Database Title: Areas/Resources [PT]
+Underlying Data Source ID: 69978c4c-e388-8338-90a8-07d890c07aad
+Items Found: 0
+------------------------------------------------------------
+Database Label: Tasks [PARA]
+Database View ID: 17f78c4c-e388-82e6-befb-01f49d5ebe82
+Database Title: Tasks [PARA]
+Underlying Data Source ID: 91d78c4c-e388-83f0-806c-87099cc6c471
+Items Found: 11
+  - Item ID: 3e178c4c-e388-8303-9c70-01e94aa67305
+    Item Title: "Do squat workout"
+  - Item ID: 95578c4c-e388-82ef-8be8-811c9a76cd3e
+    Item Title: "Figure out vertical stream layout"
+  - Item ID: ea978c4c-e388-825e-9c73-019c220251e3
+    Item Title: "Write up case studies"
+  - Item ID: 55878c4c-e388-82ad-b5ab-81234899f41f
+    Item Title: "Add new capture card to streaming setup"
+    [FLAGGED: Item title contains TJ keywords]
+  - Item ID: b9078c4c-e388-82cf-8c6b-81137d820bb3
+    Item Title: "Install multi-stream plugin"
+  - Item ID: 8c678c4c-e388-83b6-afff-811e7a18165d
+    Item Title: "Set up overhead camera"
+  - Item ID: c6278c4c-e388-82eb-8e2f-816eeb82744a
+    Item Title: "Send payment to photographer"
+  - Item ID: 80478c4c-e388-82b2-85eb-01412ba29805
+    Item Title: "Go through site builder tutorial"
+  - Item ID: 50a78c4c-e388-82ca-92d1-0119d2773949
+    Item Title: "Fix audio clipping issues"
+  - Item ID: eb478c4c-e388-83d5-b4db-81a195a7a295
+    Item Title: "Clean up leaves in yard"
+  - Item ID: b4378c4c-e388-8266-89c2-01ac1c15a17e
+    Item Title: "Get new photos taken"
+------------------------------------------------------------
+Database Label: Notes [PARA]
+Database View ID: 38e78c4c-e388-82e4-a66e-818769620475
+Database Title: Notes [PARA]
+Underlying Data Source ID: d6d78c4c-e388-83a3-9e0a-8746e586bf8a
+Items Found: 3
+  - Item ID: 5c878c4c-e388-831f-a017-813a69476b75
+    Item Title: "Voice Note: Lessons from Building Notion Templates"
+    [FLAGGED: Item title contains TJ keywords]
+    Page Content Issues:
+      * ID: 7a378c4c-e388-8395-8794-8162b6e7e8ac | Type: paragraph | Info: "The speaker shares personal experiences and lessons learned in building a successful Notion templates business, emphasizing the importance of overcoming self-doubt and fear of failure. They stress the value of creating solutions based on personal problems and engaging with communities to identify needs. The speaker advocates for launching products early, gathering feedback, and iterating quickly. Strategies like creating content 'lighthouses' and 'search parties' are discussed as ways to reach potential customers effectively."
+      * ID: 00578c4c-e388-83f9-9d7f-819375808e1d | Type: paragraph | Info: "The speaker emphasizes the importance of directly engaging with the target audience to understand their problems and develop unique solutions efficiently. They highlight the ease of creating and selling templates using tools like Notion's marketplace. Notion's new features simplify the sales process for template creators, including handling sales taxes and preventing template piracy."
+      * ID: 30878c4c-e388-82ea-b17b-01e564cd8f28 | Type: paragraph | Info: "Can I just take a minute to soak this in? This is such a cool experience. Finally getting to meet so many of you that I talked to online in person. So today, I'm gonna share some of the most important lessons that my team and I have learned in building a successful templates business for Notion."
+      * ID: 81078c4c-e388-82ad-af4e-81c65b1b9803 | Type: paragraph | Info: "Over the past few years, we've served over 30,000 customers, and we've made over $2,500,000 in revenue solely from Notion templates. These are one time purchases, no recurring subscriptions, no consulting upsells, just templates. I wanna share as much as I can from what we've learned from this experience with you today. But I wanna start off with a story that's really important to me."
+      * ID: a1a78c4c-e388-8378-8f7c-0117843bc6ed | Type: paragraph | Info: "I've been out of college longer than I was ever in it, but I'm more willing now than ever to throw myself into problems that seem really hard to solve and to learn things that are just frankly tough. I've been teaching myself to code. One project I've been working on over the past few months is a full blown JavaScript library for the Notion API called Notion helper. This allows you to instead of writing the Notion API code that's very verbose directly, you can just write very fluent code like this where you can chain methods."
+      * ID: 56a78c4c-e388-83bf-a127-8179d2a5300e | Type: paragraph | Info: "It's never to, like, try something that scares you. And if you take nothing else away from this talk, I want you to remember that all you have to do is be willing to try hard and be willing to perceive failures as useful feedback instead of the end of the road. And I'm sharing all this with you here, all this information that doesn't seem like it pertains to Notion templates because one of the mistakes I made as a template creator was waiting way too long to launch my first template. The same fear of failure I experienced back in high school in my calculus class reared its ugly head again again when I had the idea for my 1st paid template."
+      * ID: d6278c4c-e388-8356-9af6-811f74d3e1a4 | Type: paragraph | Info: "Only this time, it was a sneakier kind of fear. This time, I didn't fear that I couldn't release a template. That's pretty easy. You all know it as much as I do."
+      * ID: b0178c4c-e388-8244-b875-015dc136fec1 | Type: paragraph | Info: "Notion makes it very easy to put templates out into the world. And as we saw at the keynote, it's now even easier with marketplace. You can sell templates effortlessly. But this time, I feared that I wouldn't do it perfectly."
+      * ID: 83378c4c-e388-8287-8cf9-81bee2729c5e | Type: paragraph | Info: "I was listening to podcasts from people who said they were expert marketers, buying WordPress plugins I didn't need to optimize my sales page, to add these little toast notifications when somebody else added the template to their cart. All of this crap that kept me from launching for way too long. And you wanna know what happened with all of that prep? I hardly used any of it."
+      * ID: e8878c4c-e388-83c8-a6d2-01e5040fa16c | Type: paragraph | Info: "I eventually got so fed up with all of the complexity I was heaping up on myself. I eventually got to the point where I said I have to launch that I put my template up on Gumroad. I had been looking through all these more complicated sales funnels. These tools allow you to do upsells and bundling, and I didn't use any of it."
+      * ID: 20e78c4c-e388-83dc-9b5c-818960b63fae | Type: paragraph | Info: "Threw my template up on Gumroad, which at the time was the simplest way to sell an Notion template. Now it isn't, but at the time it was. And I didn't have any of those fancy features to distract me. And it wasn't able to do bundles."
+      * ID: 2c378c4c-e388-829f-80e6-81bde3ed5bfd | Type: paragraph | Info: "1st, I got money. From the get go, I earned a few $1,000 in the 1st month because, wouldn't you know it, I emailed the people on my wait list, and I actually sold them something. Isn't that crazy how when you tell people do you have something for sale, they might buy it from you and might actually earn money? And then each month after that, the template started selling more and more as I told more people about it, as other people told other people about it."
+      * ID: 13878c4c-e388-8395-8432-814cb7b62322 | Type: paragraph | Info: "I learned to start correctly and collecting testimonials. I learned to start tweaking my sales page in response to feedback I got from my products. I started answering a ton of support questions as well, which not only helped me to improve the templates, but also drove drove me to become more of a Notion expert because now I was being challenged to solve problems outside of my own personal needs and interests. So I've really broadened and deepened my expertise in this tool at the same time."
+      * ID: 8c678c4c-e388-8262-a252-015be187724b | Type: paragraph | Info: "So if you came here hoping to learn how to launch a template business, quote, unquote, that's the answer. Build your template, launch it before you think you're ready, and get as much feedback as possible so you can iterate quickly and you can make improvements. And if you're paying attention, I even slipped a few pro tips in there. Again, I want you to remember one thing from this talk, one thing and one thing only."
+      * ID: 1dd78c4c-e388-82c2-a061-812fd1c40c9a | Type: paragraph | Info: "Keep it simple. You can also update your sales pages in response to feedback. One thing that we learned with the original version of ultimate brain, which is our personal productivity template, is a lot of people found it to be too complex. So in ultimate brain 2.0, which we launched last year, we added an ultimate brain light page."
+      * ID: e1a78c4c-e388-8302-aeb7-81b8e2e672c4 | Type: paragraph | Info: "This can be absolutely fantastic for 1, getting feedback, but for 2, making your customers feel like they are guaranteed to get the solution thereafter because you're not only offering a solution in the form of a product, you're signaling to them we are here to guide you along the way. We're not going to leave you high and dry with just something that you bought. But even with all those pro tips and even with my core message, I might have skipped ahead a little bit. Launch your template is very easy to say, but it leaves a couple of pretty big questions."
+      * ID: d3978c4c-e388-8383-a591-817db280f32c | Type: paragraph | Info: "Number 1, how do I know what kind of template to even build in the first place? And number 2, once I've built my template, how do I reach my future customers if I don't already have a big online audience? Let's start by throwing that first question out the window because it's frankly the wrong question. The question you should be asking instead of what kind of template do I build is well, actually, I'm gonna let you try to guess what that question is."
+      * ID: ece78c4c-e388-82e7-abe2-8143859581cf | Type: paragraph | Info: "As a speaker, in short, it's my job to focus on you. How about me? And as a creator of software, of solutions, of templates, of whatever you want to call it, I need to do the exact same thing. It isn't I shouldn't ask what type of Notion template do I want to create."
+      * ID: 27278c4c-e388-8332-8111-017937abb855 | Type: paragraph | Info: "I should ask what solution does my audience need? What problem can I help them solve with my current skills and interests? In short, don't build a template. Build a solution."
+      * ID: c5e78c4c-e388-8235-8afe-01a6c0d185c8 | Type: paragraph | Info: "And until you understand what the problem you're solving is, you don't know what form that solution should take. Maybe it is a template or maybe it's a higher touch consulting offering. Maybe it's a course. Maybe it's a browser extension."
+      * ID: d5b78c4c-e388-836c-9604-814083a064d5 | Type: paragraph | Info: "For me, the current problem that I wanna solve for my audience is giving them the ability to capture information from the web in a more customizable way and get it as fast as possible into their second brain app of choice. I can't really do that with a template. I can do that with a browser extension and a mobile app like Flylighter. So the problem has to come first."
+      * ID: c6b78c4c-e388-83dd-a26c-0170119a8985 | Type: paragraph | Info: "Now you might be asking, okay. But how do I find that problem? Can't I just be given a template idea and make it? To that, I say no."
+      * ID: f1278c4c-e388-8354-8b62-01cf099a1a00 | Type: paragraph | Info: "You need to find the problem. And on note on the note of finding problems, I wanna tell you another little story. So I actually didn't set out to create Notion templates in the first place. That was never my original goal."
+      * ID: ecf78c4c-e388-82e2-aade-01e1b93ab439 | Type: paragraph | Info: "With Thomas Beck explains, my YouTube channel dedicated to Notion tutorials when I got around to thinking about how to monetize it, my initial idea was to build a course. You see, I started I started using Notion in 2018 all the way back before the pandemic as a way to organize my production process for my YouTube channel and for everything else I was running online, blogs, podcasts, all of that stuff. And as I got into creating content around Notion, with a course, I wanted to help other creators who had the same exact problem. They're juggling all of these different tools, and in many cases, they're juggling all these different web properties with our publishing content."
+      * ID: e3178c4c-e388-825d-ab27-0121edd4529f | Type: paragraph | Info: "We had multiple YouTube channels, multiple podcasts, multiple blogs. We're trying to get tweets out, newsletters out, and a lot of creators are doing the exact same thing. So in possibly the most meta fashion ever, I signed up for a course that taught course creators how to make better courses. Yes."
+      * ID: 7b678c4c-e388-820e-86e5-015cd178e37d | Type: paragraph | Info: "Notion templates were a thing, but paid Notion templates are not very popular. I remember seeing posts on the Notion subreddit where people were like, why would anybody ever pay for a Notion template? It's so easy to build anything in Notion. Who would ever buy a template?"
+      * ID: 05178c4c-e388-8339-824c-01e42c094c7b | Type: paragraph | Info: "It's, yeah, a couple who would concede, yeah, maybe I'd buy a template, but only for, like, $5. But I didn't care about what they were saying because I was over here understanding that I had started from the perspective of I have a problem. I'm juggling all these tools to manage my business as a creator. We're making a good amount of revenue every month doing this."
+      * ID: ee578c4c-e388-82da-996c-01e9399d2ffc | Type: paragraph | Info: "I wanna do it better. And I've built a system here that represents essentially custom built software. There's no other tool in the market that does what my Notion template does, and Notion doesn't do what my template does out of the box. I had built a solution to solve a business problem that my team had, and I was confident there was a lot of other creators out there who had the exact same problem and that they would value this solution at far more than $5."
+      * ID: 0c178c4c-e388-83c5-8da3-8180a79bce45 | Type: paragraph | Info: "So I turned my system into a template called creator's companion. This is my first paid Notion template. This was the one that I put up on Gumroad. And, of course, after making my early mistake of overthinking everything involved in my launch on my sales page and all that jazz, I put it up on Gumroad and I charged a $150, and then people started to buy it."
+      * ID: 37e78c4c-e388-83ad-a17e-01afef3ccd9f | Type: paragraph | Info: "Get your ear to the ground, get involved in your community, find problems that way. And it can be a small problem at first. Right? Creator's Companion does a lot more now than it did at launch, a heck of a lot now more now than it did when I first had my first idea of what it could be."
+      * ID: 09c78c4c-e388-8396-9c3e-015271f6093f | Type: paragraph | Info: "In 2020, I created a YouTube channel called Thomas Frank explains. Tried to think of a clever name, couldn't do it, went with something really generic, but this entire YouTube channel is dedicated to helping people learn Notion from scratch. And we have different kinds of lighthouses which are designed to meet different people where they currently are. You see, I wanna help people learn Notion from soup to nuts, and I wanna give them great tools for doing their work in Notion."
+      * ID: 2fb78c4c-e388-8323-bd19-011c3a9134cf | Type: paragraph | Info: "All of these act as beacons that help specific people at specific points find their way to the shore of my island where I built my brand and where I have templates for sale along with other things. I also wanna step away from just analyzing my content, things I've done for a second. I also wanna talk a little bit about Zapier's content strategy. I could bring up a whole lot of case studies, but Zapier's always stands up in my mind when I give these talks."
+      * ID: 48378c4c-e388-83ca-98f9-0147162ebe96 | Type: paragraph | Info: "So hopefully this, along with my own case study, shows you a couple of strategies you can try. You can create content that directly addresses the needs of your target audience right away like I'm doing on Thomas Frank explains, but you can also cast the the net a little bit wider, go a little bit broader in your appeal, and talk about things that a slightly wider group of people would find interesting so long as that wider group contains the target group you're trying to reach. You probably don't wanna do drama videos about celebrities if you're trying to reach accountants, But maybe accountants are interested in business case study videos, and they find those interesting during lunchtime. Maybe you make videos about that, and you let people know, hey."
+      * ID: 86178c4c-e388-8230-8312-01abb516f553 | Type: paragraph | Info: "And luckily, you're doing that right now by coming to an event like Make with Notion. This is the place where you can build new relationships, you can strike up conversations, you can meet somebody who might be your next business partner, who might be your next client, who might be the person who buys your first template that you launch hopefully next week because you iterate fast and get feedback. Right? You can also do this online."
+      * ID: e5378c4c-e388-82e9-992f-81037918fd50 | Type: paragraph | Info: "I spent again a ton of time in the Notion subreddit because I love solving formula problems for people. And some of those people have likely found their way back to my website, maybe even bought my templates, even if I'm not promoting them directly there because I'm there interacting in the community. And I'm also getting a firsthand view of the problems those people have. This is, I think, the most important reason why you want to go and launch these search parties, not just light lighthouses."
+  - Item ID: 84978c4c-e388-836d-aa3e-01973e4ce7ff
+    Item Title: "Streaming Setup Improvements"
+    [FLAGGED: Item title contains TJ keywords]
+  - Item ID: 21078c4c-e388-8277-b5ec-81de11eed275
+    Item Title: "Flylighter: Capture Anything to Notion, Fast"
+------------------------------------------------------------
+Database Label: Projects [PARA]
+Database View ID: 27778c4c-e388-8281-bb8c-014bab2582d7
+Database Title: Projects [PARA]
+Underlying Data Source ID: bdc78c4c-e388-83c7-9254-87b192111ae3
+Items Found: 2
+  - Item ID: 85878c4c-e388-834c-a022-01744d657709
+    Item Title: "Build Streaming Setup"
+    [FLAGGED: Item title contains TJ keywords]
+  - Item ID: 9ce78c4c-e388-8236-b6d1-811857f80694
+    Item Title: "Launch Portfolio Website"
+    [FLAGGED: Item title contains TJ keywords]
+------------------------------------------------------------
+Database Label: Areas/Resources [PARA]
+Database View ID: 0f378c4c-e388-8253-b33e-815844282c1a
+Database Title: Areas/Resources [PARA]
+Underlying Data Source ID: 7be78c4c-e388-8228-9bcc-87b7d45a5578
+Items Found: 4
+  - Item ID: 2aa78c4c-e388-8297-92ca-01f2853aa0f0
+    Item Title: "Business"
+  - Item ID: 2e378c4c-e388-82dd-82fb-81c8ca2daf4c
+    Item Title: "Productivity"
+  - Item ID: f3278c4c-e388-822b-a8cf-8179b5952fdf
+    Item Title: "Gardening"
+  - Item ID: b7f78c4c-e388-822e-9a4d-018929cbcc99
+    Item Title: "Streaming"
+------------------------------------------------------------
+Database Label: Task Inbox (PARA Page)
+Database View ID: 56478c4c-e388-8229-a3bf-0183167627e6
+Status: FAILED/NOT ACCESSIBLE (Provided database_id 56478c4c-e388-8229-a3bf-0183167627e6 is a divider block, not a database. Use the blocks API instead, or pass the ID of the database itself.)
+------------------------------------------------------------
+Database Label: Note Inbox (PARA Page)
+Database View ID: f7178c4c-e388-83c3-8a1e-01668083929e
+Database Title: Untitled
+Underlying Data Source ID: f7178c4c-e388-83c3-8a1e-01668083929e
+Status: FAILED/NOT ACCESSIBLE (Could not find database with ID: f7178c4c-e388-83c3-8a1e-01668083929e. Make sure the relevant pages and databases are shared with your integration "ajaybarri".)
+------------------------------------------------------------
+Database Label: Projects (PARA Page)
+Database View ID: a3178c4c-e388-822e-bab7-01b31e24d84c
+Database Title: Untitled
+Underlying Data Source ID: a3178c4c-e388-822e-bab7-01b31e24d84c
+Status: FAILED/NOT ACCESSIBLE (Could not find database with ID: a3178c4c-e388-822e-bab7-01b31e24d84c. Make sure the relevant pages and databases are shared with your integration "ajaybarri".)
+------------------------------------------------------------
+Database Label: Areas & Resources (PARA Page)
+Database View ID: b4f78c4c-e388-82b2-8ec9-010f02bbf1dd
+Database Title: Untitled
+Underlying Data Source ID: b4f78c4c-e388-82b2-8ec9-010f02bbf1dd
+Status: FAILED/NOT ACCESSIBLE (Could not find database with ID: b4f78c4c-e388-82b2-8ec9-010f02bbf1dd. Make sure the relevant pages and databases are shared with your integration "ajaybarri".)
+------------------------------------------------------------
+Database Label: Tasks (PARA Dashboard)
+Database View ID: 56478c4c-e388-82fd-b772-011124a16063
+Database Title: Untitled
+Underlying Data Source ID: 56478c4c-e388-82fd-b772-011124a16063
+Status: FAILED/NOT ACCESSIBLE (Could not find database with ID: 56478c4c-e388-82fd-b772-011124a16063. Make sure the relevant pages and databases are shared with your integration "ajaybarri".)
+------------------------------------------------------------
+Database Label: Notes (PARA Dashboard)
+Database View ID: 97b78c4c-e388-82ce-8135-012d7be5194f
+Database Title: Untitled
+Underlying Data Source ID: 97b78c4c-e388-82ce-8135-012d7be5194f
+Status: FAILED/NOT ACCESSIBLE (Could not find database with ID: 97b78c4c-e388-82ce-8135-012d7be5194f. Make sure the relevant pages and databases are shared with your integration "ajaybarri".)
+------------------------------------------------------------
+Database Label: Projects (PARA Dashboard)
+Database View ID: 81c78c4c-e388-8298-a64a-817e80b92fa3
+Database Title: Untitled
+Underlying Data Source ID: 81c78c4c-e388-8298-a64a-817e80b92fa3
+Status: FAILED/NOT ACCESSIBLE (Could not find database with ID: 81c78c4c-e388-8298-a64a-817e80b92fa3. Make sure the relevant pages and databases are shared with your integration "ajaybarri".)
+------------------------------------------------------------
+Database Label: Areas & Resources (PARA Dashboard)
+Database View ID: f8178c4c-e388-82c2-a9a7-013cdfb5c53a
+Database Title: Untitled
+Underlying Data Source ID: f8178c4c-e388-82c2-a9a7-013cdfb5c53a
+Status: FAILED/NOT ACCESSIBLE (Could not find database with ID: f8178c4c-e388-82c2-a9a7-013cdfb5c53a. Make sure the relevant pages and databases are shared with your integration "ajaybarri".)
+------------------------------------------------------------

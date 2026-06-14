@@ -48,3 +48,11 @@
 - *Faktor Internal Satker* (SDM, RPD, Komitmen) bertindak sebagai input yang mendorong proses *Pelaksanaan Anggaran Belanja Modal* (Proses) di bagian tengah.
 - Proses tersebut melahirkan *Deviasi Anggaran* (sebagai *Agency Problem* akibat asimetri informasi) yang selanjutnya memengaruhi *Kinerja IKPA* & *Akuntabilitas Keagenan* (Hasil & Dampak) di bagian kanan.
 
+**Insight kunci untuk skripsi:**
+- **Distingsi Arah Deviasi**: Dalam akuntansi umum, deviasi dihitung dari $\text{Realisasi} - \text{Rencana}$ (deviasi positif = overrun, deviasi negatif = underrun). Namun, di perbendaharaan RI (Kemenkeu), dihitung dari $\text{RPD} - \text{Realisasi}$:
+  - **Deviasi Positif** (Over-estimation / Underrun, RPD > Realisasi): Menyebabkan *idle cash* di kas negara karena dana tidak terserap sesuai rencana.
+  - **Deviasi Negatif** (Under-estimation / Overrun, RPD < Realisasi): Memicu tekanan likuiditas kas negara karena penarikan dana riil melebihi rencana awal.
+- **Simetri Formula IKPA**: Formula penilaian IKPA (PER-5/PB/2024) menggunakan nilai mutlak ($|\text{RPD} - \text{Realisasi}|$), sehingga baik overrun maupun underrun dinilai sama buruknya dan mengurangi nilai IKPA secara simetris, meskipun efek ekonomisnya terhadap kas negara berbeda.
+- **Kerentanan Belanja Modal**: Belanja kontraktual seperti Belanja Modal cenderung lebih sering menghasilkan deviasi positif (underrun) akibat ketergantungan yang tinggi pada progres fisik dari pihak ketiga dan pergeseran jadwal administrasi termin.
+
+

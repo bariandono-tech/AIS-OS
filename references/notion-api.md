@@ -1,8 +1,8 @@
 # Notion — Reference Guide
 
-**Mechanism:** Claude.ai Notion MCP (built-in, no API key needed)
-**Connected:** 2026-06-11
-**Workspace:** Bariandono personal
+**Mechanism:** Claude.ai Notion MCP (built-in, no API key needed) + Local scripts
+**Connected:** 2026-06-11 (Updated: 2026-06-14)
+**Workspace:** Bariandono personal (Mythos Brain)
 
 ---
 
@@ -10,55 +10,28 @@
 
 | Page | URL | ID |
 |---|---|---|
-| Pro MAX Brain (Command Center) | https://app.notion.com/p/37b78c4ce38880fca6c9e71935752566 | 37b78c4c-e388-80fc-a6c9-e71935752566 |
+| Mythos Brain (Command Center) | https://app.notion.com/p/37c78c4ce388803eb0adf1e9cf36f580 | 37c78c4c-e388-803e-b0ad-f1e9cf36f580 |
 
 ---
 
-## Struktur Pro MAX Brain
+## Struktur Mythos Brain
 
-### Notes
-| View | URL |
+### Databases
+| Database | Collection URL / ID |
 |---|---|
-| Inbox | https://app.notion.com/p/37b78c4ce388815787c4cb60e48d3176 |
-| All Notes | https://app.notion.com/p/37b78c4ce388810ca33ed394fe476c47 |
-| Journal | https://app.notion.com/p/37b78c4ce38881ab903fd2834edc0d5e |
-
-### Tasks
-| View | URL |
-|---|---|
-| Inbox | https://app.notion.com/p/37b78c4ce3888166aa07f671ecf09bd3 |
-| Today | https://app.notion.com/p/37b78c4ce3888130aaf6ee8649e399e0 |
-| All Tasks | https://app.notion.com/p/37b78c4ce38881e88575fd67fd54b3bf |
-| Projects | https://app.notion.com/p/37b78c4ce388813e8b24ffa36dbea8da |
-
-### PARA
-| View | URL |
-|---|---|
-| PARA Home | https://app.notion.com/p/37b78c4ce388816c9350e7ade82553f9 |
-| PARA Dashboard | https://app.notion.com/p/37b78c4ce38881d6a855df27060ac675 |
-| Archive | https://app.notion.com/p/37b78c4ce388816aab8ede9e2e05e972 |
+| Tasks | collection://37c78c4c-e388-816b-8d84-cb529b390bfb |
+| Notes | collection://37c78c4c-e388-8152-bbbf-f592d6961b4f |
+| Projects | collection://37c78c4c-e388-81f8-9e45-d29e1b98cbe3 |
 
 ### Khusus
-| Page | URL |
-|---|---|
-| Skripsi Hub | https://app.notion.com/p/37b78c4ce38881e6b1d6dd97616952bf |
-| Goals | https://app.notion.com/p/3736837edc27490184c52b1bd10dd5c1 |
-| Weekly Review | https://app.notion.com/p/37b78c4ce388813bb5c9e4161ed429bc |
+| Page | URL | ID |
+|---|---|---|
+| Skripsi Hub | https://app.notion.com/p/37c78c4ce3888196b36cfbb64af35a61 | 37c78c4c-e388-8196-b36c-fbb64af35a61 |
+| Weekly Review | https://app.notion.com/p/37c78c4ce3888168b79dc913f95b5c04 | 37c78c4c-e388-8168-b79d-c913f95b5c04 |
 
 ---
 
-## Database Collection IDs
-
-| Database | Collection URL |
-|---|---|
-| Tasks | collection://37b78c4c-e388-8105-a5b2-000b5faa01a6 |
-| Notes | collection://37b78c4c-e388-81de-8816-000bf8f8c872 |
-| Projects | collection://37b78c4c-e388-81f4-836c-000bebfc9b81 |
-| Goals | collection://b206c2cd-0fe2-44fc-b003-6d53818c5de0 |
-
----
-
-## MCP Tools yang Tersedia
+## MCP Tools yang Tersedia (via Claude app)
 
 | Tool | Fungsi |
 |---|---|
@@ -70,8 +43,15 @@
 
 ---
 
-## Catatan
+## Otomasi Offline (Lokal)
 
-- MCP ini via claude.ai (bukan API key lokal) — aktif selama sesi Claude
-- Untuk otomasi offline (tanpa Claude), perlu Notion API key + `scripts/notion_api.py`
-- Skripsi Hub dan Tasks adalah dua entry point paling relevan untuk kerja harian
+Semua script integrasi Notion offline dipindahkan ke folder workspace utama di:
+`d:\WORKSPACE\AIS-OS\scripts\notion\`
+
+* **Instalasi:** `npm install` di dalam folder tersebut.
+* **Konfigurasi:** File `.env` di dalam folder tersebut berisi `NOTION_TOKEN` dan `NOTION_PAGE_ID`.
+* **Menjalankan Script:**
+  ```powershell
+  cd d:\WORKSPACE\AIS-OS\scripts\notion
+  node scan_workspace.js
+  ```
