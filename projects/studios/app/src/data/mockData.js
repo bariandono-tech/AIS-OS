@@ -306,6 +306,176 @@ Penghasilan Bruto
     body: null,
     order_index: 2,
   },
+  {
+    id: "c10",
+    stack_id: "2",
+    type: "brainstorm",
+    title: "Mind Map: Pembagian Riba dalam Fiqh Muamalah",
+    body: {
+      nodes: [
+        { id: "riba-root", label: "Riba (Bunga/Kelebihan)", parent_id: null, color: "#6c5ce7" },
+        { id: "riba-duyun", label: "Riba Duyun (Utang)", parent_id: "riba-root", color: "#e17055" },
+        { id: "riba-buyu", label: "Riba Buyu' (Jual Beli)", parent_id: "riba-root", color: "#00b894" },
+        { id: "riba-qardh", label: "Riba Qardh (Manfaat tambahan utang)", parent_id: "riba-duyun", color: "#fdcb6e" },
+        { id: "riba-jahiliyah", label: "Riba Jahiliyah (Denda keterlambatan)", parent_id: "riba-duyun", color: "#fdcb6e" },
+        { id: "riba-fadhl", label: "Riba Fadhl (Kelebihan takaran barang ribawi)", parent_id: "riba-buyu", color: "#fd79a8" },
+        { id: "riba-nasiah", label: "Riba Nasi'ah (Penundaan penyerahan barang ribawi)", parent_id: "riba-buyu", color: "#fd79a8" },
+      ],
+    },
+    order_index: 3,
+  },
+  {
+    id: "c11",
+    stack_id: "2",
+    type: "reference",
+    title: "Referensi Kajian & Fatwa Keuangan Syariah",
+    body: null,
+    order_index: 4,
+  },
+
+  // --- Statistika Penelitian Stack ---
+  {
+    id: "c12",
+    stack_id: "3",
+    type: "notes",
+    title: "Catatan: Uji Asumsi Klasik Regresi OLS",
+    body: {
+      markdown: `# Uji Asumsi Klasik — Regresi OLS
+
+Uji asumsi klasik adalah prasyarat statistik untuk analisis regresi linear berganda Ordinary Least Squares (OLS) agar estimator bersifat BLUE (Best Linear Unbiased Estimator).
+
+## 1. Uji Normalitas
+Menguji apakah residual berdistribusi normal.
+- **Uji**: Kolmogorov-Smirnov atau Shapiro-Wilk.
+- **Aturan**: Sig. > 0.05 artinya data residual berdistribusi normal.
+
+## 2. Uji Multikolinearitas
+Menguji apakah ada korelasi kuat antar variabel independen.
+- **Indikator**: Tolerance & VIF (Variance Inflation Factor).
+- **Aturan**: VIF < 10 dan Tolerance > 0.10.
+
+## 3. Uji Heteroskedastisitas
+Menguji ketidaksamaan varians residual antar pengamatan.
+- **Uji**: Uji Glejser, Uji Park, atau uji grafik Scatterplot.
+- **Aturan**: Sig. > 0.05 artinya bebas heteroskedastisitas.
+
+## 4. Uji Autokorelasi
+Menguji korelasi residual periode t dengan t-1. Umumnya pada data data deret waktu (*time series*).
+- **Uji**: Durbin-Watson (DW) atau Run Test.
+- **Aturan**: Bebas autokorelasi jika nilai DW berada di antara du dan 4-du.
+`,
+    },
+    order_index: 1,
+  },
+  {
+    id: "c13",
+    stack_id: "3",
+    type: "flashcard",
+    title: "Flashcard: Konsep Uji Hipotesis Statistika",
+    body: null,
+    order_index: 2,
+  },
+
+  // --- Manajemen Keuangan Stack ---
+  {
+    id: "c14",
+    stack_id: "4",
+    type: "resume",
+    title: "Ringkasan Time Value of Money & Valuasi Aset",
+    body: {
+      sections: [
+        {
+          title: "Konsep Dasar Nilai Waktu Uang",
+          content: "Nilai waktu uang (Time Value of Money) berasumsi bahwa nilai nominal uang saat ini lebih berharga dibanding masa depan karena adanya potensi bunga (earning power), risiko inflasi, dan preferensi konsumsi saat ini.",
+        },
+        {
+          title: "Rumus Bunga Majemuk (Compound Interest)",
+          content: "• **Future Value (FV)**:\n  FV = PV × (1 + i)^n\n\n• **Present Value (PV)**:\n  PV = FV / (1 + i)^n\n\nKeterangan:\n- FV = Nilai masa depan\n- PV = Nilai sekarang\n- i = Tingkat suku bunga per periode\n- n = Jumlah periode pembungaan",
+        },
+      ],
+    },
+    order_index: 1,
+  },
+  {
+    id: "c15",
+    stack_id: "4",
+    type: "brainstorm",
+    title: "Mind Map: Metode Kelayakan Investasi (Capital Budgeting)",
+    body: {
+      nodes: [
+        { id: "cb-root", label: "Metode Capital Budgeting", parent_id: null, color: "#fdcb6e" },
+        { id: "cb-dcf", label: "Discounted Cash Flow (DCF)", parent_id: "cb-root", color: "#00cec9" },
+        { id: "cb-ndcf", label: "Non-Discounted Cash Flow", parent_id: "cb-root", color: "#fd79a8" },
+        { id: "cb-npv", label: "Net Present Value (NPV)", parent_id: "cb-dcf", color: "#00b894" },
+        { id: "cb-irr", label: "Internal Rate of Return (IRR)", parent_id: "cb-dcf", color: "#00b894" },
+        { id: "cb-pi", label: "Profitability Index (PI)", parent_id: "cb-dcf", color: "#00b894" },
+        { id: "cb-pb", label: "Payback Period", parent_id: "cb-ndcf", color: "#fd79a8" },
+        { id: "cb-arr", label: "Accounting Rate of Return (ARR)", parent_id: "cb-ndcf", color: "#fd79a8" },
+      ],
+    },
+    order_index: 2,
+  },
+
+  // --- Audit & Assurance Stack ---
+  {
+    id: "c16",
+    stack_id: "5",
+    type: "notes",
+    title: "Catatan: Prosedur Audit & Bukti Audit",
+    body: {
+      markdown: `# Prosedur Audit & Bukti Audit
+
+Prosedur audit adalah tindakan konkret yang dilakukan auditor untuk mendapatkan bukti audit guna menarik kesimpulan opini.
+
+## 1. Prosedur Penilaian Risiko
+Dilakukan pada awal audit untuk memahami entitas dan mendeteksi risiko salah saji material.
+
+## 2. Pengujian Pengendalian (Test of Controls / TOC)
+Menguji efektivitas operasional pengendalian internal klien dalam mencegah atau mendeteksi salah saji material.
+
+## 3. Prosedur Substantif
+Dirancang untuk mendeteksi salah saji material pada tingkat asersi. Terdiri dari:
+- **Prosedur Analitis Substantif**: Membandingkan data keuangan dan non-keuangan.
+- **Pengujian Rincian (Test of Details)**: Pengujian saldo akun (misal: konfirmasi bank, stok opname).
+
+> 💡 **Asersi Manajemen Penting**: Keberadaan (Existence), Kelengkapan (Completeness), Hak & Kewajiban (Rights & Obligations), Penilaian/Alokasi (Valuation), Penyajian/Pengungkapan (Presentation).
+`,
+    },
+    order_index: 1,
+  },
+  {
+    id: "c17",
+    stack_id: "5",
+    type: "flashcard",
+    title: "Flashcard: Jenis Opini Audit Laporan Keuangan",
+    body: null,
+    order_index: 2,
+  },
+
+  // --- Metodologi Penelitian Stack ---
+  {
+    id: "c18",
+    stack_id: "6",
+    type: "resume",
+    title: "Ringkasan Sistematika Penulisan Bab I - III Skripsi",
+    body: {
+      sections: [
+        {
+          title: "Sistematika Proposal Penelitian",
+          content: "Secara umum, proposal skripsi/tesis terdiri dari tiga bab awal:\n\n• **BAB I: Pendahuluan** — Latar Belakang Masalah (gap penelitian/fenomena), Rumusan Masalah, Tujuan Penelitian, dan Manfaat Penelitian.\n• **BAB II: Tinjauan Pustaka** — Telaah Teori (Grand Theory, e.g. Agency Theory), Kajian Literatur, Hubungan Antar Variabel & Kerangka Berpikir, dan Pengembangan Hipotesis.\n• **BAB III: Metode Penelitian** — Desain Riset, Populasi & Sampel, Definisi Operasional & Pengukuran Variabel, Metode Pengumpulan Data, dan Teknik Analisis Data.",
+        },
+      ],
+    },
+    order_index: 1,
+  },
+  {
+    id: "c19",
+    stack_id: "6",
+    type: "reference",
+    title: "Referensi Tools & Jurnal Metodologi Penelitian",
+    body: null,
+    order_index: 2,
+  },
 ];
 
 export const flashcards = [
@@ -368,6 +538,45 @@ export const flashcards = [
     back: "Mudharabah: modal 100% dari shahibul maal, pengelolaan oleh mudharib.\nMusyarakah: modal dari semua pihak, pengelolaan bersama. Keuntungan & kerugian ditanggung proporsional.",
     tags: ["akad", "bagi-hasil"],
   },
+
+  // Flashcards for c13 (Konsep Uji Hipotesis Statistika)
+  {
+    id: "f9",
+    content_item_id: "c13",
+    front: "Apa perbedaan Hipotesis Nol (H0) dan Hipotesis Alternatif (Ha)?",
+    back: "H0: Menyatakan tidak ada pengaruh atau hubungan antara variabel.\nHa: Menyatakan ada pengaruh atau hubungan antara variabel.",
+    tags: ["uji-hipotesis", "statistika"],
+  },
+  {
+    id: "f10",
+    content_item_id: "c13",
+    front: "Apa arti tingkat signifikansi alpha (α) = 0.05?",
+    back: "Menyatakan toleransi kesalahan tipe I sebesar 5% (peluang menolak hipotesis nol padahal benar).",
+    tags: ["signifikansi", "alpha"],
+  },
+  {
+    id: "f11",
+    content_item_id: "c13",
+    front: "Kapan menggunakan Uji T (T-Test) dan Uji F (F-Test)?",
+    back: "Uji T: Pengujian hipotesis secara parsial (individu variabel).\nUji F: Pengujian hipotesis secara simultan (bersama-sama).",
+    tags: ["uji-t", "uji-f"],
+  },
+
+  // Flashcards for c17 (Jenis Opini Audit)
+  {
+    id: "f12",
+    content_item_id: "c17",
+    front: "Apa itu Opini Wajar Tanpa Pengecualian (Unqualified Opinion)?",
+    back: "Opini yang diberikan jika laporan keuangan disajikan secara wajar dalam semua hal material dan sesuai SAK.",
+    tags: ["opini", "wtp"],
+  },
+  {
+    id: "f13",
+    content_item_id: "c17",
+    front: "Apa perbedaan Opini Tidak Wajar (Adverse) dan Disclaimer (Tidak Memberikan Pendapat)?",
+    back: "Tidak Wajar (Adverse): Salah saji material dan bersifat pervasive (menyebar).\nDisclaimer: Auditor tidak dapat memperoleh bukti yang cukup karena pembatasan ruang lingkup.",
+    tags: ["opini", "adverse", "disclaimer"],
+  },
 ];
 
 export const references = [
@@ -410,6 +619,42 @@ export const references = [
     ref_type: "article",
     title: "Ortax — Komunitas Perpajakan",
     description: "Forum dan database peraturan perpajakan terlengkap di Indonesia.",
+  },
+
+  // References for c11 (Keuangan Syariah)
+  {
+    id: "r6",
+    content_item_id: "c11",
+    url: "https://dsnmui.or.id",
+    ref_type: "article",
+    title: "DSN-MUI Official Website",
+    description: "Website Dewan Syariah Nasional Majelis Ulama Indonesia — basis data Fatwa Keuangan Syariah terlengkap.",
+  },
+  {
+    id: "r7",
+    content_item_id: "c11",
+    url: "https://www.ojk.go.id/id/kanal/syariah/default.aspx",
+    ref_type: "article",
+    title: "Kanal Syariah OJK",
+    description: "Portal regulasi dan data statistik perbankan & IKNB Syariah dari Otoritas Jasa Keuangan.",
+  },
+
+  // References for c19 (Metodologi Penelitian)
+  {
+    id: "r8",
+    content_item_id: "c19",
+    url: "https://scholar.google.co.id",
+    ref_type: "article",
+    title: "Google Scholar",
+    description: "Mesin pencari literatur ilmiah publikasi jurnal, tesis, buku, abstrak, dan artikel hukum.",
+  },
+  {
+    id: "r9",
+    content_item_id: "c19",
+    url: "https://www.mendeley.com",
+    ref_type: "article",
+    title: "Mendeley Reference Manager",
+    description: "Alat bantu manajemen referensi gratis dan jejaring sosial akademis untuk mengelola riset skripsi.",
   },
 ];
 
