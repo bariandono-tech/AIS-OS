@@ -30,8 +30,8 @@ graph TD
 ### Phase 1: Database & Security (Prasarana)
 | Task ID | Nama Tugas | Deskripsi Teknis | Prasyarat (Depends On) | Status |
 |---|---|---|---|---|
-| **T1.1** | Setup Supabase & Skema DDL | Membuat proyek baru di Supabase dan mengeksekusi DDL tabel `stacks`, `content_items`, `flashcards`, `references`, dan `purchases` di SQL Editor. | - | `[ ]` |
-| **T1.2** | Konfigurasi Row Level Security (RLS) | Menulis kebijakan RLS untuk membatasi pembacaan isi tabel `content_items` hanya bagi pengguna yang terdaftar di tabel `purchases` (atau untuk konten free). | **T1.1** | `[ ]` |
+| **T1.1** | Setup Supabase & Skema DDL | Membuat proyek baru di Supabase dan mengeksekusi DDL tabel `stacks`, `content_items`, `flashcards`, `references`, dan `purchases` di SQL Editor. Berkas DDL SQL tersedia di `supabase_schema.sql` dan `supabase_seed.sql`. | - | `[x]` |
+| **T1.2** | Konfigurasi Row Level Security (RLS) | Menulis kebijakan RLS untuk membatasi pembacaan isi tabel `content_items` hanya bagi pengguna yang terdaftar di tabel `purchases` (atau untuk konten free). Kebijakan RLS terangkum di `supabase_schema.sql`. | **T1.1** | `[x]` |
 
 ### Phase 2: Integrasi Frontend ke Supabase
 | Task ID | Nama Tugas | Deskripsi Teknis | Prasyarat (Depends On) | Status |

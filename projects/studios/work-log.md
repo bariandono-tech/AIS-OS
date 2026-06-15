@@ -20,8 +20,14 @@
   - Menyusun Product Requirement Document (`prd.md`) untuk mematangkan cakupan fitur MVP.
   - Merancang arsitektur data, skema DDL Supabase, dan aturan keamanan RLS di `architecture.md`.
   - Membuat rencana pengerjaan teknis (`task.md`) dengan tabel prioritas serta ketergantungan tugas (dependency task).
+- **Eksekusi Tahap 1 (Database & Security)**:
+  - Membuat berkas DDL SQL `supabase_schema.sql` untuk membuat tabel, relasi, tipe kustom, dan kebijakan RLS (Row-Level Security) akses materi gratis/berbayar.
+  - Membuat berkas data benih SQL `supabase_seed.sql` berisi data materi akademik Indonesia siap impor.
+  - Memperbarui status T1.1 dan T1.2 di `task.md` menjadi selesai.
 
 **Hasil:**
 - Dashboard dan semua halaman konten viewer berjalan lancar tanpa error.
 - Tampilan tabel dan flashcard lulus uji visual browser subagent dan terlihat sangat premium.
 - Dokumen produk (`prd.md`), arsitektur (`architecture.md`), dan peta jalan tugas berurutan (`task.md`) berhasil dibuat sebagai acuan pengerjaan tahap selanjutnya.
+- Berkas migrasi database (`supabase_schema.sql`) dan data benih (`supabase_seed.sql`) siap digunakan di Supabase SQL Editor.
+
