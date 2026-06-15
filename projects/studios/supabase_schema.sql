@@ -144,3 +144,8 @@ CREATE POLICY "Allow users to view their own purchases"
 ON public.purchases
 FOR SELECT 
 USING (auth.uid() = user_id);
+
+CREATE POLICY "Allow users to insert their own purchases" 
+ON public.purchases
+FOR INSERT 
+WITH CHECK (auth.uid() = user_id);
