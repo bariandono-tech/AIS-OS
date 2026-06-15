@@ -16,7 +16,12 @@
   - Mengubah layout flashcard dari list memanjang vertikal menjadi sistem deck interaktif (satu per satu) dengan tombol navigasi, progress bar, flip animation, dan reset deck.
 - **Notion Integration**:
   - Membuat dan meregistrasikan project page "StudiOS" di database Projects Notion.
+- **Penyusunan Dokumentasi Produk & Teknis**:
+  - Menyusun Product Requirement Document (`prd.md`) untuk mematangkan cakupan fitur MVP.
+  - Merancang arsitektur data, skema DDL Supabase, dan aturan keamanan RLS di `architecture.md`.
+  - Membuat rencana pengerjaan teknis (`task.md`) dengan tabel prioritas serta ketergantungan tugas (dependency task).
 
 **Hasil:**
 - Dashboard dan semua halaman konten viewer berjalan lancar tanpa error.
 - Tampilan tabel dan flashcard lulus uji visual browser subagent dan terlihat sangat premium.
+- Dokumen produk (`prd.md`), arsitektur (`architecture.md`), dan peta jalan tugas berurutan (`task.md`) berhasil dibuat sebagai acuan pengerjaan tahap selanjutnya.
