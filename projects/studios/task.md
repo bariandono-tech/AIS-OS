@@ -36,8 +36,8 @@ graph TD
 ### Phase 2: Integrasi Frontend ke Supabase
 | Task ID | Nama Tugas | Deskripsi Teknis | Prasyarat (Depends On) | Status |
 |---|---|---|---|---|
-| **T2.1** | Integrasi Client SDK Supabase | Menginstal `@supabase/supabase-js`, mengganti pemanggilan `mockData.js` di `App.jsx` dengan fungsi `select()` dinamis dari database Supabase. | **T1.1** | `[ ]` |
-| **T2.2** | Implementasi Login & Registrasi | Membuat halaman login/register minimalis menggunakan Supabase Auth (email/password atau Google Sign-In) untuk menetapkan identitas `user_id`. | **T2.1** | `[ ]` |
+| **T2.1** | Integrasi Client SDK Supabase | Menginstal `@supabase/supabase-js`, mengganti pemanggilan `mockData.js` di `App.jsx` dengan fungsi `select()` dinamis dari database Supabase. | **T1.1** | `[x]` |
+| **T2.2** | Implementasi Login & Registrasi | Membuat halaman login/register minimalis menggunakan Supabase Auth (email/password atau Google Sign-In) untuk menetapkan identitas `user_id`. | **T2.1** | `[x]` |
 
 ### Phase 3: Notion Sync Engine
 | Task ID | Nama Tugas | Deskripsi Teknis | Prasyarat (Depends On) | Status |

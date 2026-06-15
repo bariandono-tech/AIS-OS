@@ -625,9 +625,9 @@
     "semantic_hash": "99a0c1db08b7a22f93fbbd99e249d868"
   },
   "MEMORY.md": {
-    "mtime": 1781422506.2134488,
-    "ast_hash": "f8f7d2b0bd669ba33ea7a012c70d1b32",
-    "semantic_hash": "f8f7d2b0bd669ba33ea7a012c70d1b32"
+    "mtime": 1781456777.078005,
+    "ast_hash": "9039c1d3f612c5b8fb18a3533b02bf95",
+    "semantic_hash": ""
   },
   "README.md": {
     "mtime": 1781086181.6623306,
@@ -695,9 +695,9 @@
     "semantic_hash": "d01ffe92a85bca8e4894186f3cd49ddf"
   },
   "projects/jasa-ppt-akuntansi/work-log.md": {
-    "mtime": 1781427262.91386,
-    "ast_hash": "0c63fa05bb7956c2028230f2861b1662",
-    "semantic_hash": "0c63fa05bb7956c2028230f2861b1662"
+    "mtime": 1781456731.7703843,
+    "ast_hash": "53a669604078a304ea75df04a9e8e2cf",
+    "semantic_hash": ""
   },
   "projects/mastery-kit-landing-page/index.html": {
     "mtime": 1781425637.1448233,
@@ -875,8 +875,8 @@
     "semantic_hash": "e505b7dd13046818684520a3c0a59ce4"
   },
   "projects/mastery-kit-pajak-dasar/landing-page/app.js": {
-    "mtime": 1781446033.585803,
-    "ast_hash": "e1783c95e52434bfa8169504b7dc488e",
+    "mtime": 1781454335.1297443,
+    "ast_hash": "5b7cff7f90f75f4a7b5cc42db68b3ed0",
     "semantic_hash": ""
   },
   "projects/mastery-kit-pajak-dasar/Folder_1_Panduan_Belajar/latihan_soal_pembahasan.md": {
@@ -927,6 +927,201 @@
   "projects/mastery-kit-pajak-dasar/Folder_1_Panduan_Belajar/panduan_coretax_pmk01_2026.md": {
     "mtime": 1781454119.0405931,
     "ast_hash": "1eb812246ae657d9c5bfebb3a9b3626f",
+    "semantic_hash": ""
+  },
+  "projects/mastery-kit-pajak-dasar/buku-saku-interaktif/app.js": {
+    "mtime": 1781454573.5289237,
+    "ast_hash": "9e48e796c806ce17500178c12828f0da",
+    "semantic_hash": ""
+  },
+  "projects/project-management-excel/create_gantt_chart.py": {
+    "mtime": 1781457431.0219538,
+    "ast_hash": "2f647a3021291d46241f4fe341c91248",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/eslint.config.js": {
+    "mtime": 1781509486.2214463,
+    "ast_hash": "3aa4b57d7f08181d86bde52a4dcb7f22",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/package.json": {
+    "mtime": 1781517881.1703548,
+    "ast_hash": "67bd7bfedfd0f84f0faff8c966f2e58e",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/src/App.jsx": {
+    "mtime": 1781518290.498152,
+    "ast_hash": "7a94c7e9890397cfdbcde33905b47282",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/src/data/mockData.js": {
+    "mtime": 1781515581.5041056,
+    "ast_hash": "7827e08348b06b41e05a4b33d153ad1a",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/src/main.jsx": {
+    "mtime": 1781509746.2020452,
+    "ast_hash": "7ef44fb1a1110662e1c01829cf42528b",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/src/pages/ContentViewer.jsx": {
+    "mtime": 1781518008.4678793,
+    "ast_hash": "8b9f3e712762c7c6835d3f5866d45a1f",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/src/pages/Dashboard.jsx": {
+    "mtime": 1781509763.058941,
+    "ast_hash": "1d702f4c44fb47c68a3680eb7ee7a1d4",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/src/pages/StackPage.jsx": {
+    "mtime": 1781518303.0734024,
+    "ast_hash": "420930b67507c41e4f73797b04ba25d9",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/vite.config.js": {
+    "mtime": 1781509486.2508807,
+    "ast_hash": "88439104b3c207f17d33ef3160e3b080",
+    "semantic_hash": ""
+  },
+  "scripts/notion/search_custom.js": {
+    "mtime": 1781456707.508012,
+    "ast_hash": "4121ffad474783a4b73f4766bfc61c4e",
+    "semantic_hash": ""
+  },
+  "scripts/notion/sync_studios_worklog.js": {
+    "mtime": 1781515322.7102845,
+    "ast_hash": "a7185a5be27f97c63148a73877bb8c7c",
+    "semantic_hash": ""
+  },
+  "scripts/notion/sync_worklog_today.js": {
+    "mtime": 1781456740.5253437,
+    "ast_hash": "096b402362963eaa4bbc5331ddb4ee2d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/karpathy-method/SKILL.md": {
+    "mtime": 1781507196.737148,
+    "ast_hash": "10a9aa123cd91ade5868dded8086d94d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/karpathy-method/templates/00-ideation.md": {
+    "mtime": 1781507214.033464,
+    "ast_hash": "c5b8699a79bec0b91e1bdbc5a62bb332",
+    "semantic_hash": ""
+  },
+  ".agents/skills/karpathy-method/templates/01-architecture.md": {
+    "mtime": 1781507221.4160275,
+    "ast_hash": "e098ab47c3c3665a77f11d4d9e15cfc6",
+    "semantic_hash": ""
+  },
+  ".agents/skills/karpathy-method/templates/02-quality-gate.md": {
+    "mtime": 1781507230.0955446,
+    "ast_hash": "e79e853ae0c9cc71653c979290af0245",
+    "semantic_hash": ""
+  },
+  ".agents/skills/karpathy-method/templates/03-launch-plan.md": {
+    "mtime": 1781507235.5923126,
+    "ast_hash": "ca8a069b3921b0b05ee640cce240771a",
+    "semantic_hash": ""
+  },
+  ".agents/skills/karpathy-method/templates/04-retrospective.md": {
+    "mtime": 1781507237.609409,
+    "ast_hash": "1e8db347b99637a2aef8264de45d5c61",
+    "semantic_hash": ""
+  },
+  "projects/mastery-kit-pajak-dasar/buku-saku-interaktif/index.html": {
+    "mtime": 1781454538.5042074,
+    "ast_hash": "61a9faf3b830917d86963f449f18f35e",
+    "semantic_hash": ""
+  },
+  "projects/mastery-kit-pajak-dasar/implementation_plan.md": {
+    "mtime": 1781455052.607462,
+    "ast_hash": "3ce120c025c3c24ae4d2eb6de1d4ccff",
+    "semantic_hash": ""
+  },
+  "projects/mastery-kit-pajak-dasar/twitter_research_plan.md": {
+    "mtime": 1781457169.3667753,
+    "ast_hash": "dc8e5c3701db6b36a5a7f34f654d4f63",
+    "semantic_hash": ""
+  },
+  "projects/project-management-excel/README.md": {
+    "mtime": 1781457348.1784656,
+    "ast_hash": "4318d299e08c3461e2c981113460ff1b",
+    "semantic_hash": ""
+  },
+  "projects/studios/00-ideation.md": {
+    "mtime": 1781509340.987928,
+    "ast_hash": "e7c631671feac9242e9421a0891a4b92",
+    "semantic_hash": ""
+  },
+  "projects/studios/01-architecture.md": {
+    "mtime": 1781509398.667414,
+    "ast_hash": "db26b97ab1db3a9ea26226ad158ce3b8",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/README.md": {
+    "mtime": 1781509486.345856,
+    "ast_hash": "a28dc4cb878325f3e9e5649f3e1469ac",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/index.html": {
+    "mtime": 1781509525.3520877,
+    "ast_hash": "e015e6fe6e72a7c88917b322cc33aeba",
+    "semantic_hash": ""
+  },
+  "projects/studios/work-log.md": {
+    "mtime": 1781518875.2368982,
+    "ast_hash": "29c71b1232cb8996a3f594cf9d988766",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/public/favicon.svg": {
+    "mtime": 1781509486.4279032,
+    "ast_hash": "7e840862161341271697daa99a40d76b",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/public/icons.svg": {
+    "mtime": 1781509486.46517,
+    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
+    "semantic_hash": ""
+  },
+  "projects/studios/architecture.md": {
+    "mtime": 1781516742.1707406,
+    "ast_hash": "d752fa855f241682affc76a93179c7dd",
+    "semantic_hash": ""
+  },
+  "projects/studios/prd.md": {
+    "mtime": 1781516730.1489172,
+    "ast_hash": "f15b82f59582f2805ee3d7694174772d",
+    "semantic_hash": ""
+  },
+  "projects/studios/task.md": {
+    "mtime": 1781518866.897153,
+    "ast_hash": "5ecb59aa0c3a36eee184ca8c14512865",
+    "semantic_hash": ""
+  },
+  "projects/studios/supabase_schema.sql": {
+    "mtime": 1781517692.488739,
+    "ast_hash": "6e088fba622576977795e7db656adad5",
+    "semantic_hash": ""
+  },
+  "projects/studios/supabase_seed.sql": {
+    "mtime": 1781517712.5909595,
+    "ast_hash": "2519610f7d13dab7fb9669056ae27e86",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/src/lib/supabaseClient.js": {
+    "mtime": 1781517889.1971118,
+    "ast_hash": "56cef053033f08ab0559bb9747795505",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/src/pages/AuthPage.jsx": {
+    "mtime": 1781518274.1536276,
+    "ast_hash": "d49f2b01a9bb3cf1319d649541a6f5b6",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/src/services/dataService.js": {
+    "mtime": 1781518282.0942757,
+    "ast_hash": "036bfec059af2e1f6b7999ac07e92fec",
     "semantic_hash": ""
   }
 }

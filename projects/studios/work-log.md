@@ -28,6 +28,14 @@
 **Hasil:**
 - Dashboard dan semua halaman konten viewer berjalan lancar tanpa error.
 - Tampilan tabel dan flashcard lulus uji visual browser subagent dan terlihat sangat premium.
-- Dokumen produk (`prd.md`), arsitektur (`architecture.md`), dan peta jalan tugas berurutan (`task.md`) berhasil dibuat sebagai acuan pengerjaan tahap selanjutnya.
+- Dokumen produk (`prd.md`), arsitektur (`01-architecture.md`), dan peta jalan tugas berurutan (`task.md`) berhasil dibuat sebagai acuan pengerjaan tahap selanjutnya.
 - Berkas migrasi database (`supabase_schema.sql`) dan data benih (`supabase_seed.sql`) siap digunakan di Supabase SQL Editor.
+
+### Tahap 2: Integrasi Frontend ke Supabase & Sistem Otorisasi Akses
+**Dikerjakan:**
+- **Integrasi Supabase SDK & Dual-Mode Config**: Menginstal `@supabase/supabase-js` dan mengonfigurasi `supabaseClient.js` dengan fallback otomatis (apabila API credentials tidak ditemukan di `.env`, aplikasi tetap berjalan mulus menggunakan data mock lokal).
+- **Asynchronous Data Loading**: Merefaktor `App.jsx`, `StackPage.jsx`, dan `ContentViewer.jsx` untuk memuat data secara asinkron dari `dataService.js` (memuat Stacks, Content Items, Flashcards, dan References secara dinamis).
+- **Halaman Login & Registrasi (Auth)**: Membuat `AuthPage.jsx` dengan gaya dark glassmorphism premium untuk autentikasi user (signIn/signUp) menggunakan Supabase Auth atau Mock Auth untuk mode demo.
+- **Sistem Pembatasan Akses Premium (Lock Screen)**: Mengintegrasikan pengecekan transaksi di tabel `purchases` untuk membatasi konten premium secara real-time. Menampilkan halaman lock screen premium dengan tombol "Beli & Buka Akses Sekarang" (Simulator) untuk memudahkan proses pengujian bagi user.
+- **Browser Automation Verification**: Menguji fungsionalitas visual, login/logout, dan simulator transaksi secara end-to-end menggunakan subagen browser, menjamin kualitas premium di semua halaman.
 

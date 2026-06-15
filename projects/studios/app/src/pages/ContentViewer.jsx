@@ -1,9 +1,6 @@
-import { useState } from "react";
-import {
-  contentTypeConfig,
-  getFlashcardsByContentId,
-  getReferencesByContentId,
-} from "../data/mockData";
+import { useState, useEffect } from "react";
+import { contentTypeConfig } from "../data/mockData";
+import { getFlashcards, getReferences } from "../services/dataService";
 
 export default function ContentViewer({ content, stack, onBack }) {
   return (
@@ -194,9 +191,28 @@ function NotesRenderer({ body }) {
 
 /* --- Flashcard Renderer --- */
 function FlashcardRenderer({ contentId }) {
-  const cards = getFlashcardsByContentId(contentId);
+  const [cards, setCards] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    getFlashcards(contentId).then((data) => {
+      setCards(data || []);
+      setCurrentIndex(0);
+      setIsFlipped(false);
+      setLoading(false);
+    });
+  }, [contentId]);
+
+  if (loading) {
+    return (
+      <div style={{ textAlign: "center", padding: "40px" }}>
+        <p style={{ color: "var(--text-secondary)" }}>Memuat flashcard...</p>
+      </div>
+    );
+  }
 
   if (!cards.length) {
     return (
@@ -409,7 +425,24 @@ function MindMapNode({ node, allNodes, depth }) {
 
 /* --- Reference Renderer --- */
 function ReferenceRenderer({ contentId }) {
-  const refs = getReferencesByContentId(contentId);
+  const [refs, setRefs] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    getReferences(contentId).then((data) => {
+      setRefs(data || []);
+      setLoading(false);
+    });
+  }, [contentId]);
+
+  if (loading) {
+    return (
+      <div style={{ textAlign: "center", padding: "40px" }}>
+        <p style={{ color: "var(--text-secondary)" }}>Memuat referensi...</p>
+      </div>
+    );
+  }
 
   if (!refs.length) {
     return (

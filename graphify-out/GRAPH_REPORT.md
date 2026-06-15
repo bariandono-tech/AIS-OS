@@ -1,16 +1,16 @@
-# Graph Report - AIS-OS  (2026-06-14)
+# Graph Report - AIS-OS  (2026-06-15)
 
 ## Corpus Check
-- 174 files · ~228,792 words
+- 209 files · ~260,305 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2640 nodes · 2578 edges · 280 communities (193 shown, 87 thin omitted)
+- 2934 nodes · 2898 edges · 303 communities (215 shown, 88 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7925d37b`
+- Built from commit: `134e8f85`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -288,6 +288,26 @@
 - [[_COMMUNITY_Community 271|Community 271]]
 - [[_COMMUNITY_Community 278|Community 278]]
 - [[_COMMUNITY_Community 279|Community 279]]
+- [[_COMMUNITY_Community 280|Community 280]]
+- [[_COMMUNITY_Community 281|Community 281]]
+- [[_COMMUNITY_Community 282|Community 282]]
+- [[_COMMUNITY_Community 283|Community 283]]
+- [[_COMMUNITY_Community 284|Community 284]]
+- [[_COMMUNITY_Community 285|Community 285]]
+- [[_COMMUNITY_Community 286|Community 286]]
+- [[_COMMUNITY_Community 287|Community 287]]
+- [[_COMMUNITY_Community 288|Community 288]]
+- [[_COMMUNITY_Community 289|Community 289]]
+- [[_COMMUNITY_Community 290|Community 290]]
+- [[_COMMUNITY_Community 291|Community 291]]
+- [[_COMMUNITY_Community 292|Community 292]]
+- [[_COMMUNITY_Community 293|Community 293]]
+- [[_COMMUNITY_Community 294|Community 294]]
+- [[_COMMUNITY_Community 295|Community 295]]
+- [[_COMMUNITY_Community 299|Community 299]]
+- [[_COMMUNITY_Community 300|Community 300]]
+- [[_COMMUNITY_Community 301|Community 301]]
+- [[_COMMUNITY_Community 302|Community 302]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
@@ -295,28 +315,28 @@
 3. `🎞️ DETAIL SLIDE PER SLIDE (Slide 1 - 15)` - 16 edges
 4. `Ultimate Brain — Complete Second Brain System in Notion` - 16 edges
 5. `A6. Target Architecture — Canonical Databases & Full Schemas` - 14 edges
-6. `📽️ Struktur & Konten Slide` - 13 edges
-7. `PART B — NOTION BUILD GUIDE (EXECUTION)` - 13 edges
-8. `What You Must Do When Invoked` - 11 edges
-9. `/graphify` - 11 edges
-10. `What You Must Do When Invoked` - 11 edges
+6. `Architecture: StudiOS — Database-Driven Knowledge Viewer` - 14 edges
+7. `📽️ Struktur & Konten Slide` - 13 edges
+8. `PART B — NOTION BUILD GUIDE (EXECUTION)` - 13 edges
+9. `What You Must Do When Invoked` - 11 edges
+10. `/graphify` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `CLAUDE` --defines--> `graphify`  [EXTRACTED]
-   →   _Bridges community 253 → community 16_
-- `SKILL` --defines--> `Automate second:`  [EXTRACTED]
-   →   _Bridges community 0 → community 8_
-- `SKILL` --contains_section--> `BAB II — Tinjauan Pustaka`  [EXTRACTED]
-   →   _Bridges community 0 → community 1_
-- `SKILL` --defines--> `Connections`  [EXTRACTED]
-   →   _Bridges community 0 → community 191_
-- `SKILL` --defines--> `Date:`  [EXTRACTED]
-   →   _Bridges community 0 → community 13_
+- `App()` --calls--> `getContentByStack()`  [EXTRACTED]
+  projects/studios/app/src/App.jsx → projects/studios/app/src/data/mockData.js
+- `App()` --calls--> `getPurchases()`  [EXTRACTED]
+  projects/studios/app/src/App.jsx → projects/studios/app/src/services/dataService.js
+- `App()` --calls--> `getStacks()`  [EXTRACTED]
+  projects/studios/app/src/App.jsx → projects/studios/app/src/services/dataService.js
+- `App()` --calls--> `purchaseStack()`  [EXTRACTED]
+  projects/studios/app/src/App.jsx → projects/studios/app/src/services/dataService.js
+- `FlashcardRenderer()` --calls--> `getFlashcardsByContentId()`  [EXTRACTED]
+  projects/studios/app/src/pages/ContentViewer.jsx → projects/studios/app/src/data/mockData.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (280 total, 87 thin omitted)
+## Communities (303 total, 88 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -343,8 +363,8 @@ Cohesion: 0.08
 Nodes (26): 1. Kenapa PMK ini Sangat Heboh? (The Omnibus Effect), 1. Kenapa PP ini Diterbitkan? (Latar Belakang), 29 peraturan berbeda, 2. Poin-Poin Krusial yang Wajib Dikuasai:, 2. Poin-Poin Perubahan Krusial:, Akselerasi Pengadaan Barang/Jasa (Pra-DIPA / Sebelum Tahun Anggaran):, Aturan Sisa Pekerjaan Akhir Tahun (Pasal 163):, Bedah PP 50/2018 & PMK 62/2023 (Versi Cepat Paham Mahasiswa & Praktisi) (+18 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.10
-Nodes (25): 1. Latar Belakang, 2. Tujuan, 3.1 Database yang Ada, 3.2 Gap yang Ada, 3. Kondisi Saat Ini, 4.1 Database Canonical (yang dipakai), 4.2 Relasi yang Perlu Ditambahkan, 4. Arsitektur Target (+17 more)
+Cohesion: 0.09
+Nodes (26): 1. Latar Belakang, 2. Tujuan, 3.1 Database yang Ada, 3.2 Gap yang Ada, 3. Kondisi Saat Ini, 4.1 Database Canonical (yang dipakai), 4.2 Relasi yang Perlu Ditambahkan, 4. Arsitektur Target (+18 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.08
@@ -359,12 +379,12 @@ Cohesion: 0.08
 Nodes (24): Dep:, Fase 1.0 — Pondasi (WAJIB duluan, semua lain bergantung di sini), Fase 1.1 — Skema database (PARALEL setelah T1.2), Fase 1.2 — Relasi antar-database (SEQ — butuh semua skema siap), Fase 1.3 — Formula (PARALEL — formula independen), Fase 1.4 — Views & Dashboard (SEQ — butuh data & relasi final), Fase 1.5 — Konten jual (PARALEL — tidak sentuh database), Fase 1.6 — Rilis (SEQ — gerbang akhir) (+16 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.07
-Nodes (28): @notionhq/client, check_note_content, checkNoteContent, check_para_views, checkViews, clean_callout_children, cleanCalloutChildren, compare_para_schemas (+20 more)
+Cohesion: 0.08
+Nodes (26): @notionhq/client, check_real_connections, inspectViewBlock, clean_remaining_tf, runCleanup, compare_para_schemas, compare, create_homepage (+18 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.07
-Nodes (27): check_real_connections, inspectViewBlock, create_notion_project, createProject, dotenv, fix_recurring_nav, fixNav, inspect_old_property (+19 more)
+Cohesion: 0.08
+Nodes (26): add_created_property, addCreated, check_page_details, checkPages, dotenv, dump_para_blocks, dumpBlocks, fix_recurring_nav (+18 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.09
@@ -380,7 +400,7 @@ Nodes (20): 1. Peta Halaman (Page Tree), 2. Database Inti & Perannya, 3. Fitur p
 
 ### Community 15 - "Community 15"
 Cohesion: 0.11
-Nodes (19): 1. Peta Struktur Lengkap, 2. Database Inventory — Status Setelah Audit, 3. Schema Notes [PT] Setelah Enrichment, 4. Schema Projects [UT] Setelah Enrichment, 5. Relasi Final Antar Database, 6. Gap Analysis — Status Resolusi, Areas/Resources [PT], Database yang Di-retire (+11 more)
+Nodes (18): 1. Peta Struktur Lengkap, 2. Database Inventory — Status Setelah Audit, 3. Schema Notes [PT] Setelah Enrichment, 4. Schema Projects [UT] Setelah Enrichment, 5. Relasi Final Antar Database, 6. Gap Analysis — Status Resolusi, Areas/Resources [PT], Database yang Di-retire (+10 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.14
@@ -569,6 +589,10 @@ Nodes (3): scan_pro_pages, run, scanPage
 Cohesion: 0.67
 Nodes (3): trace_page_paths, getRootAndPath, tracePaths
 
+### Community 65 - "Community 65"
+Cohesion: 0.12
+Nodes (16): 1. Dashboard (Library of Stacks), 1. Executive Summary & Vision, 1. The High-Achieving Student (Mahasiswa Berprestasi), 2. Stack Page & Content Filtering, 2. Target Audience & User Personas, 2. The Researcher / Postgrad (Peneliti & Mahasiswa S2), 3. Interactive Content Renderers (5 Tipe Konten), 3. Product Functional Requirements (+8 more)
+
 ### Community 66 - "Community 66"
 Cohesion: 0.04
 Nodes (44): 1.1 Pengertian Skripsi, 1.2 Tujuan dan Manfaat Skripsi, 1.3 Karakteristik Skripsi, 1.4 Proposal, 2.1 Kedudukan dan Bobot SKS, 2.2 Persyaratan Akademik, 2.3 Persyaratan Sidang Skripsi, 3.1 Pelaksanaan Seminar Proposal (+36 more)
@@ -597,6 +621,10 @@ Nodes (25): For /graphify add and --watch, For /graphify query, For the commit h
 Cohesion: 0.08
 Nodes (25): 1. Find the Constraint, 1. The Default Shift, 1. The Lego Principle, 2. EAD: Eliminate, Automate, Delegate, 2. The Assembly Line, 2. The Function Breakdown, 3. Map the Process, 3. The Curiosity Rule (+17 more)
 
+### Community 73 - "Community 73"
+Cohesion: 0.17
+Nodes (11): 1. System Topology, 1. Table: `stacks`, 2. Table: `content_items`, 2. Technology Stack, 3. Database Schema (PostgreSQL DDL), 3. Table: `flashcards`, 4. Security & Access Control (Supabase RLS), 4. Table: `references` (+3 more)
+
 ### Community 74 - "Community 74"
 Cohesion: 0.08
 Nodes (23): For /graphify add and --watch, For /graphify query, For the commit hook and native CLAUDE.md integration, For --update and --cluster-only, /graphify, Honesty Rules, Interpreter guard for subcommands, Part A - Structural extraction for code files (+15 more)
@@ -605,9 +633,13 @@ Nodes (23): For /graphify add and --watch, For /graphify query, For the commit h
 Cohesion: 0.08
 Nodes (23): 1. Pahami Konteks & Input Pengguna, 2. Pilih Mode Output, 3. Lakukan Analisis, 4. Hasilkan Output, A. Analisis Realisasi Anggaran, B. Evaluasi Kinerja (NKA), C. Analisis Rasio Keuangan, CONTOH PENGGUNAAN (+15 more)
 
+### Community 78 - "Community 78"
+Cohesion: 0.20
+Nodes (9): 🗺️ Alur Ketergantungan Tugas (Dependency Map), 📋 Daftar Tugas & Kualifikasi Berurutan, Phase 1: Database & Security (Prasarana), Phase 2: Integrasi Frontend ke Supabase, Phase 3: Notion Sync Engine, Phase 4: Sistem Monetisasi & Akses Premium, Phase 5: Deployment & Otomatisasi Produksi, Phase 6: Validasi Akhir (End-to-End) (+1 more)
+
 ### Community 80 - "Community 80"
-Cohesion: 0.09
-Nodes (16): decode_manual, decode_step_241, fs, fs, fs, fs, fs, fs (+8 more)
+Cohesion: 0.07
+Nodes (19): decode_manual, decode_step_241, fs, fs, fs, fs, fs, fs (+11 more)
 
 ### Community 81 - "Community 81"
 Cohesion: 0.10
@@ -811,7 +843,7 @@ Nodes (6): Bedah PP 50/2018 & PMK 62/2023 (Koleksi Diagram untuk Skripsi & Tugas
 
 ### Community 148 - "Community 148"
 Cohesion: 0.29
-Nodes (6): 1. Gotchas & Solusi Teknis (Pelajaran Penting), 2. Struktur Teoretis Skripsi, 3. Progress State (Terakhir Diperbarui: 2026-06-14), AIOS Memory — Persistent Context & Lessons Learned, Integrasi Notion API (Mythos Brain), Pembuatan Dokumen Word (`build_makalah.js`)
+Nodes (6): 1. Gotchas & Solusi Teknis (Pelajaran Penting), 2. Struktur Teoretis Skripsi, 3. Progress State (Terakhir Diperbarui: 2026-06-15), AIOS Memory — Persistent Context & Lessons Learned, Integrasi Notion API (Mythos Brain), Pembuatan Dokumen Word (`build_makalah.js`)
 
 ### Community 149 - "Community 149"
 Cohesion: 0.48
@@ -854,8 +886,8 @@ Cohesion: 0.33
 Nodes (6): audit_para, checkTJText, getBlockChildren, getRichText, runAudit, scanBlock
 
 ### Community 159 - "Community 159"
-Cohesion: 0.33
-Nodes (5): 2026-06-14, 2026-06-14 (Sesi 2), Inisialisasi Proyek Pemasaran Jasa PPT & Layouting Skripsi, Pembuatan Landing Page Mastery Kit, Work Log — Jasa PPT & Layouting Skripsi Akuntansi
+Cohesion: 0.25
+Nodes (7): 2026-06-14, 2026-06-14 (Sesi 2), 2026-06-15, Inisialisasi Proyek Pemasaran Jasa PPT & Layouting Skripsi, Migrasi Produk Digital Pajak Dasar & Pembersihan Graphify, Pembuatan Landing Page Mastery Kit, Work Log — Jasa PPT & Layouting Skripsi Akuntansi
 
 ### Community 160 - "Community 160"
 Cohesion: 0.47
@@ -1053,32 +1085,96 @@ Nodes (4): 1. Halaman Utama (Homepage), Smart Dashboards, Tampilan Khusus, Tampi
 Cohesion: 0.50
 Nodes (4): 8. Tujuan dan Perencanaan Masa Depan (Goals & Future Planning), Database Goals (Tujuan), Halaman Plan, Priorities Area (Area Prioritas)
 
-### Community 242 - "Community 242"
-Cohesion: 0.50
-Nodes (4): path, sync_to_notion, parseMarkdownToRichText, sync
+### Community 266 - "Community 266"
+Cohesion: 0.10
+Nodes (24): contentItems, contentTypeConfig, flashcards, getContentByStack(), getFlashcardsByContentId(), getReferencesByContentId(), references, stacks (+16 more)
 
-### Community 249 - "Community 249"
-Cohesion: 0.67
-Nodes (3): dependencies, dotenv, @notionhq/client
+### Community 267 - "Community 267"
+Cohesion: 0.07
+Nodes (27): 1. Dashboard (`/`), 2. Stack Page (`/stack/:slug`), 3. Content Viewer (`/stack/:slug/:content-id`), Architecture: StudiOS — Database-Driven Knowledge Viewer, Arsitektur Teknis, Automated, Content Type Rendering, Database Schema (Supabase PostgreSQL) (+19 more)
+
+### Community 268 - "Community 268"
+Cohesion: 0.08
+Nodes (24): 6. Prosedur Otomasi Git (Commit & Push), Detail 10 Tema Alternatif & Draf Thread Siap Saji, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter: (+16 more)
 
 ### Community 278 - "Community 278"
 Cohesion: 0.20
 Nodes (9): 🌐 1. APA ITU CORETAX SYSTEM?, 1. Metode Nilai Pasar (Market Value), 🏛️ 2. BEDAH PMK NOMOR 1 TAHUN 2026: RESTRUKTURISASI BUMN, 2. Metode Nilai Buku (Book Value) - Insentif Pajak, 📈 3. INSENTIF PENGGUNAAN NILAI BUKU (BOOK VALUE), 🧠 4. CHECKLIST MATERI KULIAH RESTRUKTURISASI PERUSAHAAN (UTS/UAS), A. Latar Belakang Penerbitan Regulasi, B. Definsi Baru BUMN di PMK 1/2026 (Pasal 1 angka 135) (+1 more)
 
+### Community 280 - "Community 280"
+Cohesion: 0.08
+Nodes (23): dependencies, react, react-dom, @supabase/supabase-js, devDependencies, eslint, @eslint/js, eslint-plugin-react-hooks (+15 more)
+
+### Community 281 - "Community 281"
+Cohesion: 0.11
+Nodes (18): 1. 🧬 "The Domain-Specific Knowledge OS", 2. 📱 "The Pocket Professor", 3. 🔗 "The Knowledge Bridge", 4. 🎯 "StudiOS — Your Study Operating System", 5. 🏗️ "Knowledge Forge", 6. 💡 "Cortex", 7. 📚 "NicheStack", 8. 🧪 "LabNote" (+10 more)
+
+### Community 282 - "Community 282"
+Cohesion: 0.18
+Nodes (10): closeSearchResults(), getToolTitle(), handleWhtFilter(), initQuizEngine(), initWithholdingFinder(), navigateToChapter(), nextQuizQuestion(), renderQuizQuestion() (+2 more)
+
+### Community 283 - "Community 283"
+Cohesion: 0.13
+Nodes (14): Core Philosophy, Integration Points, Karpathy Method — Vibe Product Builder, Phase 1: IDEATE (Vibe Brainstorm), Phase 2: ARCHITECT (Define the Blueprint), Phase 3: BUILD (Full AI Trust Execution), Phase 4: REFINE (Quality Gate), Phase 5: LAUNCH (Ship It) (+6 more)
+
+### Community 284 - "Community 284"
+Cohesion: 0.20
+Nodes (9): Knowledge Base Updates, Metrics, Next Version Ideas, Retrospective: {{PRODUCT_NAME}}, Reusable Patterns, Surprises, Timeline, What Didn't Work (+1 more)
+
+### Community 285 - "Community 285"
+Cohesion: 0.22
+Nodes (8): Architecture: {{PRODUCT_NAME}}, Deliverables, In v1, NOT in v1 (parked), Scope, Stack / Tools, Target Audience, Value Proposition
+
+### Community 286 - "Community 286"
+Cohesion: 0.22
+Nodes (8): Accuracy, Brand & Quality, Completeness, Functionality, Gate Decision, Polish, Pre-Publish Checklist, Quality Gate: {{PRODUCT_NAME}}
+
+### Community 287 - "Community 287"
+Cohesion: 0.22
+Nodes (8): Distribution Channels, Launch Checklist, Launch Plan: {{PRODUCT_NAME}}, Marketing Content, Other Channels, Post-Launch (First 48h), Pricing, Twitter Thread (Launch Day)
+
+### Community 288 - "Community 288"
+Cohesion: 0.20
+Nodes (10): { Client }, fs, notion, parseMarkdownToRichText(), path, sync(), path, sync_to_notion (+2 more)
+
+### Community 289 - "Community 289"
+Cohesion: 0.33
+Nodes (6): { Client }, fs, notion, parseMarkdownToRichText(), path, sync()
+
+### Community 290 - "Community 290"
+Cohesion: 0.29
+Nodes (6): Angles Explored, Brain Dump, Chosen Direction, Ideation: {{PRODUCT_NAME}}, Market Scan, Parked Ideas
+
+### Community 291 - "Community 291"
+Cohesion: 0.33
+Nodes (5): Interactive Gantt Chart Template (Mocha Warm Theme), 📊 Otomatisasi & Formula yang Digunakan, 💻 Panduan Kompatibilitas, 📁 Struktur Lembar Kerja (Worksheets), 🎨 Warna Estetika (Mocha Warm Palette)
+
+### Community 292 - "Community 292"
+Cohesion: 0.40
+Nodes (4): 🛠️ Hasil Verifikasi, 🎨 Konsep & Desain Estetika - [SUKSES], Rencana Implementasi: Buku Saku Pajak Interaktif (HTML) - [SELESAI], 📂 Struktur File Terbuat
+
+### Community 293 - "Community 293"
+Cohesion: 0.50
+Nodes (3): Expanding the ESLint configuration, React Compiler, React + Vite
+
+### Community 295 - "Community 295"
+Cohesion: 0.40
+Nodes (4): 2026-06-15, Inisialisasi Proyek StudiOS & Refinement UI, Tahap 2: Integrasi Frontend ke Supabase & Sistem Otorisasi Akses, Work Log — StudiOS
+
 ## Knowledge Gaps
-- **918 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `{ Client }`, `notion`, `{ Client }`, `notion` (+913 more)
+- **1080 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `version`, `type` (+1075 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **87 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **88 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `PART A — PRD: ULTIMATE BRAIN PRO v2.0` connect `Community 117` to `Community 70`, `Community 134`, `Community 233`, `Community 234`, `Community 141`, `Community 109`, `Community 86`, `Community 188`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `A8. Module Specifications` connect `Community 86` to `Community 117`?**
+- **Why does `Ultimate Brain — Complete Second Brain System in Notion` connect `Community 112` to `Community 121`, `Community 135`, `Community 167`, `Community 235`, `Community 236`, `Community 237`, `Community 153`, `Community 154`, `Community 189`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `{ Client }`, `notion` to the rest of the system?**
-  _918 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Why does `dependencies` connect `Community 11` to `Community 150`?**
+  _High betweenness centrality (0.000) - this node is a cross-community bridge._
+- **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private` to the rest of the system?**
+  _1080 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
