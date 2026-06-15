@@ -252,7 +252,7 @@ INSERT INTO public.flashcards (id, content_item_id, front, back, tags) VALUES
 ON CONFLICT (id) DO NOTHING;
 
 -- 4. INSERT REFERENCES
-INSERT INTO public.references (id, content_item_id, url, ref_type, title, description) VALUES
+INSERT INTO public."references" (id, content_item_id, url, ref_type, title, description) VALUES
 ('r1r1r1r1-1111-1111-1111-111111111111', 'c4c4c4c4-1111-1111-1111-111111111111', 'https://pajak.go.id', 'article', 'Portal Resmi DJP', 'Informasi regulasi dan layanan online perpajakan.'),
 ('r6r6r6r6-1111-1111-1111-111111111111', 'c11c11c1-1111-1111-1111-111111111111', 'https://dsnmui.or.id', 'article', 'DSN-MUI Official Website', 'Dewan Syariah Nasional Majelis Ulama Indonesia.'),
 ('r8r8r8r8-1111-1111-1111-111111111111', 'c19c19c1-1111-1111-1111-111111111111', 'https://scholar.google.co.id', 'article', 'Google Scholar', 'Mesin pencari literatur ilmiah akademis.')

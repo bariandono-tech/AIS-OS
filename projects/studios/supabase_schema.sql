@@ -4,7 +4,7 @@
 
 -- 1. CLEANUP (Optional, for fresh start)
 -- DROP TABLE IF EXISTS public.purchases CASCADE;
--- DROP TABLE IF EXISTS public.references CASCADE;
+-- DROP TABLE IF EXISTS public."references" CASCADE;
 -- DROP TABLE IF EXISTS public.flashcards CASCADE;
 -- DROP TABLE IF EXISTS public.content_items CASCADE;
 -- DROP TABLE IF EXISTS public.stacks CASCADE;
@@ -64,7 +64,7 @@ CREATE TABLE public.flashcards (
 );
 
 -- References Table
-CREATE TABLE public.references (
+CREATE TABLE public."references" (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     content_item_id UUID NOT NULL REFERENCES public.content_items(id) ON DELETE CASCADE,
     url TEXT NOT NULL,
@@ -88,7 +88,7 @@ CREATE TABLE public.purchases (
 ALTER TABLE public.stacks ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.content_items ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.flashcards ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.references ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public."references" ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.purchases ENABLE ROW LEVEL SECURITY;
 
 -- Policy for Stacks (Siapapun boleh membaca stack yang dipublikasikan)
@@ -130,12 +130,12 @@ USING (
 
 -- Policy for References (Mengikuti aturan keterbacaan content_item induknya)
 CREATE POLICY "Allow read references based on parent content item accessibility" 
-ON public.references
+ON public."references"
 FOR SELECT 
 USING (
     EXISTS (
         SELECT 1 FROM public.content_items c
-        WHERE c.id = references.content_item_id
+        WHERE c.id = "references".content_item_id
     )
 );
 
