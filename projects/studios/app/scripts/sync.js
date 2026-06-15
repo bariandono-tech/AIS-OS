@@ -92,7 +92,13 @@ async function syncEngine() {
     while (hasMoreStacks) {
       const response = await notion.databases.query({
         database_id: process.env.NOTION_STACKS_DB_ID,
-        start_cursor: stackCursor
+        start_cursor: stackCursor,
+        filter: {
+          property: 'StudiOS',
+          checkbox: {
+            equals: true
+          }
+        }
       });
       stackPages.push(...response.results);
       hasMoreStacks = response.has_more;
@@ -110,7 +116,7 @@ async function syncEngine() {
       const description = getRichTextProperty(page, 'Description');
       const icon = getPageIcon(page);
       const color = getRichTextProperty(page, 'Color') || '#6c5ce7';
-      const is_published = getCheckboxProperty(page, 'Is Published');
+      const is_published = getCheckboxProperty(page, 'StudiOS');
 
       stackMap[id] = { color, slug, title };
 
@@ -143,7 +149,13 @@ async function syncEngine() {
     while (hasMoreContent) {
       const response = await notion.databases.query({
         database_id: process.env.NOTION_CONTENT_DB_ID,
-        start_cursor: contentCursor
+        start_cursor: contentCursor,
+        filter: {
+          property: 'StudiOS',
+          checkbox: {
+            equals: true
+          }
+        }
       });
       contentPages.push(...response.results);
       hasMoreContent = response.has_more;
@@ -156,10 +168,10 @@ async function syncEngine() {
       const id = page.id;
       const title = getTitleProperty(page, 'Name') || getTitleProperty(page, 'Title') || 'Materi Belajar';
       const order_index = getNumberProperty(page, 'Order Index');
-      const is_published = getCheckboxProperty(page, 'Is Published');
+      const is_published = getCheckboxProperty(page, 'StudiOS');
       const type = getSelectProperty(page, 'Type');
       
-      const stackRelations = getRelationProperty(page, 'Stack');
+      const stackRelations = getRelationProperty(page, 'Area/Resource');
       if (!stackRelations.length) {
         console.warn(`⚠️ Skipped: Content item "${title}" has no Stack relation.`);
         continue;
