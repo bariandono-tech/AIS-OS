@@ -443,50 +443,80 @@
       "norm_label": "preview"
     },
     {
+      "label": "sync",
+      "file_type": "code",
+      "source_file": "projects/studios/app/package.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "app_package_scripts_sync",
+      "community": 280,
+      "norm_label": "sync"
+    },
+    {
       "label": "dependencies",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L12",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "app_package_dependencies",
-      "community": 280,
+      "community": 79,
       "norm_label": "dependencies"
+    },
+    {
+      "label": "@notionhq/client",
+      "file_type": "code",
+      "source_file": "projects/studios/app/package.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "app_package_dependencies_notionhq_client",
+      "community": 79,
+      "norm_label": "@notionhq/client"
     },
     {
       "label": "@supabase/supabase-js",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L13",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "app_package_dependencies_supabase_supabase_js",
-      "community": 280,
+      "community": 79,
       "norm_label": "@supabase/supabase-js"
+    },
+    {
+      "label": "dotenv",
+      "file_type": "code",
+      "source_file": "projects/studios/app/package.json",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "app_package_dependencies_dotenv",
+      "community": 79,
+      "norm_label": "dotenv"
     },
     {
       "label": "react",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L14",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "app_package_dependencies_react",
-      "community": 280,
+      "community": 79,
       "norm_label": "react"
     },
     {
       "label": "react-dom",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L15",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "app_package_dependencies_react_dom",
-      "community": 280,
+      "community": 79,
       "norm_label": "react-dom"
     },
     {
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L17",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "app_package_devdependencies",
       "community": 280,
@@ -496,7 +526,7 @@
       "label": "@eslint/js",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L18",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "app_package_devdependencies_eslint_js",
       "community": 280,
@@ -506,7 +536,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L19",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "app_package_devdependencies_types_react",
       "community": 280,
@@ -516,7 +546,7 @@
       "label": "@types/react-dom",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L20",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "app_package_devdependencies_types_react_dom",
       "community": 280,
@@ -526,7 +556,7 @@
       "label": "@vitejs/plugin-react",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L21",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "app_package_devdependencies_vitejs_plugin_react",
       "community": 280,
@@ -536,7 +566,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L22",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "app_package_devdependencies_eslint",
       "community": 280,
@@ -546,7 +576,7 @@
       "label": "eslint-plugin-react-hooks",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L23",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "app_package_devdependencies_eslint_plugin_react_hooks",
       "community": 280,
@@ -556,7 +586,7 @@
       "label": "eslint-plugin-react-refresh",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L24",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "app_package_devdependencies_eslint_plugin_react_refresh",
       "community": 280,
@@ -566,7 +596,7 @@
       "label": "globals",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L25",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "app_package_devdependencies_globals",
       "community": 280,
@@ -576,11 +606,241 @@
       "label": "vite",
       "file_type": "code",
       "source_file": "projects/studios/app/package.json",
-      "source_location": "L26",
+      "source_location": "L29",
       "_origin": "ast",
       "id": "app_package_devdependencies_vite",
       "community": 280,
       "norm_label": "vite"
+    },
+    {
+      "label": "notionParser.js",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_notionparser",
+      "community": 64,
+      "norm_label": "notionparser.js"
+    },
+    {
+      "label": "getRichText()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "scripts_notionparser_getrichtext",
+      "community": 64,
+      "norm_label": "getrichtext()"
+    },
+    {
+      "label": "blocksToMarkdown()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "scripts_notionparser_blockstomarkdown",
+      "community": 64,
+      "norm_label": "blockstomarkdown()"
+    },
+    {
+      "label": "fetchAllChildBlocks()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "scripts_notionparser_fetchallchildblocks",
+      "community": 64,
+      "norm_label": "fetchallchildblocks()"
+    },
+    {
+      "label": "blockToMarkdown()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "scripts_notionparser_blocktomarkdown",
+      "community": 64,
+      "norm_label": "blocktomarkdown()"
+    },
+    {
+      "label": "parseTableBlock()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "scripts_notionparser_parsetableblock",
+      "community": 64,
+      "norm_label": "parsetableblock()"
+    },
+    {
+      "label": "blocksToResume()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L140",
+      "_origin": "ast",
+      "id": "scripts_notionparser_blockstoresume",
+      "community": 64,
+      "norm_label": "blockstoresume()"
+    },
+    {
+      "label": "blocksToBrainstorm()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L175",
+      "_origin": "ast",
+      "id": "scripts_notionparser_blockstobrainstorm",
+      "community": 64,
+      "norm_label": "blockstobrainstorm()"
+    },
+    {
+      "label": "blocksToFlashcards()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L208",
+      "_origin": "ast",
+      "id": "scripts_notionparser_blockstoflashcards",
+      "community": 64,
+      "norm_label": "blockstoflashcards()"
+    },
+    {
+      "label": "blocksToReferences()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L253",
+      "_origin": "ast",
+      "id": "scripts_notionparser_blockstoreferences",
+      "community": 64,
+      "norm_label": "blockstoreferences()"
+    },
+    {
+      "label": "sync.js",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_sync",
+      "community": 64,
+      "norm_label": "sync.js"
+    },
+    {
+      "label": "requiredEnv",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "scripts_sync_requiredenv",
+      "community": 64,
+      "norm_label": "requiredenv"
+    },
+    {
+      "label": "missingEnv",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "scripts_sync_missingenv",
+      "community": 64,
+      "norm_label": "missingenv"
+    },
+    {
+      "label": "notion",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "scripts_sync_notion",
+      "community": 64,
+      "norm_label": "notion"
+    },
+    {
+      "label": "supabase",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "scripts_sync_supabase",
+      "community": 64,
+      "norm_label": "supabase"
+    },
+    {
+      "label": "getTitleProperty()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "scripts_sync_gettitleproperty",
+      "community": 64,
+      "norm_label": "gettitleproperty()"
+    },
+    {
+      "label": "getRichTextProperty()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "scripts_sync_getrichtextproperty",
+      "community": 64,
+      "norm_label": "getrichtextproperty()"
+    },
+    {
+      "label": "getCheckboxProperty()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "scripts_sync_getcheckboxproperty",
+      "community": 64,
+      "norm_label": "getcheckboxproperty()"
+    },
+    {
+      "label": "getNumberProperty()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "scripts_sync_getnumberproperty",
+      "community": 64,
+      "norm_label": "getnumberproperty()"
+    },
+    {
+      "label": "getSelectProperty()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "scripts_sync_getselectproperty",
+      "community": 64,
+      "norm_label": "getselectproperty()"
+    },
+    {
+      "label": "getRelationProperty()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "scripts_sync_getrelationproperty",
+      "community": 64,
+      "norm_label": "getrelationproperty()"
+    },
+    {
+      "label": "getPageIcon()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "scripts_sync_getpageicon",
+      "community": 64,
+      "norm_label": "getpageicon()"
+    },
+    {
+      "label": "syncEngine()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "scripts_sync_syncengine",
+      "community": 64,
+      "norm_label": "syncengine()"
     },
     {
       "label": "App.jsx",
@@ -2839,7 +3099,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "notion_package_dependencies",
-      "community": 11,
+      "community": 10,
       "norm_label": "dependencies"
     },
     {
@@ -2849,7 +3109,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "notion_package_dependencies_notionhq_client",
-      "community": 11,
+      "community": 10,
       "norm_label": "@notionhq/client"
     },
     {
@@ -2859,7 +3119,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "notion_package_dependencies_dotenv",
-      "community": 11,
+      "community": 10,
       "norm_label": "dotenv"
     },
     {
@@ -15403,6 +15663,16 @@
       "norm_label": "tahap 2: integrasi frontend ke supabase & sistem otorisasi akses"
     },
     {
+      "label": "Tahap 3: Notion Sync Engine (Otomatisasi Sinkronisasi Konten)",
+      "file_type": "document",
+      "source_file": "projects/studios/work-log.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "studios_work_log_tahap_3_notion_sync_engine_otomatisasi_sinkronisasi_konten",
+      "community": 295,
+      "norm_label": "tahap 3: notion sync engine (otomatisasi sinkronisasi konten)"
+    },
+    {
       "label": "jurnal-harian.md",
       "file_type": "document",
       "source_file": "projects/twitter-ppt-jasa/jurnal-harian.md",
@@ -17316,7 +17586,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\add_edited_property.js"
       },
       "file_type": "concept",
-      "community": 64,
+      "community": 11,
       "norm_label": "add_edited_property",
       "id": "add_edited_property"
     },
@@ -17327,7 +17597,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 64,
+      "community": 11,
       "norm_label": "addedited",
       "id": "add_edited_property_addEdited"
     },
@@ -17598,7 +17868,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_note_properties.js"
       },
       "file_type": "concept",
-      "community": 256,
+      "community": 10,
       "norm_label": "check_note_properties",
       "id": "check_note_properties"
     },
@@ -17609,7 +17879,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 256,
+      "community": 10,
       "norm_label": "checknote",
       "id": "check_note_properties_checkNote"
     },
@@ -17623,7 +17893,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_page_details.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 89,
       "norm_label": "check_page_details",
       "id": "check_page_details"
     },
@@ -17634,7 +17904,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 89,
       "norm_label": "checkpages",
       "id": "check_page_details_checkPages"
     },
@@ -17648,7 +17918,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_para_views.js"
       },
       "file_type": "concept",
-      "community": 88,
+      "community": 10,
       "norm_label": "check_para_views",
       "id": "check_para_views"
     },
@@ -17659,7 +17929,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 88,
+      "community": 10,
       "norm_label": "checkviews",
       "id": "check_para_views_checkViews"
     },
@@ -17698,7 +17968,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_real_connections.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 249,
       "norm_label": "check_real_connections",
       "id": "check_real_connections"
     },
@@ -17709,7 +17979,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 249,
       "norm_label": "inspectviewblock",
       "id": "check_real_connections_inspectViewBlock"
     },
@@ -17723,7 +17993,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\clean_callout_children.js"
       },
       "file_type": "concept",
-      "community": 89,
+      "community": 10,
       "norm_label": "clean_callout_children",
       "id": "clean_callout_children"
     },
@@ -17734,7 +18004,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 89,
+      "community": 10,
       "norm_label": "cleancalloutchildren",
       "id": "clean_callout_children_cleanCalloutChildren"
     },
@@ -17748,7 +18018,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\clean_remaining_tf.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "clean_remaining_tf",
       "id": "clean_remaining_tf"
     },
@@ -17759,7 +18029,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "runcleanup",
       "id": "clean_remaining_tf_runCleanup"
     },
@@ -17773,7 +18043,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\compare_para_schemas.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 254,
       "norm_label": "compare_para_schemas",
       "id": "compare_para_schemas"
     },
@@ -17784,7 +18054,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 254,
       "norm_label": "compare",
       "id": "compare_para_schemas_compare"
     },
@@ -17798,7 +18068,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\compare_schemas.js"
       },
       "file_type": "concept",
-      "community": 260,
+      "community": 11,
       "norm_label": "compare_schemas",
       "id": "compare_schemas"
     },
@@ -17809,7 +18079,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 260,
+      "community": 11,
       "norm_label": "compare",
       "id": "compare_schemas_compare"
     },
@@ -17901,7 +18171,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\dump_para_blocks.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "dump_para_blocks",
       "id": "dump_para_blocks"
     },
@@ -17912,7 +18182,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "dumpblocks",
       "id": "dump_para_blocks_dumpBlocks"
     },
@@ -17926,7 +18196,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\enrich_dbs.js"
       },
       "file_type": "concept",
-      "community": 263,
+      "community": 11,
       "norm_label": "enrich_dbs",
       "id": "enrich_dbs"
     },
@@ -17937,7 +18207,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 263,
+      "community": 11,
       "norm_label": "enrichnotes",
       "id": "enrich_dbs_enrichNotes"
     },
@@ -17951,7 +18221,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\find_all_databases.js"
       },
       "file_type": "concept",
-      "community": 254,
+      "community": 11,
       "norm_label": "find_all_databases",
       "id": "find_all_databases"
     },
@@ -17962,7 +18232,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 254,
+      "community": 11,
       "norm_label": "findalldatabases",
       "id": "find_all_databases_findAllDatabases"
     },
@@ -17976,7 +18246,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\fix_recurring_nav.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 256,
       "norm_label": "fix_recurring_nav",
       "id": "fix_recurring_nav"
     },
@@ -17987,7 +18257,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 256,
       "norm_label": "fixnav",
       "id": "fix_recurring_nav_fixNav"
     },
@@ -18084,7 +18354,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_block.js"
       },
       "file_type": "concept",
-      "community": 249,
+      "community": 10,
       "norm_label": "inspect_block",
       "id": "inspect_block"
     },
@@ -18095,7 +18365,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 249,
+      "community": 10,
       "norm_label": "inspectblock",
       "id": "inspect_block_inspectBlock"
     },
@@ -18109,7 +18379,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_failed_views.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 260,
       "norm_label": "inspect_failed_views",
       "id": "inspect_failed_views"
     },
@@ -18120,7 +18390,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 260,
       "norm_label": "inspectviews",
       "id": "inspect_failed_views_inspectViews"
     },
@@ -18134,7 +18404,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_homepage_blocks.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 262,
       "norm_label": "inspect_homepage_blocks",
       "id": "inspect_homepage_blocks"
     },
@@ -18145,7 +18415,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 262,
       "norm_label": "inspectroot",
       "id": "inspect_homepage_blocks_inspectRoot"
     },
@@ -18198,7 +18468,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_para_blocks.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 263,
       "norm_label": "inspect_para_blocks",
       "id": "inspect_para_blocks"
     },
@@ -18209,7 +18479,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 263,
       "norm_label": "inspect",
       "id": "inspect_para_blocks_inspect"
     },
@@ -18295,7 +18565,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_tasks_nav_details.js"
       },
       "file_type": "concept",
-      "community": 262,
+      "community": 11,
       "norm_label": "inspect_tasks_nav_details",
       "id": "inspect_tasks_nav_details"
     },
@@ -18306,7 +18576,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 262,
+      "community": 11,
       "norm_label": "inspect",
       "id": "inspect_tasks_nav_details_inspect"
     },
@@ -18370,7 +18640,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\list_areas.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "list_areas",
       "id": "list_areas"
     },
@@ -18381,7 +18651,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "listareas",
       "id": "list_areas_listAreas"
     },
@@ -18536,7 +18806,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\print_all_ds_schemas.js"
       },
       "file_type": "concept",
-      "community": 79,
+      "community": 11,
       "norm_label": "print_all_ds_schemas",
       "id": "print_all_ds_schemas"
     },
@@ -18547,7 +18817,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 79,
+      "community": 11,
       "norm_label": "printallschemas",
       "id": "print_all_ds_schemas_printAllSchemas"
     },
@@ -18586,7 +18856,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\print_ds_schema.js"
       },
       "file_type": "concept",
-      "community": 269,
+      "community": 10,
       "norm_label": "print_ds_schema",
       "id": "print_ds_schema"
     },
@@ -18597,7 +18867,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 269,
+      "community": 10,
       "norm_label": "testretrieve",
       "id": "print_ds_schema_testRetrieve"
     },
@@ -18639,7 +18909,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\print_page_properties.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 269,
       "norm_label": "print_page_properties",
       "id": "print_page_properties"
     },
@@ -18650,7 +18920,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 269,
       "norm_label": "inspectproperties",
       "id": "print_page_properties_inspectProperties"
     },
@@ -18753,7 +19023,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\relink_para_page_views.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "relink_para_page_views",
       "id": "relink_para_page_views"
     },
@@ -18764,7 +19034,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "relink",
       "id": "relink_para_page_views_relink"
     },
@@ -18850,7 +19120,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\retrieve_callout.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 299,
       "norm_label": "retrieve_callout",
       "id": "retrieve_callout"
     },
@@ -18861,7 +19131,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 299,
       "norm_label": "retrievecallout",
       "id": "retrieve_callout_retrieveCallout"
     },
@@ -18983,7 +19253,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\scan_workspace.js"
       },
       "file_type": "concept",
-      "community": 299,
+      "community": 10,
       "norm_label": "scan_workspace",
       "id": "scan_workspace"
     },
@@ -18994,7 +19264,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 299,
+      "community": 10,
       "norm_label": "scanroot",
       "id": "scan_workspace_scanRoot"
     },
@@ -19008,7 +19278,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\search_all.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 301,
       "norm_label": "search_all",
       "id": "search_all"
     },
@@ -19019,7 +19289,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 301,
       "norm_label": "runsearch",
       "id": "search_all_runSearch"
     },
@@ -19296,7 +19566,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\sync_to_notion.js"
       },
       "file_type": "concept",
-      "community": 288,
+      "community": 88,
       "norm_label": "sync_to_notion",
       "id": "sync_to_notion"
     },
@@ -19307,7 +19577,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 288,
+      "community": 88,
       "norm_label": "parsemarkdowntorichtext",
       "id": "sync_to_notion_parseMarkdownToRichText"
     },
@@ -19318,7 +19588,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 288,
+      "community": 88,
       "norm_label": "sync",
       "id": "sync_to_notion_sync"
     },
@@ -19329,7 +19599,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 288,
+      "community": 88,
       "norm_label": "path",
       "id": "path"
     },
@@ -19343,7 +19613,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\test_filter_translation.js"
       },
       "file_type": "concept",
-      "community": 301,
+      "community": 10,
       "norm_label": "test_filter_translation",
       "id": "test_filter_translation"
     },
@@ -19354,7 +19624,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 301,
+      "community": 10,
       "norm_label": "translateallpropertyids",
       "id": "test_filter_translation_translateAllPropertyIds"
     },
@@ -31477,6 +31747,36 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/studios/app/package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "app_package_scripts",
+      "target": "app_package_scripts_sync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "app_package_dependencies",
+      "target": "app_package_dependencies_dotenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "app_package_dependencies",
+      "target": "app_package_dependencies_notionhq_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/package.json",
       "source_location": "L13",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -31499,8 +31799,30 @@
       "source_file": "projects/studios/app/package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_package_dependencies",
-      "target": "app_package_dependencies_supabase_supabase_js",
+      "target": "app_package_dependencies_supabase_supabase_js"
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "import",
+      "source": "app_package_dependencies_notionhq_client",
+      "target": "_notionhq_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "context": "import",
+      "source": "app_package_dependencies_dotenv",
+      "target": "dotenv",
       "confidence_score": 1.0
     },
     {
@@ -31594,6 +31916,579 @@
       "target": "app_package_devdependencies_vitejs_plugin_react"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "scripts_notionparser",
+      "target": "scripts_notionparser_blockstobrainstorm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L208",
+      "weight": 1.0,
+      "source": "scripts_notionparser",
+      "target": "scripts_notionparser_blockstoflashcards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "scripts_notionparser",
+      "target": "scripts_notionparser_blockstomarkdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "scripts_notionparser",
+      "target": "scripts_notionparser_blockstoreferences",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "scripts_notionparser",
+      "target": "scripts_notionparser_blockstoresume",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "scripts_notionparser",
+      "target": "scripts_notionparser_blocktomarkdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "scripts_notionparser",
+      "target": "scripts_notionparser_fetchallchildblocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_notionparser",
+      "target": "scripts_notionparser_getrichtext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "scripts_notionparser",
+      "target": "scripts_notionparser_parsetableblock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_notionparser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L214",
+      "weight": 1.0,
+      "source": "scripts_notionparser_blockstoflashcards",
+      "target": "scripts_notionparser_getrichtext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L261",
+      "weight": 1.0,
+      "source": "scripts_notionparser_blockstoreferences",
+      "target": "scripts_notionparser_getrichtext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "scripts_notionparser_blockstoresume",
+      "target": "scripts_notionparser_getrichtext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "scripts_notionparser_blocktomarkdown",
+      "target": "scripts_notionparser_getrichtext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "scripts_notionparser_blockstomarkdown",
+      "target": "scripts_notionparser_blocktomarkdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "scripts_notionparser_blockstomarkdown",
+      "target": "scripts_notionparser_fetchallchildblocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_notionparser_blockstomarkdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L181",
+      "weight": 1.0,
+      "source": "scripts_sync_syncengine",
+      "target": "scripts_notionparser_blockstomarkdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L209",
+      "weight": 1.0,
+      "source": "scripts_notionparser_blockstoflashcards",
+      "target": "scripts_notionparser_fetchallchildblocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L254",
+      "weight": 1.0,
+      "source": "scripts_notionparser_blockstoreferences",
+      "target": "scripts_notionparser_fetchallchildblocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "scripts_notionparser_blockstoresume",
+      "target": "scripts_notionparser_fetchallchildblocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "scripts_notionparser_blocktomarkdown",
+      "target": "scripts_notionparser_fetchallchildblocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "scripts_notionparser_parsetableblock",
+      "target": "scripts_notionparser_fetchallchildblocks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L221",
+      "weight": 1.0,
+      "source": "scripts_notionparser_blockstoflashcards",
+      "target": "scripts_notionparser_blocktomarkdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "scripts_notionparser_blockstoresume",
+      "target": "scripts_notionparser_blocktomarkdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/notionParser.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "scripts_notionparser_blocktomarkdown",
+      "target": "scripts_notionparser_parsetableblock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_notionparser_blockstoresume",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "scripts_sync_syncengine",
+      "target": "scripts_notionparser_blockstoresume",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_notionparser_blockstobrainstorm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "scripts_sync_syncengine",
+      "target": "scripts_notionparser_blockstobrainstorm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_notionparser_blockstoflashcards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "scripts_sync_syncengine",
+      "target": "scripts_notionparser_blockstoflashcards",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_notionparser_blockstoreferences",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L187",
+      "weight": 1.0,
+      "source": "scripts_sync_syncengine",
+      "target": "scripts_notionparser_blockstoreferences",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "dotenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_sync_getcheckboxproperty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_sync_getnumberproperty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_sync_getpageicon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_sync_getrelationproperty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_sync_getrichtextproperty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_sync_getselectproperty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_sync_gettitleproperty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_sync_missingenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_sync_notion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_sync_requiredenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_sync_supabase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "scripts_sync",
+      "target": "scripts_sync_syncengine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "scripts_sync_syncengine",
+      "target": "scripts_sync_gettitleproperty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "scripts_sync_syncengine",
+      "target": "scripts_sync_getrichtextproperty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "scripts_sync_syncengine",
+      "target": "scripts_sync_getcheckboxproperty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "scripts_sync_syncengine",
+      "target": "scripts_sync_getnumberproperty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "scripts_sync_syncengine",
+      "target": "scripts_sync_getselectproperty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "scripts_sync_syncengine",
+      "target": "scripts_sync_getrelationproperty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/scripts/sync.js",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "scripts_sync_syncengine",
+      "target": "scripts_sync_getpageicon",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -31644,9 +32539,9 @@
       "source_file": "projects/studios/app/src/App.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "lib_supabaseclient",
-      "confidence_score": 1.0
+      "target": "lib_supabaseclient"
     },
     {
       "relation": "imports",
@@ -31655,9 +32550,9 @@
       "source_file": "projects/studios/app/src/App.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "lib_supabaseclient_has_supabase",
-      "confidence_score": 1.0
+      "target": "lib_supabaseclient_has_supabase"
     },
     {
       "relation": "imports_from",
@@ -31666,9 +32561,9 @@
       "source_file": "projects/studios/app/src/App.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "pages_authpage",
-      "confidence_score": 1.0
+      "target": "pages_authpage"
     },
     {
       "relation": "imports",
@@ -31677,9 +32572,9 @@
       "source_file": "projects/studios/app/src/App.jsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "pages_authpage_authpage",
-      "confidence_score": 1.0
+      "target": "pages_authpage_authpage"
     },
     {
       "relation": "imports_from",
@@ -31754,9 +32649,9 @@
       "source_file": "projects/studios/app/src/App.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "services_dataservice",
-      "confidence_score": 1.0
+      "target": "services_dataservice"
     },
     {
       "relation": "imports",
@@ -31765,9 +32660,9 @@
       "source_file": "projects/studios/app/src/App.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "services_dataservice_getpurchases",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getpurchases"
     },
     {
       "relation": "imports",
@@ -31776,9 +32671,9 @@
       "source_file": "projects/studios/app/src/App.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "services_dataservice_getstacks",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getstacks"
     },
     {
       "relation": "imports",
@@ -31787,9 +32682,9 @@
       "source_file": "projects/studios/app/src/App.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app",
-      "target": "services_dataservice_purchasestack",
-      "confidence_score": 1.0
+      "target": "services_dataservice_purchasestack"
     },
     {
       "relation": "contains",
@@ -31830,9 +32725,9 @@
       "source_file": "projects/studios/app/src/App.jsx",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_app",
-      "target": "services_dataservice_getpurchases",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getpurchases"
     },
     {
       "relation": "calls",
@@ -31841,9 +32736,9 @@
       "source_file": "projects/studios/app/src/App.jsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_app",
-      "target": "services_dataservice_getstacks",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getstacks"
     },
     {
       "relation": "calls",
@@ -31852,9 +32747,9 @@
       "source_file": "projects/studios/app/src/App.jsx",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_app",
-      "target": "services_dataservice_purchasestack",
-      "confidence_score": 1.0
+      "target": "services_dataservice_purchasestack"
     },
     {
       "relation": "imports",
@@ -31976,9 +32871,9 @@
       "source_file": "projects/studios/app/src/services/dataService.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_dataservice",
-      "target": "data_mockdata",
-      "confidence_score": 1.0
+      "target": "data_mockdata"
     },
     {
       "relation": "imports",
@@ -32053,9 +32948,9 @@
       "source_file": "projects/studios/app/src/pages/AuthPage.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_authpage",
-      "target": "lib_supabaseclient",
-      "confidence_score": 1.0
+      "target": "lib_supabaseclient"
     },
     {
       "relation": "imports_from",
@@ -32064,9 +32959,9 @@
       "source_file": "projects/studios/app/src/services/dataService.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_dataservice",
-      "target": "lib_supabaseclient",
-      "confidence_score": 1.0
+      "target": "lib_supabaseclient"
     },
     {
       "relation": "imports",
@@ -32075,9 +32970,9 @@
       "source_file": "projects/studios/app/src/pages/AuthPage.jsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_authpage",
-      "target": "lib_supabaseclient_has_supabase",
-      "confidence_score": 1.0
+      "target": "lib_supabaseclient_has_supabase"
     },
     {
       "relation": "contains",
@@ -32085,9 +32980,9 @@
       "source_file": "projects/studios/app/src/pages/AuthPage.jsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_authpage",
-      "target": "pages_authpage_authpage",
-      "confidence_score": 1.0
+      "target": "pages_authpage_authpage"
     },
     {
       "relation": "contains",
@@ -32196,9 +33091,9 @@
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_contentviewer",
-      "target": "services_dataservice",
-      "confidence_score": 1.0
+      "target": "services_dataservice"
     },
     {
       "relation": "imports",
@@ -32207,9 +33102,9 @@
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_contentviewer",
-      "target": "services_dataservice_getflashcards",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getflashcards"
     },
     {
       "relation": "imports",
@@ -32218,9 +33113,9 @@
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_contentviewer",
-      "target": "services_dataservice_getreferences",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getreferences"
     },
     {
       "relation": "calls",
@@ -32240,9 +33135,9 @@
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
       "source_location": "L201",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_contentviewer_flashcardrenderer",
-      "target": "services_dataservice_getflashcards",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getflashcards"
     },
     {
       "relation": "calls",
@@ -32251,9 +33146,9 @@
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
       "source_location": "L433",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_contentviewer_referencerenderer",
-      "target": "services_dataservice_getreferences",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getreferences"
     },
     {
       "relation": "contains",
@@ -32292,9 +33187,9 @@
       "source_file": "projects/studios/app/src/pages/StackPage.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_stackpage",
-      "target": "services_dataservice",
-      "confidence_score": 1.0
+      "target": "services_dataservice"
     },
     {
       "relation": "imports",
@@ -32303,9 +33198,9 @@
       "source_file": "projects/studios/app/src/pages/StackPage.jsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pages_stackpage",
-      "target": "services_dataservice_getcontentbystack",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getcontentbystack"
     },
     {
       "relation": "imports",
@@ -32314,9 +33209,9 @@
       "source_file": "projects/studios/app/src/services/dataService.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_dataservice",
-      "target": "lib_supabaseclient_has_supabase",
-      "confidence_score": 1.0
+      "target": "lib_supabaseclient_has_supabase"
     },
     {
       "relation": "contains",
@@ -32324,9 +33219,9 @@
       "source_file": "projects/studios/app/src/services/dataService.js",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_dataservice",
-      "target": "services_dataservice_getcontentbystack",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getcontentbystack"
     },
     {
       "relation": "contains",
@@ -32334,9 +33229,9 @@
       "source_file": "projects/studios/app/src/services/dataService.js",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_dataservice",
-      "target": "services_dataservice_getflashcards",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getflashcards"
     },
     {
       "relation": "contains",
@@ -32344,9 +33239,9 @@
       "source_file": "projects/studios/app/src/services/dataService.js",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_dataservice",
-      "target": "services_dataservice_getpurchases",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getpurchases"
     },
     {
       "relation": "contains",
@@ -32354,9 +33249,9 @@
       "source_file": "projects/studios/app/src/services/dataService.js",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_dataservice",
-      "target": "services_dataservice_getreferences",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getreferences"
     },
     {
       "relation": "contains",
@@ -32364,9 +33259,9 @@
       "source_file": "projects/studios/app/src/services/dataService.js",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_dataservice",
-      "target": "services_dataservice_getstacks",
-      "confidence_score": 1.0
+      "target": "services_dataservice_getstacks"
     },
     {
       "relation": "contains",
@@ -32374,9 +33269,9 @@
       "source_file": "projects/studios/app/src/services/dataService.js",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_dataservice",
-      "target": "services_dataservice_purchasestack",
-      "confidence_score": 1.0
+      "target": "services_dataservice_purchasestack"
     },
     {
       "relation": "contains",
@@ -45799,8 +46694,18 @@
       "source_file": "projects/studios/work-log.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "studios_work_log_2026_06_15",
-      "target": "studios_work_log_tahap_2_integrasi_frontend_ke_supabase_sistem_otorisasi_akses",
+      "target": "studios_work_log_tahap_2_integrasi_frontend_ke_supabase_sistem_otorisasi_akses"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/work-log.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "studios_work_log_2026_06_15",
+      "target": "studios_work_log_tahap_3_notion_sync_engine_otomatisasi_sinkronisasi_konten",
       "confidence_score": 1.0
     },
     {
@@ -57523,5 +58428,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "134e8f85648e88531757f62d6f00dd04de3119b2"
+  "built_at_commit": "639d97d9ea74e2b48dfbf150af1882db79daf08e"
 }

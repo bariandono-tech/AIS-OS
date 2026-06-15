@@ -39,3 +39,16 @@
 - **Sistem Pembatasan Akses Premium (Lock Screen)**: Mengintegrasikan pengecekan transaksi di tabel `purchases` untuk membatasi konten premium secara real-time. Menampilkan halaman lock screen premium dengan tombol "Beli & Buka Akses Sekarang" (Simulator) untuk memudahkan proses pengujian bagi user.
 - **Browser Automation Verification**: Menguji fungsionalitas visual, login/logout, dan simulator transaksi secara end-to-end menggunakan subagen browser, menjamin kualitas premium di semua halaman.
 
+### Tahap 3: Notion Sync Engine (Otomatisasi Sinkronisasi Konten)
+**Dikerjakan:**
+- **Instalasi Dependensi**: Menginstal `@notionhq/client` dan `dotenv` di direktori `projects/studios/app/` untuk interaksi API Notion.
+- **Konfigurasi Environment**: Memperbarui template `.env` dengan variabel `NOTION_TOKEN`, `NOTION_STACKS_DB_ID`, `NOTION_CONTENT_DB_ID`, dan `SUPABASE_SERVICE_ROLE_KEY`.
+- **Modul Parser Blok Notion (`notionParser.js`)**: Menulis kode parser untuk menerjemahkan blok Notion menjadi data bersih untuk Supabase:
+  - Mengubah halaman `notes` menjadi Markdown terstruktur.
+  - Memotong halaman `resume` menjadi objek JSONB sections terbagi.
+  - Memetakan daftar bullet tersarang (`brainstorm`) menjadi nodes pohon visual (Mind Map).
+  - Mengekstrak blok **Toggle** menjadi deck **Flashcard** beserta tag otomatis.
+  - Memindai tautan dan blok bookmark menjadi entri **Referensi**.
+- **Sync Script Controller (`sync.js`)**: Membuat modul entri sync yang memicu penarikan seluruh data Notion, memetakan relasi Stack-Content, dan melakukan **UPSERT** aman di PostgreSQL.
+- **Uji Coba Simulator (Mock Tests)**: Menulis scratch test script unit di `test_sync_engine.js` untuk memvalidasi parser secara offline dengan hasil pengujian **100% lulus (PASS)**.
+- **GitHub Actions Automation**: Membuat berkas workflow `.github/workflows/notion-sync.yml` untuk memicu sinkronisasi otomatis menggunakan cron job harian.

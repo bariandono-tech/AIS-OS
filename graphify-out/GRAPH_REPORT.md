@@ -1,16 +1,16 @@
 # Graph Report - AIS-OS  (2026-06-15)
 
 ## Corpus Check
-- 209 files · ~260,305 words
+- 211 files · ~262,557 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2934 nodes · 2898 edges · 303 communities (215 shown, 88 thin omitted)
+- 2961 nodes · 2958 edges · 303 communities (218 shown, 85 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `134e8f85`
+- Built from commit: `639d97d9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -316,27 +316,27 @@
 4. `Ultimate Brain — Complete Second Brain System in Notion` - 16 edges
 5. `A6. Target Architecture — Canonical Databases & Full Schemas` - 14 edges
 6. `Architecture: StudiOS — Database-Driven Knowledge Viewer` - 14 edges
-7. `📽️ Struktur & Konten Slide` - 13 edges
-8. `PART B — NOTION BUILD GUIDE (EXECUTION)` - 13 edges
-9. `What You Must Do When Invoked` - 11 edges
-10. `/graphify` - 11 edges
+7. `syncEngine()` - 13 edges
+8. `📽️ Struktur & Konten Slide` - 13 edges
+9. `PART B — NOTION BUILD GUIDE (EXECUTION)` - 13 edges
+10. `What You Must Do When Invoked` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `App()` --calls--> `getContentByStack()`  [EXTRACTED]
-  projects/studios/app/src/App.jsx → projects/studios/app/src/data/mockData.js
-- `App()` --calls--> `getPurchases()`  [EXTRACTED]
-  projects/studios/app/src/App.jsx → projects/studios/app/src/services/dataService.js
-- `App()` --calls--> `getStacks()`  [EXTRACTED]
-  projects/studios/app/src/App.jsx → projects/studios/app/src/services/dataService.js
-- `App()` --calls--> `purchaseStack()`  [EXTRACTED]
-  projects/studios/app/src/App.jsx → projects/studios/app/src/services/dataService.js
-- `FlashcardRenderer()` --calls--> `getFlashcardsByContentId()`  [EXTRACTED]
-  projects/studios/app/src/pages/ContentViewer.jsx → projects/studios/app/src/data/mockData.js
+- `syncEngine()` --calls--> `blocksToMarkdown()`  [EXTRACTED]
+  projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
+- `syncEngine()` --calls--> `blocksToResume()`  [EXTRACTED]
+  projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
+- `syncEngine()` --calls--> `blocksToBrainstorm()`  [EXTRACTED]
+  projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
+- `syncEngine()` --calls--> `blocksToFlashcards()`  [EXTRACTED]
+  projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
+- `syncEngine()` --calls--> `blocksToReferences()`  [EXTRACTED]
+  projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (303 total, 88 thin omitted)
+## Communities (303 total, 85 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -379,12 +379,12 @@ Cohesion: 0.08
 Nodes (24): Dep:, Fase 1.0 — Pondasi (WAJIB duluan, semua lain bergantung di sini), Fase 1.1 — Skema database (PARALEL setelah T1.2), Fase 1.2 — Relasi antar-database (SEQ — butuh semua skema siap), Fase 1.3 — Formula (PARALEL — formula independen), Fase 1.4 — Views & Dashboard (SEQ — butuh data & relasi final), Fase 1.5 — Konten jual (PARALEL — tidak sentuh database), Fase 1.6 — Rilis (SEQ — gerbang akhir) (+16 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.08
-Nodes (26): @notionhq/client, check_real_connections, inspectViewBlock, clean_remaining_tf, runCleanup, compare_para_schemas, compare, create_homepage (+18 more)
+Cohesion: 0.07
+Nodes (29): @notionhq/client, check_note_properties, checkNote, check_para_views, checkViews, clean_callout_children, cleanCalloutChildren, create_homepage (+21 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.08
-Nodes (26): add_created_property, addCreated, check_page_details, checkPages, dotenv, dump_para_blocks, dumpBlocks, fix_recurring_nav (+18 more)
+Cohesion: 0.07
+Nodes (29): add_created_property, addCreated, add_edited_property, addEdited, clean_remaining_tf, runCleanup, compare_schemas, compare (+21 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.09
@@ -589,6 +589,10 @@ Nodes (3): scan_pro_pages, run, scanPage
 Cohesion: 0.67
 Nodes (3): trace_page_paths, getRootAndPath, tracePaths
 
+### Community 64 - "Community 64"
+Cohesion: 0.21
+Nodes (21): blocksToBrainstorm(), blocksToFlashcards(), blocksToMarkdown(), blocksToReferences(), blocksToResume(), blockToMarkdown(), fetchAllChildBlocks(), getRichText() (+13 more)
+
 ### Community 65 - "Community 65"
 Cohesion: 0.12
 Nodes (16): 1. Dashboard (Library of Stacks), 1. Executive Summary & Vision, 1. The High-Achieving Student (Mahasiswa Berprestasi), 2. Stack Page & Content Filtering, 2. Target Audience & User Personas, 2. The Researcher / Postgrad (Peneliti & Mahasiswa S2), 3. Interactive Content Renderers (5 Tipe Konten), 3. Product Functional Requirements (+8 more)
@@ -637,6 +641,10 @@ Nodes (23): 1. Pahami Konteks & Input Pengguna, 2. Pilih Mode Output, 3. Lakukan
 Cohesion: 0.20
 Nodes (9): 🗺️ Alur Ketergantungan Tugas (Dependency Map), 📋 Daftar Tugas & Kualifikasi Berurutan, Phase 1: Database & Security (Prasarana), Phase 2: Integrasi Frontend ke Supabase, Phase 3: Notion Sync Engine, Phase 4: Sistem Monetisasi & Akses Premium, Phase 5: Deployment & Otomatisasi Produksi, Phase 6: Validasi Akhir (End-to-End) (+1 more)
 
+### Community 79 - "Community 79"
+Cohesion: 0.33
+Nodes (6): dependencies, dotenv, @notionhq/client, react, react-dom, @supabase/supabase-js
+
 ### Community 80 - "Community 80"
 Cohesion: 0.07
 Nodes (19): decode_manual, decode_step_241, fs, fs, fs, fs, fs, fs (+11 more)
@@ -656,6 +664,10 @@ Nodes (19): 🎨 ATURAN DESAIN SLIDE PREMIUM (Gaya CEO):, Bedah PP 50/2018 & PMK
 ### Community 86 - "Community 86"
 Cohesion: 0.11
 Nodes (19): A8.10 Reviews (Daily / Weekly / Monthly / Quarterly) `[Beyond UB]`, A8.11 People / CRM (UB #26–29), A8.12 Books + Reading Log (UB #30–31), A8.13 Recipes + Meal Plan (UB #32), A8.14 Archive (Cold / Snoozed / Someday) (UB #25), A8.15 Task History (UB #34), A8.16 Analytics / Intelligence `[Beyond UB]`, A8.17 AI Layer `[Beyond UB]` `[Paid: Notion Business]` (+11 more)
+
+### Community 88 - "Community 88"
+Cohesion: 0.50
+Nodes (4): path, sync_to_notion, parseMarkdownToRichText, sync
 
 ### Community 101 - "Community 101"
 Cohesion: 0.11
@@ -1102,8 +1114,8 @@ Cohesion: 0.20
 Nodes (9): 🌐 1. APA ITU CORETAX SYSTEM?, 1. Metode Nilai Pasar (Market Value), 🏛️ 2. BEDAH PMK NOMOR 1 TAHUN 2026: RESTRUKTURISASI BUMN, 2. Metode Nilai Buku (Book Value) - Insentif Pajak, 📈 3. INSENTIF PENGGUNAAN NILAI BUKU (BOOK VALUE), 🧠 4. CHECKLIST MATERI KULIAH RESTRUKTURISASI PERUSAHAAN (UTS/UAS), A. Latar Belakang Penerbitan Regulasi, B. Definsi Baru BUMN di PMK 1/2026 (Pasal 1 angka 135) (+1 more)
 
 ### Community 280 - "Community 280"
-Cohesion: 0.08
-Nodes (23): dependencies, react, react-dom, @supabase/supabase-js, devDependencies, eslint, @eslint/js, eslint-plugin-react-hooks (+15 more)
+Cohesion: 0.10
+Nodes (20): devDependencies, eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh, globals, @types/react, @types/react-dom (+12 more)
 
 ### Community 281 - "Community 281"
 Cohesion: 0.11
@@ -1134,8 +1146,8 @@ Cohesion: 0.22
 Nodes (8): Distribution Channels, Launch Checklist, Launch Plan: {{PRODUCT_NAME}}, Marketing Content, Other Channels, Post-Launch (First 48h), Pricing, Twitter Thread (Launch Day)
 
 ### Community 288 - "Community 288"
-Cohesion: 0.20
-Nodes (10): { Client }, fs, notion, parseMarkdownToRichText(), path, sync(), path, sync_to_notion (+2 more)
+Cohesion: 0.33
+Nodes (6): { Client }, fs, notion, parseMarkdownToRichText(), path, sync()
 
 ### Community 289 - "Community 289"
 Cohesion: 0.33
@@ -1158,28 +1170,28 @@ Cohesion: 0.50
 Nodes (3): Expanding the ESLint configuration, React Compiler, React + Vite
 
 ### Community 295 - "Community 295"
-Cohesion: 0.40
-Nodes (4): 2026-06-15, Inisialisasi Proyek StudiOS & Refinement UI, Tahap 2: Integrasi Frontend ke Supabase & Sistem Otorisasi Akses, Work Log — StudiOS
+Cohesion: 0.33
+Nodes (5): 2026-06-15, Inisialisasi Proyek StudiOS & Refinement UI, Tahap 2: Integrasi Frontend ke Supabase & Sistem Otorisasi Akses, Tahap 3: Notion Sync Engine (Otomatisasi Sinkronisasi Konten), Work Log — StudiOS
 
 ## Knowledge Gaps
-- **1080 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `version`, `type` (+1075 more)
+- **1086 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `version`, `type` (+1081 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **88 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **85 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Ultimate Brain — Complete Second Brain System in Notion` connect `Community 112` to `Community 121`, `Community 135`, `Community 167`, `Community 235`, `Community 236`, `Community 237`, `Community 153`, `Community 154`, `Community 189`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `dependencies` connect `Community 11` to `Community 150`?**
+- **Why does `dependencies` connect `Community 79` to `Community 280`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `A11. Views Catalog` connect `Community 141` to `Community 117`?**
   _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private` to the rest of the system?**
-  _1080 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1086 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.048484848484848485 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._

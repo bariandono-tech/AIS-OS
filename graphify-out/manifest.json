@@ -945,8 +945,8 @@
     "semantic_hash": ""
   },
   "projects/studios/app/package.json": {
-    "mtime": 1781517881.1703548,
-    "ast_hash": "67bd7bfedfd0f84f0faff8c966f2e58e",
+    "mtime": 1781528020.137707,
+    "ast_hash": "e78bcb99eb3e7fdff7c4862d2c47a69d",
     "semantic_hash": ""
   },
   "projects/studios/app/src/App.jsx": {
@@ -1070,8 +1070,8 @@
     "semantic_hash": ""
   },
   "projects/studios/work-log.md": {
-    "mtime": 1781518875.2368982,
-    "ast_hash": "29c71b1232cb8996a3f594cf9d988766",
+    "mtime": 1781528133.390401,
+    "ast_hash": "be55e1a496bb0732d5e68aa479750bec",
     "semantic_hash": ""
   },
   "projects/studios/app/public/favicon.svg": {
@@ -1100,8 +1100,8 @@
     "semantic_hash": ""
   },
   "projects/studios/supabase_schema.sql": {
-    "mtime": 1781517692.488739,
-    "ast_hash": "6e088fba622576977795e7db656adad5",
+    "mtime": 1781518942.0800512,
+    "ast_hash": "fd1215e87d226b579b54650c199c6642",
     "semantic_hash": ""
   },
   "projects/studios/supabase_seed.sql": {
@@ -1122,6 +1122,21 @@
   "projects/studios/app/src/services/dataService.js": {
     "mtime": 1781518282.0942757,
     "ast_hash": "036bfec059af2e1f6b7999ac07e92fec",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/notionParser.js": {
+    "mtime": 1781528003.2771108,
+    "ast_hash": "9cc8bf393f72f55ff8c205ba245d37d8",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/sync.js": {
+    "mtime": 1781528015.381956,
+    "ast_hash": "ea3b7da1579832cd8ffc10c207741241",
+    "semantic_hash": ""
+  },
+  ".github/workflows/notion-sync.yml": {
+    "mtime": 1781528119.5196333,
+    "ast_hash": "ac04cbf2cbddb41d343fbc3fb6db2618",
     "semantic_hash": ""
   }
 }

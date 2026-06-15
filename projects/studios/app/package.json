@@ -7,10 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sync": "node scripts/sync.js"
   },
   "dependencies": {
+    "@notionhq/client": "^5.22.0",
     "@supabase/supabase-js": "^2.108.2",
+    "dotenv": "^17.4.2",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
