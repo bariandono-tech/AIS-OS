@@ -1,14 +1,19 @@
 # 🏢 AIS-OS & Office Knowledge Brain
 *Pangkalan Pengetahuan Pekerjaan, Tugas Kantor, & SOP Instansi*
 
-Selamat datang di Office Second Brain Anda. Indeks ini dikelola secara otomatis oleh LLM Wiki Agent berdasarkan file sumber mentah yang Anda masukkan ke folder `raw/`.
+Selamat datang di Office Second Brain Anda. Indeks ini dikelola untuk menautkan berkas-berkas regulasi dinas, proyek aktif, dan konsep-konsep keuangan kantor Anda.
 
 ---
 
 ## 📋 1. Prosedur & Aturan (Procedures & Rules)
 *SOP, regulasi internal kantor, dan petunjuk teknis pelaksanaan tugas.*
 
-*(Belum ada halaman - Tambahkan dengan perintah "Ingest")*
+- [[PMK_01_2026]] ([PMK_01_2026.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/PMK_01_2026.md)) - Peraturan Menteri Keuangan No. 01 Tahun 2026
+- [[PPh_Pasal_21]] ([PPh_Pasal_21.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/PPh_Pasal_21.md)) - Pajak Penghasilan Pasal 21
+- [[Pajak_Pertambahan_Nilai]] ([Pajak_Pertambahan_Nilai.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Pajak_Pertambahan_Nilai.md)) - Pajak Pertambahan Nilai (PPN)
+- [[Penghasilan_Tidak_Kena_Pajak]] ([Penghasilan_Tidak_Kena_Pajak.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md)) - Ketentuan Penghasilan Tidak Kena Pajak (PTKP)
+- [[Withholding_Tax]] ([Withholding_Tax.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Withholding_Tax.md)) - Sistem Pemotongan Pajak (Withholding Tax)
+- [[Standar_Akuntansi_Pemerintah]] ([Standar_Akuntansi_Pemerintah.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Standar_Akuntansi_Pemerintah.md)) - Standar Akuntansi Pemerintahan (SAP)
 
 ---
 
@@ -16,10 +21,16 @@ Selamat datang di Office Second Brain Anda. Indeks ini dikelola secara otomatis 
 *Catatan pengerjaan tugas, proyek kedinasan, dan dokumentasi kerja.*
 
 - [[Project_Botkeu]] ([Project_Botkeu.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Project_Botkeu.md)) - Asisten Keuangan Pintar berbasis Telegram Bot (Local RAG & Google Drive Excel Broker)
+- [[DIPA_Halaman_III]] ([DIPA_Halaman_III.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/DIPA_Halaman_III.md)) - Daftar Isian Pelaksanaan Anggaran (Halaman III)
+- [[Deviasi_Anggaran]] ([Deviasi_Anggaran.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Deviasi_Anggaran.md)) - Rencana Penarikan Dana & Deviasi Anggaran
+- [[IKPA]] ([IKPA.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/IKPA.md)) - Indikator Kinerja Pelaksanaan Anggaran (IKPA)
+- [[SAKTI]] ([SAKTI.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/SAKTI.md)) - Sistem Aplikasi Keuangan Tingkat Instansi (SAKTI)
+- [[Coretax_System]] ([Coretax_System.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Coretax_System.md)) - Sistem Inti Administrasi Perpajakan (Coretax)
 
 ---
 
 ## 🏢 3. Informasi Kantor (Office Info)
 *Struktur organisasi, kontak penting, link portal internal, dan profil divisi.*
 
-*(Belum ada halaman - Tambahkan dengan perintah "Ingest")*
+- [[Rudenim_Pontianak]] ([Rudenim_Pontianak.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Rudenim_Pontianak.md)) - Profil Rumah Detensi Imigrasi Pontianak
+- [[Kemenkumham]] ([Kemenkumham.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Kemenkumham.md)) - Kementerian Hukum dan Hak Asasi Manusia
