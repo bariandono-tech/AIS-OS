@@ -15,7 +15,7 @@ Selamat datang di Office Second Brain Anda. Indeks ini dikelola secara otomatis 
 ## 🔨 2. Tugas & Projek (Tasks & Projects)
 *Catatan pengerjaan tugas, proyek kedinasan, dan dokumentasi kerja.*
 
-*(Belum ada halaman - Tambahkan dengan perintah "Ingest")*
+- [[Project_Botkeu]] ([Project_Botkeu.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Project_Botkeu.md)) - Asisten Keuangan Pintar berbasis Telegram Bot (Local RAG & Google Drive Excel Broker)
 
 ---
 
