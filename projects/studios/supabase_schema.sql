@@ -149,3 +149,39 @@ CREATE POLICY "Allow users to insert their own purchases"
 ON public.purchases
 FOR INSERT 
 WITH CHECK (auth.uid() = user_id);
+
+-- 5. HELPER FUNCTIONS (SECURITY DEFINER to bypass RLS for public metadata counts)
+CREATE OR REPLACE FUNCTION public.get_published_stacks()
+RETURNS TABLE (
+    id UUID,
+    slug TEXT,
+    title TEXT,
+    description TEXT,
+    icon TEXT,
+    color VARCHAR,
+    is_published BOOLEAN,
+    created_at TIMESTAMPTZ,
+    content_count BIGINT
+) 
+LANGUAGE plpgsql
+SECURITY DEFINER
+AS $$
+BEGIN
+    RETURN QUERY
+    SELECT 
+        s.id, 
+        s.slug, 
+        s.title, 
+        s.description, 
+        s.icon, 
+        s.color, 
+        s.is_published, 
+        s.created_at,
+        COALESCE(COUNT(c.id), 0) as content_count
+    FROM public.stacks s
+    LEFT JOIN public.content_items c ON c.stack_id = s.id AND c.is_published = true
+    WHERE s.is_published = true
+    GROUP BY s.id, s.slug, s.title, s.description, s.icon, s.color, s.is_published, s.created_at
+    ORDER BY s.title ASC;
+END;
+$$;

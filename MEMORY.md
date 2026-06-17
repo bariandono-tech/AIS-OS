@@ -4,6 +4,12 @@ Buku catatan memori jangka panjang untuk merekam state proyek, pelajaran penting
 
 ---
 
+## 👤 0. Profil Pengguna (User Profile)
+* **Tingkat Pengalaman:** Pemula *Vibe Coding* (belajar sekitar 2 bulan).
+* **Pendekatan Interaksi:** Butuh penjelasan konsep dasar yang sederhana dan bertahap. Hindari pemindahan file kode sumber, modifikasi konfigurasi, atau tindakan teknis berisiko tinggi tanpa persetujuan eksplisit dan penjelasan yang mudah dipahami terlebih dahulu.
+
+---
+
 ## 1. Gotchas & Solusi Teknis (Pelajaran Penting)
 
 ### Pembuatan Dokumen Word (`build_makalah.js`)

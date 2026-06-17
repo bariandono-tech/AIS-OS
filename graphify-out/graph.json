@@ -333,6 +333,26 @@
       "norm_label": "create_gantt_chart()"
     },
     {
+      "label": "pay-webhook.js",
+      "file_type": "code",
+      "source_file": "projects/studios/app/api/pay-webhook.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "api_pay_webhook",
+      "community": 305,
+      "norm_label": "pay-webhook.js"
+    },
+    {
+      "label": "handler()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/api/pay-webhook.js",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "api_pay_webhook_handler",
+      "community": 305,
+      "norm_label": "handler()"
+    },
+    {
       "label": "eslint.config.js",
       "file_type": "code",
       "source_file": "projects/studios/app/eslint.config.js",
@@ -666,7 +686,7 @@
       "label": "parseTableBlock()",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/notionParser.js",
-      "source_location": "L107",
+      "source_location": "L119",
       "_origin": "ast",
       "id": "scripts_notionparser_parsetableblock",
       "community": 64,
@@ -676,7 +696,7 @@
       "label": "blocksToResume()",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/notionParser.js",
-      "source_location": "L140",
+      "source_location": "L152",
       "_origin": "ast",
       "id": "scripts_notionparser_blockstoresume",
       "community": 64,
@@ -686,7 +706,7 @@
       "label": "blocksToBrainstorm()",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/notionParser.js",
-      "source_location": "L175",
+      "source_location": "L187",
       "_origin": "ast",
       "id": "scripts_notionparser_blockstobrainstorm",
       "community": 64,
@@ -696,7 +716,7 @@
       "label": "blocksToFlashcards()",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/notionParser.js",
-      "source_location": "L208",
+      "source_location": "L220",
       "_origin": "ast",
       "id": "scripts_notionparser_blockstoflashcards",
       "community": 64,
@@ -706,7 +726,7 @@
       "label": "blocksToReferences()",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/notionParser.js",
-      "source_location": "L253",
+      "source_location": "L265",
       "_origin": "ast",
       "id": "scripts_notionparser_blockstoreferences",
       "community": 64,
@@ -756,7 +776,7 @@
       "label": "supabase",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/sync.js",
-      "source_location": "L30",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "scripts_sync_supabase",
       "community": 64,
@@ -766,7 +786,7 @@
       "label": "getTitleProperty()",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/sync.js",
-      "source_location": "L37",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "scripts_sync_gettitleproperty",
       "community": 64,
@@ -776,7 +796,7 @@
       "label": "getRichTextProperty()",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/sync.js",
-      "source_location": "L43",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "scripts_sync_getrichtextproperty",
       "community": 64,
@@ -786,7 +806,7 @@
       "label": "getCheckboxProperty()",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/sync.js",
-      "source_location": "L49",
+      "source_location": "L52",
       "_origin": "ast",
       "id": "scripts_sync_getcheckboxproperty",
       "community": 64,
@@ -796,7 +816,7 @@
       "label": "getNumberProperty()",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/sync.js",
-      "source_location": "L55",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "scripts_sync_getnumberproperty",
       "community": 64,
@@ -806,7 +826,7 @@
       "label": "getSelectProperty()",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/sync.js",
-      "source_location": "L61",
+      "source_location": "L64",
       "_origin": "ast",
       "id": "scripts_sync_getselectproperty",
       "community": 64,
@@ -816,7 +836,7 @@
       "label": "getRelationProperty()",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/sync.js",
-      "source_location": "L67",
+      "source_location": "L70",
       "_origin": "ast",
       "id": "scripts_sync_getrelationproperty",
       "community": 64,
@@ -826,7 +846,7 @@
       "label": "getPageIcon()",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/sync.js",
-      "source_location": "L73",
+      "source_location": "L76",
       "_origin": "ast",
       "id": "scripts_sync_getpageicon",
       "community": 64,
@@ -836,7 +856,7 @@
       "label": "syncEngine()",
       "file_type": "code",
       "source_file": "projects/studios/app/scripts/sync.js",
-      "source_location": "L81",
+      "source_location": "L84",
       "_origin": "ast",
       "id": "scripts_sync_syncengine",
       "community": 64,
@@ -861,6 +881,26 @@
       "id": "src_app_app",
       "community": 266,
       "norm_label": "app()"
+    },
+    {
+      "label": "PaymentSimulatorModal.jsx",
+      "file_type": "code",
+      "source_file": "projects/studios/app/src/components/PaymentSimulatorModal.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "components_paymentsimulatormodal",
+      "community": 266,
+      "norm_label": "paymentsimulatormodal.jsx"
+    },
+    {
+      "label": "PaymentSimulatorModal()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/src/components/PaymentSimulatorModal.jsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "components_paymentsimulatormodal_paymentsimulatormodal",
+      "community": 266,
+      "norm_label": "paymentsimulatormodal()"
     },
     {
       "label": "mockData.js",
@@ -1016,7 +1056,7 @@
       "label": "TableRenderer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L34",
+      "source_location": "L91",
       "_origin": "ast",
       "id": "pages_contentviewer_tablerenderer",
       "community": 266,
@@ -1026,7 +1066,7 @@
       "label": "parseAndRenderBlocks()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L92",
+      "source_location": "L149",
       "_origin": "ast",
       "id": "pages_contentviewer_parseandrenderblocks",
       "community": 266,
@@ -1036,17 +1076,27 @@
       "label": "ResumeRenderer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L171",
+      "source_location": "L228",
       "_origin": "ast",
       "id": "pages_contentviewer_resumerenderer",
       "community": 266,
       "norm_label": "resumerenderer()"
     },
     {
+      "label": "HTMLContentRenderer()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
+      "source_location": "L244",
+      "_origin": "ast",
+      "id": "pages_contentviewer_htmlcontentrenderer",
+      "community": 266,
+      "norm_label": "htmlcontentrenderer()"
+    },
+    {
       "label": "NotesRenderer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L187",
+      "source_location": "L393",
       "_origin": "ast",
       "id": "pages_contentviewer_notesrenderer",
       "community": 266,
@@ -1056,7 +1106,7 @@
       "label": "FlashcardRenderer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L193",
+      "source_location": "L413",
       "_origin": "ast",
       "id": "pages_contentviewer_flashcardrenderer",
       "community": 266,
@@ -1066,7 +1116,7 @@
       "label": "BrainstormRenderer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L351",
+      "source_location": "L578",
       "_origin": "ast",
       "id": "pages_contentviewer_brainstormrenderer",
       "community": 266,
@@ -1076,7 +1126,7 @@
       "label": "MindMapNode()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L372",
+      "source_location": "L599",
       "_origin": "ast",
       "id": "pages_contentviewer_mindmapnode",
       "community": 266,
@@ -1086,7 +1136,7 @@
       "label": "ReferenceRenderer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L427",
+      "source_location": "L654",
       "_origin": "ast",
       "id": "pages_contentviewer_referencerenderer",
       "community": 266,
@@ -1096,7 +1146,7 @@
       "label": "formatText()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L508",
+      "source_location": "L670",
       "_origin": "ast",
       "id": "pages_contentviewer_formattext",
       "community": 266,
@@ -1136,7 +1186,7 @@
       "label": "StackPage()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/StackPage.jsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "_origin": "ast",
       "id": "pages_stackpage_stackpage",
       "community": 266,
@@ -1176,7 +1226,7 @@
       "label": "getContentByStack()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/services/dataService.js",
-      "source_location": "L33",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "services_dataservice_getcontentbystack",
       "community": 266,
@@ -1186,7 +1236,7 @@
       "label": "getFlashcards()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/services/dataService.js",
-      "source_location": "L65",
+      "source_location": "L76",
       "_origin": "ast",
       "id": "services_dataservice_getflashcards",
       "community": 266,
@@ -1196,7 +1246,7 @@
       "label": "getReferences()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/services/dataService.js",
-      "source_location": "L85",
+      "source_location": "L96",
       "_origin": "ast",
       "id": "services_dataservice_getreferences",
       "community": 266,
@@ -1206,7 +1256,7 @@
       "label": "getPurchases()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/services/dataService.js",
-      "source_location": "L105",
+      "source_location": "L116",
       "_origin": "ast",
       "id": "services_dataservice_getpurchases",
       "community": 266,
@@ -1216,11 +1266,41 @@
       "label": "purchaseStack()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/services/dataService.js",
-      "source_location": "L124",
+      "source_location": "L135",
       "_origin": "ast",
       "id": "services_dataservice_purchasestack",
       "community": 266,
       "norm_label": "purchasestack()"
+    },
+    {
+      "label": "vercel.json",
+      "file_type": "code",
+      "source_file": "projects/studios/app/vercel.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_vercel",
+      "community": 303,
+      "norm_label": "vercel.json"
+    },
+    {
+      "label": "cleanUrls",
+      "file_type": "code",
+      "source_file": "projects/studios/app/vercel.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "app_vercel_cleanurls",
+      "community": 303,
+      "norm_label": "cleanurls"
+    },
+    {
+      "label": "rewrites",
+      "file_type": "code",
+      "source_file": "projects/studios/app/vercel.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "app_vercel_rewrites",
+      "community": 303,
+      "norm_label": "rewrites"
     },
     {
       "label": "vite.config.js",
@@ -15183,6 +15263,56 @@
       "norm_label": "manual"
     },
     {
+      "label": "02-quality-gate.md",
+      "file_type": "document",
+      "source_file": "projects/studios/02-quality-gate.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "studios_02_quality_gate",
+      "community": 304,
+      "norm_label": "02-quality-gate.md"
+    },
+    {
+      "label": "Quality Gate: StudiOS Global \"The Immersive Explorer\" Layout",
+      "file_type": "document",
+      "source_file": "projects/studios/02-quality-gate.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "studios_02_quality_gate_quality_gate_studios_global_the_immersive_explorer_layout",
+      "community": 304,
+      "norm_label": "quality gate: studios global \"the immersive explorer\" layout"
+    },
+    {
+      "label": "\ud83d\udccb Quality Gate Checklist",
+      "file_type": "document",
+      "source_file": "projects/studios/02-quality-gate.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "studios_02_quality_gate_quality_gate_checklist",
+      "community": 304,
+      "norm_label": "\ud83d\udccb quality gate checklist"
+    },
+    {
+      "label": "\ud83d\udea6 Keputusan Go/No-Go",
+      "file_type": "document",
+      "source_file": "projects/studios/02-quality-gate.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "studios_02_quality_gate_keputusan_go_no_go",
+      "community": 304,
+      "norm_label": "\ud83d\udea6 keputusan go/no-go"
+    },
+    {
+      "label": "Catatan Keputusan Desain (Grill-Me):",
+      "file_type": "document",
+      "source_file": "projects/studios/02-quality-gate.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "studios_02_quality_gate_catatan_keputusan_desain_grill_me",
+      "community": 304,
+      "norm_label": "catatan keputusan desain (grill-me):"
+    },
+    {
       "label": "README.md",
       "file_type": "document",
       "source_file": "projects/studios/app/README.md",
@@ -15513,6 +15643,46 @@
       "norm_label": "5. future scope (tahap lanjut)"
     },
     {
+      "label": "scratch_report.md",
+      "file_type": "document",
+      "source_file": "projects/studios/scratch_report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "studios_scratch_report",
+      "community": 306,
+      "norm_label": "scratch_report.md"
+    },
+    {
+      "label": "Verification Report: StudiOS Dashboard & Interactive 3D Content",
+      "file_type": "document",
+      "source_file": "projects/studios/scratch_report.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "studios_scratch_report_verification_report_studios_dashboard_interactive_3d_content",
+      "community": 306,
+      "norm_label": "verification report: studios dashboard & interactive 3d content"
+    },
+    {
+      "label": "1. Langkah-Langkah Verifikasi",
+      "file_type": "document",
+      "source_file": "projects/studios/scratch_report.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "studios_scratch_report_1_langkah_langkah_verifikasi",
+      "community": 306,
+      "norm_label": "1. langkah-langkah verifikasi"
+    },
+    {
+      "label": "2. Hasil Verifikasi & Perilaku Drawer",
+      "file_type": "document",
+      "source_file": "projects/studios/scratch_report.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "studios_scratch_report_2_hasil_verifikasi_perilaku_drawer",
+      "community": 306,
+      "norm_label": "2. hasil verifikasi & perilaku drawer"
+    },
+    {
       "label": "task.md",
       "file_type": "document",
       "source_file": "projects/studios/task.md",
@@ -15671,6 +15841,26 @@
       "id": "studios_work_log_tahap_3_notion_sync_engine_otomatisasi_sinkronisasi_konten",
       "community": 295,
       "norm_label": "tahap 3: notion sync engine (otomatisasi sinkronisasi konten)"
+    },
+    {
+      "label": "2026-06-16",
+      "file_type": "document",
+      "source_file": "projects/studios/work-log.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "studios_work_log_2026_06_16",
+      "community": 295,
+      "norm_label": "2026-06-16"
+    },
+    {
+      "label": "Optimasi WebGL & Sinkronisasi Kurikulum Medis (Phase 3 - Anatomi Dasar)",
+      "file_type": "document",
+      "source_file": "projects/studios/work-log.md",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "studios_work_log_optimasi_webgl_sinkronisasi_kurikulum_medis_phase_3_anatomi_dasar",
+      "community": 295,
+      "norm_label": "optimasi webgl & sinkronisasi kurikulum medis (phase 3 - anatomi dasar)"
     },
     {
       "label": "jurnal-harian.md",
@@ -17261,6 +17451,1116 @@
       "id": "revisi_tabel_ikpa_indikator_catatan_penempatan_di_word",
       "community": 252,
       "norm_label": "catatan penempatan di word"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "thesis_brain_claude",
+      "community": 309,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "CLAUDE.md \u2014 LLM Wiki Agent Rules (Thesis & Research)",
+      "file_type": "document",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "thesis_brain_claude_claude_md_llm_wiki_agent_rules_thesis_research",
+      "community": 309,
+      "norm_label": "claude.md \u2014 llm wiki agent rules (thesis & research)"
+    },
+    {
+      "label": "\ud83c\udfdb\ufe0f 1. Core Architecture",
+      "file_type": "document",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "thesis_brain_claude_1_core_architecture",
+      "community": 309,
+      "norm_label": "\ud83c\udfdb\ufe0f 1. core architecture"
+    },
+    {
+      "label": "\ud83c\udff7\ufe0f 2. File & Page Naming Conventions",
+      "file_type": "document",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "thesis_brain_claude_2_file_page_naming_conventions",
+      "community": 309,
+      "norm_label": "\ud83c\udff7\ufe0f 2. file & page naming conventions"
+    },
+    {
+      "label": "\ud83d\udcc2 3. Categories in index.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "thesis_brain_claude_3_categories_in_index_md",
+      "community": 309,
+      "norm_label": "\ud83d\udcc2 3. categories in index.md"
+    },
+    {
+      "label": "\u2699\ufe0f 4. Agent Workflows & Prompts",
+      "file_type": "document",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "thesis_brain_claude_4_agent_workflows_prompts",
+      "community": 309,
+      "norm_label": "\u2699\ufe0f 4. agent workflows & prompts"
+    },
+    {
+      "label": "\ud83d\udce5 INGEST (Mengimpor data mentah dari `raw/`)",
+      "file_type": "document",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "thesis_brain_claude_ingest_mengimpor_data_mentah_dari_raw",
+      "community": 309,
+      "norm_label": "\ud83d\udce5 ingest (mengimpor data mentah dari `raw/`)"
+    },
+    {
+      "label": "\ud83d\udd0d LINT & AUDIT (Pembersihan & Konsistensi Data)",
+      "file_type": "document",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "thesis_brain_claude_lint_audit_pembersihan_konsistensi_data",
+      "community": 309,
+      "norm_label": "\ud83d\udd0d lint & audit (pembersihan & konsistensi data)"
+    },
+    {
+      "label": "index.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/index.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "thesis_brain_index",
+      "community": 310,
+      "norm_label": "index.md"
+    },
+    {
+      "label": "\ud83e\udde0 AIS-OS & Thesis Knowledge Brain",
+      "file_type": "document",
+      "source_file": "thesis-brain/index.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "thesis_brain_index_ais_os_thesis_knowledge_brain",
+      "community": 310,
+      "norm_label": "\ud83e\udde0 ais-os & thesis knowledge brain"
+    },
+    {
+      "label": "\ud83d\udcda 1. Sumber Daya & Acuan (Sources)",
+      "file_type": "document",
+      "source_file": "thesis-brain/index.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "thesis_brain_index_1_sumber_daya_acuan_sources",
+      "community": 310,
+      "norm_label": "\ud83d\udcda 1. sumber daya & acuan (sources)"
+    },
+    {
+      "label": "\ud83c\udfe2 2. Entitas Utama (Entities)",
+      "file_type": "document",
+      "source_file": "thesis-brain/index.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "thesis_brain_index_2_entitas_utama_entities",
+      "community": 310,
+      "norm_label": "\ud83c\udfe2 2. entitas utama (entities)"
+    },
+    {
+      "label": "\ud83d\udcca 3. Konsep & Teori (Concepts)",
+      "file_type": "document",
+      "source_file": "thesis-brain/index.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "thesis_brain_index_3_konsep_teori_concepts",
+      "community": 310,
+      "norm_label": "\ud83d\udcca 3. konsep & teori (concepts)"
+    },
+    {
+      "label": "\u2696\ufe0f 4. Regulasi & Kebijakan (Regulations)",
+      "file_type": "document",
+      "source_file": "thesis-brain/index.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "thesis_brain_index_4_regulasi_kebijakan_regulations",
+      "community": 310,
+      "norm_label": "\u2696\ufe0f 4. regulasi & kebijakan (regulations)"
+    },
+    {
+      "label": "log.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/log.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "thesis_brain_log",
+      "community": 330,
+      "norm_label": "log.md"
+    },
+    {
+      "label": "\ud83d\udcdd Operation History & Audit Log",
+      "file_type": "document",
+      "source_file": "thesis-brain/log.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "thesis_brain_log_operation_history_audit_log",
+      "community": 330,
+      "norm_label": "\ud83d\udcdd operation history & audit log"
+    },
+    {
+      "label": "aios-intake.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_aios_intake",
+      "community": 308,
+      "norm_label": "aios-intake.md"
+    },
+    {
+      "label": "AIS-OS Intake",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_aios_intake_ais_os_intake",
+      "community": 308,
+      "norm_label": "ais-os intake"
+    },
+    {
+      "label": "Q1 \u2014 Who are you, what do you sell, who do you sell it to?",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "raw_aios_intake_q1_who_are_you_what_do_you_sell_who_do_you_sell_it_to",
+      "community": 308,
+      "norm_label": "q1 \u2014 who are you, what do you sell, who do you sell it to?"
+    },
+    {
+      "label": "Q2 \u2014 Paste 1-2 things you've written recently. Don't edit them.",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "raw_aios_intake_q2_paste_1_2_things_you_ve_written_recently_don_t_edit_them",
+      "community": 308,
+      "norm_label": "q2 \u2014 paste 1-2 things you've written recently. don't edit them."
+    },
+    {
+      "label": "Q3 \u2014 What are your 2-3 biggest priorities for the next 90 days?",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "raw_aios_intake_q3_what_are_your_2_3_biggest_priorities_for_the_next_90_days",
+      "community": 308,
+      "norm_label": "q3 \u2014 what are your 2-3 biggest priorities for the next 90 days?"
+    },
+    {
+      "label": "Q4 \u2014 Where does revenue actually land, and where is it tracked?",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "raw_aios_intake_q4_where_does_revenue_actually_land_and_where_is_it_tracked",
+      "community": 308,
+      "norm_label": "q4 \u2014 where does revenue actually land, and where is it tracked?"
+    },
+    {
+      "label": "Q5 \u2014 Where do you talk to customers, your team, and the outside world day-to-day?",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "raw_aios_intake_q5_where_do_you_talk_to_customers_your_team_and_the_outside_world_day_to_day",
+      "community": 308,
+      "norm_label": "q5 \u2014 where do you talk to customers, your team, and the outside world day-to-day?"
+    },
+    {
+      "label": "Q6 \u2014 Where do meeting recordings, notes, and important docs live?",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "raw_aios_intake_q6_where_do_meeting_recordings_notes_and_important_docs_live",
+      "community": 308,
+      "norm_label": "q6 \u2014 where do meeting recordings, notes, and important docs live?"
+    },
+    {
+      "label": "Q7 \u2014 What's the one task that eats your week, and where do you currently track work?",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "raw_aios_intake_q7_what_s_the_one_task_that_eats_your_week_and_where_do_you_currently_track_work",
+      "community": 308,
+      "norm_label": "q7 \u2014 what's the one task that eats your week, and where do you currently track work?"
+    },
+    {
+      "label": "buku_saku_pajak_dasar.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar",
+      "community": 307,
+      "norm_label": "buku_saku_pajak_dasar.md"
+    },
+    {
+      "label": "BUKU SAKU PERPAJAKAN DASAR (TAXATION 101)",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
+      "community": 307,
+      "norm_label": "buku saku perpajakan dasar (taxation 101)"
+    },
+    {
+      "label": "\ud83c\udfdb\ufe0f 1. KETENTUAN UMUM & TATA CARA PERPAJAKAN (KUP)",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_1_ketentuan_umum_tata_cara_perpajakan_kup",
+      "community": 307,
+      "norm_label": "\ud83c\udfdb\ufe0f 1. ketentuan umum & tata cara perpajakan (kup)"
+    },
+    {
+      "label": "A. Tiga Sistem Pemungutan Pajak",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_a_tiga_sistem_pemungutan_pajak",
+      "community": 307,
+      "norm_label": "a. tiga sistem pemungutan pajak"
+    },
+    {
+      "label": "B. Kalender Wajib Pajak: Batas Setor & Lapor",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_b_kalender_wajib_pajak_batas_setor_lapor",
+      "community": 307,
+      "norm_label": "b. kalender wajib pajak: batas setor & lapor"
+    },
+    {
+      "label": "\ud83d\udcb8 2. PPh 21 METODE TER (TARIF EFEKTIF RATA-RATA)",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_2_pph_21_metode_ter_tarif_efektif_rata_rata",
+      "community": 307,
+      "norm_label": "\ud83d\udcb8 2. pph 21 metode ter (tarif efektif rata-rata)"
+    },
+    {
+      "label": "A. Pengelompokan Kategori TER Bulanan",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_a_pengelompokan_kategori_ter_bulanan",
+      "community": 307,
+      "norm_label": "a. pengelompokan kategori ter bulanan"
+    },
+    {
+      "label": "B. Rumus Akhir Tahun (Masa Pajak Desember)",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_b_rumus_akhir_tahun_masa_pajak_desember",
+      "community": 307,
+      "norm_label": "b. rumus akhir tahun (masa pajak desember)"
+    },
+    {
+      "label": "\ud83d\udcbc 3. WITHHOLDING TAX PPh (PEMOTONGAN/PEMUNGUTAN PIHAK KETIGA)",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_3_withholding_tax_pph_pemotongan_pemungutan_pihak_ketiga",
+      "community": 307,
+      "norm_label": "\ud83d\udcbc 3. withholding tax pph (pemotongan/pemungutan pihak ketiga)"
+    },
+    {
+      "label": "\ud83d\uded2 4. PAJAK PERTAMBAHAN NILAI (PPN)",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L92",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_4_pajak_pertambahan_nilai_ppn",
+      "community": 307,
+      "norm_label": "\ud83d\uded2 4. pajak pertambahan nilai (ppn)"
+    },
+    {
+      "label": "A. Formula Pengkreditan Pajak PPN (Masa Bulanan)",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_a_formula_pengkreditan_pajak_ppn_masa_bulanan",
+      "community": 307,
+      "norm_label": "a. formula pengkreditan pajak ppn (masa bulanan)"
+    },
+    {
+      "label": "B. Aturan PPN Wapu (Wajib Pungut)",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_b_aturan_ppn_wapu_wajib_pungut",
+      "community": 307,
+      "norm_label": "b. aturan ppn wapu (wajib pungut)"
+    },
+    {
+      "label": "\ud83c\udf10 5. CORETAX SYSTEM & PMK 1/2026 (RESTRUKTURISASI BUMN)",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_5_coretax_system_pmk_1_2026_restrukturisasi_bumn",
+      "community": 307,
+      "norm_label": "\ud83c\udf10 5. coretax system & pmk 1/2026 (restrukturisasi bumn)"
+    },
+    {
+      "label": "\ud83e\udde0 6. CHEAT-SHEETS & TRIK CEPAT MAHASISWA",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_6_cheat_sheets_trik_cepat_mahasiswa",
+      "community": 307,
+      "norm_label": "\ud83e\udde0 6. cheat-sheets & trik cepat mahasiswa"
+    },
+    {
+      "label": "A. Jembatan Keledai Mengingat Jenis PPh",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_a_jembatan_keledai_mengingat_jenis_pph",
+      "community": 307,
+      "norm_label": "a. jembatan keledai mengingat jenis pph"
+    },
+    {
+      "label": "B. Rumus PTKP Tahunan Cepat (TK/0 Dasar)",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "raw_buku_saku_pajak_dasar_b_rumus_ptkp_tahunan_cepat_tk_0_dasar",
+      "community": 307,
+      "norm_label": "b. rumus ptkp tahunan cepat (tk/0 dasar)"
+    },
+    {
+      "label": "makalah_seminar.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/makalah_seminar.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "raw_makalah_seminar",
+      "community": 314,
+      "norm_label": "makalah_seminar.md"
+    },
+    {
+      "label": "Tabel 1.3 Deviasi Halaman III DIPA Belanja Modal Rudenim Pontianak TA 2023\u20132025",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/makalah_seminar.md",
+      "source_location": "L239",
+      "_origin": "ast",
+      "id": "raw_makalah_seminar_tabel_1_3_deviasi_halaman_iii_dipa_belanja_modal_rudenim_pontianak_ta_2023_2025",
+      "community": 314,
+      "norm_label": "tabel 1.3 deviasi halaman iii dipa belanja modal rudenim pontianak ta 2023\u20132025"
+    },
+    {
+      "label": "Tabel 1.4 Bulan Kritis Deviasi Belanja Modal Rudenim Pontianak TA 2023\u20132025",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/makalah_seminar.md",
+      "source_location": "L253",
+      "_origin": "ast",
+      "id": "raw_makalah_seminar_tabel_1_4_bulan_kritis_deviasi_belanja_modal_rudenim_pontianak_ta_2023_2025",
+      "community": 314,
+      "norm_label": "tabel 1.4 bulan kritis deviasi belanja modal rudenim pontianak ta 2023\u20132025"
+    },
+    {
+      "label": "Tabel 1.5 Contoh Paket Belanja Modal yang Mengalami Pergeseran Realisasi TA 2023\u20132025",
+      "file_type": "document",
+      "source_file": "thesis-brain/raw/makalah_seminar.md",
+      "source_location": "L267",
+      "_origin": "ast",
+      "id": "raw_makalah_seminar_tabel_1_5_contoh_paket_belanja_modal_yang_mengalami_pergeseran_realisasi_ta_2023_2025",
+      "community": 314,
+      "norm_label": "tabel 1.5 contoh paket belanja modal yang mengalami pergeseran realisasi ta 2023\u20132025"
+    },
+    {
+      "label": "Analisis_Kasus_Rudenim_Pontianak.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_analisis_kasus_rudenim_pontianak",
+      "community": 311,
+      "norm_label": "analisis_kasus_rudenim_pontianak.md"
+    },
+    {
+      "label": "\ud83d\udcca Analisis Kasus: Deviasi Anggaran Belanja Modal Rudenim Pontianak (TA 2023\u20132025)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_analisis_kasus_rudenim_pontianak_analisis_kasus_deviasi_anggaran_belanja_modal_rudenim_pontianak_ta_2023_2025",
+      "community": 311,
+      "norm_label": "\ud83d\udcca analisis kasus: deviasi anggaran belanja modal rudenim pontianak (ta 2023\u20132025)"
+    },
+    {
+      "label": "\ud83d\udcc8 1. Statistik Deviasi Tahunan",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "wiki_analisis_kasus_rudenim_pontianak_1_statistik_deviasi_tahunan",
+      "community": 311,
+      "norm_label": "\ud83d\udcc8 1. statistik deviasi tahunan"
+    },
+    {
+      "label": "Analisis Tren:",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "wiki_analisis_kasus_rudenim_pontianak_analisis_tren",
+      "community": 311,
+      "norm_label": "analisis tren:"
+    },
+    {
+      "label": "\ud83d\udcc5 2. Bulan-Bulan Kritis Deviasi (Deviasi 100%)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "wiki_analisis_kasus_rudenim_pontianak_2_bulan_bulan_kritis_deviasi_deviasi_100",
+      "community": 311,
+      "norm_label": "\ud83d\udcc5 2. bulan-bulan kritis deviasi (deviasi 100%)"
+    },
+    {
+      "label": "\ud83d\udee0\ufe0f 3. Analisis Paket Pekerjaan & Penyebab Pergeseran",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "wiki_analisis_kasus_rudenim_pontianak_3_analisis_paket_pekerjaan_penyebab_pergeseran",
+      "community": 311,
+      "norm_label": "\ud83d\udee0\ufe0f 3. analisis paket pekerjaan & penyebab pergeseran"
+    },
+    {
+      "label": "Coretax_System.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Coretax_System.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_coretax_system",
+      "community": 320,
+      "norm_label": "coretax_system.md"
+    },
+    {
+      "label": "\ud83d\udcca Coretax System (Sistem Inti Administrasi Perpajakan)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Coretax_System.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan",
+      "community": 320,
+      "norm_label": "\ud83d\udcca coretax system (sistem inti administrasi perpajakan)"
+    },
+    {
+      "label": "Dasar Hukum & Fitur Utama",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Coretax_System.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_coretax_system_dasar_hukum_fitur_utama",
+      "community": 320,
+      "norm_label": "dasar hukum & fitur utama"
+    },
+    {
+      "label": "DIPA_Halaman_III.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_dipa_halaman_iii",
+      "community": 315,
+      "norm_label": "dipa_halaman_iii.md"
+    },
+    {
+      "label": "\ud83d\udcca Halaman III DIPA & Rencana Penarikan Dana (RPD)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
+      "community": 315,
+      "norm_label": "\ud83d\udcca halaman iii dipa & rencana penarikan dana (rpd)"
+    },
+    {
+      "label": "Peran Strategis RPD Halaman III",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_dipa_halaman_iii_peran_strategis_rpd_halaman_iii",
+      "community": 315,
+      "norm_label": "peran strategis rpd halaman iii"
+    },
+    {
+      "label": "Karakteristik Pergeseran & Pemutakhiran",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "wiki_dipa_halaman_iii_karakteristik_pergeseran_pemutakhiran",
+      "community": 315,
+      "norm_label": "karakteristik pergeseran & pemutakhiran"
+    },
+    {
+      "label": "Deviasi_Anggaran.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Deviasi_Anggaran.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_deviasi_anggaran",
+      "community": 321,
+      "norm_label": "deviasi_anggaran.md"
+    },
+    {
+      "label": "\ud83d\udcca Deviasi Anggaran",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Deviasi_Anggaran.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_deviasi_anggaran_deviasi_anggaran",
+      "community": 321,
+      "norm_label": "\ud83d\udcca deviasi anggaran"
+    },
+    {
+      "label": "Signifikansi dalam Skripsi",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Deviasi_Anggaran.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_deviasi_anggaran_signifikansi_dalam_skripsi",
+      "community": 321,
+      "norm_label": "signifikansi dalam skripsi"
+    },
+    {
+      "label": "IKPA.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/IKPA.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_ikpa",
+      "community": 316,
+      "norm_label": "ikpa.md"
+    },
+    {
+      "label": "\ud83d\udcca Indikator Kinerja Pelaksanaan Anggaran (IKPA)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/IKPA.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
+      "community": 316,
+      "norm_label": "\ud83d\udcca indikator kinerja pelaksanaan anggaran (ikpa)"
+    },
+    {
+      "label": "\ud83c\udfdb\ufe0f Kerangka Hukum & Aspek Penilaian",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/IKPA.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_ikpa_kerangka_hukum_aspek_penilaian",
+      "community": 316,
+      "norm_label": "\ud83c\udfdb\ufe0f kerangka hukum & aspek penilaian"
+    },
+    {
+      "label": "\ud83d\udcc8 Kategori Penilaian IKPA",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/IKPA.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "wiki_ikpa_kategori_penilaian_ikpa",
+      "community": 316,
+      "norm_label": "\ud83d\udcc8 kategori penilaian ikpa"
+    },
+    {
+      "label": "Kemenkumham.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Kemenkumham.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_kemenkumham",
+      "community": 322,
+      "norm_label": "kemenkumham.md"
+    },
+    {
+      "label": "\ud83c\udfe2 Kementerian Hukum dan Hak Asasi Manusia (Kemenkumham)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Kemenkumham.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham",
+      "community": 322,
+      "norm_label": "\ud83c\udfe2 kementerian hukum dan hak asasi manusia (kemenkumham)"
+    },
+    {
+      "label": "Kewajiban Pelaporan Keuangan",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Kemenkumham.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_kemenkumham_kewajiban_pelaporan_keuangan",
+      "community": 322,
+      "norm_label": "kewajiban pelaporan keuangan"
+    },
+    {
+      "label": "PMK_01_2026.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/PMK_01_2026.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_pmk_01_2026",
+      "community": 318,
+      "norm_label": "pmk_01_2026.md"
+    },
+    {
+      "label": "\u2696\ufe0f PMK Nomor 1 Tahun 2026 (Insentif Pajak Restrukturisasi BUMN)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/PMK_01_2026.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
+      "community": 318,
+      "norm_label": "\u2696\ufe0f pmk nomor 1 tahun 2026 (insentif pajak restrukturisasi bumn)"
+    },
+    {
+      "label": "Definisi BUMN di Era Coretax",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/PMK_01_2026.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_pmk_01_2026_definisi_bumn_di_era_coretax",
+      "community": 318,
+      "norm_label": "definisi bumn di era coretax"
+    },
+    {
+      "label": "Insentif Pajak",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/PMK_01_2026.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "wiki_pmk_01_2026_insentif_pajak",
+      "community": 318,
+      "norm_label": "insentif pajak"
+    },
+    {
+      "label": "PPh_Pasal_21.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_pph_pasal_21",
+      "community": 319,
+      "norm_label": "pph_pasal_21.md"
+    },
+    {
+      "label": "\ud83d\udcca PPh Pasal 21 (Pajak Penghasilan Karyawan / Pekerja)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
+      "community": 319,
+      "norm_label": "\ud83d\udcca pph pasal 21 (pajak penghasilan karyawan / pekerja)"
+    },
+    {
+      "label": "\ud83d\udcb8 Metode TER (Tarif Efektif Rata-Rata) Bulanan",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_pph_pasal_21_metode_ter_tarif_efektif_rata_rata_bulanan",
+      "community": 319,
+      "norm_label": "\ud83d\udcb8 metode ter (tarif efektif rata-rata) bulanan"
+    },
+    {
+      "label": "\ud83d\udcc8 Tarif Progresif Pasal 17 UU PPh (UU HPP)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "wiki_pph_pasal_21_tarif_progresif_pasal_17_uu_pph_uu_hpp",
+      "community": 319,
+      "norm_label": "\ud83d\udcc8 tarif progresif pasal 17 uu pph (uu hpp)"
+    },
+    {
+      "label": "Pajak_Pertambahan_Nilai.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_pajak_pertambahan_nilai",
+      "community": 312,
+      "norm_label": "pajak_pertambahan_nilai.md"
+    },
+    {
+      "label": "\ud83d\udcca Pajak Pertambahan Nilai (PPN)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
+      "community": 312,
+      "norm_label": "\ud83d\udcca pajak pertambahan nilai (ppn)"
+    },
+    {
+      "label": "Ketentuan Umum",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_pajak_pertambahan_nilai_ketentuan_umum",
+      "community": 312,
+      "norm_label": "ketentuan umum"
+    },
+    {
+      "label": "\ud83d\uded2 Mekanisme Pengkreditan PPN",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "wiki_pajak_pertambahan_nilai_mekanisme_pengkreditan_ppn",
+      "community": 312,
+      "norm_label": "\ud83d\uded2 mekanisme pengkreditan ppn"
+    },
+    {
+      "label": "\ud83c\udfdb\ufe0f PPN Wapu (Wajib Pungut)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "wiki_pajak_pertambahan_nilai_ppn_wapu_wajib_pungut",
+      "community": 312,
+      "norm_label": "\ud83c\udfdb\ufe0f ppn wapu (wajib pungut)"
+    },
+    {
+      "label": "Penghasilan_Tidak_Kena_Pajak.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_penghasilan_tidak_kena_pajak",
+      "community": 317,
+      "norm_label": "penghasilan_tidak_kena_pajak.md"
+    },
+    {
+      "label": "\ud83d\udcca Penghasilan Tidak Kena Pajak (PTKP)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp",
+      "community": 317,
+      "norm_label": "\ud83d\udcca penghasilan tidak kena pajak (ptkp)"
+    },
+    {
+      "label": "Tarif Tahunan PTKP Indonesia (Saat Ini)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini",
+      "community": 317,
+      "norm_label": "tarif tahunan ptkp indonesia (saat ini)"
+    },
+    {
+      "label": "Contoh Perhitungan Cepat",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "wiki_penghasilan_tidak_kena_pajak_contoh_perhitungan_cepat",
+      "community": 317,
+      "norm_label": "contoh perhitungan cepat"
+    },
+    {
+      "label": "Rudenim_Pontianak.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Rudenim_Pontianak.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_rudenim_pontianak",
+      "community": 323,
+      "norm_label": "rudenim_pontianak.md"
+    },
+    {
+      "label": "\ud83c\udfe2 Rumah Detensi Imigrasi Pontianak",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Rudenim_Pontianak.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak",
+      "community": 323,
+      "norm_label": "\ud83c\udfe2 rumah detensi imigrasi pontianak"
+    },
+    {
+      "label": "Fungsi & Karakteristik",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Rudenim_Pontianak.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_rudenim_pontianak_fungsi_karakteristik",
+      "community": 323,
+      "norm_label": "fungsi & karakteristik"
+    },
+    {
+      "label": "SAKTI.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/SAKTI.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_sakti",
+      "community": 324,
+      "norm_label": "sakti.md"
+    },
+    {
+      "label": "\ud83d\udcca Sistem Aplikasi Keuangan Tingkat Instansi (SAKTI)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/SAKTI.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti",
+      "community": 324,
+      "norm_label": "\ud83d\udcca sistem aplikasi keuangan tingkat instansi (sakti)"
+    },
+    {
+      "label": "Modul & Kegunaan",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/SAKTI.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_sakti_modul_kegunaan",
+      "community": 324,
+      "norm_label": "modul & kegunaan"
+    },
+    {
+      "label": "Source_AIOS_Intake.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Source_AIOS_Intake.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_source_aios_intake",
+      "community": 325,
+      "norm_label": "source_aios_intake.md"
+    },
+    {
+      "label": "\ud83d\udcda Sumber: AIS-OS Intake",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Source_AIOS_Intake.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_source_aios_intake_sumber_ais_os_intake",
+      "community": 325,
+      "norm_label": "\ud83d\udcda sumber: ais-os intake"
+    },
+    {
+      "label": "Rangkuman Isi",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Source_AIOS_Intake.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_source_aios_intake_rangkuman_isi",
+      "community": 325,
+      "norm_label": "rangkuman isi"
+    },
+    {
+      "label": "Source_Buku_Saku_Pajak_Dasar.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Source_Buku_Saku_Pajak_Dasar.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_source_buku_saku_pajak_dasar",
+      "community": 326,
+      "norm_label": "source_buku_saku_pajak_dasar.md"
+    },
+    {
+      "label": "\ud83d\udcda Sumber: Buku Saku Perpajakan Dasar (Taxation 101)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Source_Buku_Saku_Pajak_Dasar.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_source_buku_saku_pajak_dasar_sumber_buku_saku_perpajakan_dasar_taxation_101",
+      "community": 326,
+      "norm_label": "\ud83d\udcda sumber: buku saku perpajakan dasar (taxation 101)"
+    },
+    {
+      "label": "Cakupan Utama",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Source_Buku_Saku_Pajak_Dasar.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_source_buku_saku_pajak_dasar_cakupan_utama",
+      "community": 326,
+      "norm_label": "cakupan utama"
+    },
+    {
+      "label": "Source_Makalah_Seminar.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Source_Makalah_Seminar.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_source_makalah_seminar",
+      "community": 327,
+      "norm_label": "source_makalah_seminar.md"
+    },
+    {
+      "label": "\ud83d\udcda Sumber: Makalah Seminar Akuntansi - Ajie Bariandono",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Source_Makalah_Seminar.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_source_makalah_seminar_sumber_makalah_seminar_akuntansi_ajie_bariandono",
+      "community": 327,
+      "norm_label": "\ud83d\udcda sumber: makalah seminar akuntansi - ajie bariandono"
+    },
+    {
+      "label": "Rangkuman Penelitian",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Source_Makalah_Seminar.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_source_makalah_seminar_rangkuman_penelitian",
+      "community": 327,
+      "norm_label": "rangkuman penelitian"
+    },
+    {
+      "label": "Standar_Akuntansi_Pemerintah.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Standar_Akuntansi_Pemerintah.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_standar_akuntansi_pemerintah",
+      "community": 328,
+      "norm_label": "standar_akuntansi_pemerintah.md"
+    },
+    {
+      "label": "\ud83d\udcca Standar Akuntansi Pemerintah (SAP)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Standar_Akuntansi_Pemerintah.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap",
+      "community": 328,
+      "norm_label": "\ud83d\udcca standar akuntansi pemerintah (sap)"
+    },
+    {
+      "label": "Landasan Hukum",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Standar_Akuntansi_Pemerintah.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_standar_akuntansi_pemerintah_landasan_hukum",
+      "community": 328,
+      "norm_label": "landasan hukum"
+    },
+    {
+      "label": "Teori_Keagenan.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Teori_Keagenan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_teori_keagenan",
+      "community": 313,
+      "norm_label": "teori_keagenan.md"
+    },
+    {
+      "label": "\ud83d\udcca Teori Keagenan (Agency Theory)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Teori_Keagenan.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_teori_keagenan_teori_keagenan_agency_theory",
+      "community": 313,
+      "norm_label": "\ud83d\udcca teori keagenan (agency theory)"
+    },
+    {
+      "label": "Penerapan dalam Skripsi Rudenim Pontianak",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Teori_Keagenan.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_teori_keagenan_penerapan_dalam_skripsi_rudenim_pontianak",
+      "community": 313,
+      "norm_label": "penerapan dalam skripsi rudenim pontianak"
+    },
+    {
+      "label": "1. BUN (DJPb) sebagai Prinsipal & Satker sebagai Agen",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Teori_Keagenan.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "wiki_teori_keagenan_1_bun_djpb_sebagai_prinsipal_satker_sebagai_agen",
+      "community": 313,
+      "norm_label": "1. bun (djpb) sebagai prinsipal & satker sebagai agen"
+    },
+    {
+      "label": "2. Satker sebagai Prinsipal & Penyedia (Kontraktor) sebagai Agen",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Teori_Keagenan.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "wiki_teori_keagenan_2_satker_sebagai_prinsipal_penyedia_kontraktor_sebagai_agen",
+      "community": 313,
+      "norm_label": "2. satker sebagai prinsipal & penyedia (kontraktor) sebagai agen"
+    },
+    {
+      "label": "Withholding_Tax.md",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Withholding_Tax.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_withholding_tax",
+      "community": 329,
+      "norm_label": "withholding_tax.md"
+    },
+    {
+      "label": "\ud83d\udcca Withholding Tax (Pemotongan/Pemungutan Pajak Pihak Ketiga)",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Withholding_Tax.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga",
+      "community": 329,
+      "norm_label": "\ud83d\udcca withholding tax (pemotongan/pemungutan pajak pihak ketiga)"
+    },
+    {
+      "label": "Jenis-Jenis Withholding Tax PPh di Indonesia",
+      "file_type": "document",
+      "source_file": "thesis-brain/wiki/Withholding_Tax.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "wiki_withholding_tax_jenis_jenis_withholding_tax_pph_di_indonesia",
+      "community": 329,
+      "norm_label": "jenis-jenis withholding tax pph di indonesia"
     },
     {
       "label": "HAS_SUPABASE",
@@ -31636,6 +32936,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/api/pay-webhook.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_pay_webhook",
+      "target": "api_pay_webhook_handler"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "projects/studios/app/package.json",
       "source_location": "L12",
       "weight": 1.0,
@@ -31749,9 +33059,9 @@
       "source_file": "projects/studios/app/package.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_package_scripts",
-      "target": "app_package_scripts_sync",
-      "confidence_score": 1.0
+      "target": "app_package_scripts_sync"
     },
     {
       "relation": "contains",
@@ -31759,9 +33069,9 @@
       "source_file": "projects/studios/app/package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_package_dependencies",
-      "target": "app_package_dependencies_dotenv",
-      "confidence_score": 1.0
+      "target": "app_package_dependencies_dotenv"
     },
     {
       "relation": "contains",
@@ -31769,9 +33079,9 @@
       "source_file": "projects/studios/app/package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "app_package_dependencies",
-      "target": "app_package_dependencies_notionhq_client",
-      "confidence_score": 1.0
+      "target": "app_package_dependencies_notionhq_client"
     },
     {
       "relation": "contains",
@@ -31810,9 +33120,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "context": "import",
+      "confidence_score": 1.0,
       "source": "app_package_dependencies_notionhq_client",
-      "target": "_notionhq_client",
-      "confidence_score": 1.0
+      "target": "_notionhq_client"
     },
     {
       "relation": "imports",
@@ -31821,9 +33131,9 @@
       "source_location": "L16",
       "weight": 1.0,
       "context": "import",
+      "confidence_score": 1.0,
       "source": "app_package_dependencies_dotenv",
-      "target": "dotenv",
-      "confidence_score": 1.0
+      "target": "dotenv"
     },
     {
       "relation": "contains",
@@ -31921,9 +33231,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser",
-      "target": "scripts_notionparser_blockstobrainstorm",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstobrainstorm"
     },
     {
       "relation": "contains",
@@ -31931,9 +33241,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L208",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser",
-      "target": "scripts_notionparser_blockstoflashcards",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstoflashcards"
     },
     {
       "relation": "contains",
@@ -31941,9 +33251,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser",
-      "target": "scripts_notionparser_blockstomarkdown",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstomarkdown"
     },
     {
       "relation": "contains",
@@ -31951,9 +33261,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L253",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser",
-      "target": "scripts_notionparser_blockstoreferences",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstoreferences"
     },
     {
       "relation": "contains",
@@ -31961,9 +33271,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser",
-      "target": "scripts_notionparser_blockstoresume",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstoresume"
     },
     {
       "relation": "contains",
@@ -31971,9 +33281,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser",
-      "target": "scripts_notionparser_blocktomarkdown",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blocktomarkdown"
     },
     {
       "relation": "contains",
@@ -31981,9 +33291,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser",
-      "target": "scripts_notionparser_fetchallchildblocks",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_fetchallchildblocks"
     },
     {
       "relation": "contains",
@@ -31991,9 +33301,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser",
-      "target": "scripts_notionparser_getrichtext",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_getrichtext"
     },
     {
       "relation": "contains",
@@ -32001,9 +33311,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser",
-      "target": "scripts_notionparser_parsetableblock",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_parsetableblock"
     },
     {
       "relation": "imports_from",
@@ -32012,9 +33322,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_notionparser",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser"
     },
     {
       "relation": "calls",
@@ -32023,9 +33333,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L214",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_blockstoflashcards",
-      "target": "scripts_notionparser_getrichtext",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_getrichtext"
     },
     {
       "relation": "calls",
@@ -32034,9 +33344,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L261",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_blockstoreferences",
-      "target": "scripts_notionparser_getrichtext",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_getrichtext"
     },
     {
       "relation": "calls",
@@ -32045,9 +33355,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_blockstoresume",
-      "target": "scripts_notionparser_getrichtext",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_getrichtext"
     },
     {
       "relation": "calls",
@@ -32056,9 +33366,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_blocktomarkdown",
-      "target": "scripts_notionparser_getrichtext",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_getrichtext"
     },
     {
       "relation": "calls",
@@ -32067,9 +33377,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_blockstomarkdown",
-      "target": "scripts_notionparser_blocktomarkdown",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blocktomarkdown"
     },
     {
       "relation": "calls",
@@ -32078,9 +33388,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_blockstomarkdown",
-      "target": "scripts_notionparser_fetchallchildblocks",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_fetchallchildblocks"
     },
     {
       "relation": "imports",
@@ -32089,9 +33399,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_notionparser_blockstomarkdown",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstomarkdown"
     },
     {
       "relation": "calls",
@@ -32100,9 +33410,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L181",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_syncengine",
-      "target": "scripts_notionparser_blockstomarkdown",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstomarkdown"
     },
     {
       "relation": "calls",
@@ -32111,9 +33421,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L209",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_blockstoflashcards",
-      "target": "scripts_notionparser_fetchallchildblocks",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_fetchallchildblocks"
     },
     {
       "relation": "calls",
@@ -32122,9 +33432,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L254",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_blockstoreferences",
-      "target": "scripts_notionparser_fetchallchildblocks",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_fetchallchildblocks"
     },
     {
       "relation": "calls",
@@ -32133,9 +33443,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L141",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_blockstoresume",
-      "target": "scripts_notionparser_fetchallchildblocks",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_fetchallchildblocks"
     },
     {
       "relation": "calls",
@@ -32144,9 +33454,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_blocktomarkdown",
-      "target": "scripts_notionparser_fetchallchildblocks",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_fetchallchildblocks"
     },
     {
       "relation": "calls",
@@ -32155,9 +33465,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_parsetableblock",
-      "target": "scripts_notionparser_fetchallchildblocks",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_fetchallchildblocks"
     },
     {
       "relation": "calls",
@@ -32166,9 +33476,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L221",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_blockstoflashcards",
-      "target": "scripts_notionparser_blocktomarkdown",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blocktomarkdown"
     },
     {
       "relation": "calls",
@@ -32177,9 +33487,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L158",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_blockstoresume",
-      "target": "scripts_notionparser_blocktomarkdown",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blocktomarkdown"
     },
     {
       "relation": "calls",
@@ -32188,9 +33498,9 @@
       "source_file": "projects/studios/app/scripts/notionParser.js",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_notionparser_blocktomarkdown",
-      "target": "scripts_notionparser_parsetableblock",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_parsetableblock"
     },
     {
       "relation": "imports",
@@ -32199,9 +33509,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_notionparser_blockstoresume",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstoresume"
     },
     {
       "relation": "calls",
@@ -32210,9 +33520,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_syncengine",
-      "target": "scripts_notionparser_blockstoresume",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstoresume"
     },
     {
       "relation": "imports",
@@ -32221,9 +33531,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_notionparser_blockstobrainstorm",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstobrainstorm"
     },
     {
       "relation": "calls",
@@ -32232,9 +33542,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L183",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_syncengine",
-      "target": "scripts_notionparser_blockstobrainstorm",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstobrainstorm"
     },
     {
       "relation": "imports",
@@ -32243,9 +33553,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_notionparser_blockstoflashcards",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstoflashcards"
     },
     {
       "relation": "calls",
@@ -32254,9 +33564,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L185",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_syncengine",
-      "target": "scripts_notionparser_blockstoflashcards",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstoflashcards"
     },
     {
       "relation": "imports",
@@ -32265,9 +33575,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_notionparser_blockstoreferences",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstoreferences"
     },
     {
       "relation": "calls",
@@ -32276,9 +33586,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L187",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_syncengine",
-      "target": "scripts_notionparser_blockstoreferences",
-      "confidence_score": 1.0
+      "target": "scripts_notionparser_blockstoreferences"
     },
     {
       "relation": "imports_from",
@@ -32287,9 +33597,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "dotenv",
-      "confidence_score": 1.0
+      "target": "dotenv"
     },
     {
       "relation": "contains",
@@ -32297,9 +33607,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_sync_getcheckboxproperty",
-      "confidence_score": 1.0
+      "target": "scripts_sync_getcheckboxproperty"
     },
     {
       "relation": "contains",
@@ -32307,9 +33617,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_sync_getnumberproperty",
-      "confidence_score": 1.0
+      "target": "scripts_sync_getnumberproperty"
     },
     {
       "relation": "contains",
@@ -32317,9 +33627,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_sync_getpageicon",
-      "confidence_score": 1.0
+      "target": "scripts_sync_getpageicon"
     },
     {
       "relation": "contains",
@@ -32327,9 +33637,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_sync_getrelationproperty",
-      "confidence_score": 1.0
+      "target": "scripts_sync_getrelationproperty"
     },
     {
       "relation": "contains",
@@ -32337,9 +33647,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_sync_getrichtextproperty",
-      "confidence_score": 1.0
+      "target": "scripts_sync_getrichtextproperty"
     },
     {
       "relation": "contains",
@@ -32347,9 +33657,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_sync_getselectproperty",
-      "confidence_score": 1.0
+      "target": "scripts_sync_getselectproperty"
     },
     {
       "relation": "contains",
@@ -32357,9 +33667,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_sync_gettitleproperty",
-      "confidence_score": 1.0
+      "target": "scripts_sync_gettitleproperty"
     },
     {
       "relation": "contains",
@@ -32367,9 +33677,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_sync_missingenv",
-      "confidence_score": 1.0
+      "target": "scripts_sync_missingenv"
     },
     {
       "relation": "contains",
@@ -32377,9 +33687,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_sync_notion",
-      "confidence_score": 1.0
+      "target": "scripts_sync_notion"
     },
     {
       "relation": "contains",
@@ -32387,9 +33697,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_sync_requiredenv",
-      "confidence_score": 1.0
+      "target": "scripts_sync_requiredenv"
     },
     {
       "relation": "contains",
@@ -32397,9 +33707,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_sync_supabase",
-      "confidence_score": 1.0
+      "target": "scripts_sync_supabase"
     },
     {
       "relation": "contains",
@@ -32407,9 +33717,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync",
-      "target": "scripts_sync_syncengine",
-      "confidence_score": 1.0
+      "target": "scripts_sync_syncengine"
     },
     {
       "relation": "calls",
@@ -32418,9 +33728,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_syncengine",
-      "target": "scripts_sync_gettitleproperty",
-      "confidence_score": 1.0
+      "target": "scripts_sync_gettitleproperty"
     },
     {
       "relation": "calls",
@@ -32429,9 +33739,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_syncengine",
-      "target": "scripts_sync_getrichtextproperty",
-      "confidence_score": 1.0
+      "target": "scripts_sync_getrichtextproperty"
     },
     {
       "relation": "calls",
@@ -32440,9 +33750,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_syncengine",
-      "target": "scripts_sync_getcheckboxproperty",
-      "confidence_score": 1.0
+      "target": "scripts_sync_getcheckboxproperty"
     },
     {
       "relation": "calls",
@@ -32451,9 +33761,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L158",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_syncengine",
-      "target": "scripts_sync_getnumberproperty",
-      "confidence_score": 1.0
+      "target": "scripts_sync_getnumberproperty"
     },
     {
       "relation": "calls",
@@ -32462,9 +33772,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_syncengine",
-      "target": "scripts_sync_getselectproperty",
-      "confidence_score": 1.0
+      "target": "scripts_sync_getselectproperty"
     },
     {
       "relation": "calls",
@@ -32473,9 +33783,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_syncengine",
-      "target": "scripts_sync_getrelationproperty",
-      "confidence_score": 1.0
+      "target": "scripts_sync_getrelationproperty"
     },
     {
       "relation": "calls",
@@ -32484,9 +33794,9 @@
       "source_file": "projects/studios/app/scripts/sync.js",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sync_syncengine",
-      "target": "scripts_sync_getpageicon",
-      "confidence_score": 1.0
+      "target": "scripts_sync_getpageicon"
     },
     {
       "relation": "imports_from",
@@ -32662,7 +33972,29 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app",
+      "target": "services_dataservice_getcontentbystack"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/App.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
       "target": "services_dataservice_getpurchases"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/App.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "services_dataservice_getreferences"
     },
     {
       "relation": "imports",
@@ -32723,11 +34055,33 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "projects/studios/app/src/App.jsx",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_app",
+      "target": "services_dataservice_getcontentbystack"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/App.jsx",
       "source_location": "L36",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "src_app_app",
       "target": "services_dataservice_getpurchases"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/App.jsx",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_app",
+      "target": "services_dataservice_getreferences"
     },
     {
       "relation": "calls",
@@ -32761,6 +34115,38 @@
       "confidence_score": 1.0,
       "source": "src_main",
       "target": "src_app_app"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/components/PaymentSimulatorModal.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "components_paymentsimulatormodal",
+      "target": "components_paymentsimulatormodal_paymentsimulatormodal"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/pages/StackPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_stackpage",
+      "target": "components_paymentsimulatormodal"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/pages/StackPage.jsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_stackpage",
+      "target": "components_paymentsimulatormodal_paymentsimulatormodal"
     },
     {
       "relation": "contains",
@@ -33028,6 +34414,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
+      "source_location": "L187",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_contentviewer",
+      "target": "pages_contentviewer_htmlcontentrenderer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
       "source_location": "L356",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -33272,6 +34668,26 @@
       "confidence_score": 1.0,
       "source": "services_dataservice",
       "target": "services_dataservice_purchasestack"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/vercel.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_vercel",
+      "target": "app_vercel_cleanurls"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/vercel.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "app_vercel",
+      "target": "app_vercel_rewrites"
     },
     {
       "relation": "contains",
@@ -46271,6 +47687,46 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "projects/studios/02-quality-gate.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_02_quality_gate",
+      "target": "studios_02_quality_gate_quality_gate_studios_global_the_immersive_explorer_layout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/02-quality-gate.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_02_quality_gate_quality_gate_studios_global_the_immersive_explorer_layout",
+      "target": "studios_02_quality_gate_keputusan_go_no_go"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/02-quality-gate.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_02_quality_gate_quality_gate_studios_global_the_immersive_explorer_layout",
+      "target": "studios_02_quality_gate_quality_gate_checklist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/02-quality-gate.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_02_quality_gate_keputusan_go_no_go",
+      "target": "studios_02_quality_gate_catatan_keputusan_desain_grill_me"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "projects/studios/app/README.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -46571,6 +48027,36 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "projects/studios/scratch_report.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_scratch_report",
+      "target": "studios_scratch_report_verification_report_studios_dashboard_interactive_3d_content"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/scratch_report.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_scratch_report_verification_report_studios_dashboard_interactive_3d_content",
+      "target": "studios_scratch_report_1_langkah_langkah_verifikasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/scratch_report.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_scratch_report_verification_report_studios_dashboard_interactive_3d_content",
+      "target": "studios_scratch_report_2_hasil_verifikasi_perilaku_drawer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "projects/studios/task.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -46682,6 +48168,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/studios/work-log.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_work_log_work_log_studios",
+      "target": "studios_work_log_2026_06_16"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/work-log.md",
       "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -46704,9 +48200,19 @@
       "source_file": "projects/studios/work-log.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "studios_work_log_2026_06_15",
-      "target": "studios_work_log_tahap_3_notion_sync_engine_otomatisasi_sinkronisasi_konten",
-      "confidence_score": 1.0
+      "target": "studios_work_log_tahap_3_notion_sync_engine_otomatisasi_sinkronisasi_konten"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/work-log.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_work_log_2026_06_16",
+      "target": "studios_work_log_optimasi_webgl_sinkronisasi_kurikulum_medis_phase_3_anatomi_dasar"
     },
     {
       "relation": "contains",
@@ -48137,6 +49643,876 @@
       "confidence_score": 1.0,
       "source": "revisi_tabel_ikpa_indikator_draft_tabel_indikator_dan_bobot_ikpa_per_5_pb_2024",
       "target": "revisi_tabel_ikpa_indikator_catatan_penempatan_di_word"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "thesis_brain_claude",
+      "target": "thesis_brain_claude_claude_md_llm_wiki_agent_rules_thesis_research",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "thesis_brain_claude_claude_md_llm_wiki_agent_rules_thesis_research",
+      "target": "thesis_brain_claude_1_core_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "thesis_brain_claude_claude_md_llm_wiki_agent_rules_thesis_research",
+      "target": "thesis_brain_claude_2_file_page_naming_conventions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "thesis_brain_claude_claude_md_llm_wiki_agent_rules_thesis_research",
+      "target": "thesis_brain_claude_3_categories_in_index_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "thesis_brain_claude_claude_md_llm_wiki_agent_rules_thesis_research",
+      "target": "thesis_brain_claude_4_agent_workflows_prompts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "thesis_brain_claude_4_agent_workflows_prompts",
+      "target": "thesis_brain_claude_ingest_mengimpor_data_mentah_dari_raw",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/CLAUDE.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "thesis_brain_claude_4_agent_workflows_prompts",
+      "target": "thesis_brain_claude_lint_audit_pembersihan_konsistensi_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/index.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "thesis_brain_index",
+      "target": "thesis_brain_index_ais_os_thesis_knowledge_brain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/index.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "thesis_brain_index_ais_os_thesis_knowledge_brain",
+      "target": "thesis_brain_index_1_sumber_daya_acuan_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/index.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "thesis_brain_index_ais_os_thesis_knowledge_brain",
+      "target": "thesis_brain_index_2_entitas_utama_entities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/index.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "thesis_brain_index_ais_os_thesis_knowledge_brain",
+      "target": "thesis_brain_index_3_konsep_teori_concepts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/index.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "thesis_brain_index_ais_os_thesis_knowledge_brain",
+      "target": "thesis_brain_index_4_regulasi_kebijakan_regulations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/log.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "thesis_brain_log",
+      "target": "thesis_brain_log_operation_history_audit_log",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "raw_aios_intake",
+      "target": "raw_aios_intake_ais_os_intake",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "raw_aios_intake_ais_os_intake",
+      "target": "raw_aios_intake_q1_who_are_you_what_do_you_sell_who_do_you_sell_it_to",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "raw_aios_intake_ais_os_intake",
+      "target": "raw_aios_intake_q2_paste_1_2_things_you_ve_written_recently_don_t_edit_them",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "raw_aios_intake_ais_os_intake",
+      "target": "raw_aios_intake_q3_what_are_your_2_3_biggest_priorities_for_the_next_90_days",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "raw_aios_intake_ais_os_intake",
+      "target": "raw_aios_intake_q4_where_does_revenue_actually_land_and_where_is_it_tracked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "raw_aios_intake_ais_os_intake",
+      "target": "raw_aios_intake_q5_where_do_you_talk_to_customers_your_team_and_the_outside_world_day_to_day",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "raw_aios_intake_ais_os_intake",
+      "target": "raw_aios_intake_q6_where_do_meeting_recordings_notes_and_important_docs_live",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/aios-intake.md",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "raw_aios_intake_ais_os_intake",
+      "target": "raw_aios_intake_q7_what_s_the_one_task_that_eats_your_week_and_where_do_you_currently_track_work",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar",
+      "target": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
+      "target": "raw_buku_saku_pajak_dasar_1_ketentuan_umum_tata_cara_perpajakan_kup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
+      "target": "raw_buku_saku_pajak_dasar_2_pph_21_metode_ter_tarif_efektif_rata_rata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
+      "target": "raw_buku_saku_pajak_dasar_3_withholding_tax_pph_pemotongan_pemungutan_pihak_ketiga",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
+      "target": "raw_buku_saku_pajak_dasar_4_pajak_pertambahan_nilai_ppn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
+      "target": "raw_buku_saku_pajak_dasar_5_coretax_system_pmk_1_2026_restrukturisasi_bumn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
+      "target": "raw_buku_saku_pajak_dasar_6_cheat_sheets_trik_cepat_mahasiswa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_1_ketentuan_umum_tata_cara_perpajakan_kup",
+      "target": "raw_buku_saku_pajak_dasar_a_tiga_sistem_pemungutan_pajak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_1_ketentuan_umum_tata_cara_perpajakan_kup",
+      "target": "raw_buku_saku_pajak_dasar_b_kalender_wajib_pajak_batas_setor_lapor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_2_pph_21_metode_ter_tarif_efektif_rata_rata",
+      "target": "raw_buku_saku_pajak_dasar_a_pengelompokan_kategori_ter_bulanan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_2_pph_21_metode_ter_tarif_efektif_rata_rata",
+      "target": "raw_buku_saku_pajak_dasar_b_rumus_akhir_tahun_masa_pajak_desember",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_4_pajak_pertambahan_nilai_ppn",
+      "target": "raw_buku_saku_pajak_dasar_a_formula_pengkreditan_pajak_ppn_masa_bulanan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_4_pajak_pertambahan_nilai_ppn",
+      "target": "raw_buku_saku_pajak_dasar_b_aturan_ppn_wapu_wajib_pungut",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_6_cheat_sheets_trik_cepat_mahasiswa",
+      "target": "raw_buku_saku_pajak_dasar_a_jembatan_keledai_mengingat_jenis_pph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "raw_buku_saku_pajak_dasar_6_cheat_sheets_trik_cepat_mahasiswa",
+      "target": "raw_buku_saku_pajak_dasar_b_rumus_ptkp_tahunan_cepat_tk_0_dasar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/makalah_seminar.md",
+      "source_location": "L239",
+      "weight": 1.0,
+      "source": "raw_makalah_seminar",
+      "target": "raw_makalah_seminar_tabel_1_3_deviasi_halaman_iii_dipa_belanja_modal_rudenim_pontianak_ta_2023_2025",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/makalah_seminar.md",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "raw_makalah_seminar",
+      "target": "raw_makalah_seminar_tabel_1_4_bulan_kritis_deviasi_belanja_modal_rudenim_pontianak_ta_2023_2025",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/raw/makalah_seminar.md",
+      "source_location": "L267",
+      "weight": 1.0,
+      "source": "raw_makalah_seminar",
+      "target": "raw_makalah_seminar_tabel_1_5_contoh_paket_belanja_modal_yang_mengalami_pergeseran_realisasi_ta_2023_2025",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_analisis_kasus_rudenim_pontianak",
+      "target": "wiki_analisis_kasus_rudenim_pontianak_analisis_kasus_deviasi_anggaran_belanja_modal_rudenim_pontianak_ta_2023_2025",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "wiki_analisis_kasus_rudenim_pontianak_analisis_kasus_deviasi_anggaran_belanja_modal_rudenim_pontianak_ta_2023_2025",
+      "target": "wiki_analisis_kasus_rudenim_pontianak_1_statistik_deviasi_tahunan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "wiki_analisis_kasus_rudenim_pontianak_analisis_kasus_deviasi_anggaran_belanja_modal_rudenim_pontianak_ta_2023_2025",
+      "target": "wiki_analisis_kasus_rudenim_pontianak_2_bulan_bulan_kritis_deviasi_deviasi_100",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "wiki_analisis_kasus_rudenim_pontianak_analisis_kasus_deviasi_anggaran_belanja_modal_rudenim_pontianak_ta_2023_2025",
+      "target": "wiki_analisis_kasus_rudenim_pontianak_3_analisis_paket_pekerjaan_penyebab_pergeseran",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "wiki_analisis_kasus_rudenim_pontianak_1_statistik_deviasi_tahunan",
+      "target": "wiki_analisis_kasus_rudenim_pontianak_analisis_tren",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Coretax_System.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_coretax_system",
+      "target": "wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Coretax_System.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan",
+      "target": "wiki_coretax_system_dasar_hukum_fitur_utama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_dipa_halaman_iii",
+      "target": "wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
+      "target": "wiki_dipa_halaman_iii_karakteristik_pergeseran_pemutakhiran",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
+      "target": "wiki_dipa_halaman_iii_peran_strategis_rpd_halaman_iii",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Deviasi_Anggaran.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_deviasi_anggaran",
+      "target": "wiki_deviasi_anggaran_deviasi_anggaran",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Deviasi_Anggaran.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_deviasi_anggaran_deviasi_anggaran",
+      "target": "wiki_deviasi_anggaran_signifikansi_dalam_skripsi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/IKPA.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_ikpa",
+      "target": "wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/IKPA.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
+      "target": "wiki_ikpa_kategori_penilaian_ikpa",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/IKPA.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
+      "target": "wiki_ikpa_kerangka_hukum_aspek_penilaian",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Kemenkumham.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_kemenkumham",
+      "target": "wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Kemenkumham.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham",
+      "target": "wiki_kemenkumham_kewajiban_pelaporan_keuangan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/PMK_01_2026.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_pmk_01_2026",
+      "target": "wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/PMK_01_2026.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
+      "target": "wiki_pmk_01_2026_definisi_bumn_di_era_coretax",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/PMK_01_2026.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
+      "target": "wiki_pmk_01_2026_insentif_pajak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_pph_pasal_21",
+      "target": "wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
+      "target": "wiki_pph_pasal_21_metode_ter_tarif_efektif_rata_rata_bulanan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
+      "target": "wiki_pph_pasal_21_tarif_progresif_pasal_17_uu_pph_uu_hpp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_pajak_pertambahan_nilai",
+      "target": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
+      "target": "wiki_pajak_pertambahan_nilai_ketentuan_umum",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
+      "target": "wiki_pajak_pertambahan_nilai_mekanisme_pengkreditan_ppn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
+      "target": "wiki_pajak_pertambahan_nilai_ppn_wapu_wajib_pungut",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_penghasilan_tidak_kena_pajak",
+      "target": "wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp",
+      "target": "wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini",
+      "target": "wiki_penghasilan_tidak_kena_pajak_contoh_perhitungan_cepat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Rudenim_Pontianak.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_rudenim_pontianak",
+      "target": "wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Rudenim_Pontianak.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak",
+      "target": "wiki_rudenim_pontianak_fungsi_karakteristik",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/SAKTI.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_sakti",
+      "target": "wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/SAKTI.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti",
+      "target": "wiki_sakti_modul_kegunaan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Source_AIOS_Intake.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_source_aios_intake",
+      "target": "wiki_source_aios_intake_sumber_ais_os_intake",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Source_AIOS_Intake.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_source_aios_intake_sumber_ais_os_intake",
+      "target": "wiki_source_aios_intake_rangkuman_isi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Source_Buku_Saku_Pajak_Dasar.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_source_buku_saku_pajak_dasar",
+      "target": "wiki_source_buku_saku_pajak_dasar_sumber_buku_saku_perpajakan_dasar_taxation_101",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Source_Buku_Saku_Pajak_Dasar.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_source_buku_saku_pajak_dasar_sumber_buku_saku_perpajakan_dasar_taxation_101",
+      "target": "wiki_source_buku_saku_pajak_dasar_cakupan_utama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Source_Makalah_Seminar.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_source_makalah_seminar",
+      "target": "wiki_source_makalah_seminar_sumber_makalah_seminar_akuntansi_ajie_bariandono",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Source_Makalah_Seminar.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_source_makalah_seminar_sumber_makalah_seminar_akuntansi_ajie_bariandono",
+      "target": "wiki_source_makalah_seminar_rangkuman_penelitian",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Standar_Akuntansi_Pemerintah.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_standar_akuntansi_pemerintah",
+      "target": "wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Standar_Akuntansi_Pemerintah.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap",
+      "target": "wiki_standar_akuntansi_pemerintah_landasan_hukum",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Teori_Keagenan.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_teori_keagenan",
+      "target": "wiki_teori_keagenan_teori_keagenan_agency_theory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Teori_Keagenan.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_teori_keagenan_teori_keagenan_agency_theory",
+      "target": "wiki_teori_keagenan_penerapan_dalam_skripsi_rudenim_pontianak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Teori_Keagenan.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "wiki_teori_keagenan_penerapan_dalam_skripsi_rudenim_pontianak",
+      "target": "wiki_teori_keagenan_1_bun_djpb_sebagai_prinsipal_satker_sebagai_agen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Teori_Keagenan.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "wiki_teori_keagenan_penerapan_dalam_skripsi_rudenim_pontianak",
+      "target": "wiki_teori_keagenan_2_satker_sebagai_prinsipal_penyedia_kontraktor_sebagai_agen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Withholding_Tax.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_withholding_tax",
+      "target": "wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "thesis-brain/wiki/Withholding_Tax.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga",
+      "target": "wiki_withholding_tax_jenis_jenis_withholding_tax_pph_di_indonesia",
+      "confidence_score": 1.0
     },
     {
       "relation": "has_field",
@@ -58428,5 +60804,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "639d97d9ea74e2b48dfbf150af1882db79daf08e"
+  "built_at_commit": "63c1947c59364e044ed0123d346349d3421233bf"
 }

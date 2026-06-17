@@ -825,9 +825,9 @@
     "semantic_hash": "3ee71458ef8f8aed9cac30d298c67312"
   },
   "skripsi/drafts/makalah_seminar.md": {
-    "mtime": 1781422557.6742032,
-    "ast_hash": "aefa1be944bd204873e45d725f07c40c",
-    "semantic_hash": "aefa1be944bd204873e45d725f07c40c"
+    "mtime": 1781664972.2318053,
+    "ast_hash": "e93d08eca0a4d72ec988f3fd11cce905",
+    "semantic_hash": ""
   },
   "skripsi/revisi/audit-catatan-dosen-2026-06-11.md": {
     "mtime": 1781161878.017585,
@@ -950,8 +950,8 @@
     "semantic_hash": ""
   },
   "projects/studios/app/src/App.jsx": {
-    "mtime": 1781518290.498152,
-    "ast_hash": "7a94c7e9890397cfdbcde33905b47282",
+    "mtime": 1781625517.8886437,
+    "ast_hash": "496783df4017e7d695d8f6fb754e69be",
     "semantic_hash": ""
   },
   "projects/studios/app/src/data/mockData.js": {
@@ -965,8 +965,8 @@
     "semantic_hash": ""
   },
   "projects/studios/app/src/pages/ContentViewer.jsx": {
-    "mtime": 1781518008.4678793,
-    "ast_hash": "8b9f3e712762c7c6835d3f5866d45a1f",
+    "mtime": 1781665175.132081,
+    "ast_hash": "949280b1d3610ca8f9a7bd25c1188955",
     "semantic_hash": ""
   },
   "projects/studios/app/src/pages/Dashboard.jsx": {
@@ -975,8 +975,8 @@
     "semantic_hash": ""
   },
   "projects/studios/app/src/pages/StackPage.jsx": {
-    "mtime": 1781518303.0734024,
-    "ast_hash": "420930b67507c41e4f73797b04ba25d9",
+    "mtime": 1781594801.0817523,
+    "ast_hash": "d76a3d20f47d69f89be8da167571efa0",
     "semantic_hash": ""
   },
   "projects/studios/app/vite.config.js": {
@@ -1065,13 +1065,13 @@
     "semantic_hash": ""
   },
   "projects/studios/app/index.html": {
-    "mtime": 1781509525.3520877,
-    "ast_hash": "e015e6fe6e72a7c88917b322cc33aeba",
+    "mtime": 1781594772.0879397,
+    "ast_hash": "47f0dd6dc37c94ef1df21d52b424987c",
     "semantic_hash": ""
   },
   "projects/studios/work-log.md": {
-    "mtime": 1781528133.390401,
-    "ast_hash": "be55e1a496bb0732d5e68aa479750bec",
+    "mtime": 1781591613.923114,
+    "ast_hash": "d2f16d1549653610fd9b252d0e6c99e9",
     "semantic_hash": ""
   },
   "projects/studios/app/public/favicon.svg": {
@@ -1095,13 +1095,13 @@
     "semantic_hash": ""
   },
   "projects/studios/task.md": {
-    "mtime": 1781518866.897153,
-    "ast_hash": "5ecb59aa0c3a36eee184ca8c14512865",
+    "mtime": 1781538969.6518576,
+    "ast_hash": "7e822a024e805d95b57d9362cf11628f",
     "semantic_hash": ""
   },
   "projects/studios/supabase_schema.sql": {
-    "mtime": 1781518942.0800512,
-    "ast_hash": "fd1215e87d226b579b54650c199c6642",
+    "mtime": 1781592124.3467736,
+    "ast_hash": "507f9bb5e16a66dd42a22d409327bd53",
     "semantic_hash": ""
   },
   "projects/studios/supabase_seed.sql": {
@@ -1120,23 +1120,178 @@
     "semantic_hash": ""
   },
   "projects/studios/app/src/services/dataService.js": {
-    "mtime": 1781518282.0942757,
-    "ast_hash": "036bfec059af2e1f6b7999ac07e92fec",
+    "mtime": 1781592130.7609675,
+    "ast_hash": "3814313ccb5348e89ea652a0f8a9eca3",
     "semantic_hash": ""
   },
   "projects/studios/app/scripts/notionParser.js": {
-    "mtime": 1781528003.2771108,
-    "ast_hash": "9cc8bf393f72f55ff8c205ba245d37d8",
+    "mtime": 1781539749.8530688,
+    "ast_hash": "b0342474bdd092c901bed0d646679b76",
     "semantic_hash": ""
   },
   "projects/studios/app/scripts/sync.js": {
-    "mtime": 1781528015.381956,
-    "ast_hash": "ea3b7da1579832cd8ffc10c207741241",
+    "mtime": 1781538212.9659688,
+    "ast_hash": "293b16416765d81b5f643cd04611a3b1",
     "semantic_hash": ""
   },
   ".github/workflows/notion-sync.yml": {
     "mtime": 1781528119.5196333,
     "ast_hash": "ac04cbf2cbddb41d343fbc3fb6db2618",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/api/pay-webhook.js": {
+    "mtime": 1781590727.418056,
+    "ast_hash": "76fed48caac7b0434b580d2b146e95dd",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/src/components/PaymentSimulatorModal.jsx": {
+    "mtime": 1781590695.6340632,
+    "ast_hash": "5100715edee3505cf60b76b41e1ca5df",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/vercel.json": {
+    "mtime": 1781590766.8689945,
+    "ast_hash": "e89492afd8ca52acf2b3761cfacaab68",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/public/widgets/3d-brain-anatomy/index.html": {
+    "mtime": 1781594023.6702354,
+    "ast_hash": "bf7971f9d15ec4c0fb873068ec637a17",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/public/widgets/3d-brain-anatomy/index_v1_optimized.html": {
+    "mtime": 1781588604.3132567,
+    "ast_hash": "31e8e7d8f3b3cf69134903a7e391a93b",
+    "semantic_hash": ""
+  },
+  "projects/studios/scratch_report.md": {
+    "mtime": 1781624423.0453053,
+    "ast_hash": "b9a0e2fe1bda195188e543d593a5590c",
+    "semantic_hash": ""
+  },
+  "projects/studios/02-quality-gate.md": {
+    "mtime": 1781624718.3658836,
+    "ast_hash": "86944954d31a97dbb1c2f77f0222152b",
+    "semantic_hash": ""
+  },
+  "thesis-brain/CLAUDE.md": {
+    "mtime": 1781664651.824523,
+    "ast_hash": "96e17d9202e03685c5b62575f9dbb2cf",
+    "semantic_hash": ""
+  },
+  "thesis-brain/index.md": {
+    "mtime": 1781664929.0520077,
+    "ast_hash": "b7601568b7e3a493a8f964f15b62f4fe",
+    "semantic_hash": ""
+  },
+  "thesis-brain/log.md": {
+    "mtime": 1781664938.0841112,
+    "ast_hash": "a16bfcee64d497f8b6b0eb4859292018",
+    "semantic_hash": ""
+  },
+  "thesis-brain/raw/aios-intake.md": {
+    "mtime": 1781086760.8244364,
+    "ast_hash": "8c222deecf69ff08c25ff58824657ca2",
+    "semantic_hash": ""
+  },
+  "thesis-brain/raw/buku_saku_pajak_dasar.md": {
+    "mtime": 1781454137.3935256,
+    "ast_hash": "b7f6b8efc781dcce45613c54e7ed1a31",
+    "semantic_hash": ""
+  },
+  "thesis-brain/raw/makalah_seminar.md": {
+    "mtime": 1781422557.6742032,
+    "ast_hash": "aefa1be944bd204873e45d725f07c40c",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md": {
+    "mtime": 1781664916.4375958,
+    "ast_hash": "47e4beadf43da3d49f3c944770105db7",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Coretax_System.md": {
+    "mtime": 1781664807.7414474,
+    "ast_hash": "4b8af465fa3127cb5d0bc01db0da441a",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/DIPA_Halaman_III.md": {
+    "mtime": 1781664900.2337713,
+    "ast_hash": "aafde28fc5c8886233d8e39829f1ca17",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Deviasi_Anggaran.md": {
+    "mtime": 1781664756.459126,
+    "ast_hash": "c58c44078f3fcd51640fdd6602b8aece",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/IKPA.md": {
+    "mtime": 1781664888.724284,
+    "ast_hash": "4ed4a54b082c339bda0b9e323a37d941",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Kemenkumham.md": {
+    "mtime": 1781664718.1775768,
+    "ast_hash": "66282d4c335c425532488573f884dc58",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/PMK_01_2026.md": {
+    "mtime": 1781664817.3142245,
+    "ast_hash": "d56954c7783c56521d40a1880271e04d",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/PPh_Pasal_21.md": {
+    "mtime": 1781664790.352192,
+    "ast_hash": "cb5fa949b064adf3c0e8bd7a36a63618",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md": {
+    "mtime": 1781664798.52039,
+    "ast_hash": "0721b588768f5dabb19b849b8d9a8ca4",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md": {
+    "mtime": 1781664827.3840115,
+    "ast_hash": "f4140cc105431b18675911d89aa617b5",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Rudenim_Pontianak.md": {
+    "mtime": 1781664706.199703,
+    "ast_hash": "4c9821c0d57bbdf12b94ac6e2d67859c",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/SAKTI.md": {
+    "mtime": 1781664728.8365746,
+    "ast_hash": "28a4eae7aaed7069e071c6e5f39f4b36",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Source_AIOS_Intake.md": {
+    "mtime": 1781664695.2223341,
+    "ast_hash": "14df5ea8527e06b54f783a1ee6e8ea57",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Source_Buku_Saku_Pajak_Dasar.md": {
+    "mtime": 1781664768.227627,
+    "ast_hash": "9639699008be6f0207bf7b866d9daa3f",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Source_Makalah_Seminar.md": {
+    "mtime": 1781664865.9365711,
+    "ast_hash": "0c6b22321d3004572fa678d3ff924edd",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Standar_Akuntansi_Pemerintah.md": {
+    "mtime": 1781664738.495082,
+    "ast_hash": "800df75efd2861b7f25321f9a60ff035",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Teori_Keagenan.md": {
+    "mtime": 1781664878.1348822,
+    "ast_hash": "d4dad2a20c6f72a284a9c15569ee1631",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Withholding_Tax.md": {
+    "mtime": 1781664779.337217,
+    "ast_hash": "1ee2130ab987dc6fe2465d41760aba58",
     "semantic_hash": ""
   }
 }

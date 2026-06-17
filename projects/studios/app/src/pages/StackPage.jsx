@@ -1,6 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { contentTypeConfig } from "../data/mockData";
 import { getContentByStack } from "../services/dataService";
+import PaymentSimulatorModal from "../components/PaymentSimulatorModal";
 
 export default function StackPage({ 
   stack, 
@@ -14,6 +15,7 @@ export default function StackPage({
   const [contentItems, setContentItems] = useState([]);
   const [activeType, setActiveType] = useState("all");
   const [loading, setLoading] = useState(true);
+  const [showPaymentModal, setShowPaymentModal] = useState(false);
 
   useEffect(() => {
     if (isLocked) {
@@ -92,29 +94,15 @@ export default function StackPage({
             <div className="lock-icon-wrapper">🔒</div>
             <h2 className="lock-title">Buka Akses Premium</h2>
             <p className="lock-description">
-              Dapatkan akses penuh ke seluruh rangkuman materi, mind map, flashcard interaktif, dan bank referensi penting untuk topik ini.
+              Materi kuliah ini dilindungi. Silakan aktifkan akses Premium untuk membuka seluruh rangkuman, mind map, flashcard latihan, dan referensi eksternal.
             </p>
-            <div className="lock-benefits">
-              <div className="lock-benefit-item">
-                <span>⚡</span> Rangkuman Terstruktur (Resume & Catatan)
-              </div>
-              <div className="lock-benefit-item">
-                <span>🃏</span> Dek Flashcard Latihan Mengingat
-              </div>
-              <div className="lock-benefit-item">
-                <span>🌿</span> Visualisasi Mind Map / Brainstorm
-              </div>
-              <div className="lock-benefit-item">
-                <span>🔗</span> Link Referensi Jurnal & Regulasi Resmi
-              </div>
-            </div>
             <div className="lock-price">
               Rp 49.000 <span>/ akses selamanya</span>
             </div>
             {user ? (
               <button 
                 className="form-submit" 
-                onClick={onUnlock}
+                onClick={() => setShowPaymentModal(true)}
                 id="btn-unlock-premium"
               >
                 Beli & Buka Akses Sekarang
@@ -181,6 +169,18 @@ export default function StackPage({
             )}
           </section>
         </>
+      )}
+
+      {showPaymentModal && (
+        <PaymentSimulatorModal
+          stack={stack}
+          user={user}
+          onSuccess={async () => {
+            setShowPaymentModal(false);
+            await onUnlock();
+          }}
+          onClose={() => setShowPaymentModal(false)}
+        />
       )}
     </div>
   );

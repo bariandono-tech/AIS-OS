@@ -1,16 +1,16 @@
-# Graph Report - AIS-OS  (2026-06-15)
+# Graph Report - AIS-OS  (2026-06-17)
 
 ## Corpus Check
-- 211 files · ~262,557 words
+- 240 files · ~300,102 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2961 nodes · 2958 edges · 303 communities (218 shown, 85 thin omitted)
+- 3091 nodes · 3065 edges · 331 communities (234 shown, 97 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `639d97d9`
+- Built from commit: `63c1947c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -308,6 +308,33 @@
 - [[_COMMUNITY_Community 300|Community 300]]
 - [[_COMMUNITY_Community 301|Community 301]]
 - [[_COMMUNITY_Community 302|Community 302]]
+- [[_COMMUNITY_Community 303|Community 303]]
+- [[_COMMUNITY_Community 304|Community 304]]
+- [[_COMMUNITY_Community 306|Community 306]]
+- [[_COMMUNITY_Community 307|Community 307]]
+- [[_COMMUNITY_Community 308|Community 308]]
+- [[_COMMUNITY_Community 309|Community 309]]
+- [[_COMMUNITY_Community 310|Community 310]]
+- [[_COMMUNITY_Community 311|Community 311]]
+- [[_COMMUNITY_Community 312|Community 312]]
+- [[_COMMUNITY_Community 313|Community 313]]
+- [[_COMMUNITY_Community 314|Community 314]]
+- [[_COMMUNITY_Community 315|Community 315]]
+- [[_COMMUNITY_Community 316|Community 316]]
+- [[_COMMUNITY_Community 317|Community 317]]
+- [[_COMMUNITY_Community 318|Community 318]]
+- [[_COMMUNITY_Community 319|Community 319]]
+- [[_COMMUNITY_Community 320|Community 320]]
+- [[_COMMUNITY_Community 321|Community 321]]
+- [[_COMMUNITY_Community 322|Community 322]]
+- [[_COMMUNITY_Community 323|Community 323]]
+- [[_COMMUNITY_Community 324|Community 324]]
+- [[_COMMUNITY_Community 325|Community 325]]
+- [[_COMMUNITY_Community 326|Community 326]]
+- [[_COMMUNITY_Community 327|Community 327]]
+- [[_COMMUNITY_Community 328|Community 328]]
+- [[_COMMUNITY_Community 329|Community 329]]
+- [[_COMMUNITY_Community 330|Community 330]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
@@ -336,7 +363,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (303 total, 85 thin omitted)
+## Communities (331 total, 97 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -1099,7 +1126,7 @@ Nodes (4): 8. Tujuan dan Perencanaan Masa Depan (Goals & Future Planning), Datab
 
 ### Community 266 - "Community 266"
 Cohesion: 0.10
-Nodes (24): contentItems, contentTypeConfig, flashcards, getContentByStack(), getFlashcardsByContentId(), getReferencesByContentId(), references, stacks (+16 more)
+Nodes (25): PaymentSimulatorModal(), contentItems, contentTypeConfig, flashcards, getContentByStack(), getFlashcardsByContentId(), getReferencesByContentId(), references (+17 more)
 
 ### Community 267 - "Community 267"
 Cohesion: 0.07
@@ -1170,25 +1197,85 @@ Cohesion: 0.50
 Nodes (3): Expanding the ESLint configuration, React Compiler, React + Vite
 
 ### Community 295 - "Community 295"
+Cohesion: 0.25
+Nodes (7): 2026-06-15, 2026-06-16, Inisialisasi Proyek StudiOS & Refinement UI, Optimasi WebGL & Sinkronisasi Kurikulum Medis (Phase 3 - Anatomi Dasar), Tahap 2: Integrasi Frontend ke Supabase & Sistem Otorisasi Akses, Tahap 3: Notion Sync Engine (Otomatisasi Sinkronisasi Konten), Work Log — StudiOS
+
+### Community 304 - "Community 304"
+Cohesion: 0.40
+Nodes (4): Catatan Keputusan Desain (Grill-Me):, 🚦 Keputusan Go/No-Go, 📋 Quality Gate Checklist, Quality Gate: StudiOS Global "The Immersive Explorer" Layout
+
+### Community 306 - "Community 306"
+Cohesion: 0.50
+Nodes (3): 1. Langkah-Langkah Verifikasi, 2. Hasil Verifikasi & Perilaku Drawer, Verification Report: StudiOS Dashboard & Interactive 3D Content
+
+### Community 307 - "Community 307"
+Cohesion: 0.12
+Nodes (15): 🏛️ 1. KETENTUAN UMUM & TATA CARA PERPAJAKAN (KUP), 💸 2. PPh 21 METODE TER (TARIF EFEKTIF RATA-RATA), 💼 3. WITHHOLDING TAX PPh (PEMOTONGAN/PEMUNGUTAN PIHAK KETIGA), 🛒 4. PAJAK PERTAMBAHAN NILAI (PPN), 🌐 5. CORETAX SYSTEM & PMK 1/2026 (RESTRUKTURISASI BUMN), 🧠 6. CHEAT-SHEETS & TRIK CEPAT MAHASISWA, A. Formula Pengkreditan Pajak PPN (Masa Bulanan), A. Jembatan Keledai Mengingat Jenis PPh (+7 more)
+
+### Community 308 - "Community 308"
+Cohesion: 0.22
+Nodes (8): AIS-OS Intake, Q1 — Who are you, what do you sell, who do you sell it to?, Q2 — Paste 1-2 things you've written recently. Don't edit them., Q3 — What are your 2-3 biggest priorities for the next 90 days?, Q4 — Where does revenue actually land, and where is it tracked?, Q5 — Where do you talk to customers, your team, and the outside world day-to-day?, Q6 — Where do meeting recordings, notes, and important docs live?, Q7 — What's the one task that eats your week, and where do you currently track work?
+
+### Community 309 - "Community 309"
+Cohesion: 0.25
+Nodes (7): 🏛️ 1. Core Architecture, 🏷️ 2. File & Page Naming Conventions, 📂 3. Categories in index.md, ⚙️ 4. Agent Workflows & Prompts, CLAUDE.md — LLM Wiki Agent Rules (Thesis & Research), 📥 INGEST (Mengimpor data mentah dari `raw/`), 🔍 LINT & AUDIT (Pembersihan & Konsistensi Data)
+
+### Community 310 - "Community 310"
 Cohesion: 0.33
-Nodes (5): 2026-06-15, Inisialisasi Proyek StudiOS & Refinement UI, Tahap 2: Integrasi Frontend ke Supabase & Sistem Otorisasi Akses, Tahap 3: Notion Sync Engine (Otomatisasi Sinkronisasi Konten), Work Log — StudiOS
+Nodes (5): 📚 1. Sumber Daya & Acuan (Sources), 🏢 2. Entitas Utama (Entities), 📊 3. Konsep & Teori (Concepts), ⚖️ 4. Regulasi & Kebijakan (Regulations), 🧠 AIS-OS & Thesis Knowledge Brain
+
+### Community 311 - "Community 311"
+Cohesion: 0.33
+Nodes (5): 📈 1. Statistik Deviasi Tahunan, 📅 2. Bulan-Bulan Kritis Deviasi (Deviasi 100%), 🛠️ 3. Analisis Paket Pekerjaan & Penyebab Pergeseran, 📊 Analisis Kasus: Deviasi Anggaran Belanja Modal Rudenim Pontianak (TA 2023–2025), Analisis Tren:
+
+### Community 312 - "Community 312"
+Cohesion: 0.40
+Nodes (4): Ketentuan Umum, 🛒 Mekanisme Pengkreditan PPN, 📊 Pajak Pertambahan Nilai (PPN), 🏛️ PPN Wapu (Wajib Pungut)
+
+### Community 313 - "Community 313"
+Cohesion: 0.40
+Nodes (4): 1. BUN (DJPb) sebagai Prinsipal & Satker sebagai Agen, 2. Satker sebagai Prinsipal & Penyedia (Kontraktor) sebagai Agen, Penerapan dalam Skripsi Rudenim Pontianak, 📊 Teori Keagenan (Agency Theory)
+
+### Community 314 - "Community 314"
+Cohesion: 0.50
+Nodes (3): Tabel 1.3 Deviasi Halaman III DIPA Belanja Modal Rudenim Pontianak TA 2023–2025, Tabel 1.4 Bulan Kritis Deviasi Belanja Modal Rudenim Pontianak TA 2023–2025, Tabel 1.5 Contoh Paket Belanja Modal yang Mengalami Pergeseran Realisasi TA 2023–2025
+
+### Community 315 - "Community 315"
+Cohesion: 0.50
+Nodes (3): 📊 Halaman III DIPA & Rencana Penarikan Dana (RPD), Karakteristik Pergeseran & Pemutakhiran, Peran Strategis RPD Halaman III
+
+### Community 316 - "Community 316"
+Cohesion: 0.50
+Nodes (3): 📊 Indikator Kinerja Pelaksanaan Anggaran (IKPA), 📈 Kategori Penilaian IKPA, 🏛️ Kerangka Hukum & Aspek Penilaian
+
+### Community 317 - "Community 317"
+Cohesion: 0.50
+Nodes (3): Contoh Perhitungan Cepat, 📊 Penghasilan Tidak Kena Pajak (PTKP), Tarif Tahunan PTKP Indonesia (Saat Ini)
+
+### Community 318 - "Community 318"
+Cohesion: 0.50
+Nodes (3): Definisi BUMN di Era Coretax, Insentif Pajak, ⚖️ PMK Nomor 1 Tahun 2026 (Insentif Pajak Restrukturisasi BUMN)
+
+### Community 319 - "Community 319"
+Cohesion: 0.50
+Nodes (3): 💸 Metode TER (Tarif Efektif Rata-Rata) Bulanan, 📊 PPh Pasal 21 (Pajak Penghasilan Karyawan / Pekerja), 📈 Tarif Progresif Pasal 17 UU PPh (UU HPP)
 
 ## Knowledge Gaps
-- **1086 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `version`, `type` (+1081 more)
+- **1150 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `version`, `type` (+1145 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **85 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **97 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Ultimate Brain — Complete Second Brain System in Notion` connect `Community 112` to `Community 121`, `Community 135`, `Community 167`, `Community 235`, `Community 236`, `Community 237`, `Community 153`, `Community 154`, `Community 189`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+  _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `Community 79` to `Community 280`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `A11. Views Catalog` connect `Community 141` to `Community 117`?**
+  _High betweenness centrality (0.000) - this node is a cross-community bridge._
+- **Why does `@notionhq/client` connect `Community 79` to `Community 10`?**
   _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private` to the rest of the system?**
-  _1086 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1150 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

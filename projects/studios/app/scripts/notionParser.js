@@ -91,6 +91,9 @@ async function blockToMarkdown(notion, block, depth = 0) {
       return `> ${text}\n\n`;
     case "code":
       const rawCode = content.rich_text.map(t => t.plain_text).join("");
+      if (content.language === "html") {
+        return `${rawCode}\n\n`;
+      }
       return `\`\`\`${content.language || ""}\n${rawCode}\n\`\`\`\n\n`;
     case "bookmark":
       return `[${content.url}](${content.url})\n\n`;
@@ -98,6 +101,15 @@ async function blockToMarkdown(notion, block, depth = 0) {
       return await parseTableBlock(notion, block.id);
     case "divider":
       return "---\n\n";
+    case "image":
+      const imageUrl = content.type === "external" ? content.external.url : content.file?.url;
+      const imageCaption = getRichText(content.caption);
+      return imageUrl ? `![${imageCaption || "Gambar"}](${imageUrl})\n\n` : "";
+    case "video":
+      const videoUrl = content.type === "external" ? content.external.url : content.file?.url;
+      return videoUrl ? `<video src="${videoUrl}" controls style="width: 100%; border-radius: var(--radius-md); margin-bottom: var(--space-md);"></video>\n\n` : "";
+    case "embed":
+      return content.url ? `<iframe class="interactive-embed" src="${content.url}" width="100%" height="480" style="border: 1px solid var(--border-subtle); border-radius: var(--radius-md); margin-bottom: var(--space-md);" allowfullscreen></iframe>\n\n` : "";
     default:
       return "";
   }

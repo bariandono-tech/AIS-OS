@@ -1,0 +1,2529 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Anatomi Otak Interaktif - Visualisasi Medis Detail</title>
+    
+    <!-- Google Fonts: Outfit & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* -------------------------------------------------------------
+         * 3D Brain Anatomy Dashboard Stylesheet
+         * Custom CSS for a modern, glassmorphic, clinical-cyber aesthetics.
+         * ------------------------------------------------------------- */
+
+        /* --- CSS VARIABLES & COLOR PALETTE --- */
+        :root {
+            --bg-base: #03070c;
+            --bg-card: rgba(10, 17, 28, 0.75);
+            --bg-glass: rgba(6, 11, 20, 0.75);
+            --bg-glass-active: rgba(15, 26, 46, 0.9);
+            
+            --border-glass: rgba(255, 255, 255, 0.07);
+            --border-glow: rgba(0, 229, 255, 0.25);
+            
+            /* Neon Accent Colors for Brain Regions */
+            --clr-frontal: #ff0055;
+            --clr-parietal: #39ff14;
+            --clr-temporal: #00e5ff;
+            --clr-occipital: #ffe600;
+            --clr-cerebellum: #00ffaa;
+            --clr-brainstem: #bd00ff;
+            --clr-limbic: #ff8c00;
+            
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            
+            --font-primary: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            
+            --shadow-neon: 0 0 15px rgba(0, 229, 255, 0.3);
+            --shadow-soft: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+            
+            --transition-smooth: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        /* --- RESET & BASIC STYLES --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            background-image: 
+                radial-gradient(at 10% 20%, rgba(189, 0, 255, 0.08) 0px, transparent 50%),
+                radial-gradient(at 90% 80%, rgba(0, 229, 255, 0.08) 0px, transparent 50%);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.02);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--clr-temporal);
+        }
+
+        /* --- LOADING SCREEN OVERLAY --- */
+        #loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #03060a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.8s ease, visibility 0.8s ease;
+        }
+
+        #loading-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-content {
+            text-align: center;
+            max-width: 420px;
+            padding: 2rem;
+        }
+
+        .brain-pulse-wrapper {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .brain-pulse-icon {
+            font-size: 3.5rem;
+            color: var(--clr-temporal);
+            filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.6));
+            animation: pulseIcon 1.5s infinite ease-in-out;
+            z-index: 2;
+        }
+
+        .pulse-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--clr-temporal);
+            border-radius: 50%;
+            animation: ripple 1.5s infinite cubic-bezier(0.1, 0.8, 0.3, 1);
+            opacity: 0;
+            z-index: 1;
+        }
+
+        .loader-content h2 {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+            font-size: 1.5rem;
+        }
+
+        .loader-content p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 2px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-bar {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, var(--clr-brainstem), var(--clr-temporal));
+            box-shadow: 0 0 8px var(--clr-temporal);
+            border-radius: 2px;
+            transition: width 0.1s ease;
+        }
+
+        #loading-status {
+            font-family: var(--font-mono);
+            font-size: 0.8rem;
+            color: var(--clr-temporal);
+        }
+
+        /* Animations for loader */
+        @keyframes pulseIcon {
+            0%, 100% { transform: scale(1); filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.5)); }
+            50% { transform: scale(1.1); filter: drop-shadow(0 0 18px rgba(0, 229, 255, 0.8)); }
+        }
+        @keyframes ripple {
+            0% { transform: scale(0.6); opacity: 1; }
+            100% { transform: scale(1.4); opacity: 0; }
+        }
+
+        /* --- MAIN LAYOUT STRUCTURE --- */
+        .dashboard-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Top Navigation Header */
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 2rem;
+            background: rgba(3, 7, 12, 0.8);
+            border-bottom: 1px solid var(--border-glass);
+            z-index: 10;
+            backdrop-filter: blur(10px);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .glow-icon {
+            font-size: 1.5rem;
+            color: var(--clr-temporal);
+            text-shadow: 0 0 8px var(--clr-temporal);
+        }
+
+        .brand h1 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--text-primary);
+        }
+
+        .brand h1 .accent {
+            color: var(--clr-temporal);
+            text-shadow: 0 0 5px rgba(0, 229, 255, 0.4);
+        }
+
+        .system-status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--clr-parietal);
+            border-radius: 50%;
+            box-shadow: 0 0 6px var(--clr-parietal);
+        }
+
+        .status-dot.pulsing {
+            animation: dotPulse 2s infinite ease-in-out;
+        }
+
+        .status-text {
+            font-size: 0.75rem;
+            font-family: var(--font-mono);
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        @keyframes dotPulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; box-shadow: 0 0 10px var(--clr-parietal); }
+        }
+
+        /* Main Workspace */
+        .workspace {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Glassmorphism Panel Common Base */
+        .glass-panel {
+            background: var(--bg-card);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-glass);
+            box-shadow: var(--shadow-soft);
+            border-radius: 12px;
+        }
+
+        /* --- SIDEBAR LEFT: MENU --- */
+        .sidebar-left {
+            width: 300px;
+            margin: 1rem 0.5rem 1rem 1rem;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            z-index: 5;
+        }
+
+        .panel-section-title {
+            padding: 1.25rem 1.25rem 0.75rem;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-menu {
+            flex: 1;
+            padding: 0.75rem;
+        }
+
+        .menu-group {
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-group-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+            transition: var(--transition-smooth);
+        }
+
+        .menu-group-header:hover {
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        .menu-group-header i.arrow-icon {
+            font-size: 0.75rem;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-group-header.collapsed i.arrow-icon {
+            transform: rotate(-90deg);
+        }
+
+        .menu-list {
+            list-style: none;
+            padding-left: 1rem;
+            margin-top: 0.25rem;
+            display: none;
+            border-left: 1px dashed rgba(255, 255, 255, 0.08);
+            margin-left: 1.5rem;
+        }
+
+        .menu-list.active {
+            display: block;
+        }
+
+        .nav-item-single {
+            padding: 0.8rem 1rem;
+            cursor: pointer;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
+            margin-bottom: 0.2rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            border-left: 2px solid transparent;
+        }
+
+        .nav-item:hover {
+            color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.03);
+            padding-left: 1.2rem;
+        }
+
+        .nav-item.active {
+            color: var(--text-primary);
+            background: var(--bg-glass-active);
+            font-weight: 600;
+            border-left-color: var(--item-color, var(--clr-temporal));
+            box-shadow: inset 5px 0 15px -5px rgba(255, 255, 255, 0.05);
+        }
+
+        /* Dots for Lobe Colors */
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        .frontal-dot { background-color: var(--clr-frontal); box-shadow: 0 0 6px var(--clr-frontal); }
+        .parietal-dot { background-color: var(--clr-parietal); box-shadow: 0 0 6px var(--clr-parietal); }
+        .temporal-dot { background-color: var(--clr-temporal); box-shadow: 0 0 6px var(--clr-temporal); }
+        .occipital-dot { background-color: var(--clr-occipital); box-shadow: 0 0 6px var(--clr-occipital); }
+        .cerebellum-dot { background-color: var(--clr-cerebellum); box-shadow: 0 0 6px var(--clr-cerebellum); }
+        .midbrain-dot { background-color: var(--clr-brainstem); box-shadow: 0 0 4px var(--clr-brainstem); filter: brightness(1.2); }
+        .pons-dot { background-color: var(--clr-brainstem); box-shadow: 0 0 4px var(--clr-brainstem); filter: brightness(0.9); }
+        .medulla-dot { background-color: var(--clr-brainstem); box-shadow: 0 0 4px var(--clr-brainstem); filter: brightness(0.6); }
+        .thalamus-dot { background-color: var(--clr-limbic); box-shadow: 0 0 6px var(--clr-limbic); }
+        .hippocampus-dot { background-color: var(--clr-limbic); box-shadow: 0 0 6px var(--clr-limbic); filter: brightness(1.2); }
+        .amygdala-dot { background-color: var(--clr-limbic); box-shadow: 0 0 6px var(--clr-limbic); filter: brightness(0.8); }
+        .corpus-callosum-dot { background-color: var(--clr-limbic); box-shadow: 0 0 6px var(--clr-limbic); filter: saturate(1.5); }
+
+        .sidebar-footer {
+            padding: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            line-height: 1.4;
+        }
+
+        .sidebar-footer i {
+            color: var(--clr-temporal);
+        }
+
+        /* --- CENTER VIEWPORT: THREE.JS --- */
+        .viewport-container {
+            flex: 1;
+            margin: 1rem 0.5rem;
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            background: radial-gradient(circle at center, rgba(16, 28, 48, 0.4) 0%, rgba(3, 6, 11, 0.7) 100%);
+            border: 1px solid var(--border-glass);
+            box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.6);
+        }
+
+        #canvas-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Floating Label System in 3D Space */
+        .floating-label {
+            position: absolute;
+            pointer-events: none;
+            padding: 0.5rem 1rem;
+            background: rgba(3, 7, 12, 0.85);
+            border: 1px solid var(--label-border, var(--clr-temporal));
+            box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: var(--text-primary);
+            transform: translate(-50%, -100%);
+            z-index: 4;
+            transition: opacity 0.2s ease;
+        }
+
+        .floating-label.hidden {
+            opacity: 0;
+        }
+
+        .floating-label-line {
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            width: 1px;
+            height: 15px;
+            background: var(--label-border, var(--clr-temporal));
+        }
+
+        /* Viewport HUD & Overlay text */
+        .viewport-overlay-info {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            display: flex;
+            gap: 0.5rem;
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        .info-tag {
+            background: rgba(3, 7, 12, 0.6);
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .info-tag kbd {
+            font-family: var(--font-mono);
+            color: var(--clr-temporal);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.05rem 0.2rem;
+            border-radius: 2px;
+            margin-right: 0.25rem;
+        }
+
+        .hud-display {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            padding: 0.75rem 1.25rem;
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        .hud-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+
+        .hud-value {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        /* --- SIDEBAR RIGHT: MEDICAL MEDICAL INFO --- */
+        .sidebar-right {
+            width: 380px;
+            margin: 1rem 1rem 1rem 0.5rem;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            z-index: 5;
+        }
+
+        .detail-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .header-main {
+            flex: 1;
+        }
+
+        .latin-name {
+            font-family: var(--font-mono);
+            font-size: 0.7rem;
+            color: var(--accent-color, var(--clr-temporal));
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .detail-header h2 {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        .active-badge {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--accent-color, var(--clr-temporal));
+        }
+
+        /* Metrics widget */
+        .metrics-widget {
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.01);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .metric-item {
+            margin-bottom: 0.75rem;
+        }
+
+        .metric-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .metric-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+
+        .metric-meta span:last-child {
+            font-family: var(--font-mono);
+            color: var(--accent-color, var(--clr-temporal));
+            font-weight: 600;
+        }
+
+        .metric-track {
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.04);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .metric-fill {
+            height: 100%;
+            background: var(--accent-color, var(--clr-temporal));
+            box-shadow: 0 0 6px var(--accent-color, var(--clr-temporal));
+            border-radius: 2px;
+            transition: width 0.6s cubic-bezier(0.1, 0.8, 0.3, 1);
+        }
+
+        /* Tabs */
+        .tab-container {
+            display: flex;
+            padding: 0.5rem 1rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .tab-btn {
+            flex: 1;
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-family: var(--font-primary);
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.75rem 0.25rem;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            border-bottom: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-primary);
+        }
+
+        .tab-btn.active {
+            color: var(--accent-color, var(--clr-temporal));
+            border-bottom-color: var(--accent-color, var(--clr-temporal));
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+        }
+
+        .tab-content-wrapper {
+            padding: 1.5rem;
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(4px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .tab-content h3 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+        }
+
+        .tab-content p {
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        .bullet-list {
+            list-style: none;
+        }
+
+        .bullet-list li {
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: var(--text-secondary);
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .bullet-list li::before {
+            content: "▪";
+            position: absolute;
+            left: 0.25rem;
+            color: var(--accent-color, var(--clr-temporal));
+            font-size: 0.9rem;
+        }
+
+        /* Alert box */
+        .alert-box {
+            display: flex;
+            gap: 0.75rem;
+            padding: 0.9rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .alert-box.warning {
+            background: rgba(255, 0, 85, 0.05);
+            border: 1px solid rgba(255, 0, 85, 0.2);
+        }
+
+        .alert-box.warning i {
+            color: var(--clr-frontal);
+            font-size: 1rem;
+            margin-top: 0.1rem;
+        }
+
+        .alert-box strong {
+            display: block;
+            color: var(--text-primary);
+            margin-bottom: 0.15rem;
+        }
+
+        .alert-box span {
+            color: var(--text-secondary);
+        }
+
+        /* Trivia card */
+        .trivia-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 1.25rem;
+            position: relative;
+        }
+
+        .trivia-card i {
+            font-size: 1.5rem;
+            color: var(--accent-color, var(--clr-temporal));
+            opacity: 0.15;
+            position: absolute;
+            top: 0.5rem;
+            left: 0.5rem;
+        }
+
+        .trivia-card p {
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+            line-height: 1.5;
+        }
+
+        /* --- BOTTOM DECK: CONTROL BAR --- */
+        .control-deck {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            margin: 0 1rem 1rem 1rem;
+            z-index: 10;
+            gap: 1.5rem;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            flex: 1;
+        }
+
+        .control-group.flex-row {
+            flex-direction: row;
+            align-items: center;
+            gap: 1.5rem;
+            flex: 0;
+            min-width: 320px;
+        }
+
+        .control-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .control-label span:last-child {
+            font-family: var(--font-mono);
+            color: var(--clr-temporal);
+        }
+
+        /* Custom inputs */
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--clr-temporal);
+            box-shadow: 0 0 6px var(--clr-temporal);
+            cursor: pointer;
+            transition: transform 0.1s ease;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.3);
+        }
+
+        /* Button groups */
+        .btn-group {
+            display: flex;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 6px;
+            padding: 2px;
+        }
+
+        .control-btn {
+            flex: 1;
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-family: var(--font-primary);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.4rem 0.8rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: var(--transition-smooth);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+        }
+
+        .control-btn:hover {
+            color: var(--text-primary);
+        }
+
+        .control-btn.active {
+            background: var(--bg-glass-active);
+            color: var(--text-primary);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .color-preview {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .neon-preview { background-color: var(--clr-frontal); }
+        .clinical-preview { background-color: #ff9e9e; }
+        .holo-preview { background-color: var(--clr-temporal); }
+
+        /* Switch Toggle styling */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 34px;
+            height: 18px;
+        }
+
+        .switch input { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider-round {
+            border-radius: 34px;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: .4s;
+            border-radius: 18px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: var(--clr-temporal);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(16px);
+        }
+
+        /* Action button */
+        .action-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-primary);
+            font-family: var(--font-primary);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: var(--transition-smooth);
+        }
+
+        .action-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+        }
+
+        /* --- RESPONSIVENESS --- */
+        @media (max-width: 1200px) {
+            .workspace {
+                flex-direction: column;
+                overflow-y: auto;
+            }
+            
+            .sidebar-left, .sidebar-right {
+                width: calc(100% - 2rem);
+                margin: 1rem;
+                height: auto;
+                max-height: 400px;
+            }
+            
+            .viewport-container {
+                height: 500px;
+                margin: 1rem;
+                flex: none;
+            }
+            
+            .control-deck {
+                flex-direction: column;
+                margin: 1rem;
+                gap: 1rem;
+                align-items: stretch;
+            }
+            
+            .control-group.flex-row {
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div id="loading-overlay">
+        <div class="loader-content">
+            <div class="brain-pulse-wrapper">
+                <i class="fa-solid fa-brain brain-pulse-icon"></i>
+                <div class="pulse-ring"></div>
+            </div>
+            <h2>Menginisialisasi Neuro-Model 3D</h2>
+            <p>Membangun kurva girus dan sulkus korteks serebral...</p>
+            <div class="progress-bar-container">
+                <div id="loading-progress" class="progress-bar"></div>
+            </div>
+            <span id="loading-status">0% Terisi</span>
+        </div>
+    </div>
+
+    <!-- Main Dashboard Container -->
+    <div class="dashboard-container">
+        
+        <!-- Top Navigation Bar -->
+        <header class="top-nav">
+            <div class="brand">
+                <i class="fa-solid fa-brain glow-icon"></i>
+                <h1>NEURO-ANATOMY <span class="accent">3D</span></h1>
+            </div>
+            <div class="system-status">
+                <span class="status-dot pulsing"></span>
+                <span class="status-text">Neural Engine Active</span>
+            </div>
+        </header>
+
+        <!-- Main Workspace: Sidebar - Viewport - Detail Panel -->
+        <main class="workspace">
+            
+            <!-- Left Sidebar: Brain Structures Menu -->
+            <aside class="sidebar-left glass-panel">
+                <div class="panel-section-title">
+                    <i class="fa-solid fa-network-wired"></i> Struktur Utama
+                </div>
+                <div class="nav-menu">
+                    <!-- Cerebrum Sub-menu -->
+                    <div class="menu-group">
+                        <div class="menu-group-header" data-target="cerebrum">
+                            <span><i class="fa-solid fa-circle-nodes"></i> Otak Besar (Cerebrum)</span>
+                            <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                        </div>
+                        <ul class="menu-list active" id="group-cerebrum">
+                            <li class="nav-item active" data-region="frontal">
+                                <span class="dot frontal-dot"></span> Lobus Frontal
+                            </li>
+                            <li class="nav-item" data-region="parietal">
+                                <span class="dot parietal-dot"></span> Lobus Parietal
+                            </li>
+                            <li class="nav-item" data-region="temporal">
+                                <span class="dot temporal-dot"></span> Lobus Temporal
+                            </li>
+                            <li class="nav-item" data-region="occipital">
+                                <span class="dot occipital-dot"></span> Lobus Oksipital
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Cerebellum -->
+                    <div class="menu-group">
+                        <div class="menu-group-header nav-item-single" data-region="cerebellum">
+                            <span><i class="fa-solid fa-sliders"></i> Otak Kecil (Cerebellum)</span>
+                        </div>
+                    </div>
+
+                    <!-- Brain Stem Sub-menu -->
+                    <div class="menu-group">
+                        <div class="menu-group-header" data-target="brainstem">
+                            <span><i class="fa-solid fa-cubes"></i> Batang Otak (Brainstem)</span>
+                            <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                        </div>
+                        <ul class="menu-list" id="group-brainstem">
+                            <li class="nav-item" data-region="midbrain">
+                                <span class="dot midbrain-dot"></span> Otak Tengah (Midbrain)
+                            </li>
+                            <li class="nav-item" data-region="pons">
+                                <span class="dot pons-dot"></span> Pons
+                            </li>
+                            <li class="nav-item" data-region="medulla">
+                                <span class="dot medulla-dot"></span> Medulla Oblongata
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Limbic System Sub-menu -->
+                    <div class="menu-group">
+                        <div class="menu-group-header" data-target="limbic">
+                            <span><i class="fa-solid fa-heart-pulse"></i> Sistem Limbik (Internal)</span>
+                            <i class="fa-solid fa-chevron-down arrow-icon"></i>
+                        </div>
+                        <ul class="menu-list" id="group-limbic">
+                            <li class="nav-item" data-region="thalamus">
+                                <span class="dot thalamus-dot"></span> Talamus (Thalamus)
+                            </li>
+                            <li class="nav-item" data-region="hippocampus">
+                                <span class="dot hippocampus-dot"></span> Hipokampus
+                            </li>
+                            <li class="nav-item" data-region="amygdala">
+                                <span class="dot amygdala-dot"></span> Amigdala (Amygdala)
+                            </li>
+                            <li class="nav-item" data-region="corpus_callosum">
+                                <span class="dot corpus-callosum-dot"></span> Korpus Kalosum
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sidebar-footer">
+                    <p><i class="fa-solid fa-mouse"></i> Klik bagian model 3D untuk memilih secara langsung.</p>
+                </div>
+            </aside>
+
+            <!-- Center Viewport: 3D Canvas -->
+            <section class="viewport-container">
+                <!-- 3D Canvas -->
+                <div id="canvas-container"></div>
+
+                <!-- Floating Label Pin System -->
+                <div id="floating-label" class="floating-label glass-panel hidden">
+                    <span id="floating-label-text">Lobus Frontal</span>
+                    <div class="floating-label-line"></div>
+                </div>
+
+                <!-- Quick Visual Info Banner -->
+                <div class="viewport-overlay-info">
+                    <div class="info-tag"><kbd>Klik Kiri + Geser</kbd> Putar</div>
+                    <div class="info-tag"><kbd>Klik Kanan + Geser</kbd> Geser</div>
+                    <div class="info-tag"><kbd>Scroll</kbd> Zoom</div>
+                </div>
+
+                <!-- HUD overlay for active region -->
+                <div class="hud-display glass-panel">
+                    <div class="hud-label">WILAYAH AKTIF</div>
+                    <div id="hud-region-name" class="hud-value">Lobus Frontal</div>
+                </div>
+            </section>
+
+            <!-- Right Sidebar: Medical Information Panel -->
+            <aside class="sidebar-right glass-panel">
+                <div class="detail-header">
+                    <div class="header-main">
+                        <span id="info-latin-name" class="latin-name">CORTEX FRONTALIS</span>
+                        <h2 id="info-region-name">Lobus Frontal</h2>
+                    </div>
+                    <div class="active-badge" id="info-system-badge">Otak Besar</div>
+                </div>
+
+                <!-- Key Metrics Widget -->
+                <div class="metrics-widget">
+                    <div class="metric-item">
+                        <div class="metric-meta">
+                            <span>Aktivitas Kognitif</span>
+                            <span id="metric-cognitive-val">95%</span>
+                        </div>
+                        <div class="metric-track">
+                            <div id="metric-cognitive-bar" class="metric-fill" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-meta">
+                            <span>Kontrol Motorik</span>
+                            <span id="metric-motor-val">80%</span>
+                        </div>
+                        <div class="metric-track">
+                            <div id="metric-motor-bar" class="metric-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Tabs inside details -->
+                <div class="tab-container">
+                    <button class="tab-btn active" data-tab="fungsi">
+                        <i class="fa-solid fa-brain"></i> Fungsi
+                    </button>
+                    <button class="tab-btn" data-tab="medis">
+                        <i class="fa-solid fa-stethoscope"></i> Medis
+                    </button>
+                    <button class="tab-btn" data-tab="klinis">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Klinis
+                    </button>
+                    <button class="tab-btn" data-tab="trivia">
+                        <i class="fa-solid fa-lightbulb"></i> Trivia
+                    </button>
+                </div>
+
+                <!-- Tab Contents -->
+                <div class="tab-content-wrapper">
+                    <!-- Tab 1: Fungsi Utama -->
+                    <div class="tab-content active" id="tab-fungsi">
+                        <h3>Fungsi Utama</h3>
+                        <ul class="bullet-list" id="info-fungsi-list">
+                            <li>Pengambilan keputusan tingkat tinggi, penalaran logis, dan pemecahan masalah.</li>
+                            <li>Perencanaan masa depan dan kepribadian sosial seseorang.</li>
+                            <li>Kontrol gerakan motorik sadar (melalui korteks motorik primer).</li>
+                            <li>Produksi bahasa bicara (Area Broca di hemisfer kiri).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab 2: Deskripsi Medis -->
+                    <div class="tab-content" id="tab-medis">
+                        <h3>Deskripsi Anatomis</h3>
+                        <p id="info-deskripsi">
+                            Lobus frontal adalah lobus terbesar dari empat lobus utama otak besar pada mamalia, dan terletak di bagian depan setiap hemisfer serebral (di depan lobus parietal dan lobus temporal). Ini dipisahkan dari lobus parietal oleh alur yang disebut sulkus sentralis, dan dari lobus temporal oleh sulkus lateral (celah Sylvian). Lobus frontal memiliki korteks prefrontal yang sangat berkembang pada manusia, bertanggung jawab atas fungsi eksekutif.
+                        </p>
+                    </div>
+
+                    <!-- Tab 3: Korelasi Klinis -->
+                    <div class="tab-content" id="tab-klinis">
+                        <h3>Korelasi Klinis & Gangguan</h3>
+                        <div class="alert-box warning">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <div>
+                                <strong>Dampak Kerusakan:</strong>
+                                <span id="info-klinis-dampak">Perubahan kepribadian drastis, gangguan kontrol impuls, apatis, afasia Broca (kesulitan bicara tetapi paham).</span>
+                            </div>
+                        </div>
+                        <p id="info-klinis-detail">
+                            Kerusakan pada lobus frontal dapat menyebabkan sindrom lobus frontal. Contoh kasus terkenal adalah Phineas Gage, seorang pekerja kereta api pada abad ke-19 yang bertahan hidup setelah linggis menembus lobus frontalnya, yang mengakibatkan perubahan kepribadian total dari orang yang bertanggung jawab menjadi tidak stabil secara emosional.
+                        </p>
+                    </div>
+
+                    <!-- Tab 4: Trivia / Fakta Menarik -->
+                    <div class="tab-content" id="tab-trivia">
+                        <h3>Fakta Menarik</h3>
+                        <div class="trivia-card">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p id="info-trivia">
+                                Lobus frontal adalah bagian otak terakhir yang matang sepenuhnya. Proses mielinisasi lobus frontal berlanjut hingga seseorang mencapai usia sekitar 25 tahun, yang menjelaskan mengapa remaja cenderung mengambil risiko lebih tinggi karena kontrol kognitifnya belum sempurna.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Bottom Bar: Control Deck -->
+        <footer class="control-deck glass-panel">
+            <!-- Parameter Control Group -->
+            <div class="control-group">
+                <div class="control-label">
+                    <span><i class="fa-solid fa-compress"></i> Dekomposisi 3D (Exploded View)</span>
+                    <span id="exploded-val">0.0x</span>
+                </div>
+                <input type="range" id="control-exploded" min="0" max="1" step="0.01" value="0">
+            </div>
+
+            <!-- View Mode Buttons -->
+            <div class="control-group">
+                <div class="control-label">Mode Visual</div>
+                <div class="btn-group">
+                    <button class="control-btn active" data-mode="solid">
+                        <i class="fa-solid fa-cube"></i> Solid
+                    </button>
+                    <button class="control-btn" data-mode="xray">
+                        <i class="fa-solid fa-ghost"></i> X-Ray
+                    </button>
+                    <button class="control-btn" data-mode="hologram">
+                        <i class="fa-solid fa-network-wired"></i> Hologram
+                    </button>
+                    <button class="control-btn" data-mode="wireframe">
+                        <i class="fa-solid fa-border-none"></i> Wire
+                    </button>
+                </div>
+            </div>
+
+            <!-- Color Palette Selectors -->
+            <div class="control-group">
+                <div class="control-label">Skema Warna</div>
+                <div class="btn-group">
+                    <button class="control-btn active" data-theme="neon">
+                        <span class="color-preview neon-preview"></span> Neon
+                    </button>
+                    <button class="control-btn" data-theme="clinical">
+                        <span class="color-preview clinical-preview"></span> Medis
+                    </button>
+                    <button class="control-btn" data-theme="holographic">
+                        <span class="color-preview holo-preview"></span> Cyber
+                    </button>
+                </div>
+            </div>
+
+            <!-- Toggle controls -->
+            <div class="control-group flex-row">
+                <div class="toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="control-rotate" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Auto-Putar</span>
+                </div>
+                <div class="toggle-container">
+                    <label class="switch">
+                        <input type="checkbox" id="control-pulse" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Denyut Saraf</span>
+                </div>
+                <button id="btn-reset" class="action-btn">
+                    <i class="fa-solid fa-rotate-left"></i> Reset
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Three.js Libraries via CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    
+    <!-- Custom Application Logic -->
+    <script>
+        // --- MEDICAL DATA DATABASE (IN INDONESIAN) ---
+        const brainDatabase = {
+            frontal: {
+                name: "Lobus Frontal",
+                latin: "Cortex Frontalis",
+                system: "Otak Besar (Cerebrum)",
+                color: "#ff0055",
+                metrics: { cognitive: 95, motor: 80 },
+                fungsi: [
+                    "Pengambilan keputusan, perencanaan strategis, dan pemecahan masalah.",
+                    "Ekspresi kepribadian, perilaku sosial, dan kontrol impuls emosional.",
+                    "Menginisiasi gerakan motorik sadar melalui korteks motorik primer.",
+                    "Produksi bahasa bicara secara aktif di Area Broca (hemisfer kiri)."
+                ],
+                deskripsi: "Terletak di bagian paling depan belahan otak besar (anterior). Lobus frontal merupakan lobus terbesar pada otak manusia dan mengalami perkembangan evolusioner paling mutakhir. Bagian depannya, yaitu korteks prefrontal, bertanggung jawab atas fungsi eksekutif mental yang membedakan manusia dari primata lainnya.",
+                klinisDampak: "Perubahan kepribadian radikal (seperti kasus Phineas Gage), hilangnya kontrol emosi, apatis, afasia Broca (kesulitan bicara meski paham bahasa), serta gangguan konsentrasi dan perencanaan kognitif (ADHD).",
+                klinisDetail: "Sindrom lobus frontal sering terjadi akibat trauma kepala, stroke, atau demensia. Pasien mungkin menunjukkan perilaku tidak pantas secara sosial karena hilangnya filter hambatan moral yang biasanya diatur oleh bagian korteks prefrontal.",
+                trivia: "Korteks prefrontal di lobus frontal adalah bagian otak paling terakhir yang matang sepenuhnya. Proses mielinisasi (pembungkusan lemak sel saraf) berlanjut hingga usia sekitar 25 tahun, menjelaskan mengapa remaja sering kali mengambil keputusan impulsif."
+            },
+            parietal: {
+                name: "Lobus Parietal",
+                latin: "Cortex Parietalis",
+                system: "Otak Besar (Cerebrum)",
+                color: "#39ff14",
+                metrics: { cognitive: 75, motor: 50 },
+                fungsi: [
+                    "Memproses stimulus somatosensorik (sentuhan, suhu, tekanan, dan nyeri) dari seluruh tubuh.",
+                    "Integrasi spasial untuk kesadaran ruang, navigasi, dan orientasi arah.",
+                    "Memfasilitasi kalkulasi matematika dan manipulasi angka.",
+                    "Membantu pemahaman lambang, simbol, dan sintaksis bahasa tertulis."
+                ],
+                deskripsi: "Terletak di belakang lobus frontal, dipisahkan oleh sulkus sentralis, dan berada di atas lobus temporal. Bagian terdepan lobus parietal adalah girus postsentralis yang berfungsi sebagai Korteks Somatosensorik Primer. Wilayah ini memetakan seluruh permukaan tubuh manusia dalam bentuk representasi sensorik.",
+                klinisDampak: "Apraksia (kesulitan melakukan tindakan terencana), agnosia (tidak mengenali objek lewat sentuhan), Sindrom Gerstmann (buta huruf, diskalkulia), dan hemispatial neglect (mengabaikan satu sisi dunia visual).",
+                klinisDetail: "Pasien dengan cedera lobus parietal kanan mungkin mengalami 'Sindrom Pengabaian Spasial' di mana mereka sama sekali tidak menyadari sisi kiri tubuh atau ruang di sebelah kiri mereka, seperti hanya memakan makanan di sisi kanan piring.",
+                trivia: "Di lobus parietal terdapat peta tubuh sensorik misterius bernama 'Somatosensory Homunculus'. Peta ini tidak proporsional: bibir, lidah, dan ujung jari digambarkan sangat besar karena memiliki kepadatan reseptor taktil yang jauh lebih tinggi dibanding punggung atau kaki."
+            },
+            temporal: {
+                name: "Lobus Temporal",
+                latin: "Cortex Temporalis",
+                system: "Otak Besar (Cerebrum)",
+                color: "#00e5ff",
+                metrics: { cognitive: 85, motor: 10 },
+                fungsi: [
+                    "Memproses input auditori (suara, nada, dan frekuensi pendengaran).",
+                    "Membentuk dan mengonsolidasikan memori jangka panjang (bekerja sama dengan hipokampus).",
+                    "Memahami bahasa lisan secara komprehensif di Area Wernicke.",
+                    "Mengenali wajah objek visual yang kompleks (melalui Fusiform Face Area)."
+                ],
+                deskripsi: "Terletak di bagian bawah-samping setiap belahan otak besar, sejajar di balik tulang pelipis dan telinga. Lobus temporal memainkan peran kunci dalam organisasi input sensorik, persepsi visual dan auditori, serta retensi ingatan jangka panjang dan emosi.",
+                klinisDampak: "Afasia Wernicke (bicara lancar tapi kacau tanpa makna, dan tidak paham perkataan orang), amnesia berat (tidak bisa mengingat masa lalu/baru), prosopagnosia (buta wajah), dan epilepsi lobus temporal.",
+                klinisDetail: "Kerusakan pada Area Wernicke di lobus temporal kiri menyebabkan afasia sensorik. Pasien dapat berbicara dengan tata bahasa yang benar dan intonasi normal, tetapi kata-katanya acak, tidak masuk akal, dan mereka tidak menyadari kekurangan tersebut.",
+                trivia: "Fusiform Face Area (FFA) di lobus temporal adalah sirkuit saraf khusus untuk mendeteksi wajah manusia. Jika FFA rusak, seseorang mengalami prosopagnosia—mereka mengenali kunci atau jam dinding, tetapi tidak bisa membedakan wajah pasangannya sendiri kecuali dari suara atau pakaiannya."
+            },
+            occipital: {
+                name: "Lobus Oksipital",
+                latin: "Cortex Occipitalis",
+                system: "Otak Besar (Cerebrum)",
+                color: "#ffe600",
+                metrics: { cognitive: 30, motor: 0 },
+                fungsi: [
+                    "Menerima informasi mentah berupa sinyal visual dari retina mata.",
+                    "Memproses bentuk, warna, orientasi, gerakan, dan kedalaman objek visual.",
+                    "Mengirimkan data visual terproses ke lobus parietal dan temporal untuk interpretasi tingkat lanjut."
+                ],
+                deskripsi: "Merupakan lobus terkecil yang terletak di bagian paling belakang (posterior) dari hemisfer serebral. Lobus oksipital menampung Korteks Visual Primer (dikenal sebagai area Brodmann 17 atau V1) yang disusun secara retinotopik (memetakan representasi visual dari retina secara geometris).",
+                klinisDampak: "Kebutaan kortikal (mata sehat tetapi otak tidak bisa melihat), halusinasi visual, agnosia visual (bisa melihat objek tetapi tidak bisa menamainya), dan Sindrom Anton (buta tapi menyangkal kebutaannya).",
+                klinisDetail: "Stroke pada arteri serebri posterior dapat merusak lobus oksipital secara permanen. Hal ini dapat menyebabkan kebutaan pada setengah bidang pandang visual (hemianopia homonim) pada kedua mata.",
+                trivia: "Meskipun mata Anda berada di depan, Anda sebenarnya 'melihat' dengan bagian belakang kepala Anda. Jatuh atau terbentur di kepala bagian belakang sering kali membuat Anda 'melihat bintang-bintang' karena stimulasi mekanik langsung pada sel-sel saraf di korteks visual."
+            },
+            cerebellum: {
+                name: "Otak Kecil",
+                latin: "Cerebellum",
+                system: "Otak Kecil",
+                color: "#00ffaa",
+                metrics: { cognitive: 40, motor: 95 },
+                fungsi: [
+                    "Mengkoordinasikan presisi, kehalusan, dan ketepatan waktu gerakan motorik sadar.",
+                    "Memelihara keseimbangan tubuh, postur, dan tonus otot.",
+                    "Menyimpan memori motorik implisit (prosedural), seperti bersepeda, mengetik, atau bermain alat musik.",
+                    "Berperan dalam penyesuaian motorik korektif secara real-time berdasarkan umpan balik sensorik."
+                ],
+                deskripsi: "Struktur berbentuk kubah berkerut padat yang terletak di bawah lobus oksipital bagian belakang. Meskipun volumenya hanya 10% dari total otak, cerebellum mengandung lebih dari 50% dari seluruh jumlah neuron di otak manusia, menunjukkan sirkuit komputasinya yang sangat padat.",
+                klinisDampak: "Ataksia (gerakan limbung, gemetar, hilangnya koordinasi), dismetria (salah menakar jarak jangkauan tangan), hipotonia (otot lemas), dan disdiadokokinesia (tidak bisa melakukan gerakan cepat bolak-balik).",
+                klinisDetail: "Ataksia serebelar membuat seseorang berjalan seperti orang mabuk (sempoyongan) dan mengalami kesulitan menulis atau mengancingkan baju. Cerebellum membandingkan perintah motorik dari otak besar dengan posisi aktual tubuh dan mengoreksi kesalahan gerakan secara instan.",
+                trivia: "Cerebellum bekerja secara otomatis dan tidak sadar. Ketika Anda belajar mengendarai sepeda atau mengetik 10 jari, latihan berulang memindahkan kontrol gerakan dari korteks otak besar yang lambat ke cerebellum. Ini menciptakan apa yang biasa disebut 'muscle memory'."
+            },
+            midbrain: {
+                name: "Otak Tengah",
+                latin: "Mesencephalon",
+                system: "Batang Otak",
+                color: "#bd00ff",
+                metrics: { cognitive: 20, motor: 60 },
+                fungsi: [
+                    "Stasiun relai sensorik untuk refleks penglihatan (seperti melacak gerakan objek).",
+                    "Relai informasi pendengaran dan koordinasi refleks lokalisasi suara.",
+                    "Mengatur gerakan mata dan konstriksi pupil mata.",
+                    "Memproduksi dopamin di Substansia Nigra untuk kontrol gerakan dan sistem penghargaan."
+                ],
+                deskripsi: "Bagian paling atas dari batang otak yang menghubungkan otak besar dengan pons. Struktur kecil ini sangat penting karena dilewati oleh semua serabut saraf motorik dan sensorik utama yang menghubungkan sumsum tulang belakang dengan korteks otak.",
+                klinisDampak: "Penyakit Parkinson (kerusakan neuron Substansia Nigra), gangguan gerakan mata (kelumpuhan saraf okulomotorik), sindrom Weber, dan gangguan kesadaran berat (koma).",
+                klinisDetail: "Substansia nigra di otak tengah kaya akan neuron neuromelanin yang memproduksi dopamin. Pada penyakit Parkinson, sel-sel ini mati, menyebabkan gejala motorik khas seperti gemetar (tremor), kekakuan otot, dan kelambatan gerakan (bradikinesia).",
+                trivia: "Substansia Nigra secara harfiah berarti 'substansi hitam'. Area ini dinamai demikian karena pada penampang melintang otak segar, area ini tampak berwarna gelap kehitaman akibat akumulasi pigmen melanin alami yang dihasilkan bersama dopamin."
+            },
+            pons: {
+                name: "Pons",
+                latin: "Pons Varolii",
+                system: "Batang Otak",
+                color: "#a800e3",
+                metrics: { cognitive: 10, motor: 40 },
+                fungsi: [
+                    "Menjembatani transmisi sinyal saraf antara otak besar, otak kecil, dan sumsum tulang belakang.",
+                    "Mengatur siklus tidur-bangun, khususnya tidur bermimpi (REM Sleep).",
+                    "Membantu mengontrol ritme pernapasan bersama medulla oblongata.",
+                    "Mengatur fungsi saraf kranial wajah (sensasi wajah, mengunyah, berkedip, ekspresi wajah)."
+                ],
+                deskripsi: "Bagian tengah batang otak yang menonjol ke depan, terletak di antara otak tengah dan medulla oblongata, tepat di depan cerebellum. Pons terdiri dari berkas serat putih melintang yang berfungsi sebagai penghubung neural utama.",
+                klinisDampak: "Sindrom Terkunci (Locked-in Syndrome), kelumpuhan saraf wajah (Bell's Palsy), stroke pons, dan gangguan pernapasan pusat.",
+                klinisDetail: "Kerusakan parah pada pons (seperti akibat stroke pons) dapat menyebabkan 'Locked-in Syndrome'. Pasien berada dalam keadaan sadar penuh dan kognisi utuh, tetapi tubuhnya lumpuh total dari leher ke bawah. Mereka hanya bisa berkomunikasi menggunakan kedipan atau gerakan mata vertikal.",
+                trivia: "Pons bertindak sebagai 'pemutus arus' selama tidur REM. Pons memblokir sinyal motorik menuju sumsum tulang belakang sehingga tubuh Anda lumpuh sementara saat bermimpi. Tanpa kelumpuhan tidur alami ini, Anda akan secara fisik memperagakan adegan di dalam mimpi Anda (REM Sleep Behavior Disorder)."
+            },
+            medulla: {
+                name: "Medulla Oblongata",
+                latin: "Medulla Oblongata",
+                system: "Batang Otak",
+                color: "#8800bd",
+                metrics: { cognitive: 5, motor: 30 },
+                fungsi: [
+                    "Pusat kardiovaskular vital yang mengontrol detak jantung dan tekanan darah.",
+                    "Pusat pernapasan utama yang mengatur kedalaman dan laju bernapas secara otonom.",
+                    "Mengoordinasikan refleks pelindung dasar seperti menelan, batuk, bersin, dan muntah.",
+                    "Tempat terjadinya dekussasi piramidalis (persilangan saraf motorik kiri dan kanan)."
+                ],
+                deskripsi: "Struktur berbentuk corong yang merupakan bagian terbawah dari batang otak, menghubungkan pons dengan sumsum tulang belakang. Medulla mengontrol fungsi-fungsi otonom yang mutlak diperlukan untuk mempertahankan kehidupan manusia tanpa kendali sadar.",
+                klinisDampak: "Kematian instan akibat berhentinya pernapasan dan detak jantung, Sindrom Medullary Lateral (Wallenberg), dysfagia (sulit menauk/menelan), dan fluktuasi tekanan darah fatal.",
+                klinisDetail: "Karena mengontrol detak jantung dan pernapasan secara otonom, kerusakan struktural pada medulla oblongata (misalnya akibat herniasi otak atau cedera leher atas) hampir selalu berakibat fatal seketika. Medulla adalah batas kritis kelangsungan hidup biologis.",
+                trivia: "Di medulla oblongata terdapat area persilangan saraf bernama 'Dekussasi Piramidalis'. Serabut saraf motorik dari belahan otak kiri menyilang ke sisi kanan tubuh, dan sebaliknya. Inilah mengapa stroke di belahan otak kiri menyebabkan kelumpuhan pada tubuh bagian kanan."
+            },
+            thalamus: {
+                name: "Talamus",
+                latin: "Thalamus",
+                system: "Sistem Limbik",
+                color: "#ff8c00",
+                metrics: { cognitive: 60, motor: 50 },
+                fungsi: [
+                    "Stasiun gerbang utama yang menyaring dan meneruskan semua informasi sensorik (kecuali penciuman) ke korteks serebral.",
+                    "Membantu menyaring stimulus latar belakang agar otak bisa fokus pada informasi penting.",
+                    "Berperan dalam pengaturan tingkat kesadaran, kewaspadaan, dan siklus tidur.",
+                    "Mengoordinasikan sirkuit motorik halus antara korteks motorik dan otak kecil."
+                ],
+                deskripsi: "Massa simetris ganda berstruktur materi abu-abu berbentuk telur yang terletak di pusat geometris otak manusia, tepat di atas batang otak dan di antara otak besar. Talamus berfungsi sebagai 'pintu gerbang' menuju kesadaran kognitif.",
+                klinisDampak: "Sindrom Nyeri Talamik (nyeri kronis luar biasa tanpa sebab fisik), koma berkepanjangan, afasia talamik, dan Insomnia Fatal Familial (penyakit prion yang merusak talamus sehingga penderita tidak bisa tidur sampai mati).",
+                klinisDetail: "Stroke talamik dapat menyebabkan Sindrom Dejerine-Roussy (nyeri talamik). Pasien merasakan sensasi terbakar, menusuk, atau nyeri ekstrem yang konstan pada bagian tubuh tertentu, bahkan jika hanya disentuh dengan lembut (allodynia). Hal ini karena sirkuit sensorik talamik kehilangan kemampuan kalibrasi sinyal.",
+                trivia: "Talamus bekerja seperti resepsionis hotel bintang lima untuk pikiran Anda. Ia menyaring ribuan email sensorik (suara AC, gesekan baju di kulit) setiap detik, memutuskan mana yang cukup penting untuk diteruskan ke meja direktur (korteks serebral) untuk kita sadari."
+            },
+            hippocampus: {
+                name: "Hipokampus",
+                latin: "Hippocampus",
+                system: "Sistem Limbik",
+                color: "#ffa633",
+                metrics: { cognitive: 80, motor: 0 },
+                fungsi: [
+                    "Mengonsolidasikan memori jangka pendek (memori kerja) menjadi memori jangka panjang yang permanen.",
+                    "Membentuk memori deklaratif (ingatan berupa fakta dan peristiwa nyata).",
+                    "Membangun peta kognitif lingkungan untuk navigasi spasial dan arah.",
+                    "Berperan dalam neurogenesis (pembentukan sel saraf baru) pada usia dewasa."
+                ],
+                deskripsi: "Struktur melengkung memanjang yang terletak di kedalaman lobus temporal medial di setiap belahan otak. Hipokampus merupakan komponen inti dari sistem limbik dan sangat sensitif terhadap kerusakan akibat kekurangan oksigen (anoksia) serta penyakit degeneratif seperti Alzheimer.",
+                klinisDampak: "Amnesia Anterograd berat (tidak bisa membentuk ingatan baru setelah cedera), kehilangan navigasi arah, dan demensia Alzheimer tahap awal.",
+                klinisDetail: "Pasien terkenal H.M. (Henry Molaison) menjalani operasi pengangkatan hipokampus bilateral pada tahun 1953 untuk mengobati epilepsi. Pasca-operasi, ia mengalami amnesia anterograd total: ia ingat masa kecilnya, tetapi tidak bisa mengingat nama orang yang baru ditemuinya 3 menit lalu selama sisa hidupnya.",
+                trivia: "Kata 'Hippocampus' berasal dari bahasa Yunani kuno: *hippos* (kuda) dan *kampos* (monster laut). Nama ini diberikan karena bentuk strukturnya yang melengkung sangat menyerupai kuda laut saat diiris dan dikeluarkan dari jaringan otak."
+            },
+            amygdala: {
+                name: "Amigdala",
+                latin: "Amygdala",
+                system: "Sistem Limbik",
+                color: "#ff7000",
+                metrics: { cognitive: 50, motor: 10 },
+                fungsi: [
+                    "Memproses emosi utama manusia, terutama rasa takut, kemarahan, kecemasan, dan agresi.",
+                    "Mendeteksi ancaman di lingkungan sekitar dan memicu respons 'fight or flight' (lawan atau lari).",
+                    "Mengaitkan muatan emosi yang kuat ke dalam memori jangka panjang (membuat peristiwa trauma sulit dilupakan).",
+                    "Mengevaluasi isyarat sosial emosional pada wajah orang lain (misal mendeteksi kemarahan/ketakutan)."
+                ],
+                deskripsi: "Dua massa materi kelabu berbentuk kacang almond yang terletak di kedalaman lobus temporal anterior, tepat di depan ujung hipokampus. Amigdala bertindak sebagai sistem alarm keamanan internal otak.",
+                klinisDampak: "Sindrom Urbach-Wiethe (kehilangan rasa takut total), gangguan kecemasan umum, PTSD (post-traumatic stress disorder), dan agresi tak terkendali.",
+                klinisDetail: "Hiperaktivitas amigdala sering dikaitkan dengan PTSD dan fobia sosial, di mana otak memicu respon kepanikan fisik pada stimulus yang tidak berbahaya. Sebaliknya, kerusakan amigdala dapat membuat seseorang menjadi pasif, tidak memiliki ketakutan, dan kehilangan respons waspada.",
+                trivia: "Pasien dengan penyakit genetik Urbach-Wiethe yang merusak amigdala secara simetris kehilangan rasa takut sama sekali. Mereka dilaporkan dapat memegang ular berbisa, laba-laba tarantula, atau masuk ke rumah hantu tanpa mengalami peningkatan detak jantung atau ketakutan psikologis sedikit pun."
+            },
+            corpus_callosum: {
+                name: "Korpus Kalosum",
+                latin: "Corpus Callosum",
+                system: "Sistem Limbik",
+                color: "#ffb74d",
+                metrics: { cognitive: 70, motor: 40 },
+                fungsi: [
+                    "Menghubungkan hemisfer kiri dan hemisfer kanan otak secara fisik dan fungsional.",
+                    "Memfasilitasi pertukaran informasi sensorik, motorik, dan kognitif secara konstan antar-belahan otak.",
+                    "Mengintegrasikan fungsi spesifik belahan otak kiri (seperti bahasa) dengan belahan kanan (seperti pengenalan pola spasial)."
+                ],
+                deskripsi: "Pita serat saraf (akson) berbentuk C datar berukuran besar yang membentang di bawah korteks serebral sepanjang garis tengah. Terdiri dari lebih dari 200 juta serabut saraf bermielin tebal, menjadikannya jalur transmisi data terbesar di otak.",
+                klinisDampak: "Sindrom Otak Terbelah (Split-brain Syndrome), alien hand syndrome (tangan bergerak sendiri tanpa sadar), dan gangguan koordinasi bilateral motorik halus.",
+                klinisDetail: "Pada abad ke-20, dokter memotong corpus callosum pasien epilepsi berat (callosotomy) untuk mencegah penyebaran kejang. Hal ini menghasilkan 'Split-brain Syndrome', di mana belahan otak kiri dan kanan bekerja secara mandiri tanpa saling berkomunikasi secara sadar.",
+                trivia: "Pada pasien dengan otak terbelah, jika gambar sendok ditampilkan hanya di bidang visual kiri (yang dikirim ke otak kanan non-verbal), pasien tidak dapat menyebutkan kata 'sendok' secara lisan karena pusat bahasa ada di otak kiri. Namun, tangan kiri mereka (dikendalikan otak kanan) dapat dengan mudah mengambil sendok dari balik tirai!"
+            }
+        };
+
+        // --- APPLICATION STATE ---
+        const state = {
+            selectedRegion: 'frontal',
+            viewMode: 'solid', // 'solid', 'xray', 'hologram', 'wireframe'
+            theme: 'neon', // 'neon', 'clinical', 'holographic'
+            explodedFactor: 0.0,
+            autoRotate: true,
+            pulseSpeed: 1.0,
+            pulseActive: true
+        };
+
+        // --- THREE.JS VARIABLE HOOKS ---
+        let scene, camera, renderer, controls;
+        let brainGroup; // Holds all brain parts
+        let particles = []; // Neural pulse particles
+        let regionsMeshes = {}; // Maps region keys to arrays of meshes representing that region
+        const neuralPaths = []; // Track generated splines for particle flow
+        let raycaster, mouse;
+        let isLoaded = false;
+
+        // --- DOM ELEMENTS ---
+        const canvasContainer = document.getElementById('canvas-container');
+        const loadingOverlay = document.getElementById('loading-overlay');
+        const loadingProgress = document.getElementById('loading-progress');
+        const loadingStatus = document.getElementById('loading-status');
+        const floatingLabel = document.getElementById('floating-label');
+        const floatingLabelText = document.getElementById('floating-label-text');
+        const hudRegionName = document.getElementById('hud-region-name');
+
+        // --- INITIALIZE APPLICATION ---
+        window.addEventListener('DOMContentLoaded', () => {
+            initThree();
+            buildProceduralBrain();
+            setupEventHandlers();
+            animate();
+        });
+
+        // --- INITIALIZE THREE.JS BOILERPLATE ---
+        function initThree() {
+            // 1. Create Scene
+            scene = new THREE.Scene();
+            scene.fog = new THREE.FogExp2(0x03070c, 0.08);
+
+            // 2. Create Camera
+            camera = new THREE.PerspectiveCamera(45, canvasContainer.clientWidth / canvasContainer.clientHeight, 0.1, 100);
+            camera.position.set(4, 3, 5);
+
+            // 3. Create Renderer
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: "high-performance" });
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5)); // Optimized pixel ratio
+            renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
+            renderer.shadowMap.enabled = false; // Disable heavy shadow maps
+            renderer.toneMapping = THREE.ACESFilmicToneMapping;
+            renderer.toneMappingExposure = 1.0;
+            canvasContainer.appendChild(renderer.domElement);
+
+            // 4. Create OrbitControls
+            controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.05;
+            controls.minDistance = 2.5;
+            controls.maxDistance = 15;
+            controls.autoRotate = state.autoRotate;
+            controls.autoRotateSpeed = 0.8;
+            controls.target.set(0, -0.2, 0);
+
+            // 5. Lighting Setup
+            const ambientLight = new THREE.AmbientLight(0xffffff, 0.25);
+            scene.add(ambientLight);
+
+            const dirLight1 = new THREE.DirectionalLight(0xffffff, 0.8);
+            dirLight1.position.set(5, 10, 7);
+            scene.add(dirLight1);
+
+            const dirLight2 = new THREE.DirectionalLight(0x00e5ff, 0.5);
+            dirLight2.position.set(-5, -5, -5);
+            scene.add(dirLight2);
+
+            const pointLight = new THREE.PointLight(0xbd00ff, 1, 10);
+            pointLight.position.set(0, 1, 0);
+            scene.add(pointLight);
+
+            // 6. Raycasting Setup
+            raycaster = new THREE.Raycaster();
+            mouse = new THREE.Vector2();
+
+            // 7. Base Brain Group
+            brainGroup = new THREE.Group();
+            scene.add(brainGroup);
+
+            // 8. Handle Resize
+            window.addEventListener('resize', onWindowResize);
+        }
+
+        // --- PROCEDURAL BRAIN GENERATOR ---
+        function buildProceduralBrain() {
+            let progress = 0;
+            const updateProgress = (amt, message) => {
+                progress += amt;
+                loadingProgress.style.width = `${progress}%`;
+                loadingStatus.innerText = `${Math.round(progress)}% Terisi`;
+                if (progress >= 100) {
+                    setTimeout(() => {
+                        loadingOverlay.classList.add('hidden');
+                        isLoaded = true;
+                    }, 600);
+                }
+            };
+
+            setTimeout(() => { generateCerebrum(updateProgress); }, 100);
+            setTimeout(() => { generateCerebellum(updateProgress); }, 300);
+            setTimeout(() => { generateBrainstem(updateProgress); }, 500);
+            setTimeout(() => { generateLimbicSystem(updateProgress); }, 700);
+            setTimeout(() => { setupNeuralParticles(updateProgress); }, 900);
+        }
+
+        // Helper: Get color based on state.theme
+        function getRegionColor(regionKey) {
+            if (state.theme === 'clinical') {
+                const clinColors = {
+                    frontal: '#ff94aa',
+                    parietal: '#9eff94',
+                    temporal: '#94f4ff',
+                    occipital: '#ffeb94',
+                    cerebellum: '#ffa384',
+                    midbrain: '#e794ff',
+                    pons: '#d06eff',
+                    medulla: '#b049e3',
+                    thalamus: '#ffd594',
+                    hippocampus: '#ffbf84',
+                    amygdala: '#ffa464',
+                    corpus_callosum: '#ffffff'
+                };
+                return new THREE.Color(clinColors[regionKey] || '#dddddd');
+            } else if (state.theme === 'holographic') {
+                return new THREE.Color('#00e5ff');
+            }
+            return new THREE.Color(brainDatabase[regionKey].color);
+        }
+
+        // Apply visual mode material configurations
+        function applyMaterialMode(mesh, regionKey) {
+            const isSelected = regionKey === state.selectedRegion;
+            const baseColor = getRegionColor(regionKey);
+            
+            // Base standard material
+            mesh.material.color.copy(baseColor);
+            
+            if (state.theme === 'holographic') {
+                mesh.material.emissive.setHex(0x00e5ff);
+                mesh.material.emissiveIntensity = isSelected ? 1.5 : 0.4;
+            } else {
+                mesh.material.emissive.copy(baseColor);
+                mesh.material.emissiveIntensity = isSelected ? 0.6 : 0.05;
+            }
+            
+            mesh.material.roughness = 0.35;
+            mesh.material.metalness = 0.1;
+
+            switch (state.viewMode) {
+                case 'xray':
+                    mesh.material.transparent = true;
+                    mesh.material.opacity = isSelected ? 0.85 : 0.15;
+                    mesh.material.wireframe = false;
+                    break;
+                case 'hologram':
+                    mesh.material.transparent = true;
+                    mesh.material.opacity = isSelected ? 0.9 : 0.3;
+                    mesh.material.wireframe = true;
+                    break;
+                case 'wireframe':
+                    mesh.material.transparent = false;
+                    mesh.material.opacity = 1.0;
+                    mesh.material.wireframe = true;
+                    break;
+                case 'solid':
+                default:
+                    mesh.material.transparent = true;
+                    mesh.material.opacity = isSelected ? 1.0 : 0.45;
+                    mesh.material.wireframe = false;
+                    break;
+            }
+            
+            // Deep internal structure visibility logic (Sistem Limbik)
+            const isInternal = ['thalamus', 'hippocampus', 'amygdala', 'corpus_callosum'].includes(regionKey);
+            const outerSelected = ['frontal', 'parietal', 'temporal', 'occipital'].includes(state.selectedRegion);
+            
+            if (isInternal && outerSelected && state.viewMode === 'solid') {
+                // Make internal structures semi-transparent if an outer structure is selected
+                mesh.material.transparent = true;
+                mesh.material.opacity = 0.25;
+            }
+            
+            mesh.material.needsUpdate = true;
+        }
+
+        // 1. CEREBRUM GENERATOR (Algorithmic Tube Gyri)
+        function generateCerebrum(updateProgress) {
+            // Hemispheres configurations
+            const rx = 0.9, ry = 0.85, rz = 1.25; // Ellipsoid semi-axes
+            const sides = [1, -1]; // 1: Left hemisphere, -1: Right hemisphere
+            
+            // Optimized tube counts for faster CPU calculations
+            const lobes = [
+                {
+                    key: 'frontal',
+                    check: (theta, phi) => theta <= 1.5 && Math.sin(phi) >= -0.1,
+                    numTubes: 9
+                },
+                {
+                    key: 'parietal',
+                    check: (theta, phi) => theta <= 1.4 && Math.sin(phi) < -0.1 && Math.sin(phi) >= -0.85,
+                    numTubes: 7
+                },
+                {
+                    key: 'temporal',
+                    check: (theta, phi) => theta > 1.3 && theta <= 2.2 && Math.sin(phi) >= -0.4,
+                    numTubes: 8
+                },
+                {
+                    key: 'occipital',
+                    check: (theta, phi) => theta <= 1.9 && Math.sin(phi) < -0.85,
+                    numTubes: 5
+                }
+            ];
+
+            lobes.forEach(lobe => {
+                regionsMeshes[lobe.key] = [];
+            });
+
+            sides.forEach(side => {
+                const xOffset = 0.35 * side; // Separate left and right hemispheres slightly
+
+                lobes.forEach(lobe => {
+                    const groupName = `${lobe.key}_${side > 0 ? 'L' : 'R'}`;
+                    const lobeGroup = new THREE.Group();
+                    lobeGroup.name = groupName;
+                    
+                    // Add custom positioning variables to handle Exploded View
+                    lobeGroup.userData = { 
+                        region: lobe.key, 
+                        side: side,
+                        baseX: xOffset,
+                        baseY: 0,
+                        baseZ: 0
+                    };
+                    lobeGroup.position.x = xOffset;
+                    brainGroup.add(lobeGroup);
+
+                    // Generate winding tubes
+                    for (let t = 0; t < lobe.numTubes; t++) {
+                        const points = [];
+                        
+                        // Find a random seed point within boundary
+                        let theta = 0, phi = 0;
+                        let valid = false;
+                        let attempts = 0;
+                        while (!valid && attempts < 100) {
+                            theta = Math.random() * Math.PI; // Polar angle
+                            phi = Math.random() * Math.PI * 2; // Azimuthal angle
+                            if (lobe.check(theta, phi)) valid = true;
+                            attempts++;
+                        }
+
+                        // Random walk on ellipsoid shell
+                        let currentTheta = theta;
+                        let currentPhi = phi;
+                        const stepsCount = 20 + Math.floor(Math.random() * 15);
+                        
+                        let lastDirTheta = (Math.random() - 0.5) * 0.15;
+                        let lastDirPhi = (Math.random() - 0.5) * 0.2;
+
+                        for (let s = 0; s < stepsCount; s++) {
+                            // Update angles with inertia (correlated random walk)
+                            lastDirTheta += (Math.random() - 0.5) * 0.05;
+                            lastDirPhi += (Math.random() - 0.5) * 0.08;
+                            // Clamp step speeds
+                            lastDirTheta = Math.max(-0.1, Math.min(0.1, lastDirTheta));
+                            lastDirPhi = Math.max(-0.15, Math.min(0.15, lastDirPhi));
+
+                            currentTheta += lastDirTheta;
+                            currentPhi += lastDirPhi;
+
+                            // Out of bounds reflection/clamp
+                            if (!lobe.check(currentTheta, currentPhi)) {
+                                lastDirTheta *= -1;
+                                lastDirPhi *= -1;
+                                currentTheta += lastDirTheta * 2;
+                                currentPhi += lastDirPhi * 2;
+                            }
+
+                            // Convert to Cartesian
+                            const normalX = Math.sin(currentTheta) * Math.cos(currentPhi);
+                            const normalY = Math.cos(currentTheta);
+                            const normalZ = Math.sin(currentTheta) * Math.sin(currentPhi);
+
+                            let px = rx * normalX;
+                            let py = ry * normalY;
+                            let pz = rz * normalZ;
+
+                            // Add squiggly brain wrinkles (gyrus wobble waves)
+                            const wobble = Math.sin(s * 2.2) * 0.035;
+                            px += normalX * wobble;
+                            py += normalY * wobble;
+                            pz += normalZ * wobble;
+
+                            points.push(new THREE.Vector3(px, py, pz));
+                        }
+
+                        if (points.length > 3) {
+                            const spline = new THREE.CatmullRomCurve3(points);
+                            neuralPaths.push({ curve: spline, group: lobeGroup }); // Keep for pulsing neural signals
+
+                            // Build tube mesh - Optimized segments (16 segments, 4 radial) for high performance
+                            const tubeGeo = new THREE.TubeGeometry(spline, 16, 0.065, 4, false);
+                            const mat = new THREE.MeshStandardMaterial({ 
+                                color: getRegionColor(lobe.key),
+                                roughness: 0.3,
+                                metalness: 0.1
+                            });
+                            
+                            const mesh = new THREE.Mesh(tubeGeo, mat);
+                            mesh.userData = { region: lobe.key };
+                            mesh.castShadow = false;
+                            mesh.receiveShadow = false;
+                            
+                            lobeGroup.add(mesh);
+                            regionsMeshes[lobe.key].push(mesh);
+                        }
+                    }
+                });
+            });
+
+            updateProgress(35, "Otak besar selesai dibentuk.");
+        }
+
+        // 2. CEREBELLUM GENERATOR (Concentric Horisontal Folia Tubes)
+        function generateCerebellum(updateProgress) {
+            const cerebellumGroup = new THREE.Group();
+            cerebellumGroup.name = 'cerebellum_group';
+            cerebellumGroup.userData = { 
+                region: 'cerebellum',
+                side: 0,
+                baseX: 0,
+                baseY: -0.65,
+                baseZ: -0.95
+            };
+            cerebellumGroup.position.set(0, -0.65, -0.95);
+            brainGroup.add(cerebellumGroup);
+            regionsMeshes['cerebellum'] = [];
+
+            // Optimized: Fewer horisontal slices for higher performance
+            const numSlices = 4;
+            const centerZ = 0.0;
+            
+            for (let i = 0; i < numSlices; i++) {
+                // Vertical height step
+                const y = -0.3 + (i * 0.16);
+                const factor = Math.sin((i / (numSlices - 1)) * Math.PI); // Oval shaping factor
+                const radiusX = 0.75 * (0.4 + factor * 0.6);
+                const radiusZ = 0.55 * (0.4 + factor * 0.6);
+
+                // Generate circular wavy loops
+                const points = [];
+                const numPoints = 24; // Optimized from 36
+                for (let p = 0; p <= numPoints; p++) {
+                    const angle = (p / numPoints) * Math.PI * 2;
+                    
+                    // Squiggly cerebellum folia (smaller and more horizontal folds)
+                    const wobble = Math.sin(angle * 12) * 0.022;
+                    const px = Math.cos(angle) * radiusX + wobble;
+                    const pz = centerZ + Math.sin(angle) * radiusZ + wobble;
+                    const py = y + Math.cos(angle * 8) * 0.015;
+
+                    points.push(new THREE.Vector3(px, py, pz));
+                }
+
+                const spline = new THREE.CatmullRomCurve3(points);
+                neuralPaths.push({ curve: spline, group: cerebellumGroup });
+
+                // Optimized segments (24 segments, 4 radial) for high performance
+                const tubeGeo = new THREE.TubeGeometry(spline, 24, 0.045, 4, true);
+                const mat = new THREE.MeshStandardMaterial({ color: getRegionColor('cerebellum') });
+                const mesh = new THREE.Mesh(tubeGeo, mat);
+                mesh.userData = { region: 'cerebellum' };
+                
+                cerebellumGroup.add(mesh);
+                regionsMeshes['cerebellum'].push(mesh);
+            }
+
+            updateProgress(20, "Otak kecil selesai dibentuk.");
+        }
+
+        // 3. BRAINSTEM GENERATOR (Contoured Smooth Geometries)
+        function generateBrainstem(updateProgress) {
+            // 3.1 Midbrain
+            const midbrainGroup = new THREE.Group();
+            midbrainGroup.name = 'midbrain_group';
+            midbrainGroup.userData = { region: 'midbrain', side: 0, baseX: 0, baseY: -0.2, baseZ: -0.3 };
+            midbrainGroup.position.set(0, -0.2, -0.3);
+            brainGroup.add(midbrainGroup);
+            regionsMeshes['midbrain'] = [];
+
+            const midGeo = new THREE.CylinderGeometry(0.3, 0.32, 0.3, 16);
+            const midMat = new THREE.MeshStandardMaterial({ color: getRegionColor('midbrain') });
+            const midMesh = new THREE.Mesh(midGeo, midMat);
+            midMesh.userData = { region: 'midbrain' };
+            midbrainGroup.add(midMesh);
+            regionsMeshes['midbrain'].push(midMesh);
+
+            // 3.2 Pons (Bulging oval shape)
+            const ponsGroup = new THREE.Group();
+            ponsGroup.name = 'pons_group';
+            ponsGroup.userData = { region: 'pons', side: 0, baseX: 0, baseY: -0.5, baseZ: -0.22 };
+            ponsGroup.position.set(0, -0.5, -0.22);
+            brainGroup.add(ponsGroup);
+            regionsMeshes['pons'] = [];
+
+            const ponsGeo = new THREE.SphereGeometry(0.36, 16, 16);
+            ponsGeo.scale(1.0, 0.75, 1.15); // Stretch front-back
+            const ponsMat = new THREE.MeshStandardMaterial({ color: getRegionColor('pons') });
+            const ponsMesh = new THREE.Mesh(ponsGeo, ponsMat);
+            ponsMesh.userData = { region: 'pons' };
+            ponsGroup.add(ponsMesh);
+            regionsMeshes['pons'].push(ponsMesh);
+
+            // 3.3 Medulla Oblongata (Tapered cylinder extending downwards)
+            const medullaGroup = new THREE.Group();
+            medullaGroup.name = 'medulla_group';
+            medullaGroup.userData = { region: 'medulla', side: 0, baseX: 0, baseY: -1.05, baseZ: -0.32 };
+            medullaGroup.position.set(0, -1.05, -0.32);
+            brainGroup.add(medullaGroup);
+            regionsMeshes['medulla'] = [];
+
+            const medGeo = new THREE.CylinderGeometry(0.25, 0.15, 0.6, 16);
+            const medMat = new THREE.MeshStandardMaterial({ color: getRegionColor('medulla') });
+            const medMesh = new THREE.Mesh(medGeo, medMat);
+            medMesh.userData = { region: 'medulla' };
+            medullaGroup.add(medMesh);
+            regionsMeshes['medulla'].push(medMesh);
+
+            updateProgress(15, "Batang otak selesai dibentuk.");
+        }
+
+        // 4. LIMBIC SYSTEM GENERATOR (Core Internal Structures)
+        function generateLimbicSystem(updateProgress) {
+            // 4.1 Thalamus (Two egg shapes at the geometric center)
+            const thalamusGroup = new THREE.Group();
+            thalamusGroup.name = 'thalamus_group';
+            thalamusGroup.userData = { region: 'thalamus', side: 0, baseX: 0, baseY: -0.05, baseZ: -0.15 };
+            thalamusGroup.position.set(0, -0.05, -0.15);
+            brainGroup.add(thalamusGroup);
+            regionsMeshes['thalamus'] = [];
+
+            const thalSides = [1, -1];
+            thalSides.forEach(side => {
+                const thalGeo = new THREE.SphereGeometry(0.2, 16, 16);
+                thalGeo.scale(0.8, 0.8, 1.25); // Egg shape
+                const thalMat = new THREE.MeshStandardMaterial({ color: getRegionColor('thalamus') });
+                const thalMesh = new THREE.Mesh(thalGeo, thalMat);
+                thalMesh.position.set(0.18 * side, 0, 0);
+                thalMesh.userData = { region: 'thalamus' };
+                thalamusGroup.add(thalMesh);
+                regionsMeshes['thalamus'].push(thalMesh);
+            });
+
+            // 4.2 Corpus Callosum (Glowing C-shaped arch over thalamus)
+            const corpusGroup = new THREE.Group();
+            corpusGroup.name = 'corpus_group';
+            corpusGroup.userData = { region: 'corpus_callosum', side: 0, baseX: 0, baseY: 0.15, baseZ: -0.15 };
+            corpusGroup.position.set(0, 0.15, -0.15);
+            brainGroup.add(corpusGroup);
+            regionsMeshes['corpus_callosum'] = [];
+
+            const ccPoints = [];
+            const numCCPoints = 20;
+            for (let i = 0; i <= numCCPoints; i++) {
+                const t = i / numCCPoints;
+                const angle = Math.PI * 1.1 * t - (Math.PI * 0.05); // Semi-circle sweep
+                const radius = 0.58;
+                const z = Math.cos(angle) * radius * 1.2;
+                const y = Math.sin(angle) * radius;
+                ccPoints.push(new THREE.Vector3(0, y, z));
+            }
+            const ccCurve = new THREE.CatmullRomCurve3(ccPoints);
+            neuralPaths.push({ curve: ccCurve, group: corpusGroup });
+            const ccGeo = new THREE.TubeGeometry(ccCurve, 32, 0.075, 8, false);
+            const ccMat = new THREE.MeshStandardMaterial({ color: getRegionColor('corpus_callosum') });
+            const ccMesh = new THREE.Mesh(ccGeo, ccMat);
+            ccMesh.userData = { region: 'corpus_callosum' };
+            corpusGroup.add(ccMesh);
+            regionsMeshes['corpus_callosum'].push(ccMesh);
+
+            // 4.3 Hippocampus (Flanking horn curves wrapping Thalamus)
+            const hippoGroup = new THREE.Group();
+            hippoGroup.name = 'hippocampus_group';
+            hippoGroup.userData = { region: 'hippocampus', side: 0, baseX: 0, baseY: -0.15, baseZ: -0.15 };
+            hippoGroup.position.set(0, -0.15, -0.15);
+            brainGroup.add(hippoGroup);
+            regionsMeshes['hippocampus'] = [];
+
+            // 4.4 Amygdala (Small almonds at the end of Hippocampi)
+            const amygdalaGroup = new THREE.Group();
+            amygdalaGroup.name = 'amygdala_group';
+            amygdalaGroup.userData = { region: 'amygdala', side: 0, baseX: 0, baseY: -0.25, baseZ: 0.1 };
+            amygdalaGroup.position.set(0, -0.25, 0.1);
+            brainGroup.add(amygdalaGroup);
+            regionsMeshes['amygdala'] = [];
+
+            thalSides.forEach(side => {
+                // Hippocampus horn curve
+                const hcPoints = [];
+                const hcSegments = 15;
+                for (let i = 0; i <= hcSegments; i++) {
+                    const t = i / hcSegments;
+                    const angle = Math.PI * 1.05 * t - (Math.PI * 0.25);
+                    const radius = 0.35;
+                    const x = (0.22 + Math.sin(t * Math.PI) * 0.15) * side;
+                    const z = Math.cos(angle) * radius;
+                    const y = Math.sin(angle) * radius * 0.7 - 0.05;
+                    hcPoints.push(new THREE.Vector3(x, y, z));
+                }
+                const hcCurve = new THREE.CatmullRomCurve3(hcPoints);
+                neuralPaths.push({ curve: hcCurve, group: hippoGroup });
+                const hcGeo = new THREE.TubeGeometry(hcCurve, 20, 0.045, 6, false);
+                const hcMat = new THREE.MeshStandardMaterial({ color: getRegionColor('hippocampus') });
+                const hcMesh = new THREE.Mesh(hcGeo, hcMat);
+                hcMesh.userData = { region: 'hippocampus' };
+                hippoGroup.add(hcMesh);
+                regionsMeshes['hippocampus'].push(hcMesh);
+
+                // Amygdala bulb
+                const amyGeo = new THREE.SphereGeometry(0.085, 12, 12);
+                amyGeo.scale(1.2, 0.8, 1.5); // Almond elongated shape
+                const amyMat = new THREE.MeshStandardMaterial({ color: getRegionColor('amygdala') });
+                const amyMesh = new THREE.Mesh(amyGeo, amyMat);
+                amyMesh.position.set(0.38 * side, 0, 0.1); // Placed at anterior of hippocampus
+                amyMesh.userData = { region: 'amygdala' };
+                amygdalaGroup.add(amyMesh);
+                regionsMeshes['amygdala'].push(amyMesh);
+            });
+
+            updateProgress(20, "Sistem limbik internal selesai dibentuk.");
+        }
+
+        // 5. NEURAL SIGNAL PARTICLES GENERATOR
+        function setupNeuralParticles(updateProgress) {
+            const particleCount = 45; // Max active pulsing signals
+            const pGeo = new THREE.SphereGeometry(0.024, 8, 8);
+            
+            for (let i = 0; i < particleCount; i++) {
+                // Select a random spline path generated during brain modeling
+                const randomPathIndex = Math.floor(Math.random() * neuralPaths.length);
+                const pathEntry = neuralPaths[randomPathIndex];
+                const curve = pathEntry.curve;
+                const group = pathEntry.group;
+                
+                const pMat = new THREE.MeshBasicMaterial({ 
+                    color: 0xffffff,
+                    transparent: true,
+                    opacity: 0.85,
+                    blending: THREE.AdditiveBlending
+                });
+                
+                const pMesh = new THREE.Mesh(pGeo, pMat);
+                
+                // Add particle mesh directly to its corresponding anatomical parent group!
+                group.add(pMesh);
+                
+                particles.push({
+                    mesh: pMesh,
+                    curve: curve,
+                    t: Math.random(), // Start parameter between 0 and 1
+                    speed: 0.0015 + Math.random() * 0.0035
+                });
+            }
+
+            updateProgress(10, "Pemancar denyut saraf siap.");
+        }
+
+        // --- UPDATE GRAPHICS ACCORDING TO STATE ---
+        function updateBrainVisuals() {
+            // 1. Update region meshes materials based on viewMode, theme, and selectedRegion
+            Object.keys(regionsMeshes).forEach(regionKey => {
+                regionsMeshes[regionKey].forEach(mesh => {
+                    applyMaterialMode(mesh, regionKey);
+                });
+            });
+
+            // 2. Adjust Exploded View offsets
+            brainGroup.children.forEach(group => {
+                if (!group.userData || group.name === 'particles_group') return;
+                
+                const region = group.userData.region;
+                const side = group.userData.side;
+                const factor = state.explodedFactor;
+
+                // Reset positions
+                group.position.set(group.userData.baseX, group.userData.baseY, group.userData.baseZ);
+
+                // Apply directional explosion factor
+                if (factor > 0) {
+                    switch (region) {
+                        case 'frontal':
+                            group.position.x += 0.8 * side * factor;
+                            group.position.z += 0.9 * factor;
+                            group.position.y += 0.2 * factor;
+                            break;
+                        case 'parietal':
+                            group.position.x += 0.5 * side * factor;
+                            group.position.z -= 0.3 * factor;
+                            group.position.y += 0.9 * factor;
+                            break;
+                        case 'temporal':
+                            group.position.x += 1.35 * side * factor;
+                            group.position.z += 0.1 * factor;
+                            group.position.y -= 0.5 * factor;
+                            break;
+                        case 'occipital':
+                            group.position.x += 0.45 * side * factor;
+                            group.position.z -= 1.1 * factor;
+                            group.position.y += 0.1 * factor;
+                            break;
+                        case 'cerebellum':
+                            group.position.z -= 0.8 * factor;
+                            group.position.y -= 0.8 * factor;
+                            break;
+                        case 'midbrain':
+                            group.position.y -= 0.25 * factor;
+                            group.position.z -= 0.05 * factor;
+                            break;
+                        case 'pons':
+                            group.position.y -= 0.45 * factor;
+                            group.position.z += 0.05 * factor;
+                            break;
+                        case 'medulla':
+                            group.position.y -= 0.75 * factor;
+                            group.position.z -= 0.1 * factor;
+                            break;
+                        // Internal limbic system stays relatively central or splits slightly to reveal sagittal split
+                        case 'thalamus':
+                        case 'hippocampus':
+                        case 'amygdala':
+                            group.position.x += 0.15 * side * factor;
+                            group.position.y -= 0.1 * factor;
+                            break;
+                        case 'corpus_callosum':
+                            group.position.y += 0.15 * factor;
+                            break;
+                    }
+                }
+            });
+
+            // 3. Highlight colors on CSS layouts
+            const activeColor = getRegionColor(state.selectedRegion).getStyle();
+            document.documentElement.style.setProperty('--accent-color', activeColor);
+        }
+
+        // --- SYNC STATE TO MEDICAL TEXT UI ---
+        function updateMedicalPanel() {
+            const data = brainDatabase[state.selectedRegion];
+            if (!data) return;
+
+            // Update Headings
+            document.getElementById('info-region-name').innerText = data.name;
+            document.getElementById('info-latin-name').innerText = data.latin;
+            document.getElementById('info-system-badge').innerText = data.system;
+            hudRegionName.innerText = data.name;
+
+            // Set layout borders / glow accent color
+            document.getElementById('info-system-badge').style.borderColor = data.color;
+            document.getElementById('info-system-badge').style.color = data.color;
+
+            // Sync metrics values
+            const cognitiveVal = data.metrics.cognitive;
+            const motorVal = data.metrics.motor;
+            document.getElementById('metric-cognitive-val').innerText = `${cognitiveVal}%`;
+            document.getElementById('metric-cognitive-bar').style.width = `${cognitiveVal}%`;
+            document.getElementById('metric-motor-val').innerText = `${motorVal}%`;
+            document.getElementById('metric-motor-bar').style.width = `${motorVal}%`;
+
+            // Tab 1: Fungsi
+            const fungsiList = document.getElementById('info-fungsi-list');
+            fungsiList.innerHTML = '';
+            data.fungsi.forEach(item => {
+                const li = document.createElement('li');
+                li.innerText = item;
+                fungsiList.appendChild(li);
+            });
+
+            // Tab 2: Medis
+            document.getElementById('info-deskripsi').innerText = data.deskripsi;
+
+            // Tab 3: Klinis
+            document.getElementById('info-klinis-dampak').innerText = data.klinisDampak;
+            document.getElementById('info-klinis-detail').innerText = data.klinisDetail;
+
+            // Tab 4: Trivia
+            document.getElementById('info-trivia').innerText = data.trivia;
+
+            // Sync menu items active state
+            document.querySelectorAll('.nav-item').forEach(el => {
+                el.classList.remove('active');
+                if (el.getAttribute('data-region') === state.selectedRegion) {
+                    el.classList.add('active');
+                    el.style.setProperty('--item-color', data.color);
+                }
+            });
+        }
+
+        // --- RAYCASTING (3D Selection) ---
+        function setupRaycaster(clientX, clientY) {
+            if (!isLoaded) return;
+            
+            // Calculate mouse position in normalized device coordinates (-1 to +1)
+            const rect = renderer.domElement.getBoundingClientRect();
+            mouse.x = ((clientX - rect.left) / rect.width) * 2 - 1;
+            mouse.y = -((clientY - rect.top) / rect.height) * 2 + 1;
+
+            raycaster.setFromCamera(mouse, camera);
+
+            // Get intersections recursively from brainGroup
+            const intersects = raycaster.intersectObjects(brainGroup.children, true);
+
+            if (intersects.length > 0) {
+                // Filter out particle points/meshes
+                const validHits = intersects.filter(hit => 
+                    hit.object.userData && hit.object.userData.region
+                );
+
+                if (validHits.length > 0) {
+                    const hitRegion = validHits[0].object.userData.region;
+                    
+                    // Set state and update
+                    selectRegion(hitRegion);
+                    
+                    // Place floating label at point of intersection
+                    triggerFloatingLabel(validHits[0].point, hitRegion);
+                    return;
+                }
+            }
+            
+            // If clicked empty space, hide label
+            floatingLabel.classList.add('hidden');
+        }
+
+        // Select a region and sync
+        function selectRegion(regionKey) {
+            if (state.selectedRegion === regionKey) return;
+            
+            state.selectedRegion = regionKey;
+            updateBrainVisuals();
+            updateMedicalPanel();
+        }
+
+        // Position 3D Pin HTML label
+        function triggerFloatingLabel(point3d, regionKey) {
+            const name = brainDatabase[regionKey].name;
+            floatingLabelText.innerText = name;
+            
+            // Apply matching colored border
+            const color = brainDatabase[regionKey].color;
+            floatingLabel.style.setProperty('--label-border', color);
+
+            // Save 3D coordinates for animation loop projection
+            floatingLabel.userData = {
+                pos3d: point3d.clone()
+            };
+            
+            floatingLabel.classList.remove('hidden');
+        }
+
+        // Project 3D vector to 2D screen coordinates
+        function projectLabel() {
+            if (!floatingLabel.userData || !floatingLabel.userData.pos3d || floatingLabel.classList.contains('hidden')) return;
+
+            const vector = floatingLabel.userData.pos3d.clone();
+            
+            // Account for exploded view offsets dynamically
+            const region = state.selectedRegion;
+            const factor = state.explodedFactor;
+            
+            if (factor > 0) {
+                // Find matching hemisphere side from active region to offset label correctly
+                let side = 1;
+                const matchedGroup = brainGroup.children.find(g => g.userData && g.userData.region === region);
+                if (matchedGroup && matchedGroup.userData.side) {
+                    side = matchedGroup.userData.side;
+                }
+                
+                switch (region) {
+                    case 'frontal': vector.x += 0.8 * side * factor; vector.z += 0.9 * factor; vector.y += 0.2 * factor; break;
+                    case 'parietal': vector.x += 0.5 * side * factor; vector.z -= 0.3 * factor; vector.y += 0.9 * factor; break;
+                    case 'temporal': vector.x += 1.35 * side * factor; vector.z += 0.1 * factor; vector.y -= 0.5 * factor; break;
+                    case 'occipital': vector.x += 0.45 * side * factor; vector.z -= 1.1 * factor; vector.y += 0.1 * factor; break;
+                    case 'cerebellum': vector.z -= 0.8 * factor; vector.y -= 0.8 * factor; break;
+                    case 'midbrain': vector.y -= 0.25 * factor; vector.z -= 0.05 * factor; break;
+                    case 'pons': vector.y -= 0.45 * factor; vector.z += 0.05 * factor; break;
+                    case 'medulla': vector.y -= 0.75 * factor; vector.z -= 0.1 * factor; break;
+                    case 'thalamus':
+                    case 'hippocampus':
+                    case 'amygdala':
+                        vector.x += 0.15 * side * factor;
+                        vector.y -= 0.1 * factor;
+                        break;
+                    case 'corpus_callosum':
+                        vector.y += 0.15 * factor;
+                        break;
+                }
+            }
+
+            vector.project(camera);
+
+            const rect = renderer.domElement.getBoundingClientRect();
+            const x = (vector.x *  .5 + .5) * rect.width;
+            const y = (vector.y * -.5 + .5) * rect.height;
+
+            // Check if behind camera
+            if (vector.z > 1) {
+                floatingLabel.style.display = 'none';
+            } else {
+                floatingLabel.style.display = 'block';
+                floatingLabel.style.left = `${x}px`;
+                floatingLabel.style.top = `${y}px`;
+            }
+        }
+
+        // --- SETUP USER INTERFACES HANDLERS ---
+        function setupEventHandlers() {
+            // 1. Raycast Click in Canvas
+            canvasContainer.addEventListener('pointerdown', (e) => {
+                // Only trigger on left clicks to avoid panning conflict
+                if (e.button === 0) {
+                    setupRaycaster(e.clientX, e.clientY);
+                }
+            });
+
+            // 2. Navigation Menu Groups Collapsible
+            document.querySelectorAll('.menu-group-header').forEach(header => {
+                header.addEventListener('click', () => {
+                    // Check if it's a single item click rather than folder collapse
+                    if (header.classList.contains('nav-item-single')) {
+                        const region = header.getAttribute('data-region');
+                        selectRegion(region);
+                        return;
+                    }
+
+                    const targetId = header.getAttribute('data-target');
+                    const targetList = document.getElementById(`group-${targetId}`);
+                    
+                    if (targetList) {
+                        const isCollapsed = targetList.classList.toggle('active');
+                        header.classList.toggle('collapsed', !isCollapsed);
+                    }
+                });
+            });
+
+            // 3. Navigation Menu Selection Links
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const region = item.getAttribute('data-region');
+                    selectRegion(region);
+
+                    // Hide label on new manual sidebar click
+                    floatingLabel.classList.add('hidden');
+                });
+            });
+
+            // 4. Medical Detail Tabs Toggle
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const tabId = btn.getAttribute('data-tab');
+                    
+                    // Toggle active buttons
+                    btn.parentElement.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    // Toggle active content divs
+                    const contentWrapper = btn.closest('.sidebar-right').querySelector('.tab-content-wrapper');
+                    contentWrapper.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                    document.getElementById(`tab-${tabId}`).classList.add('active');
+                });
+            });
+
+            // 5. Exploded View Slider Controls
+            const explodedSlider = document.getElementById('control-exploded');
+            const explodedValText = document.getElementById('exploded-val');
+            explodedSlider.addEventListener('input', (e) => {
+                const val = parseFloat(e.target.value);
+                state.explodedFactor = val;
+                explodedValText.innerText = `${(val * 2).toFixed(1)}x`;
+                updateBrainVisuals();
+            });
+
+            // 6. View Mode buttons
+            document.querySelectorAll('[data-mode]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btn.parentElement.querySelectorAll('[data-mode]').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    state.viewMode = btn.getAttribute('data-mode');
+                    updateBrainVisuals();
+                });
+            });
+
+            // 7. Theme selectors
+            document.querySelectorAll('[data-theme]').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btn.parentElement.querySelectorAll('[data-theme]').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    state.theme = btn.getAttribute('data-theme');
+                    updateBrainVisuals();
+                });
+            });
+
+            // 8. Toggles (Auto Rotate & Neural Pulse)
+            const rotateToggle = document.getElementById('control-rotate');
+            rotateToggle.addEventListener('change', (e) => {
+                state.autoRotate = e.target.checked;
+                controls.autoRotate = state.autoRotate;
+            });
+
+            const pulseToggle = document.getElementById('control-pulse');
+            pulseToggle.addEventListener('change', (e) => {
+                state.pulseActive = e.target.checked;
+            });
+
+            // 9. Reset Button Action
+            document.getElementById('btn-reset').addEventListener('click', () => {
+                // Reset state
+                state.selectedRegion = 'frontal';
+                state.viewMode = 'solid';
+                state.theme = 'neon';
+                state.explodedFactor = 0.0;
+                state.autoRotate = true;
+                state.pulseActive = true;
+
+                // Reset control values
+                explodedSlider.value = 0;
+                explodedValText.innerText = '0.0x';
+                rotateToggle.checked = true;
+                pulseToggle.checked = true;
+                controls.autoRotate = true;
+
+                // Reset active btn UI
+                document.querySelectorAll('[data-mode]').forEach(b => b.classList.remove('active'));
+                document.querySelector('[data-mode="solid"]').classList.add('active');
+                
+                document.querySelectorAll('[data-theme]').forEach(b => b.classList.remove('active'));
+                document.querySelector('[data-theme="neon"]').classList.add('active');
+
+                // Reset Camera
+                camera.position.set(4, 3, 5);
+                controls.target.set(0, -0.2, 0);
+
+                floatingLabel.classList.add('hidden');
+                
+                updateBrainVisuals();
+                updateMedicalPanel();
+            });
+
+            // Trigger initial panel load
+            updateBrainVisuals();
+            updateMedicalPanel();
+        }
+
+        // Window resizing
+        function onWindowResize() {
+            camera.aspect = canvasContainer.clientWidth / canvasContainer.clientHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
+        }
+
+        // --- ANIMATION FRAME LOOP ---
+        function animate() {
+            requestAnimationFrame(animate);
+
+            // 1. Update controls
+            controls.update();
+
+            // 2. Animate neural pulses (particles flowing down the tubes)
+            if (state.pulseActive) {
+                particles.forEach(p => {
+                    p.mesh.visible = true;
+                    
+                    // Advance t along spline
+                    p.t += p.speed * state.pulseSpeed;
+                    if (p.t > 1.0) {
+                        p.t = 0.0; // Reset (keeps looping on its own path)
+                    }
+
+                    // Position particle at parametric coordinates on curve
+                    const pos = p.curve.getPointAt(p.t);
+                    p.mesh.position.copy(pos);
+                    
+                    // Pulsing scale animation
+                    const scale = 0.6 + Math.sin(Date.now() * 0.01 + p.t * 10) * 0.4;
+                    p.mesh.scale.set(scale, scale, scale);
+                });
+            } else {
+                particles.forEach(p => {
+                    p.mesh.visible = false;
+                });
+            }
+
+            // 3. Project 3D floating label coordinates to HTML layout
+            projectLabel();
+
+            // 4. Render
+            renderer.render(scene, camera);
+        }
+    </script>
+</body>
+</html>

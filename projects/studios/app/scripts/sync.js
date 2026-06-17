@@ -26,7 +26,10 @@ if (missingEnv.length > 0) {
 }
 
 // Clients initialization
-const notion = new Client({ auth: process.env.NOTION_TOKEN });
+const notion = new Client({
+  auth: process.env.NOTION_TOKEN,
+  notionVersion: '2022-06-28'
+});
 const supabase = createClient(
   process.env.VITE_SUPABASE_URL,
   process.env.SUPABASE_SERVICE_ROLE_KEY,
@@ -90,13 +93,16 @@ async function syncEngine() {
     let stackCursor = undefined;
 
     while (hasMoreStacks) {
-      const response = await notion.databases.query({
-        database_id: process.env.NOTION_STACKS_DB_ID,
-        start_cursor: stackCursor,
-        filter: {
-          property: 'StudiOS',
-          checkbox: {
-            equals: true
+      const response = await notion.request({
+        path: `databases/${process.env.NOTION_STACKS_DB_ID}/query`,
+        method: 'post',
+        body: {
+          start_cursor: stackCursor,
+          filter: {
+            property: 'StudiOS',
+            checkbox: {
+              equals: true
+            }
           }
         }
       });
@@ -147,13 +153,16 @@ async function syncEngine() {
     let contentCursor = undefined;
 
     while (hasMoreContent) {
-      const response = await notion.databases.query({
-        database_id: process.env.NOTION_CONTENT_DB_ID,
-        start_cursor: contentCursor,
-        filter: {
-          property: 'StudiOS',
-          checkbox: {
-            equals: true
+      const response = await notion.request({
+        path: `databases/${process.env.NOTION_CONTENT_DB_ID}/query`,
+        method: 'post',
+        body: {
+          start_cursor: contentCursor,
+          filter: {
+            property: 'StudiOS',
+            checkbox: {
+              equals: true
+            }
           }
         }
       });

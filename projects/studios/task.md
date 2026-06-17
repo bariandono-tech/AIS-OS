@@ -42,9 +42,9 @@ graph TD
 ### Phase 3: Notion Sync Engine
 | Task ID | Nama Tugas | Deskripsi Teknis | Prasyarat (Depends On) | Status |
 |---|---|---|---|---|
-| **T3.1** | Setup Kredensial Notion API | Membuat integrasi internal di Notion, membagikan database Stacks & Content ke integrasi tersebut, dan menyimpan Notion Token di berkas `.env`. | - | `[ ]` |
-| **T3.2** | Pembuatan Script Parser Markdown | Menulis modul parser untuk mengubah properti kaya Notion dan teks markdown/tabel menjadi format JSONB yang sesuai untuk di-ingest. | **T3.1** | `[ ]` |
-| **T3.3** | Script Sync Otomatis (`sync.js`) | Menulis skrip Node yang melakukan UPSERT (insert/update) data dari Notion ke tabel Supabase PostgreSQL. | **T3.2**, **T1.1** | `[ ]` |
+| **T3.1** | Setup Kredensial Notion API | Membuat integrasi internal di Notion, membagikan database Stacks & Content ke integrasi tersebut, dan menyimpan Notion Token di berkas `.env`. | - | `[x]` |
+| **T3.2** | Pembuatan Script Parser Markdown | Menulis modul parser untuk mengubah properti kaya Notion dan teks markdown/tabel menjadi format JSONB yang sesuai untuk di-ingest. | **T3.1** | `[x]` |
+| **T3.3** | Script Sync Otomatis (`sync.js`) | Menulis skrip Node yang melakukan UPSERT (insert/update) data dari Notion ke tabel Supabase PostgreSQL. | **T3.2**, **T1.1** | `[x]` |
 
 ### Phase 4: Sistem Monetisasi & Akses Premium
 | Task ID | Nama Tugas | Deskripsi Teknis | Prasyarat (Depends On) | Status |

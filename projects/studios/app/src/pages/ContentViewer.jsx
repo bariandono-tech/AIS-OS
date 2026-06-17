@@ -1,8 +1,65 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { contentTypeConfig } from "../data/mockData";
 import { getFlashcards, getReferences } from "../services/dataService";
 
-export default function ContentViewer({ content, stack, onBack }) {
+export default function ContentViewer({ content, stack, onBack, onFlashcardProgress }) {
+  const isHTML = content.type === "notes" && content.body?.markdown && (
+    content.body.markdown.trim().startsWith("<") || 
+    content.body.markdown.trim().includes("</script>") ||
+    content.body.markdown.toLowerCase().includes("<iframe") ||
+    content.body.markdown.toLowerCase().includes("<html")
+  );
+
+  if (isHTML) {
+    return (
+      <div className="viewer-interactive" id="content-viewer-interactive" style={{
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        overflow: "hidden",
+        position: "relative"
+      }}>
+        {/* Sleek, thin bar for navigation & context to save space */}
+        <div className="viewer-interactive__header" style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          padding: "10px 16px",
+          background: "rgba(10, 10, 15, 0.6)",
+          backdropFilter: "blur(12px)",
+          borderBottom: "1px solid var(--border-subtle)",
+          flexShrink: 0,
+          zIndex: 100
+        }}>
+          <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+            <button 
+              className="viewer__back" 
+              onClick={onBack} 
+              id="back-to-stack"
+              style={{ margin: 0, padding: "4px 12px", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", fontSize: "12px", color: "var(--text-secondary)", display: "flex", alignItems: "center", gap: "6px", cursor: "pointer" }}
+              onMouseEnter={(e) => e.currentTarget.style.color = "var(--text-primary)"}
+              onMouseLeave={(e) => e.currentTarget.style.color = "var(--text-secondary)"}
+            >
+              ← Kembali ke {stack?.title}
+            </button>
+            <span style={{ fontSize: "14px", fontWeight: 600, color: "var(--text-primary)", letterSpacing: "-0.2px" }}>
+              {content.title}
+            </span>
+          </div>
+          <span className={`content-card__type-badge content-card__type-badge--${content.type}`} style={{ margin: 0 }}>
+            {contentTypeConfig[content.type]?.icon}{" "}
+            Interactive Widget
+          </span>
+        </div>
+        
+        <div style={{ flex: 1, position: "relative", overflow: "hidden", width: "100%", height: "100%" }}>
+          <HTMLContentRenderer html={content.body.markdown} isWidgetMode={true} />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="viewer" id="content-viewer">
       <button className="viewer__back" onClick={onBack} id="back-to-stack">
@@ -23,7 +80,7 @@ export default function ContentViewer({ content, stack, onBack }) {
       {/* Render based on content type */}
       {content.type === "resume" && <ResumeRenderer body={content.body} />}
       {content.type === "notes" && <NotesRenderer body={content.body} />}
-      {content.type === "flashcard" && <FlashcardRenderer contentId={content.id} />}
+      {content.type === "flashcard" && <FlashcardRenderer contentId={content.id} onProgress={onFlashcardProgress} />}
       {content.type === "brainstorm" && <BrainstormRenderer body={content.body} />}
       {content.type === "reference" && <ReferenceRenderer contentId={content.id} />}
     </div>
@@ -183,14 +240,177 @@ function ResumeRenderer({ body }) {
   );
 }
 
+/* --- HTML Content Renderer using isolated sandbox iframe with premium fullscreen support --- */
+function HTMLContentRenderer({ html, isWidgetMode = false }) {
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    if (!containerRef.current || !isWidgetMode) return;
+    
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        const iframe = containerRef.current.querySelector("iframe");
+        if (iframe && iframe.contentWindow) {
+          try {
+            iframe.contentWindow.dispatchEvent(new Event("resize"));
+          } catch (e) {
+            console.warn("Could not dispatch resize to iframe:", e);
+          }
+        }
+      }
+    });
+    
+    resizeObserver.observe(containerRef.current);
+    return () => resizeObserver.disconnect();
+  }, [isWidgetMode]);
+
+  const containerStyle = isFullscreen 
+    ? {
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100vh",
+        zIndex: 99999,
+        background: "#03070c",
+        border: "none",
+        borderRadius: 0,
+        overflow: "hidden"
+      }
+    : isWidgetMode
+      ? {
+          width: "100%",
+          height: "100%",
+          position: "relative",
+          overflow: "hidden",
+          background: "transparent"
+        }
+      : {
+          width: "100%",
+          height: "750px",
+          borderRadius: "12px",
+          overflow: "hidden",
+          border: "1px solid var(--border-subtle)",
+          background: "rgba(10, 17, 28, 0.4)",
+          position: "relative"
+        };
+
+  return (
+    <div style={containerStyle} ref={containerRef}>
+      {/* Floating Control Button */}
+      <button
+        onClick={() => setIsFullscreen(!isFullscreen)}
+        style={{
+          position: "absolute",
+          top: "16px",
+          right: "24px",
+          zIndex: 100000,
+          background: "rgba(255, 255, 255, 0.1)",
+          backdropFilter: "blur(10px)",
+          border: "1px solid rgba(255, 255, 255, 0.2)",
+          borderRadius: "8px",
+          color: "#ffffff",
+          padding: "8px 16px",
+          fontSize: "13px",
+          fontWeight: 600,
+          cursor: "pointer",
+          display: "flex",
+          alignItems: "center",
+          gap: "8px",
+          boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
+          transition: "all 0.2s ease"
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.background = "rgba(255, 255, 255, 0.2)";
+          e.currentTarget.style.borderColor = "#6c5ce7";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.background = "rgba(255, 255, 255, 0.1)";
+          e.currentTarget.style.borderColor = "rgba(255, 255, 255, 0.2)";
+        }}
+      >
+        {isFullscreen ? (
+          <>
+            <span>✕</span> Keluar Layar Penuh
+          </>
+        ) : (
+          <>
+            <span>↗</span> Mode Layar Penuh
+          </>
+        )}
+      </button>
+
+      <iframe
+        title="Interactive Resource"
+        srcDoc={
+          html.trim().toLowerCase().startsWith("<!doctype html>") || html.trim().toLowerCase().startsWith("<html")
+            ? html
+            : `
+              <!DOCTYPE html>
+              <html>
+                <head>
+                  <meta charset="utf-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <style>
+                    html, body {
+                      margin: 0;
+                      padding: 0;
+                      width: 100%;
+                      height: 100%;
+                      background: transparent;
+                      color: #f1f5f9;
+                      overflow: hidden;
+                    }
+                    iframe {
+                      width: 100% !important;
+                      height: 100% !important;
+                      border: none !important;
+                    }
+                  </style>
+                </head>
+                <body>
+                  ${html}
+                </body>
+              </html>
+            `
+        }
+        style={{
+          width: "100%",
+          height: "100%",
+          border: "none",
+          display: "block",
+          background: "transparent"
+        }}
+        sandbox="allow-scripts allow-same-origin allow-popups"
+        loading="lazy"
+      />
+    </div>
+  );
+}
+
 /* --- Notes Renderer (Markdown) --- */
 function NotesRenderer({ body }) {
   if (!body?.markdown) return null;
+  
+  const isHTML = body.markdown.trim().startsWith("<") || 
+    body.markdown.trim().includes("</script>") ||
+    body.markdown.toLowerCase().includes("<iframe") ||
+    body.markdown.toLowerCase().includes("<html");
+  
+  if (isHTML) {
+    return (
+      <div className="viewer__body" style={{ height: "100%" }}>
+        <HTMLContentRenderer html={body.markdown} isWidgetMode={true} />
+      </div>
+    );
+  }
+  
   return <div className="viewer__body">{parseAndRenderBlocks(body.markdown.split("\n"))}</div>;
 }
 
 /* --- Flashcard Renderer --- */
-function FlashcardRenderer({ contentId }) {
+function FlashcardRenderer({ contentId, onProgress }) {
   const [cards, setCards] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -205,6 +425,12 @@ function FlashcardRenderer({ contentId }) {
       setLoading(false);
     });
   }, [contentId]);
+
+  useEffect(() => {
+    if (onProgress && cards.length > 0) {
+      onProgress(currentIndex + 1, cards.length);
+    }
+  }, [currentIndex, cards.length]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (loading) {
     return (
@@ -254,6 +480,7 @@ function FlashcardRenderer({ contentId }) {
       }}>
         <span>Kartu {currentIndex + 1} dari {cards.length}</span>
         <button
+          id="btn-reset-flashcard-deck"
           onClick={() => { setCurrentIndex(0); setIsFlipped(false); }}
           style={{ fontSize: "var(--font-size-xs)", color: "var(--accent-secondary)", textDecoration: "underline" }}
         >
@@ -425,81 +652,16 @@ function MindMapNode({ node, allNodes, depth }) {
 
 /* --- Reference Renderer --- */
 function ReferenceRenderer({ contentId }) {
-  const [refs, setRefs] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setLoading(true);
-    getReferences(contentId).then((data) => {
-      setRefs(data || []);
-      setLoading(false);
-    });
-  }, [contentId]);
-
-  if (loading) {
-    return (
-      <div style={{ textAlign: "center", padding: "40px" }}>
-        <p style={{ color: "var(--text-secondary)" }}>Memuat referensi...</p>
-      </div>
-    );
-  }
-
-  if (!refs.length) {
-    return (
-      <div className="empty-state">
-        <div className="empty-state__icon">🔗</div>
-        <p className="empty-state__text">Belum ada referensi.</p>
-      </div>
-    );
-  }
-
-  const typeIcons = {
-    paper: "📄",
-    video: "🎬",
-    article: "📰",
-    book: "📕",
-  };
-
   return (
-    <div>
-      <p style={{
-        color: "var(--text-muted)",
-        fontSize: "var(--font-size-sm)",
-        marginBottom: "var(--space-lg)",
-      }}>
-        {refs.length} referensi tersedia
+    <div className="empty-state" style={{ padding: "80px 0" }}>
+      <div className="empty-state__icon" style={{ fontSize: "64px", color: "var(--accent-secondary)", textShadow: "0 0 20px rgba(162, 155, 254, 0.4)" }}>🔗</div>
+      <h2 style={{ color: "var(--text-primary)", fontSize: "20px", fontWeight: "700", marginBottom: "12px" }}>Daftar Referensi & Regulasi Tersemat</h2>
+      <p style={{ color: "var(--text-secondary)", fontSize: "14px", maxWidth: "450px", margin: "0 auto", lineHeight: "1.6" }}>
+        Semua pranala luar, regulasi kementerian, jurnal ilmiah, dan rujukan penting untuk materi ini telah diintegrasikan di <strong>Panel Informasi Sebelah Kanan</strong>.
       </p>
-      <div className="content-grid">
-        {refs.map((ref) => (
-          <a
-            key={ref.id}
-            href={ref.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="content-card"
-            style={{ textDecoration: "none" }}
-            id={`ref-${ref.id}`}
-          >
-            <span style={{
-              fontSize: "32px",
-              display: "block",
-              marginBottom: "var(--space-sm)",
-            }}>
-              {typeIcons[ref.ref_type] || "🔗"}
-            </span>
-            <h3 className="content-card__title">{ref.title}</h3>
-            <p className="content-card__preview">{ref.description}</p>
-            <p style={{
-              fontSize: "var(--font-size-xs)",
-              color: "var(--accent-secondary)",
-              marginTop: "var(--space-sm)",
-              wordBreak: "break-all",
-            }}>
-              {ref.url}
-            </p>
-          </a>
-        ))}
-      </div>
+      <p style={{ color: "var(--text-muted)", fontSize: "12px", marginTop: "24px" }}>
+        Silakan klik ikon informasi (i) di kanan atas jika panel kanan tertutup.
+      </p>
     </div>
   );
 }

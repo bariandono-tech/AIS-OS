@@ -52,3 +52,26 @@
 - **Sync Script Controller (`sync.js`)**: Membuat modul entri sync yang memicu penarikan seluruh data Notion, memetakan relasi Stack-Content, dan melakukan **UPSERT** aman di PostgreSQL.
 - **Uji Coba Simulator (Mock Tests)**: Menulis scratch test script unit di `test_sync_engine.js` untuk memvalidasi parser secara offline dengan hasil pengujian **100% lulus (PASS)**.
 - **GitHub Actions Automation**: Membuat berkas workflow `.github/workflows/notion-sync.yml` untuk memicu sinkronisasi otomatis menggunakan cron job harian.
+- **Koneksi Real & Validasi E2E**: Mengatasi keterbatasan method SDK pada versi `@notionhq/client@5.22.0` dengan migrasi ke raw `request` berbasis API `2022-06-28`. Berhasil menghubungkan integrasi Notion secara langsung dengan database nyata user, sukses menarik data Stacks ("Studion Landing") dan Content Items ("StudyOS notes"), lalu menyimpannya ke database Supabase PostgreSQL. Status Phase 3 ditandai sebagai **Selesai (Completed)**.
+
+## 2026-06-16
+
+### Optimasi WebGL & Sinkronisasi Kurikulum Medis (Phase 3 - Anatomi Dasar)
+
+**Dikerjakan:**
+- **Optimasi Performa 3D Brain Anatomy (`index.html`):**
+  - Mereduksi jumlah tabung (*tubes*) pembentuk korteks kranial sebesar 50% (dari 57 tabung kranial menjadi 29 tabung).
+  - Menyederhanakan segmen geometri tabung dari 40 segmen menjadi 16 segmen, dan sisi radial dari 6 menjadi 4 (diamond profile).
+  - Menonaktifkan fitur bayangan WebGL berat (`shadowMap.enabled = false`) dan membatasi pixel ratio maksimal di `1.5` untuk meminimalkan beban GPU pada laptop standard.
+  - Hasil: Waktu muat inisialisasi 3D berkurang drastis dari lambat/lagging menjadi instan (<30ms) dan berjalan mulus.
+- **Penyusunan Konten Medis Semester 1 (Anatomi Dasar):**
+  - Menyusun 3 materi utama di Notion:
+    - **1.1 Anatomi & Lobus Otak Manusia** (Tipe: `notes` dengan sematan kode HTML model 3D Otak).
+    - **1.2 Rangka Tengkorak (Cranium)** (Tipe: `flashcard` dengan 4 kartu istilah latin).
+    - **1.3: Sistem Saraf Pusat vs Tepi** (Tipe: `brainstorm` dengan struktur outline mind map).
+- **Eksekusi & Validasi Sync Engine:**
+  - Menjalankan `npm run sync` dan berhasil menarik data *Stacks* ("Anatomi Dasar") dan *Content Items* ("1.1", "1.2", "1.3") dari Notion langsung ke Supabase dengan status **100% SUCCESS**.
+
+**Hasil:**
+- Halaman "Anatomi Dasar" beserta konten interaktifnya telah aktif di database produksi Supabase dan siap ditampilkan di web app lokal.
+
