@@ -990,8 +990,8 @@
     "semantic_hash": ""
   },
   "scripts/notion/sync_studios_worklog.js": {
-    "mtime": 1781515322.7102845,
-    "ast_hash": "a7185a5be27f97c63148a73877bb8c7c",
+    "mtime": 1781667833.0129383,
+    "ast_hash": "d6d7b13c6da451f99dc6b45143f2417d",
     "semantic_hash": ""
   },
   "scripts/notion/sync_worklog_today.js": {
@@ -1070,8 +1070,8 @@
     "semantic_hash": ""
   },
   "projects/studios/work-log.md": {
-    "mtime": 1781591613.923114,
-    "ast_hash": "d2f16d1549653610fd9b252d0e6c99e9",
+    "mtime": 1781667827.731521,
+    "ast_hash": "3c52b37690f1dfb43bd134afaf91b1b4",
     "semantic_hash": ""
   },
   "projects/studios/app/public/favicon.svg": {
@@ -1295,8 +1295,8 @@
     "semantic_hash": ""
   },
   ".claude/skills/daily-sync/SKILL.md": {
-    "mtime": 1781667645.7379372,
-    "ast_hash": "e19be9444d9a38332cbacbb3300f80c6",
+    "mtime": 1781670116.044981,
+    "ast_hash": "3fbbcb7081013588bf4b8015e7ef23a8",
     "semantic_hash": ""
   },
   "business-brain/CLAUDE.md": {
@@ -1310,8 +1310,8 @@
     "semantic_hash": ""
   },
   "business-brain/log.md": {
-    "mtime": 1781666227.966519,
-    "ast_hash": "8740b2d4a45ebd892ce8fafb176934f8",
+    "mtime": 1781667843.8399491,
+    "ast_hash": "f5af0f42405a1fc3bad7bdb87e077ea9",
     "semantic_hash": ""
   },
   "office-brain/CLAUDE.md": {
@@ -1320,13 +1320,13 @@
     "semantic_hash": ""
   },
   "office-brain/index.md": {
-    "mtime": 1781666847.9775283,
-    "ast_hash": "e0adcc0271e3bebe388b85dabd37f4a7",
+    "mtime": 1781671043.9139411,
+    "ast_hash": "7823d9aae9dd126fba7c4720e27c139a",
     "semantic_hash": ""
   },
   "office-brain/log.md": {
-    "mtime": 1781666852.9182372,
-    "ast_hash": "41ee70a42462fd8949590ebe4c9ff698",
+    "mtime": 1781671047.3807106,
+    "ast_hash": "1ee5b20c850f75536ef940d86600a126",
     "semantic_hash": ""
   },
   "personal-brain/CLAUDE.md": {
@@ -1347,6 +1347,51 @@
   "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md": {
     "mtime": 1781666874.8467424,
     "ast_hash": "fbb3f920458156c14d6f7e23b46712c1",
+    "semantic_hash": ""
+  },
+  "scripts/notion/sync_to_tasks.js": {
+    "mtime": 1781670017.9454195,
+    "ast_hash": "7ac0978c78ef28cbf98126fed962613b",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/Project_Botkeu.md": {
+    "mtime": 1781671035.9901786,
+    "ast_hash": "e7abd717d7d277822651fff32f8da05b",
+    "semantic_hash": ""
+  },
+  "projects/botkeu/prd.md": {
+    "mtime": 1781671057.219171,
+    "ast_hash": "3cdb7a1e25e9293ba1993fc3c19ec913",
+    "semantic_hash": ""
+  },
+  "projects/botkeu/ai_agent.py": {
+    "mtime": 1781671301.926044,
+    "ast_hash": "02a3f9bfe093d3a40d1d8364f13785d9",
+    "semantic_hash": ""
+  },
+  "projects/botkeu/config.py": {
+    "mtime": 1781671268.4257648,
+    "ast_hash": "3ab4134d6e0de744e844b41690ea33a6",
+    "semantic_hash": ""
+  },
+  "projects/botkeu/google_drive.py": {
+    "mtime": 1781671285.7399535,
+    "ast_hash": "c653a1423633cd3a064daf8657faa32c",
+    "semantic_hash": ""
+  },
+  "projects/botkeu/local_brain.py": {
+    "mtime": 1781671277.8526144,
+    "ast_hash": "c2e8acb8023ba299bd37daf1b71d006b",
+    "semantic_hash": ""
+  },
+  "projects/botkeu/main.py": {
+    "mtime": 1781671309.1234064,
+    "ast_hash": "bbc263396cbd06f16313c42d9cc5ee8f",
+    "semantic_hash": ""
+  },
+  "projects/botkeu/requirements.txt": {
+    "mtime": 1781671290.0287542,
+    "ast_hash": "8ae711f3d1623d7bdf5835080928706e",
     "semantic_hash": ""
   }
 }

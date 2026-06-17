@@ -1,16 +1,16 @@
 # Graph Report - AIS-OS  (2026-06-17)
 
 ## Corpus Check
-- 251 files · ~302,304 words
+- 259 files · ~305,833 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3153 nodes · 3116 edges · 343 communities (243 shown, 100 thin omitted)
+- 3217 nodes · 3184 edges · 349 communities (251 shown, 98 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4fa70a70`
+- Built from commit: `0b0180b6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -347,6 +347,12 @@
 - [[_COMMUNITY_Community 340|Community 340]]
 - [[_COMMUNITY_Community 341|Community 341]]
 - [[_COMMUNITY_Community 342|Community 342]]
+- [[_COMMUNITY_Community 343|Community 343]]
+- [[_COMMUNITY_Community 344|Community 344]]
+- [[_COMMUNITY_Community 345|Community 345]]
+- [[_COMMUNITY_Community 346|Community 346]]
+- [[_COMMUNITY_Community 347|Community 347]]
+- [[_COMMUNITY_Community 348|Community 348]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
@@ -355,10 +361,10 @@
 4. `Ultimate Brain — Complete Second Brain System in Notion` - 16 edges
 5. `A6. Target Architecture — Canonical Databases & Full Schemas` - 14 edges
 6. `Architecture: StudiOS — Database-Driven Knowledge Viewer` - 14 edges
-7. `syncEngine()` - 13 edges
-8. `📽️ Struktur & Konten Slide` - 13 edges
-9. `PART B — NOTION BUILD GUIDE (EXECUTION)` - 13 edges
-10. `What You Must Do When Invoked` - 11 edges
+7. `Update` - 13 edges
+8. `syncEngine()` - 13 edges
+9. `📽️ Struktur & Konten Slide` - 13 edges
+10. `PART B — NOTION BUILD GUIDE (EXECUTION)` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `syncEngine()` --calls--> `blocksToMarkdown()`  [EXTRACTED]
@@ -375,7 +381,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (343 total, 100 thin omitted)
+## Communities (349 total, 98 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -419,11 +425,11 @@ Nodes (24): Dep:, Fase 1.0 — Pondasi (WAJIB duluan, semua lain bergantung di s
 
 ### Community 10 - "Community 10"
 Cohesion: 0.07
-Nodes (28): @notionhq/client, check_pt_schemas, checkPTSchemas, compare_para_schemas, compare, create_homepage, buildHomepage, enrich_dbs (+20 more)
+Nodes (29): @notionhq/client, add_created_property, addCreated, check_note_content, checkNoteContent, check_note_properties, checkNote, check_para_views (+21 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.07
-Nodes (28): add_created_property, addCreated, add_edited_property, addEdited, check_page_details, checkPages, clean_remaining_tf, runCleanup (+20 more)
+Nodes (28): add_edited_property, addEdited, Validates that all essential config parameters are set., validate_config(), clean_remaining_tf, runCleanup, compare_schemas, compare (+20 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.09
@@ -518,11 +524,8 @@ Cohesion: 0.17
 Nodes (12): Add --backend gemini|kimi|openai|deepseek|claude-cli depending on which API key you have set, Clone each repo, run the full pipeline on each, then merge, Multiple local subfolders (monorepo or multi-service layout):, Multiple repos (cross-repo graph):, Run /graphify on each local path to produce their graph.json files, Single repo:, Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given), Then merge: (+4 more)
 
 ### Community 35 - "Community 35"
-Cohesion: 0.17
-Nodes (12): Also prune old nodes for re-extracted (changed) files before inserting fresh AST., For --update (incremental re-extraction), Load new extraction and incremental state, Save manifest so next --update diffs against today's state, not the, Use build_merge() — reads graph.json directly without NetworkX round-trip, Without this, build_merge's dedup pass tries to reconcile old and new versions of, Write merged result back to .graphify_extract.json so Step 4 sees the full graph, d} for n, d in G.nodes(data=True)],
-    'edges': [
-        # Explicit source/target last so they win over any stale attrs in d.
-        { (+4 more)
+Cohesion: 0.11
+Nodes (19): Also prune old nodes for re-extracted (changed) files before inserting fresh AST., For --update (incremental re-extraction), Load new extraction and incremental state, Save manifest so next --update diffs against today's state, not the, Use build_merge() — reads graph.json directly without NetworkX round-trip, Without this, build_merge's dedup pass tries to reconcile old and new versions of, Write merged result back to .graphify_extract.json so Step 4 sees the full graph, check_access() (+11 more)
 
 ### Community 36 - "Community 36"
 Cohesion: 0.20
@@ -676,6 +679,10 @@ Nodes (23): For /graphify add and --watch, For /graphify query, For the commit h
 Cohesion: 0.08
 Nodes (23): 1. Pahami Konteks & Input Pengguna, 2. Pilih Mode Output, 3. Lakukan Analisis, 4. Hasilkan Output, A. Analisis Realisasi Anggaran, B. Evaluasi Kinerja (NKA), C. Analisis Rasio Keuangan, CONTOH PENGGUNAAN (+15 more)
 
+### Community 77 - "Community 77"
+Cohesion: 0.22
+Nodes (10): download_excel_file(), get_drive_service(), list_excel_files(), query_excel_data(), Membaca daftar nama sheet yang tersedia di dalam file Excel lokal.          Args, Membaca baris data pada sheet tertentu di file Excel lokal dan memformatnya seba, Initializes and returns the Google Drive API service client., Menampilkan daftar file Excel (.xlsx, .xls) di dalam folder Google Drive yang di (+2 more)
+
 ### Community 78 - "Community 78"
 Cohesion: 0.20
 Nodes (9): 🗺️ Alur Ketergantungan Tugas (Dependency Map), 📋 Daftar Tugas & Kualifikasi Berurutan, Phase 1: Database & Security (Prasarana), Phase 2: Integrasi Frontend ke Supabase, Phase 3: Notion Sync Engine, Phase 4: Sistem Monetisasi & Akses Premium, Phase 5: Deployment & Otomatisasi Produksi, Phase 6: Validasi Akhir (End-to-End) (+1 more)
@@ -700,6 +707,10 @@ Nodes (19): 1. Kenapa PMK ini Sangat Heboh? (The Omnibus Effect), 1. Kenapa PP i
 Cohesion: 0.10
 Nodes (19): 🎨 ATURAN DESAIN SLIDE PREMIUM (Gaya CEO):, Bedah PP 50/2018 & PMK 62/2023 (Siap Pakai untuk Tugas Kuliah, Sempro, atau Sidang), 🎞️ DETAIL SLIDE PER SLIDE (Slide 1 - 15), 🖥️ FOLDER 3: OUTLINE & SCRIPT SLIDE PRESENTASI (PPT), SLIDE 10: IMPLEMENTASI APLIKASI SAKTI SECARA PENUH, SLIDE 11: VALUE FOR MONEY (FOKUS PADA CAPAIAN OUTPUT), SLIDE 12: MEMAHAMI INDIKATOR KINERJA (IKPA), SLIDE 13: STUDI KASUS / ANATOMI DEVIASI ANGGARAN (+11 more)
 
+### Community 84 - "Community 84"
+Cohesion: 0.50
+Nodes (4): ask_gemini(), get_gemini_client(), Menginisialisasi klien Google GenAI., Mengirim pesan ke Gemini dan menangani iterasi pemanggilan fungsi (Tool Calling)
+
 ### Community 86 - "Community 86"
 Cohesion: 0.11
 Nodes (19): A8.10 Reviews (Daily / Weekly / Monthly / Quarterly) `[Beyond UB]`, A8.11 People / CRM (UB #26–29), A8.12 Books + Reading Log (UB #30–31), A8.13 Recipes + Meal Plan (UB #32), A8.14 Archive (Cold / Snoozed / Someday) (UB #25), A8.15 Task History (UB #34), A8.16 Analytics / Intelligence `[Beyond UB]`, A8.17 AI Layer `[Beyond UB]` `[Paid: Notion Business]` (+11 more)
@@ -710,7 +721,7 @@ Nodes (4): path, sync_to_notion, parseMarkdownToRichText, sync
 
 ### Community 89 - "Community 89"
 Cohesion: 0.20
-Nodes (9): /daily-sync, Error Handling & Fallbacks, Step 1: Detect Active Project and Today's Date, Step 2: Update the Sync Script Target Date, Step 3: Run the Sync Script, Step 4: Keep the Local Graph Current (Graphify), Step 5: Update the Local Activity Logs, Usage (+1 more)
+Nodes (9): /daily-sync, Error Handling & Fallbacks, Step 1: Detect Active Project and Today's Date, Step 2: Update the Sync Script Target Date, Step 3: Run the Sync Script (Target: Tasks Database), Step 4: Keep the Local Graph Current (Graphify), Step 5: Update the Local Activity Logs, Usage (+1 more)
 
 ### Community 101 - "Community 101"
 Cohesion: 0.11
@@ -1160,6 +1171,10 @@ Nodes (4): 📋 1. Prosedur & Aturan (Procedures & Rules), 🔨 2. Tugas & Proje
 Cohesion: 0.40
 Nodes (4): 👤 1. Profil & Evaluasi Diri (Profile & Self-Assessment), 🌱 2. Pengembangan Diri & Hobi (Self-Growth & Hobbies), 📓 3. Catatan Harian (Journal & Thoughts), 👤 AIS-OS & Personal Knowledge Brain
 
+### Community 262 - "Community 262"
+Cohesion: 0.67
+Nodes (3): dependencies, dotenv, @notionhq/client
+
 ### Community 264 - "Community 264"
 Cohesion: 0.50
 Nodes (3): 🏛️ 1. Core Architecture, 📂 2. Categories in index.md, CLAUDE.md — LLM Wiki Agent Rules (Office & Employment)
@@ -1237,8 +1252,8 @@ Cohesion: 0.50
 Nodes (3): Expanding the ESLint configuration, React Compiler, React + Vite
 
 ### Community 295 - "Community 295"
-Cohesion: 0.25
-Nodes (7): 2026-06-15, 2026-06-16, Inisialisasi Proyek StudiOS & Refinement UI, Optimasi WebGL & Sinkronisasi Kurikulum Medis (Phase 3 - Anatomi Dasar), Tahap 2: Integrasi Frontend ke Supabase & Sistem Otorisasi Akses, Tahap 3: Notion Sync Engine (Otomatisasi Sinkronisasi Konten), Work Log — StudiOS
+Cohesion: 0.20
+Nodes (9): 2026-06-15, 2026-06-16, 2026-06-17, Inisialisasi Proyek StudiOS & Refinement UI, Optimasi WebGL & Sinkronisasi Kurikulum Medis (Phase 3 - Anatomi Dasar), Sinkronisasi & Restrukturisasi Knowledge Base Proyek, Tahap 2: Integrasi Frontend ke Supabase & Sistem Otorisasi Akses, Tahap 3: Notion Sync Engine (Otomatisasi Sinkronisasi Konten) (+1 more)
 
 ### Community 304 - "Community 304"
 Cohesion: 0.40
@@ -1308,25 +1323,45 @@ Nodes (3): 🏛️ 1. Core Architecture, 📂 2. Categories in index.md, CLAUDE.
 Cohesion: 0.50
 Nodes (3): [2026-06-17] ingest - initialized profile and vibe coding self-evaluation page, [2026-06-17] session - personal knowledge base initialized, Personal Knowledge Base Log
 
+### Community 333 - "Community 333"
+Cohesion: 0.50
+Nodes (3): [2026-06-17] ingest - synced worklog to Notion Mythos Brain, [2026-06-17] session - business knowledge base initialized, Business Knowledge Base Log
+
+### Community 334 - "Community 334"
+Cohesion: 0.50
+Nodes (3): [2026-06-17] session - created wiki for [[Project_Botkeu]] (Telegram Finance Bot), [2026-06-17] session - office knowledge base initialized, Office Knowledge Base Log
+
+### Community 335 - "Community 335"
+Cohesion: 0.15
+Nodes (12): 🎯 1. Visi & Tujuan Produk, 👥 2. Target Pengguna & Masalah, 🛠️ 3. Arsitektur Teknis & Stack, ⚙️ 4. Alur Kerja Fitur (Feature Flow), 📂 5. Struktur Folder Kode (`projects/botkeu/`), 🔬 6. Rencana Pengujian (Verification Plan), A. Fitur 1: Otorisasi Pengguna (Access Control), A. Pengujian Tahap 1: Pengujian Lokal Python (+4 more)
+
+### Community 336 - "Community 336"
+Cohesion: 0.22
+Nodes (8): 1. Otorisasi Akses (Access Control), 2. Pencarian Dokumen Lokal (Local RAG), 3. Integrasi Excel Google Drive (Google Drive Broker), 📌 Deskripsi Singkat, 🛠️ Fitur Utama & Cara Kerja, 🤖 Project Botkeu (Telegram Finance Bot), 🔗 Referensi Dokumen, 🚀 Stack Teknologi
+
+### Community 337 - "Community 337"
+Cohesion: 0.33
+Nodes (6): { Client }, fs, notion, parseMarkdownToRichText(), path, sync()
+
 ## Knowledge Gaps
-- **1186 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `version`, `type` (+1181 more)
+- **1208 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `version`, `type` (+1203 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **100 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **98 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `PART A — PRD: ULTIMATE BRAIN PRO v2.0` connect `Community 117` to `Community 70`, `Community 134`, `Community 233`, `Community 234`, `Community 141`, `Community 109`, `Community 86`, `Community 188`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `Ultimate Brain — Complete Second Brain System in Notion` connect `Community 112` to `Community 121`, `Community 135`, `Community 167`, `Community 235`, `Community 236`, `Community 237`, `Community 153`, `Community 154`, `Community 189`?**
+- **Why does `dependencies` connect `Community 79` to `Community 280`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `A8. Module Specifications` connect `Community 86` to `Community 117`?**
-  _High betweenness centrality (0.000) - this node is a cross-community bridge._
-- **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private` to the rest of the system?**
-  _1186 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `Menginisialisasi klien Google GenAI.`, `Mengirim pesan ke Gemini dan menangani iterasi pemanggilan fungsi (Tool Calling)` to the rest of the system?**
+  _1220 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.048484848484848485 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
+  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._

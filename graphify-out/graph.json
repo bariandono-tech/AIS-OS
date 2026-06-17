@@ -43,6 +43,326 @@
       "norm_label": "c:\\users\\asus\\appdata\\local\\python\\pythoncore-3.14-64\\python.exe"
     },
     {
+      "label": "ai_agent.py",
+      "file_type": "code",
+      "source_file": "projects/botkeu/ai_agent.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "botkeu_ai_agent",
+      "community": 84,
+      "norm_label": "ai_agent.py"
+    },
+    {
+      "label": "get_gemini_client()",
+      "file_type": "code",
+      "source_file": "projects/botkeu/ai_agent.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "botkeu_ai_agent_get_gemini_client",
+      "community": 84,
+      "norm_label": "get_gemini_client()"
+    },
+    {
+      "label": "ask_gemini()",
+      "file_type": "code",
+      "source_file": "projects/botkeu/ai_agent.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "botkeu_ai_agent_ask_gemini",
+      "community": 84,
+      "norm_label": "ask_gemini()"
+    },
+    {
+      "label": "Menginisialisasi klien Google GenAI.",
+      "file_type": "rationale",
+      "source_file": "projects/botkeu/ai_agent.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "botkeu_ai_agent_rationale_26",
+      "community": 84,
+      "norm_label": "menginisialisasi klien google genai."
+    },
+    {
+      "label": "Mengirim pesan ke Gemini dan menangani iterasi pemanggilan fungsi (Tool Calling)",
+      "file_type": "rationale",
+      "source_file": "projects/botkeu/ai_agent.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "botkeu_ai_agent_rationale_32",
+      "community": 84,
+      "norm_label": "mengirim pesan ke gemini dan menangani iterasi pemanggilan fungsi (tool calling)"
+    },
+    {
+      "label": "config.py",
+      "file_type": "code",
+      "source_file": "projects/botkeu/config.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "botkeu_config",
+      "community": 11,
+      "norm_label": "config.py"
+    },
+    {
+      "label": "validate_config()",
+      "file_type": "code",
+      "source_file": "projects/botkeu/config.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "botkeu_config_validate_config",
+      "community": 11,
+      "norm_label": "validate_config()"
+    },
+    {
+      "label": "Validates that all essential config parameters are set.",
+      "file_type": "rationale",
+      "source_file": "projects/botkeu/config.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "botkeu_config_rationale_31",
+      "community": 11,
+      "norm_label": "validates that all essential config parameters are set."
+    },
+    {
+      "label": "google_drive.py",
+      "file_type": "code",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "botkeu_google_drive",
+      "community": 77,
+      "norm_label": "google_drive.py"
+    },
+    {
+      "label": "get_drive_service()",
+      "file_type": "code",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "botkeu_google_drive_get_drive_service",
+      "community": 77,
+      "norm_label": "get_drive_service()"
+    },
+    {
+      "label": "list_excel_files()",
+      "file_type": "code",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "botkeu_google_drive_list_excel_files",
+      "community": 77,
+      "norm_label": "list_excel_files()"
+    },
+    {
+      "label": "download_excel_file()",
+      "file_type": "code",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "botkeu_google_drive_download_excel_file",
+      "community": 77,
+      "norm_label": "download_excel_file()"
+    },
+    {
+      "label": "read_excel_sheets()",
+      "file_type": "code",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "botkeu_google_drive_read_excel_sheets",
+      "community": 77,
+      "norm_label": "read_excel_sheets()"
+    },
+    {
+      "label": "query_excel_data()",
+      "file_type": "code",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "botkeu_google_drive_query_excel_data",
+      "community": 77,
+      "norm_label": "query_excel_data()"
+    },
+    {
+      "label": "Initializes and returns the Google Drive API service client.",
+      "file_type": "rationale",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "botkeu_google_drive_rationale_20",
+      "community": 77,
+      "norm_label": "initializes and returns the google drive api service client."
+    },
+    {
+      "label": "Menampilkan daftar file Excel (.xlsx, .xls) di dalam folder Google Drive yang di",
+      "file_type": "rationale",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "botkeu_google_drive_rationale_31",
+      "community": 77,
+      "norm_label": "menampilkan daftar file excel (.xlsx, .xls) di dalam folder google drive yang di"
+    },
+    {
+      "label": "Mengunduh file Excel dari Google Drive ke folder lokal tmp_downloads di workspac",
+      "file_type": "rationale",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "botkeu_google_drive_rationale_67",
+      "community": 77,
+      "norm_label": "mengunduh file excel dari google drive ke folder lokal tmp_downloads di workspac"
+    },
+    {
+      "label": "Membaca daftar nama sheet yang tersedia di dalam file Excel lokal.          Args",
+      "file_type": "rationale",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "botkeu_google_drive_rationale_101",
+      "community": 77,
+      "norm_label": "membaca daftar nama sheet yang tersedia di dalam file excel lokal.          args"
+    },
+    {
+      "label": "Membaca baris data pada sheet tertentu di file Excel lokal dan memformatnya seba",
+      "file_type": "rationale",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "botkeu_google_drive_rationale_121",
+      "community": 77,
+      "norm_label": "membaca baris data pada sheet tertentu di file excel lokal dan memformatnya seba"
+    },
+    {
+      "label": "local_brain.py",
+      "file_type": "code",
+      "source_file": "projects/botkeu/local_brain.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "botkeu_local_brain",
+      "community": 85,
+      "norm_label": "local_brain.py"
+    },
+    {
+      "label": "search_local_wiki()",
+      "file_type": "code",
+      "source_file": "projects/botkeu/local_brain.py",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "botkeu_local_brain_search_local_wiki",
+      "community": 85,
+      "norm_label": "search_local_wiki()"
+    },
+    {
+      "label": "Memindai dokumen markdown di folder office-brain/wiki.     Mencari kecocokan kat",
+      "file_type": "rationale",
+      "source_file": "projects/botkeu/local_brain.py",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "botkeu_local_brain_rationale_10",
+      "community": 85,
+      "norm_label": "memindai dokumen markdown di folder office-brain/wiki.     mencari kecocokan kat"
+    },
+    {
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "botkeu_main",
+      "community": 35,
+      "norm_label": "main.py"
+    },
+    {
+      "label": "check_access()",
+      "file_type": "code",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "botkeu_main_check_access",
+      "community": 35,
+      "norm_label": "check_access()"
+    },
+    {
+      "label": "start()",
+      "file_type": "code",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "botkeu_main_start",
+      "community": 35,
+      "norm_label": "start()"
+    },
+    {
+      "label": "Update",
+      "file_type": "code",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "update",
+      "community": 35,
+      "norm_label": "update"
+    },
+    {
+      "label": "DEFAULT_TYPE",
+      "file_type": "code",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "default_type",
+      "community": 35,
+      "norm_label": "default_type"
+    },
+    {
+      "label": "handle_message()",
+      "file_type": "code",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "botkeu_main_handle_message",
+      "community": 35,
+      "norm_label": "handle_message()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "botkeu_main_main",
+      "community": 35,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Memvalidasi apakah ID pengguna terdaftar di whitelist .env.",
+      "file_type": "rationale",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "botkeu_main_rationale_19",
+      "community": 35,
+      "norm_label": "memvalidasi apakah id pengguna terdaftar di whitelist .env."
+    },
+    {
+      "label": "Mengirim pesan pembuka saat pengguna mengetik /start.",
+      "file_type": "rationale",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "botkeu_main_rationale_23",
+      "community": 35,
+      "norm_label": "mengirim pesan pembuka saat pengguna mengetik /start."
+    },
+    {
+      "label": "Memproses semua pesan teks dari pengguna sah dan mengirimkannya ke Gemini.",
+      "file_type": "rationale",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "botkeu_main_rationale_38",
+      "community": 35,
+      "norm_label": "memproses semua pesan teks dari pengguna sah dan mengirimkannya ke gemini."
+    },
+    {
       "label": "script.js",
       "file_type": "code",
       "source_file": "projects/jasa-ppt-akuntansi/landing-page/script.js",
@@ -3179,7 +3499,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "notion_package_dependencies",
-      "community": 11,
+      "community": 262,
       "norm_label": "dependencies"
     },
     {
@@ -3189,7 +3509,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "notion_package_dependencies_notionhq_client",
-      "community": 11,
+      "community": 262,
       "norm_label": "@notionhq/client"
     },
     {
@@ -3199,7 +3519,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "notion_package_dependencies_dotenv",
-      "community": 11,
+      "community": 262,
       "norm_label": "dotenv"
     },
     {
@@ -4610,6 +4930,76 @@
       "_origin": "ast",
       "id": "notion_sync_to_notion_sync",
       "community": 152,
+      "norm_label": "sync()"
+    },
+    {
+      "label": "sync_to_tasks.js",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "notion_sync_to_tasks",
+      "community": 337,
+      "norm_label": "sync_to_tasks.js"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "notion_sync_to_tasks_fs",
+      "community": 337,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "notion_sync_to_tasks_path",
+      "community": 337,
+      "norm_label": "path"
+    },
+    {
+      "label": "{ Client }",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "notion_sync_to_tasks_client",
+      "community": 337,
+      "norm_label": "{ client }"
+    },
+    {
+      "label": "notion",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "notion_sync_to_tasks_notion",
+      "community": 337,
+      "norm_label": "notion"
+    },
+    {
+      "label": "parseMarkdownToRichText()",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "notion_sync_to_tasks_parsemarkdowntorichtext",
+      "community": 337,
+      "norm_label": "parsemarkdowntorichtext()"
+    },
+    {
+      "label": "sync()",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "notion_sync_to_tasks_sync",
+      "community": 337,
       "norm_label": "sync()"
     },
     {
@@ -6843,20 +7233,20 @@
       "norm_label": "step 2: update the sync script target date"
     },
     {
-      "label": "Step 3: Run the Sync Script",
+      "label": "Step 3: Run the Sync Script (Target: Tasks Database)",
       "file_type": "document",
       "source_file": ".claude/skills/daily-sync/SKILL.md",
-      "source_location": "L36",
+      "source_location": "L32",
       "_origin": "ast",
-      "id": "daily_sync_skill_step_3_run_the_sync_script",
+      "id": "daily_sync_skill_step_3_run_the_sync_script_target_tasks_database",
       "community": 89,
-      "norm_label": "step 3: run the sync script"
+      "norm_label": "step 3: run the sync script (target: tasks database)"
     },
     {
       "label": "Step 4: Keep the Local Graph Current (Graphify)",
       "file_type": "document",
       "source_file": ".claude/skills/daily-sync/SKILL.md",
-      "source_location": "L49",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "daily_sync_skill_step_4_keep_the_local_graph_current_graphify",
       "community": 89,
@@ -6866,7 +7256,7 @@
       "label": "Step 5: Update the Local Activity Logs",
       "file_type": "document",
       "source_file": ".claude/skills/daily-sync/SKILL.md",
-      "source_location": "L56",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "daily_sync_skill_step_5_update_the_local_activity_logs",
       "community": 89,
@@ -6876,7 +7266,7 @@
       "label": "Error Handling & Fallbacks",
       "file_type": "document",
       "source_file": ".claude/skills/daily-sync/SKILL.md",
-      "source_location": "L67",
+      "source_location": "L59",
       "_origin": "ast",
       "id": "daily_sync_skill_error_handling_fallbacks",
       "community": 89,
@@ -10213,6 +10603,16 @@
       "norm_label": "[2026-06-17] session - business knowledge base initialized"
     },
     {
+      "label": "[2026-06-17] ingest - synced worklog to Notion Mythos Brain",
+      "file_type": "document",
+      "source_file": "business-brain/log.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "business_brain_log_2026_06_17_ingest_synced_worklog_to_notion_mythos_brain",
+      "community": 333,
+      "norm_label": "[2026-06-17] ingest - synced worklog to notion mythos brain"
+    },
+    {
       "label": "connections.md",
       "file_type": "document",
       "source_file": "connections.md",
@@ -10543,6 +10943,106 @@
       "norm_label": "[2026-06-17] session - office knowledge base initialized"
     },
     {
+      "label": "[2026-06-17] session - created wiki for [[Project_Botkeu]] (Telegram Finance Bot)",
+      "file_type": "document",
+      "source_file": "office-brain/log.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "office_brain_log_2026_06_17_session_created_wiki_for_project_botkeu_telegram_finance_bot",
+      "community": 334,
+      "norm_label": "[2026-06-17] session - created wiki for [[project_botkeu]] (telegram finance bot)"
+    },
+    {
+      "label": "Project_Botkeu.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_project_botkeu",
+      "community": 336,
+      "norm_label": "project_botkeu.md"
+    },
+    {
+      "label": "\ud83e\udd16 Project Botkeu (Telegram Finance Bot)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_project_botkeu_project_botkeu_telegram_finance_bot",
+      "community": 336,
+      "norm_label": "\ud83e\udd16 project botkeu (telegram finance bot)"
+    },
+    {
+      "label": "\ud83d\udccc Deskripsi Singkat",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "wiki_project_botkeu_deskripsi_singkat",
+      "community": 336,
+      "norm_label": "\ud83d\udccc deskripsi singkat"
+    },
+    {
+      "label": "\ud83d\udee0\ufe0f Fitur Utama & Cara Kerja",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "wiki_project_botkeu_fitur_utama_cara_kerja",
+      "community": 336,
+      "norm_label": "\ud83d\udee0\ufe0f fitur utama & cara kerja"
+    },
+    {
+      "label": "1. Otorisasi Akses (Access Control)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "wiki_project_botkeu_1_otorisasi_akses_access_control",
+      "community": 336,
+      "norm_label": "1. otorisasi akses (access control)"
+    },
+    {
+      "label": "2. Pencarian Dokumen Lokal (Local RAG)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "wiki_project_botkeu_2_pencarian_dokumen_lokal_local_rag",
+      "community": 336,
+      "norm_label": "2. pencarian dokumen lokal (local rag)"
+    },
+    {
+      "label": "3. Integrasi Excel Google Drive (Google Drive Broker)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "wiki_project_botkeu_3_integrasi_excel_google_drive_google_drive_broker",
+      "community": 336,
+      "norm_label": "3. integrasi excel google drive (google drive broker)"
+    },
+    {
+      "label": "\ud83d\ude80 Stack Teknologi",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "wiki_project_botkeu_stack_teknologi",
+      "community": 336,
+      "norm_label": "\ud83d\ude80 stack teknologi"
+    },
+    {
+      "label": "\ud83d\udd17 Referensi Dokumen",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "wiki_project_botkeu_referensi_dokumen",
+      "community": 336,
+      "norm_label": "\ud83d\udd17 referensi dokumen"
+    },
+    {
       "label": "CLAUDE.md",
       "file_type": "document",
       "source_file": "personal-brain/CLAUDE.md",
@@ -10761,6 +11261,136 @@
       "id": "wiki_profil_saya_dan_evaluasi_vibecoding_panduan_latihan_anda",
       "community": 242,
       "norm_label": "panduan latihan anda:"
+    },
+    {
+      "label": "prd.md",
+      "file_type": "document",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "botkeu_prd",
+      "community": 335,
+      "norm_label": "prd.md"
+    },
+    {
+      "label": "PRD: botkeu (Telegram Finance Bot) \u2014 v1.0",
+      "file_type": "document",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "botkeu_prd_prd_botkeu_telegram_finance_bot_v1_0",
+      "community": 335,
+      "norm_label": "prd: botkeu (telegram finance bot) \u2014 v1.0"
+    },
+    {
+      "label": "\ud83c\udfaf 1. Visi & Tujuan Produk",
+      "file_type": "document",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "botkeu_prd_1_visi_tujuan_produk",
+      "community": 335,
+      "norm_label": "\ud83c\udfaf 1. visi & tujuan produk"
+    },
+    {
+      "label": "\ud83d\udc65 2. Target Pengguna & Masalah",
+      "file_type": "document",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "botkeu_prd_2_target_pengguna_masalah",
+      "community": 335,
+      "norm_label": "\ud83d\udc65 2. target pengguna & masalah"
+    },
+    {
+      "label": "\ud83d\udee0\ufe0f 3. Arsitektur Teknis & Stack",
+      "file_type": "document",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "botkeu_prd_3_arsitektur_teknis_stack",
+      "community": 335,
+      "norm_label": "\ud83d\udee0\ufe0f 3. arsitektur teknis & stack"
+    },
+    {
+      "label": "\u2699\ufe0f 4. Alur Kerja Fitur (Feature Flow)",
+      "file_type": "document",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "botkeu_prd_4_alur_kerja_fitur_feature_flow",
+      "community": 335,
+      "norm_label": "\u2699\ufe0f 4. alur kerja fitur (feature flow)"
+    },
+    {
+      "label": "A. Fitur 1: Otorisasi Pengguna (Access Control)",
+      "file_type": "document",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "botkeu_prd_a_fitur_1_otorisasi_pengguna_access_control",
+      "community": 335,
+      "norm_label": "a. fitur 1: otorisasi pengguna (access control)"
+    },
+    {
+      "label": "B. Fitur 2: Pencarian Aturan Kantor (Local RAG)",
+      "file_type": "document",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "botkeu_prd_b_fitur_2_pencarian_aturan_kantor_local_rag",
+      "community": 335,
+      "norm_label": "b. fitur 2: pencarian aturan kantor (local rag)"
+    },
+    {
+      "label": "C. Fitur 3: Pencarian & Pembacaan Excel (Google Drive Broker)",
+      "file_type": "document",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "botkeu_prd_c_fitur_3_pencarian_pembacaan_excel_google_drive_broker",
+      "community": 335,
+      "norm_label": "c. fitur 3: pencarian & pembacaan excel (google drive broker)"
+    },
+    {
+      "label": "\ud83d\udcc2 5. Struktur Folder Kode (`projects/botkeu/`)",
+      "file_type": "document",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "botkeu_prd_5_struktur_folder_kode_projects_botkeu",
+      "community": 335,
+      "norm_label": "\ud83d\udcc2 5. struktur folder kode (`projects/botkeu/`)"
+    },
+    {
+      "label": "\ud83d\udd2c 6. Rencana Pengujian (Verification Plan)",
+      "file_type": "document",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "botkeu_prd_6_rencana_pengujian_verification_plan",
+      "community": 335,
+      "norm_label": "\ud83d\udd2c 6. rencana pengujian (verification plan)"
+    },
+    {
+      "label": "A. Pengujian Tahap 1: Pengujian Lokal Python",
+      "file_type": "document",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "botkeu_prd_a_pengujian_tahap_1_pengujian_lokal_python",
+      "community": 335,
+      "norm_label": "a. pengujian tahap 1: pengujian lokal python"
+    },
+    {
+      "label": "B. Pengujian Tahap 2: Integrasi Google Drive",
+      "file_type": "document",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "botkeu_prd_b_pengujian_tahap_2_integrasi_google_drive",
+      "community": 335,
+      "norm_label": "b. pengujian tahap 2: integrasi google drive"
     },
     {
       "label": "resume_pp_keuangan_negara.md",
@@ -16483,6 +17113,26 @@
       "norm_label": "optimasi webgl & sinkronisasi kurikulum medis (phase 3 - anatomi dasar)"
     },
     {
+      "label": "2026-06-17",
+      "file_type": "document",
+      "source_file": "projects/studios/work-log.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "studios_work_log_2026_06_17",
+      "community": 295,
+      "norm_label": "2026-06-17"
+    },
+    {
+      "label": "Sinkronisasi & Restrukturisasi Knowledge Base Proyek",
+      "file_type": "document",
+      "source_file": "projects/studios/work-log.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "studios_work_log_sinkronisasi_restrukturisasi_knowledge_base_proyek",
+      "community": 295,
+      "norm_label": "sinkronisasi & restrukturisasi knowledge base proyek"
+    },
+    {
       "label": "jurnal-harian.md",
       "file_type": "document",
       "source_file": "projects/twitter-ppt-jasa/jurnal-harian.md",
@@ -19459,7 +20109,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\add_created_property.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "add_created_property",
       "id": "add_created_property"
     },
@@ -19470,7 +20120,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "addcreated",
       "id": "add_created_property_addCreated"
     },
@@ -19763,7 +20413,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_note_content.js"
       },
       "file_type": "concept",
-      "community": 84,
+      "community": 10,
       "norm_label": "check_note_content",
       "id": "check_note_content"
     },
@@ -19774,7 +20424,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 84,
+      "community": 10,
       "norm_label": "checknotecontent",
       "id": "check_note_content_checkNoteContent"
     },
@@ -19788,7 +20438,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_note_properties.js"
       },
       "file_type": "concept",
-      "community": 335,
+      "community": 10,
       "norm_label": "check_note_properties",
       "id": "check_note_properties"
     },
@@ -19799,7 +20449,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 335,
+      "community": 10,
       "norm_label": "checknote",
       "id": "check_note_properties_checkNote"
     },
@@ -19813,7 +20463,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_page_details.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 338,
       "norm_label": "check_page_details",
       "id": "check_page_details"
     },
@@ -19824,7 +20474,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 338,
       "norm_label": "checkpages",
       "id": "check_page_details_checkPages"
     },
@@ -19838,7 +20488,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_para_views.js"
       },
       "file_type": "concept",
-      "community": 336,
+      "community": 10,
       "norm_label": "check_para_views",
       "id": "check_para_views"
     },
@@ -19849,7 +20499,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 336,
+      "community": 10,
       "norm_label": "checkviews",
       "id": "check_para_views_checkViews"
     },
@@ -19863,7 +20513,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_pt_schemas.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 339,
       "norm_label": "check_pt_schemas",
       "id": "check_pt_schemas"
     },
@@ -19874,7 +20524,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 339,
       "norm_label": "checkptschemas",
       "id": "check_pt_schemas_checkPTSchemas"
     },
@@ -19913,7 +20563,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\clean_callout_children.js"
       },
       "file_type": "concept",
-      "community": 337,
+      "community": 10,
       "norm_label": "clean_callout_children",
       "id": "clean_callout_children"
     },
@@ -19924,7 +20574,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 337,
+      "community": 10,
       "norm_label": "cleancalloutchildren",
       "id": "clean_callout_children_cleanCalloutChildren"
     },
@@ -19963,7 +20613,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\compare_para_schemas.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 340,
       "norm_label": "compare_para_schemas",
       "id": "compare_para_schemas"
     },
@@ -19974,7 +20624,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 340,
       "norm_label": "compare",
       "id": "compare_para_schemas_compare"
     },
@@ -19988,7 +20638,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\compare_schemas.js"
       },
       "file_type": "concept",
-      "community": 338,
+      "community": 11,
       "norm_label": "compare_schemas",
       "id": "compare_schemas"
     },
@@ -19999,7 +20649,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 338,
+      "community": 11,
       "norm_label": "compare",
       "id": "compare_schemas_compare"
     },
@@ -20038,7 +20688,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\create_notion_project.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 341,
       "norm_label": "create_notion_project",
       "id": "create_notion_project"
     },
@@ -20049,7 +20699,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 341,
       "norm_label": "createproject",
       "id": "create_notion_project_createProject"
     },
@@ -20091,7 +20741,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\dump_para_blocks.js"
       },
       "file_type": "concept",
-      "community": 339,
+      "community": 10,
       "norm_label": "dump_para_blocks",
       "id": "dump_para_blocks"
     },
@@ -20102,7 +20752,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 339,
+      "community": 10,
       "norm_label": "dumpblocks",
       "id": "dump_para_blocks_dumpBlocks"
     },
@@ -20116,7 +20766,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\enrich_dbs.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "enrich_dbs",
       "id": "enrich_dbs"
     },
@@ -20127,7 +20777,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "enrichnotes",
       "id": "enrich_dbs_enrichNotes"
     },
@@ -20141,7 +20791,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\find_all_databases.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 263,
       "norm_label": "find_all_databases",
       "id": "find_all_databases"
     },
@@ -20152,7 +20802,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 263,
       "norm_label": "findalldatabases",
       "id": "find_all_databases_findAllDatabases"
     },
@@ -20166,7 +20816,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\fix_recurring_nav.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "fix_recurring_nav",
       "id": "fix_recurring_nav"
     },
@@ -20177,7 +20827,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "fixnav",
       "id": "fix_recurring_nav_fixNav"
     },
@@ -20249,7 +20899,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_archive_blocks.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "inspect_archive_blocks",
       "id": "inspect_archive_blocks"
     },
@@ -20260,7 +20910,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "inspect",
       "id": "inspect_archive_blocks_inspect"
     },
@@ -20274,7 +20924,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_block.js"
       },
       "file_type": "concept",
-      "community": 340,
+      "community": 269,
       "norm_label": "inspect_block",
       "id": "inspect_block"
     },
@@ -20285,7 +20935,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 340,
+      "community": 269,
       "norm_label": "inspectblock",
       "id": "inspect_block_inspectBlock"
     },
@@ -20299,7 +20949,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_failed_views.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 344,
       "norm_label": "inspect_failed_views",
       "id": "inspect_failed_views"
     },
@@ -20310,7 +20960,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 344,
       "norm_label": "inspectviews",
       "id": "inspect_failed_views_inspectViews"
     },
@@ -20324,7 +20974,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_homepage_blocks.js"
       },
       "file_type": "concept",
-      "community": 262,
+      "community": 10,
       "norm_label": "inspect_homepage_blocks",
       "id": "inspect_homepage_blocks"
     },
@@ -20335,7 +20985,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 262,
+      "community": 10,
       "norm_label": "inspectroot",
       "id": "inspect_homepage_blocks_inspectRoot"
     },
@@ -20349,7 +20999,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_old_property.js"
       },
       "file_type": "concept",
-      "community": 341,
+      "community": 301,
       "norm_label": "inspect_old_property",
       "id": "inspect_old_property"
     },
@@ -20360,7 +21010,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 341,
+      "community": 301,
       "norm_label": "inspect",
       "id": "inspect_old_property_inspect"
     },
@@ -20374,7 +21024,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_pages.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "inspect_pages",
       "id": "inspect_pages"
     },
@@ -20388,7 +21038,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_para_blocks.js"
       },
       "file_type": "concept",
-      "community": 263,
+      "community": 10,
       "norm_label": "inspect_para_blocks",
       "id": "inspect_para_blocks"
     },
@@ -20399,7 +21049,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 263,
+      "community": 10,
       "norm_label": "inspect",
       "id": "inspect_para_blocks_inspect"
     },
@@ -20485,7 +21135,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_tasks_nav_details.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 342,
       "norm_label": "inspect_tasks_nav_details",
       "id": "inspect_tasks_nav_details"
     },
@@ -20496,7 +21146,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 342,
       "norm_label": "inspect",
       "id": "inspect_tasks_nav_details_inspect"
     },
@@ -20535,7 +21185,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\list_all_pages.js"
       },
       "file_type": "concept",
-      "community": 77,
+      "community": 10,
       "norm_label": "list_all_pages",
       "id": "list_all_pages"
     },
@@ -20546,7 +21196,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 77,
+      "community": 10,
       "norm_label": "listallpages",
       "id": "list_all_pages_listAllPages"
     },
@@ -20751,7 +21401,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\print_db_schemas.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 343,
       "norm_label": "print_db_schemas",
       "id": "print_db_schemas"
     },
@@ -20762,7 +21412,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 343,
       "norm_label": "printschemas",
       "id": "print_db_schemas_printSchemas"
     },
@@ -20776,7 +21426,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\print_ds_schema.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 345,
       "norm_label": "print_ds_schema",
       "id": "print_ds_schema"
     },
@@ -20787,7 +21437,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 345,
       "norm_label": "testretrieve",
       "id": "print_ds_schema_testRetrieve"
     },
@@ -20829,7 +21479,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\print_page_properties.js"
       },
       "file_type": "concept",
-      "community": 269,
+      "community": 10,
       "norm_label": "print_page_properties",
       "id": "print_page_properties"
     },
@@ -20840,7 +21490,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 269,
+      "community": 10,
       "norm_label": "inspectproperties",
       "id": "print_page_properties_inspectProperties"
     },
@@ -21173,7 +21823,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\scan_workspace.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 346,
       "norm_label": "scan_workspace",
       "id": "scan_workspace"
     },
@@ -21184,7 +21834,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 346,
       "norm_label": "scanroot",
       "id": "scan_workspace_scanRoot"
     },
@@ -21198,7 +21848,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\search_all.js"
       },
       "file_type": "concept",
-      "community": 301,
+      "community": 11,
       "norm_label": "search_all",
       "id": "search_all"
     },
@@ -21209,7 +21859,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 301,
+      "community": 11,
       "norm_label": "runsearch",
       "id": "search_all_runSearch"
     },
@@ -21281,7 +21931,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\search_brain.js"
       },
       "file_type": "concept",
-      "community": 85,
+      "community": 11,
       "norm_label": "search_brain",
       "id": "search_brain"
     },
@@ -21292,7 +21942,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 85,
+      "community": 11,
       "norm_label": "searchbrain",
       "id": "search_brain_searchBrain"
     },
@@ -21320,7 +21970,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\search_mythos.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "search_mythos",
       "id": "search_mythos"
     },
@@ -21331,7 +21981,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "searchmythos",
       "id": "search_mythos_searchMythos"
     },
@@ -21533,7 +22183,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\test_filter_translation.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "test_filter_translation",
       "id": "test_filter_translation"
     },
@@ -21544,7 +22194,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "translateallpropertyids",
       "id": "test_filter_translation_translateAllPropertyIds"
     },
@@ -21558,7 +22208,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\test_query.js"
       },
       "file_type": "concept",
-      "community": 342,
+      "community": 347,
       "norm_label": "test_query",
       "id": "test_query"
     },
@@ -21569,7 +22219,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 342,
+      "community": 347,
       "norm_label": "testquery",
       "id": "test_query_testQuery"
     },
@@ -21583,7 +22233,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\test_view_creation.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "test_view_creation",
       "id": "test_view_creation"
     },
@@ -21594,7 +22244,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "test",
       "id": "test_view_creation_test"
     },
@@ -21669,7 +22319,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\unarchive_blocks.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 348,
       "norm_label": "unarchive_blocks",
       "id": "unarchive_blocks"
     },
@@ -21680,7 +22330,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 348,
       "norm_label": "unarchive",
       "id": "unarchive_blocks_unarchive"
     },
@@ -22830,20 +23480,6 @@
       "community": 38,
       "norm_label": "strategy:",
       "id": "Strategy_"
-    },
-    {
-      "label": "update",
-      "type": "file",
-      "source_location": "D:\\WORKSPACE\\AIS-OS\\.agents\\skills\\graphify\\references\\update.md",
-      "confidence": "EXTRACTED",
-      "properties": {
-        "extension": ".md",
-        "path": "D:\\WORKSPACE\\AIS-OS\\.agents\\skills\\graphify\\references\\update.md"
-      },
-      "file_type": "concept",
-      "community": 35,
-      "norm_label": "update",
-      "id": "update"
     },
     {
       "label": "graphify reference: incremental update and cluster-only",
@@ -33217,6 +33853,454 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/ai_agent.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "botkeu_ai_agent",
+      "target": "botkeu_ai_agent_ask_gemini",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/ai_agent.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "botkeu_ai_agent",
+      "target": "botkeu_ai_agent_get_gemini_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/ai_agent.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "botkeu_ai_agent_ask_gemini",
+      "target": "botkeu_ai_agent_get_gemini_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/ai_agent.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "botkeu_ai_agent_rationale_26",
+      "target": "botkeu_ai_agent_get_gemini_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/ai_agent.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "botkeu_ai_agent_rationale_32",
+      "target": "botkeu_ai_agent_ask_gemini",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/config.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "botkeu_config",
+      "target": "botkeu_config_validate_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/config.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "botkeu_config",
+      "target": "dotenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/config.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "botkeu_config_rationale_31",
+      "target": "botkeu_config_validate_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "botkeu_google_drive",
+      "target": "botkeu_google_drive_download_excel_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "botkeu_google_drive",
+      "target": "botkeu_google_drive_get_drive_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "botkeu_google_drive",
+      "target": "botkeu_google_drive_list_excel_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "botkeu_google_drive",
+      "target": "botkeu_google_drive_query_excel_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "botkeu_google_drive",
+      "target": "botkeu_google_drive_read_excel_sheets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "botkeu_google_drive_download_excel_file",
+      "target": "botkeu_google_drive_get_drive_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "botkeu_google_drive_list_excel_files",
+      "target": "botkeu_google_drive_get_drive_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "botkeu_google_drive_rationale_20",
+      "target": "botkeu_google_drive_get_drive_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "botkeu_google_drive_rationale_31",
+      "target": "botkeu_google_drive_list_excel_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "botkeu_google_drive_rationale_67",
+      "target": "botkeu_google_drive_download_excel_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "botkeu_google_drive_rationale_101",
+      "target": "botkeu_google_drive_read_excel_sheets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/google_drive.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "botkeu_google_drive_rationale_121",
+      "target": "botkeu_google_drive_query_excel_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/local_brain.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "botkeu_local_brain",
+      "target": "botkeu_local_brain_search_local_wiki",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/local_brain.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "botkeu_local_brain_rationale_10",
+      "target": "botkeu_local_brain_search_local_wiki",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "botkeu_main",
+      "target": "botkeu_main_check_access",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "botkeu_main",
+      "target": "botkeu_main_handle_message",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "botkeu_main",
+      "target": "botkeu_main_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "botkeu_main",
+      "target": "botkeu_main_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "botkeu_main_handle_message",
+      "target": "botkeu_main_check_access",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "botkeu_main_rationale_19",
+      "target": "botkeu_main_check_access",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "botkeu_main_start",
+      "target": "botkeu_main_check_access",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "botkeu_main_rationale_23",
+      "target": "botkeu_main_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "botkeu_main_start",
+      "target": "default_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "botkeu_main_start",
+      "target": "update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "botkeu_main_handle_message",
+      "target": "update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains_section",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "update",
+      "target": "Also_prune_old_nodes_for_re-extracted__changed__files_before"
+    },
+    {
+      "relation": "contains_section",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "update",
+      "target": "For_--update__incremental_re-extraction_"
+    },
+    {
+      "relation": "contains_section",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "update",
+      "target": "Load_new_extraction_and_incremental_state"
+    },
+    {
+      "relation": "contains_section",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "update",
+      "target": "Save_manifest_so_next_--update_diffs_against_today_s_state__"
+    },
+    {
+      "relation": "contains_section",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "update",
+      "target": "Use_build_merge_____reads_graph_json_directly_without_Networ"
+    },
+    {
+      "relation": "contains_section",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "update",
+      "target": "Without_this__build_merge_s_dedup_pass_tries_to_reconcile_ol"
+    },
+    {
+      "relation": "contains_section",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "update",
+      "target": "Write_merged_result_back_to__graphify_extract_json_so_Step_4"
+    },
+    {
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "update",
+      "target": "d__for_n__d_in_G_nodes_data_True_________edges______________"
+    },
+    {
+      "relation": "contains_section",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "update",
+      "target": "graphify_reference__incremental_update_and_cluster-only"
+    },
+    {
+      "relation": "contains_section",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "update",
+      "target": "so_edge_direction__calls__implements__imports__is_always_pre"
+    },
+    {
+      "relation": "contains_section",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "update",
+      "target": "the_same_file_s_nodes_and_can_collapse_same-named_symbols_ac"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "botkeu_main_handle_message",
+      "target": "default_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/main.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "botkeu_main_rationale_38",
+      "target": "botkeu_main_handle_message",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "projects/jasa-ppt-akuntansi/landing-page/script.js",
       "source_location": "L115",
       "weight": 1.0,
@@ -38451,6 +39535,99 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_to_tasks",
+      "target": "fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_to_tasks",
+      "target": "notion_sync_to_tasks_client"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_to_tasks",
+      "target": "notion_sync_to_tasks_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_to_tasks",
+      "target": "notion_sync_to_tasks_notion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_to_tasks",
+      "target": "notion_sync_to_tasks_parsemarkdowntorichtext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_to_tasks",
+      "target": "notion_sync_to_tasks_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_to_tasks",
+      "target": "notion_sync_to_tasks_sync"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_to_tasks",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_to_tasks.js",
+      "source_location": "L119",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_to_tasks_sync",
+      "target": "notion_sync_to_tasks_parsemarkdowntorichtext"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/notion/sync_worklog_today.js",
       "source_location": "L1",
       "weight": 1.0,
@@ -40434,9 +41611,9 @@
       "source_file": ".claude/skills/daily-sync/SKILL.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_sync_skill",
-      "target": "daily_sync_skill_daily_sync",
-      "confidence_score": 1.0
+      "target": "daily_sync_skill_daily_sync"
     },
     {
       "relation": "contains",
@@ -40444,9 +41621,9 @@
       "source_file": ".claude/skills/daily-sync/SKILL.md",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_sync_skill_daily_sync",
-      "target": "daily_sync_skill_error_handling_fallbacks",
-      "confidence_score": 1.0
+      "target": "daily_sync_skill_error_handling_fallbacks"
     },
     {
       "relation": "contains",
@@ -40454,9 +41631,9 @@
       "source_file": ".claude/skills/daily-sync/SKILL.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_sync_skill_daily_sync",
-      "target": "daily_sync_skill_usage",
-      "confidence_score": 1.0
+      "target": "daily_sync_skill_usage"
     },
     {
       "relation": "contains",
@@ -40464,9 +41641,9 @@
       "source_file": ".claude/skills/daily-sync/SKILL.md",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_sync_skill_daily_sync",
-      "target": "daily_sync_skill_workflow_steps",
-      "confidence_score": 1.0
+      "target": "daily_sync_skill_workflow_steps"
     },
     {
       "relation": "contains",
@@ -40474,9 +41651,9 @@
       "source_file": ".claude/skills/daily-sync/SKILL.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_sync_skill_workflow_steps",
-      "target": "daily_sync_skill_step_1_detect_active_project_and_today_s_date",
-      "confidence_score": 1.0
+      "target": "daily_sync_skill_step_1_detect_active_project_and_today_s_date"
     },
     {
       "relation": "contains",
@@ -40484,19 +41661,19 @@
       "source_file": ".claude/skills/daily-sync/SKILL.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_sync_skill_workflow_steps",
-      "target": "daily_sync_skill_step_2_update_the_sync_script_target_date",
-      "confidence_score": 1.0
+      "target": "daily_sync_skill_step_2_update_the_sync_script_target_date"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".claude/skills/daily-sync/SKILL.md",
-      "source_location": "L36",
+      "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_sync_skill_workflow_steps",
-      "target": "daily_sync_skill_step_3_run_the_sync_script",
-      "confidence_score": 1.0
+      "target": "daily_sync_skill_step_3_run_the_sync_script_target_tasks_database"
     },
     {
       "relation": "contains",
@@ -40504,9 +41681,9 @@
       "source_file": ".claude/skills/daily-sync/SKILL.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_sync_skill_workflow_steps",
-      "target": "daily_sync_skill_step_4_keep_the_local_graph_current_graphify",
-      "confidence_score": 1.0
+      "target": "daily_sync_skill_step_4_keep_the_local_graph_current_graphify"
     },
     {
       "relation": "contains",
@@ -40514,9 +41691,9 @@
       "source_file": ".claude/skills/daily-sync/SKILL.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "daily_sync_skill_workflow_steps",
-      "target": "daily_sync_skill_step_5_update_the_local_activity_logs",
-      "confidence_score": 1.0
+      "target": "daily_sync_skill_step_5_update_the_local_activity_logs"
     },
     {
       "relation": "contains",
@@ -43164,9 +44341,9 @@
       "source_file": "MEMORY.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_aios_memory_persistent_context_lessons_learned",
-      "target": "memory_0_profil_pengguna_user_profile",
-      "confidence_score": 1.0
+      "target": "memory_0_profil_pengguna_user_profile"
     },
     {
       "relation": "contains",
@@ -43404,9 +44581,9 @@
       "source_file": "business-brain/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_claude",
-      "target": "business_brain_claude_claude_md_llm_wiki_agent_rules_business_digital_products",
-      "confidence_score": 1.0
+      "target": "business_brain_claude_claude_md_llm_wiki_agent_rules_business_digital_products"
     },
     {
       "relation": "contains",
@@ -43414,9 +44591,9 @@
       "source_file": "business-brain/CLAUDE.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_claude_claude_md_llm_wiki_agent_rules_business_digital_products",
-      "target": "business_brain_claude_1_core_architecture",
-      "confidence_score": 1.0
+      "target": "business_brain_claude_1_core_architecture"
     },
     {
       "relation": "contains",
@@ -43424,9 +44601,9 @@
       "source_file": "business-brain/CLAUDE.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_claude_claude_md_llm_wiki_agent_rules_business_digital_products",
-      "target": "business_brain_claude_2_file_page_naming_conventions",
-      "confidence_score": 1.0
+      "target": "business_brain_claude_2_file_page_naming_conventions"
     },
     {
       "relation": "contains",
@@ -43434,9 +44611,9 @@
       "source_file": "business-brain/CLAUDE.md",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_claude_claude_md_llm_wiki_agent_rules_business_digital_products",
-      "target": "business_brain_claude_3_categories_in_index_md",
-      "confidence_score": 1.0
+      "target": "business_brain_claude_3_categories_in_index_md"
     },
     {
       "relation": "contains",
@@ -43444,9 +44621,9 @@
       "source_file": "business-brain/CLAUDE.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_claude_claude_md_llm_wiki_agent_rules_business_digital_products",
-      "target": "business_brain_claude_4_agent_workflows_prompts",
-      "confidence_score": 1.0
+      "target": "business_brain_claude_4_agent_workflows_prompts"
     },
     {
       "relation": "contains",
@@ -43454,9 +44631,9 @@
       "source_file": "business-brain/CLAUDE.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_claude_4_agent_workflows_prompts",
-      "target": "business_brain_claude_ingest_mengimpor_data_mentah_dari_raw",
-      "confidence_score": 1.0
+      "target": "business_brain_claude_ingest_mengimpor_data_mentah_dari_raw"
     },
     {
       "relation": "contains",
@@ -43464,9 +44641,9 @@
       "source_file": "business-brain/CLAUDE.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_claude_4_agent_workflows_prompts",
-      "target": "business_brain_claude_lint_audit_pembersihan_konsistensi_data",
-      "confidence_score": 1.0
+      "target": "business_brain_claude_lint_audit_pembersihan_konsistensi_data"
     },
     {
       "relation": "contains",
@@ -43474,9 +44651,9 @@
       "source_file": "business-brain/index.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_index",
-      "target": "business_brain_index_ais_os_business_knowledge_brain",
-      "confidence_score": 1.0
+      "target": "business_brain_index_ais_os_business_knowledge_brain"
     },
     {
       "relation": "contains",
@@ -43484,9 +44661,9 @@
       "source_file": "business-brain/index.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_index_ais_os_business_knowledge_brain",
-      "target": "business_brain_index_1_produk_digital_jasa_products_services",
-      "confidence_score": 1.0
+      "target": "business_brain_index_1_produk_digital_jasa_products_services"
     },
     {
       "relation": "contains",
@@ -43494,9 +44671,9 @@
       "source_file": "business-brain/index.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_index_ais_os_business_knowledge_brain",
-      "target": "business_brain_index_2_pemasaran_konten_marketing_content",
-      "confidence_score": 1.0
+      "target": "business_brain_index_2_pemasaran_konten_marketing_content"
     },
     {
       "relation": "contains",
@@ -43504,9 +44681,9 @@
       "source_file": "business-brain/index.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_index_ais_os_business_knowledge_brain",
-      "target": "business_brain_index_3_operasional_sistem_operations_systems",
-      "confidence_score": 1.0
+      "target": "business_brain_index_3_operasional_sistem_operations_systems"
     },
     {
       "relation": "contains",
@@ -43514,9 +44691,9 @@
       "source_file": "business-brain/index.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_index_ais_os_business_knowledge_brain",
-      "target": "business_brain_index_4_keuangan_administrasi_finance_admin",
-      "confidence_score": 1.0
+      "target": "business_brain_index_4_keuangan_administrasi_finance_admin"
     },
     {
       "relation": "contains",
@@ -43524,9 +44701,19 @@
       "source_file": "business-brain/log.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_log",
-      "target": "business_brain_log_business_knowledge_base_log",
-      "confidence_score": 1.0
+      "target": "business_brain_log_business_knowledge_base_log"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/log.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "business_brain_log_business_knowledge_base_log",
+      "target": "business_brain_log_2026_06_17_ingest_synced_worklog_to_notion_mythos_brain"
     },
     {
       "relation": "contains",
@@ -43534,9 +44721,9 @@
       "source_file": "business-brain/log.md",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "business_brain_log_business_knowledge_base_log",
-      "target": "business_brain_log_2026_06_17_session_business_knowledge_base_initialized",
-      "confidence_score": 1.0
+      "target": "business_brain_log_2026_06_17_session_business_knowledge_base_initialized"
     },
     {
       "relation": "contains_section",
@@ -43720,9 +44907,9 @@
       "source_file": "office-brain/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "office_brain_claude",
-      "target": "office_brain_claude_claude_md_llm_wiki_agent_rules_office_employment",
-      "confidence_score": 1.0
+      "target": "office_brain_claude_claude_md_llm_wiki_agent_rules_office_employment"
     },
     {
       "relation": "contains",
@@ -43730,9 +44917,9 @@
       "source_file": "office-brain/CLAUDE.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "office_brain_claude_claude_md_llm_wiki_agent_rules_office_employment",
-      "target": "office_brain_claude_1_core_architecture",
-      "confidence_score": 1.0
+      "target": "office_brain_claude_1_core_architecture"
     },
     {
       "relation": "contains",
@@ -43740,9 +44927,9 @@
       "source_file": "office-brain/CLAUDE.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "office_brain_claude_claude_md_llm_wiki_agent_rules_office_employment",
-      "target": "office_brain_claude_2_categories_in_index_md",
-      "confidence_score": 1.0
+      "target": "office_brain_claude_2_categories_in_index_md"
     },
     {
       "relation": "contains",
@@ -43750,9 +44937,9 @@
       "source_file": "office-brain/index.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "office_brain_index",
-      "target": "office_brain_index_ais_os_office_knowledge_brain",
-      "confidence_score": 1.0
+      "target": "office_brain_index_ais_os_office_knowledge_brain"
     },
     {
       "relation": "contains",
@@ -43760,9 +44947,9 @@
       "source_file": "office-brain/index.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "office_brain_index_ais_os_office_knowledge_brain",
-      "target": "office_brain_index_1_prosedur_aturan_procedures_rules",
-      "confidence_score": 1.0
+      "target": "office_brain_index_1_prosedur_aturan_procedures_rules"
     },
     {
       "relation": "contains",
@@ -43770,9 +44957,9 @@
       "source_file": "office-brain/index.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "office_brain_index_ais_os_office_knowledge_brain",
-      "target": "office_brain_index_2_tugas_projek_tasks_projects",
-      "confidence_score": 1.0
+      "target": "office_brain_index_2_tugas_projek_tasks_projects"
     },
     {
       "relation": "contains",
@@ -43780,9 +44967,9 @@
       "source_file": "office-brain/index.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "office_brain_index_ais_os_office_knowledge_brain",
-      "target": "office_brain_index_3_informasi_kantor_office_info",
-      "confidence_score": 1.0
+      "target": "office_brain_index_3_informasi_kantor_office_info"
     },
     {
       "relation": "contains",
@@ -43790,9 +44977,19 @@
       "source_file": "office-brain/log.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "office_brain_log",
-      "target": "office_brain_log_office_knowledge_base_log",
-      "confidence_score": 1.0
+      "target": "office_brain_log_office_knowledge_base_log"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/log.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_log_office_knowledge_base_log",
+      "target": "office_brain_log_2026_06_17_session_created_wiki_for_project_botkeu_telegram_finance_bot"
     },
     {
       "relation": "contains",
@@ -43800,9 +44997,89 @@
       "source_file": "office-brain/log.md",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "office_brain_log_office_knowledge_base_log",
-      "target": "office_brain_log_2026_06_17_session_office_knowledge_base_initialized",
-      "confidence_score": 1.0
+      "target": "office_brain_log_2026_06_17_session_office_knowledge_base_initialized"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wiki_project_botkeu",
+      "target": "wiki_project_botkeu_project_botkeu_telegram_finance_bot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wiki_project_botkeu_project_botkeu_telegram_finance_bot",
+      "target": "wiki_project_botkeu_deskripsi_singkat"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wiki_project_botkeu_project_botkeu_telegram_finance_bot",
+      "target": "wiki_project_botkeu_fitur_utama_cara_kerja"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wiki_project_botkeu_project_botkeu_telegram_finance_bot",
+      "target": "wiki_project_botkeu_referensi_dokumen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wiki_project_botkeu_project_botkeu_telegram_finance_bot",
+      "target": "wiki_project_botkeu_stack_teknologi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wiki_project_botkeu_fitur_utama_cara_kerja",
+      "target": "wiki_project_botkeu_1_otorisasi_akses_access_control"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wiki_project_botkeu_fitur_utama_cara_kerja",
+      "target": "wiki_project_botkeu_2_pencarian_dokumen_lokal_local_rag"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Project_Botkeu.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "wiki_project_botkeu_fitur_utama_cara_kerja",
+      "target": "wiki_project_botkeu_3_integrasi_excel_google_drive_google_drive_broker"
     },
     {
       "relation": "contains",
@@ -43810,9 +45087,9 @@
       "source_file": "personal-brain/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "personal_brain_claude",
-      "target": "personal_brain_claude_claude_md_llm_wiki_agent_rules_personal_self_development",
-      "confidence_score": 1.0
+      "target": "personal_brain_claude_claude_md_llm_wiki_agent_rules_personal_self_development"
     },
     {
       "relation": "contains",
@@ -43820,9 +45097,9 @@
       "source_file": "personal-brain/CLAUDE.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "personal_brain_claude_claude_md_llm_wiki_agent_rules_personal_self_development",
-      "target": "personal_brain_claude_1_core_architecture",
-      "confidence_score": 1.0
+      "target": "personal_brain_claude_1_core_architecture"
     },
     {
       "relation": "contains",
@@ -43830,9 +45107,9 @@
       "source_file": "personal-brain/CLAUDE.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "personal_brain_claude_claude_md_llm_wiki_agent_rules_personal_self_development",
-      "target": "personal_brain_claude_2_categories_in_index_md",
-      "confidence_score": 1.0
+      "target": "personal_brain_claude_2_categories_in_index_md"
     },
     {
       "relation": "contains",
@@ -43840,9 +45117,9 @@
       "source_file": "personal-brain/index.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "personal_brain_index",
-      "target": "personal_brain_index_ais_os_personal_knowledge_brain",
-      "confidence_score": 1.0
+      "target": "personal_brain_index_ais_os_personal_knowledge_brain"
     },
     {
       "relation": "contains",
@@ -43850,9 +45127,9 @@
       "source_file": "personal-brain/index.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "personal_brain_index_ais_os_personal_knowledge_brain",
-      "target": "personal_brain_index_1_profil_evaluasi_diri_profile_self_assessment",
-      "confidence_score": 1.0
+      "target": "personal_brain_index_1_profil_evaluasi_diri_profile_self_assessment"
     },
     {
       "relation": "contains",
@@ -43860,9 +45137,9 @@
       "source_file": "personal-brain/index.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "personal_brain_index_ais_os_personal_knowledge_brain",
-      "target": "personal_brain_index_2_pengembangan_diri_hobi_self_growth_hobbies",
-      "confidence_score": 1.0
+      "target": "personal_brain_index_2_pengembangan_diri_hobi_self_growth_hobbies"
     },
     {
       "relation": "contains",
@@ -43870,9 +45147,9 @@
       "source_file": "personal-brain/index.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "personal_brain_index_ais_os_personal_knowledge_brain",
-      "target": "personal_brain_index_3_catatan_harian_journal_thoughts",
-      "confidence_score": 1.0
+      "target": "personal_brain_index_3_catatan_harian_journal_thoughts"
     },
     {
       "relation": "contains",
@@ -43880,9 +45157,9 @@
       "source_file": "personal-brain/log.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "personal_brain_log",
-      "target": "personal_brain_log_personal_knowledge_base_log",
-      "confidence_score": 1.0
+      "target": "personal_brain_log_personal_knowledge_base_log"
     },
     {
       "relation": "contains",
@@ -43890,9 +45167,9 @@
       "source_file": "personal-brain/log.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "personal_brain_log_personal_knowledge_base_log",
-      "target": "personal_brain_log_2026_06_17_ingest_initialized_profile_and_vibe_coding_self_evaluation_page",
-      "confidence_score": 1.0
+      "target": "personal_brain_log_2026_06_17_ingest_initialized_profile_and_vibe_coding_self_evaluation_page"
     },
     {
       "relation": "contains",
@@ -43900,9 +45177,9 @@
       "source_file": "personal-brain/log.md",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "personal_brain_log_personal_knowledge_base_log",
-      "target": "personal_brain_log_2026_06_17_session_personal_knowledge_base_initialized",
-      "confidence_score": 1.0
+      "target": "personal_brain_log_2026_06_17_session_personal_knowledge_base_initialized"
     },
     {
       "relation": "contains",
@@ -43910,9 +45187,9 @@
       "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_profil_saya_dan_evaluasi_vibecoding",
-      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_profil_saya_evaluasi_kemampuan_vibe_coding_ajie_bariandono",
-      "confidence_score": 1.0
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_profil_saya_evaluasi_kemampuan_vibe_coding_ajie_bariandono"
     },
     {
       "relation": "contains",
@@ -43920,9 +45197,9 @@
       "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_profil_saya_dan_evaluasi_vibecoding_profil_saya_evaluasi_kemampuan_vibe_coding_ajie_bariandono",
-      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_1_profil_singkat_anda_siapa_ajie",
-      "confidence_score": 1.0
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_1_profil_singkat_anda_siapa_ajie"
     },
     {
       "relation": "contains",
@@ -43930,9 +45207,9 @@
       "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_profil_saya_dan_evaluasi_vibecoding_profil_saya_evaluasi_kemampuan_vibe_coding_ajie_bariandono",
-      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_2_seberapa_paham_ai_tentang_anda",
-      "confidence_score": 1.0
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_2_seberapa_paham_ai_tentang_anda"
     },
     {
       "relation": "contains",
@@ -43940,9 +45217,9 @@
       "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_profil_saya_dan_evaluasi_vibecoding_profil_saya_evaluasi_kemampuan_vibe_coding_ajie_bariandono",
-      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_3_evaluasi_tingkat_teknis_vibe_coding_anda",
-      "confidence_score": 1.0
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_3_evaluasi_tingkat_teknis_vibe_coding_anda"
     },
     {
       "relation": "contains",
@@ -43950,9 +45227,9 @@
       "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_profil_saya_dan_evaluasi_vibecoding_profil_saya_evaluasi_kemampuan_vibe_coding_ajie_bariandono",
-      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_4_roadmap_naik_kelas_level_up_ke_advanced_director",
-      "confidence_score": 1.0
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_4_roadmap_naik_kelas_level_up_ke_advanced_director"
     },
     {
       "relation": "contains",
@@ -43960,9 +45237,9 @@
       "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_profil_saya_dan_evaluasi_vibecoding_3_evaluasi_tingkat_teknis_vibe_coding_anda",
-      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_kekuatan_anda_apa_yang_sudah_anda_kuasai",
-      "confidence_score": 1.0
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_kekuatan_anda_apa_yang_sudah_anda_kuasai"
     },
     {
       "relation": "contains",
@@ -43970,9 +45247,9 @@
       "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
       "source_location": "L47",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_profil_saya_dan_evaluasi_vibecoding_3_evaluasi_tingkat_teknis_vibe_coding_anda",
-      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_tantangan_anda_area_yang_perlu_ditingkatkan",
-      "confidence_score": 1.0
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_tantangan_anda_area_yang_perlu_ditingkatkan"
     },
     {
       "relation": "contains",
@@ -43980,9 +45257,129 @@
       "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_profil_saya_dan_evaluasi_vibecoding_4_roadmap_naik_kelas_level_up_ke_advanced_director",
-      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_panduan_latihan_anda",
-      "confidence_score": 1.0
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_panduan_latihan_anda"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "botkeu_prd",
+      "target": "botkeu_prd_prd_botkeu_telegram_finance_bot_v1_0"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "botkeu_prd_prd_botkeu_telegram_finance_bot_v1_0",
+      "target": "botkeu_prd_1_visi_tujuan_produk"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "botkeu_prd_prd_botkeu_telegram_finance_bot_v1_0",
+      "target": "botkeu_prd_2_target_pengguna_masalah"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "botkeu_prd_prd_botkeu_telegram_finance_bot_v1_0",
+      "target": "botkeu_prd_3_arsitektur_teknis_stack"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "botkeu_prd_prd_botkeu_telegram_finance_bot_v1_0",
+      "target": "botkeu_prd_4_alur_kerja_fitur_feature_flow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "botkeu_prd_prd_botkeu_telegram_finance_bot_v1_0",
+      "target": "botkeu_prd_5_struktur_folder_kode_projects_botkeu"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "botkeu_prd_prd_botkeu_telegram_finance_bot_v1_0",
+      "target": "botkeu_prd_6_rencana_pengujian_verification_plan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "botkeu_prd_4_alur_kerja_fitur_feature_flow",
+      "target": "botkeu_prd_a_fitur_1_otorisasi_pengguna_access_control"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "botkeu_prd_4_alur_kerja_fitur_feature_flow",
+      "target": "botkeu_prd_b_fitur_2_pencarian_aturan_kantor_local_rag"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "botkeu_prd_4_alur_kerja_fitur_feature_flow",
+      "target": "botkeu_prd_c_fitur_3_pencarian_pembacaan_excel_google_drive_broker"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "botkeu_prd_6_rencana_pengujian_verification_plan",
+      "target": "botkeu_prd_a_pengujian_tahap_1_pengujian_lokal_python"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/prd.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "botkeu_prd_6_rencana_pengujian_verification_plan",
+      "target": "botkeu_prd_b_pengujian_tahap_2_integrasi_google_drive"
     },
     {
       "relation": "contains",
@@ -49308,6 +50705,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/studios/work-log.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_work_log_work_log_studios",
+      "target": "studios_work_log_2026_06_17"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/work-log.md",
       "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -49343,6 +50750,16 @@
       "confidence_score": 1.0,
       "source": "studios_work_log_2026_06_16",
       "target": "studios_work_log_optimasi_webgl_sinkronisasi_kurikulum_medis_phase_3_anatomi_dasar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/work-log.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_work_log_2026_06_17",
+      "target": "studios_work_log_sinkronisasi_restrukturisasi_knowledge_base_proyek"
     },
     {
       "relation": "contains",
@@ -57225,94 +58642,6 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "confidence_score": 1.0,
-      "source": "update",
-      "target": "Also_prune_old_nodes_for_re-extracted__changed__files_before"
-    },
-    {
-      "relation": "contains_section",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "update",
-      "target": "For_--update__incremental_re-extraction_"
-    },
-    {
-      "relation": "contains_section",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "update",
-      "target": "Load_new_extraction_and_incremental_state"
-    },
-    {
-      "relation": "contains_section",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "update",
-      "target": "Save_manifest_so_next_--update_diffs_against_today_s_state__"
-    },
-    {
-      "relation": "contains_section",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "update",
-      "target": "Use_build_merge_____reads_graph_json_directly_without_Networ"
-    },
-    {
-      "relation": "contains_section",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "update",
-      "target": "Without_this__build_merge_s_dedup_pass_tries_to_reconcile_ol"
-    },
-    {
-      "relation": "contains_section",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "update",
-      "target": "Write_merged_result_back_to__graphify_extract_json_so_Step_4"
-    },
-    {
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "update",
-      "target": "d__for_n__d_in_G_nodes_data_True_________edges______________"
-    },
-    {
-      "relation": "contains_section",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "update",
-      "target": "graphify_reference__incremental_update_and_cluster-only"
-    },
-    {
-      "relation": "contains_section",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "update",
-      "target": "so_edge_direction__calls__implements__imports__is_always_pre"
-    },
-    {
-      "relation": "contains_section",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "update",
-      "target": "the_same_file_s_nodes_and_can_collapse_same-named_symbols_ac"
-    },
-    {
-      "relation": "contains_section",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
       "source": "CLAUDE",
       "target": "Bariandono_s_AI_Operating_System"
     },
@@ -61934,5 +63263,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4fa70a7061f06ab302a7f84500c13e15652afc71"
+  "built_at_commit": "0b0180b66f86739727941dc797d50da2c411fa11"
 }
