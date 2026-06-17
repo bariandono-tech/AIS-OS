@@ -1,3 +1,4 @@
+import time
 import local_brain
 import google_drive
 import config
@@ -42,7 +43,8 @@ def ask_gemini(user_message: str, chat_history: list = None) -> tuple:
     try:
         client = get_gemini_client()
     except Exception as e:
-        return f"Error sistem saat menghubungkan ke AI: {e}", chat_history or []
+        print(f"[AI Agent] Error in get_gemini_client: {e}")
+        return "Maaf, bot sedang mengalami gangguan koneksi ke sistem AI. Silakan coba beberapa saat lagi.", chat_history or []
         
     # Susun payload percakapan
     contents = []
@@ -76,17 +78,31 @@ def ask_gemini(user_message: str, chat_history: list = None) -> tuple:
     # Loop Function Calling (Gemini memanggil tools secara berurutan jika diperlukan)
     max_iterations = 8
     for i in range(max_iterations):
-        try:
-            response = client.models.generate_content(
-                model='gemini-2.5-flash',
-                contents=contents,
-                config=types.GenerateContentConfig(
-                    tools=tools_list,
-                    system_instruction=system_instruction
+        response = None
+        max_retries = 3
+        delay = 2
+        
+        for attempt in range(max_retries):
+            try:
+                response = client.models.generate_content(
+                    model='gemini-2.5-flash',
+                    contents=contents,
+                    config=types.GenerateContentConfig(
+                        tools=tools_list,
+                        system_instruction=system_instruction
+                    )
                 )
-            )
-        except Exception as e:
-            return f"Terjadi kesalahan saat memproses permintaan Anda ke Gemini: {e}", contents
+                break  # Berhasil, keluar dari loop retry
+            except Exception as e:
+                error_str = str(e).lower()
+                # Jika error 503, Service Unavailable, Overloaded, atau batas limit tercapai, coba lagi
+                if attempt < max_retries - 1 and any(msg in error_str for msg in ["503", "service unavailable", "overloaded", "resource_exhausted", "rate limit"]):
+                    print(f"[AI Agent] Gemini API 503/Overloaded. Menunggu {delay} detik sebelum mencoba lagi (Percobaan {attempt + 1}/{max_retries})...")
+                    time.sleep(delay)
+                    delay *= 2  # Exponential backoff
+                else:
+                    print(f"[AI Agent] Gemini API Error: {e}")
+                    return "Maaf, koneksi ke sistem AI sedang sibuk atau mengalami gangguan. Silakan coba lagi nanti.", contents
             
         # Tambahkan respon model ke riwayat konten
         if response.candidates and response.candidates[0].content:
@@ -111,9 +127,11 @@ def ask_gemini(user_message: str, chat_history: list = None) -> tuple:
                 try:
                     result = TOOLS_MAP[name](**args)
                 except Exception as e:
-                    result = f"Error saat menjalankan fungsi '{name}': {e}"
+                    print(f"[AI Agent] Error executing tool '{name}': {e}")
+                    result = f"Gagal mengambil data dari alat {name} karena masalah teknis."
             else:
-                result = f"Error: Fungsi '{name}' tidak terdaftar di sistem."
+                print(f"[AI Agent] Warning: Gemini tried to call unregistered tool '{name}'")
+                result = f"Alat pencarian {name} tidak tersedia."
                 
             # Bungkus hasil eksekusi ke part response
             tool_response_parts.append(
