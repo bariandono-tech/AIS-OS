@@ -56,7 +56,7 @@
       "label": "get_gemini_client()",
       "file_type": "code",
       "source_file": "projects/botkeu/ai_agent.py",
-      "source_location": "L25",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "botkeu_ai_agent_get_gemini_client",
       "community": 84,
@@ -66,7 +66,7 @@
       "label": "ask_gemini()",
       "file_type": "code",
       "source_file": "projects/botkeu/ai_agent.py",
-      "source_location": "L31",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "botkeu_ai_agent_ask_gemini",
       "community": 84,
@@ -76,9 +76,9 @@
       "label": "Menginisialisasi klien Google GenAI.",
       "file_type": "rationale",
       "source_file": "projects/botkeu/ai_agent.py",
-      "source_location": "L26",
+      "source_location": "L27",
       "_origin": "ast",
-      "id": "botkeu_ai_agent_rationale_26",
+      "id": "botkeu_ai_agent_rationale_27",
       "community": 84,
       "norm_label": "menginisialisasi klien google genai."
     },
@@ -86,9 +86,9 @@
       "label": "Mengirim pesan ke Gemini dan menangani iterasi pemanggilan fungsi (Tool Calling)",
       "file_type": "rationale",
       "source_file": "projects/botkeu/ai_agent.py",
-      "source_location": "L32",
+      "source_location": "L33",
       "_origin": "ast",
-      "id": "botkeu_ai_agent_rationale_32",
+      "id": "botkeu_ai_agent_rationale_33",
       "community": 84,
       "norm_label": "mengirim pesan ke gemini dan menangani iterasi pemanggilan fungsi (tool calling)"
     },
@@ -276,7 +276,7 @@
       "label": "check_access()",
       "file_type": "code",
       "source_file": "projects/botkeu/main.py",
-      "source_location": "L18",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "botkeu_main_check_access",
       "community": 35,
@@ -286,7 +286,7 @@
       "label": "start()",
       "file_type": "code",
       "source_file": "projects/botkeu/main.py",
-      "source_location": "L22",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "botkeu_main_start",
       "community": 35,
@@ -296,7 +296,7 @@
       "label": "Update",
       "file_type": "code",
       "source_file": "projects/botkeu/main.py",
-      "source_location": "L22",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "update",
       "community": 35,
@@ -306,7 +306,7 @@
       "label": "DEFAULT_TYPE",
       "file_type": "code",
       "source_file": "projects/botkeu/main.py",
-      "source_location": "L22",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "default_type",
       "community": 35,
@@ -316,7 +316,7 @@
       "label": "handle_message()",
       "file_type": "code",
       "source_file": "projects/botkeu/main.py",
-      "source_location": "L37",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "botkeu_main_handle_message",
       "community": 35,
@@ -326,7 +326,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "projects/botkeu/main.py",
-      "source_location": "L74",
+      "source_location": "L80",
       "_origin": "ast",
       "id": "botkeu_main_main",
       "community": 35,
@@ -336,9 +336,9 @@
       "label": "Memvalidasi apakah ID pengguna terdaftar di whitelist .env.",
       "file_type": "rationale",
       "source_file": "projects/botkeu/main.py",
-      "source_location": "L19",
+      "source_location": "L25",
       "_origin": "ast",
-      "id": "botkeu_main_rationale_19",
+      "id": "botkeu_main_rationale_25",
       "community": 35,
       "norm_label": "memvalidasi apakah id pengguna terdaftar di whitelist .env."
     },
@@ -346,9 +346,9 @@
       "label": "Mengirim pesan pembuka saat pengguna mengetik /start.",
       "file_type": "rationale",
       "source_file": "projects/botkeu/main.py",
-      "source_location": "L23",
+      "source_location": "L29",
       "_origin": "ast",
-      "id": "botkeu_main_rationale_23",
+      "id": "botkeu_main_rationale_29",
       "community": 35,
       "norm_label": "mengirim pesan pembuka saat pengguna mengetik /start."
     },
@@ -356,9 +356,9 @@
       "label": "Memproses semua pesan teks dari pengguna sah dan mengirimkannya ke Gemini.",
       "file_type": "rationale",
       "source_file": "projects/botkeu/main.py",
-      "source_location": "L38",
+      "source_location": "L44",
       "_origin": "ast",
-      "id": "botkeu_main_rationale_38",
+      "id": "botkeu_main_rationale_44",
       "community": 35,
       "norm_label": "memproses semua pesan teks dari pengguna sah dan mengirimkannya ke gemini."
     },
@@ -3499,7 +3499,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "notion_package_dependencies",
-      "community": 262,
+      "community": 150,
       "norm_label": "dependencies"
     },
     {
@@ -3509,7 +3509,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "notion_package_dependencies_notionhq_client",
-      "community": 262,
+      "community": 150,
       "norm_label": "@notionhq/client"
     },
     {
@@ -3519,7 +3519,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "notion_package_dependencies_dotenv",
-      "community": 262,
+      "community": 150,
       "norm_label": "dotenv"
     },
     {
@@ -10896,7 +10896,7 @@
       "label": "\ud83d\udd28 2. Tugas & Projek (Tasks & Projects)",
       "file_type": "document",
       "source_file": "office-brain/index.md",
-      "source_location": "L15",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "office_brain_index_2_tugas_projek_tasks_projects",
       "community": 257,
@@ -10906,7 +10906,7 @@
       "label": "\ud83c\udfe2 3. Informasi Kantor (Office Info)",
       "file_type": "document",
       "source_file": "office-brain/index.md",
-      "source_location": "L22",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "office_brain_index_3_informasi_kantor_office_info",
       "community": 257,
@@ -10951,6 +10951,356 @@
       "id": "office_brain_log_2026_06_17_session_created_wiki_for_project_botkeu_telegram_finance_bot",
       "community": 334,
       "norm_label": "[2026-06-17] session - created wiki for [[project_botkeu]] (telegram finance bot)"
+    },
+    {
+      "label": "[2026-06-17] ingest - imported 13 financial and regulatory documents from thesis-brain",
+      "file_type": "document",
+      "source_file": "office-brain/log.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "office_brain_log_2026_06_17_ingest_imported_13_financial_and_regulatory_documents_from_thesis_brain",
+      "community": 334,
+      "norm_label": "[2026-06-17] ingest - imported 13 financial and regulatory documents from thesis-brain"
+    },
+    {
+      "label": "Coretax_System.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Coretax_System.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_wiki_coretax_system_md_wiki_coretax_system",
+      "community": 319,
+      "norm_label": "coretax_system.md"
+    },
+    {
+      "label": "\ud83d\udcca Coretax System (Sistem Inti Administrasi Perpajakan)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Coretax_System.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_wiki_coretax_system_md_wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan",
+      "community": 319,
+      "norm_label": "\ud83d\udcca coretax system (sistem inti administrasi perpajakan)"
+    },
+    {
+      "label": "Dasar Hukum & Fitur Utama",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Coretax_System.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "office_brain_wiki_coretax_system_md_wiki_coretax_system_dasar_hukum_fitur_utama",
+      "community": 319,
+      "norm_label": "dasar hukum & fitur utama"
+    },
+    {
+      "label": "DIPA_Halaman_III.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii",
+      "community": 279,
+      "norm_label": "dipa_halaman_iii.md"
+    },
+    {
+      "label": "\ud83d\udcca Halaman III DIPA & Rencana Penarikan Dana (RPD)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
+      "community": 279,
+      "norm_label": "\ud83d\udcca halaman iii dipa & rencana penarikan dana (rpd)"
+    },
+    {
+      "label": "Peran Strategis RPD Halaman III",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "office_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_peran_strategis_rpd_halaman_iii",
+      "community": 279,
+      "norm_label": "peran strategis rpd halaman iii"
+    },
+    {
+      "label": "Karakteristik Pergeseran & Pemutakhiran",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "office_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_karakteristik_pergeseran_pemutakhiran",
+      "community": 279,
+      "norm_label": "karakteristik pergeseran & pemutakhiran"
+    },
+    {
+      "label": "Deviasi_Anggaran.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Deviasi_Anggaran.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran",
+      "community": 320,
+      "norm_label": "deviasi_anggaran.md"
+    },
+    {
+      "label": "\ud83d\udcca Deviasi Anggaran",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Deviasi_Anggaran.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran_deviasi_anggaran",
+      "community": 320,
+      "norm_label": "\ud83d\udcca deviasi anggaran"
+    },
+    {
+      "label": "Signifikansi dalam Skripsi",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Deviasi_Anggaran.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "office_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran_signifikansi_dalam_skripsi",
+      "community": 320,
+      "norm_label": "signifikansi dalam skripsi"
+    },
+    {
+      "label": "IKPA.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/IKPA.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_wiki_ikpa_md_wiki_ikpa",
+      "community": 299,
+      "norm_label": "ikpa.md"
+    },
+    {
+      "label": "\ud83d\udcca Indikator Kinerja Pelaksanaan Anggaran (IKPA)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/IKPA.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_wiki_ikpa_md_wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
+      "community": 299,
+      "norm_label": "\ud83d\udcca indikator kinerja pelaksanaan anggaran (ikpa)"
+    },
+    {
+      "label": "\ud83c\udfdb\ufe0f Kerangka Hukum & Aspek Penilaian",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/IKPA.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "office_brain_wiki_ikpa_md_wiki_ikpa_kerangka_hukum_aspek_penilaian",
+      "community": 299,
+      "norm_label": "\ud83c\udfdb\ufe0f kerangka hukum & aspek penilaian"
+    },
+    {
+      "label": "\ud83d\udcc8 Kategori Penilaian IKPA",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/IKPA.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "office_brain_wiki_ikpa_md_wiki_ikpa_kategori_penilaian_ikpa",
+      "community": 299,
+      "norm_label": "\ud83d\udcc8 kategori penilaian ikpa"
+    },
+    {
+      "label": "Kemenkumham.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Kemenkumham.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_wiki_kemenkumham_md_wiki_kemenkumham",
+      "community": 321,
+      "norm_label": "kemenkumham.md"
+    },
+    {
+      "label": "\ud83c\udfe2 Kementerian Hukum dan Hak Asasi Manusia (Kemenkumham)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Kemenkumham.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_wiki_kemenkumham_md_wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham",
+      "community": 321,
+      "norm_label": "\ud83c\udfe2 kementerian hukum dan hak asasi manusia (kemenkumham)"
+    },
+    {
+      "label": "Kewajiban Pelaporan Keuangan",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Kemenkumham.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "office_brain_wiki_kemenkumham_md_wiki_kemenkumham_kewajiban_pelaporan_keuangan",
+      "community": 321,
+      "norm_label": "kewajiban pelaporan keuangan"
+    },
+    {
+      "label": "PMK_01_2026.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/PMK_01_2026.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026",
+      "community": 301,
+      "norm_label": "pmk_01_2026.md"
+    },
+    {
+      "label": "\u2696\ufe0f PMK Nomor 1 Tahun 2026 (Insentif Pajak Restrukturisasi BUMN)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/PMK_01_2026.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
+      "community": 301,
+      "norm_label": "\u2696\ufe0f pmk nomor 1 tahun 2026 (insentif pajak restrukturisasi bumn)"
+    },
+    {
+      "label": "Definisi BUMN di Era Coretax",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/PMK_01_2026.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "office_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_definisi_bumn_di_era_coretax",
+      "community": 301,
+      "norm_label": "definisi bumn di era coretax"
+    },
+    {
+      "label": "Insentif Pajak",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/PMK_01_2026.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "office_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_insentif_pajak",
+      "community": 301,
+      "norm_label": "insentif pajak"
+    },
+    {
+      "label": "PPh_Pasal_21.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21",
+      "community": 302,
+      "norm_label": "pph_pasal_21.md"
+    },
+    {
+      "label": "\ud83d\udcca PPh Pasal 21 (Pajak Penghasilan Karyawan / Pekerja)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
+      "community": 302,
+      "norm_label": "\ud83d\udcca pph pasal 21 (pajak penghasilan karyawan / pekerja)"
+    },
+    {
+      "label": "\ud83d\udcb8 Metode TER (Tarif Efektif Rata-Rata) Bulanan",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "office_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_metode_ter_tarif_efektif_rata_rata_bulanan",
+      "community": 302,
+      "norm_label": "\ud83d\udcb8 metode ter (tarif efektif rata-rata) bulanan"
+    },
+    {
+      "label": "\ud83d\udcc8 Tarif Progresif Pasal 17 UU PPh (UU HPP)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "office_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_tarif_progresif_pasal_17_uu_pph_uu_hpp",
+      "community": 302,
+      "norm_label": "\ud83d\udcc8 tarif progresif pasal 17 uu pph (uu hpp)"
+    },
+    {
+      "label": "Pajak_Pertambahan_Nilai.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai",
+      "community": 76,
+      "norm_label": "pajak_pertambahan_nilai.md"
+    },
+    {
+      "label": "\ud83d\udcca Pajak Pertambahan Nilai (PPN)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
+      "community": 76,
+      "norm_label": "\ud83d\udcca pajak pertambahan nilai (ppn)"
+    },
+    {
+      "label": "Ketentuan Umum",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "office_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_ketentuan_umum",
+      "community": 76,
+      "norm_label": "ketentuan umum"
+    },
+    {
+      "label": "\ud83d\uded2 Mekanisme Pengkreditan PPN",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "office_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_mekanisme_pengkreditan_ppn",
+      "community": 76,
+      "norm_label": "\ud83d\uded2 mekanisme pengkreditan ppn"
+    },
+    {
+      "label": "\ud83c\udfdb\ufe0f PPN Wapu (Wajib Pungut)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "office_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_ppn_wapu_wajib_pungut",
+      "community": 76,
+      "norm_label": "\ud83c\udfdb\ufe0f ppn wapu (wajib pungut)"
+    },
+    {
+      "label": "Penghasilan_Tidak_Kena_Pajak.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak",
+      "community": 300,
+      "norm_label": "penghasilan_tidak_kena_pajak.md"
+    },
+    {
+      "label": "\ud83d\udcca Penghasilan Tidak Kena Pajak (PTKP)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp",
+      "community": 300,
+      "norm_label": "\ud83d\udcca penghasilan tidak kena pajak (ptkp)"
+    },
+    {
+      "label": "Tarif Tahunan PTKP Indonesia (Saat Ini)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "office_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini",
+      "community": 300,
+      "norm_label": "tarif tahunan ptkp indonesia (saat ini)"
+    },
+    {
+      "label": "Contoh Perhitungan Cepat",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "office_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_contoh_perhitungan_cepat",
+      "community": 300,
+      "norm_label": "contoh perhitungan cepat"
     },
     {
       "label": "Project_Botkeu.md",
@@ -11041,6 +11391,126 @@
       "id": "wiki_project_botkeu_referensi_dokumen",
       "community": 336,
       "norm_label": "\ud83d\udd17 referensi dokumen"
+    },
+    {
+      "label": "Rudenim_Pontianak.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Rudenim_Pontianak.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak",
+      "community": 322,
+      "norm_label": "rudenim_pontianak.md"
+    },
+    {
+      "label": "\ud83c\udfe2 Rumah Detensi Imigrasi Pontianak",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Rudenim_Pontianak.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak",
+      "community": 322,
+      "norm_label": "\ud83c\udfe2 rumah detensi imigrasi pontianak"
+    },
+    {
+      "label": "Fungsi & Karakteristik",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Rudenim_Pontianak.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "office_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak_fungsi_karakteristik",
+      "community": 322,
+      "norm_label": "fungsi & karakteristik"
+    },
+    {
+      "label": "SAKTI.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/SAKTI.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_wiki_sakti_md_wiki_sakti",
+      "community": 323,
+      "norm_label": "sakti.md"
+    },
+    {
+      "label": "\ud83d\udcca Sistem Aplikasi Keuangan Tingkat Instansi (SAKTI)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/SAKTI.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_wiki_sakti_md_wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti",
+      "community": 323,
+      "norm_label": "\ud83d\udcca sistem aplikasi keuangan tingkat instansi (sakti)"
+    },
+    {
+      "label": "Modul & Kegunaan",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/SAKTI.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "office_brain_wiki_sakti_md_wiki_sakti_modul_kegunaan",
+      "community": 323,
+      "norm_label": "modul & kegunaan"
+    },
+    {
+      "label": "Standar_Akuntansi_Pemerintah.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Standar_Akuntansi_Pemerintah.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah",
+      "community": 324,
+      "norm_label": "standar_akuntansi_pemerintah.md"
+    },
+    {
+      "label": "\ud83d\udcca Standar Akuntansi Pemerintah (SAP)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Standar_Akuntansi_Pemerintah.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap",
+      "community": 324,
+      "norm_label": "\ud83d\udcca standar akuntansi pemerintah (sap)"
+    },
+    {
+      "label": "Landasan Hukum",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Standar_Akuntansi_Pemerintah.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "office_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah_landasan_hukum",
+      "community": 324,
+      "norm_label": "landasan hukum"
+    },
+    {
+      "label": "Withholding_Tax.md",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Withholding_Tax.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_wiki_withholding_tax_md_wiki_withholding_tax",
+      "community": 328,
+      "norm_label": "withholding_tax.md"
+    },
+    {
+      "label": "\ud83d\udcca Withholding Tax (Pemotongan/Pemungutan Pajak Pihak Ketiga)",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Withholding_Tax.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_wiki_withholding_tax_md_wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga",
+      "community": 328,
+      "norm_label": "\ud83d\udcca withholding tax (pemotongan/pemungutan pajak pihak ketiga)"
+    },
+    {
+      "label": "Jenis-Jenis Withholding Tax PPh di Indonesia",
+      "file_type": "document",
+      "source_file": "office-brain/wiki/Withholding_Tax.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "office_brain_wiki_withholding_tax_md_wiki_withholding_tax_jenis_jenis_withholding_tax_pph_di_indonesia",
+      "community": 328,
+      "norm_label": "jenis-jenis withholding tax pph di indonesia"
     },
     {
       "label": "CLAUDE.md",
@@ -19238,8 +19708,8 @@
       "source_file": "thesis-brain/wiki/Coretax_System.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "wiki_coretax_system",
-      "community": 320,
+      "id": "thesis_brain_wiki_coretax_system_md_wiki_coretax_system",
+      "community": 329,
       "norm_label": "coretax_system.md"
     },
     {
@@ -19248,8 +19718,8 @@
       "source_file": "thesis-brain/wiki/Coretax_System.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan",
-      "community": 320,
+      "id": "thesis_brain_wiki_coretax_system_md_wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan",
+      "community": 329,
       "norm_label": "\ud83d\udcca coretax system (sistem inti administrasi perpajakan)"
     },
     {
@@ -19258,8 +19728,8 @@
       "source_file": "thesis-brain/wiki/Coretax_System.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "wiki_coretax_system_dasar_hukum_fitur_utama",
-      "community": 320,
+      "id": "thesis_brain_wiki_coretax_system_md_wiki_coretax_system_dasar_hukum_fitur_utama",
+      "community": 329,
       "norm_label": "dasar hukum & fitur utama"
     },
     {
@@ -19268,8 +19738,8 @@
       "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "wiki_dipa_halaman_iii",
-      "community": 315,
+      "id": "thesis_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii",
+      "community": 312,
       "norm_label": "dipa_halaman_iii.md"
     },
     {
@@ -19278,8 +19748,8 @@
       "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
-      "community": 315,
+      "id": "thesis_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
+      "community": 312,
       "norm_label": "\ud83d\udcca halaman iii dipa & rencana penarikan dana (rpd)"
     },
     {
@@ -19288,8 +19758,8 @@
       "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "wiki_dipa_halaman_iii_peran_strategis_rpd_halaman_iii",
-      "community": 315,
+      "id": "thesis_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_peran_strategis_rpd_halaman_iii",
+      "community": 312,
       "norm_label": "peran strategis rpd halaman iii"
     },
     {
@@ -19298,8 +19768,8 @@
       "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "wiki_dipa_halaman_iii_karakteristik_pergeseran_pemutakhiran",
-      "community": 315,
+      "id": "thesis_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_karakteristik_pergeseran_pemutakhiran",
+      "community": 312,
       "norm_label": "karakteristik pergeseran & pemutakhiran"
     },
     {
@@ -19308,8 +19778,8 @@
       "source_file": "thesis-brain/wiki/Deviasi_Anggaran.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "wiki_deviasi_anggaran",
-      "community": 321,
+      "id": "thesis_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran",
+      "community": 338,
       "norm_label": "deviasi_anggaran.md"
     },
     {
@@ -19318,8 +19788,8 @@
       "source_file": "thesis-brain/wiki/Deviasi_Anggaran.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "wiki_deviasi_anggaran_deviasi_anggaran",
-      "community": 321,
+      "id": "thesis_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran_deviasi_anggaran",
+      "community": 338,
       "norm_label": "\ud83d\udcca deviasi anggaran"
     },
     {
@@ -19328,8 +19798,8 @@
       "source_file": "thesis-brain/wiki/Deviasi_Anggaran.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "wiki_deviasi_anggaran_signifikansi_dalam_skripsi",
-      "community": 321,
+      "id": "thesis_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran_signifikansi_dalam_skripsi",
+      "community": 338,
       "norm_label": "signifikansi dalam skripsi"
     },
     {
@@ -19338,8 +19808,8 @@
       "source_file": "thesis-brain/wiki/IKPA.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "wiki_ikpa",
-      "community": 316,
+      "id": "thesis_brain_wiki_ikpa_md_wiki_ikpa",
+      "community": 315,
       "norm_label": "ikpa.md"
     },
     {
@@ -19348,8 +19818,8 @@
       "source_file": "thesis-brain/wiki/IKPA.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
-      "community": 316,
+      "id": "thesis_brain_wiki_ikpa_md_wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
+      "community": 315,
       "norm_label": "\ud83d\udcca indikator kinerja pelaksanaan anggaran (ikpa)"
     },
     {
@@ -19358,8 +19828,8 @@
       "source_file": "thesis-brain/wiki/IKPA.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "wiki_ikpa_kerangka_hukum_aspek_penilaian",
-      "community": 316,
+      "id": "thesis_brain_wiki_ikpa_md_wiki_ikpa_kerangka_hukum_aspek_penilaian",
+      "community": 315,
       "norm_label": "\ud83c\udfdb\ufe0f kerangka hukum & aspek penilaian"
     },
     {
@@ -19368,8 +19838,8 @@
       "source_file": "thesis-brain/wiki/IKPA.md",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "wiki_ikpa_kategori_penilaian_ikpa",
-      "community": 316,
+      "id": "thesis_brain_wiki_ikpa_md_wiki_ikpa_kategori_penilaian_ikpa",
+      "community": 315,
       "norm_label": "\ud83d\udcc8 kategori penilaian ikpa"
     },
     {
@@ -19378,8 +19848,8 @@
       "source_file": "thesis-brain/wiki/Kemenkumham.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "wiki_kemenkumham",
-      "community": 322,
+      "id": "thesis_brain_wiki_kemenkumham_md_wiki_kemenkumham",
+      "community": 343,
       "norm_label": "kemenkumham.md"
     },
     {
@@ -19388,8 +19858,8 @@
       "source_file": "thesis-brain/wiki/Kemenkumham.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham",
-      "community": 322,
+      "id": "thesis_brain_wiki_kemenkumham_md_wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham",
+      "community": 343,
       "norm_label": "\ud83c\udfe2 kementerian hukum dan hak asasi manusia (kemenkumham)"
     },
     {
@@ -19398,8 +19868,8 @@
       "source_file": "thesis-brain/wiki/Kemenkumham.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "wiki_kemenkumham_kewajiban_pelaporan_keuangan",
-      "community": 322,
+      "id": "thesis_brain_wiki_kemenkumham_md_wiki_kemenkumham_kewajiban_pelaporan_keuangan",
+      "community": 343,
       "norm_label": "kewajiban pelaporan keuangan"
     },
     {
@@ -19408,8 +19878,8 @@
       "source_file": "thesis-brain/wiki/PMK_01_2026.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "wiki_pmk_01_2026",
-      "community": 318,
+      "id": "thesis_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026",
+      "community": 317,
       "norm_label": "pmk_01_2026.md"
     },
     {
@@ -19418,8 +19888,8 @@
       "source_file": "thesis-brain/wiki/PMK_01_2026.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
-      "community": 318,
+      "id": "thesis_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
+      "community": 317,
       "norm_label": "\u2696\ufe0f pmk nomor 1 tahun 2026 (insentif pajak restrukturisasi bumn)"
     },
     {
@@ -19428,8 +19898,8 @@
       "source_file": "thesis-brain/wiki/PMK_01_2026.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "wiki_pmk_01_2026_definisi_bumn_di_era_coretax",
-      "community": 318,
+      "id": "thesis_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_definisi_bumn_di_era_coretax",
+      "community": 317,
       "norm_label": "definisi bumn di era coretax"
     },
     {
@@ -19438,8 +19908,8 @@
       "source_file": "thesis-brain/wiki/PMK_01_2026.md",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "wiki_pmk_01_2026_insentif_pajak",
-      "community": 318,
+      "id": "thesis_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_insentif_pajak",
+      "community": 317,
       "norm_label": "insentif pajak"
     },
     {
@@ -19448,8 +19918,8 @@
       "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "wiki_pph_pasal_21",
-      "community": 319,
+      "id": "thesis_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21",
+      "community": 318,
       "norm_label": "pph_pasal_21.md"
     },
     {
@@ -19458,8 +19928,8 @@
       "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
-      "community": 319,
+      "id": "thesis_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
+      "community": 318,
       "norm_label": "\ud83d\udcca pph pasal 21 (pajak penghasilan karyawan / pekerja)"
     },
     {
@@ -19468,8 +19938,8 @@
       "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "wiki_pph_pasal_21_metode_ter_tarif_efektif_rata_rata_bulanan",
-      "community": 319,
+      "id": "thesis_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_metode_ter_tarif_efektif_rata_rata_bulanan",
+      "community": 318,
       "norm_label": "\ud83d\udcb8 metode ter (tarif efektif rata-rata) bulanan"
     },
     {
@@ -19478,8 +19948,8 @@
       "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "wiki_pph_pasal_21_tarif_progresif_pasal_17_uu_pph_uu_hpp",
-      "community": 319,
+      "id": "thesis_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_tarif_progresif_pasal_17_uu_pph_uu_hpp",
+      "community": 318,
       "norm_label": "\ud83d\udcc8 tarif progresif pasal 17 uu pph (uu hpp)"
     },
     {
@@ -19488,8 +19958,8 @@
       "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "wiki_pajak_pertambahan_nilai",
-      "community": 312,
+      "id": "thesis_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai",
+      "community": 262,
       "norm_label": "pajak_pertambahan_nilai.md"
     },
     {
@@ -19498,8 +19968,8 @@
       "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
-      "community": 312,
+      "id": "thesis_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
+      "community": 262,
       "norm_label": "\ud83d\udcca pajak pertambahan nilai (ppn)"
     },
     {
@@ -19508,8 +19978,8 @@
       "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "wiki_pajak_pertambahan_nilai_ketentuan_umum",
-      "community": 312,
+      "id": "thesis_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_ketentuan_umum",
+      "community": 262,
       "norm_label": "ketentuan umum"
     },
     {
@@ -19518,8 +19988,8 @@
       "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "wiki_pajak_pertambahan_nilai_mekanisme_pengkreditan_ppn",
-      "community": 312,
+      "id": "thesis_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_mekanisme_pengkreditan_ppn",
+      "community": 262,
       "norm_label": "\ud83d\uded2 mekanisme pengkreditan ppn"
     },
     {
@@ -19528,8 +19998,8 @@
       "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
       "source_location": "L24",
       "_origin": "ast",
-      "id": "wiki_pajak_pertambahan_nilai_ppn_wapu_wajib_pungut",
-      "community": 312,
+      "id": "thesis_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_ppn_wapu_wajib_pungut",
+      "community": 262,
       "norm_label": "\ud83c\udfdb\ufe0f ppn wapu (wajib pungut)"
     },
     {
@@ -19538,8 +20008,8 @@
       "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "wiki_penghasilan_tidak_kena_pajak",
-      "community": 317,
+      "id": "thesis_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak",
+      "community": 316,
       "norm_label": "penghasilan_tidak_kena_pajak.md"
     },
     {
@@ -19548,8 +20018,8 @@
       "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp",
-      "community": 317,
+      "id": "thesis_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp",
+      "community": 316,
       "norm_label": "\ud83d\udcca penghasilan tidak kena pajak (ptkp)"
     },
     {
@@ -19558,8 +20028,8 @@
       "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini",
-      "community": 317,
+      "id": "thesis_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini",
+      "community": 316,
       "norm_label": "tarif tahunan ptkp indonesia (saat ini)"
     },
     {
@@ -19568,8 +20038,8 @@
       "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "wiki_penghasilan_tidak_kena_pajak_contoh_perhitungan_cepat",
-      "community": 317,
+      "id": "thesis_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_contoh_perhitungan_cepat",
+      "community": 316,
       "norm_label": "contoh perhitungan cepat"
     },
     {
@@ -19578,8 +20048,8 @@
       "source_file": "thesis-brain/wiki/Rudenim_Pontianak.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "wiki_rudenim_pontianak",
-      "community": 323,
+      "id": "thesis_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak",
+      "community": 346,
       "norm_label": "rudenim_pontianak.md"
     },
     {
@@ -19588,8 +20058,8 @@
       "source_file": "thesis-brain/wiki/Rudenim_Pontianak.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak",
-      "community": 323,
+      "id": "thesis_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak",
+      "community": 346,
       "norm_label": "\ud83c\udfe2 rumah detensi imigrasi pontianak"
     },
     {
@@ -19598,8 +20068,8 @@
       "source_file": "thesis-brain/wiki/Rudenim_Pontianak.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "wiki_rudenim_pontianak_fungsi_karakteristik",
-      "community": 323,
+      "id": "thesis_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak_fungsi_karakteristik",
+      "community": 346,
       "norm_label": "fungsi & karakteristik"
     },
     {
@@ -19608,8 +20078,8 @@
       "source_file": "thesis-brain/wiki/SAKTI.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "wiki_sakti",
-      "community": 324,
+      "id": "thesis_brain_wiki_sakti_md_wiki_sakti",
+      "community": 348,
       "norm_label": "sakti.md"
     },
     {
@@ -19618,8 +20088,8 @@
       "source_file": "thesis-brain/wiki/SAKTI.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti",
-      "community": 324,
+      "id": "thesis_brain_wiki_sakti_md_wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti",
+      "community": 348,
       "norm_label": "\ud83d\udcca sistem aplikasi keuangan tingkat instansi (sakti)"
     },
     {
@@ -19628,8 +20098,8 @@
       "source_file": "thesis-brain/wiki/SAKTI.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "wiki_sakti_modul_kegunaan",
-      "community": 324,
+      "id": "thesis_brain_wiki_sakti_md_wiki_sakti_modul_kegunaan",
+      "community": 348,
       "norm_label": "modul & kegunaan"
     },
     {
@@ -19728,8 +20198,8 @@
       "source_file": "thesis-brain/wiki/Standar_Akuntansi_Pemerintah.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "wiki_standar_akuntansi_pemerintah",
-      "community": 328,
+      "id": "thesis_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah",
+      "community": 349,
       "norm_label": "standar_akuntansi_pemerintah.md"
     },
     {
@@ -19738,8 +20208,8 @@
       "source_file": "thesis-brain/wiki/Standar_Akuntansi_Pemerintah.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap",
-      "community": 328,
+      "id": "thesis_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap",
+      "community": 349,
       "norm_label": "\ud83d\udcca standar akuntansi pemerintah (sap)"
     },
     {
@@ -19748,8 +20218,8 @@
       "source_file": "thesis-brain/wiki/Standar_Akuntansi_Pemerintah.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "wiki_standar_akuntansi_pemerintah_landasan_hukum",
-      "community": 328,
+      "id": "thesis_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah_landasan_hukum",
+      "community": 349,
       "norm_label": "landasan hukum"
     },
     {
@@ -19808,8 +20278,8 @@
       "source_file": "thesis-brain/wiki/Withholding_Tax.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "wiki_withholding_tax",
-      "community": 329,
+      "id": "thesis_brain_wiki_withholding_tax_md_wiki_withholding_tax",
+      "community": 350,
       "norm_label": "withholding_tax.md"
     },
     {
@@ -19818,8 +20288,8 @@
       "source_file": "thesis-brain/wiki/Withholding_Tax.md",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga",
-      "community": 329,
+      "id": "thesis_brain_wiki_withholding_tax_md_wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga",
+      "community": 350,
       "norm_label": "\ud83d\udcca withholding tax (pemotongan/pemungutan pajak pihak ketiga)"
     },
     {
@@ -19828,8 +20298,8 @@
       "source_file": "thesis-brain/wiki/Withholding_Tax.md",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "wiki_withholding_tax_jenis_jenis_withholding_tax_pph_di_indonesia",
-      "community": 329,
+      "id": "thesis_brain_wiki_withholding_tax_md_wiki_withholding_tax_jenis_jenis_withholding_tax_pph_di_indonesia",
+      "community": 350,
       "norm_label": "jenis-jenis withholding tax pph di indonesia"
     },
     {
@@ -20413,7 +20883,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_note_content.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 351,
       "norm_label": "check_note_content",
       "id": "check_note_content"
     },
@@ -20424,7 +20894,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 351,
       "norm_label": "checknotecontent",
       "id": "check_note_content_checkNoteContent"
     },
@@ -20463,7 +20933,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_page_details.js"
       },
       "file_type": "concept",
-      "community": 338,
+      "community": 10,
       "norm_label": "check_page_details",
       "id": "check_page_details"
     },
@@ -20474,7 +20944,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 338,
+      "community": 10,
       "norm_label": "checkpages",
       "id": "check_page_details_checkPages"
     },
@@ -20563,7 +21033,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\clean_callout_children.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 352,
       "norm_label": "clean_callout_children",
       "id": "clean_callout_children"
     },
@@ -20574,7 +21044,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 352,
       "norm_label": "cleancalloutchildren",
       "id": "clean_callout_children_cleanCalloutChildren"
     },
@@ -20588,7 +21058,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\clean_remaining_tf.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 353,
       "norm_label": "clean_remaining_tf",
       "id": "clean_remaining_tf"
     },
@@ -20599,7 +21069,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 353,
       "norm_label": "runcleanup",
       "id": "clean_remaining_tf_runCleanup"
     },
@@ -20663,7 +21133,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\create_homepage.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "create_homepage",
       "id": "create_homepage"
     },
@@ -20674,7 +21144,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "buildhomepage",
       "id": "create_homepage_buildHomepage"
     },
@@ -20741,7 +21211,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\dump_para_blocks.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 354,
       "norm_label": "dump_para_blocks",
       "id": "dump_para_blocks"
     },
@@ -20752,7 +21222,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 354,
       "norm_label": "dumpblocks",
       "id": "dump_para_blocks_dumpBlocks"
     },
@@ -20816,7 +21286,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\fix_recurring_nav.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "fix_recurring_nav",
       "id": "fix_recurring_nav"
     },
@@ -20827,7 +21297,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "fixnav",
       "id": "fix_recurring_nav_fixNav"
     },
@@ -20899,7 +21369,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_archive_blocks.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "inspect_archive_blocks",
       "id": "inspect_archive_blocks"
     },
@@ -20910,7 +21380,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "inspect",
       "id": "inspect_archive_blocks_inspect"
     },
@@ -20974,7 +21444,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_homepage_blocks.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "inspect_homepage_blocks",
       "id": "inspect_homepage_blocks"
     },
@@ -20985,7 +21455,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "inspectroot",
       "id": "inspect_homepage_blocks_inspectRoot"
     },
@@ -20999,7 +21469,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_old_property.js"
       },
       "file_type": "concept",
-      "community": 301,
+      "community": 10,
       "norm_label": "inspect_old_property",
       "id": "inspect_old_property"
     },
@@ -21010,7 +21480,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 301,
+      "community": 10,
       "norm_label": "inspect",
       "id": "inspect_old_property_inspect"
     },
@@ -21160,7 +21630,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_view_blocks.js"
       },
       "file_type": "concept",
-      "community": 76,
+      "community": 11,
       "norm_label": "inspect_view_blocks",
       "id": "inspect_view_blocks"
     },
@@ -21171,7 +21641,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 76,
+      "community": 11,
       "norm_label": "inspect",
       "id": "inspect_view_blocks_inspect"
     },
@@ -21185,7 +21655,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\list_all_pages.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "list_all_pages",
       "id": "list_all_pages"
     },
@@ -21196,7 +21666,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "listallpages",
       "id": "list_all_pages_listAllPages"
     },
@@ -21210,7 +21680,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\list_areas.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "list_areas",
       "id": "list_areas"
     },
@@ -21221,7 +21691,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "listareas",
       "id": "list_areas_listAreas"
     },
@@ -21376,7 +21846,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\print_all_ds_schemas.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 355,
       "norm_label": "print_all_ds_schemas",
       "id": "print_all_ds_schemas"
     },
@@ -21387,7 +21857,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 355,
       "norm_label": "printallschemas",
       "id": "print_all_ds_schemas_printAllSchemas"
     },
@@ -21401,7 +21871,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\print_db_schemas.js"
       },
       "file_type": "concept",
-      "community": 343,
+      "community": 11,
       "norm_label": "print_db_schemas",
       "id": "print_db_schemas"
     },
@@ -21412,7 +21882,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 343,
+      "community": 11,
       "norm_label": "printschemas",
       "id": "print_db_schemas_printSchemas"
     },
@@ -21479,7 +21949,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\print_page_properties.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 356,
       "norm_label": "print_page_properties",
       "id": "print_page_properties"
     },
@@ -21490,7 +21960,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 356,
       "norm_label": "inspectproperties",
       "id": "print_page_properties_inspectProperties"
     },
@@ -21618,7 +22088,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\reroute_para_page_views.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 357,
       "norm_label": "reroute_para_page_views",
       "id": "reroute_para_page_views"
     },
@@ -21629,7 +22099,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 357,
       "norm_label": "createviews",
       "id": "reroute_para_page_views_createViews"
     },
@@ -21690,7 +22160,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\retrieve_callout.js"
       },
       "file_type": "concept",
-      "community": 299,
+      "community": 11,
       "norm_label": "retrieve_callout",
       "id": "retrieve_callout"
     },
@@ -21701,7 +22171,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 299,
+      "community": 11,
       "norm_label": "retrievecallout",
       "id": "retrieve_callout_retrieveCallout"
     },
@@ -21715,7 +22185,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\retrieve_new_db.js"
       },
       "file_type": "concept",
-      "community": 279,
+      "community": 11,
       "norm_label": "retrieve_new_db",
       "id": "retrieve_new_db"
     },
@@ -21726,7 +22196,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 279,
+      "community": 11,
       "norm_label": "retrievenewdb",
       "id": "retrieve_new_db_retrieveNewDB"
     },
@@ -21823,7 +22293,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\scan_workspace.js"
       },
       "file_type": "concept",
-      "community": 346,
+      "community": 10,
       "norm_label": "scan_workspace",
       "id": "scan_workspace"
     },
@@ -21834,7 +22304,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 346,
+      "community": 10,
       "norm_label": "scanroot",
       "id": "scan_workspace_scanRoot"
     },
@@ -21848,7 +22318,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\search_all.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "search_all",
       "id": "search_all"
     },
@@ -21859,7 +22329,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "runsearch",
       "id": "search_all_runSearch"
     },
@@ -21931,7 +22401,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\search_brain.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "search_brain",
       "id": "search_brain"
     },
@@ -21942,7 +22412,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "searchbrain",
       "id": "search_brain_searchBrain"
     },
@@ -21995,7 +22465,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\search_pages_tf.js"
       },
       "file_type": "concept",
-      "community": 300,
+      "community": 11,
       "norm_label": "search_pages_tf",
       "id": "search_pages_tf"
     },
@@ -22006,7 +22476,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 300,
+      "community": 11,
       "norm_label": "searchpages",
       "id": "search_pages_tf_searchPages"
     },
@@ -22183,7 +22653,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\test_filter_translation.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 358,
       "norm_label": "test_filter_translation",
       "id": "test_filter_translation"
     },
@@ -22194,7 +22664,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 358,
       "norm_label": "translateallpropertyids",
       "id": "test_filter_translation_translateAllPropertyIds"
     },
@@ -22258,7 +22728,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\test_view_update.js"
       },
       "file_type": "concept",
-      "community": 302,
+      "community": 10,
       "norm_label": "test_view_update",
       "id": "test_view_update"
     },
@@ -22269,7 +22739,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 302,
+      "community": 10,
       "norm_label": "testviewupdate",
       "id": "test_view_update_testViewUpdate"
     },
@@ -22319,7 +22789,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\unarchive_blocks.js"
       },
       "file_type": "concept",
-      "community": 348,
+      "community": 10,
       "norm_label": "unarchive_blocks",
       "id": "unarchive_blocks"
     },
@@ -22330,7 +22800,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 348,
+      "community": 10,
       "norm_label": "unarchive",
       "id": "unarchive_blocks_unarchive"
     },
@@ -33856,9 +34326,9 @@
       "source_file": "projects/botkeu/ai_agent.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_ai_agent",
-      "target": "botkeu_ai_agent_ask_gemini",
-      "confidence_score": 1.0
+      "target": "botkeu_ai_agent_ask_gemini"
     },
     {
       "relation": "contains",
@@ -33866,9 +34336,9 @@
       "source_file": "projects/botkeu/ai_agent.py",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_ai_agent",
-      "target": "botkeu_ai_agent_get_gemini_client",
-      "confidence_score": 1.0
+      "target": "botkeu_ai_agent_get_gemini_client"
     },
     {
       "relation": "calls",
@@ -33877,7 +34347,17 @@
       "source_file": "projects/botkeu/ai_agent.py",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_ai_agent_ask_gemini",
+      "target": "botkeu_ai_agent_get_gemini_client"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/botkeu/ai_agent.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "botkeu_ai_agent_rationale_27",
       "target": "botkeu_ai_agent_get_gemini_client",
       "confidence_score": 1.0
     },
@@ -33885,19 +34365,9 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "projects/botkeu/ai_agent.py",
-      "source_location": "L26",
+      "source_location": "L33",
       "weight": 1.0,
-      "source": "botkeu_ai_agent_rationale_26",
-      "target": "botkeu_ai_agent_get_gemini_client",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "projects/botkeu/ai_agent.py",
-      "source_location": "L32",
-      "weight": 1.0,
-      "source": "botkeu_ai_agent_rationale_32",
+      "source": "botkeu_ai_agent_rationale_33",
       "target": "botkeu_ai_agent_ask_gemini",
       "confidence_score": 1.0
     },
@@ -33907,9 +34377,9 @@
       "source_file": "projects/botkeu/config.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_config",
-      "target": "botkeu_config_validate_config",
-      "confidence_score": 1.0
+      "target": "botkeu_config_validate_config"
     },
     {
       "relation": "imports_from",
@@ -33918,9 +34388,9 @@
       "source_file": "projects/botkeu/config.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_config",
-      "target": "dotenv",
-      "confidence_score": 1.0
+      "target": "dotenv"
     },
     {
       "relation": "rationale_for",
@@ -33928,9 +34398,9 @@
       "source_file": "projects/botkeu/config.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_config_rationale_31",
-      "target": "botkeu_config_validate_config",
-      "confidence_score": 1.0
+      "target": "botkeu_config_validate_config"
     },
     {
       "relation": "contains",
@@ -33938,9 +34408,9 @@
       "source_file": "projects/botkeu/google_drive.py",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_google_drive",
-      "target": "botkeu_google_drive_download_excel_file",
-      "confidence_score": 1.0
+      "target": "botkeu_google_drive_download_excel_file"
     },
     {
       "relation": "contains",
@@ -33948,9 +34418,9 @@
       "source_file": "projects/botkeu/google_drive.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_google_drive",
-      "target": "botkeu_google_drive_get_drive_service",
-      "confidence_score": 1.0
+      "target": "botkeu_google_drive_get_drive_service"
     },
     {
       "relation": "contains",
@@ -33958,9 +34428,9 @@
       "source_file": "projects/botkeu/google_drive.py",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_google_drive",
-      "target": "botkeu_google_drive_list_excel_files",
-      "confidence_score": 1.0
+      "target": "botkeu_google_drive_list_excel_files"
     },
     {
       "relation": "contains",
@@ -33968,9 +34438,9 @@
       "source_file": "projects/botkeu/google_drive.py",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_google_drive",
-      "target": "botkeu_google_drive_query_excel_data",
-      "confidence_score": 1.0
+      "target": "botkeu_google_drive_query_excel_data"
     },
     {
       "relation": "contains",
@@ -33978,9 +34448,9 @@
       "source_file": "projects/botkeu/google_drive.py",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_google_drive",
-      "target": "botkeu_google_drive_read_excel_sheets",
-      "confidence_score": 1.0
+      "target": "botkeu_google_drive_read_excel_sheets"
     },
     {
       "relation": "calls",
@@ -33989,9 +34459,9 @@
       "source_file": "projects/botkeu/google_drive.py",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_google_drive_download_excel_file",
-      "target": "botkeu_google_drive_get_drive_service",
-      "confidence_score": 1.0
+      "target": "botkeu_google_drive_get_drive_service"
     },
     {
       "relation": "calls",
@@ -34000,9 +34470,9 @@
       "source_file": "projects/botkeu/google_drive.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_google_drive_list_excel_files",
-      "target": "botkeu_google_drive_get_drive_service",
-      "confidence_score": 1.0
+      "target": "botkeu_google_drive_get_drive_service"
     },
     {
       "relation": "rationale_for",
@@ -34010,9 +34480,9 @@
       "source_file": "projects/botkeu/google_drive.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_google_drive_rationale_20",
-      "target": "botkeu_google_drive_get_drive_service",
-      "confidence_score": 1.0
+      "target": "botkeu_google_drive_get_drive_service"
     },
     {
       "relation": "rationale_for",
@@ -34020,9 +34490,9 @@
       "source_file": "projects/botkeu/google_drive.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_google_drive_rationale_31",
-      "target": "botkeu_google_drive_list_excel_files",
-      "confidence_score": 1.0
+      "target": "botkeu_google_drive_list_excel_files"
     },
     {
       "relation": "rationale_for",
@@ -34030,9 +34500,9 @@
       "source_file": "projects/botkeu/google_drive.py",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_google_drive_rationale_67",
-      "target": "botkeu_google_drive_download_excel_file",
-      "confidence_score": 1.0
+      "target": "botkeu_google_drive_download_excel_file"
     },
     {
       "relation": "rationale_for",
@@ -34040,9 +34510,9 @@
       "source_file": "projects/botkeu/google_drive.py",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_google_drive_rationale_101",
-      "target": "botkeu_google_drive_read_excel_sheets",
-      "confidence_score": 1.0
+      "target": "botkeu_google_drive_read_excel_sheets"
     },
     {
       "relation": "rationale_for",
@@ -34050,9 +34520,9 @@
       "source_file": "projects/botkeu/google_drive.py",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_google_drive_rationale_121",
-      "target": "botkeu_google_drive_query_excel_data",
-      "confidence_score": 1.0
+      "target": "botkeu_google_drive_query_excel_data"
     },
     {
       "relation": "contains",
@@ -34060,9 +34530,9 @@
       "source_file": "projects/botkeu/local_brain.py",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_local_brain",
-      "target": "botkeu_local_brain_search_local_wiki",
-      "confidence_score": 1.0
+      "target": "botkeu_local_brain_search_local_wiki"
     },
     {
       "relation": "rationale_for",
@@ -34070,9 +34540,9 @@
       "source_file": "projects/botkeu/local_brain.py",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_local_brain_rationale_10",
-      "target": "botkeu_local_brain_search_local_wiki",
-      "confidence_score": 1.0
+      "target": "botkeu_local_brain_search_local_wiki"
     },
     {
       "relation": "contains",
@@ -34080,9 +34550,9 @@
       "source_file": "projects/botkeu/main.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_main",
-      "target": "botkeu_main_check_access",
-      "confidence_score": 1.0
+      "target": "botkeu_main_check_access"
     },
     {
       "relation": "contains",
@@ -34090,9 +34560,9 @@
       "source_file": "projects/botkeu/main.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_main",
-      "target": "botkeu_main_handle_message",
-      "confidence_score": 1.0
+      "target": "botkeu_main_handle_message"
     },
     {
       "relation": "contains",
@@ -34100,9 +34570,9 @@
       "source_file": "projects/botkeu/main.py",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_main",
-      "target": "botkeu_main_main",
-      "confidence_score": 1.0
+      "target": "botkeu_main_main"
     },
     {
       "relation": "contains",
@@ -34110,9 +34580,9 @@
       "source_file": "projects/botkeu/main.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_main",
-      "target": "botkeu_main_start",
-      "confidence_score": 1.0
+      "target": "botkeu_main_start"
     },
     {
       "relation": "calls",
@@ -34121,19 +34591,19 @@
       "source_file": "projects/botkeu/main.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_main_handle_message",
-      "target": "botkeu_main_check_access",
-      "confidence_score": 1.0
+      "target": "botkeu_main_check_access"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "projects/botkeu/main.py",
-      "source_location": "L19",
+      "source_location": "L25",
       "weight": 1.0,
-      "source": "botkeu_main_rationale_19",
-      "target": "botkeu_main_check_access",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "botkeu_main_rationale_25",
+      "target": "botkeu_main_check_access"
     },
     {
       "relation": "calls",
@@ -34142,19 +34612,19 @@
       "source_file": "projects/botkeu/main.py",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_main_start",
-      "target": "botkeu_main_check_access",
-      "confidence_score": 1.0
+      "target": "botkeu_main_check_access"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "projects/botkeu/main.py",
-      "source_location": "L23",
+      "source_location": "L29",
       "weight": 1.0,
-      "source": "botkeu_main_rationale_23",
-      "target": "botkeu_main_start",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "botkeu_main_rationale_29",
+      "target": "botkeu_main_start"
     },
     {
       "relation": "references",
@@ -34163,9 +34633,9 @@
       "source_file": "projects/botkeu/main.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_main_start",
-      "target": "default_type",
-      "confidence_score": 1.0
+      "target": "default_type"
     },
     {
       "relation": "references",
@@ -34174,9 +34644,9 @@
       "source_file": "projects/botkeu/main.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_main_start",
-      "target": "update",
-      "confidence_score": 1.0
+      "target": "update"
     },
     {
       "relation": "references",
@@ -34185,9 +34655,9 @@
       "source_file": "projects/botkeu/main.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_main_handle_message",
-      "target": "update",
-      "confidence_score": 1.0
+      "target": "update"
     },
     {
       "relation": "contains_section",
@@ -34284,19 +34754,19 @@
       "source_file": "projects/botkeu/main.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "botkeu_main_handle_message",
-      "target": "default_type",
-      "confidence_score": 1.0
+      "target": "default_type"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "projects/botkeu/main.py",
-      "source_location": "L38",
+      "source_location": "L44",
       "weight": 1.0,
-      "source": "botkeu_main_rationale_38",
-      "target": "botkeu_main_handle_message",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "botkeu_main_rationale_44",
+      "target": "botkeu_main_handle_message"
     },
     {
       "relation": "contains",
@@ -44985,6 +45455,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "office-brain/log.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_log_office_knowledge_base_log",
+      "target": "office_brain_log_2026_06_17_ingest_imported_13_financial_and_regulatory_documents_from_thesis_brain"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/log.md",
       "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -45000,6 +45480,256 @@
       "confidence_score": 1.0,
       "source": "office_brain_log_office_knowledge_base_log",
       "target": "office_brain_log_2026_06_17_session_office_knowledge_base_initialized"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Coretax_System.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_coretax_system_md_wiki_coretax_system",
+      "target": "office_brain_wiki_coretax_system_md_wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Coretax_System.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_coretax_system_md_wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan",
+      "target": "office_brain_wiki_coretax_system_md_wiki_coretax_system_dasar_hukum_fitur_utama"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii",
+      "target": "office_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
+      "target": "office_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_karakteristik_pergeseran_pemutakhiran"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/DIPA_Halaman_III.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
+      "target": "office_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_peran_strategis_rpd_halaman_iii"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Deviasi_Anggaran.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran",
+      "target": "office_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran_deviasi_anggaran"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Deviasi_Anggaran.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran_deviasi_anggaran",
+      "target": "office_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran_signifikansi_dalam_skripsi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/IKPA.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_ikpa_md_wiki_ikpa",
+      "target": "office_brain_wiki_ikpa_md_wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/IKPA.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_ikpa_md_wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
+      "target": "office_brain_wiki_ikpa_md_wiki_ikpa_kategori_penilaian_ikpa"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/IKPA.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_ikpa_md_wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
+      "target": "office_brain_wiki_ikpa_md_wiki_ikpa_kerangka_hukum_aspek_penilaian"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Kemenkumham.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_kemenkumham_md_wiki_kemenkumham",
+      "target": "office_brain_wiki_kemenkumham_md_wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Kemenkumham.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_kemenkumham_md_wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham",
+      "target": "office_brain_wiki_kemenkumham_md_wiki_kemenkumham_kewajiban_pelaporan_keuangan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/PMK_01_2026.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026",
+      "target": "office_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/PMK_01_2026.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
+      "target": "office_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_definisi_bumn_di_era_coretax"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/PMK_01_2026.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
+      "target": "office_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_insentif_pajak"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21",
+      "target": "office_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
+      "target": "office_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_metode_ter_tarif_efektif_rata_rata_bulanan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/PPh_Pasal_21.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
+      "target": "office_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_tarif_progresif_pasal_17_uu_pph_uu_hpp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai",
+      "target": "office_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
+      "target": "office_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_ketentuan_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
+      "target": "office_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_mekanisme_pengkreditan_ppn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Pajak_Pertambahan_Nilai.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
+      "target": "office_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_ppn_wapu_wajib_pungut"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak",
+      "target": "office_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp",
+      "target": "office_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini",
+      "target": "office_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_contoh_perhitungan_cepat"
     },
     {
       "relation": "contains",
@@ -45080,6 +45810,86 @@
       "confidence_score": 1.0,
       "source": "wiki_project_botkeu_fitur_utama_cara_kerja",
       "target": "wiki_project_botkeu_3_integrasi_excel_google_drive_google_drive_broker"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Rudenim_Pontianak.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak",
+      "target": "office_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Rudenim_Pontianak.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak",
+      "target": "office_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak_fungsi_karakteristik"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/SAKTI.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_sakti_md_wiki_sakti",
+      "target": "office_brain_wiki_sakti_md_wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/SAKTI.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_sakti_md_wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti",
+      "target": "office_brain_wiki_sakti_md_wiki_sakti_modul_kegunaan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Standar_Akuntansi_Pemerintah.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah",
+      "target": "office_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Standar_Akuntansi_Pemerintah.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap",
+      "target": "office_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah_landasan_hukum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Withholding_Tax.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_withholding_tax_md_wiki_withholding_tax",
+      "target": "office_brain_wiki_withholding_tax_md_wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/wiki/Withholding_Tax.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "office_brain_wiki_withholding_tax_md_wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga",
+      "target": "office_brain_wiki_withholding_tax_md_wiki_withholding_tax_jenis_jenis_withholding_tax_pph_di_indonesia"
     },
     {
       "relation": "contains",
@@ -52638,8 +53448,8 @@
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_coretax_system",
-      "target": "wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan"
+      "source": "thesis_brain_wiki_coretax_system_md_wiki_coretax_system",
+      "target": "thesis_brain_wiki_coretax_system_md_wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan"
     },
     {
       "relation": "contains",
@@ -52648,8 +53458,8 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan",
-      "target": "wiki_coretax_system_dasar_hukum_fitur_utama"
+      "source": "thesis_brain_wiki_coretax_system_md_wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan",
+      "target": "thesis_brain_wiki_coretax_system_md_wiki_coretax_system_dasar_hukum_fitur_utama"
     },
     {
       "relation": "contains",
@@ -52658,8 +53468,8 @@
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_dipa_halaman_iii",
-      "target": "wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd"
+      "source": "thesis_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii",
+      "target": "thesis_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd"
     },
     {
       "relation": "contains",
@@ -52668,8 +53478,8 @@
       "source_location": "L16",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
-      "target": "wiki_dipa_halaman_iii_karakteristik_pergeseran_pemutakhiran"
+      "source": "thesis_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
+      "target": "thesis_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_karakteristik_pergeseran_pemutakhiran"
     },
     {
       "relation": "contains",
@@ -52678,8 +53488,8 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
-      "target": "wiki_dipa_halaman_iii_peran_strategis_rpd_halaman_iii"
+      "source": "thesis_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
+      "target": "thesis_brain_wiki_dipa_halaman_iii_md_wiki_dipa_halaman_iii_peran_strategis_rpd_halaman_iii"
     },
     {
       "relation": "contains",
@@ -52688,8 +53498,8 @@
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_deviasi_anggaran",
-      "target": "wiki_deviasi_anggaran_deviasi_anggaran"
+      "source": "thesis_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran",
+      "target": "thesis_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran_deviasi_anggaran"
     },
     {
       "relation": "contains",
@@ -52698,8 +53508,8 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_deviasi_anggaran_deviasi_anggaran",
-      "target": "wiki_deviasi_anggaran_signifikansi_dalam_skripsi"
+      "source": "thesis_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran_deviasi_anggaran",
+      "target": "thesis_brain_wiki_deviasi_anggaran_md_wiki_deviasi_anggaran_signifikansi_dalam_skripsi"
     },
     {
       "relation": "contains",
@@ -52708,8 +53518,8 @@
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_ikpa",
-      "target": "wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa"
+      "source": "thesis_brain_wiki_ikpa_md_wiki_ikpa",
+      "target": "thesis_brain_wiki_ikpa_md_wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa"
     },
     {
       "relation": "contains",
@@ -52718,8 +53528,8 @@
       "source_location": "L25",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
-      "target": "wiki_ikpa_kategori_penilaian_ikpa"
+      "source": "thesis_brain_wiki_ikpa_md_wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
+      "target": "thesis_brain_wiki_ikpa_md_wiki_ikpa_kategori_penilaian_ikpa"
     },
     {
       "relation": "contains",
@@ -52728,8 +53538,8 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
-      "target": "wiki_ikpa_kerangka_hukum_aspek_penilaian"
+      "source": "thesis_brain_wiki_ikpa_md_wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
+      "target": "thesis_brain_wiki_ikpa_md_wiki_ikpa_kerangka_hukum_aspek_penilaian"
     },
     {
       "relation": "contains",
@@ -52738,8 +53548,8 @@
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_kemenkumham",
-      "target": "wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham"
+      "source": "thesis_brain_wiki_kemenkumham_md_wiki_kemenkumham",
+      "target": "thesis_brain_wiki_kemenkumham_md_wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham"
     },
     {
       "relation": "contains",
@@ -52748,8 +53558,8 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham",
-      "target": "wiki_kemenkumham_kewajiban_pelaporan_keuangan"
+      "source": "thesis_brain_wiki_kemenkumham_md_wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham",
+      "target": "thesis_brain_wiki_kemenkumham_md_wiki_kemenkumham_kewajiban_pelaporan_keuangan"
     },
     {
       "relation": "contains",
@@ -52758,8 +53568,8 @@
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_pmk_01_2026",
-      "target": "wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn"
+      "source": "thesis_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026",
+      "target": "thesis_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn"
     },
     {
       "relation": "contains",
@@ -52768,8 +53578,8 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
-      "target": "wiki_pmk_01_2026_definisi_bumn_di_era_coretax"
+      "source": "thesis_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
+      "target": "thesis_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_definisi_bumn_di_era_coretax"
     },
     {
       "relation": "contains",
@@ -52778,8 +53588,8 @@
       "source_location": "L17",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
-      "target": "wiki_pmk_01_2026_insentif_pajak"
+      "source": "thesis_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
+      "target": "thesis_brain_wiki_pmk_01_2026_md_wiki_pmk_01_2026_insentif_pajak"
     },
     {
       "relation": "contains",
@@ -52788,8 +53598,8 @@
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_pph_pasal_21",
-      "target": "wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja"
+      "source": "thesis_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21",
+      "target": "thesis_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja"
     },
     {
       "relation": "contains",
@@ -52798,8 +53608,8 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
-      "target": "wiki_pph_pasal_21_metode_ter_tarif_efektif_rata_rata_bulanan"
+      "source": "thesis_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
+      "target": "thesis_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_metode_ter_tarif_efektif_rata_rata_bulanan"
     },
     {
       "relation": "contains",
@@ -52808,8 +53618,8 @@
       "source_location": "L21",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
-      "target": "wiki_pph_pasal_21_tarif_progresif_pasal_17_uu_pph_uu_hpp"
+      "source": "thesis_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
+      "target": "thesis_brain_wiki_pph_pasal_21_md_wiki_pph_pasal_21_tarif_progresif_pasal_17_uu_pph_uu_hpp"
     },
     {
       "relation": "contains",
@@ -52818,8 +53628,8 @@
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_pajak_pertambahan_nilai",
-      "target": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn"
+      "source": "thesis_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai",
+      "target": "thesis_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn"
     },
     {
       "relation": "contains",
@@ -52828,8 +53638,8 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
-      "target": "wiki_pajak_pertambahan_nilai_ketentuan_umum"
+      "source": "thesis_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
+      "target": "thesis_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_ketentuan_umum"
     },
     {
       "relation": "contains",
@@ -52838,8 +53648,8 @@
       "source_location": "L16",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
-      "target": "wiki_pajak_pertambahan_nilai_mekanisme_pengkreditan_ppn"
+      "source": "thesis_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
+      "target": "thesis_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_mekanisme_pengkreditan_ppn"
     },
     {
       "relation": "contains",
@@ -52848,8 +53658,8 @@
       "source_location": "L24",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
-      "target": "wiki_pajak_pertambahan_nilai_ppn_wapu_wajib_pungut"
+      "source": "thesis_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
+      "target": "thesis_brain_wiki_pajak_pertambahan_nilai_md_wiki_pajak_pertambahan_nilai_ppn_wapu_wajib_pungut"
     },
     {
       "relation": "contains",
@@ -52858,8 +53668,8 @@
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_penghasilan_tidak_kena_pajak",
-      "target": "wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp"
+      "source": "thesis_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak",
+      "target": "thesis_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp"
     },
     {
       "relation": "contains",
@@ -52868,8 +53678,8 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp",
-      "target": "wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini"
+      "source": "thesis_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp",
+      "target": "thesis_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini"
     },
     {
       "relation": "contains",
@@ -52878,8 +53688,8 @@
       "source_location": "L17",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini",
-      "target": "wiki_penghasilan_tidak_kena_pajak_contoh_perhitungan_cepat"
+      "source": "thesis_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini",
+      "target": "thesis_brain_wiki_penghasilan_tidak_kena_pajak_md_wiki_penghasilan_tidak_kena_pajak_contoh_perhitungan_cepat"
     },
     {
       "relation": "contains",
@@ -52888,8 +53698,8 @@
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_rudenim_pontianak",
-      "target": "wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak"
+      "source": "thesis_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak",
+      "target": "thesis_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak"
     },
     {
       "relation": "contains",
@@ -52898,8 +53708,8 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak",
-      "target": "wiki_rudenim_pontianak_fungsi_karakteristik"
+      "source": "thesis_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak",
+      "target": "thesis_brain_wiki_rudenim_pontianak_md_wiki_rudenim_pontianak_fungsi_karakteristik"
     },
     {
       "relation": "contains",
@@ -52908,8 +53718,8 @@
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_sakti",
-      "target": "wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti"
+      "source": "thesis_brain_wiki_sakti_md_wiki_sakti",
+      "target": "thesis_brain_wiki_sakti_md_wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti"
     },
     {
       "relation": "contains",
@@ -52918,8 +53728,8 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti",
-      "target": "wiki_sakti_modul_kegunaan"
+      "source": "thesis_brain_wiki_sakti_md_wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti",
+      "target": "thesis_brain_wiki_sakti_md_wiki_sakti_modul_kegunaan"
     },
     {
       "relation": "contains",
@@ -52988,8 +53798,8 @@
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_standar_akuntansi_pemerintah",
-      "target": "wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap"
+      "source": "thesis_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah",
+      "target": "thesis_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap"
     },
     {
       "relation": "contains",
@@ -52998,8 +53808,8 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap",
-      "target": "wiki_standar_akuntansi_pemerintah_landasan_hukum"
+      "source": "thesis_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap",
+      "target": "thesis_brain_wiki_standar_akuntansi_pemerintah_md_wiki_standar_akuntansi_pemerintah_landasan_hukum"
     },
     {
       "relation": "contains",
@@ -53048,8 +53858,8 @@
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_withholding_tax",
-      "target": "wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga"
+      "source": "thesis_brain_wiki_withholding_tax_md_wiki_withholding_tax",
+      "target": "thesis_brain_wiki_withholding_tax_md_wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga"
     },
     {
       "relation": "contains",
@@ -53058,8 +53868,8 @@
       "source_location": "L12",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga",
-      "target": "wiki_withholding_tax_jenis_jenis_withholding_tax_pph_di_indonesia"
+      "source": "thesis_brain_wiki_withholding_tax_md_wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga",
+      "target": "thesis_brain_wiki_withholding_tax_md_wiki_withholding_tax_jenis_jenis_withholding_tax_pph_di_indonesia"
     },
     {
       "relation": "has_field",
@@ -63263,5 +64073,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0b0180b66f86739727941dc797d50da2c411fa11"
+  "built_at_commit": "24630a3d2456ebe885060d01c1dbf70a2668326c"
 }

@@ -1,16 +1,16 @@
 # Graph Report - AIS-OS  (2026-06-17)
 
 ## Corpus Check
-- 259 files · ~305,833 words
+- 272 files · ~308,136 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3217 nodes · 3184 edges · 349 communities (251 shown, 98 thin omitted)
+- 3264 nodes · 3218 edges · 359 communities (256 shown, 103 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0b0180b6`
+- Built from commit: `24630a3d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -353,6 +353,16 @@
 - [[_COMMUNITY_Community 346|Community 346]]
 - [[_COMMUNITY_Community 347|Community 347]]
 - [[_COMMUNITY_Community 348|Community 348]]
+- [[_COMMUNITY_Community 349|Community 349]]
+- [[_COMMUNITY_Community 350|Community 350]]
+- [[_COMMUNITY_Community 351|Community 351]]
+- [[_COMMUNITY_Community 352|Community 352]]
+- [[_COMMUNITY_Community 353|Community 353]]
+- [[_COMMUNITY_Community 354|Community 354]]
+- [[_COMMUNITY_Community 355|Community 355]]
+- [[_COMMUNITY_Community 356|Community 356]]
+- [[_COMMUNITY_Community 357|Community 357]]
+- [[_COMMUNITY_Community 358|Community 358]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
@@ -381,7 +391,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (349 total, 98 thin omitted)
+## Communities (359 total, 103 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -424,12 +434,12 @@ Cohesion: 0.08
 Nodes (24): Dep:, Fase 1.0 — Pondasi (WAJIB duluan, semua lain bergantung di sini), Fase 1.1 — Skema database (PARALEL setelah T1.2), Fase 1.2 — Relasi antar-database (SEQ — butuh semua skema siap), Fase 1.3 — Formula (PARALEL — formula independen), Fase 1.4 — Views & Dashboard (SEQ — butuh data & relasi final), Fase 1.5 — Konten jual (PARALEL — tidak sentuh database), Fase 1.6 — Rilis (SEQ — gerbang akhir) (+16 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.07
-Nodes (29): @notionhq/client, add_created_property, addCreated, check_note_content, checkNoteContent, check_note_properties, checkNote, check_para_views (+21 more)
+Cohesion: 0.06
+Nodes (31): @notionhq/client, add_created_property, addCreated, check_note_properties, checkNote, check_page_details, checkPages, check_para_views (+23 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.07
-Nodes (28): add_edited_property, addEdited, Validates that all essential config parameters are set., validate_config(), clean_remaining_tf, runCleanup, compare_schemas, compare (+20 more)
+Cohesion: 0.06
+Nodes (30): add_edited_property, addEdited, Validates that all essential config parameters are set., validate_config(), compare_schemas, compare, create_homepage, buildHomepage (+22 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.09
@@ -679,6 +689,10 @@ Nodes (23): For /graphify add and --watch, For /graphify query, For the commit h
 Cohesion: 0.08
 Nodes (23): 1. Pahami Konteks & Input Pengguna, 2. Pilih Mode Output, 3. Lakukan Analisis, 4. Hasilkan Output, A. Analisis Realisasi Anggaran, B. Evaluasi Kinerja (NKA), C. Analisis Rasio Keuangan, CONTOH PENGGUNAAN (+15 more)
 
+### Community 76 - "Community 76"
+Cohesion: 0.40
+Nodes (4): Ketentuan Umum, 🛒 Mekanisme Pengkreditan PPN, 📊 Pajak Pertambahan Nilai (PPN), 🏛️ PPN Wapu (Wajib Pungut)
+
 ### Community 77 - "Community 77"
 Cohesion: 0.22
 Nodes (10): download_excel_file(), get_drive_service(), list_excel_files(), query_excel_data(), Membaca daftar nama sheet yang tersedia di dalam file Excel lokal.          Args, Membaca baris data pada sheet tertentu di file Excel lokal dan memformatnya seba, Initializes and returns the Google Drive API service client., Menampilkan daftar file Excel (.xlsx, .xls) di dalam folder Google Drive yang di (+2 more)
@@ -916,8 +930,8 @@ Cohesion: 0.48
 Nodes (6): { Client }, deepInspectParaDashboard(), getBlockChildren(), getRichText(), notion, printBlockInfo()
 
 ### Community 150 - "Community 150"
-Cohesion: 0.29
-Nodes (6): description, main, name, scripts, start, version
+Cohesion: 0.20
+Nodes (9): dependencies, dotenv, @notionhq/client, description, main, name, scripts, start (+1 more)
 
 ### Community 151 - "Community 151"
 Cohesion: 0.38
@@ -1172,8 +1186,8 @@ Cohesion: 0.40
 Nodes (4): 👤 1. Profil & Evaluasi Diri (Profile & Self-Assessment), 🌱 2. Pengembangan Diri & Hobi (Self-Growth & Hobbies), 📓 3. Catatan Harian (Journal & Thoughts), 👤 AIS-OS & Personal Knowledge Brain
 
 ### Community 262 - "Community 262"
-Cohesion: 0.67
-Nodes (3): dependencies, dotenv, @notionhq/client
+Cohesion: 0.40
+Nodes (4): Ketentuan Umum, 🛒 Mekanisme Pengkreditan PPN, 📊 Pajak Pertambahan Nilai (PPN), 🏛️ PPN Wapu (Wajib Pungut)
 
 ### Community 264 - "Community 264"
 Cohesion: 0.50
@@ -1194,6 +1208,10 @@ Nodes (24): 6. Prosedur Otomasi Git (Commit & Push), Detail 10 Tema Alternatif &
 ### Community 278 - "Community 278"
 Cohesion: 0.20
 Nodes (9): 🌐 1. APA ITU CORETAX SYSTEM?, 1. Metode Nilai Pasar (Market Value), 🏛️ 2. BEDAH PMK NOMOR 1 TAHUN 2026: RESTRUKTURISASI BUMN, 2. Metode Nilai Buku (Book Value) - Insentif Pajak, 📈 3. INSENTIF PENGGUNAAN NILAI BUKU (BOOK VALUE), 🧠 4. CHECKLIST MATERI KULIAH RESTRUKTURISASI PERUSAHAAN (UTS/UAS), A. Latar Belakang Penerbitan Regulasi, B. Definsi Baru BUMN di PMK 1/2026 (Pasal 1 angka 135) (+1 more)
+
+### Community 279 - "Community 279"
+Cohesion: 0.50
+Nodes (3): 📊 Halaman III DIPA & Rencana Penarikan Dana (RPD), Karakteristik Pergeseran & Pemutakhiran, Peran Strategis RPD Halaman III
 
 ### Community 280 - "Community 280"
 Cohesion: 0.10
@@ -1255,6 +1273,22 @@ Nodes (3): Expanding the ESLint configuration, React Compiler, React + Vite
 Cohesion: 0.20
 Nodes (9): 2026-06-15, 2026-06-16, 2026-06-17, Inisialisasi Proyek StudiOS & Refinement UI, Optimasi WebGL & Sinkronisasi Kurikulum Medis (Phase 3 - Anatomi Dasar), Sinkronisasi & Restrukturisasi Knowledge Base Proyek, Tahap 2: Integrasi Frontend ke Supabase & Sistem Otorisasi Akses, Tahap 3: Notion Sync Engine (Otomatisasi Sinkronisasi Konten) (+1 more)
 
+### Community 299 - "Community 299"
+Cohesion: 0.50
+Nodes (3): 📊 Indikator Kinerja Pelaksanaan Anggaran (IKPA), 📈 Kategori Penilaian IKPA, 🏛️ Kerangka Hukum & Aspek Penilaian
+
+### Community 300 - "Community 300"
+Cohesion: 0.50
+Nodes (3): Contoh Perhitungan Cepat, 📊 Penghasilan Tidak Kena Pajak (PTKP), Tarif Tahunan PTKP Indonesia (Saat Ini)
+
+### Community 301 - "Community 301"
+Cohesion: 0.50
+Nodes (3): Definisi BUMN di Era Coretax, Insentif Pajak, ⚖️ PMK Nomor 1 Tahun 2026 (Insentif Pajak Restrukturisasi BUMN)
+
+### Community 302 - "Community 302"
+Cohesion: 0.50
+Nodes (3): 💸 Metode TER (Tarif Efektif Rata-Rata) Bulanan, 📊 PPh Pasal 21 (Pajak Penghasilan Karyawan / Pekerja), 📈 Tarif Progresif Pasal 17 UU PPh (UU HPP)
+
 ### Community 304 - "Community 304"
 Cohesion: 0.40
 Nodes (4): Catatan Keputusan Desain (Grill-Me):, 🚦 Keputusan Go/No-Go, 📋 Quality Gate Checklist, Quality Gate: StudiOS Global "The Immersive Explorer" Layout
@@ -1284,8 +1318,8 @@ Cohesion: 0.33
 Nodes (5): 📈 1. Statistik Deviasi Tahunan, 📅 2. Bulan-Bulan Kritis Deviasi (Deviasi 100%), 🛠️ 3. Analisis Paket Pekerjaan & Penyebab Pergeseran, 📊 Analisis Kasus: Deviasi Anggaran Belanja Modal Rudenim Pontianak (TA 2023–2025), Analisis Tren:
 
 ### Community 312 - "Community 312"
-Cohesion: 0.40
-Nodes (4): Ketentuan Umum, 🛒 Mekanisme Pengkreditan PPN, 📊 Pajak Pertambahan Nilai (PPN), 🏛️ PPN Wapu (Wajib Pungut)
+Cohesion: 0.50
+Nodes (3): 📊 Halaman III DIPA & Rencana Penarikan Dana (RPD), Karakteristik Pergeseran & Pemutakhiran, Peran Strategis RPD Halaman III
 
 ### Community 313 - "Community 313"
 Cohesion: 0.40
@@ -1297,21 +1331,17 @@ Nodes (3): Tabel 1.3 Deviasi Halaman III DIPA Belanja Modal Rudenim Pontianak TA
 
 ### Community 315 - "Community 315"
 Cohesion: 0.50
-Nodes (3): 📊 Halaman III DIPA & Rencana Penarikan Dana (RPD), Karakteristik Pergeseran & Pemutakhiran, Peran Strategis RPD Halaman III
+Nodes (3): 📊 Indikator Kinerja Pelaksanaan Anggaran (IKPA), 📈 Kategori Penilaian IKPA, 🏛️ Kerangka Hukum & Aspek Penilaian
 
 ### Community 316 - "Community 316"
 Cohesion: 0.50
-Nodes (3): 📊 Indikator Kinerja Pelaksanaan Anggaran (IKPA), 📈 Kategori Penilaian IKPA, 🏛️ Kerangka Hukum & Aspek Penilaian
+Nodes (3): Contoh Perhitungan Cepat, 📊 Penghasilan Tidak Kena Pajak (PTKP), Tarif Tahunan PTKP Indonesia (Saat Ini)
 
 ### Community 317 - "Community 317"
 Cohesion: 0.50
-Nodes (3): Contoh Perhitungan Cepat, 📊 Penghasilan Tidak Kena Pajak (PTKP), Tarif Tahunan PTKP Indonesia (Saat Ini)
-
-### Community 318 - "Community 318"
-Cohesion: 0.50
 Nodes (3): Definisi BUMN di Era Coretax, Insentif Pajak, ⚖️ PMK Nomor 1 Tahun 2026 (Insentif Pajak Restrukturisasi BUMN)
 
-### Community 319 - "Community 319"
+### Community 318 - "Community 318"
 Cohesion: 0.50
 Nodes (3): 💸 Metode TER (Tarif Efektif Rata-Rata) Bulanan, 📊 PPh Pasal 21 (Pajak Penghasilan Karyawan / Pekerja), 📈 Tarif Progresif Pasal 17 UU PPh (UU HPP)
 
@@ -1328,8 +1358,8 @@ Cohesion: 0.50
 Nodes (3): [2026-06-17] ingest - synced worklog to Notion Mythos Brain, [2026-06-17] session - business knowledge base initialized, Business Knowledge Base Log
 
 ### Community 334 - "Community 334"
-Cohesion: 0.50
-Nodes (3): [2026-06-17] session - created wiki for [[Project_Botkeu]] (Telegram Finance Bot), [2026-06-17] session - office knowledge base initialized, Office Knowledge Base Log
+Cohesion: 0.40
+Nodes (4): [2026-06-17] ingest - imported 13 financial and regulatory documents from thesis-brain, [2026-06-17] session - created wiki for [[Project_Botkeu]] (Telegram Finance Bot), [2026-06-17] session - office knowledge base initialized, Office Knowledge Base Log
 
 ### Community 335 - "Community 335"
 Cohesion: 0.15
@@ -1344,9 +1374,9 @@ Cohesion: 0.33
 Nodes (6): { Client }, fs, notion, parseMarkdownToRichText(), path, sync()
 
 ## Knowledge Gaps
-- **1208 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `version`, `type` (+1203 more)
+- **1228 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `version`, `type` (+1223 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **98 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **103 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -1355,13 +1385,13 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `Community 79` to `Community 280`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `A8. Module Specifications` connect `Community 86` to `Community 117`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `Menginisialisasi klien Google GenAI.`, `Mengirim pesan ke Gemini dan menangani iterasi pemanggilan fungsi (Tool Calling)` to the rest of the system?**
-  _1220 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1240 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.048484848484848485 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._

@@ -1320,13 +1320,13 @@
     "semantic_hash": ""
   },
   "office-brain/index.md": {
-    "mtime": 1781671043.9139411,
-    "ast_hash": "7823d9aae9dd126fba7c4720e27c139a",
+    "mtime": 1781674431.3158877,
+    "ast_hash": "cfb55d8f7565e65777990565a87724d5",
     "semantic_hash": ""
   },
   "office-brain/log.md": {
-    "mtime": 1781671047.3807106,
-    "ast_hash": "1ee5b20c850f75536ef940d86600a126",
+    "mtime": 1781674437.5540686,
+    "ast_hash": "f70a8bff5b7f32a4b94742a41544b6a3",
     "semantic_hash": ""
   },
   "personal-brain/CLAUDE.md": {
@@ -1365,8 +1365,8 @@
     "semantic_hash": ""
   },
   "projects/botkeu/ai_agent.py": {
-    "mtime": 1781671301.926044,
-    "ast_hash": "02a3f9bfe093d3a40d1d8364f13785d9",
+    "mtime": 1781675424.6957612,
+    "ast_hash": "0d3471e46579548a6cfc4ea00f304cf9",
     "semantic_hash": ""
   },
   "projects/botkeu/config.py": {
@@ -1385,13 +1385,78 @@
     "semantic_hash": ""
   },
   "projects/botkeu/main.py": {
-    "mtime": 1781671309.1234064,
-    "ast_hash": "bbc263396cbd06f16313c42d9cc5ee8f",
+    "mtime": 1781674002.2911892,
+    "ast_hash": "170588319af7e58221e97d00934598f8",
     "semantic_hash": ""
   },
   "projects/botkeu/requirements.txt": {
     "mtime": 1781671290.0287542,
     "ast_hash": "8ae711f3d1623d7bdf5835080928706e",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/Coretax_System.md": {
+    "mtime": 1781664807.7414474,
+    "ast_hash": "4b8af465fa3127cb5d0bc01db0da441a",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/DIPA_Halaman_III.md": {
+    "mtime": 1781664900.2337713,
+    "ast_hash": "aafde28fc5c8886233d8e39829f1ca17",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/Deviasi_Anggaran.md": {
+    "mtime": 1781664756.459126,
+    "ast_hash": "c58c44078f3fcd51640fdd6602b8aece",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/IKPA.md": {
+    "mtime": 1781664888.724284,
+    "ast_hash": "4ed4a54b082c339bda0b9e323a37d941",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/Kemenkumham.md": {
+    "mtime": 1781664718.1775768,
+    "ast_hash": "66282d4c335c425532488573f884dc58",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/PMK_01_2026.md": {
+    "mtime": 1781664817.3142245,
+    "ast_hash": "d56954c7783c56521d40a1880271e04d",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/PPh_Pasal_21.md": {
+    "mtime": 1781664790.352192,
+    "ast_hash": "cb5fa949b064adf3c0e8bd7a36a63618",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/Pajak_Pertambahan_Nilai.md": {
+    "mtime": 1781664798.52039,
+    "ast_hash": "0721b588768f5dabb19b849b8d9a8ca4",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md": {
+    "mtime": 1781664827.3840115,
+    "ast_hash": "f4140cc105431b18675911d89aa617b5",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/Rudenim_Pontianak.md": {
+    "mtime": 1781664706.199703,
+    "ast_hash": "4c9821c0d57bbdf12b94ac6e2d67859c",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/SAKTI.md": {
+    "mtime": 1781664728.8365746,
+    "ast_hash": "28a4eae7aaed7069e071c6e5f39f4b36",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/Standar_Akuntansi_Pemerintah.md": {
+    "mtime": 1781664738.495082,
+    "ast_hash": "800df75efd2861b7f25321f9a60ff035",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/Withholding_Tax.md": {
+    "mtime": 1781664779.337217,
+    "ast_hash": "1ee2130ab987dc6fe2465d41760aba58",
     "semantic_hash": ""
   }
 }
