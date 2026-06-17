@@ -1,16 +1,16 @@
 # Graph Report - AIS-OS  (2026-06-17)
 
 ## Corpus Check
-- 240 files · ~300,102 words
+- 251 files · ~302,304 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3091 nodes · 3065 edges · 331 communities (234 shown, 97 thin omitted)
+- 3153 nodes · 3116 edges · 343 communities (243 shown, 100 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `63c1947c`
+- Built from commit: `4fa70a70`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -335,6 +335,18 @@
 - [[_COMMUNITY_Community 328|Community 328]]
 - [[_COMMUNITY_Community 329|Community 329]]
 - [[_COMMUNITY_Community 330|Community 330]]
+- [[_COMMUNITY_Community 331|Community 331]]
+- [[_COMMUNITY_Community 332|Community 332]]
+- [[_COMMUNITY_Community 333|Community 333]]
+- [[_COMMUNITY_Community 334|Community 334]]
+- [[_COMMUNITY_Community 335|Community 335]]
+- [[_COMMUNITY_Community 336|Community 336]]
+- [[_COMMUNITY_Community 337|Community 337]]
+- [[_COMMUNITY_Community 338|Community 338]]
+- [[_COMMUNITY_Community 339|Community 339]]
+- [[_COMMUNITY_Community 340|Community 340]]
+- [[_COMMUNITY_Community 341|Community 341]]
+- [[_COMMUNITY_Community 342|Community 342]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
@@ -363,7 +375,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (331 total, 97 thin omitted)
+## Communities (343 total, 100 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -407,11 +419,11 @@ Nodes (24): Dep:, Fase 1.0 — Pondasi (WAJIB duluan, semua lain bergantung di s
 
 ### Community 10 - "Community 10"
 Cohesion: 0.07
-Nodes (29): @notionhq/client, check_note_properties, checkNote, check_para_views, checkViews, clean_callout_children, cleanCalloutChildren, create_homepage (+21 more)
+Nodes (28): @notionhq/client, check_pt_schemas, checkPTSchemas, compare_para_schemas, compare, create_homepage, buildHomepage, enrich_dbs (+20 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.07
-Nodes (29): add_created_property, addCreated, add_edited_property, addEdited, clean_remaining_tf, runCleanup, compare_schemas, compare (+21 more)
+Nodes (28): add_created_property, addCreated, add_edited_property, addEdited, check_page_details, checkPages, clean_remaining_tf, runCleanup (+20 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.09
@@ -696,6 +708,10 @@ Nodes (19): A8.10 Reviews (Daily / Weekly / Monthly / Quarterly) `[Beyond UB]`, 
 Cohesion: 0.50
 Nodes (4): path, sync_to_notion, parseMarkdownToRichText, sync
 
+### Community 89 - "Community 89"
+Cohesion: 0.20
+Nodes (9): /daily-sync, Error Handling & Fallbacks, Step 1: Detect Active Project and Today's Date, Step 2: Update the Sync Script Target Date, Step 3: Run the Sync Script, Step 4: Keep the Local Graph Current (Graphify), Step 5: Update the Local Activity Logs, Usage (+1 more)
+
 ### Community 101 - "Community 101"
 Cohesion: 0.11
 Nodes (17): A. Inventaris Catatan Dosen (hasil rekonsiliasi), Audit Rekonsiliasi Catatan Dosen — Makalah Seminar Akuntansi, B. Hasil Audit makalah_seminar.md, C. Tiga Perbaikan Prioritas, Catatan 10 — hlm. 37 docx (flowchart): "Duplikat punya siapa?", Catatan 1 — hlm. 4 docx: "Data dalam bentuk tabel", Catatan 2 — hlm. 6 docx: "Terlalu luas, tidak spesifik untuk indikasi", Catatan 3 — hlm. 6 docx (bawah): "Pendahuluan terlalu luas, bisa runut apa yang menjadi fokus" (+9 more)
@@ -881,8 +897,8 @@ Cohesion: 0.29
 Nodes (6): Bedah PP 50/2018 & PMK 62/2023 (Koleksi Diagram untuk Skripsi & Tugas), 📌 Diagram 1: Alur Makro Pelaksanaan Anggaran Belanja Negara, 📌 Diagram 2: Alur Penerbitan SPP - SPM - SP2D (Sistem Pengeluaran Kas Negara), 📌 Diagram 3: Alur Fleksibilitas Revisi Anggaran (Berdasarkan PMK 62/2023), 📊 FOLDER 2: VISUAL FLOWCHART ALUR PELAKSANAAN APBN, 💡 Kunci Penjelasan untuk Ujian/Bab Skripsi:
 
 ### Community 148 - "Community 148"
-Cohesion: 0.29
-Nodes (6): 1. Gotchas & Solusi Teknis (Pelajaran Penting), 2. Struktur Teoretis Skripsi, 3. Progress State (Terakhir Diperbarui: 2026-06-15), AIOS Memory — Persistent Context & Lessons Learned, Integrasi Notion API (Mythos Brain), Pembuatan Dokumen Word (`build_makalah.js`)
+Cohesion: 0.25
+Nodes (7): 👤 0. Profil Pengguna (User Profile), 1. Gotchas & Solusi Teknis (Pelajaran Penting), 2. Struktur Teoretis Skripsi, 3. Progress State (Terakhir Diperbarui: 2026-06-15), AIOS Memory — Persistent Context & Lessons Learned, Integrasi Notion API (Mythos Brain), Pembuatan Dokumen Word (`build_makalah.js`)
 
 ### Community 149 - "Community 149"
 Cohesion: 0.48
@@ -1124,6 +1140,30 @@ Nodes (4): 1. Halaman Utama (Homepage), Smart Dashboards, Tampilan Khusus, Tampi
 Cohesion: 0.50
 Nodes (4): 8. Tujuan dan Perencanaan Masa Depan (Goals & Future Planning), Database Goals (Tujuan), Halaman Plan, Priorities Area (Area Prioritas)
 
+### Community 242 - "Community 242"
+Cohesion: 0.22
+Nodes (8): 🔍 1. Profil Singkat Anda (Siapa Ajie?), 🧠 2. Seberapa Paham AI Tentang Anda?, 📊 3. Evaluasi Tingkat Teknis Vibe Coding Anda, 🗺️ 4. Roadmap Naik Kelas (Level Up) ke *Advanced Director*, 🟢 Kekuatan Anda (Apa yang Sudah Anda Kuasai):, Panduan Latihan Anda:, 👤 Profil Saya & Evaluasi Kemampuan Vibe Coding (Ajie Bariandono), 🟡 Tantangan Anda (Area yang Perlu Ditingkatkan):
+
+### Community 254 - "Community 254"
+Cohesion: 0.25
+Nodes (7): 🏛️ 1. Core Architecture, 🏷️ 2. File & Page Naming Conventions, 📂 3. Categories in index.md, ⚙️ 4. Agent Workflows & Prompts, CLAUDE.md — LLM Wiki Agent Rules (Business & Digital Products), 📥 INGEST (Mengimpor data mentah dari `raw/`), 🔍 LINT & AUDIT (Pembersihan & Konsistensi Data)
+
+### Community 256 - "Community 256"
+Cohesion: 0.33
+Nodes (5): 🚀 1. Produk Digital & Jasa (Products & Services), 📢 2. Pemasaran & Konten (Marketing & Content), ⚙️ 3. Operasional & Sistem (Operations & Systems), 📊 4. Keuangan & Administrasi (Finance & Admin), 💼 AIS-OS & Business Knowledge Brain
+
+### Community 257 - "Community 257"
+Cohesion: 0.40
+Nodes (4): 📋 1. Prosedur & Aturan (Procedures & Rules), 🔨 2. Tugas & Projek (Tasks & Projects), 🏢 3. Informasi Kantor (Office Info), 🏢 AIS-OS & Office Knowledge Brain
+
+### Community 260 - "Community 260"
+Cohesion: 0.40
+Nodes (4): 👤 1. Profil & Evaluasi Diri (Profile & Self-Assessment), 🌱 2. Pengembangan Diri & Hobi (Self-Growth & Hobbies), 📓 3. Catatan Harian (Journal & Thoughts), 👤 AIS-OS & Personal Knowledge Brain
+
+### Community 264 - "Community 264"
+Cohesion: 0.50
+Nodes (3): 🏛️ 1. Core Architecture, 📂 2. Categories in index.md, CLAUDE.md — LLM Wiki Agent Rules (Office & Employment)
+
 ### Community 266 - "Community 266"
 Cohesion: 0.10
 Nodes (25): PaymentSimulatorModal(), contentItems, contentTypeConfig, flashcards, getContentByStack(), getFlashcardsByContentId(), getReferencesByContentId(), references (+17 more)
@@ -1260,22 +1300,30 @@ Nodes (3): Definisi BUMN di Era Coretax, Insentif Pajak, ⚖️ PMK Nomor 1 Tahu
 Cohesion: 0.50
 Nodes (3): 💸 Metode TER (Tarif Efektif Rata-Rata) Bulanan, 📊 PPh Pasal 21 (Pajak Penghasilan Karyawan / Pekerja), 📈 Tarif Progresif Pasal 17 UU PPh (UU HPP)
 
+### Community 331 - "Community 331"
+Cohesion: 0.50
+Nodes (3): 🏛️ 1. Core Architecture, 📂 2. Categories in index.md, CLAUDE.md — LLM Wiki Agent Rules (Personal & Self-Development)
+
+### Community 332 - "Community 332"
+Cohesion: 0.50
+Nodes (3): [2026-06-17] ingest - initialized profile and vibe coding self-evaluation page, [2026-06-17] session - personal knowledge base initialized, Personal Knowledge Base Log
+
 ## Knowledge Gaps
-- **1150 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `version`, `type` (+1145 more)
+- **1186 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `version`, `type` (+1181 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **97 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **100 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
+- **Why does `PART A — PRD: ULTIMATE BRAIN PRO v2.0` connect `Community 117` to `Community 70`, `Community 134`, `Community 233`, `Community 234`, `Community 141`, `Community 109`, `Community 86`, `Community 188`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `Ultimate Brain — Complete Second Brain System in Notion` connect `Community 112` to `Community 121`, `Community 135`, `Community 167`, `Community 235`, `Community 236`, `Community 237`, `Community 153`, `Community 154`, `Community 189`?**
-  _High betweenness centrality (0.000) - this node is a cross-community bridge._
-- **Why does `dependencies` connect `Community 79` to `Community 280`?**
-  _High betweenness centrality (0.000) - this node is a cross-community bridge._
-- **Why does `@notionhq/client` connect `Community 79` to `Community 10`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `A8. Module Specifications` connect `Community 86` to `Community 117`?**
   _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private` to the rest of the system?**
-  _1150 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1186 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

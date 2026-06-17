@@ -615,9 +615,9 @@
     "semantic_hash": "6134dae3530cf8633d02f51f0b2f0383"
   },
   "CLAUDE.md": {
-    "mtime": 1781442689.9418807,
-    "ast_hash": "89c66bf2ebfbe24df19e706eeb76fe90",
-    "semantic_hash": "89c66bf2ebfbe24df19e706eeb76fe90"
+    "mtime": 1781667115.9190054,
+    "ast_hash": "55a8cde77f035606f80dc10097c187ec",
+    "semantic_hash": ""
   },
   "EXPANSIONS.md": {
     "mtime": 1781086181.6608324,
@@ -625,8 +625,8 @@
     "semantic_hash": "99a0c1db08b7a22f93fbbd99e249d868"
   },
   "MEMORY.md": {
-    "mtime": 1781456777.078005,
-    "ast_hash": "9039c1d3f612c5b8fb18a3533b02bf95",
+    "mtime": 1781666517.2438924,
+    "ast_hash": "3877d32b5607ae27934cb0d6a9944485",
     "semantic_hash": ""
   },
   "README.md": {
@@ -1292,6 +1292,61 @@
   "thesis-brain/wiki/Withholding_Tax.md": {
     "mtime": 1781664779.337217,
     "ast_hash": "1ee2130ab987dc6fe2465d41760aba58",
+    "semantic_hash": ""
+  },
+  ".claude/skills/daily-sync/SKILL.md": {
+    "mtime": 1781667645.7379372,
+    "ast_hash": "e19be9444d9a38332cbacbb3300f80c6",
+    "semantic_hash": ""
+  },
+  "business-brain/CLAUDE.md": {
+    "mtime": 1781666218.7357957,
+    "ast_hash": "55eee77557b6a6266cbb4ea58c9f7b92",
+    "semantic_hash": ""
+  },
+  "business-brain/index.md": {
+    "mtime": 1781666223.983452,
+    "ast_hash": "cb4fcfeb89ff7260ea497054c8375fce",
+    "semantic_hash": ""
+  },
+  "business-brain/log.md": {
+    "mtime": 1781666227.966519,
+    "ast_hash": "8740b2d4a45ebd892ce8fafb176934f8",
+    "semantic_hash": ""
+  },
+  "office-brain/CLAUDE.md": {
+    "mtime": 1781666838.3785317,
+    "ast_hash": "a22903f5e2026eafb2e4b7c42a0efbf0",
+    "semantic_hash": ""
+  },
+  "office-brain/index.md": {
+    "mtime": 1781666847.9775283,
+    "ast_hash": "e0adcc0271e3bebe388b85dabd37f4a7",
+    "semantic_hash": ""
+  },
+  "office-brain/log.md": {
+    "mtime": 1781666852.9182372,
+    "ast_hash": "41ee70a42462fd8949590ebe4c9ff698",
+    "semantic_hash": ""
+  },
+  "personal-brain/CLAUDE.md": {
+    "mtime": 1781666857.7833014,
+    "ast_hash": "18b9ce8503f27ad9f7718a0e6da98c7d",
+    "semantic_hash": ""
+  },
+  "personal-brain/index.md": {
+    "mtime": 1781666862.5286634,
+    "ast_hash": "c3329ef754a046bda3c17575e5a57b6a",
+    "semantic_hash": ""
+  },
+  "personal-brain/log.md": {
+    "mtime": 1781666866.6384933,
+    "ast_hash": "70c948137f7d2154d02a379038c54a5e",
+    "semantic_hash": ""
+  },
+  "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md": {
+    "mtime": 1781666874.8467424,
+    "ast_hash": "fbb3f920458156c14d6f7e23b46712c1",
     "semantic_hash": ""
   }
 }

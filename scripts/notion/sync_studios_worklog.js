@@ -9,8 +9,8 @@ const NOTES_DATABASE_ID = '37c78c4c-e388-81b0-bf1f-dca07fba6f3f'; // Pro Max Not
 const AREA_PAGE_ID = '37c78c4c-e388-81f1-99a3-d9e3b16d3d86'; // "AiS OS" area ID
 const PROJECT_PAGE_ID = '38078c4c-e388-8103-90f8-c8aea75f70a3'; // "StudiOS" project ID
 const workLogFolder = 'studios';
-const TARGET_DATE = '2026-06-15';
-const TARGET_DATE_LABEL = '15 Juni 2026';
+const TARGET_DATE = '2026-06-17';
+const TARGET_DATE_LABEL = '17 Juni 2026';
 
 function parseMarkdownToRichText(text) {
   const richText = [];

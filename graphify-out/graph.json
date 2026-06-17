@@ -3179,7 +3179,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "notion_package_dependencies",
-      "community": 10,
+      "community": 11,
       "norm_label": "dependencies"
     },
     {
@@ -3189,7 +3189,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "notion_package_dependencies_notionhq_client",
-      "community": 10,
+      "community": 11,
       "norm_label": "@notionhq/client"
     },
     {
@@ -3199,7 +3199,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "notion_package_dependencies_dotenv",
-      "community": 10,
+      "community": 11,
       "norm_label": "dotenv"
     },
     {
@@ -6785,6 +6785,106 @@
     {
       "label": "SKILL.md",
       "file_type": "document",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "daily_sync_skill",
+      "community": 89,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "/daily-sync",
+      "file_type": "document",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "daily_sync_skill_daily_sync",
+      "community": 89,
+      "norm_label": "/daily-sync"
+    },
+    {
+      "label": "Usage",
+      "file_type": "document",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "daily_sync_skill_usage",
+      "community": 89,
+      "norm_label": "usage"
+    },
+    {
+      "label": "Workflow Steps",
+      "file_type": "document",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "daily_sync_skill_workflow_steps",
+      "community": 89,
+      "norm_label": "workflow steps"
+    },
+    {
+      "label": "Step 1: Detect Active Project and Today's Date",
+      "file_type": "document",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "daily_sync_skill_step_1_detect_active_project_and_today_s_date",
+      "community": 89,
+      "norm_label": "step 1: detect active project and today's date"
+    },
+    {
+      "label": "Step 2: Update the Sync Script Target Date",
+      "file_type": "document",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "daily_sync_skill_step_2_update_the_sync_script_target_date",
+      "community": 89,
+      "norm_label": "step 2: update the sync script target date"
+    },
+    {
+      "label": "Step 3: Run the Sync Script",
+      "file_type": "document",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "daily_sync_skill_step_3_run_the_sync_script",
+      "community": 89,
+      "norm_label": "step 3: run the sync script"
+    },
+    {
+      "label": "Step 4: Keep the Local Graph Current (Graphify)",
+      "file_type": "document",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "daily_sync_skill_step_4_keep_the_local_graph_current_graphify",
+      "community": 89,
+      "norm_label": "step 4: keep the local graph current (graphify)"
+    },
+    {
+      "label": "Step 5: Update the Local Activity Logs",
+      "file_type": "document",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "daily_sync_skill_step_5_update_the_local_activity_logs",
+      "community": 89,
+      "norm_label": "step 5: update the local activity logs"
+    },
+    {
+      "label": "Error Handling & Fallbacks",
+      "file_type": "document",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "daily_sync_skill_error_handling_fallbacks",
+      "community": 89,
+      "norm_label": "error handling & fallbacks"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
       "source_file": ".claude/skills/epa/SKILL.md",
       "source_location": "L1",
       "_origin": "ast",
@@ -9683,10 +9783,20 @@
       "norm_label": "aios memory \u2014 persistent context & lessons learned"
     },
     {
-      "label": "1. Gotchas & Solusi Teknis (Pelajaran Penting)",
+      "label": "\ud83d\udc64 0. Profil Pengguna (User Profile)",
       "file_type": "document",
       "source_file": "MEMORY.md",
       "source_location": "L7",
+      "_origin": "ast",
+      "id": "memory_0_profil_pengguna_user_profile",
+      "community": 148,
+      "norm_label": "\ud83d\udc64 0. profil pengguna (user profile)"
+    },
+    {
+      "label": "1. Gotchas & Solusi Teknis (Pelajaran Penting)",
+      "file_type": "document",
+      "source_file": "MEMORY.md",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "memory_1_gotchas_solusi_teknis_pelajaran_penting",
       "community": 148,
@@ -9696,7 +9806,7 @@
       "label": "Pembuatan Dokumen Word (`build_makalah.js`)",
       "file_type": "document",
       "source_file": "MEMORY.md",
-      "source_location": "L9",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "memory_pembuatan_dokumen_word_build_makalah_js",
       "community": 148,
@@ -9706,7 +9816,7 @@
       "label": "Integrasi Notion API (Mythos Brain)",
       "file_type": "document",
       "source_file": "MEMORY.md",
-      "source_location": "L15",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "memory_integrasi_notion_api_mythos_brain",
       "community": 148,
@@ -9716,7 +9826,7 @@
       "label": "2. Struktur Teoretis Skripsi",
       "file_type": "document",
       "source_file": "MEMORY.md",
-      "source_location": "L29",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "memory_2_struktur_teoretis_skripsi",
       "community": 148,
@@ -9726,7 +9836,7 @@
       "label": "3. Progress State (Terakhir Diperbarui: 2026-06-15)",
       "file_type": "document",
       "source_file": "MEMORY.md",
-      "source_location": "L39",
+      "source_location": "L45",
       "_origin": "ast",
       "id": "memory_3_progress_state_terakhir_diperbarui_2026_06_15",
       "community": 148,
@@ -9931,6 +10041,176 @@
       "id": "aios_intake_q7_what_s_the_one_task_that_eats_your_week_and_where_do_you_currently_track_work",
       "community": 129,
       "norm_label": "q7 \u2014 what's the one task that eats your week, and where do you currently track work?"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "business_brain_claude",
+      "community": 254,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "CLAUDE.md \u2014 LLM Wiki Agent Rules (Business & Digital Products)",
+      "file_type": "document",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "business_brain_claude_claude_md_llm_wiki_agent_rules_business_digital_products",
+      "community": 254,
+      "norm_label": "claude.md \u2014 llm wiki agent rules (business & digital products)"
+    },
+    {
+      "label": "\ud83c\udfdb\ufe0f 1. Core Architecture",
+      "file_type": "document",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "business_brain_claude_1_core_architecture",
+      "community": 254,
+      "norm_label": "\ud83c\udfdb\ufe0f 1. core architecture"
+    },
+    {
+      "label": "\ud83c\udff7\ufe0f 2. File & Page Naming Conventions",
+      "file_type": "document",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "business_brain_claude_2_file_page_naming_conventions",
+      "community": 254,
+      "norm_label": "\ud83c\udff7\ufe0f 2. file & page naming conventions"
+    },
+    {
+      "label": "\ud83d\udcc2 3. Categories in index.md",
+      "file_type": "document",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "business_brain_claude_3_categories_in_index_md",
+      "community": 254,
+      "norm_label": "\ud83d\udcc2 3. categories in index.md"
+    },
+    {
+      "label": "\u2699\ufe0f 4. Agent Workflows & Prompts",
+      "file_type": "document",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "business_brain_claude_4_agent_workflows_prompts",
+      "community": 254,
+      "norm_label": "\u2699\ufe0f 4. agent workflows & prompts"
+    },
+    {
+      "label": "\ud83d\udce5 INGEST (Mengimpor data mentah dari `raw/`)",
+      "file_type": "document",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "business_brain_claude_ingest_mengimpor_data_mentah_dari_raw",
+      "community": 254,
+      "norm_label": "\ud83d\udce5 ingest (mengimpor data mentah dari `raw/`)"
+    },
+    {
+      "label": "\ud83d\udd0d LINT & AUDIT (Pembersihan & Konsistensi Data)",
+      "file_type": "document",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "business_brain_claude_lint_audit_pembersihan_konsistensi_data",
+      "community": 254,
+      "norm_label": "\ud83d\udd0d lint & audit (pembersihan & konsistensi data)"
+    },
+    {
+      "label": "index.md",
+      "file_type": "document",
+      "source_file": "business-brain/index.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "business_brain_index",
+      "community": 256,
+      "norm_label": "index.md"
+    },
+    {
+      "label": "\ud83d\udcbc AIS-OS & Business Knowledge Brain",
+      "file_type": "document",
+      "source_file": "business-brain/index.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "business_brain_index_ais_os_business_knowledge_brain",
+      "community": 256,
+      "norm_label": "\ud83d\udcbc ais-os & business knowledge brain"
+    },
+    {
+      "label": "\ud83d\ude80 1. Produk Digital & Jasa (Products & Services)",
+      "file_type": "document",
+      "source_file": "business-brain/index.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "business_brain_index_1_produk_digital_jasa_products_services",
+      "community": 256,
+      "norm_label": "\ud83d\ude80 1. produk digital & jasa (products & services)"
+    },
+    {
+      "label": "\ud83d\udce2 2. Pemasaran & Konten (Marketing & Content)",
+      "file_type": "document",
+      "source_file": "business-brain/index.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "business_brain_index_2_pemasaran_konten_marketing_content",
+      "community": 256,
+      "norm_label": "\ud83d\udce2 2. pemasaran & konten (marketing & content)"
+    },
+    {
+      "label": "\u2699\ufe0f 3. Operasional & Sistem (Operations & Systems)",
+      "file_type": "document",
+      "source_file": "business-brain/index.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "business_brain_index_3_operasional_sistem_operations_systems",
+      "community": 256,
+      "norm_label": "\u2699\ufe0f 3. operasional & sistem (operations & systems)"
+    },
+    {
+      "label": "\ud83d\udcca 4. Keuangan & Administrasi (Finance & Admin)",
+      "file_type": "document",
+      "source_file": "business-brain/index.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "business_brain_index_4_keuangan_administrasi_finance_admin",
+      "community": 256,
+      "norm_label": "\ud83d\udcca 4. keuangan & administrasi (finance & admin)"
+    },
+    {
+      "label": "log.md",
+      "file_type": "document",
+      "source_file": "business-brain/log.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "business_brain_log",
+      "community": 333,
+      "norm_label": "log.md"
+    },
+    {
+      "label": "Business Knowledge Base Log",
+      "file_type": "document",
+      "source_file": "business-brain/log.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "business_brain_log_business_knowledge_base_log",
+      "community": 333,
+      "norm_label": "business knowledge base log"
+    },
+    {
+      "label": "[2026-06-17] session - business knowledge base initialized",
+      "file_type": "document",
+      "source_file": "business-brain/log.md",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "business_brain_log_2026_06_17_session_business_knowledge_base_initialized",
+      "community": 333,
+      "norm_label": "[2026-06-17] session - business knowledge base initialized"
     },
     {
       "label": "connections.md",
@@ -10141,6 +10421,346 @@
       "id": "decisions_log_2026_06_10_produk_pertama_template_calk_dari_kemenkeu_diupgrade",
       "community": 145,
       "norm_label": "2026-06-10 \u2014 produk pertama: template calk dari kemenkeu diupgrade"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "office-brain/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_claude",
+      "community": 264,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "CLAUDE.md \u2014 LLM Wiki Agent Rules (Office & Employment)",
+      "file_type": "document",
+      "source_file": "office-brain/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_claude_claude_md_llm_wiki_agent_rules_office_employment",
+      "community": 264,
+      "norm_label": "claude.md \u2014 llm wiki agent rules (office & employment)"
+    },
+    {
+      "label": "\ud83c\udfdb\ufe0f 1. Core Architecture",
+      "file_type": "document",
+      "source_file": "office-brain/CLAUDE.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "office_brain_claude_1_core_architecture",
+      "community": 264,
+      "norm_label": "\ud83c\udfdb\ufe0f 1. core architecture"
+    },
+    {
+      "label": "\ud83d\udcc2 2. Categories in index.md",
+      "file_type": "document",
+      "source_file": "office-brain/CLAUDE.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "office_brain_claude_2_categories_in_index_md",
+      "community": 264,
+      "norm_label": "\ud83d\udcc2 2. categories in index.md"
+    },
+    {
+      "label": "index.md",
+      "file_type": "document",
+      "source_file": "office-brain/index.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_index",
+      "community": 257,
+      "norm_label": "index.md"
+    },
+    {
+      "label": "\ud83c\udfe2 AIS-OS & Office Knowledge Brain",
+      "file_type": "document",
+      "source_file": "office-brain/index.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_index_ais_os_office_knowledge_brain",
+      "community": 257,
+      "norm_label": "\ud83c\udfe2 ais-os & office knowledge brain"
+    },
+    {
+      "label": "\ud83d\udccb 1. Prosedur & Aturan (Procedures & Rules)",
+      "file_type": "document",
+      "source_file": "office-brain/index.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "office_brain_index_1_prosedur_aturan_procedures_rules",
+      "community": 257,
+      "norm_label": "\ud83d\udccb 1. prosedur & aturan (procedures & rules)"
+    },
+    {
+      "label": "\ud83d\udd28 2. Tugas & Projek (Tasks & Projects)",
+      "file_type": "document",
+      "source_file": "office-brain/index.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "office_brain_index_2_tugas_projek_tasks_projects",
+      "community": 257,
+      "norm_label": "\ud83d\udd28 2. tugas & projek (tasks & projects)"
+    },
+    {
+      "label": "\ud83c\udfe2 3. Informasi Kantor (Office Info)",
+      "file_type": "document",
+      "source_file": "office-brain/index.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "office_brain_index_3_informasi_kantor_office_info",
+      "community": 257,
+      "norm_label": "\ud83c\udfe2 3. informasi kantor (office info)"
+    },
+    {
+      "label": "log.md",
+      "file_type": "document",
+      "source_file": "office-brain/log.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_log",
+      "community": 334,
+      "norm_label": "log.md"
+    },
+    {
+      "label": "Office Knowledge Base Log",
+      "file_type": "document",
+      "source_file": "office-brain/log.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "office_brain_log_office_knowledge_base_log",
+      "community": 334,
+      "norm_label": "office knowledge base log"
+    },
+    {
+      "label": "[2026-06-17] session - office knowledge base initialized",
+      "file_type": "document",
+      "source_file": "office-brain/log.md",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "office_brain_log_2026_06_17_session_office_knowledge_base_initialized",
+      "community": 334,
+      "norm_label": "[2026-06-17] session - office knowledge base initialized"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "personal-brain/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "personal_brain_claude",
+      "community": 331,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "CLAUDE.md \u2014 LLM Wiki Agent Rules (Personal & Self-Development)",
+      "file_type": "document",
+      "source_file": "personal-brain/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "personal_brain_claude_claude_md_llm_wiki_agent_rules_personal_self_development",
+      "community": 331,
+      "norm_label": "claude.md \u2014 llm wiki agent rules (personal & self-development)"
+    },
+    {
+      "label": "\ud83c\udfdb\ufe0f 1. Core Architecture",
+      "file_type": "document",
+      "source_file": "personal-brain/CLAUDE.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "personal_brain_claude_1_core_architecture",
+      "community": 331,
+      "norm_label": "\ud83c\udfdb\ufe0f 1. core architecture"
+    },
+    {
+      "label": "\ud83d\udcc2 2. Categories in index.md",
+      "file_type": "document",
+      "source_file": "personal-brain/CLAUDE.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "personal_brain_claude_2_categories_in_index_md",
+      "community": 331,
+      "norm_label": "\ud83d\udcc2 2. categories in index.md"
+    },
+    {
+      "label": "index.md",
+      "file_type": "document",
+      "source_file": "personal-brain/index.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "personal_brain_index",
+      "community": 260,
+      "norm_label": "index.md"
+    },
+    {
+      "label": "\ud83d\udc64 AIS-OS & Personal Knowledge Brain",
+      "file_type": "document",
+      "source_file": "personal-brain/index.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "personal_brain_index_ais_os_personal_knowledge_brain",
+      "community": 260,
+      "norm_label": "\ud83d\udc64 ais-os & personal knowledge brain"
+    },
+    {
+      "label": "\ud83d\udc64 1. Profil & Evaluasi Diri (Profile & Self-Assessment)",
+      "file_type": "document",
+      "source_file": "personal-brain/index.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "personal_brain_index_1_profil_evaluasi_diri_profile_self_assessment",
+      "community": 260,
+      "norm_label": "\ud83d\udc64 1. profil & evaluasi diri (profile & self-assessment)"
+    },
+    {
+      "label": "\ud83c\udf31 2. Pengembangan Diri & Hobi (Self-Growth & Hobbies)",
+      "file_type": "document",
+      "source_file": "personal-brain/index.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "personal_brain_index_2_pengembangan_diri_hobi_self_growth_hobbies",
+      "community": 260,
+      "norm_label": "\ud83c\udf31 2. pengembangan diri & hobi (self-growth & hobbies)"
+    },
+    {
+      "label": "\ud83d\udcd3 3. Catatan Harian (Journal & Thoughts)",
+      "file_type": "document",
+      "source_file": "personal-brain/index.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "personal_brain_index_3_catatan_harian_journal_thoughts",
+      "community": 260,
+      "norm_label": "\ud83d\udcd3 3. catatan harian (journal & thoughts)"
+    },
+    {
+      "label": "log.md",
+      "file_type": "document",
+      "source_file": "personal-brain/log.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "personal_brain_log",
+      "community": 332,
+      "norm_label": "log.md"
+    },
+    {
+      "label": "Personal Knowledge Base Log",
+      "file_type": "document",
+      "source_file": "personal-brain/log.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "personal_brain_log_personal_knowledge_base_log",
+      "community": 332,
+      "norm_label": "personal knowledge base log"
+    },
+    {
+      "label": "[2026-06-17] session - personal knowledge base initialized",
+      "file_type": "document",
+      "source_file": "personal-brain/log.md",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "personal_brain_log_2026_06_17_session_personal_knowledge_base_initialized",
+      "community": 332,
+      "norm_label": "[2026-06-17] session - personal knowledge base initialized"
+    },
+    {
+      "label": "[2026-06-17] ingest - initialized profile and vibe coding self-evaluation page",
+      "file_type": "document",
+      "source_file": "personal-brain/log.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "personal_brain_log_2026_06_17_ingest_initialized_profile_and_vibe_coding_self_evaluation_page",
+      "community": 332,
+      "norm_label": "[2026-06-17] ingest - initialized profile and vibe coding self-evaluation page"
+    },
+    {
+      "label": "Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "file_type": "document",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "wiki_profil_saya_dan_evaluasi_vibecoding",
+      "community": 242,
+      "norm_label": "profil_saya_dan_evaluasi_vibecoding.md"
+    },
+    {
+      "label": "\ud83d\udc64 Profil Saya & Evaluasi Kemampuan Vibe Coding (Ajie Bariandono)",
+      "file_type": "document",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "wiki_profil_saya_dan_evaluasi_vibecoding_profil_saya_evaluasi_kemampuan_vibe_coding_ajie_bariandono",
+      "community": 242,
+      "norm_label": "\ud83d\udc64 profil saya & evaluasi kemampuan vibe coding (ajie bariandono)"
+    },
+    {
+      "label": "\ud83d\udd0d 1. Profil Singkat Anda (Siapa Ajie?)",
+      "file_type": "document",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "wiki_profil_saya_dan_evaluasi_vibecoding_1_profil_singkat_anda_siapa_ajie",
+      "community": 242,
+      "norm_label": "\ud83d\udd0d 1. profil singkat anda (siapa ajie?)"
+    },
+    {
+      "label": "\ud83e\udde0 2. Seberapa Paham AI Tentang Anda?",
+      "file_type": "document",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "wiki_profil_saya_dan_evaluasi_vibecoding_2_seberapa_paham_ai_tentang_anda",
+      "community": 242,
+      "norm_label": "\ud83e\udde0 2. seberapa paham ai tentang anda?"
+    },
+    {
+      "label": "\ud83d\udcca 3. Evaluasi Tingkat Teknis Vibe Coding Anda",
+      "file_type": "document",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "wiki_profil_saya_dan_evaluasi_vibecoding_3_evaluasi_tingkat_teknis_vibe_coding_anda",
+      "community": 242,
+      "norm_label": "\ud83d\udcca 3. evaluasi tingkat teknis vibe coding anda"
+    },
+    {
+      "label": "\ud83d\udfe2 Kekuatan Anda (Apa yang Sudah Anda Kuasai):",
+      "file_type": "document",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "wiki_profil_saya_dan_evaluasi_vibecoding_kekuatan_anda_apa_yang_sudah_anda_kuasai",
+      "community": 242,
+      "norm_label": "\ud83d\udfe2 kekuatan anda (apa yang sudah anda kuasai):"
+    },
+    {
+      "label": "\ud83d\udfe1 Tantangan Anda (Area yang Perlu Ditingkatkan):",
+      "file_type": "document",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "wiki_profil_saya_dan_evaluasi_vibecoding_tantangan_anda_area_yang_perlu_ditingkatkan",
+      "community": 242,
+      "norm_label": "\ud83d\udfe1 tantangan anda (area yang perlu ditingkatkan):"
+    },
+    {
+      "label": "\ud83d\uddfa\ufe0f 4. Roadmap Naik Kelas (Level Up) ke *Advanced Director*",
+      "file_type": "document",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "wiki_profil_saya_dan_evaluasi_vibecoding_4_roadmap_naik_kelas_level_up_ke_advanced_director",
+      "community": 242,
+      "norm_label": "\ud83d\uddfa\ufe0f 4. roadmap naik kelas (level up) ke *advanced director*"
+    },
+    {
+      "label": "Panduan Latihan Anda:",
+      "file_type": "document",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "wiki_profil_saya_dan_evaluasi_vibecoding_panduan_latihan_anda",
+      "community": 242,
+      "norm_label": "panduan latihan anda:"
     },
     {
       "label": "resume_pp_keuangan_negara.md",
@@ -19168,7 +19788,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_note_properties.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 335,
       "norm_label": "check_note_properties",
       "id": "check_note_properties"
     },
@@ -19179,7 +19799,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 335,
       "norm_label": "checknote",
       "id": "check_note_properties_checkNote"
     },
@@ -19193,7 +19813,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_page_details.js"
       },
       "file_type": "concept",
-      "community": 89,
+      "community": 11,
       "norm_label": "check_page_details",
       "id": "check_page_details"
     },
@@ -19204,7 +19824,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 89,
+      "community": 11,
       "norm_label": "checkpages",
       "id": "check_page_details_checkPages"
     },
@@ -19218,7 +19838,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_para_views.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 336,
       "norm_label": "check_para_views",
       "id": "check_para_views"
     },
@@ -19229,7 +19849,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 336,
       "norm_label": "checkviews",
       "id": "check_para_views_checkViews"
     },
@@ -19243,7 +19863,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_pt_schemas.js"
       },
       "file_type": "concept",
-      "community": 257,
+      "community": 10,
       "norm_label": "check_pt_schemas",
       "id": "check_pt_schemas"
     },
@@ -19254,7 +19874,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 257,
+      "community": 10,
       "norm_label": "checkptschemas",
       "id": "check_pt_schemas_checkPTSchemas"
     },
@@ -19293,7 +19913,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\clean_callout_children.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 337,
       "norm_label": "clean_callout_children",
       "id": "clean_callout_children"
     },
@@ -19304,7 +19924,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 337,
       "norm_label": "cleancalloutchildren",
       "id": "clean_callout_children_cleanCalloutChildren"
     },
@@ -19343,7 +19963,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\compare_para_schemas.js"
       },
       "file_type": "concept",
-      "community": 254,
+      "community": 10,
       "norm_label": "compare_para_schemas",
       "id": "compare_para_schemas"
     },
@@ -19354,7 +19974,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 254,
+      "community": 10,
       "norm_label": "compare",
       "id": "compare_para_schemas_compare"
     },
@@ -19368,7 +19988,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\compare_schemas.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 338,
       "norm_label": "compare_schemas",
       "id": "compare_schemas"
     },
@@ -19379,7 +19999,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 338,
       "norm_label": "compare",
       "id": "compare_schemas_compare"
     },
@@ -19418,7 +20038,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\create_notion_project.js"
       },
       "file_type": "concept",
-      "community": 242,
+      "community": 11,
       "norm_label": "create_notion_project",
       "id": "create_notion_project"
     },
@@ -19429,7 +20049,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 242,
+      "community": 11,
       "norm_label": "createproject",
       "id": "create_notion_project_createProject"
     },
@@ -19471,7 +20091,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\dump_para_blocks.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 339,
       "norm_label": "dump_para_blocks",
       "id": "dump_para_blocks"
     },
@@ -19482,7 +20102,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 339,
       "norm_label": "dumpblocks",
       "id": "dump_para_blocks_dumpBlocks"
     },
@@ -19496,7 +20116,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\enrich_dbs.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "enrich_dbs",
       "id": "enrich_dbs"
     },
@@ -19507,7 +20127,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "enrichnotes",
       "id": "enrich_dbs_enrichNotes"
     },
@@ -19521,7 +20141,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\find_all_databases.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "find_all_databases",
       "id": "find_all_databases"
     },
@@ -19532,7 +20152,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "findalldatabases",
       "id": "find_all_databases_findAllDatabases"
     },
@@ -19546,7 +20166,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\fix_recurring_nav.js"
       },
       "file_type": "concept",
-      "community": 256,
+      "community": 11,
       "norm_label": "fix_recurring_nav",
       "id": "fix_recurring_nav"
     },
@@ -19557,7 +20177,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 256,
+      "community": 11,
       "norm_label": "fixnav",
       "id": "fix_recurring_nav_fixNav"
     },
@@ -19629,7 +20249,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_archive_blocks.js"
       },
       "file_type": "concept",
-      "community": 264,
+      "community": 10,
       "norm_label": "inspect_archive_blocks",
       "id": "inspect_archive_blocks"
     },
@@ -19640,7 +20260,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 264,
+      "community": 10,
       "norm_label": "inspect",
       "id": "inspect_archive_blocks_inspect"
     },
@@ -19654,7 +20274,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_block.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 340,
       "norm_label": "inspect_block",
       "id": "inspect_block"
     },
@@ -19665,7 +20285,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 340,
       "norm_label": "inspectblock",
       "id": "inspect_block_inspectBlock"
     },
@@ -19679,7 +20299,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_failed_views.js"
       },
       "file_type": "concept",
-      "community": 260,
+      "community": 10,
       "norm_label": "inspect_failed_views",
       "id": "inspect_failed_views"
     },
@@ -19690,7 +20310,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 260,
+      "community": 10,
       "norm_label": "inspectviews",
       "id": "inspect_failed_views_inspectViews"
     },
@@ -19729,7 +20349,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_old_property.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 341,
       "norm_label": "inspect_old_property",
       "id": "inspect_old_property"
     },
@@ -19740,7 +20360,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 341,
       "norm_label": "inspect",
       "id": "inspect_old_property_inspect"
     },
@@ -20323,7 +20943,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\relink_para_page_views.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "relink_para_page_views",
       "id": "relink_para_page_views"
     },
@@ -20334,7 +20954,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "relink",
       "id": "relink_para_page_views_relink"
     },
@@ -20938,7 +21558,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\test_query.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 342,
       "norm_label": "test_query",
       "id": "test_query"
     },
@@ -20949,7 +21569,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 342,
       "norm_label": "testquery",
       "id": "test_query_testQuery"
     },
@@ -20963,7 +21583,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\test_view_creation.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "test_view_creation",
       "id": "test_view_creation"
     },
@@ -20974,7 +21594,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "test",
       "id": "test_view_creation_test"
     },
@@ -21049,7 +21669,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\unarchive_blocks.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "unarchive_blocks",
       "id": "unarchive_blocks"
     },
@@ -21060,7 +21680,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "unarchive",
       "id": "unarchive_blocks_unarchive"
     },
@@ -39811,6 +40431,96 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "daily_sync_skill",
+      "target": "daily_sync_skill_daily_sync",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "daily_sync_skill_daily_sync",
+      "target": "daily_sync_skill_error_handling_fallbacks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "daily_sync_skill_daily_sync",
+      "target": "daily_sync_skill_usage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "daily_sync_skill_daily_sync",
+      "target": "daily_sync_skill_workflow_steps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "daily_sync_skill_workflow_steps",
+      "target": "daily_sync_skill_step_1_detect_active_project_and_today_s_date",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "daily_sync_skill_workflow_steps",
+      "target": "daily_sync_skill_step_2_update_the_sync_script_target_date",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "daily_sync_skill_workflow_steps",
+      "target": "daily_sync_skill_step_3_run_the_sync_script",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "daily_sync_skill_workflow_steps",
+      "target": "daily_sync_skill_step_4_keep_the_local_graph_current_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/daily-sync/SKILL.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "daily_sync_skill_workflow_steps",
+      "target": "daily_sync_skill_step_5_update_the_local_activity_logs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".claude/skills/epa/SKILL.md",
       "source_location": "L21",
       "weight": 1.0,
@@ -42454,6 +43164,16 @@
       "source_file": "MEMORY.md",
       "source_location": "L7",
       "weight": 1.0,
+      "source": "memory_aios_memory_persistent_context_lessons_learned",
+      "target": "memory_0_profil_pengguna_user_profile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MEMORY.md",
+      "source_location": "L7",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "memory_aios_memory_persistent_context_lessons_learned",
       "target": "memory_1_gotchas_solusi_teknis_pelajaran_penting"
@@ -42679,6 +43399,146 @@
       "target": "aios_intake_q7_what_s_the_one_task_that_eats_your_week_and_where_do_you_currently_track_work"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "business_brain_claude",
+      "target": "business_brain_claude_claude_md_llm_wiki_agent_rules_business_digital_products",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "business_brain_claude_claude_md_llm_wiki_agent_rules_business_digital_products",
+      "target": "business_brain_claude_1_core_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "business_brain_claude_claude_md_llm_wiki_agent_rules_business_digital_products",
+      "target": "business_brain_claude_2_file_page_naming_conventions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "business_brain_claude_claude_md_llm_wiki_agent_rules_business_digital_products",
+      "target": "business_brain_claude_3_categories_in_index_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "business_brain_claude_claude_md_llm_wiki_agent_rules_business_digital_products",
+      "target": "business_brain_claude_4_agent_workflows_prompts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "business_brain_claude_4_agent_workflows_prompts",
+      "target": "business_brain_claude_ingest_mengimpor_data_mentah_dari_raw",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/CLAUDE.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "business_brain_claude_4_agent_workflows_prompts",
+      "target": "business_brain_claude_lint_audit_pembersihan_konsistensi_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/index.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "business_brain_index",
+      "target": "business_brain_index_ais_os_business_knowledge_brain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/index.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "business_brain_index_ais_os_business_knowledge_brain",
+      "target": "business_brain_index_1_produk_digital_jasa_products_services",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/index.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "business_brain_index_ais_os_business_knowledge_brain",
+      "target": "business_brain_index_2_pemasaran_konten_marketing_content",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/index.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "business_brain_index_ais_os_business_knowledge_brain",
+      "target": "business_brain_index_3_operasional_sistem_operations_systems",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/index.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "business_brain_index_ais_os_business_knowledge_brain",
+      "target": "business_brain_index_4_keuangan_administrasi_finance_admin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/log.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "business_brain_log",
+      "target": "business_brain_log_business_knowledge_base_log",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/log.md",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "business_brain_log_business_knowledge_base_log",
+      "target": "business_brain_log_2026_06_17_session_business_knowledge_base_initialized",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains_section",
       "confidence": "EXTRACTED",
       "properties": {},
@@ -42853,6 +43713,276 @@
       "confidence_score": 1.0,
       "source": "decisions_log_decisions_log",
       "target": "decisions_log_2026_06_13_standarkan_relasi_para_notion_jadi_dua_arah_mythos_brain"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "office_brain_claude",
+      "target": "office_brain_claude_claude_md_llm_wiki_agent_rules_office_employment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/CLAUDE.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "office_brain_claude_claude_md_llm_wiki_agent_rules_office_employment",
+      "target": "office_brain_claude_1_core_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/CLAUDE.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "office_brain_claude_claude_md_llm_wiki_agent_rules_office_employment",
+      "target": "office_brain_claude_2_categories_in_index_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/index.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "office_brain_index",
+      "target": "office_brain_index_ais_os_office_knowledge_brain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/index.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "office_brain_index_ais_os_office_knowledge_brain",
+      "target": "office_brain_index_1_prosedur_aturan_procedures_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/index.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "office_brain_index_ais_os_office_knowledge_brain",
+      "target": "office_brain_index_2_tugas_projek_tasks_projects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/index.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "office_brain_index_ais_os_office_knowledge_brain",
+      "target": "office_brain_index_3_informasi_kantor_office_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/log.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "office_brain_log",
+      "target": "office_brain_log_office_knowledge_base_log",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "office-brain/log.md",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "office_brain_log_office_knowledge_base_log",
+      "target": "office_brain_log_2026_06_17_session_office_knowledge_base_initialized",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "personal_brain_claude",
+      "target": "personal_brain_claude_claude_md_llm_wiki_agent_rules_personal_self_development",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/CLAUDE.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "personal_brain_claude_claude_md_llm_wiki_agent_rules_personal_self_development",
+      "target": "personal_brain_claude_1_core_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/CLAUDE.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "personal_brain_claude_claude_md_llm_wiki_agent_rules_personal_self_development",
+      "target": "personal_brain_claude_2_categories_in_index_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/index.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "personal_brain_index",
+      "target": "personal_brain_index_ais_os_personal_knowledge_brain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/index.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "personal_brain_index_ais_os_personal_knowledge_brain",
+      "target": "personal_brain_index_1_profil_evaluasi_diri_profile_self_assessment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/index.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "personal_brain_index_ais_os_personal_knowledge_brain",
+      "target": "personal_brain_index_2_pengembangan_diri_hobi_self_growth_hobbies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/index.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "personal_brain_index_ais_os_personal_knowledge_brain",
+      "target": "personal_brain_index_3_catatan_harian_journal_thoughts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/log.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "personal_brain_log",
+      "target": "personal_brain_log_personal_knowledge_base_log",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/log.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "personal_brain_log_personal_knowledge_base_log",
+      "target": "personal_brain_log_2026_06_17_ingest_initialized_profile_and_vibe_coding_self_evaluation_page",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/log.md",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "personal_brain_log_personal_knowledge_base_log",
+      "target": "personal_brain_log_2026_06_17_session_personal_knowledge_base_initialized",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "wiki_profil_saya_dan_evaluasi_vibecoding",
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_profil_saya_evaluasi_kemampuan_vibe_coding_ajie_bariandono",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "wiki_profil_saya_dan_evaluasi_vibecoding_profil_saya_evaluasi_kemampuan_vibe_coding_ajie_bariandono",
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_1_profil_singkat_anda_siapa_ajie",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "wiki_profil_saya_dan_evaluasi_vibecoding_profil_saya_evaluasi_kemampuan_vibe_coding_ajie_bariandono",
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_2_seberapa_paham_ai_tentang_anda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "wiki_profil_saya_dan_evaluasi_vibecoding_profil_saya_evaluasi_kemampuan_vibe_coding_ajie_bariandono",
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_3_evaluasi_tingkat_teknis_vibe_coding_anda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "wiki_profil_saya_dan_evaluasi_vibecoding_profil_saya_evaluasi_kemampuan_vibe_coding_ajie_bariandono",
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_4_roadmap_naik_kelas_level_up_ke_advanced_director",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "wiki_profil_saya_dan_evaluasi_vibecoding_3_evaluasi_tingkat_teknis_vibe_coding_anda",
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_kekuatan_anda_apa_yang_sudah_anda_kuasai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "wiki_profil_saya_dan_evaluasi_vibecoding_3_evaluasi_tingkat_teknis_vibe_coding_anda",
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_tantangan_anda_area_yang_perlu_ditingkatkan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "personal-brain/wiki/Profil_Saya_Dan_Evaluasi_Vibecoding.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "wiki_profil_saya_dan_evaluasi_vibecoding_4_roadmap_naik_kelas_level_up_ke_advanced_director",
+      "target": "wiki_profil_saya_dan_evaluasi_vibecoding_panduan_latihan_anda",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -49650,9 +50780,9 @@
       "source_file": "thesis-brain/CLAUDE.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "thesis_brain_claude",
-      "target": "thesis_brain_claude_claude_md_llm_wiki_agent_rules_thesis_research",
-      "confidence_score": 1.0
+      "target": "thesis_brain_claude_claude_md_llm_wiki_agent_rules_thesis_research"
     },
     {
       "relation": "contains",
@@ -49660,9 +50790,9 @@
       "source_file": "thesis-brain/CLAUDE.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "thesis_brain_claude_claude_md_llm_wiki_agent_rules_thesis_research",
-      "target": "thesis_brain_claude_1_core_architecture",
-      "confidence_score": 1.0
+      "target": "thesis_brain_claude_1_core_architecture"
     },
     {
       "relation": "contains",
@@ -49670,9 +50800,9 @@
       "source_file": "thesis-brain/CLAUDE.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "thesis_brain_claude_claude_md_llm_wiki_agent_rules_thesis_research",
-      "target": "thesis_brain_claude_2_file_page_naming_conventions",
-      "confidence_score": 1.0
+      "target": "thesis_brain_claude_2_file_page_naming_conventions"
     },
     {
       "relation": "contains",
@@ -49680,9 +50810,9 @@
       "source_file": "thesis-brain/CLAUDE.md",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "thesis_brain_claude_claude_md_llm_wiki_agent_rules_thesis_research",
-      "target": "thesis_brain_claude_3_categories_in_index_md",
-      "confidence_score": 1.0
+      "target": "thesis_brain_claude_3_categories_in_index_md"
     },
     {
       "relation": "contains",
@@ -49690,9 +50820,9 @@
       "source_file": "thesis-brain/CLAUDE.md",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "thesis_brain_claude_claude_md_llm_wiki_agent_rules_thesis_research",
-      "target": "thesis_brain_claude_4_agent_workflows_prompts",
-      "confidence_score": 1.0
+      "target": "thesis_brain_claude_4_agent_workflows_prompts"
     },
     {
       "relation": "contains",
@@ -49700,9 +50830,9 @@
       "source_file": "thesis-brain/CLAUDE.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "thesis_brain_claude_4_agent_workflows_prompts",
-      "target": "thesis_brain_claude_ingest_mengimpor_data_mentah_dari_raw",
-      "confidence_score": 1.0
+      "target": "thesis_brain_claude_ingest_mengimpor_data_mentah_dari_raw"
     },
     {
       "relation": "contains",
@@ -49710,9 +50840,9 @@
       "source_file": "thesis-brain/CLAUDE.md",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "thesis_brain_claude_4_agent_workflows_prompts",
-      "target": "thesis_brain_claude_lint_audit_pembersihan_konsistensi_data",
-      "confidence_score": 1.0
+      "target": "thesis_brain_claude_lint_audit_pembersihan_konsistensi_data"
     },
     {
       "relation": "contains",
@@ -49720,9 +50850,9 @@
       "source_file": "thesis-brain/index.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "thesis_brain_index",
-      "target": "thesis_brain_index_ais_os_thesis_knowledge_brain",
-      "confidence_score": 1.0
+      "target": "thesis_brain_index_ais_os_thesis_knowledge_brain"
     },
     {
       "relation": "contains",
@@ -49730,9 +50860,9 @@
       "source_file": "thesis-brain/index.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "thesis_brain_index_ais_os_thesis_knowledge_brain",
-      "target": "thesis_brain_index_1_sumber_daya_acuan_sources",
-      "confidence_score": 1.0
+      "target": "thesis_brain_index_1_sumber_daya_acuan_sources"
     },
     {
       "relation": "contains",
@@ -49740,9 +50870,9 @@
       "source_file": "thesis-brain/index.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "thesis_brain_index_ais_os_thesis_knowledge_brain",
-      "target": "thesis_brain_index_2_entitas_utama_entities",
-      "confidence_score": 1.0
+      "target": "thesis_brain_index_2_entitas_utama_entities"
     },
     {
       "relation": "contains",
@@ -49750,9 +50880,9 @@
       "source_file": "thesis-brain/index.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "thesis_brain_index_ais_os_thesis_knowledge_brain",
-      "target": "thesis_brain_index_3_konsep_teori_concepts",
-      "confidence_score": 1.0
+      "target": "thesis_brain_index_3_konsep_teori_concepts"
     },
     {
       "relation": "contains",
@@ -49760,9 +50890,9 @@
       "source_file": "thesis-brain/index.md",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "thesis_brain_index_ais_os_thesis_knowledge_brain",
-      "target": "thesis_brain_index_4_regulasi_kebijakan_regulations",
-      "confidence_score": 1.0
+      "target": "thesis_brain_index_4_regulasi_kebijakan_regulations"
     },
     {
       "relation": "contains",
@@ -49770,9 +50900,9 @@
       "source_file": "thesis-brain/log.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "thesis_brain_log",
-      "target": "thesis_brain_log_operation_history_audit_log",
-      "confidence_score": 1.0
+      "target": "thesis_brain_log_operation_history_audit_log"
     },
     {
       "relation": "contains",
@@ -49780,9 +50910,9 @@
       "source_file": "thesis-brain/raw/aios-intake.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_aios_intake",
-      "target": "raw_aios_intake_ais_os_intake",
-      "confidence_score": 1.0
+      "target": "raw_aios_intake_ais_os_intake"
     },
     {
       "relation": "contains",
@@ -49790,9 +50920,9 @@
       "source_file": "thesis-brain/raw/aios-intake.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_aios_intake_ais_os_intake",
-      "target": "raw_aios_intake_q1_who_are_you_what_do_you_sell_who_do_you_sell_it_to",
-      "confidence_score": 1.0
+      "target": "raw_aios_intake_q1_who_are_you_what_do_you_sell_who_do_you_sell_it_to"
     },
     {
       "relation": "contains",
@@ -49800,9 +50930,9 @@
       "source_file": "thesis-brain/raw/aios-intake.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_aios_intake_ais_os_intake",
-      "target": "raw_aios_intake_q2_paste_1_2_things_you_ve_written_recently_don_t_edit_them",
-      "confidence_score": 1.0
+      "target": "raw_aios_intake_q2_paste_1_2_things_you_ve_written_recently_don_t_edit_them"
     },
     {
       "relation": "contains",
@@ -49810,9 +50940,9 @@
       "source_file": "thesis-brain/raw/aios-intake.md",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_aios_intake_ais_os_intake",
-      "target": "raw_aios_intake_q3_what_are_your_2_3_biggest_priorities_for_the_next_90_days",
-      "confidence_score": 1.0
+      "target": "raw_aios_intake_q3_what_are_your_2_3_biggest_priorities_for_the_next_90_days"
     },
     {
       "relation": "contains",
@@ -49820,9 +50950,9 @@
       "source_file": "thesis-brain/raw/aios-intake.md",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_aios_intake_ais_os_intake",
-      "target": "raw_aios_intake_q4_where_does_revenue_actually_land_and_where_is_it_tracked",
-      "confidence_score": 1.0
+      "target": "raw_aios_intake_q4_where_does_revenue_actually_land_and_where_is_it_tracked"
     },
     {
       "relation": "contains",
@@ -49830,9 +50960,9 @@
       "source_file": "thesis-brain/raw/aios-intake.md",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_aios_intake_ais_os_intake",
-      "target": "raw_aios_intake_q5_where_do_you_talk_to_customers_your_team_and_the_outside_world_day_to_day",
-      "confidence_score": 1.0
+      "target": "raw_aios_intake_q5_where_do_you_talk_to_customers_your_team_and_the_outside_world_day_to_day"
     },
     {
       "relation": "contains",
@@ -49840,9 +50970,9 @@
       "source_file": "thesis-brain/raw/aios-intake.md",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_aios_intake_ais_os_intake",
-      "target": "raw_aios_intake_q6_where_do_meeting_recordings_notes_and_important_docs_live",
-      "confidence_score": 1.0
+      "target": "raw_aios_intake_q6_where_do_meeting_recordings_notes_and_important_docs_live"
     },
     {
       "relation": "contains",
@@ -49850,9 +50980,9 @@
       "source_file": "thesis-brain/raw/aios-intake.md",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_aios_intake_ais_os_intake",
-      "target": "raw_aios_intake_q7_what_s_the_one_task_that_eats_your_week_and_where_do_you_currently_track_work",
-      "confidence_score": 1.0
+      "target": "raw_aios_intake_q7_what_s_the_one_task_that_eats_your_week_and_where_do_you_currently_track_work"
     },
     {
       "relation": "contains",
@@ -49860,9 +50990,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar",
-      "target": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101"
     },
     {
       "relation": "contains",
@@ -49870,9 +51000,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
-      "target": "raw_buku_saku_pajak_dasar_1_ketentuan_umum_tata_cara_perpajakan_kup",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_1_ketentuan_umum_tata_cara_perpajakan_kup"
     },
     {
       "relation": "contains",
@@ -49880,9 +51010,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
-      "target": "raw_buku_saku_pajak_dasar_2_pph_21_metode_ter_tarif_efektif_rata_rata",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_2_pph_21_metode_ter_tarif_efektif_rata_rata"
     },
     {
       "relation": "contains",
@@ -49890,9 +51020,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
-      "target": "raw_buku_saku_pajak_dasar_3_withholding_tax_pph_pemotongan_pemungutan_pihak_ketiga",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_3_withholding_tax_pph_pemotongan_pemungutan_pihak_ketiga"
     },
     {
       "relation": "contains",
@@ -49900,9 +51030,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
-      "target": "raw_buku_saku_pajak_dasar_4_pajak_pertambahan_nilai_ppn",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_4_pajak_pertambahan_nilai_ppn"
     },
     {
       "relation": "contains",
@@ -49910,9 +51040,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
-      "target": "raw_buku_saku_pajak_dasar_5_coretax_system_pmk_1_2026_restrukturisasi_bumn",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_5_coretax_system_pmk_1_2026_restrukturisasi_bumn"
     },
     {
       "relation": "contains",
@@ -49920,9 +51050,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L119",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_buku_saku_perpajakan_dasar_taxation_101",
-      "target": "raw_buku_saku_pajak_dasar_6_cheat_sheets_trik_cepat_mahasiswa",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_6_cheat_sheets_trik_cepat_mahasiswa"
     },
     {
       "relation": "contains",
@@ -49930,9 +51060,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_1_ketentuan_umum_tata_cara_perpajakan_kup",
-      "target": "raw_buku_saku_pajak_dasar_a_tiga_sistem_pemungutan_pajak",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_a_tiga_sistem_pemungutan_pajak"
     },
     {
       "relation": "contains",
@@ -49940,9 +51070,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_1_ketentuan_umum_tata_cara_perpajakan_kup",
-      "target": "raw_buku_saku_pajak_dasar_b_kalender_wajib_pajak_batas_setor_lapor",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_b_kalender_wajib_pajak_batas_setor_lapor"
     },
     {
       "relation": "contains",
@@ -49950,9 +51080,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_2_pph_21_metode_ter_tarif_efektif_rata_rata",
-      "target": "raw_buku_saku_pajak_dasar_a_pengelompokan_kategori_ter_bulanan",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_a_pengelompokan_kategori_ter_bulanan"
     },
     {
       "relation": "contains",
@@ -49960,9 +51090,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_2_pph_21_metode_ter_tarif_efektif_rata_rata",
-      "target": "raw_buku_saku_pajak_dasar_b_rumus_akhir_tahun_masa_pajak_desember",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_b_rumus_akhir_tahun_masa_pajak_desember"
     },
     {
       "relation": "contains",
@@ -49970,9 +51100,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_4_pajak_pertambahan_nilai_ppn",
-      "target": "raw_buku_saku_pajak_dasar_a_formula_pengkreditan_pajak_ppn_masa_bulanan",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_a_formula_pengkreditan_pajak_ppn_masa_bulanan"
     },
     {
       "relation": "contains",
@@ -49980,9 +51110,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_4_pajak_pertambahan_nilai_ppn",
-      "target": "raw_buku_saku_pajak_dasar_b_aturan_ppn_wapu_wajib_pungut",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_b_aturan_ppn_wapu_wajib_pungut"
     },
     {
       "relation": "contains",
@@ -49990,9 +51120,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_6_cheat_sheets_trik_cepat_mahasiswa",
-      "target": "raw_buku_saku_pajak_dasar_a_jembatan_keledai_mengingat_jenis_pph",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_a_jembatan_keledai_mengingat_jenis_pph"
     },
     {
       "relation": "contains",
@@ -50000,9 +51130,9 @@
       "source_file": "thesis-brain/raw/buku_saku_pajak_dasar.md",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_buku_saku_pajak_dasar_6_cheat_sheets_trik_cepat_mahasiswa",
-      "target": "raw_buku_saku_pajak_dasar_b_rumus_ptkp_tahunan_cepat_tk_0_dasar",
-      "confidence_score": 1.0
+      "target": "raw_buku_saku_pajak_dasar_b_rumus_ptkp_tahunan_cepat_tk_0_dasar"
     },
     {
       "relation": "contains",
@@ -50010,9 +51140,9 @@
       "source_file": "thesis-brain/raw/makalah_seminar.md",
       "source_location": "L239",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_makalah_seminar",
-      "target": "raw_makalah_seminar_tabel_1_3_deviasi_halaman_iii_dipa_belanja_modal_rudenim_pontianak_ta_2023_2025",
-      "confidence_score": 1.0
+      "target": "raw_makalah_seminar_tabel_1_3_deviasi_halaman_iii_dipa_belanja_modal_rudenim_pontianak_ta_2023_2025"
     },
     {
       "relation": "contains",
@@ -50020,9 +51150,9 @@
       "source_file": "thesis-brain/raw/makalah_seminar.md",
       "source_location": "L253",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_makalah_seminar",
-      "target": "raw_makalah_seminar_tabel_1_4_bulan_kritis_deviasi_belanja_modal_rudenim_pontianak_ta_2023_2025",
-      "confidence_score": 1.0
+      "target": "raw_makalah_seminar_tabel_1_4_bulan_kritis_deviasi_belanja_modal_rudenim_pontianak_ta_2023_2025"
     },
     {
       "relation": "contains",
@@ -50030,9 +51160,9 @@
       "source_file": "thesis-brain/raw/makalah_seminar.md",
       "source_location": "L267",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "raw_makalah_seminar",
-      "target": "raw_makalah_seminar_tabel_1_5_contoh_paket_belanja_modal_yang_mengalami_pergeseran_realisasi_ta_2023_2025",
-      "confidence_score": 1.0
+      "target": "raw_makalah_seminar_tabel_1_5_contoh_paket_belanja_modal_yang_mengalami_pergeseran_realisasi_ta_2023_2025"
     },
     {
       "relation": "contains",
@@ -50040,9 +51170,9 @@
       "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_analisis_kasus_rudenim_pontianak",
-      "target": "wiki_analisis_kasus_rudenim_pontianak_analisis_kasus_deviasi_anggaran_belanja_modal_rudenim_pontianak_ta_2023_2025",
-      "confidence_score": 1.0
+      "target": "wiki_analisis_kasus_rudenim_pontianak_analisis_kasus_deviasi_anggaran_belanja_modal_rudenim_pontianak_ta_2023_2025"
     },
     {
       "relation": "contains",
@@ -50050,9 +51180,9 @@
       "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_analisis_kasus_rudenim_pontianak_analisis_kasus_deviasi_anggaran_belanja_modal_rudenim_pontianak_ta_2023_2025",
-      "target": "wiki_analisis_kasus_rudenim_pontianak_1_statistik_deviasi_tahunan",
-      "confidence_score": 1.0
+      "target": "wiki_analisis_kasus_rudenim_pontianak_1_statistik_deviasi_tahunan"
     },
     {
       "relation": "contains",
@@ -50060,9 +51190,9 @@
       "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_analisis_kasus_rudenim_pontianak_analisis_kasus_deviasi_anggaran_belanja_modal_rudenim_pontianak_ta_2023_2025",
-      "target": "wiki_analisis_kasus_rudenim_pontianak_2_bulan_bulan_kritis_deviasi_deviasi_100",
-      "confidence_score": 1.0
+      "target": "wiki_analisis_kasus_rudenim_pontianak_2_bulan_bulan_kritis_deviasi_deviasi_100"
     },
     {
       "relation": "contains",
@@ -50070,9 +51200,9 @@
       "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_analisis_kasus_rudenim_pontianak_analisis_kasus_deviasi_anggaran_belanja_modal_rudenim_pontianak_ta_2023_2025",
-      "target": "wiki_analisis_kasus_rudenim_pontianak_3_analisis_paket_pekerjaan_penyebab_pergeseran",
-      "confidence_score": 1.0
+      "target": "wiki_analisis_kasus_rudenim_pontianak_3_analisis_paket_pekerjaan_penyebab_pergeseran"
     },
     {
       "relation": "contains",
@@ -50080,9 +51210,9 @@
       "source_file": "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_analisis_kasus_rudenim_pontianak_1_statistik_deviasi_tahunan",
-      "target": "wiki_analisis_kasus_rudenim_pontianak_analisis_tren",
-      "confidence_score": 1.0
+      "target": "wiki_analisis_kasus_rudenim_pontianak_analisis_tren"
     },
     {
       "relation": "contains",
@@ -50090,9 +51220,9 @@
       "source_file": "thesis-brain/wiki/Coretax_System.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_coretax_system",
-      "target": "wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan",
-      "confidence_score": 1.0
+      "target": "wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan"
     },
     {
       "relation": "contains",
@@ -50100,9 +51230,9 @@
       "source_file": "thesis-brain/wiki/Coretax_System.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_coretax_system_coretax_system_sistem_inti_administrasi_perpajakan",
-      "target": "wiki_coretax_system_dasar_hukum_fitur_utama",
-      "confidence_score": 1.0
+      "target": "wiki_coretax_system_dasar_hukum_fitur_utama"
     },
     {
       "relation": "contains",
@@ -50110,9 +51240,9 @@
       "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_dipa_halaman_iii",
-      "target": "wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
-      "confidence_score": 1.0
+      "target": "wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd"
     },
     {
       "relation": "contains",
@@ -50120,9 +51250,9 @@
       "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
-      "target": "wiki_dipa_halaman_iii_karakteristik_pergeseran_pemutakhiran",
-      "confidence_score": 1.0
+      "target": "wiki_dipa_halaman_iii_karakteristik_pergeseran_pemutakhiran"
     },
     {
       "relation": "contains",
@@ -50130,9 +51260,9 @@
       "source_file": "thesis-brain/wiki/DIPA_Halaman_III.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_dipa_halaman_iii_halaman_iii_dipa_rencana_penarikan_dana_rpd",
-      "target": "wiki_dipa_halaman_iii_peran_strategis_rpd_halaman_iii",
-      "confidence_score": 1.0
+      "target": "wiki_dipa_halaman_iii_peran_strategis_rpd_halaman_iii"
     },
     {
       "relation": "contains",
@@ -50140,9 +51270,9 @@
       "source_file": "thesis-brain/wiki/Deviasi_Anggaran.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_deviasi_anggaran",
-      "target": "wiki_deviasi_anggaran_deviasi_anggaran",
-      "confidence_score": 1.0
+      "target": "wiki_deviasi_anggaran_deviasi_anggaran"
     },
     {
       "relation": "contains",
@@ -50150,9 +51280,9 @@
       "source_file": "thesis-brain/wiki/Deviasi_Anggaran.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_deviasi_anggaran_deviasi_anggaran",
-      "target": "wiki_deviasi_anggaran_signifikansi_dalam_skripsi",
-      "confidence_score": 1.0
+      "target": "wiki_deviasi_anggaran_signifikansi_dalam_skripsi"
     },
     {
       "relation": "contains",
@@ -50160,9 +51290,9 @@
       "source_file": "thesis-brain/wiki/IKPA.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_ikpa",
-      "target": "wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
-      "confidence_score": 1.0
+      "target": "wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa"
     },
     {
       "relation": "contains",
@@ -50170,9 +51300,9 @@
       "source_file": "thesis-brain/wiki/IKPA.md",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
-      "target": "wiki_ikpa_kategori_penilaian_ikpa",
-      "confidence_score": 1.0
+      "target": "wiki_ikpa_kategori_penilaian_ikpa"
     },
     {
       "relation": "contains",
@@ -50180,9 +51310,9 @@
       "source_file": "thesis-brain/wiki/IKPA.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_ikpa_indikator_kinerja_pelaksanaan_anggaran_ikpa",
-      "target": "wiki_ikpa_kerangka_hukum_aspek_penilaian",
-      "confidence_score": 1.0
+      "target": "wiki_ikpa_kerangka_hukum_aspek_penilaian"
     },
     {
       "relation": "contains",
@@ -50190,9 +51320,9 @@
       "source_file": "thesis-brain/wiki/Kemenkumham.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_kemenkumham",
-      "target": "wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham",
-      "confidence_score": 1.0
+      "target": "wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham"
     },
     {
       "relation": "contains",
@@ -50200,9 +51330,9 @@
       "source_file": "thesis-brain/wiki/Kemenkumham.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_kemenkumham_kementerian_hukum_dan_hak_asasi_manusia_kemenkumham",
-      "target": "wiki_kemenkumham_kewajiban_pelaporan_keuangan",
-      "confidence_score": 1.0
+      "target": "wiki_kemenkumham_kewajiban_pelaporan_keuangan"
     },
     {
       "relation": "contains",
@@ -50210,9 +51340,9 @@
       "source_file": "thesis-brain/wiki/PMK_01_2026.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_pmk_01_2026",
-      "target": "wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
-      "confidence_score": 1.0
+      "target": "wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn"
     },
     {
       "relation": "contains",
@@ -50220,9 +51350,9 @@
       "source_file": "thesis-brain/wiki/PMK_01_2026.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
-      "target": "wiki_pmk_01_2026_definisi_bumn_di_era_coretax",
-      "confidence_score": 1.0
+      "target": "wiki_pmk_01_2026_definisi_bumn_di_era_coretax"
     },
     {
       "relation": "contains",
@@ -50230,9 +51360,9 @@
       "source_file": "thesis-brain/wiki/PMK_01_2026.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_pmk_01_2026_pmk_nomor_1_tahun_2026_insentif_pajak_restrukturisasi_bumn",
-      "target": "wiki_pmk_01_2026_insentif_pajak",
-      "confidence_score": 1.0
+      "target": "wiki_pmk_01_2026_insentif_pajak"
     },
     {
       "relation": "contains",
@@ -50240,9 +51370,9 @@
       "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_pph_pasal_21",
-      "target": "wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
-      "confidence_score": 1.0
+      "target": "wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja"
     },
     {
       "relation": "contains",
@@ -50250,9 +51380,9 @@
       "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
-      "target": "wiki_pph_pasal_21_metode_ter_tarif_efektif_rata_rata_bulanan",
-      "confidence_score": 1.0
+      "target": "wiki_pph_pasal_21_metode_ter_tarif_efektif_rata_rata_bulanan"
     },
     {
       "relation": "contains",
@@ -50260,9 +51390,9 @@
       "source_file": "thesis-brain/wiki/PPh_Pasal_21.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_pph_pasal_21_pph_pasal_21_pajak_penghasilan_karyawan_pekerja",
-      "target": "wiki_pph_pasal_21_tarif_progresif_pasal_17_uu_pph_uu_hpp",
-      "confidence_score": 1.0
+      "target": "wiki_pph_pasal_21_tarif_progresif_pasal_17_uu_pph_uu_hpp"
     },
     {
       "relation": "contains",
@@ -50270,9 +51400,9 @@
       "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_pajak_pertambahan_nilai",
-      "target": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
-      "confidence_score": 1.0
+      "target": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn"
     },
     {
       "relation": "contains",
@@ -50280,9 +51410,9 @@
       "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
-      "target": "wiki_pajak_pertambahan_nilai_ketentuan_umum",
-      "confidence_score": 1.0
+      "target": "wiki_pajak_pertambahan_nilai_ketentuan_umum"
     },
     {
       "relation": "contains",
@@ -50290,9 +51420,9 @@
       "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
-      "target": "wiki_pajak_pertambahan_nilai_mekanisme_pengkreditan_ppn",
-      "confidence_score": 1.0
+      "target": "wiki_pajak_pertambahan_nilai_mekanisme_pengkreditan_ppn"
     },
     {
       "relation": "contains",
@@ -50300,9 +51430,9 @@
       "source_file": "thesis-brain/wiki/Pajak_Pertambahan_Nilai.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_pajak_pertambahan_nilai_pajak_pertambahan_nilai_ppn",
-      "target": "wiki_pajak_pertambahan_nilai_ppn_wapu_wajib_pungut",
-      "confidence_score": 1.0
+      "target": "wiki_pajak_pertambahan_nilai_ppn_wapu_wajib_pungut"
     },
     {
       "relation": "contains",
@@ -50310,9 +51440,9 @@
       "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_penghasilan_tidak_kena_pajak",
-      "target": "wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp",
-      "confidence_score": 1.0
+      "target": "wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp"
     },
     {
       "relation": "contains",
@@ -50320,9 +51450,9 @@
       "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_penghasilan_tidak_kena_pajak_penghasilan_tidak_kena_pajak_ptkp",
-      "target": "wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini",
-      "confidence_score": 1.0
+      "target": "wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini"
     },
     {
       "relation": "contains",
@@ -50330,9 +51460,9 @@
       "source_file": "thesis-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_penghasilan_tidak_kena_pajak_tarif_tahunan_ptkp_indonesia_saat_ini",
-      "target": "wiki_penghasilan_tidak_kena_pajak_contoh_perhitungan_cepat",
-      "confidence_score": 1.0
+      "target": "wiki_penghasilan_tidak_kena_pajak_contoh_perhitungan_cepat"
     },
     {
       "relation": "contains",
@@ -50340,9 +51470,9 @@
       "source_file": "thesis-brain/wiki/Rudenim_Pontianak.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_rudenim_pontianak",
-      "target": "wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak",
-      "confidence_score": 1.0
+      "target": "wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak"
     },
     {
       "relation": "contains",
@@ -50350,9 +51480,9 @@
       "source_file": "thesis-brain/wiki/Rudenim_Pontianak.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_rudenim_pontianak_rumah_detensi_imigrasi_pontianak",
-      "target": "wiki_rudenim_pontianak_fungsi_karakteristik",
-      "confidence_score": 1.0
+      "target": "wiki_rudenim_pontianak_fungsi_karakteristik"
     },
     {
       "relation": "contains",
@@ -50360,9 +51490,9 @@
       "source_file": "thesis-brain/wiki/SAKTI.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_sakti",
-      "target": "wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti",
-      "confidence_score": 1.0
+      "target": "wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti"
     },
     {
       "relation": "contains",
@@ -50370,9 +51500,9 @@
       "source_file": "thesis-brain/wiki/SAKTI.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_sakti_sistem_aplikasi_keuangan_tingkat_instansi_sakti",
-      "target": "wiki_sakti_modul_kegunaan",
-      "confidence_score": 1.0
+      "target": "wiki_sakti_modul_kegunaan"
     },
     {
       "relation": "contains",
@@ -50380,9 +51510,9 @@
       "source_file": "thesis-brain/wiki/Source_AIOS_Intake.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_source_aios_intake",
-      "target": "wiki_source_aios_intake_sumber_ais_os_intake",
-      "confidence_score": 1.0
+      "target": "wiki_source_aios_intake_sumber_ais_os_intake"
     },
     {
       "relation": "contains",
@@ -50390,9 +51520,9 @@
       "source_file": "thesis-brain/wiki/Source_AIOS_Intake.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_source_aios_intake_sumber_ais_os_intake",
-      "target": "wiki_source_aios_intake_rangkuman_isi",
-      "confidence_score": 1.0
+      "target": "wiki_source_aios_intake_rangkuman_isi"
     },
     {
       "relation": "contains",
@@ -50400,9 +51530,9 @@
       "source_file": "thesis-brain/wiki/Source_Buku_Saku_Pajak_Dasar.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_source_buku_saku_pajak_dasar",
-      "target": "wiki_source_buku_saku_pajak_dasar_sumber_buku_saku_perpajakan_dasar_taxation_101",
-      "confidence_score": 1.0
+      "target": "wiki_source_buku_saku_pajak_dasar_sumber_buku_saku_perpajakan_dasar_taxation_101"
     },
     {
       "relation": "contains",
@@ -50410,9 +51540,9 @@
       "source_file": "thesis-brain/wiki/Source_Buku_Saku_Pajak_Dasar.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_source_buku_saku_pajak_dasar_sumber_buku_saku_perpajakan_dasar_taxation_101",
-      "target": "wiki_source_buku_saku_pajak_dasar_cakupan_utama",
-      "confidence_score": 1.0
+      "target": "wiki_source_buku_saku_pajak_dasar_cakupan_utama"
     },
     {
       "relation": "contains",
@@ -50420,9 +51550,9 @@
       "source_file": "thesis-brain/wiki/Source_Makalah_Seminar.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_source_makalah_seminar",
-      "target": "wiki_source_makalah_seminar_sumber_makalah_seminar_akuntansi_ajie_bariandono",
-      "confidence_score": 1.0
+      "target": "wiki_source_makalah_seminar_sumber_makalah_seminar_akuntansi_ajie_bariandono"
     },
     {
       "relation": "contains",
@@ -50430,9 +51560,9 @@
       "source_file": "thesis-brain/wiki/Source_Makalah_Seminar.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_source_makalah_seminar_sumber_makalah_seminar_akuntansi_ajie_bariandono",
-      "target": "wiki_source_makalah_seminar_rangkuman_penelitian",
-      "confidence_score": 1.0
+      "target": "wiki_source_makalah_seminar_rangkuman_penelitian"
     },
     {
       "relation": "contains",
@@ -50440,9 +51570,9 @@
       "source_file": "thesis-brain/wiki/Standar_Akuntansi_Pemerintah.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_standar_akuntansi_pemerintah",
-      "target": "wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap",
-      "confidence_score": 1.0
+      "target": "wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap"
     },
     {
       "relation": "contains",
@@ -50450,9 +51580,9 @@
       "source_file": "thesis-brain/wiki/Standar_Akuntansi_Pemerintah.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_standar_akuntansi_pemerintah_standar_akuntansi_pemerintah_sap",
-      "target": "wiki_standar_akuntansi_pemerintah_landasan_hukum",
-      "confidence_score": 1.0
+      "target": "wiki_standar_akuntansi_pemerintah_landasan_hukum"
     },
     {
       "relation": "contains",
@@ -50460,9 +51590,9 @@
       "source_file": "thesis-brain/wiki/Teori_Keagenan.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_teori_keagenan",
-      "target": "wiki_teori_keagenan_teori_keagenan_agency_theory",
-      "confidence_score": 1.0
+      "target": "wiki_teori_keagenan_teori_keagenan_agency_theory"
     },
     {
       "relation": "contains",
@@ -50470,9 +51600,9 @@
       "source_file": "thesis-brain/wiki/Teori_Keagenan.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_teori_keagenan_teori_keagenan_agency_theory",
-      "target": "wiki_teori_keagenan_penerapan_dalam_skripsi_rudenim_pontianak",
-      "confidence_score": 1.0
+      "target": "wiki_teori_keagenan_penerapan_dalam_skripsi_rudenim_pontianak"
     },
     {
       "relation": "contains",
@@ -50480,9 +51610,9 @@
       "source_file": "thesis-brain/wiki/Teori_Keagenan.md",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_teori_keagenan_penerapan_dalam_skripsi_rudenim_pontianak",
-      "target": "wiki_teori_keagenan_1_bun_djpb_sebagai_prinsipal_satker_sebagai_agen",
-      "confidence_score": 1.0
+      "target": "wiki_teori_keagenan_1_bun_djpb_sebagai_prinsipal_satker_sebagai_agen"
     },
     {
       "relation": "contains",
@@ -50490,9 +51620,9 @@
       "source_file": "thesis-brain/wiki/Teori_Keagenan.md",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_teori_keagenan_penerapan_dalam_skripsi_rudenim_pontianak",
-      "target": "wiki_teori_keagenan_2_satker_sebagai_prinsipal_penyedia_kontraktor_sebagai_agen",
-      "confidence_score": 1.0
+      "target": "wiki_teori_keagenan_2_satker_sebagai_prinsipal_penyedia_kontraktor_sebagai_agen"
     },
     {
       "relation": "contains",
@@ -50500,9 +51630,9 @@
       "source_file": "thesis-brain/wiki/Withholding_Tax.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_withholding_tax",
-      "target": "wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga",
-      "confidence_score": 1.0
+      "target": "wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga"
     },
     {
       "relation": "contains",
@@ -50510,9 +51640,9 @@
       "source_file": "thesis-brain/wiki/Withholding_Tax.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "wiki_withholding_tax_withholding_tax_pemotongan_pemungutan_pajak_pihak_ketiga",
-      "target": "wiki_withholding_tax_jenis_jenis_withholding_tax_pph_di_indonesia",
-      "confidence_score": 1.0
+      "target": "wiki_withholding_tax_jenis_jenis_withholding_tax_pph_di_indonesia"
     },
     {
       "relation": "has_field",
@@ -60804,5 +61934,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "63c1947c59364e044ed0123d346349d3421233bf"
+  "built_at_commit": "4fa70a7061f06ab302a7f84500c13e15652afc71"
 }
