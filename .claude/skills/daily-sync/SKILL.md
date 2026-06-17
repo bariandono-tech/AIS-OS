@@ -24,24 +24,16 @@ daily-sync
 2. Scan the `projects/` directory or look at `git status` to see which projects were modified today (e.g., `studios`, `jasa-ppt-akuntansi`, or `thesis-brain`).
 
 ### Step 2: Update the Sync Script Target Date
-Since the sync scripts in `scripts/notion/` have hardcoded dates, the AI must automatically update the `TARGET_DATE` and `TARGET_DATE_LABEL` variables in the relevant script before running it:
+The AI must automatically update the `TARGET_DATE` and `TARGET_DATE_LABEL` variables in the `scripts/notion/sync_to_tasks.js` script before running it:
 
-*   For **Studios** project:
-    *   Target script: `scripts/notion/sync_studios_worklog.js`
-    *   Change `TARGET_DATE` to today's date (e.g., `'2026-06-17'`) and `TARGET_DATE_LABEL` (e.g., `'17 Juni 2026'`).
-*   For **Jasa PPT Akuntansi** or other projects:
-    *   Target script: `scripts/notion/sync_worklog_today.js`
-    *   Change `TARGET_DATE` and `TARGET_DATE_LABEL` similarly.
+*   Target script: `scripts/notion/sync_to_tasks.js`
+*   Change `TARGET_DATE` to today's date (e.g., `'2026-06-17'`) and `TARGET_DATE_LABEL` (e.g., `'17 Juni 2026'`).
 
-### Step 3: Run the Sync Script
-Execute the script using Node.js:
+### Step 3: Run the Sync Script (Target: Tasks Database)
+Execute the script using Node.js to create a task page under the `daily-sync` project:
 
 ```bash
-# If syncing Studios
-node scripts/notion/sync_studios_worklog.js
-
-# If syncing Jasa PPT / others
-node scripts/notion/sync_worklog_today.js
+node scripts/notion/sync_to_tasks.js
 ```
 
 Ensure that your `scripts/notion/.env` contains a valid `NOTION_TOKEN` (which is gitignored but present locally).
