@@ -79,13 +79,13 @@ def ask_gemini(user_message: str, chat_history: list = None) -> tuple:
     max_iterations = 8
     for i in range(max_iterations):
         response = None
-        max_retries = 3
-        delay = 2
+        max_retries = 5
+        delay = 3
         
         for attempt in range(max_retries):
             try:
                 response = client.models.generate_content(
-                    model='gemini-2.5-flash',
+                    model='gemini-2.0-flash',
                     contents=contents,
                     config=types.GenerateContentConfig(
                         tools=tools_list,
@@ -95,13 +95,19 @@ def ask_gemini(user_message: str, chat_history: list = None) -> tuple:
                 break  # Berhasil, keluar dari loop retry
             except Exception as e:
                 error_str = str(e).lower()
-                # Jika error 503, Service Unavailable, Overloaded, atau batas limit tercapai, coba lagi
-                if attempt < max_retries - 1 and any(msg in error_str for msg in ["503", "service unavailable", "overloaded", "resource_exhausted", "rate limit"]):
-                    print(f"[AI Agent] Gemini API 503/Overloaded. Menunggu {delay} detik sebelum mencoba lagi (Percobaan {attempt + 1}/{max_retries})...")
+                print(f"[AI Agent] Percobaan {attempt + 1} gagal. Error: {e}")
+                
+                # Jika error 503 (sibuk), 429 (rate limit), atau limit kuota tercapai, tunggu dan coba lagi
+                is_transient = any(msg in error_str for msg in [
+                    "503", "429", "service unavailable", "overloaded", 
+                    "resource_exhausted", "rate limit", "too many requests", "quota"
+                ])
+                if attempt < max_retries - 1 and is_transient:
+                    print(f"[AI Agent] API sibuk/rate-limit (429/503). Menunggu {delay} detik sebelum mencoba kembali...")
                     time.sleep(delay)
                     delay *= 2  # Exponential backoff
                 else:
-                    print(f"[AI Agent] Gemini API Error: {e}")
+                    print(f"[AI Agent] Gemini API Critical Error: {e}")
                     return "Maaf, koneksi ke sistem AI sedang sibuk atau mengalami gangguan. Silakan coba lagi nanti.", contents
             
         # Tambahkan respon model ke riwayat konten
