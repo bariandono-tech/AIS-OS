@@ -11,6 +11,7 @@ Selamat datang di AI Second Brain Anda. Indeks ini dikelola secara otomatis oleh
 *   [[Source_AIOS_Intake]] - Profil pengguna, prioritas 90 hari, dan latar belakang instansi.
 *   [[Source_Buku_Saku_Pajak_Dasar]] - Ringkasan ketentuan KUP, PPh, PPN, dan modernisasi Coretax.
 *   [[Source_Makalah_Seminar]] - Draf naskah skripsi Ajie Bariandono mengenai evaluasi DIPA belanja modal.
+*   [[Source_Makalah_SIM]] - Makalah tugas kuliah Sistem Informasi Manajemen: Analisis Struktur Organisasi, SIMKIM, dan SOP Rudenim Pontianak.
 
 ---
 
@@ -26,6 +27,9 @@ Selamat datang di AI Second Brain Anda. Indeks ini dikelola secara otomatis oleh
 *Definisi teori, fenomena, metode penelitian, dan analisis data.*
 
 *   [[Teori_Keagenan]] - Lensa analitis skripsi (*Agency Theory* Berlapis).
+*   [[Leavitt_Diamond_Model]] - Kerangka analisis organisasi 4 elemen (Structure, Task, Technology, People).
+*   [[SIMKIM]] - Sistem Informasi Manajemen Keimigrasian nasional (database terpusat Ditjenim).
+*   [[DeLone_McLean_Model]] - Kerangka evaluasi Kesuksesan Sistem Informasi Manajemen Keuangan.
 *   [[Deviasi_Anggaran]] - Variabel utama penelitian (selisih RPD vs Realisasi).
 *   [[Analisis_Kasus_Rudenim_Pontianak]] - Statistik deviasi bulanan satker dan paket pekerjaan kritis.
 *   [[IKPA]] - Indikator Kinerja Pelaksanaan Anggaran (PMK 62/2023 & PER-5/PB/2024).

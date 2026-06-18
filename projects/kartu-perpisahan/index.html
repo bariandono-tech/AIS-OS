@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Perpisahan - Putri Dwi Maulidya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Patrick+Hand&family=Kalam:wght@300;400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #5c4a3a;
+            background-image: 
+                url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23705a48' fill-opacity='0.25'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            font-family: 'Kalam', cursive;
+            padding: 20px;
+        }
+
+        /* Cork board texture feel */
+        .board {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: 
+                radial-gradient(ellipse at 20% 50%, rgba(139,109,82,0.3) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(139,109,82,0.2) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 80%, rgba(100,75,55,0.2) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .card-wrapper {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+
+        /* Tape pieces */
+        .tape {
+            position: absolute;
+            width: 120px;
+            height: 32px;
+            background: rgba(255, 235, 155, 0.55);
+            border: 1px solid rgba(200, 180, 100, 0.3);
+            z-index: 20;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .tape-top-left {
+            top: -14px;
+            left: 30px;
+            transform: rotate(-18deg);
+        }
+
+        .tape-top-right {
+            top: -10px;
+            right: 35px;
+            transform: rotate(12deg);
+        }
+
+        /* The notepad card */
+        .card {
+            width: 680px;
+            max-width: 94vw;
+            background: #fef9e7;
+            border-radius: 4px;
+            box-shadow:
+                2px 3px 12px rgba(0,0,0,0.25),
+                0 0 0 1px rgba(180,160,100,0.2),
+                inset 0 0 60px rgba(200,180,100,0.08);
+            position: relative;
+            transform: rotate(-0.8deg);
+            animation: noteDown 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+            opacity: 0;
+        }
+
+        @keyframes noteDown {
+            from {
+                opacity: 0;
+                transform: rotate(-0.8deg) translateY(-30px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: rotate(-0.8deg) translateY(0) scale(1);
+            }
+        }
+
+        /* Notebook spiral holes */
+        .spiral-holes {
+            position: absolute;
+            left: 50px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            border-left: 2px solid rgba(200,170,120,0.25);
+        }
+
+        /* Red margin line */
+        .margin-line {
+            position: absolute;
+            left: 68px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: rgba(220, 80, 80, 0.2);
+        }
+
+        .card-inner {
+            padding: 45px 45px 40px 85px;
+            position: relative;
+            /* Lined paper effect */
+            background-image: repeating-linear-gradient(
+                to bottom,
+                transparent,
+                transparent 31px,
+                rgba(180, 160, 120, 0.18) 31px,
+                rgba(180, 160, 120, 0.18) 32px
+            );
+            background-position: 0 20px;
+        }
+
+        /* Sticker / emoji decorations */
+        .sticker {
+            position: absolute;
+            font-size: 2rem;
+            animation: stickerPop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+            opacity: 0;
+            filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.15));
+        }
+
+        @keyframes stickerPop {
+            from {
+                opacity: 0;
+                transform: scale(0) rotate(-20deg);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) rotate(var(--rot, 0deg));
+            }
+        }
+
+        .sticker-1 { top: 15px; right: 25px; --rot: 12deg; animation-delay: 0.8s; font-size: 2.5rem; }
+        .sticker-2 { bottom: 25px; right: 30px; --rot: -8deg; animation-delay: 1s; }
+        .sticker-3 { bottom: 20px; left: 15px; --rot: 15deg; animation-delay: 1.2s; }
+        .sticker-4 { top: 55px; left: 12px; --rot: -5deg; animation-delay: 1.4s; font-size: 1.5rem; }
+        .sticker-5 { top: 50%; right: 15px; --rot: 6deg; animation-delay: 1.6s; font-size: 1.5rem; }
+
+        /* Header */
+        .header {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-family: 'Caveat', cursive;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #5a4a2f;
+            line-height: 1.2;
+            animation: writeIn 0.8s 0.3s ease forwards;
+            opacity: 0;
+        }
+
+        .header h1 .emoji-wave {
+            display: inline-block;
+            animation: wave 1.5s 1.5s ease-in-out infinite;
+            transform-origin: 70% 70%;
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(20deg); }
+            75% { transform: rotate(-10deg); }
+        }
+
+        @keyframes writeIn {
+            from {
+                opacity: 0;
+                transform: translateX(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .sub-header {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.15rem;
+            color: #9a8560;
+            margin-top: 2px;
+            animation: writeIn 0.8s 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        /* Doodle divider */
+        .doodle-divider {
+            margin: 18px 0;
+            text-align: center;
+            font-size: 1.1rem;
+            color: #c9a96e;
+            letter-spacing: 4px;
+            animation: writeIn 0.8s 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        /* Name */
+        .name-area {
+            margin: 22px 0;
+            animation: writeIn 0.8s 0.7s ease forwards;
+            opacity: 0;
+        }
+
+        .untuk {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.1rem;
+            color: #a08d6d;
+            margin-bottom: 2px;
+        }
+
+        .name {
+            font-family: 'Caveat', cursive;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #d4761a;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Hand-drawn underline */
+        .name::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: rgba(245, 195, 68, 0.35);
+            border-radius: 4px;
+            transform: skewX(-5deg);
+        }
+
+        .tim-badge {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 3px 14px;
+            background: rgba(212, 118, 26, 0.1);
+            border: 1.5px dashed #d4a44a;
+            border-radius: 6px;
+            font-family: 'Patrick Hand', cursive;
+            font-size: 0.95rem;
+            color: #b08930;
+        }
+
+        /* Message */
+        .message {
+            margin: 24px 0;
+            animation: writeIn 0.8s 0.9s ease forwards;
+            opacity: 0;
+        }
+
+        .message p {
+            font-family: 'Kalam', cursive;
+            font-size: 1.08rem;
+            line-height: 2;
+            color: #5a4a2f;
+            margin-bottom: 12px;
+        }
+
+        .message .coret {
+            text-decoration: line-through;
+            color: #b0a080;
+            font-size: 0.95rem;
+        }
+
+        .message .tambah {
+            color: #2a7d4f;
+            font-weight: 700;
+        }
+
+        .message .highlight-marker {
+            background: linear-gradient(to top, rgba(255, 230, 80, 0.45) 40%, transparent 40%);
+            padding: 0 2px;
+        }
+
+        /* Wishes as checklist */
+        .checklist {
+            margin: 20px 0;
+            list-style: none;
+            animation: writeIn 0.8s 1.1s ease forwards;
+            opacity: 0;
+        }
+
+        .checklist li {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.12rem;
+            color: #5a4a2f;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #c9a96e;
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            color: #2a7d4f;
+            flex-shrink: 0;
+            transition: all 0.3s ease;
+        }
+
+        .checklist li:hover .checkbox {
+            background: rgba(42, 125, 79, 0.1);
+            border-color: #2a7d4f;
+        }
+
+        /* PS note */
+        .ps-note {
+            margin-top: 22px;
+            padding: 14px 18px;
+            background: rgba(255, 230, 130, 0.3);
+            border-radius: 3px;
+            transform: rotate(0.5deg);
+            border-left: 3px solid #e8c84a;
+            animation: writeIn 0.8s 1.3s ease forwards;
+            opacity: 0;
+        }
+
+        .ps-note p {
+            font-family: 'Kalam', cursive;
+            font-size: 0.95rem;
+            color: #7a6a3f;
+            line-height: 1.7;
+        }
+
+        .ps-label {
+            font-weight: 700;
+            color: #d4761a;
+        }
+
+        /* Sticky notes section */
+        .sticky-notes-section {
+            width: 680px;
+            max-width: 94vw;
+            animation: noteDown 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s forwards;
+            opacity: 0;
+        }
+        
+        .sticky-notes-title {
+            font-family: 'Caveat', cursive;
+            font-size: 2.2rem;
+            color: #fef9e7;
+            text-align: center;
+            margin-bottom: 20px;
+            text-shadow: 1px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .sticky-notes-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .sticky-notes-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .sticky-note {
+            background: #fff;
+            padding: 20px;
+            min-height: 140px;
+            box-shadow: 3px 5px 10px rgba(0,0,0,0.25);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+
+        .sticky-note:hover {
+            transform: scale(1.05) rotate(0deg) !important;
+            box-shadow: 5px 10px 15px rgba(0,0,0,0.3);
+            z-index: 15;
+        }
+
+        /* Sticky note pastel colors */
+        .note-yellow { background: #fffde7; border-top: 4px solid #fff59d; transform: rotate(-2deg); }
+        .note-blue { background: #e3f2fd; border-top: 4px solid #90caf9; transform: rotate(1.5deg); }
+        .note-pink { background: #fce4ec; border-top: 4px solid #f48fb1; transform: rotate(-1.5deg); }
+        .note-green { background: #e8f5e9; border-top: 4px solid #a5d6a7; transform: rotate(2deg); }
+        .note-purple { background: #f3e5f5; border-top: 4px solid #ce93d8; transform: rotate(-1.5deg); }
+
+        /* Tiny tape for sticky notes */
+        .tiny-tape {
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-5deg);
+            width: 60px;
+            height: 20px;
+            background: rgba(255, 235, 155, 0.45);
+            border: 1px solid rgba(200, 180, 100, 0.25);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .note-text {
+            font-family: 'Kalam', cursive;
+            font-size: 0.95rem;
+            color: #4a3c31;
+            line-height: 1.6;
+        }
+
+        .note-from {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.05rem;
+            text-align: right;
+            color: #7c685c;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 28px;
+            text-align: right;
+            animation: writeIn 0.8s 1.5s ease forwards;
+            opacity: 0;
+        }
+
+        .footer .salam {
+            font-family: 'Caveat', cursive;
+            font-size: 1.5rem;
+            color: #5a4a2f;
+        }
+
+        .footer .from {
+            font-family: 'Patrick Hand', cursive;
+            font-size: 1.05rem;
+            color: #9a8560;
+            margin-top: 2px;
+        }
+
+        .footer .date {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.72rem;
+            color: #b8a880;
+            margin-top: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Coffee stain */
+        .coffee-stain {
+            position: absolute;
+            bottom: 50px;
+            right: -15px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid rgba(160, 120, 70, 0.08);
+            background: radial-gradient(circle, rgba(160, 120, 70, 0.04) 0%, transparent 70%);
+            transform: rotate(15deg);
+            pointer-events: none;
+        }
+
+        /* Paper fold corner */
+        .paper-fold {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 40px 40px;
+            border-color: transparent transparent #5c4a3a transparent;
+            z-index: 5;
+        }
+
+        .paper-fold-inner {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 38px 38px;
+            border-color: transparent transparent #f0e4c4 transparent;
+            z-index: 6;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .card-inner {
+                padding: 35px 25px 35px 70px;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+            .name {
+                font-size: 1.8rem;
+            }
+            .spiral-holes {
+                left: 40px;
+            }
+            .margin-line {
+                left: 55px;
+            }
+            .sticker { font-size: 1.5rem; }
+            .sticker-1 { font-size: 1.8rem; }
+        }
+
+        @media print {
+            body { background: white; }
+            .board { display: none; }
+            .card { box-shadow: none; transform: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="board"></div>
+
+    <div class="card-wrapper">
+        <!-- Tape -->
+        <div class="tape tape-top-left"></div>
+        <div class="tape tape-top-right"></div>
+
+        <div class="card">
+            <div class="spiral-holes"></div>
+            <div class="margin-line"></div>
+
+            <!-- Stickers -->
+            <div class="sticker sticker-1">🌻</div>
+            <div class="sticker sticker-2">💛</div>
+            <div class="sticker sticker-3">🌼</div>
+            <div class="sticker sticker-4">⭐</div>
+            <div class="sticker sticker-5">🦋</div>
+
+            <!-- Coffee stain -->
+            <div class="coffee-stain"></div>
+
+            <!-- Paper fold -->
+            <div class="paper-fold"></div>
+            <div class="paper-fold-inner"></div>
+
+            <div class="card-inner">
+
+                <!-- Header -->
+                <div class="header">
+                    <h1>Bye-bye, Putri~! <span class="emoji-wave">👋</span></h1>
+                    <div class="sub-header">Karena setiap perpisahan berarti ada cerita baru yang menanti...</div>
+                </div>
+
+                <div class="doodle-divider">~ ✿ ~ ✿ ~ ✿ ~</div>
+
+                <!-- Name -->
+                <div class="name-area">
+                    <div class="untuk">Buat yang tersayang:</div>
+                    <div class="name">Putri Dwi Maulidya</div>
+                    <br>
+                    <div class="tim-badge">📎 Tim Keuangan — Rudenim Pontianak</div>
+                </div>
+
+                <!-- Message -->
+                <div class="message">
+                    <p>
+                        Putri, gak kerasa ya udah mau pindah aja 😭 
+                        <span class="coret">kantor bakal sepi nih</span> 
+                        — eh, <span class="tambah">pasti bakal sepi!</span>
+                    </p>
+                    <p>
+                        Makasih banyak buat 
+                        <span class="highlight-marker">semua kebersamaan, canda tawa, dan kerja keras bareng-bareng</span> 
+                        selama di Tim Keuangan. 
+                        Kamu tuh orangnya asik, rajin, dan selalu bikin suasana kerja jadi lebih hidup. 💛
+                    </p>
+                    <p>
+                        Di tempat baru nanti, semoga makin keren, makin sukses, 
+                        dan jangan lupa teman-teman di Pontianak ya! 
+                        Kita doain yang terbaik buat kamu. 🤗
+                    </p>
+                </div>
+
+                <!-- Checklist wishes -->
+                <ul class="checklist">
+                    <li><span class="checkbox">✓</span> Sukses di tempat baru</li>
+                    <li><span class="checkbox">✓</span> Sehat selalu</li>
+                    <li><span class="checkbox">✓</span> Dapat teman-teman yang baik</li>
+                    <li><span class="checkbox">✓</span> Jangan lupa kita ya! 😄</li>
+                </ul>
+
+                <!-- PS -->
+                <div class="ps-note">
+                    <p>
+                        <span class="ps-label">P.S.</span> — Kalau kangen, tinggal video call aja ya. 
+                        Pintu Rudenim Pontianak selalu terbuka buat kamu! 🚪✨
+                    </p>
+                </div>
+
+                <!-- Footer -->
+                <div class="footer">
+                    <div class="salam">Dengan sayang,</div>
+                    <div class="from">Teman-teman Tim Keuangan 💕<br>Rudenim Pontianak</div>
+                    <div class="date">Juni 2026</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Sticky Notes Section -->
+        <div class="sticky-notes-section">
+            <h2 class="sticky-notes-title">✏️ Pesan & Kesan Teman-Teman</h2>
+            <div class="sticky-notes-grid">
+                <!-- Pak Kaur -->
+                <div class="sticky-note note-yellow">
+                    <div class="tiny-tape"></div>
+                    <div class="note-text">"Sukses selalu di tempat tugas yang baru, dek Putri. Terima kasih atas kerja keras, dedikasi, dan loyalitasnya selama di Tim Keuangan Rudenim Pontianak."</div>
+                    <div class="note-from">— Pak Kaur</div>
+                </div>
+
+                <!-- Iqbal -->
+                <div class="sticky-note note-blue">
+                    <div class="tiny-tape"></div>
+                    <div class="note-text">"Sukses terus di UPT baru Putri! Makasih ya bantuan dan kerjasamanya selama ini. Jangan lupa bahagia dan tetep ceria!"</div>
+                    <div class="note-from">— Iqbal</div>
+                </div>
+
+                <!-- Agus Dinaria -->
+                <div class="sticky-note note-pink">
+                    <div class="tiny-tape"></div>
+                    <div class="note-text">"Selamat bertugas di tempat baru Putri. Sukses selalu karirnya, makin berprestasi, dan sehat selalu di sana."</div>
+                    <div class="note-from">— Agus Dinaria</div>
+                </div>
+
+                <!-- Agung -->
+                <div class="sticky-note note-green">
+                    <div class="tiny-tape"></div>
+                    <div class="note-text">"Selamat bermutasi dan memulai petualangan baru Putri! Semoga dilancarkan semua urusannya di UPT yang baru."</div>
+                    <div class="note-from">— Agung</div>
+                </div>
+
+                <!-- Ajie -->
+                <div class="sticky-note note-purple">
+                    <div class="tiny-tape"></div>
+                    <div class="note-text">"Tetap semangat dalam bekerja, dan selalu menjaga silaturahmi."</div>
+                    <div class="note-from">— Ajie</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Interactive checkboxes
+        document.querySelectorAll('.checklist li').forEach(li => {
+            li.style.cursor = 'pointer';
+            li.addEventListener('click', () => {
+                const cb = li.querySelector('.checkbox');
+                if (cb.textContent === '✓') {
+                    cb.textContent = '';
+                    cb.style.background = 'transparent';
+                    cb.style.borderColor = '#c9a96e';
+                } else {
+                    cb.textContent = '✓';
+                    cb.style.background = 'rgba(42, 125, 79, 0.1)';
+                    cb.style.borderColor = '#2a7d4f';
+                }
+            });
+        });
+
+        // Subtle paper float animation
+        const card = document.querySelector('.card');
+        let time = 0;
+        function paperFloat() {
+            time += 0.015;
+            const y = Math.sin(time) * 2;
+            const rot = -0.8 + Math.sin(time * 0.7) * 0.3;
+            card.style.transform = `rotate(${rot}deg) translateY(${y}px)`;
+            requestAnimationFrame(paperFloat);
+        }
+        setTimeout(paperFloat, 800);
+    </script>
+</body>
+</html>

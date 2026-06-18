@@ -625,8 +625,8 @@
     "semantic_hash": "99a0c1db08b7a22f93fbbd99e249d868"
   },
   "MEMORY.md": {
-    "mtime": 1781666517.2438924,
-    "ast_hash": "3877d32b5607ae27934cb0d6a9944485",
+    "mtime": 1781789247.248282,
+    "ast_hash": "8b9353e12829e135301a06122375d6fc",
     "semantic_hash": ""
   },
   "README.md": {
@@ -1180,13 +1180,13 @@
     "semantic_hash": ""
   },
   "thesis-brain/index.md": {
-    "mtime": 1781664929.0520077,
-    "ast_hash": "b7601568b7e3a493a8f964f15b62f4fe",
+    "mtime": 1781752012.0764623,
+    "ast_hash": "75a4ade3c34adf44edb4bd7c9973b33e",
     "semantic_hash": ""
   },
   "thesis-brain/log.md": {
-    "mtime": 1781664938.0841112,
-    "ast_hash": "a16bfcee64d497f8b6b0eb4859292018",
+    "mtime": 1781752014.0930326,
+    "ast_hash": "85de3c02584ce150cd03ee6a432145ee",
     "semantic_hash": ""
   },
   "thesis-brain/raw/aios-intake.md": {
@@ -1260,8 +1260,8 @@
     "semantic_hash": ""
   },
   "thesis-brain/wiki/SAKTI.md": {
-    "mtime": 1781664728.8365746,
-    "ast_hash": "28a4eae7aaed7069e071c6e5f39f4b36",
+    "mtime": 1781681358.1090407,
+    "ast_hash": "841930833705f009c99c819f7c6e1324",
     "semantic_hash": ""
   },
   "thesis-brain/wiki/Source_AIOS_Intake.md": {
@@ -1320,8 +1320,8 @@
     "semantic_hash": ""
   },
   "office-brain/index.md": {
-    "mtime": 1781674431.3158877,
-    "ast_hash": "cfb55d8f7565e65777990565a87724d5",
+    "mtime": 1781777737.5217063,
+    "ast_hash": "1c97d05b09b5d2abfee73fd3c9c15c1d",
     "semantic_hash": ""
   },
   "office-brain/log.md": {
@@ -1457,6 +1457,181 @@
   "office-brain/wiki/Withholding_Tax.md": {
     "mtime": 1781664779.337217,
     "ast_hash": "1ee2130ab987dc6fe2465d41760aba58",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/build_makalah_sim.js": {
+    "mtime": 1781789004.6221864,
+    "ast_hash": "776fe5ad53019dcfbbd027f863833345",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/draw_diagram_sim.py": {
+    "mtime": 1781788966.4830084,
+    "ast_hash": "d9999d1eb5a7e8a2195d78bcf0838b88",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/package.json": {
+    "mtime": 1781677364.221149,
+    "ast_hash": "45fb5a28a83185fa3d370b966909a4a0",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/prd.md": {
+    "mtime": 1781751497.0977142,
+    "ast_hash": "98df67b1f88d9347ace47228523aeb0f",
+    "semantic_hash": ""
+  },
+  "thesis-brain/raw/makalah_sim.md": {
+    "mtime": 1781756166.9847162,
+    "ast_hash": "321306331d6ddf55d98555349547c389",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/DeLone_McLean_Model.md": {
+    "mtime": 1781681353.012621,
+    "ast_hash": "cc2820710312e3ce81782ce412b6b9fe",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Source_Makalah_SIM.md": {
+    "mtime": 1781756192.4968452,
+    "ast_hash": "f0b4e9a27528eb94f6899983d23775cc",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/kerangka_penelitian_sim.png": {
+    "mtime": 1781749312.8740363,
+    "ast_hash": "2864724a4eb3bd87d1eb48d31c2163c3",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/draw_flowcharts.py": {
+    "mtime": 1781788986.462884,
+    "ast_hash": "58021199c99eb194c6332befc78f0888",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/draw_struktur.py": {
+    "mtime": 1781782157.3400826,
+    "ast_hash": "4cf0de8beb2541b106b02845698c5514",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/makalah_sim.md": {
+    "mtime": 1781749468.7944765,
+    "ast_hash": "1a4226439c78b24523f837cfaafb9b02",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/flowchart_lifecycle_deteni.png": {
+    "mtime": 1781788992.1078799,
+    "ast_hash": "6011bd81fa4b95fc716f99c9e300959b",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/struktur_organisasi_rudenim.png": {
+    "mtime": 1781787184.9117985,
+    "ast_hash": "2612d7e1ec0cd7a831b3a5d078973e3c",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/SOP_Pemeriksaan_Kesehatan.md": {
+    "mtime": 1781787064.4085739,
+    "ast_hash": "1d538a49bb9e1b83dc41398cd5ef9c01",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/SOP_Pemindahan_Deteni.md": {
+    "mtime": 1781786997.543829,
+    "ast_hash": "c3666521845f5ec01160d89ccad9cd2f",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/SOP_Pendeportasian_Deteni.md": {
+    "mtime": 1781787094.89402,
+    "ast_hash": "dd02e72367b7cb3e106c5c8a335134b5",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/SOP_Penempatan_Deteni.md": {
+    "mtime": 1781787074.426226,
+    "ast_hash": "8c823d435ba47b0a3a308639707cb49c",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/SOP_Penerimaan_Calon_Deteni.md": {
+    "mtime": 1781787002.0469136,
+    "ast_hash": "917756a61035c4faeb969335c9b139e6",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/SOP_Penjagaan_Pengamanan_Deteni.md": {
+    "mtime": 1781787085.0726154,
+    "ast_hash": "108621b500bc50ae8c60bca36d698194",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/SOP_Registrasi_Deteni.md": {
+    "mtime": 1781787069.3763514,
+    "ast_hash": "7d9f3bd1eb61e74c694495d7e1e92b83",
+    "semantic_hash": ""
+  },
+  "office-brain/wiki/SOP_Rudenim_Keimigrasian.md": {
+    "mtime": 1781777721.5149164,
+    "ast_hash": "a92b4188f4407d9be93ec97a40188722",
+    "semantic_hash": ""
+  },
+  "projects/kartu-perpisahan/index.html": {
+    "mtime": 1781755919.9312384,
+    "ast_hash": "95e1368ba716cdd1dd7332c0cd1afae1",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/Leavitt_Diamond_Model.md": {
+    "mtime": 1781756182.4591184,
+    "ast_hash": "c44d4bcf7de64f0f71e61d7a1502aff9",
+    "semantic_hash": ""
+  },
+  "thesis-brain/wiki/SIMKIM.md": {
+    "mtime": 1781751983.9430325,
+    "ast_hash": "7fa7a3809837a304033c60e8017ec36d",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/leavitt_diamond_rudenim.png": {
+    "mtime": 1781788973.8364074,
+    "ast_hash": "016d8e5c6e759383fa2b51b1a25261c0",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/draw_individual_flowcharts.py": {
+    "mtime": 1781786991.8558495,
+    "ast_hash": "767ef02de0dd1fc669dd5a7c3ba94ea4",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/sop_deportasi_flowchart.png": {
+    "mtime": 1781788801.5925565,
+    "ast_hash": "748b282f5fe9cfe4effac5ccfd8e778e",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/sop_kesehatan_flowchart.png": {
+    "mtime": 1781788801.4201453,
+    "ast_hash": "b6fd44ce9f04b2e1b19dd7c3e43ebd4b",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/sop_pemindahan_flowchart.png": {
+    "mtime": 1781788801.5040677,
+    "ast_hash": "1959877f836be5f99b354250a8250f25",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/sop_penempatan_flowchart.png": {
+    "mtime": 1781788801.2806451,
+    "ast_hash": "488c2dcf01ba959da46d47d7c9c9a315",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/sop_penerimaan_flowchart.png": {
+    "mtime": 1781788801.1544776,
+    "ast_hash": "9aa995b4a9562b5c71f39b8985a75563",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/sop_penjagaan_flowchart.png": {
+    "mtime": 1781788801.3346672,
+    "ast_hash": "8fa3a0339b28206a60f50f6dc71c3206",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/sop_registrasi_flowchart.png": {
+    "mtime": 1781788801.223648,
+    "ast_hash": "45d660b5887db1cdae8b61bdf90d0e23",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/draw_proper_flowcharts.py": {
+    "mtime": 1781788756.9179013,
+    "ast_hash": "77954c31b692c59df11c8de4fbce3a03",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/draw_flowcharts_restored.py": {
+    "mtime": 1781788685.0574274,
+    "ast_hash": "4eb25ba77d3d893bacb60a0da9954e75",
     "semantic_hash": ""
   }
 }

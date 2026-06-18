@@ -1,0 +1,12 @@
+{
+  "name": "makalah-sim",
+  "version": "1.0.0",
+  "description": "Generator Makalah SIM UPB Pontianak",
+  "main": "build_makalah_sim.js",
+  "scripts": {
+    "build": "node build_makalah_sim.js"
+  },
+  "dependencies": {
+    "docx": "^9.7.1"
+  }
+}

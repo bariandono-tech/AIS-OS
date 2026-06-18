@@ -30,6 +30,15 @@ Buku catatan memori jangka panjang untuk merekam state proyek, pelajaran penting
   * Hubungkan relation `Area/Resource` ke Halaman **"AiS OS"** (ID: `37c78c4c-e388-81f1-99a3-d9e3b16d3d86`).
   * Hubungkan relation `Project` ke Halaman **"Twitter Digital"** (ID: `37f78c4c-e388-8064-abbc-d4df85b7eda0`) di bagian task.
 
+### Desain Visual & Layout Flowchart (Readability & Sizing)
+* **Rasio Canvas & Ukuran Font (Word Scaling Gotcha):** Untuk diagram yang akan di-scale ke area cetak Word (lebar target ~450px), hindari canvas yang terlalu lebar (>1000px). Gunakan lebar canvas antara `800px` - `920px` dengan font detail `13pt` - `16pt` agar teks tidak menyusut terlalu kecil saat di-scale di Word.
+* **Kerapatan Vertikal & Margins:** Batasi vertical gap (`VGAP`) di kisaran `45px` agar diagram panjang muat di satu halaman A4 tanpa terpotong (*overflow*).
+* **Pemberian Ukuran Shape & Teks:**
+  * Potong baris teks secara manual (`\n`) dengan lebar maksimal 15-18 karakter untuk font `13pt`-`15pt`.
+  * Diamond keputusan harus berukuran minimal lebar `320px` dan tinggi `120px` agar teks tidak menabrak batas tepi.
+* **Layout Sumbu Simetris (Centering):** Center koordinat utama (`CX`) dan cabang (`BRANCH_CX`) wajib diposisikan agar bounding box diagram berada tepat di tengah-tengah canvas (misal: untuk canvas `920px`, gunakan `CX=300`, `BRANCH_CX=660` sehingga menyisakan margin kiri-kanan seimbang `140px`).
+* **Routing Garis Kembali (Loop-back):** Aliran panah kembali (*loop-back*) harus diarahkan masuk ke garis penghubung vertikal di atas/sebelum diamond atau masuk ke proses awal, bukan memotong/menabrak kotak proses atau diamond di tengah jalan.
+
 ---
 
 ## 2. Struktur Teoretis Skripsi

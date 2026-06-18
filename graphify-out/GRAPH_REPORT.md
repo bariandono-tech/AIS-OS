@@ -1,16 +1,16 @@
-# Graph Report - AIS-OS  (2026-06-17)
+# Graph Report - AIS-OS  (2026-06-18)
 
 ## Corpus Check
-- 272 files · ~308,136 words
+- 295 files · ~365,584 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3264 nodes · 3218 edges · 359 communities (256 shown, 103 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
+- 3575 nodes · 3534 edges · 383 communities (281 shown, 102 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `24630a3d`
+- Built from commit: `183d93bd`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -363,6 +363,28 @@
 - [[_COMMUNITY_Community 356|Community 356]]
 - [[_COMMUNITY_Community 357|Community 357]]
 - [[_COMMUNITY_Community 358|Community 358]]
+- [[_COMMUNITY_Community 359|Community 359]]
+- [[_COMMUNITY_Community 360|Community 360]]
+- [[_COMMUNITY_Community 361|Community 361]]
+- [[_COMMUNITY_Community 362|Community 362]]
+- [[_COMMUNITY_Community 363|Community 363]]
+- [[_COMMUNITY_Community 365|Community 365]]
+- [[_COMMUNITY_Community 366|Community 366]]
+- [[_COMMUNITY_Community 367|Community 367]]
+- [[_COMMUNITY_Community 368|Community 368]]
+- [[_COMMUNITY_Community 369|Community 369]]
+- [[_COMMUNITY_Community 370|Community 370]]
+- [[_COMMUNITY_Community 371|Community 371]]
+- [[_COMMUNITY_Community 372|Community 372]]
+- [[_COMMUNITY_Community 373|Community 373]]
+- [[_COMMUNITY_Community 374|Community 374]]
+- [[_COMMUNITY_Community 375|Community 375]]
+- [[_COMMUNITY_Community 376|Community 376]]
+- [[_COMMUNITY_Community 377|Community 377]]
+- [[_COMMUNITY_Community 378|Community 378]]
+- [[_COMMUNITY_Community 379|Community 379]]
+- [[_COMMUNITY_Community 382|Community 382]]
+- [[_COMMUNITY_Community 383|Community 383]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
@@ -373,10 +395,12 @@
 6. `Architecture: StudiOS — Database-Driven Knowledge Viewer` - 14 edges
 7. `Update` - 13 edges
 8. `syncEngine()` - 13 edges
-9. `📽️ Struktur & Konten Slide` - 13 edges
-10. `PART B — NOTION BUILD GUIDE (EXECUTION)` - 13 edges
+9. `🔄 5. Tahapan Prosedur Kerja (Langkah demi Langkah)` - 13 edges
+10. `📽️ Struktur & Konten Slide` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `draw_flowchart()` --calls--> `draw_arrow()`  [INFERRED]
+  projects/makalah-sim/draw_flowcharts.py → projects/makalah-sim/draw_individual_flowcharts.py
 - `syncEngine()` --calls--> `blocksToMarkdown()`  [EXTRACTED]
   projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
 - `syncEngine()` --calls--> `blocksToResume()`  [EXTRACTED]
@@ -385,13 +409,11 @@
   projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
 - `syncEngine()` --calls--> `blocksToFlashcards()`  [EXTRACTED]
   projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
-- `syncEngine()` --calls--> `blocksToReferences()`  [EXTRACTED]
-  projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (359 total, 103 thin omitted)
+## Communities (383 total, 102 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -402,8 +424,14 @@ Cohesion: 0.04
 Nodes (47): 1. Katalog Layanan & Harga, 1. Team-reaches-out:, 2. Alur Kerja Promosi Twitter/X, 2. Context-switching reduction:, 3. Knowledge-leaves-your-head:, 3. Sumber Daya Terkait, AIS-OS, AIS-OS — AI Operating System starter kit for Claude Code (+39 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.05
-Nodes (28): build_makalah, centered, emptyRow, heading1, heading2, heading3, justifiedPara, pageBreak (+20 more)
+Cohesion: 0.08
+Nodes (9): border0, borders0, bordersAll, borderSingle, chapterPageSetup, doc, {
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
+  ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,
+  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
+  TabStopType, TabStopPosition, NumberFormat, TableOfContents, ImageRun
+}, frontMatterFooter (+1 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.06
@@ -435,11 +463,11 @@ Nodes (24): Dep:, Fase 1.0 — Pondasi (WAJIB duluan, semua lain bergantung di s
 
 ### Community 10 - "Community 10"
 Cohesion: 0.06
-Nodes (31): @notionhq/client, add_created_property, addCreated, check_note_properties, checkNote, check_page_details, checkPages, check_para_views (+23 more)
+Nodes (31): add_created_property, addCreated, add_edited_property, addEdited, Validates that all essential config parameters are set., validate_config(), check_page_details, checkPages (+23 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.06
-Nodes (30): add_edited_property, addEdited, Validates that all essential config parameters are set., validate_config(), compare_schemas, compare, create_homepage, buildHomepage (+22 more)
+Nodes (32): @notionhq/client, check_note_properties, checkNote, create_homepage, buildHomepage, dump_para_blocks, dumpBlocks, find_all_databases (+24 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.09
@@ -730,8 +758,8 @@ Cohesion: 0.11
 Nodes (19): A8.10 Reviews (Daily / Weekly / Monthly / Quarterly) `[Beyond UB]`, A8.11 People / CRM (UB #26–29), A8.12 Books + Reading Log (UB #30–31), A8.13 Recipes + Meal Plan (UB #32), A8.14 Archive (Cold / Snoozed / Someday) (UB #25), A8.15 Task History (UB #34), A8.16 Analytics / Intelligence `[Beyond UB]`, A8.17 AI Layer `[Beyond UB]` `[Paid: Notion Business]` (+11 more)
 
 ### Community 88 - "Community 88"
-Cohesion: 0.50
-Nodes (4): path, sync_to_notion, parseMarkdownToRichText, sync
+Cohesion: 0.05
+Nodes (36): 1.1 Latar Belakang, 1.2 Rumusan Masalah, 1.3 Tujuan Penelitian, 1.4 Manfaat Penelitian, 2.1.1 Sistem Informasi Manajemen (SIM), 2.1.2 Sistem Informasi Manajemen Keimigrasian (SIMKIM), 2.1.3 Model Kesuksesan Sistem Informasi DeLone & McLean, 2.1.4 Konsep Detensi dan Struktur UPT Rumah Detensi Imigrasi (+28 more)
 
 ### Community 89 - "Community 89"
 Cohesion: 0.20
@@ -922,8 +950,8 @@ Cohesion: 0.29
 Nodes (6): Bedah PP 50/2018 & PMK 62/2023 (Koleksi Diagram untuk Skripsi & Tugas), 📌 Diagram 1: Alur Makro Pelaksanaan Anggaran Belanja Negara, 📌 Diagram 2: Alur Penerbitan SPP - SPM - SP2D (Sistem Pengeluaran Kas Negara), 📌 Diagram 3: Alur Fleksibilitas Revisi Anggaran (Berdasarkan PMK 62/2023), 📊 FOLDER 2: VISUAL FLOWCHART ALUR PELAKSANAAN APBN, 💡 Kunci Penjelasan untuk Ujian/Bab Skripsi:
 
 ### Community 148 - "Community 148"
-Cohesion: 0.25
-Nodes (7): 👤 0. Profil Pengguna (User Profile), 1. Gotchas & Solusi Teknis (Pelajaran Penting), 2. Struktur Teoretis Skripsi, 3. Progress State (Terakhir Diperbarui: 2026-06-15), AIOS Memory — Persistent Context & Lessons Learned, Integrasi Notion API (Mythos Brain), Pembuatan Dokumen Word (`build_makalah.js`)
+Cohesion: 0.22
+Nodes (8): 👤 0. Profil Pengguna (User Profile), 1. Gotchas & Solusi Teknis (Pelajaran Penting), 2. Struktur Teoretis Skripsi, 3. Progress State (Terakhir Diperbarui: 2026-06-15), AIOS Memory — Persistent Context & Lessons Learned, Desain Visual & Layout Flowchart (Readability & Sizing), Integrasi Notion API (Mythos Brain), Pembuatan Dokumen Word (`build_makalah.js`)
 
 ### Community 149 - "Community 149"
 Cohesion: 0.48
@@ -1189,6 +1217,10 @@ Nodes (4): 👤 1. Profil & Evaluasi Diri (Profile & Self-Assessment), 🌱 2. P
 Cohesion: 0.40
 Nodes (4): Ketentuan Umum, 🛒 Mekanisme Pengkreditan PPN, 📊 Pajak Pertambahan Nilai (PPN), 🏛️ PPN Wapu (Wajib Pungut)
 
+### Community 263 - "Community 263"
+Cohesion: 0.09
+Nodes (21): 🎯 1. Tujuan & Ruang Lingkup, 👥 2. Pihak yang Terlibat, 🛠️ 3. Persyaratan & Alat Kerja, 📊 4. Diagram Alur & Mutu Baku (Flowchart), 🔄 5. Tahapan Prosedur Kerja (Langkah demi Langkah), ⚡ 6. Alur Integrasi SIMKIM & SiSUmaker, ⚖️ 7. Referensi & Dasar Hukum, Langkah 10: Pengawalan Lintas Wilayah (+13 more)
+
 ### Community 264 - "Community 264"
 Cohesion: 0.50
 Nodes (3): 🏛️ 1. Core Architecture, 📂 2. Categories in index.md, CLAUDE.md — LLM Wiki Agent Rules (Office & Employment)
@@ -1204,6 +1236,10 @@ Nodes (27): 1. Dashboard (`/`), 2. Stack Page (`/stack/:slug`), 3. Content Viewe
 ### Community 268 - "Community 268"
 Cohesion: 0.08
 Nodes (24): 6. Prosedur Otomasi Git (Commit & Push), Detail 10 Tema Alternatif & Draf Thread Siap Saji, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter: (+16 more)
+
+### Community 269 - "Community 269"
+Cohesion: 0.40
+Nodes (5): daftarPustakaEntry(), numberedItem(), tr(), trb(), tri()
 
 ### Community 278 - "Community 278"
 Cohesion: 0.20
@@ -1373,10 +1409,100 @@ Nodes (8): 1. Otorisasi Akses (Access Control), 2. Pencarian Dokumen Lokal (Loca
 Cohesion: 0.33
 Nodes (6): { Client }, fs, notion, parseMarkdownToRichText(), path, sync()
 
+### Community 348 - "Community 348"
+Cohesion: 0.50
+Nodes (3): Modul & Kegunaan, 📊 Sistem Aplikasi Keuangan Tingkat Instansi (SAKTI), Evaluasi Sistem Informasi
+
+### Community 351 - "Community 351"
+Cohesion: 0.07
+Nodes (22): border0, borders0, bordersAll, borderSingle, cellPara(), centered(), chapterPageSetup, createMutuBakuTable() (+14 more)
+
+### Community 352 - "Community 352"
+Cohesion: 0.10
+Nodes (20): 🎯 1. Tujuan & Ruang Lingkup, 👥 2. Pihak yang Terlibat, 🛠️ 3. Persyaratan & Alat Kerja, 📊 4. Diagram Alur & Mutu Baku (Flowchart), 🔄 5. Tahapan Prosedur Kerja (Langkah demi Langkah), ⚡ 6. Alur Integrasi SIMKIM, ⚖️ 7. Referensi & Dasar Hukum, Langkah 10: Pemulangan ke Blok Hunian (+12 more)
+
+### Community 353 - "Community 353"
+Cohesion: 0.11
+Nodes (18): 🎯 1. Tujuan & Ruang Lingkup, 👥 2. Pihak yang Terlibat, 🛠️ 3. Persyaratan & Alat Kerja, 📊 4. Diagram Alur & Mutu Baku (Flowchart), 🔄 5. Tahapan Prosedur Kerja (Langkah demi Langkah), ⚡ 6. Alur Integrasi SIMKIM, ⚖️ 7. Referensi & Dasar Hukum, Langkah 10: Pengeluaran & Serah Terima Fisik (+10 more)
+
+### Community 354 - "Community 354"
+Cohesion: 0.11
+Nodes (17): 🎯 1. Tujuan & Ruang Lingkup, 👥 2. Pihak yang Terlibat, 🛠️ 3. Persyaratan & Alat Kerja, 📊 4. Diagram Alur & Mutu Baku (Flowchart), 🔄 5. Tahapan Prosedur Kerja (Langkah demi Langkah), ⚡ 6. Alur Integrasi SIMKIM, ⚖️ 7. Referensi & Dasar Hukum, Langkah 1: Penerimaan Disposisi (+9 more)
+
+### Community 356 - "Community 356"
+Cohesion: 0.47
+Nodes (4): draw_flowchart(), draw_arrow(), generate_sop_flowchart(), wrap_text()
+
+### Community 359 - "Community 359"
+Cohesion: 0.13
+Nodes (14): A. Kesimpulan, A. Latar Belakang, A. Struktur Organisasi Rudenim Pontianak, B. Rumusan Masalah, B. Saran, B. Sistem Informasi Manajemen Keimigrasian (SIMKIM), BAB I — PENDAHULUAN, BAB II — PEMBAHASAN (+6 more)
+
+### Community 360 - "Community 360"
+Cohesion: 0.18
+Nodes (11): build_makalah, centered, emptyRow, heading1, heading2, heading3, justifiedPara, pageBreak (+3 more)
+
+### Community 361 - "Community 361"
+Cohesion: 0.25
+Nodes (7): 1. Kualitas Sistem (*System Quality*), 2. Kualitas Informasi (*Information Quality*), 3. Kualitas Layanan (*Service Quality*), 4. Penggunaan (*Use*) & Kepuasan Pengguna (*User Satisfaction*), 5. Manfaat Bersih (*Net Benefits*), 6 Dimensi Kesuksesan (Versi 2003), 📊 Model Kesuksesan Sistem Informasi DeLone & McLean
+
+### Community 362 - "Community 362"
+Cohesion: 0.29
+Nodes (6): description, main, name, scripts, build, version
+
+### Community 363 - "Community 363"
+Cohesion: 0.17
+Nodes (15): D(), draw_arrowhead(), draw_diamond(), draw_document(), draw_oval(), draw_process(), harrow(), _hh() (+7 more)
+
+### Community 365 - "Community 365"
+Cohesion: 0.22
+Nodes (8): 🛠️ Aturan Layout dan Kompilasi, Dasar Hukum, 📊 Data Objek Penelitian, 📌 Metadata Projek, 📝 Product Requirements Document (PRD) — Makalah SIM, 🏛️ Sistematika Penulisan Makalah (3 Bab), SOP Utama Keimigrasian Rudenim, Struktur Organisasi Rudenim Pontianak
+
+### Community 366 - "Community 366"
+Cohesion: 0.25
+Nodes (7): BAB I — Pendahuluan, BAB II — Pembahasan, BAB III — Penutup, Konten Utama, Metadata, Referensi Terkait, Source: Makalah SIM — Rudenim Pontianak
+
+### Community 367 - "Community 367"
+Cohesion: 0.12
+Nodes (16): 🎯 1. Tujuan & Ruang Lingkup, 👥 2. Pihak yang Terlibat, 🛠️ 3. Persyaratan & Alat Kerja, 📊 4. Diagram Alur & Mutu Baku (Flowchart), 🔄 5. Tahapan Prosedur Kerja (Langkah demi Langkah), ⚡ 6. Alur Integrasi SIMKIM, ⚖️ 7. Referensi & Dasar Hukum, Langkah 1: Persiapan dan Verifikasi Dokumen (+8 more)
+
+### Community 369 - "Community 369"
+Cohesion: 0.12
+Nodes (15): 🎯 1. Tujuan & Ruang Lingkup, 👥 2. Pihak yang Terlibat, 🛠️ 3. Persyaratan & Alat Kerja, 📊 4. Diagram Alur & Mutu Baku (Flowchart), 🔄 5. Tahapan Prosedur Kerja (Langkah demi Langkah), ⚡ 6. Alur Integrasi SIMKIM, ⚖️ 7. Referensi & Dasar Hukum, Langkah 1: Pengajuan Disposisi Awal (+7 more)
+
+### Community 370 - "Community 370"
+Cohesion: 0.13
+Nodes (14): 🎯 1. Tujuan & Ruang Lingkup, 👥 2. Pihak yang Terlibat, 🛠️ 3. Persyaratan & Alat Kerja, 📊 4. Diagram Alur & Mutu Baku (Flowchart), 🔄 5. Tahapan Prosedur Kerja (Langkah demi Langkah), ⚡ 6. Alur Integrasi SIMKIM, ⚖️ 7. Referensi & Dasar Hukum, Langkah 1: Instruksi Pengamanan (+6 more)
+
+### Community 371 - "Community 371"
+Cohesion: 0.17
+Nodes (11): 1. [[SOP_Penerimaan_Calon_Deteni]], 2. [[SOP_Registrasi_Deteni]], 3. [[SOP_Pemeriksaan_Kesehatan]], 4. [[SOP_Penempatan_Deteni]], 5. [[SOP_Penjagaan_Pengamanan_Deteni]], 6. [[SOP_Pemindahan_Deteni]], 7. [[SOP_Pendeportasian_Deteni]], 📑 Daftar SOP Utama (+3 more)
+
+### Community 372 - "Community 372"
+Cohesion: 0.29
+Nodes (6): Definisi, Empat Elemen, Konteks Penggunaan, Leavitt's Diamond Model (1965), Prinsip Utama, Referensi
+
+### Community 373 - "Community 373"
+Cohesion: 0.29
+Nodes (6): Arsitektur, Definisi, Kendala Umum di UPT Daerah, Modul-Modul di Rudenim, Referensi Terkait, SIMKIM — Sistem Informasi Manajemen Keimigrasian
+
+### Community 374 - "Community 374"
+Cohesion: 0.33
+Nodes (5): docx, dependencies, docx, dependencies, docx
+
+### Community 377 - "Community 377"
+Cohesion: 0.50
+Nodes (4): path, sync_to_notion, parseMarkdownToRichText, sync
+
 ## Knowledge Gaps
-- **1228 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `version`, `type` (+1223 more)
+- **1419 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `{
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
+  ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,
+  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
+  TabStopType, TabStopPosition, NumberFormat, ImageRun
+}`, `fs`, `path`, `border0` (+1414 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **103 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **102 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -1385,13 +1511,13 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `Community 79` to `Community 280`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `A8. Module Specifications` connect `Community 86` to `Community 117`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `Menginisialisasi klien Google GenAI.`, `Mengirim pesan ke Gemini dan menangani iterasi pemanggilan fungsi (Tool Calling)` to the rest of the system?**
-  _1240 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1436 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.048484848484848485 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
+  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._

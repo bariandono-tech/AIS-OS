@@ -11,6 +11,14 @@ Selamat datang di Office Second Brain Anda. Indeks ini dikelola untuk menautkan 
 - [[PMK_01_2026]] ([PMK_01_2026.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/PMK_01_2026.md)) - Peraturan Menteri Keuangan No. 01 Tahun 2026
 - [[PPh_Pasal_21]] ([PPh_Pasal_21.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/PPh_Pasal_21.md)) - Pajak Penghasilan Pasal 21
 - [[Pajak_Pertambahan_Nilai]] ([Pajak_Pertambahan_Nilai.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Pajak_Pertambahan_Nilai.md)) - Pajak Pertambahan Nilai (PPN)
+- [[SOP_Rudenim_Keimigrasian]] ([SOP_Rudenim_Keimigrasian.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/SOP_Rudenim_Keimigrasian.md)) - Standar Operasional Prosedur Rudenim Utama
+- [[SOP_Penerimaan_Calon_Deteni]] ([SOP_Penerimaan_Calon_Deteni.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/SOP_Penerimaan_Calon_Deteni.md)) - SOP Penerimaan Calon Deteni
+- [[SOP_Registrasi_Deteni]] ([SOP_Registrasi_Deteni.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/SOP_Registrasi_Deteni.md)) - SOP Registrasi Deteni
+- [[SOP_Pemeriksaan_Kesehatan]] ([SOP_Pemeriksaan_Kesehatan.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/SOP_Pemeriksaan_Kesehatan.md)) - SOP Pemeriksaan Kesehatan Deteni
+- [[SOP_Penempatan_Deteni]] ([SOP_Penempatan_Deteni.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/SOP_Penempatan_Deteni.md)) - SOP Penempatan Deteni Ke Kamar/Blok
+- [[SOP_Penjagaan_Pengamanan_Deteni]] ([SOP_Penjagaan_Pengamanan_Deteni.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/SOP_Penjagaan_Pengamanan_Deteni.md)) - SOP Penjagaan & Pengamanan Deteni
+- [[SOP_Pemindahan_Deteni]] ([SOP_Pemindahan_Deteni.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/SOP_Pemindahan_Deteni.md)) - SOP Pemindahan Deteni Antar Rudenim
+- [[SOP_Pendeportasian_Deteni]] ([SOP_Pendeportasian_Deteni.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/SOP_Pendeportasian_Deteni.md)) - SOP Pendeportasian Deteni
 - [[Penghasilan_Tidak_Kena_Pajak]] ([Penghasilan_Tidak_Kena_Pajak.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Penghasilan_Tidak_Kena_Pajak.md)) - Ketentuan Penghasilan Tidak Kena Pajak (PTKP)
 - [[Withholding_Tax]] ([Withholding_Tax.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Withholding_Tax.md)) - Sistem Pemotongan Pajak (Withholding Tax)
 - [[Standar_Akuntansi_Pemerintah]] ([Standar_Akuntansi_Pemerintah.md](file:///d:/WORKSPACE/AIS-OS/office-brain/wiki/Standar_Akuntansi_Pemerintah.md)) - Standar Akuntansi Pemerintahan (SAP)
