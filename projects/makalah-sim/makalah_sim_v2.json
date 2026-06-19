@@ -1,0 +1,173 @@
+{
+  "title": "ANALISIS STRUKTUR ORGANISASI, SISTEM INFORMASI MANAJEMEN KEIMIGRASIAN (SIMKIM), DAN STANDAR OPERASIONAL PROSEDUR (SOP) PADA RUMAH DETENSI IMIGRASI PONTIANAK",
+  "author": "AJIE BARIANDONO",
+  "nim": "2110426823",
+  "university": "UNIVERSITAS PANCA BHAKTI",
+  "faculty": "FAKULTAS EKONOMI DAN BISNIS",
+  "department": "PROGRAM STUDI AKUNTANSI",
+  "year": "2026",
+  "table_of_contents": [
+    {
+      "title": "KATA PENGANTAR",
+      "page": "i"
+    },
+    {
+      "title": "DAFTAR ISI",
+      "page": "ii"
+    },
+    {
+      "title": "DAFTAR TABEL",
+      "page": "iii"
+    },
+    {
+      "title": "DAFTAR GAMBAR",
+      "page": "iv"
+    },
+    {
+      "title": "BAB I PENDAHULUAN",
+      "page": "1"
+    },
+    {
+      "title": "A. Latar Belakang",
+      "page": "1"
+    },
+    {
+      "title": "B. Rumusan Masalah",
+      "page": "3"
+    },
+    {
+      "title": "C. Tujuan Penulisan",
+      "page": "3"
+    },
+    {
+      "title": "BAB II PEMBAHASAN",
+      "page": "4"
+    },
+    {
+      "title": "A. Struktur Organisasi Rumah Detensi Imigrasi Pontianak",
+      "page": "4"
+    },
+    {
+      "title": "B. Sistem Informasi Manajemen Keimigrasian (SIMKIM)",
+      "page": "6"
+    },
+    {
+      "title": "C. Standar Operasional Prosedur (SOP) Rudenim Pontianak",
+      "page": "8"
+    },
+    {
+      "title": "D. Analisis Integrasi Struktur, SIMKIM, dan SOP",
+      "page": "17"
+    },
+    {
+      "title": "BAB III PENUTUP",
+      "page": "19"
+    },
+    {
+      "title": "A. Kesimpulan",
+      "page": "19"
+    },
+    {
+      "title": "B. Saran",
+      "page": "19"
+    },
+    {
+      "title": "DAFTAR PUSTAKA",
+      "page": "20"
+    }
+  ],
+  "tables": [
+    {
+      "num": "2.1",
+      "title": "Mutu Baku SOP Penerimaan Calon Deteni",
+      "page": "9"
+    },
+    {
+      "num": "2.2",
+      "title": "Mutu Baku SOP Pemeriksaan Kesehatan Deteni",
+      "page": "11"
+    },
+    {
+      "num": "2.3",
+      "title": "Mutu Baku SOP Registrasi Deteni",
+      "page": "12"
+    },
+    {
+      "num": "2.4",
+      "title": "Mutu Baku SOP Penempatan Deteni",
+      "page": "13"
+    },
+    {
+      "num": "2.5",
+      "title": "Mutu Baku SOP Penjagaan & Pengamanan Deteni",
+      "page": "14"
+    },
+    {
+      "num": "2.6",
+      "title": "Mutu Baku SOP Pemindahan Deteni",
+      "page": "15"
+    },
+    {
+      "num": "2.7",
+      "title": "Mutu Baku SOP Pendeportasian Deteni",
+      "page": "16"
+    },
+    {
+      "num": "2.8",
+      "title": "Matriks Keterkaitan Antar Elemen Leavitt's Diamond",
+      "page": "18"
+    }
+  ],
+  "figures": [
+    {
+      "num": "1",
+      "title": "Struktur Organisasi Rudenim Pontianak",
+      "page": "4"
+    },
+    {
+      "num": "2",
+      "title": "Flowchart Siklus Hidup Deteni Terintegrasi dengan 7 SOP",
+      "page": "8"
+    },
+    {
+      "num": "2.1",
+      "title": "Flowchart SOP Penerimaan Calon Deteni",
+      "page": "8"
+    },
+    {
+      "num": "2.2",
+      "title": "Flowchart SOP Pemeriksaan Kesehatan Deteni",
+      "page": "10"
+    },
+    {
+      "num": "2.3",
+      "title": "Flowchart SOP Registrasi Deteni",
+      "page": "11"
+    },
+    {
+      "num": "2.4",
+      "title": "Flowchart SOP Penempatan Deteni Ke Blok Hunian",
+      "page": "12"
+    },
+    {
+      "num": "2.5",
+      "title": "Flowchart SOP Penjagaan & Pengamanan Rudenim",
+      "page": "13"
+    },
+    {
+      "num": "2.6",
+      "title": "Flowchart SOP Pemindahan Deteni Antar Rudenim",
+      "page": "14"
+    },
+    {
+      "num": "2.7",
+      "title": "Flowchart SOP Pendeportasian Deteni Ke Negara Asal",
+      "page": "15"
+    },
+    {
+      "num": "3",
+      "title": "Kerangka Analisis Leavitt's Diamond Model",
+      "page": "17"
+    }
+  ]
+}

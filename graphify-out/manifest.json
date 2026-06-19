@@ -1460,8 +1460,8 @@
     "semantic_hash": ""
   },
   "projects/makalah-sim/build_makalah_sim.js": {
-    "mtime": 1781789004.6221864,
-    "ast_hash": "776fe5ad53019dcfbbd027f863833345",
+    "mtime": 1781840330.5463467,
+    "ast_hash": "d3fbf8025cb7e030449ed51e953053ba",
     "semantic_hash": ""
   },
   "projects/makalah-sim/draw_diagram_sim.py": {
@@ -1510,8 +1510,8 @@
     "semantic_hash": ""
   },
   "projects/makalah-sim/makalah_sim.md": {
-    "mtime": 1781749468.7944765,
-    "ast_hash": "1a4226439c78b24523f837cfaafb9b02",
+    "mtime": 1781840337.3354242,
+    "ast_hash": "bb11c905d917a22e38902295363c0feb",
     "semantic_hash": ""
   },
   "projects/makalah-sim/flowchart_lifecycle_deteni.png": {
@@ -1632,6 +1632,86 @@
   "projects/makalah-sim/draw_flowcharts_restored.py": {
     "mtime": 1781788685.0574274,
     "ast_hash": "4eb25ba77d3d893bacb60a0da9954e75",
+    "semantic_hash": ""
+  },
+  "projects/linkedin-optimization-webdev/00-ideation.md": {
+    "mtime": 1781842957.5995486,
+    "ast_hash": "76c2ed713afe75272c1ebd3ee4c7f7c1",
+    "semantic_hash": ""
+  },
+  "projects/linkedin-optimization-webdev/01-architecture.md": {
+    "mtime": 1781842963.069661,
+    "ast_hash": "8a8d55f1322c6eaaee0b2cf3af89e752",
+    "semantic_hash": ""
+  },
+  "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md": {
+    "mtime": 1781842972.0109458,
+    "ast_hash": "93e9837bbb74f26af243c84926737b60",
+    "semantic_hash": ""
+  },
+  "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md": {
+    "mtime": 1781842980.2880392,
+    "ast_hash": "d8e1feefa074d65ea46e665881e933f0",
+    "semantic_hash": ""
+  },
+  "projects/linkedin-optimization-webdev/04-technical-interview-prep.md": {
+    "mtime": 1781842989.1615956,
+    "ast_hash": "8a18dc75f9acc687348dbe8955b26b33",
+    "semantic_hash": ""
+  },
+  "projects/linkedin-optimization-webdev/README.md": {
+    "mtime": 1781842996.3033087,
+    "ast_hash": "f54cd73b2d11227d2d2547fe81278338",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/build_makalah_sim_v2.js": {
+    "mtime": 1781850044.3860219,
+    "ast_hash": "67e15d961ef50c40db0fc69ccc4dfd0b",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/makalah_sim_v2.json": {
+    "mtime": 1781849526.3923285,
+    "ast_hash": "71a5b169bc23bbb51ea870d44408d1fc",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/compare.js": {
+    "mtime": 1781848916.1613503,
+    "ast_hash": "45fec888b0b547a212daa89c03136f43",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/diff_content.js": {
+    "mtime": 1781848926.4791915,
+    "ast_hash": "ddcbea7c2a62be7c9a6aad44debf8e2d",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/extract_text.js": {
+    "mtime": 1781848346.3430138,
+    "ast_hash": "7019eea60955af1a14c95044599df83b",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/find_image.js": {
+    "mtime": 1781848813.921782,
+    "ast_hash": "17124780aab48945f81d00b6fdc6f2c9",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/find_image_caption.js": {
+    "mtime": 1781848858.2367725,
+    "ast_hash": "398e15fa5a5334211de5531313a92fdf",
+    "semantic_hash": ""
+  },
+  "projects/linkedin-optimization-webdev/02-quality-gate.md": {
+    "mtime": 1781843010.3369224,
+    "ast_hash": "eb5860f693d0413bcca148062c586eb3",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/extracted_text.txt": {
+    "mtime": 1781848446.0411277,
+    "ast_hash": "c9d7cbd9f2d1eeebab27b41137178c7f",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/logo_upb.jpg": {
+    "mtime": 315507600.0,
+    "ast_hash": "2672a2f4f93dfb65ea2d5d2f870fa6c4",
     "semantic_hash": ""
   }
 }

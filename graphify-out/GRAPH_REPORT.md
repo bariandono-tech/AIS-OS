@@ -1,16 +1,16 @@
-# Graph Report - AIS-OS  (2026-06-18)
+# Graph Report - AIS-OS  (2026-06-19)
 
 ## Corpus Check
-- 295 files · ~365,584 words
+- 309 files · ~388,230 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3575 nodes · 3534 edges · 383 communities (281 shown, 102 thin omitted)
+- 3719 nodes · 3688 edges · 398 communities (293 shown, 105 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `183d93bd`
+- Built from commit: `ad881cea`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -383,8 +383,23 @@
 - [[_COMMUNITY_Community 377|Community 377]]
 - [[_COMMUNITY_Community 378|Community 378]]
 - [[_COMMUNITY_Community 379|Community 379]]
+- [[_COMMUNITY_Community 380|Community 380]]
+- [[_COMMUNITY_Community 381|Community 381]]
 - [[_COMMUNITY_Community 382|Community 382]]
 - [[_COMMUNITY_Community 383|Community 383]]
+- [[_COMMUNITY_Community 385|Community 385]]
+- [[_COMMUNITY_Community 386|Community 386]]
+- [[_COMMUNITY_Community 387|Community 387]]
+- [[_COMMUNITY_Community 388|Community 388]]
+- [[_COMMUNITY_Community 389|Community 389]]
+- [[_COMMUNITY_Community 390|Community 390]]
+- [[_COMMUNITY_Community 391|Community 391]]
+- [[_COMMUNITY_Community 392|Community 392]]
+- [[_COMMUNITY_Community 393|Community 393]]
+- [[_COMMUNITY_Community 394|Community 394]]
+- [[_COMMUNITY_Community 395|Community 395]]
+- [[_COMMUNITY_Community 396|Community 396]]
+- [[_COMMUNITY_Community 397|Community 397]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
@@ -413,7 +428,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (383 total, 102 thin omitted)
+## Communities (398 total, 105 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -425,13 +440,13 @@ Nodes (47): 1. Katalog Layanan & Harga, 1. Team-reaches-out:, 2. Alur Kerja Prom
 
 ### Community 2 - "Community 2"
 Cohesion: 0.08
-Nodes (9): border0, borders0, bordersAll, borderSingle, chapterPageSetup, doc, {
+Nodes (14): border0, borders0, bordersAll, borderSingle, chapterPageSetup, daftarPustakaEntry(), doc, {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
   ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,
   PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
   TabStopType, TabStopPosition, NumberFormat, TableOfContents, ImageRun
-}, frontMatterFooter (+1 more)
+} (+6 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.06
@@ -462,12 +477,12 @@ Cohesion: 0.08
 Nodes (24): Dep:, Fase 1.0 — Pondasi (WAJIB duluan, semua lain bergantung di sini), Fase 1.1 — Skema database (PARALEL setelah T1.2), Fase 1.2 — Relasi antar-database (SEQ — butuh semua skema siap), Fase 1.3 — Formula (PARALEL — formula independen), Fase 1.4 — Views & Dashboard (SEQ — butuh data & relasi final), Fase 1.5 — Konten jual (PARALEL — tidak sentuh database), Fase 1.6 — Rilis (SEQ — gerbang akhir) (+16 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.06
-Nodes (31): add_created_property, addCreated, add_edited_property, addEdited, Validates that all essential config parameters are set., validate_config(), check_page_details, checkPages (+23 more)
+Cohesion: 0.07
+Nodes (29): add_created_property, addCreated, add_edited_property, addEdited, Validates that all essential config parameters are set., validate_config(), check_note_properties, checkNote (+21 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.06
-Nodes (32): @notionhq/client, check_note_properties, checkNote, create_homepage, buildHomepage, dump_para_blocks, dumpBlocks, find_all_databases (+24 more)
+Cohesion: 0.07
+Nodes (30): @notionhq/client, check_para_views, checkViews, clean_remaining_tf, runCleanup, create_homepage, buildHomepage, dump_para_blocks (+22 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.09
@@ -1238,8 +1253,8 @@ Cohesion: 0.08
 Nodes (24): 6. Prosedur Otomasi Git (Commit & Push), Detail 10 Tema Alternatif & Draf Thread Siap Saji, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter: (+16 more)
 
 ### Community 269 - "Community 269"
-Cohesion: 0.40
-Nodes (5): daftarPustakaEntry(), numberedItem(), tr(), trb(), tri()
+Cohesion: 0.07
+Nodes (22): border0, borders0, bordersAll, borderSingle, cellPara(), centered(), chapterPageSetup, createMutuBakuTable() (+14 more)
 
 ### Community 278 - "Community 278"
 Cohesion: 0.20
@@ -1409,13 +1424,17 @@ Nodes (8): 1. Otorisasi Akses (Access Control), 2. Pencarian Dokumen Lokal (Loca
 Cohesion: 0.33
 Nodes (6): { Client }, fs, notion, parseMarkdownToRichText(), path, sync()
 
+### Community 347 - "Community 347"
+Cohesion: 0.13
+Nodes (14): 1. Headline (Judul Profil), 2. About / Summary (Tentang Saya), 3. Featured Section (Bagian Unggulan), 4. Experience Section (Pengalaman Kerja), 5. Skills Section (Keahlian), Contoh Penulisan:, LinkedIn Profile Blueprint for Junior JS/TS Vibe Coder, Opsi A: Fullstack-Focused (Sangat disarankan jika Anda menguasai frontend + backend) (+6 more)
+
 ### Community 348 - "Community 348"
 Cohesion: 0.50
 Nodes (3): Modul & Kegunaan, 📊 Sistem Aplikasi Keuangan Tingkat Instansi (SAKTI), Evaluasi Sistem Informasi
 
 ### Community 351 - "Community 351"
-Cohesion: 0.07
-Nodes (22): border0, borders0, bordersAll, borderSingle, cellPara(), centered(), chapterPageSetup, createMutuBakuTable() (+14 more)
+Cohesion: 0.08
+Nodes (13): border0, borders0, bordersAll, borderSingle, cellPara(), chapterPageSetup, createMutuBakuTable(), doc (+5 more)
 
 ### Community 352 - "Community 352"
 Cohesion: 0.10
@@ -1489,35 +1508,79 @@ Nodes (6): Arsitektur, Definisi, Kendala Umum di UPT Daerah, Modul-Modul di Rude
 Cohesion: 0.33
 Nodes (5): docx, dependencies, docx, dependencies, docx
 
+### Community 375 - "Community 375"
+Cohesion: 0.20
+Nodes (9): 1. Angle "SEO-Driven Profile Builder", 2. Angle "Project-First Portfolio Showcasing", 3. Angle "Direct Outreach & Networking Strategy", Angles Explored, Brain Dump, Chosen Direction, Ideation: LinkedIn Profile Optimization for Junior JS/TS Remote Jobs, Market Scan (+1 more)
+
+### Community 376 - "Community 376"
+Cohesion: 0.18
+Nodes (10): path, fs, outputPath, paragraphs, path, xml, xmlPath, sync_to_notion (+2 more)
+
 ### Community 377 - "Community 377"
+Cohesion: 0.20
+Nodes (9): 1. Advanced Search Query di Menu "Jobs", 2. Berburu Lowongan via LinkedIn Feed (Pencarian Postingan), Job Search & Direct Outreach Strategy for Junior Vibe Coder, Part 1: Trik Pencarian Lowongan Remote Lokal di LinkedIn, Part 2: Template Cold Outreach (Direct Pitching), Part 3: Golden Rules Outreach, Varian A: Pesan untuk Recruiter / HRD, Varian B: Pesan untuk Tech Lead / Engineering Manager (+1 more)
+
+### Community 378 - "Community 378"
+Cohesion: 0.20
+Nodes (9): 1. Buat Peta Arsitektur Proyek, 1. Konsep Frontend (React & Next.js), 2. Audit Kode Kunci Baris-demi-Baris, 2. Konsep Backend & Database (Node.js & Express), Part 1: Cara Menguasai Kode Anda Sendiri (Project Auditing), Part 2: Konsep Esensial JavaScript/TypeScript Stack yang Wajib Dipahami, Part 3: Cara Menjawab Pertanyaan "Mengapa Tidak Punya Gelar IT?", Part 4: Survival Guide saat Live Coding (+1 more)
+
+### Community 379 - "Community 379"
+Cohesion: 0.22
+Nodes (8): Architecture: LinkedIn Optimization Guide for Junior Vibe Coder, Deliverables, In v1, NOT in v1 (parked), Scope, Stack / Tools, Target Audience, Value Proposition
+
+### Community 380 - "Community 380"
+Cohesion: 0.25
+Nodes (7): Langkah 1: Pahami Strategi & Ide Dasar, Langkah 2: Poles Profil LinkedIn Anda, Langkah 3: Mulai Berburu Lowongan & Lakukan Outreach, Langkah 4: Kuasai Kode Anda & Hadapi Interview, 🚀 Panduan Optimasi LinkedIn & Cari Kerja Remote (Vibe Coder Edition), 🗺️ Peta Jalan Eksekusi (Roadmap), 💡 Prinsip Sukses Vibe Coder
+
+### Community 382 - "Community 382"
+Cohesion: 0.18
+Nodes (10): end, fs, image1RelMatch, index, path, rels, relsPath, start (+2 more)
+
+### Community 390 - "Community 390"
+Cohesion: 0.20
+Nodes (8): endIdx, fs, index, matches, path, startIdx, xml, xmlPath
+
+### Community 391 - "Community 391"
+Cohesion: 0.25
+Nodes (8): copyTexts, extractText(), fs, newItems, normalize(), originalSet, originalTexts, path
+
+### Community 392 - "Community 392"
+Cohesion: 0.33
+Nodes (6): copyTexts, extractText(), fs, normalize(), originalTexts, path
+
+### Community 393 - "Community 393"
+Cohesion: 0.40
+Nodes (5): centered(), getPngDimensions(), getScaledDimensions(), insertFlowchartImage(), tableSource()
+
+### Community 394 - "Community 394"
 Cohesion: 0.50
-Nodes (4): path, sync_to_notion, parseMarkdownToRichText, sync
+Nodes (4): daftarPustakaEntry(), tr(), trb(), tri()
 
 ## Knowledge Gaps
-- **1419 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `{
+- **1502 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `{
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
   ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,
   PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
   TabStopType, TabStopPosition, NumberFormat, ImageRun
-}`, `fs`, `path`, `border0` (+1414 more)
+}`, `fs`, `path`, `border0` (+1497 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **102 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **105 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `PART A — PRD: ULTIMATE BRAIN PRO v2.0` connect `Community 117` to `Community 70`, `Community 134`, `Community 233`, `Community 234`, `Community 141`, `Community 109`, `Community 86`, `Community 188`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **Why does `dependencies` connect `Community 79` to `Community 280`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `PART A — PRD: ULTIMATE BRAIN PRO v2.0` connect `Community 117` to `Community 70`, `Community 134`, `Community 233`, `Community 234`, `Community 141`, `Community 109`, `Community 86`, `Community 188`?**
+  _High betweenness centrality (0.000) - this node is a cross-community bridge._
+- **Why does `@notionhq/client` connect `Community 79` to `Community 11`?**
+  _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `Menginisialisasi klien Google GenAI.`, `Mengirim pesan ke Gemini dan menangani iterasi pemanggilan fungsi (Tool Calling)` to the rest of the system?**
-  _1436 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1519 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07586206896551724 - nodes in this community are weakly interconnected._

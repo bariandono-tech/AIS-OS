@@ -539,7 +539,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_centered",
-      "community": 351,
+      "community": 393,
       "norm_label": "centered()"
     },
     {
@@ -559,7 +559,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_tr",
-      "community": 351,
+      "community": 394,
       "norm_label": "tr()"
     },
     {
@@ -569,7 +569,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_tri",
-      "community": 351,
+      "community": 394,
       "norm_label": "tri()"
     },
     {
@@ -579,7 +579,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_trb",
-      "community": 351,
+      "community": 394,
       "norm_label": "trb()"
     },
     {
@@ -639,7 +639,7 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_getpngdimensions",
-      "community": 351,
+      "community": 393,
       "norm_label": "getpngdimensions()"
     },
     {
@@ -649,7 +649,7 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_getscaleddimensions",
-      "community": 351,
+      "community": 393,
       "norm_label": "getscaleddimensions()"
     },
     {
@@ -679,7 +679,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_insertflowchartimage",
-      "community": 351,
+      "community": 393,
       "norm_label": "insertflowchartimage()"
     },
     {
@@ -699,7 +699,7 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_tablesource",
-      "community": 351,
+      "community": 393,
       "norm_label": "tablesource()"
     },
     {
@@ -709,7 +709,7 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_daftarpustakaentry",
-      "community": 351,
+      "community": 394,
       "norm_label": "daftarpustakaentry()"
     },
     {
@@ -780,6 +780,366 @@
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_doc",
       "community": 351,
+      "norm_label": "doc"
+    },
+    {
+      "label": "build_makalah_sim_v2.js",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2",
+      "community": 269,
+      "norm_label": "build_makalah_sim_v2.js"
+    },
+    {
+      "label": "{\n  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,\n  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,\n  ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,\n  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,\n  TabStopType, TabStopPosition, NumberFormat, ImageRun,\n  TableOfContents, SequentialIdentifier\n}",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_shadingtype_verticalalign_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_tabstopposition_numberformat_imagerun_tableofcontents_sequentialidentifier",
+      "community": 269,
+      "norm_label": "{\n  document, packer, paragraph, textrun, table, tablerow, tablecell,\n  alignmenttype, levelformat, headinglevel, borderstyle, widthtype,\n  shadingtype, verticalalign, pagenumber, pagebreak, header, footer,\n  positionaltab, positionaltabalignment, positionaltabrelativeto, positionaltableader,\n  tabstoptype, tabstopposition, numberformat, imagerun,\n  tableofcontents, sequentialidentifier\n}"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_fs",
+      "community": 269,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_path",
+      "community": 269,
+      "norm_label": "path"
+    },
+    {
+      "label": "border0",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_border0",
+      "community": 269,
+      "norm_label": "border0"
+    },
+    {
+      "label": "borders0",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_borders0",
+      "community": 269,
+      "norm_label": "borders0"
+    },
+    {
+      "label": "borderSingle",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_bordersingle",
+      "community": 269,
+      "norm_label": "bordersingle"
+    },
+    {
+      "label": "bordersAll",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_bordersall",
+      "community": 269,
+      "norm_label": "bordersall"
+    },
+    {
+      "label": "emptyRow()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_emptyrow",
+      "community": 269,
+      "norm_label": "emptyrow()"
+    },
+    {
+      "label": "centered()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_centered",
+      "community": 269,
+      "norm_label": "centered()"
+    },
+    {
+      "label": "justifiedPara()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_justifiedpara",
+      "community": 269,
+      "norm_label": "justifiedpara()"
+    },
+    {
+      "label": "chapterHeader()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_chapterheader",
+      "community": 269,
+      "norm_label": "chapterheader()"
+    },
+    {
+      "label": "frontMatterHeader()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_frontmatterheader",
+      "community": 269,
+      "norm_label": "frontmatterheader()"
+    },
+    {
+      "label": "tr()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_tr",
+      "community": 269,
+      "norm_label": "tr()"
+    },
+    {
+      "label": "tri()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_tri",
+      "community": 269,
+      "norm_label": "tri()"
+    },
+    {
+      "label": "trb()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_trb",
+      "community": 269,
+      "norm_label": "trb()"
+    },
+    {
+      "label": "heading2()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_heading2",
+      "community": 269,
+      "norm_label": "heading2()"
+    },
+    {
+      "label": "heading3()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_heading3",
+      "community": 269,
+      "norm_label": "heading3()"
+    },
+    {
+      "label": "pageBreak()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_pagebreak",
+      "community": 269,
+      "norm_label": "pagebreak()"
+    },
+    {
+      "label": "resetList()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_resetlist",
+      "community": 269,
+      "norm_label": "resetlist()"
+    },
+    {
+      "label": "numberedItemRuns()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_numbereditemruns",
+      "community": 269,
+      "norm_label": "numbereditemruns()"
+    },
+    {
+      "label": "getPngDimensions()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_getpngdimensions",
+      "community": 269,
+      "norm_label": "getpngdimensions()"
+    },
+    {
+      "label": "getScaledDimensions()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_getscaleddimensions",
+      "community": 269,
+      "norm_label": "getscaleddimensions()"
+    },
+    {
+      "label": "cellPara()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_cellpara",
+      "community": 269,
+      "norm_label": "cellpara()"
+    },
+    {
+      "label": "createMutuBakuTable()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L150",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_createmutubakutable",
+      "community": 269,
+      "norm_label": "createmutubakutable()"
+    },
+    {
+      "label": "insertFlowchartImage()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L184",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_insertflowchartimage",
+      "community": 269,
+      "norm_label": "insertflowchartimage()"
+    },
+    {
+      "label": "tableCaptionCentered()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L211",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_tablecaptioncentered",
+      "community": 269,
+      "norm_label": "tablecaptioncentered()"
+    },
+    {
+      "label": "tableSource()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L223",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_tablesource",
+      "community": 269,
+      "norm_label": "tablesource()"
+    },
+    {
+      "label": "daftarPustakaEntry()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L231",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_daftarpustakaentry",
+      "community": 269,
+      "norm_label": "daftarpustakaentry()"
+    },
+    {
+      "label": "createFrontMatterFooter()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L240",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_createfrontmatterfooter",
+      "community": 269,
+      "norm_label": "createfrontmatterfooter()"
+    },
+    {
+      "label": "createChapterHeadersAndFooters()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L256",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_createchapterheadersandfooters",
+      "community": 269,
+      "norm_label": "createchapterheadersandfooters()"
+    },
+    {
+      "label": "tocEntry()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L293",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_tocentry",
+      "community": 269,
+      "norm_label": "tocentry()"
+    },
+    {
+      "label": "chapterPageSetup",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L321",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_chapterpagesetup",
+      "community": 269,
+      "norm_label": "chapterpagesetup"
+    },
+    {
+      "label": "frontMatterFooter",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L322",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_frontmatterfooter",
+      "community": 269,
+      "norm_label": "frontmatterfooter"
+    },
+    {
+      "label": "numberingConfigs",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L324",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_numberingconfigs",
+      "community": 269,
+      "norm_label": "numberingconfigs"
+    },
+    {
+      "label": "doc",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L349",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_doc",
+      "community": 269,
       "norm_label": "doc"
     },
     {
@@ -1221,6 +1581,446 @@
       "id": "makalah_sim_package_dependencies_docx",
       "community": 374,
       "norm_label": "docx"
+    },
+    {
+      "label": "compare.js",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_compare",
+      "community": 392,
+      "norm_label": "compare.js"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_compare_fs",
+      "community": 392,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "scratch_compare_path",
+      "community": 392,
+      "norm_label": "path"
+    },
+    {
+      "label": "normalize()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "scratch_compare_normalize",
+      "community": 392,
+      "norm_label": "normalize()"
+    },
+    {
+      "label": "extractText()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "scratch_compare_extracttext",
+      "community": 392,
+      "norm_label": "extracttext()"
+    },
+    {
+      "label": "originalTexts",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "scratch_compare_originaltexts",
+      "community": 392,
+      "norm_label": "originaltexts"
+    },
+    {
+      "label": "copyTexts",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "scratch_compare_copytexts",
+      "community": 392,
+      "norm_label": "copytexts"
+    },
+    {
+      "label": "diff_content.js",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_diff_content",
+      "community": 391,
+      "norm_label": "diff_content.js"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_diff_content_fs",
+      "community": 391,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "scratch_diff_content_path",
+      "community": 391,
+      "norm_label": "path"
+    },
+    {
+      "label": "normalize()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "scratch_diff_content_normalize",
+      "community": 391,
+      "norm_label": "normalize()"
+    },
+    {
+      "label": "extractText()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "scratch_diff_content_extracttext",
+      "community": 391,
+      "norm_label": "extracttext()"
+    },
+    {
+      "label": "originalTexts",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "scratch_diff_content_originaltexts",
+      "community": 391,
+      "norm_label": "originaltexts"
+    },
+    {
+      "label": "copyTexts",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "scratch_diff_content_copytexts",
+      "community": 391,
+      "norm_label": "copytexts"
+    },
+    {
+      "label": "originalSet",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "scratch_diff_content_originalset",
+      "community": 391,
+      "norm_label": "originalset"
+    },
+    {
+      "label": "newItems",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "scratch_diff_content_newitems",
+      "community": 391,
+      "norm_label": "newitems"
+    },
+    {
+      "label": "extract_text.js",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_extract_text",
+      "community": 376,
+      "norm_label": "extract_text.js"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_extract_text_fs",
+      "community": 376,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "scratch_extract_text_path",
+      "community": 376,
+      "norm_label": "path"
+    },
+    {
+      "label": "xmlPath",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "scratch_extract_text_xmlpath",
+      "community": 376,
+      "norm_label": "xmlpath"
+    },
+    {
+      "label": "xml",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "scratch_extract_text_xml",
+      "community": 376,
+      "norm_label": "xml"
+    },
+    {
+      "label": "paragraphs",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "scratch_extract_text_paragraphs",
+      "community": 376,
+      "norm_label": "paragraphs"
+    },
+    {
+      "label": "outputPath",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "scratch_extract_text_outputpath",
+      "community": 376,
+      "norm_label": "outputpath"
+    },
+    {
+      "label": "find_image.js",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_find_image",
+      "community": 382,
+      "norm_label": "find_image.js"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_find_image_fs",
+      "community": 382,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "scratch_find_image_path",
+      "community": 382,
+      "norm_label": "path"
+    },
+    {
+      "label": "relsPath",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "scratch_find_image_relspath",
+      "community": 382,
+      "norm_label": "relspath"
+    },
+    {
+      "label": "xmlPath",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "scratch_find_image_xmlpath",
+      "community": 382,
+      "norm_label": "xmlpath"
+    },
+    {
+      "label": "rels",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "scratch_find_image_rels",
+      "community": 382,
+      "norm_label": "rels"
+    },
+    {
+      "label": "xml",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "scratch_find_image_xml",
+      "community": 382,
+      "norm_label": "xml"
+    },
+    {
+      "label": "image1RelMatch",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "scratch_find_image_image1relmatch",
+      "community": 382,
+      "norm_label": "image1relmatch"
+    },
+    {
+      "label": "index",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "scratch_find_image_index",
+      "community": 382,
+      "norm_label": "index"
+    },
+    {
+      "label": "start",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "scratch_find_image_start",
+      "community": 382,
+      "norm_label": "start"
+    },
+    {
+      "label": "end",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "scratch_find_image_end",
+      "community": 382,
+      "norm_label": "end"
+    },
+    {
+      "label": "find_image_caption.js",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_find_image_caption",
+      "community": 390,
+      "norm_label": "find_image_caption.js"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_find_image_caption_fs",
+      "community": 390,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "scratch_find_image_caption_path",
+      "community": 390,
+      "norm_label": "path"
+    },
+    {
+      "label": "xmlPath",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "scratch_find_image_caption_xmlpath",
+      "community": 390,
+      "norm_label": "xmlpath"
+    },
+    {
+      "label": "xml",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "scratch_find_image_caption_xml",
+      "community": 390,
+      "norm_label": "xml"
+    },
+    {
+      "label": "index",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "scratch_find_image_caption_index",
+      "community": 390,
+      "norm_label": "index"
+    },
+    {
+      "label": "matches",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "scratch_find_image_caption_matches",
+      "community": 390,
+      "norm_label": "matches"
+    },
+    {
+      "label": "getParaText()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "scratch_find_image_caption_getparatext",
+      "community": 390,
+      "norm_label": "getparatext()"
+    },
+    {
+      "label": "startIdx",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "scratch_find_image_caption_startidx",
+      "community": 390,
+      "norm_label": "startidx"
+    },
+    {
+      "label": "endIdx",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "scratch_find_image_caption_endidx",
+      "community": 390,
+      "norm_label": "endidx"
     },
     {
       "label": "app.js",
@@ -6259,7 +7059,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "drafts_build_makalah_tr",
-      "community": 269,
+      "community": 2,
       "norm_label": "tr()"
     },
     {
@@ -6269,7 +7069,7 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "drafts_build_makalah_tri",
-      "community": 269,
+      "community": 2,
       "norm_label": "tri()"
     },
     {
@@ -6279,7 +7079,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "drafts_build_makalah_trb",
-      "community": 269,
+      "community": 2,
       "norm_label": "trb()"
     },
     {
@@ -6329,7 +7129,7 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "drafts_build_makalah_numbereditem",
-      "community": 269,
+      "community": 2,
       "norm_label": "numbereditem()"
     },
     {
@@ -6389,7 +7189,7 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "drafts_build_makalah_daftarpustakaentry",
-      "community": 269,
+      "community": 2,
       "norm_label": "daftarpustakaentry()"
     },
     {
@@ -14651,6 +15451,646 @@
       "id": "jasa_ppt_akuntansi_work_log_migrasi_produk_digital_pajak_dasar_pembersihan_graphify",
       "community": 159,
       "norm_label": "migrasi produk digital pajak dasar & pembersihan graphify"
+    },
+    {
+      "label": "00-ideation.md",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_00_ideation",
+      "community": 375,
+      "norm_label": "00-ideation.md"
+    },
+    {
+      "label": "Ideation: LinkedIn Profile Optimization for Junior JS/TS Remote Jobs",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_00_ideation_ideation_linkedin_profile_optimization_for_junior_js_ts_remote_jobs",
+      "community": 375,
+      "norm_label": "ideation: linkedin profile optimization for junior js/ts remote jobs"
+    },
+    {
+      "label": "Brain Dump",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_00_ideation_brain_dump",
+      "community": 375,
+      "norm_label": "brain dump"
+    },
+    {
+      "label": "Market Scan",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_00_ideation_market_scan",
+      "community": 375,
+      "norm_label": "market scan"
+    },
+    {
+      "label": "Angles Explored",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_00_ideation_angles_explored",
+      "community": 375,
+      "norm_label": "angles explored"
+    },
+    {
+      "label": "1. Angle \"SEO-Driven Profile Builder\"",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_00_ideation_1_angle_seo_driven_profile_builder",
+      "community": 375,
+      "norm_label": "1. angle \"seo-driven profile builder\""
+    },
+    {
+      "label": "2. Angle \"Project-First Portfolio Showcasing\"",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_00_ideation_2_angle_project_first_portfolio_showcasing",
+      "community": 375,
+      "norm_label": "2. angle \"project-first portfolio showcasing\""
+    },
+    {
+      "label": "3. Angle \"Direct Outreach & Networking Strategy\"",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_00_ideation_3_angle_direct_outreach_networking_strategy",
+      "community": 375,
+      "norm_label": "3. angle \"direct outreach & networking strategy\""
+    },
+    {
+      "label": "Chosen Direction",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_00_ideation_chosen_direction",
+      "community": 375,
+      "norm_label": "chosen direction"
+    },
+    {
+      "label": "Parked Ideas",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_00_ideation_parked_ideas",
+      "community": 375,
+      "norm_label": "parked ideas"
+    },
+    {
+      "label": "01-architecture.md",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_01_architecture",
+      "community": 379,
+      "norm_label": "01-architecture.md"
+    },
+    {
+      "label": "Architecture: LinkedIn Optimization Guide for Junior Vibe Coder",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_01_architecture_architecture_linkedin_optimization_guide_for_junior_vibe_coder",
+      "community": 379,
+      "norm_label": "architecture: linkedin optimization guide for junior vibe coder"
+    },
+    {
+      "label": "Deliverables",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_01_architecture_deliverables",
+      "community": 379,
+      "norm_label": "deliverables"
+    },
+    {
+      "label": "Target Audience",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_01_architecture_target_audience",
+      "community": 379,
+      "norm_label": "target audience"
+    },
+    {
+      "label": "Value Proposition",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_01_architecture_value_proposition",
+      "community": 379,
+      "norm_label": "value proposition"
+    },
+    {
+      "label": "Scope",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_01_architecture_scope",
+      "community": 379,
+      "norm_label": "scope"
+    },
+    {
+      "label": "In v1",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_01_architecture_in_v1",
+      "community": 379,
+      "norm_label": "in v1"
+    },
+    {
+      "label": "NOT in v1 (parked)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_01_architecture_not_in_v1_parked",
+      "community": 379,
+      "norm_label": "not in v1 (parked)"
+    },
+    {
+      "label": "Stack / Tools",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_01_architecture_stack_tools",
+      "community": 379,
+      "norm_label": "stack / tools"
+    },
+    {
+      "label": "02-linkedin-blueprint.md",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint",
+      "community": 347,
+      "norm_label": "02-linkedin-blueprint.md"
+    },
+    {
+      "label": "LinkedIn Profile Blueprint for Junior JS/TS Vibe Coder",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_linkedin_profile_blueprint_for_junior_js_ts_vibe_coder",
+      "community": 347,
+      "norm_label": "linkedin profile blueprint for junior js/ts vibe coder"
+    },
+    {
+      "label": "1. Headline (Judul Profil)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_1_headline_judul_profil",
+      "community": 347,
+      "norm_label": "1. headline (judul profil)"
+    },
+    {
+      "label": "Pilihan Varian Headline (Pilih Salah Satu):",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_pilihan_varian_headline_pilih_salah_satu",
+      "community": 347,
+      "norm_label": "pilihan varian headline (pilih salah satu):"
+    },
+    {
+      "label": "Opsi A: Fullstack-Focused (Sangat disarankan jika Anda menguasai frontend + backend)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_opsi_a_fullstack_focused_sangat_disarankan_jika_anda_menguasai_frontend_backend",
+      "community": 347,
+      "norm_label": "opsi a: fullstack-focused (sangat disarankan jika anda menguasai frontend + backend)"
+    },
+    {
+      "label": "Opsi B: Frontend-Focused (Jika lebih suka membuat UI & Interaksi)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_opsi_b_frontend_focused_jika_lebih_suka_membuat_ui_interaksi",
+      "community": 347,
+      "norm_label": "opsi b: frontend-focused (jika lebih suka membuat ui & interaksi)"
+    },
+    {
+      "label": "Opsi C: Product & AI-Assisted Developer (Menonjolkan kecepatan build & solusi produk)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_opsi_c_product_ai_assisted_developer_menonjolkan_kecepatan_build_solusi_produk",
+      "community": 347,
+      "norm_label": "opsi c: product & ai-assisted developer (menonjolkan kecepatan build & solusi produk)"
+    },
+    {
+      "label": "2. About / Summary (Tentang Saya)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_2_about_summary_tentang_saya",
+      "community": 347,
+      "norm_label": "2. about / summary (tentang saya)"
+    },
+    {
+      "label": "Template About Section:",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_template_about_section",
+      "community": 347,
+      "norm_label": "template about section:"
+    },
+    {
+      "label": "3. Featured Section (Bagian Unggulan)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_3_featured_section_bagian_unggulan",
+      "community": 347,
+      "norm_label": "3. featured section (bagian unggulan)"
+    },
+    {
+      "label": "Struktur Postingan Featured yang Menarik:",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_struktur_postingan_featured_yang_menarik",
+      "community": 347,
+      "norm_label": "struktur postingan featured yang menarik:"
+    },
+    {
+      "label": "4. Experience Section (Pengalaman Kerja)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_4_experience_section_pengalaman_kerja",
+      "community": 347,
+      "norm_label": "4. experience section (pengalaman kerja)"
+    },
+    {
+      "label": "Contoh Penulisan:",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_contoh_penulisan",
+      "community": 347,
+      "norm_label": "contoh penulisan:"
+    },
+    {
+      "label": "5. Skills Section (Keahlian)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_5_skills_section_keahlian",
+      "community": 347,
+      "norm_label": "5. skills section (keahlian)"
+    },
+    {
+      "label": "Rekomendasi Daftar Skill untuk Profil Anda:",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_linkedin_blueprint_rekomendasi_daftar_skill_untuk_profil_anda",
+      "community": 347,
+      "norm_label": "rekomendasi daftar skill untuk profil anda:"
+    },
+    {
+      "label": "02-quality-gate.md",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-quality-gate.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_quality_gate",
+      "community": 397,
+      "norm_label": "02-quality-gate.md"
+    },
+    {
+      "label": "Quality Gate: LinkedIn Optimization for Vibe Coder",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/02-quality-gate.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_02_quality_gate_quality_gate_linkedin_optimization_for_vibe_coder",
+      "community": 397,
+      "norm_label": "quality gate: linkedin optimization for vibe coder"
+    },
+    {
+      "label": "03-outreach-and-jobsearch.md",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_03_outreach_and_jobsearch",
+      "community": 377,
+      "norm_label": "03-outreach-and-jobsearch.md"
+    },
+    {
+      "label": "Job Search & Direct Outreach Strategy for Junior Vibe Coder",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_03_outreach_and_jobsearch_job_search_direct_outreach_strategy_for_junior_vibe_coder",
+      "community": 377,
+      "norm_label": "job search & direct outreach strategy for junior vibe coder"
+    },
+    {
+      "label": "Part 1: Trik Pencarian Lowongan Remote Lokal di LinkedIn",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_03_outreach_and_jobsearch_part_1_trik_pencarian_lowongan_remote_lokal_di_linkedin",
+      "community": 377,
+      "norm_label": "part 1: trik pencarian lowongan remote lokal di linkedin"
+    },
+    {
+      "label": "1. Advanced Search Query di Menu \"Jobs\"",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_03_outreach_and_jobsearch_1_advanced_search_query_di_menu_jobs",
+      "community": 377,
+      "norm_label": "1. advanced search query di menu \"jobs\""
+    },
+    {
+      "label": "2. Berburu Lowongan via LinkedIn Feed (Pencarian Postingan)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_03_outreach_and_jobsearch_2_berburu_lowongan_via_linkedin_feed_pencarian_postingan",
+      "community": 377,
+      "norm_label": "2. berburu lowongan via linkedin feed (pencarian postingan)"
+    },
+    {
+      "label": "Part 2: Template Cold Outreach (Direct Pitching)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_03_outreach_and_jobsearch_part_2_template_cold_outreach_direct_pitching",
+      "community": 377,
+      "norm_label": "part 2: template cold outreach (direct pitching)"
+    },
+    {
+      "label": "Varian A: Pesan untuk Recruiter / HRD",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_03_outreach_and_jobsearch_varian_a_pesan_untuk_recruiter_hrd",
+      "community": 377,
+      "norm_label": "varian a: pesan untuk recruiter / hrd"
+    },
+    {
+      "label": "Varian B: Pesan untuk Tech Lead / Engineering Manager",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_03_outreach_and_jobsearch_varian_b_pesan_untuk_tech_lead_engineering_manager",
+      "community": 377,
+      "norm_label": "varian b: pesan untuk tech lead / engineering manager"
+    },
+    {
+      "label": "Varian C: Pesan untuk Founder / CEO Startup Kecil atau Agensi",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_03_outreach_and_jobsearch_varian_c_pesan_untuk_founder_ceo_startup_kecil_atau_agensi",
+      "community": 377,
+      "norm_label": "varian c: pesan untuk founder / ceo startup kecil atau agensi"
+    },
+    {
+      "label": "Part 3: Golden Rules Outreach",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_03_outreach_and_jobsearch_part_3_golden_rules_outreach",
+      "community": 377,
+      "norm_label": "part 3: golden rules outreach"
+    },
+    {
+      "label": "04-technical-interview-prep.md",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_04_technical_interview_prep",
+      "community": 378,
+      "norm_label": "04-technical-interview-prep.md"
+    },
+    {
+      "label": "Technical Interview Prep for Vibe Coders (Non-IT)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_04_technical_interview_prep_technical_interview_prep_for_vibe_coders_non_it",
+      "community": 378,
+      "norm_label": "technical interview prep for vibe coders (non-it)"
+    },
+    {
+      "label": "Part 1: Cara Menguasai Kode Anda Sendiri (Project Auditing)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_04_technical_interview_prep_part_1_cara_menguasai_kode_anda_sendiri_project_auditing",
+      "community": 378,
+      "norm_label": "part 1: cara menguasai kode anda sendiri (project auditing)"
+    },
+    {
+      "label": "1. Buat Peta Arsitektur Proyek",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_04_technical_interview_prep_1_buat_peta_arsitektur_proyek",
+      "community": 378,
+      "norm_label": "1. buat peta arsitektur proyek"
+    },
+    {
+      "label": "2. Audit Kode Kunci Baris-demi-Baris",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_04_technical_interview_prep_2_audit_kode_kunci_baris_demi_baris",
+      "community": 378,
+      "norm_label": "2. audit kode kunci baris-demi-baris"
+    },
+    {
+      "label": "Part 2: Konsep Esensial JavaScript/TypeScript Stack yang Wajib Dipahami",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_04_technical_interview_prep_part_2_konsep_esensial_javascript_typescript_stack_yang_wajib_dipahami",
+      "community": 378,
+      "norm_label": "part 2: konsep esensial javascript/typescript stack yang wajib dipahami"
+    },
+    {
+      "label": "1. Konsep Frontend (React & Next.js)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_04_technical_interview_prep_1_konsep_frontend_react_next_js",
+      "community": 378,
+      "norm_label": "1. konsep frontend (react & next.js)"
+    },
+    {
+      "label": "2. Konsep Backend & Database (Node.js & Express)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_04_technical_interview_prep_2_konsep_backend_database_node_js_express",
+      "community": 378,
+      "norm_label": "2. konsep backend & database (node.js & express)"
+    },
+    {
+      "label": "Part 3: Cara Menjawab Pertanyaan \"Mengapa Tidak Punya Gelar IT?\"",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_04_technical_interview_prep_part_3_cara_menjawab_pertanyaan_mengapa_tidak_punya_gelar_it",
+      "community": 378,
+      "norm_label": "part 3: cara menjawab pertanyaan \"mengapa tidak punya gelar it?\""
+    },
+    {
+      "label": "Part 4: Survival Guide saat Live Coding",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_04_technical_interview_prep_part_4_survival_guide_saat_live_coding",
+      "community": 378,
+      "norm_label": "part 4: survival guide saat live coding"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_readme",
+      "community": 380,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "\ud83d\ude80 Panduan Optimasi LinkedIn & Cari Kerja Remote (Vibe Coder Edition)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_readme_panduan_optimasi_linkedin_cari_kerja_remote_vibe_coder_edition",
+      "community": 380,
+      "norm_label": "\ud83d\ude80 panduan optimasi linkedin & cari kerja remote (vibe coder edition)"
+    },
+    {
+      "label": "\ud83d\uddfa\ufe0f Peta Jalan Eksekusi (Roadmap)",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_readme_peta_jalan_eksekusi_roadmap",
+      "community": 380,
+      "norm_label": "\ud83d\uddfa\ufe0f peta jalan eksekusi (roadmap)"
+    },
+    {
+      "label": "Langkah 1: Pahami Strategi & Ide Dasar",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_readme_langkah_1_pahami_strategi_ide_dasar",
+      "community": 380,
+      "norm_label": "langkah 1: pahami strategi & ide dasar"
+    },
+    {
+      "label": "Langkah 2: Poles Profil LinkedIn Anda",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_readme_langkah_2_poles_profil_linkedin_anda",
+      "community": 380,
+      "norm_label": "langkah 2: poles profil linkedin anda"
+    },
+    {
+      "label": "Langkah 3: Mulai Berburu Lowongan & Lakukan Outreach",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_readme_langkah_3_mulai_berburu_lowongan_lakukan_outreach",
+      "community": 380,
+      "norm_label": "langkah 3: mulai berburu lowongan & lakukan outreach"
+    },
+    {
+      "label": "Langkah 4: Kuasai Kode Anda & Hadapi Interview",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_readme_langkah_4_kuasai_kode_anda_hadapi_interview",
+      "community": 380,
+      "norm_label": "langkah 4: kuasai kode anda & hadapi interview"
+    },
+    {
+      "label": "\ud83d\udca1 Prinsip Sukses Vibe Coder",
+      "file_type": "document",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "linkedin_optimization_webdev_readme_prinsip_sukses_vibe_coder",
+      "community": 380,
+      "norm_label": "\ud83d\udca1 prinsip sukses vibe coder"
     },
     {
       "label": "makalah_sim.md",
@@ -24018,7 +25458,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_note_properties.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "check_note_properties",
       "id": "check_note_properties"
     },
@@ -24029,7 +25469,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "checknote",
       "id": "check_note_properties_checkNote"
     },
@@ -24043,7 +25483,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_page_details.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 381,
       "norm_label": "check_page_details",
       "id": "check_page_details"
     },
@@ -24054,7 +25494,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 381,
       "norm_label": "checkpages",
       "id": "check_page_details_checkPages"
     },
@@ -24068,7 +25508,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_para_views.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "check_para_views",
       "id": "check_para_views"
     },
@@ -24079,7 +25519,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "checkviews",
       "id": "check_para_views_checkViews"
     },
@@ -24168,7 +25608,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\clean_remaining_tf.js"
       },
       "file_type": "concept",
-      "community": 379,
+      "community": 11,
       "norm_label": "clean_remaining_tf",
       "id": "clean_remaining_tf"
     },
@@ -24179,7 +25619,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 379,
+      "community": 11,
       "norm_label": "runcleanup",
       "id": "clean_remaining_tf_runCleanup"
     },
@@ -24346,7 +25786,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\enrich_dbs.js"
       },
       "file_type": "concept",
-      "community": 347,
+      "community": 11,
       "norm_label": "enrich_dbs",
       "id": "enrich_dbs"
     },
@@ -24357,7 +25797,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 347,
+      "community": 11,
       "norm_label": "enrichnotes",
       "id": "enrich_dbs_enrichNotes"
     },
@@ -24371,7 +25811,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\find_all_databases.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "find_all_databases",
       "id": "find_all_databases"
     },
@@ -24382,7 +25822,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "findalldatabases",
       "id": "find_all_databases_findAllDatabases"
     },
@@ -24396,7 +25836,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\fix_recurring_nav.js"
       },
       "file_type": "concept",
-      "community": 375,
+      "community": 10,
       "norm_label": "fix_recurring_nav",
       "id": "fix_recurring_nav"
     },
@@ -24407,7 +25847,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 375,
+      "community": 10,
       "norm_label": "fixnav",
       "id": "fix_recurring_nav_fixNav"
     },
@@ -24479,7 +25919,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_archive_blocks.js"
       },
       "file_type": "concept",
-      "community": 376,
+      "community": 11,
       "norm_label": "inspect_archive_blocks",
       "id": "inspect_archive_blocks"
     },
@@ -24490,7 +25930,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 376,
+      "community": 11,
       "norm_label": "inspect",
       "id": "inspect_archive_blocks_inspect"
     },
@@ -24504,7 +25944,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_block.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 395,
       "norm_label": "inspect_block",
       "id": "inspect_block"
     },
@@ -24515,7 +25955,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 395,
       "norm_label": "inspectblock",
       "id": "inspect_block_inspectBlock"
     },
@@ -24529,7 +25969,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_failed_views.js"
       },
       "file_type": "concept",
-      "community": 382,
+      "community": 11,
       "norm_label": "inspect_failed_views",
       "id": "inspect_failed_views"
     },
@@ -24540,7 +25980,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 382,
+      "community": 11,
       "norm_label": "inspectviews",
       "id": "inspect_failed_views_inspectViews"
     },
@@ -24554,7 +25994,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_homepage_blocks.js"
       },
       "file_type": "concept",
-      "community": 378,
+      "community": 11,
       "norm_label": "inspect_homepage_blocks",
       "id": "inspect_homepage_blocks"
     },
@@ -24565,7 +26005,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 378,
+      "community": 11,
       "norm_label": "inspectroot",
       "id": "inspect_homepage_blocks_inspectRoot"
     },
@@ -24579,7 +26019,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_old_property.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 396,
       "norm_label": "inspect_old_property",
       "id": "inspect_old_property"
     },
@@ -24590,7 +26030,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 396,
       "norm_label": "inspect",
       "id": "inspect_old_property_inspect"
     },
@@ -24618,7 +26058,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_para_blocks.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "inspect_para_blocks",
       "id": "inspect_para_blocks"
     },
@@ -24629,7 +26069,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "inspect",
       "id": "inspect_para_blocks_inspect"
     },
@@ -24740,7 +26180,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_view_blocks.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 383,
       "norm_label": "inspect_view_blocks",
       "id": "inspect_view_blocks"
     },
@@ -24751,7 +26191,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 383,
       "norm_label": "inspect",
       "id": "inspect_view_blocks_inspect"
     },
@@ -24765,7 +26205,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\list_all_pages.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "list_all_pages",
       "id": "list_all_pages"
     },
@@ -24776,7 +26216,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "listallpages",
       "id": "list_all_pages_listAllPages"
     },
@@ -24790,7 +26230,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\list_areas.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "list_areas",
       "id": "list_areas"
     },
@@ -24801,7 +26241,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "listareas",
       "id": "list_areas_listAreas"
     },
@@ -25059,7 +26499,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\print_page_properties.js"
       },
       "file_type": "concept",
-      "community": 383,
+      "community": 11,
       "norm_label": "print_page_properties",
       "id": "print_page_properties"
     },
@@ -25070,7 +26510,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 383,
+      "community": 11,
       "norm_label": "inspectproperties",
       "id": "print_page_properties_inspectProperties"
     },
@@ -25173,7 +26613,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\relink_para_page_views.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "relink_para_page_views",
       "id": "relink_para_page_views"
     },
@@ -25184,7 +26624,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "relink",
       "id": "relink_para_page_views_relink"
     },
@@ -25270,7 +26710,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\retrieve_callout.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "retrieve_callout",
       "id": "retrieve_callout"
     },
@@ -25281,7 +26721,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "retrievecallout",
       "id": "retrieve_callout_retrieveCallout"
     },
@@ -25550,7 +26990,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\search_mythos.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 385,
       "norm_label": "search_mythos",
       "id": "search_mythos"
     },
@@ -25561,7 +27001,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 385,
       "norm_label": "searchmythos",
       "id": "search_mythos_searchMythos"
     },
@@ -25716,7 +27156,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\sync_to_notion.js"
       },
       "file_type": "concept",
-      "community": 377,
+      "community": 376,
       "norm_label": "sync_to_notion",
       "id": "sync_to_notion"
     },
@@ -25727,7 +27167,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 377,
+      "community": 376,
       "norm_label": "parsemarkdowntorichtext",
       "id": "sync_to_notion_parseMarkdownToRichText"
     },
@@ -25738,7 +27178,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 377,
+      "community": 376,
       "norm_label": "sync",
       "id": "sync_to_notion_sync"
     },
@@ -25749,7 +27189,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 377,
+      "community": 376,
       "norm_label": "path",
       "id": "path"
     },
@@ -25788,7 +27228,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\test_query.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 386,
       "norm_label": "test_query",
       "id": "test_query"
     },
@@ -25799,7 +27239,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 386,
       "norm_label": "testquery",
       "id": "test_query_testQuery"
     },
@@ -25813,7 +27253,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\test_view_creation.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 387,
       "norm_label": "test_view_creation",
       "id": "test_view_creation"
     },
@@ -25824,7 +27264,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 387,
       "norm_label": "test",
       "id": "test_view_creation_test"
     },
@@ -25838,7 +27278,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\test_view_update.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 388,
       "norm_label": "test_view_update",
       "id": "test_view_update"
     },
@@ -25849,7 +27289,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 388,
       "norm_label": "testviewupdate",
       "id": "test_view_update_testViewUpdate"
     },
@@ -25899,7 +27339,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\unarchive_blocks.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 389,
       "norm_label": "unarchive_blocks",
       "id": "unarchive_blocks"
     },
@@ -25910,7 +27350,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 389,
       "norm_label": "unarchive",
       "id": "unarchive_blocks_unarchive"
     },
@@ -38400,6 +39840,477 @@
       "target": "makalah_sim_build_makalah_sim_tablesource"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "docx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_border0"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_borders0"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_bordersall"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_bordersingle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L111",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_cellpara"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_centered"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_chapterheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L283",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_chapterpagesetup"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L218",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_createchapterheadersandfooters"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L202",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_createfrontmatterfooter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L124",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_createmutubakutable"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L193",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_daftarpustakaentry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L311",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_doc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_shadingtype_verticalalign_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_tabstopposition_numberformat_imagerun_tableofcontents_sequentialidentifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_emptyrow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L284",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_frontmatterfooter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_frontmatterheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_getpngdimensions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_getscaleddimensions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_heading2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_heading3"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L158",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_insertflowchartimage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_justifiedpara"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_numbereditemruns"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L286",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_numberingconfigs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_pagebreak"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_resetlist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L177",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_tablecaptioncentered"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L185",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_tablesource"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L255",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_tocentry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_tr"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_trb"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_tri"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L172",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2_insertflowchartimage",
+      "target": "makalah_sim_build_makalah_sim_v2_centered"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L198",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2_daftarpustakaentry",
+      "target": "makalah_sim_build_makalah_sim_v2_tr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2_trb",
+      "target": "makalah_sim_build_makalah_sim_v2_tr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2_tri",
+      "target": "makalah_sim_build_makalah_sim_v2_tr"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2_getscaleddimensions",
+      "target": "makalah_sim_build_makalah_sim_v2_getpngdimensions"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L159",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2_insertflowchartimage",
+      "target": "makalah_sim_build_makalah_sim_v2_getscaleddimensions"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L127",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2_createmutubakutable",
+      "target": "makalah_sim_build_makalah_sim_v2_cellpara"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L173",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2_insertflowchartimage",
+      "target": "makalah_sim_build_makalah_sim_v2_tablesource"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/makalah-sim/draw_diagram_sim.py",
@@ -38955,6 +40866,528 @@
       "confidence_score": 1.0,
       "source": "makalah_sim_package_dependencies_docx",
       "target": "docx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_compare",
+      "target": "fs"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_compare",
+      "target": "path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_compare",
+      "target": "scratch_compare_copytexts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_compare",
+      "target": "scratch_compare_extracttext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_compare",
+      "target": "scratch_compare_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_compare",
+      "target": "scratch_compare_normalize"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_compare",
+      "target": "scratch_compare_originaltexts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_compare",
+      "target": "scratch_compare_path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/compare.js",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_compare_extracttext",
+      "target": "scratch_compare_normalize"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_diff_content",
+      "target": "fs"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_diff_content",
+      "target": "path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_diff_content",
+      "target": "scratch_diff_content_copytexts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_diff_content",
+      "target": "scratch_diff_content_extracttext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_diff_content",
+      "target": "scratch_diff_content_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_diff_content",
+      "target": "scratch_diff_content_newitems"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_diff_content",
+      "target": "scratch_diff_content_normalize"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_diff_content",
+      "target": "scratch_diff_content_originalset"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_diff_content",
+      "target": "scratch_diff_content_originaltexts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_diff_content",
+      "target": "scratch_diff_content_path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/diff_content.js",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_diff_content_extracttext",
+      "target": "scratch_diff_content_normalize"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_extract_text",
+      "target": "fs"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_extract_text",
+      "target": "path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_extract_text",
+      "target": "scratch_extract_text_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_extract_text",
+      "target": "scratch_extract_text_outputpath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_extract_text",
+      "target": "scratch_extract_text_paragraphs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_extract_text",
+      "target": "scratch_extract_text_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_extract_text",
+      "target": "scratch_extract_text_xml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/extract_text.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_extract_text",
+      "target": "scratch_extract_text_xmlpath"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image",
+      "target": "fs"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image",
+      "target": "path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image",
+      "target": "scratch_find_image_end"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image",
+      "target": "scratch_find_image_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image",
+      "target": "scratch_find_image_image1relmatch"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image",
+      "target": "scratch_find_image_index"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image",
+      "target": "scratch_find_image_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image",
+      "target": "scratch_find_image_rels"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image",
+      "target": "scratch_find_image_relspath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image",
+      "target": "scratch_find_image_start"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image",
+      "target": "scratch_find_image_xml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image",
+      "target": "scratch_find_image_xmlpath"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image_caption",
+      "target": "fs"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image_caption",
+      "target": "path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image_caption",
+      "target": "scratch_find_image_caption_endidx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image_caption",
+      "target": "scratch_find_image_caption_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image_caption",
+      "target": "scratch_find_image_caption_getparatext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image_caption",
+      "target": "scratch_find_image_caption_index"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image_caption",
+      "target": "scratch_find_image_caption_matches"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image_caption",
+      "target": "scratch_find_image_caption_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image_caption",
+      "target": "scratch_find_image_caption_startidx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image_caption",
+      "target": "scratch_find_image_caption_xml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/find_image_caption.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_find_image_caption",
+      "target": "scratch_find_image_caption_xmlpath"
     },
     {
       "relation": "contains",
@@ -48969,9 +51402,9 @@
       "source_file": "MEMORY.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memory_1_gotchas_solusi_teknis_pelajaran_penting",
-      "target": "memory_desain_visual_layout_flowchart_readability_sizing",
-      "confidence_score": 1.0
+      "target": "memory_desain_visual_layout_flowchart_readability_sizing"
     },
     {
       "relation": "contains",
@@ -52188,6 +54621,576 @@
       "confidence_score": 1.0,
       "source": "jasa_ppt_akuntansi_work_log_2026_06_15",
       "target": "jasa_ppt_akuntansi_work_log_migrasi_produk_digital_pajak_dasar_pembersihan_graphify"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_00_ideation",
+      "target": "linkedin_optimization_webdev_00_ideation_ideation_linkedin_profile_optimization_for_junior_js_ts_remote_jobs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_00_ideation_ideation_linkedin_profile_optimization_for_junior_js_ts_remote_jobs",
+      "target": "linkedin_optimization_webdev_00_ideation_angles_explored"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_00_ideation_ideation_linkedin_profile_optimization_for_junior_js_ts_remote_jobs",
+      "target": "linkedin_optimization_webdev_00_ideation_brain_dump"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_00_ideation_ideation_linkedin_profile_optimization_for_junior_js_ts_remote_jobs",
+      "target": "linkedin_optimization_webdev_00_ideation_chosen_direction"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_00_ideation_ideation_linkedin_profile_optimization_for_junior_js_ts_remote_jobs",
+      "target": "linkedin_optimization_webdev_00_ideation_market_scan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_00_ideation_ideation_linkedin_profile_optimization_for_junior_js_ts_remote_jobs",
+      "target": "linkedin_optimization_webdev_00_ideation_parked_ideas"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_00_ideation_angles_explored",
+      "target": "linkedin_optimization_webdev_00_ideation_1_angle_seo_driven_profile_builder"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_00_ideation_angles_explored",
+      "target": "linkedin_optimization_webdev_00_ideation_2_angle_project_first_portfolio_showcasing"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/00-ideation.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_00_ideation_angles_explored",
+      "target": "linkedin_optimization_webdev_00_ideation_3_angle_direct_outreach_networking_strategy"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_01_architecture",
+      "target": "linkedin_optimization_webdev_01_architecture_architecture_linkedin_optimization_guide_for_junior_vibe_coder"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_01_architecture_architecture_linkedin_optimization_guide_for_junior_vibe_coder",
+      "target": "linkedin_optimization_webdev_01_architecture_deliverables"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_01_architecture_architecture_linkedin_optimization_guide_for_junior_vibe_coder",
+      "target": "linkedin_optimization_webdev_01_architecture_scope"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_01_architecture_architecture_linkedin_optimization_guide_for_junior_vibe_coder",
+      "target": "linkedin_optimization_webdev_01_architecture_stack_tools"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_01_architecture_architecture_linkedin_optimization_guide_for_junior_vibe_coder",
+      "target": "linkedin_optimization_webdev_01_architecture_target_audience"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_01_architecture_architecture_linkedin_optimization_guide_for_junior_vibe_coder",
+      "target": "linkedin_optimization_webdev_01_architecture_value_proposition"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_01_architecture_scope",
+      "target": "linkedin_optimization_webdev_01_architecture_in_v1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/01-architecture.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_01_architecture_scope",
+      "target": "linkedin_optimization_webdev_01_architecture_not_in_v1_parked"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_linkedin_profile_blueprint_for_junior_js_ts_vibe_coder"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint_linkedin_profile_blueprint_for_junior_js_ts_vibe_coder",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_1_headline_judul_profil"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint_linkedin_profile_blueprint_for_junior_js_ts_vibe_coder",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_2_about_summary_tentang_saya"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint_linkedin_profile_blueprint_for_junior_js_ts_vibe_coder",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_3_featured_section_bagian_unggulan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint_linkedin_profile_blueprint_for_junior_js_ts_vibe_coder",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_4_experience_section_pengalaman_kerja"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint_linkedin_profile_blueprint_for_junior_js_ts_vibe_coder",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_5_skills_section_keahlian"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint_1_headline_judul_profil",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_pilihan_varian_headline_pilih_salah_satu"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint_pilihan_varian_headline_pilih_salah_satu",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_opsi_a_fullstack_focused_sangat_disarankan_jika_anda_menguasai_frontend_backend"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint_pilihan_varian_headline_pilih_salah_satu",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_opsi_b_frontend_focused_jika_lebih_suka_membuat_ui_interaksi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint_pilihan_varian_headline_pilih_salah_satu",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_opsi_c_product_ai_assisted_developer_menonjolkan_kecepatan_build_solusi_produk"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint_2_about_summary_tentang_saya",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_template_about_section"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint_3_featured_section_bagian_unggulan",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_struktur_postingan_featured_yang_menarik"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint_4_experience_section_pengalaman_kerja",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_contoh_penulisan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-linkedin-blueprint.md",
+      "source_location": "L100",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_linkedin_blueprint_5_skills_section_keahlian",
+      "target": "linkedin_optimization_webdev_02_linkedin_blueprint_rekomendasi_daftar_skill_untuk_profil_anda"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/02-quality-gate.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_02_quality_gate",
+      "target": "linkedin_optimization_webdev_02_quality_gate_quality_gate_linkedin_optimization_for_vibe_coder"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_03_outreach_and_jobsearch",
+      "target": "linkedin_optimization_webdev_03_outreach_and_jobsearch_job_search_direct_outreach_strategy_for_junior_vibe_coder"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_03_outreach_and_jobsearch_job_search_direct_outreach_strategy_for_junior_vibe_coder",
+      "target": "linkedin_optimization_webdev_03_outreach_and_jobsearch_part_1_trik_pencarian_lowongan_remote_lokal_di_linkedin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_03_outreach_and_jobsearch_job_search_direct_outreach_strategy_for_junior_vibe_coder",
+      "target": "linkedin_optimization_webdev_03_outreach_and_jobsearch_part_2_template_cold_outreach_direct_pitching"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_03_outreach_and_jobsearch_job_search_direct_outreach_strategy_for_junior_vibe_coder",
+      "target": "linkedin_optimization_webdev_03_outreach_and_jobsearch_part_3_golden_rules_outreach"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_03_outreach_and_jobsearch_part_1_trik_pencarian_lowongan_remote_lokal_di_linkedin",
+      "target": "linkedin_optimization_webdev_03_outreach_and_jobsearch_1_advanced_search_query_di_menu_jobs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_03_outreach_and_jobsearch_part_1_trik_pencarian_lowongan_remote_lokal_di_linkedin",
+      "target": "linkedin_optimization_webdev_03_outreach_and_jobsearch_2_berburu_lowongan_via_linkedin_feed_pencarian_postingan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_03_outreach_and_jobsearch_part_2_template_cold_outreach_direct_pitching",
+      "target": "linkedin_optimization_webdev_03_outreach_and_jobsearch_varian_a_pesan_untuk_recruiter_hrd"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_03_outreach_and_jobsearch_part_2_template_cold_outreach_direct_pitching",
+      "target": "linkedin_optimization_webdev_03_outreach_and_jobsearch_varian_b_pesan_untuk_tech_lead_engineering_manager"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/03-outreach-and-jobsearch.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_03_outreach_and_jobsearch_part_2_template_cold_outreach_direct_pitching",
+      "target": "linkedin_optimization_webdev_03_outreach_and_jobsearch_varian_c_pesan_untuk_founder_ceo_startup_kecil_atau_agensi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_04_technical_interview_prep",
+      "target": "linkedin_optimization_webdev_04_technical_interview_prep_technical_interview_prep_for_vibe_coders_non_it"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_04_technical_interview_prep_technical_interview_prep_for_vibe_coders_non_it",
+      "target": "linkedin_optimization_webdev_04_technical_interview_prep_part_1_cara_menguasai_kode_anda_sendiri_project_auditing"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_04_technical_interview_prep_technical_interview_prep_for_vibe_coders_non_it",
+      "target": "linkedin_optimization_webdev_04_technical_interview_prep_part_2_konsep_esensial_javascript_typescript_stack_yang_wajib_dipahami"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_04_technical_interview_prep_technical_interview_prep_for_vibe_coders_non_it",
+      "target": "linkedin_optimization_webdev_04_technical_interview_prep_part_3_cara_menjawab_pertanyaan_mengapa_tidak_punya_gelar_it"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_04_technical_interview_prep_technical_interview_prep_for_vibe_coders_non_it",
+      "target": "linkedin_optimization_webdev_04_technical_interview_prep_part_4_survival_guide_saat_live_coding"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_04_technical_interview_prep_part_1_cara_menguasai_kode_anda_sendiri_project_auditing",
+      "target": "linkedin_optimization_webdev_04_technical_interview_prep_1_buat_peta_arsitektur_proyek"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_04_technical_interview_prep_part_1_cara_menguasai_kode_anda_sendiri_project_auditing",
+      "target": "linkedin_optimization_webdev_04_technical_interview_prep_2_audit_kode_kunci_baris_demi_baris"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_04_technical_interview_prep_part_2_konsep_esensial_javascript_typescript_stack_yang_wajib_dipahami",
+      "target": "linkedin_optimization_webdev_04_technical_interview_prep_1_konsep_frontend_react_next_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/04-technical-interview-prep.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_04_technical_interview_prep_part_2_konsep_esensial_javascript_typescript_stack_yang_wajib_dipahami",
+      "target": "linkedin_optimization_webdev_04_technical_interview_prep_2_konsep_backend_database_node_js_express"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_readme",
+      "target": "linkedin_optimization_webdev_readme_panduan_optimasi_linkedin_cari_kerja_remote_vibe_coder_edition"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_readme_panduan_optimasi_linkedin_cari_kerja_remote_vibe_coder_edition",
+      "target": "linkedin_optimization_webdev_readme_peta_jalan_eksekusi_roadmap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_readme_panduan_optimasi_linkedin_cari_kerja_remote_vibe_coder_edition",
+      "target": "linkedin_optimization_webdev_readme_prinsip_sukses_vibe_coder"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_readme_peta_jalan_eksekusi_roadmap",
+      "target": "linkedin_optimization_webdev_readme_langkah_1_pahami_strategi_ide_dasar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_readme_peta_jalan_eksekusi_roadmap",
+      "target": "linkedin_optimization_webdev_readme_langkah_2_poles_profil_linkedin_anda"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_readme_peta_jalan_eksekusi_roadmap",
+      "target": "linkedin_optimization_webdev_readme_langkah_3_mulai_berburu_lowongan_lakukan_outreach"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/linkedin-optimization-webdev/README.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "linkedin_optimization_webdev_readme_peta_jalan_eksekusi_roadmap",
+      "target": "linkedin_optimization_webdev_readme_langkah_4_kuasai_kode_anda_hadapi_interview"
     },
     {
       "relation": "contains",
@@ -70371,5 +73374,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "183d93bd6689407a25c64b80216c1f98c12398f5"
+  "built_at_commit": "ad881ceaf3d32501f81567b6ebdec28adb5a75f3"
 }
