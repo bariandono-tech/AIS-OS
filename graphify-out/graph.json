@@ -443,6 +443,186 @@
       "norm_label": "initscrollreveal()"
     },
     {
+      "label": "build_makalah_blockchain.js",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain",
+      "community": 393,
+      "norm_label": "build_makalah_blockchain.js"
+    },
+    {
+      "label": "{\n  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,\n  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,\n  PageNumber, PageBreak, Header, Footer,\n  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,\n  TabStopType, NumberFormat, ImageRun,\n  TableOfContents, SequentialIdentifier\n}",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_numberformat_imagerun_tableofcontents_sequentialidentifier",
+      "community": 393,
+      "norm_label": "{\n  document, packer, paragraph, textrun, table, tablerow, tablecell,\n  alignmenttype, levelformat, headinglevel, borderstyle, widthtype,\n  pagenumber, pagebreak, header, footer,\n  positionaltab, positionaltabalignment, positionaltabrelativeto, positionaltableader,\n  tabstoptype, numberformat, imagerun,\n  tableofcontents, sequentialidentifier\n}"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_fs",
+      "community": 393,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_path",
+      "community": 393,
+      "norm_label": "path"
+    },
+    {
+      "label": "border0",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_border0",
+      "community": 393,
+      "norm_label": "border0"
+    },
+    {
+      "label": "borders0",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_borders0",
+      "community": 393,
+      "norm_label": "borders0"
+    },
+    {
+      "label": "borderSingle",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_bordersingle",
+      "community": 393,
+      "norm_label": "bordersingle"
+    },
+    {
+      "label": "bordersAll",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_bordersall",
+      "community": 393,
+      "norm_label": "bordersall"
+    },
+    {
+      "label": "emptyRow()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_emptyrow",
+      "community": 393,
+      "norm_label": "emptyrow()"
+    },
+    {
+      "label": "centered()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_centered",
+      "community": 393,
+      "norm_label": "centered()"
+    },
+    {
+      "label": "justifiedPara()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_justifiedpara",
+      "community": 393,
+      "norm_label": "justifiedpara()"
+    },
+    {
+      "label": "chapterHeader()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_chapterheader",
+      "community": 393,
+      "norm_label": "chapterheader()"
+    },
+    {
+      "label": "frontMatterHeader()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_frontmatterheader",
+      "community": 393,
+      "norm_label": "frontmatterheader()"
+    },
+    {
+      "label": "heading2()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_heading2",
+      "community": 393,
+      "norm_label": "heading2()"
+    },
+    {
+      "label": "cellPara()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_cellpara",
+      "community": 393,
+      "norm_label": "cellpara()"
+    },
+    {
+      "label": "figureCaption()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_figurecaption",
+      "community": 393,
+      "norm_label": "figurecaption()"
+    },
+    {
+      "label": "tableCaption()",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_tablecaption",
+      "community": 393,
+      "norm_label": "tablecaption()"
+    },
+    {
+      "label": "doc",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_blockchain_doc",
+      "community": 393,
+      "norm_label": "doc"
+    },
+    {
       "label": "build_makalah_sim.js",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim.js",
@@ -539,7 +719,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_centered",
-      "community": 393,
+      "community": 351,
       "norm_label": "centered()"
     },
     {
@@ -559,7 +739,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_tr",
-      "community": 394,
+      "community": 351,
       "norm_label": "tr()"
     },
     {
@@ -569,7 +749,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_tri",
-      "community": 394,
+      "community": 351,
       "norm_label": "tri()"
     },
     {
@@ -579,7 +759,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_trb",
-      "community": 394,
+      "community": 351,
       "norm_label": "trb()"
     },
     {
@@ -639,7 +819,7 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_getpngdimensions",
-      "community": 393,
+      "community": 351,
       "norm_label": "getpngdimensions()"
     },
     {
@@ -649,7 +829,7 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_getscaleddimensions",
-      "community": 393,
+      "community": 351,
       "norm_label": "getscaleddimensions()"
     },
     {
@@ -679,7 +859,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_insertflowchartimage",
-      "community": 393,
+      "community": 351,
       "norm_label": "insertflowchartimage()"
     },
     {
@@ -699,7 +879,7 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_tablesource",
-      "community": 393,
+      "community": 351,
       "norm_label": "tablesource()"
     },
     {
@@ -709,7 +889,7 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_daftarpustakaentry",
-      "community": 394,
+      "community": 351,
       "norm_label": "daftarpustakaentry()"
     },
     {
@@ -1046,7 +1226,7 @@
       "label": "tableCaptionCentered()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L211",
+      "source_location": "L213",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_tablecaptioncentered",
       "community": 269,
@@ -1056,7 +1236,7 @@
       "label": "tableSource()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L223",
+      "source_location": "L224",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_tablesource",
       "community": 269,
@@ -1066,7 +1246,7 @@
       "label": "daftarPustakaEntry()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L231",
+      "source_location": "L232",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_daftarpustakaentry",
       "community": 269,
@@ -1076,7 +1256,7 @@
       "label": "createFrontMatterFooter()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L240",
+      "source_location": "L241",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_createfrontmatterfooter",
       "community": 269,
@@ -1086,7 +1266,7 @@
       "label": "createChapterHeadersAndFooters()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L256",
+      "source_location": "L257",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_createchapterheadersandfooters",
       "community": 269,
@@ -1096,7 +1276,7 @@
       "label": "tocEntry()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L293",
+      "source_location": "L294",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_tocentry",
       "community": 269,
@@ -1106,7 +1286,7 @@
       "label": "chapterPageSetup",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L321",
+      "source_location": "L322",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_chapterpagesetup",
       "community": 269,
@@ -1116,7 +1296,7 @@
       "label": "frontMatterFooter",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L322",
+      "source_location": "L323",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_frontmatterfooter",
       "community": 269,
@@ -1126,7 +1306,7 @@
       "label": "numberingConfigs",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L324",
+      "source_location": "L325",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_numberingconfigs",
       "community": 269,
@@ -1136,7 +1316,7 @@
       "label": "doc",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L349",
+      "source_location": "L350",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_doc",
       "community": 269,
@@ -1569,7 +1749,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "makalah_sim_package_dependencies",
-      "community": 374,
+      "community": 362,
       "norm_label": "dependencies"
     },
     {
@@ -1579,8 +1759,128 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "makalah_sim_package_dependencies_docx",
+      "community": 362,
+      "norm_label": "docx"
+    },
+    {
+      "label": "check_captions.py",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/check_captions.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_check_captions",
+      "community": 398,
+      "norm_label": "check_captions.py"
+    },
+    {
+      "label": "check_dg.py",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/check_dg.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_check_dg",
+      "community": 399,
+      "norm_label": "check_dg.py"
+    },
+    {
+      "label": "check_docx.py",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/check_docx.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_check_docx",
+      "community": 400,
+      "norm_label": "check_docx.py"
+    },
+    {
+      "label": "check_docx_options.js",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/check_docx_options.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_check_docx_options",
+      "community": 374,
+      "norm_label": "check_docx_options.js"
+    },
+    {
+      "label": "docx",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/check_docx_options.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_check_docx_options_docx",
       "community": 374,
       "norm_label": "docx"
+    },
+    {
+      "label": "check_p_style_attrs.py",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/check_p_style_attrs.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_check_p_style_attrs",
+      "community": 401,
+      "norm_label": "check_p_style_attrs.py"
+    },
+    {
+      "label": "check_styles.py",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/check_styles.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_check_styles",
+      "community": 402,
+      "norm_label": "check_styles.py"
+    },
+    {
+      "label": "check_tables.py",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/check_tables.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_check_tables",
+      "community": 403,
+      "norm_label": "check_tables.py"
+    },
+    {
+      "label": "check_toc_xml.js",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_check_toc_xml",
+      "community": 394,
+      "norm_label": "check_toc_xml.js"
+    },
+    {
+      "label": "docx",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_check_toc_xml_docx",
+      "community": 394,
+      "norm_label": "docx"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "scratch_check_toc_xml_fs",
+      "community": 394,
+      "norm_label": "fs"
+    },
+    {
+      "label": "doc",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "scratch_check_toc_xml_doc",
+      "community": 394,
+      "norm_label": "doc"
     },
     {
       "label": "compare.js",
@@ -2021,6 +2321,86 @@
       "id": "scratch_find_image_caption_endidx",
       "community": 390,
       "norm_label": "endidx"
+    },
+    {
+      "label": "inspect_field_instruction.js",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/inspect_field_instruction.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_inspect_field_instruction",
+      "community": 374,
+      "norm_label": "inspect_field_instruction.js"
+    },
+    {
+      "label": "docx",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/inspect_field_instruction.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_inspect_field_instruction_docx",
+      "community": 374,
+      "norm_label": "docx"
+    },
+    {
+      "label": "doc",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/inspect_field_instruction.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "scratch_inspect_field_instruction_doc",
+      "community": 374,
+      "norm_label": "doc"
+    },
+    {
+      "label": "inspect_field_instruction_def.js",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/inspect_field_instruction_def.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_inspect_field_instruction_def",
+      "community": 374,
+      "norm_label": "inspect_field_instruction_def.js"
+    },
+    {
+      "label": "docx",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/inspect_field_instruction_def.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_inspect_field_instruction_def_docx",
+      "community": 374,
+      "norm_label": "docx"
+    },
+    {
+      "label": "inspect_styles_xml.py",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/inspect_styles_xml.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_inspect_styles_xml",
+      "community": 404,
+      "norm_label": "inspect_styles_xml.py"
+    },
+    {
+      "label": "print_paragraphs.py",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/print_paragraphs.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_print_paragraphs",
+      "community": 405,
+      "norm_label": "print_paragraphs.py"
+    },
+    {
+      "label": "read_test_toc_xml.py",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/scratch/read_test_toc_xml.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scratch_read_test_toc_xml",
+      "community": 406,
+      "norm_label": "read_test_toc_xml.py"
     },
     {
       "label": "app.js",
@@ -39392,6 +39772,209 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_border0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_borders0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_bordersall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_bordersingle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_cellpara",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_centered",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_chapterheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_doc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_numberformat_imagerun_tableofcontents_sequentialidentifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_emptyrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_figurecaption",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_frontmatterheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_heading2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_justifiedpara",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "makalah_sim_build_makalah_blockchain_tablecaption",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_blockchain",
+      "target": "path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "projects/makalah-sim/build_makalah_sim.js",
       "source_location": "L2",
       "weight": 1.0,
@@ -39927,9 +40510,9 @@
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_sim_v2",
-      "target": "makalah_sim_build_makalah_sim_v2_chapterheader",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_sim_v2_chapterheader"
     },
     {
       "relation": "contains",
@@ -39997,9 +40580,9 @@
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_sim_v2",
-      "target": "makalah_sim_build_makalah_sim_v2_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_shadingtype_verticalalign_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_tabstopposition_numberformat_imagerun_tableofcontents_sequentialidentifier",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_sim_v2_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_shadingtype_verticalalign_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_tabstopposition_numberformat_imagerun_tableofcontents_sequentialidentifier"
     },
     {
       "relation": "contains",
@@ -40027,9 +40610,9 @@
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_sim_v2",
-      "target": "makalah_sim_build_makalah_sim_v2_frontmatterheader",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_sim_v2_frontmatterheader"
     },
     {
       "relation": "contains",
@@ -40871,6 +41454,79 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/check_docx_options.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scratch_check_docx_options",
+      "target": "docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/check_docx_options.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scratch_check_docx_options",
+      "target": "scratch_check_docx_options_docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scratch_check_toc_xml",
+      "target": "docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "scratch_check_toc_xml",
+      "target": "fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "scratch_check_toc_xml",
+      "target": "scratch_check_toc_xml_doc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scratch_check_toc_xml",
+      "target": "scratch_check_toc_xml_docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "scratch_check_toc_xml",
+      "target": "scratch_check_toc_xml_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "projects/makalah-sim/scratch/compare.js",
       "source_location": "L1",
       "weight": 1.0,
@@ -41388,6 +42044,58 @@
       "confidence_score": 1.0,
       "source": "scratch_find_image_caption",
       "target": "scratch_find_image_caption_xmlpath"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/inspect_field_instruction.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scratch_inspect_field_instruction",
+      "target": "docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/inspect_field_instruction.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "scratch_inspect_field_instruction",
+      "target": "scratch_inspect_field_instruction_doc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/inspect_field_instruction.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scratch_inspect_field_instruction",
+      "target": "scratch_inspect_field_instruction_docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/inspect_field_instruction_def.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scratch_inspect_field_instruction_def",
+      "target": "docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/scratch/inspect_field_instruction_def.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "scratch_inspect_field_instruction_def",
+      "target": "scratch_inspect_field_instruction_def_docx",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -73374,5 +74082,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ad881ceaf3d32501f81567b6ebdec28adb5a75f3"
+  "built_at_commit": "b902fcaa99a034c452dff8b3e1cf09c9db0c21ce"
 }

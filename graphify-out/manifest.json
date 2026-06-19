@@ -1665,12 +1665,12 @@
     "semantic_hash": ""
   },
   "projects/makalah-sim/build_makalah_sim_v2.js": {
-    "mtime": 1781850044.3860219,
-    "ast_hash": "67e15d961ef50c40db0fc69ccc4dfd0b",
+    "mtime": 1781854898.878601,
+    "ast_hash": "db69f3a17cc7a382e66269784905d8d7",
     "semantic_hash": ""
   },
   "projects/makalah-sim/makalah_sim_v2.json": {
-    "mtime": 1781849526.3923285,
+    "mtime": 1781854987.0240893,
     "ast_hash": "71a5b169bc23bbb51ea870d44408d1fc",
     "semantic_hash": ""
   },
@@ -1712,6 +1712,86 @@
   "projects/makalah-sim/logo_upb.jpg": {
     "mtime": 315507600.0,
     "ast_hash": "2672a2f4f93dfb65ea2d5d2f870fa6c4",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/build_makalah_blockchain.js": {
+    "mtime": 1781855263.3952422,
+    "ast_hash": "d188868981fd3b058147f51733bd9071",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/check_captions.py": {
+    "mtime": 1781850541.0520546,
+    "ast_hash": "c6ed4b2db929310866f939ed8c892ea0",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/check_dg.py": {
+    "mtime": 1781850531.6445973,
+    "ast_hash": "07ea8785908eba1a4192ac21de8f665e",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/check_docx.py": {
+    "mtime": 1781850520.353228,
+    "ast_hash": "4f508edcda148fd2544d34663499deb0",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/check_docx_options.js": {
+    "mtime": 1781851419.5581853,
+    "ast_hash": "c22d12313b2cc7e45b2c6c3b732502f0",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/check_p_style_attrs.py": {
+    "mtime": 1781852983.91825,
+    "ast_hash": "6b435f9502785af94a42e411e2a8d094",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/check_styles.py": {
+    "mtime": 1781850816.0704632,
+    "ast_hash": "72941cd896b76e66ed16b86c53aca3c5",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/check_tables.py": {
+    "mtime": 1781850759.693477,
+    "ast_hash": "bf28aba71ff94a83d55d5df6aaab24a3",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/check_toc_xml.js": {
+    "mtime": 1781852080.3369884,
+    "ast_hash": "9f0b86ee3002b735e338ab49d6167bfd",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/inspect_field_instruction.js": {
+    "mtime": 1781851516.8387105,
+    "ast_hash": "87af005d6d20a017890d59aaee942dc0",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/inspect_field_instruction_def.js": {
+    "mtime": 1781851704.7151842,
+    "ast_hash": "d80fe34497857b380759c2e4ee5bda2d",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/inspect_styles_xml.py": {
+    "mtime": 1781852973.494686,
+    "ast_hash": "662380130137f7650c0aadcaf582b57f",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/print_paragraphs.py": {
+    "mtime": 1781850745.4681585,
+    "ast_hash": "0f132ac266e8cc9f434f951822b6fa21",
+    "semantic_hash": ""
+  },
+  "projects/makalah-sim/scratch/read_test_toc_xml.py": {
+    "mtime": 1781851984.7871344,
+    "ast_hash": "81711fd59218a94d67c88f68abf1a260",
+    "semantic_hash": ""
+  },
+  "projects/Dahsboard HTML Rudenim/Manajemen_Risiko_PBJ.html": {
+    "mtime": 1781859699.9770901,
+    "ast_hash": "c47cbd68dfc70027f9a65bc0e577d233",
+    "semantic_hash": ""
+  },
+  "projects/Dahsboard HTML Rudenim/extracted_risks.txt": {
+    "mtime": 1781856956.6786563,
+    "ast_hash": "96fbe9e39744a6c6fc737d4924c6d892",
     "semantic_hash": ""
   }
 }

@@ -25,6 +25,11 @@ const borders0 = { top: border0, bottom: border0, left: border0, right: border0 
 
 const borderSingle = { style: BorderStyle.SINGLE, size: 4, color: '000000' };
 const bordersAll = { top: borderSingle, bottom: borderSingle, left: borderSingle, right: borderSingle };
+const borderNone = { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' };
+
+const bordersHeader = { top: borderSingle, bottom: borderSingle, left: borderNone, right: borderNone };
+const bordersMiddle = { top: borderNone, bottom: borderNone, left: borderNone, right: borderNone };
+const bordersBottom = { top: borderNone, bottom: borderSingle, left: borderNone, right: borderNone };
 
 function emptyRow() {
   return new Paragraph({ spacing: { after: 0, before: 0, line: 360 }, children: [new TextRun('')] });
@@ -134,9 +139,9 @@ function getScaledDimensions(imageName, targetWidth) {
   };
 }
 
-function cellPara(text, { width, bold = false, center = false, italic = false } = {}) {
+function cellPara(text, { width, bold = false, center = false, italic = false, borders = bordersAll } = {}) {
   return new TableCell({
-    borders: bordersAll,
+    borders: borders,
     width: { size: width, type: WidthType.DXA },
     margins: { top: 60, bottom: 60, left: 120, right: 120 },
     children: [new Paragraph({
@@ -150,27 +155,30 @@ function cellPara(text, { width, bold = false, center = false, italic = false } 
 function createMutuBakuTable(rowsData) {
   const headerRow = new TableRow({
     children: [
-      cellPara('No', { width: 400, bold: true, center: true }),
-      cellPara('Kegiatan', { width: 2100, bold: true, center: true }),
-      cellPara('Pelaksana', { width: 1100, bold: true, center: true }),
-      cellPara('Mutu Baku: Kelengkapan', { width: 1500, bold: true, center: true }),
-      cellPara('Waktu', { width: 600, bold: true, center: true }),
-      cellPara('Output', { width: 1100, bold: true, center: true }),
-      cellPara('Keterangan / Catatan', { width: 1100, bold: true, center: true }),
+      cellPara('No', { width: 400, bold: true, center: true, borders: bordersHeader }),
+      cellPara('Kegiatan', { width: 2100, bold: true, center: true, borders: bordersHeader }),
+      cellPara('Pelaksana', { width: 1100, bold: true, center: true, borders: bordersHeader }),
+      cellPara('Mutu Baku: Kelengkapan', { width: 1500, bold: true, center: true, borders: bordersHeader }),
+      cellPara('Waktu', { width: 600, bold: true, center: true, borders: bordersHeader }),
+      cellPara('Output', { width: 1100, bold: true, center: true, borders: bordersHeader }),
+      cellPara('Keterangan / Catatan', { width: 1100, bold: true, center: true, borders: bordersHeader }),
     ]
   });
 
   const tableRows = [headerRow];
-  for (const row of rowsData) {
+  for (let i = 0; i < rowsData.length; i++) {
+    const row = rowsData[i];
+    const isLast = (i === rowsData.length - 1);
+    const rowBorders = isLast ? bordersBottom : bordersMiddle;
     tableRows.push(new TableRow({
       children: [
-        cellPara(row.no, { width: 400, center: true }),
-        cellPara(row.kegiatan, { width: 2100 }),
-        cellPara(row.pelaksana, { width: 1100 }),
-        cellPara(row.kelengkapan, { width: 1500 }),
-        cellPara(row.waktu, { width: 600, center: true }),
-        cellPara(row.output, { width: 1100 }),
-        cellPara(row.keterangan, { width: 1100 }),
+        cellPara(row.no, { width: 400, center: true, borders: rowBorders }),
+        cellPara(row.kegiatan, { width: 2100, borders: rowBorders }),
+        cellPara(row.pelaksana, { width: 1100, borders: rowBorders }),
+        cellPara(row.kelengkapan, { width: 1500, borders: rowBorders }),
+        cellPara(row.waktu, { width: 600, center: true, borders: rowBorders }),
+        cellPara(row.output, { width: 1100, borders: rowBorders }),
+        cellPara(row.keterangan, { width: 1100, borders: rowBorders }),
       ]
     }));
   }
@@ -183,7 +191,7 @@ function createMutuBakuTable(rowsData) {
 
 function insertFlowchartImage(imageName, title, targetWidth = 300, isFirst = false) {
   const dims = getScaledDimensions(imageName, targetWidth);
-  const childSeq = isFirst ? "GambarChild \\r 1" : "GambarChild";
+  const childSeq = isFirst ? "GambarChild \\r 3" : "GambarChild";
   return [
     new Paragraph({
       alignment: AlignmentType.CENTER,
@@ -199,11 +207,11 @@ function insertFlowchartImage(imageName, title, targetWidth = 300, isFirst = fal
     new Paragraph({
       style: 'CaptionFigure',
       children: [
-        new TextRun({ text: "Gambar ", bold: true, font: 'Times New Roman', size: 22 }),
+        new TextRun({ text: "Gambar ", bold: true, font: 'Times New Roman', size: 24 }),
         new SequentialIdentifier("Gambar \\r 2"),
-        new TextRun({ text: ".", bold: true, font: 'Times New Roman', size: 22 }),
+        new TextRun({ text: ".", bold: true, font: 'Times New Roman', size: 24 }),
         new SequentialIdentifier(childSeq),
-        new TextRun({ text: `.\t${title}`, bold: true, font: 'Times New Roman', size: 22 })
+        new TextRun({ text: `\t${title}`, bold: true, font: 'Times New Roman', size: 24 })
       ]
     }),
     tableSource('Sumber: Perdirjen Imigrasi No. IMI.1917-OT.02.01/2013, diolah peneliti (2026).'),
@@ -216,7 +224,7 @@ function tableCaptionCentered(text) {
     children: [
       new TextRun({ text: "Tabel 2.", bold: true, font: 'Times New Roman', size: 24 }),
       new SequentialIdentifier("Tabel"),
-      new TextRun({ text: `.\t${text}`, bold: true, font: 'Times New Roman', size: 24 })
+      new TextRun({ text: `\t${text}`, bold: true, font: 'Times New Roman', size: 24 })
     ]
   });
 }
@@ -399,7 +407,7 @@ const doc = new Document({
       },
       {
         id: 'CaptionFigure', name: 'Caption Figure', basedOn: 'Normal', next: 'Normal', quickFormat: true,
-        run: { size: 22, bold: true, font: 'Times New Roman' },
+        run: { size: 24, bold: true, font: 'Times New Roman' },
         paragraph: {
           alignment: AlignmentType.LEFT,
           spacing: { before: 80, after: 80, line: 480 },
@@ -676,9 +684,9 @@ const doc = new Document({
           style: 'CaptionFigure',
           spacing: { after: 240, before: 80, line: 480 },
           children: [
-            new TextRun({ text: "Gambar ", bold: true, font: 'Times New Roman', size: 22 }),
+            new TextRun({ text: "Gambar 2.", bold: true, font: 'Times New Roman', size: 24 }),
             new SequentialIdentifier("Gambar"),
-            new TextRun({ text: ".\tStruktur Organisasi Rudenim Pontianak", bold: true, font: 'Times New Roman', size: 22 })
+            new TextRun({ text: "\tStruktur Organisasi Rudenim Pontianak", bold: true, font: 'Times New Roman', size: 24 })
           ]
         }),
         tableSource('Sumber: Website Resmi Rudenim Pontianak, rudenimpontianak.imigrasi.go.id (2026).'),
@@ -831,9 +839,9 @@ const doc = new Document({
           style: 'CaptionFigure',
           spacing: { after: 240, before: 80, line: 480 },
           children: [
-            new TextRun({ text: "Gambar ", bold: true, font: 'Times New Roman', size: 22 }),
+            new TextRun({ text: "Gambar 2.", bold: true, font: 'Times New Roman', size: 24 }),
             new SequentialIdentifier("Gambar"),
-            new TextRun({ text: ".\tFlowchart Siklus Hidup Deteni Terintegrasi dengan 7 SOP pada Rumah Detensi Imigrasi Pontianak", bold: true, font: 'Times New Roman', size: 22 })
+            new TextRun({ text: "\tFlowchart Siklus Hidup Deteni Terintegrasi dengan 7 SOP pada Rumah Detensi Imigrasi Pontianak", bold: true, font: 'Times New Roman', size: 24 })
           ]
         }),
         tableSource('Sumber: Perdirjen Imigrasi No. IMI.1917-OT.02.01/2013, diolah peneliti (2026).'),
@@ -1081,7 +1089,7 @@ const doc = new Document({
           tri('Technology'),
           tr('), dan Sumber Daya Manusia ('),
           tri('People'),
-          tr('). Perubahan pada satu elemen akan secara langsung maupun tidak langsung mempengaruhi ketiga elemen lainnya. Kerangka analisis ini digambarkan pada Gambar 3.')
+          tr('). Perubahan pada satu elemen akan secara langsung maupun tidak langsung mempengaruhi ketiga elemen lainnya. Kerangka analisis ini digambarkan pada Gambar 2.10.')
         ]),
 
         // Diagram Leavitt
@@ -1100,9 +1108,9 @@ const doc = new Document({
           style: 'CaptionFigure',
           spacing: { after: 240, before: 80, line: 480 },
           children: [
-            new TextRun({ text: "Gambar ", bold: true, font: 'Times New Roman', size: 22 }),
-            new SequentialIdentifier("Gambar \\r 3"),
-            new TextRun({ text: ".\tKerangka Analisis Leavitt's Diamond Model pada Rumah Detensi Imigrasi Pontianak", bold: true, font: 'Times New Roman', size: 22 })
+            new TextRun({ text: "Gambar 2.", bold: true, font: 'Times New Roman', size: 24 }),
+            new SequentialIdentifier("Gambar \\r 10"),
+            new TextRun({ text: "\tKerangka Analisis Leavitt's Diamond Model pada Rumah Detensi Imigrasi Pontianak", bold: true, font: 'Times New Roman', size: 24 })
           ]
         }),
         tableSource('Sumber: Diadaptasi dari Leavitt (1965), diolah peneliti (2026).'),
@@ -1148,51 +1156,51 @@ const doc = new Document({
           rows: [
             new TableRow({
               children: [
-                cellPara('Hubungan Elemen', { width: 2200, bold: true, center: true }),
-                cellPara('Bentuk Keterkaitan', { width: 2700, bold: true, center: true }),
-                cellPara('Implikasi di Rudenim Pontianak', { width: 3037, bold: true, center: true }),
+                cellPara('Hubungan Elemen', { width: 2200, bold: true, center: true, borders: bordersHeader }),
+                cellPara('Bentuk Keterkaitan', { width: 2700, bold: true, center: true, borders: bordersHeader }),
+                cellPara('Implikasi di Rudenim Pontianak', { width: 3037, bold: true, center: true, borders: bordersHeader }),
               ]
             }),
             new TableRow({
               children: [
-                cellPara('Struktur ↔ Tugas (SOP)', { width: 2200 }),
-                cellPara('Pembagian tugas dalam SOP mengikuti pembagian unit kerja dalam struktur organisasi.', { width: 2700 }),
-                cellPara('Setiap SOP secara eksplisit menyebutkan seksi yang bertanggung jawab.', { width: 3037 }),
+                cellPara('Struktur ↔ Tugas (SOP)', { width: 2200, borders: bordersMiddle }),
+                cellPara('Pembagian tugas dalam SOP mengikuti pembagian unit kerja dalam struktur organisasi.', { width: 2700, borders: bordersMiddle }),
+                cellPara('Setiap SOP secara eksplisit menyebutkan seksi yang bertanggung jawab.', { width: 3037, borders: bordersMiddle }),
               ]
             }),
             new TableRow({
               children: [
-                cellPara('Struktur ↔ Teknologi (SIMKIM)', { width: 2200 }),
-                cellPara('Hak akses modul SIMKIM disesuaikan dengan posisi jabatan dalam struktur.', { width: 2700 }),
-                cellPara('Operator registrasi memiliki akses input, Kasi memiliki akses supervisory.', { width: 3037 }),
+                cellPara('Struktur ↔ Teknologi (SIMKIM)', { width: 2200, borders: bordersMiddle }),
+                cellPara('Hak akses modul SIMKIM disesuaikan dengan posisi jabatan dalam struktur.', { width: 2700, borders: bordersMiddle }),
+                cellPara('Operator registrasi memiliki akses input, Kasi memiliki akses supervisory.', { width: 3037, borders: bordersMiddle }),
               ]
             }),
             new TableRow({
               children: [
-                cellPara('Tugas (SOP) ↔ Teknologi (SIMKIM)', { width: 2200 }),
-                cellPara('Hampir seluruh SOP mensyaratkan penggunaan SIMKIM pada tahapannya.', { width: 2700 }),
-                cellPara('SOP Registrasi wajib input biometrik, SOP Deportasi wajib update status.', { width: 3037 }),
+                cellPara('Tugas (SOP) ↔ Teknologi (SIMKIM)', { width: 2200, borders: bordersMiddle }),
+                cellPara('Hampir seluruh SOP mensyaratkan penggunaan SIMKIM pada tahapannya.', { width: 2700, borders: bordersMiddle }),
+                cellPara('SOP Registrasi wajib input biometrik, SOP Deportasi wajib update status.', { width: 3037, borders: bordersMiddle }),
               ]
             }),
             new TableRow({
               children: [
-                cellPara('SDM ↔ Teknologi', { width: 2200 }),
-                cellPara('Kompetensi SDM menentukan kualitas input data di SIMKIM.', { width: 2700 }),
-                cellPara('Petugas terlatih menghasilkan data biometrik akurat; sebaliknya, human error meningkat.', { width: 3037 }),
+                cellPara('SDM ↔ Teknologi', { width: 2200, borders: bordersMiddle }),
+                cellPara('Kompetensi SDM menentukan kualitas input data di SIMKIM.', { width: 2700, borders: bordersMiddle }),
+                cellPara('Petugas terlatih menghasilkan data biometrik akurat; sebaliknya, human error meningkat.', { width: 3037, borders: bordersMiddle }),
               ]
             }),
             new TableRow({
               children: [
-                cellPara('SDM ↔ Tugas (SOP)', { width: 2200 }),
-                cellPara('SDM melaksanakan SOP; pemahaman SDM terhadap SOP menentukan kualitas layanan.', { width: 2700 }),
-                cellPara('Pelatihan berkala diperlukan agar seluruh petugas memahami prosedur terbaru.', { width: 3037 }),
+                cellPara('SDM ↔ Tugas (SOP)', { width: 2200, borders: bordersMiddle }),
+                cellPara('SDM melaksanakan SOP; pemahaman SDM terhadap SOP menentukan kualitas layanan.', { width: 2700, borders: bordersMiddle }),
+                cellPara('Pelatihan berkala diperlukan agar seluruh petugas memahami prosedur terbaru.', { width: 3037, borders: bordersMiddle }),
               ]
             }),
             new TableRow({
               children: [
-                cellPara('SDM ↔ Struktur', { width: 2200 }),
-                cellPara('Penempatan SDM dalam struktur harus sesuai kompetensi.', { width: 2700 }),
-                cellPara('Rotasi pegawai tanpa pelatihan memadai menyebabkan penurunan kinerja unit.', { width: 3037 }),
+                cellPara('SDM ↔ Struktur', { width: 2200, borders: bordersBottom }),
+                cellPara('Penempatan SDM dalam struktur harus sesuai kompetensi.', { width: 2700, borders: bordersBottom }),
+                cellPara('Rotasi pegawai tanpa pelatihan memadai menyebabkan penurunan kinerja unit.', { width: 3037, borders: bordersBottom }),
               ]
             }),
           ]
@@ -1375,16 +1383,16 @@ Packer.toBuffer(doc).then((buffer) => {
       { num: "2.8", title: "Matriks Keterkaitan Antar Elemen Leavitt's Diamond", page: "18" }
     ],
     figures: [
-      { num: "1", title: "Struktur Organisasi Rudenim Pontianak", page: "4" },
-      { num: "2", title: "Flowchart Siklus Hidup Deteni Terintegrasi dengan 7 SOP", page: "8" },
-      { num: "2.1", title: "Flowchart SOP Penerimaan Calon Deteni", page: "8" },
-      { num: "2.2", title: "Flowchart SOP Pemeriksaan Kesehatan Deteni", page: "10" },
-      { num: "2.3", title: "Flowchart SOP Registrasi Deteni", page: "11" },
-      { num: "2.4", title: "Flowchart SOP Penempatan Deteni Ke Blok Hunian", page: "12" },
-      { num: "2.5", title: "Flowchart SOP Penjagaan & Pengamanan Rudenim", page: "13" },
-      { num: "2.6", title: "Flowchart SOP Pemindahan Deteni Antar Rudenim", page: "14" },
-      { num: "2.7", title: "Flowchart SOP Pendeportasian Deteni Ke Negara Asal", page: "15" },
-      { num: "3", title: "Kerangka Analisis Leavitt's Diamond Model", page: "17" }
+      { num: "2.1", title: "Struktur Organisasi Rudenim Pontianak", page: "4" },
+      { num: "2.2", title: "Flowchart Siklus Hidup Deteni Terintegrasi dengan 7 SOP", page: "8" },
+      { num: "2.3", title: "Flowchart SOP Penerimaan Calon Deteni", page: "8" },
+      { num: "2.4", title: "Flowchart SOP Pemeriksaan Kesehatan Deteni", page: "10" },
+      { num: "2.5", title: "Flowchart SOP Registrasi Deteni", page: "11" },
+      { num: "2.6", title: "Flowchart SOP Penempatan Deteni Ke Blok Hunian", page: "12" },
+      { num: "2.7", title: "Flowchart SOP Penjagaan & Pengamanan Rudenim", page: "13" },
+      { num: "2.8", title: "Flowchart SOP Pemindahan Deteni Antar Rudenim", page: "14" },
+      { num: "2.9", title: "Flowchart SOP Pendeportasian Deteni Ke Negara Asal", page: "15" },
+      { num: "2.10", title: "Kerangka Analisis Leavitt's Diamond Model", page: "17" }
     ]
   };
 

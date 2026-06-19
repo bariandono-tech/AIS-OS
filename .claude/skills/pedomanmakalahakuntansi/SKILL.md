@@ -136,3 +136,19 @@ BAB I  PENDAHULUAN              → HURUF KAPITAL SEMUA, tebal, di tengah
 1. **Spasi 2.0 (Naskah Utama)**: Gunakan `spacing: { line: 480, lineRule: 'exact' }` dan `spacing: { after: 0, before: 0 }`.
 2. **Spasi 1.5 (Daftar Isi & Tabel/Gambar)**: Gunakan `spacing: { line: 360, lineRule: 'exact' }`.
 3. **Daftar isi**: Tulis secara manual menggunakan helper `tocEntry` dengan tab leader dot agar format dan penomoran halamannya 100% presisi mengikuti format final dari dosen.
+
+---
+
+## 9. ATURAN CAPTION DAN DESAIN TABEL (PENTING)
+
+1. **Penomoran Gambar & Tabel**:
+   - Seluruh Gambar dan Tabel yang berada di bawah bab harus diawali nomor bab bersangkutan (contoh: `Tabel 2.1`, `Gambar 2.1`).
+   - **TIDAK boleh ada titik** setelah nomor gambar/tabel (contoh: `Tabel 2.1`, **bukan** `Tabel 2.1.`).
+   - **TIDAK boleh diakhiri titik** di ujung kalimat judul caption (contoh: `Gambar 2.1 Struktur Organisasi`).
+   - Pemisah antara nomor dan judul caption menggunakan karakter Tab (`\t`), bukan spasi biasa atau titik.
+2. **Ukuran Font Caption**:
+   - Judul Caption Gambar dan Tabel harus seragam menggunakan Times New Roman **12 pt** (`size: 24`).
+3. **Format Garis Tabel (APA Style)**:
+   - Menggunakan format tabel terbuka: hanya garis horizontal atas, bawah header, dan bawah tabel (tanpa garis vertikal kiri/kanan/tengah).
+4. **Sumber**:
+   - Diletakkan **2 spasi di bawah tabel/gambar** dengan huruf miring (*italic*), ukuran 11 pt (`size: 22`). Jika terdiri dari beberapa baris, baris berikutnya berjarak 1 spasi.

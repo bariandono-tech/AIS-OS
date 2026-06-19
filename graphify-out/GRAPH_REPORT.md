@@ -1,16 +1,16 @@
 # Graph Report - AIS-OS  (2026-06-19)
 
 ## Corpus Check
-- 309 files · ~388,230 words
+- 323 files · ~396,819 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3719 nodes · 3688 edges · 398 communities (293 shown, 105 thin omitted)
+- 3757 nodes · 3720 edges · 407 communities (302 shown, 105 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ad881cea`
+- Built from commit: `b902fcaa`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -428,7 +428,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (398 total, 105 thin omitted)
+## Communities (407 total, 105 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -1433,8 +1433,8 @@ Cohesion: 0.50
 Nodes (3): Modul & Kegunaan, 📊 Sistem Aplikasi Keuangan Tingkat Instansi (SAKTI), Evaluasi Sistem Informasi
 
 ### Community 351 - "Community 351"
-Cohesion: 0.08
-Nodes (13): border0, borders0, bordersAll, borderSingle, cellPara(), chapterPageSetup, createMutuBakuTable(), doc (+5 more)
+Cohesion: 0.07
+Nodes (22): border0, borders0, bordersAll, borderSingle, cellPara(), centered(), chapterPageSetup, createMutuBakuTable() (+14 more)
 
 ### Community 352 - "Community 352"
 Cohesion: 0.10
@@ -1465,8 +1465,8 @@ Cohesion: 0.25
 Nodes (7): 1. Kualitas Sistem (*System Quality*), 2. Kualitas Informasi (*Information Quality*), 3. Kualitas Layanan (*Service Quality*), 4. Penggunaan (*Use*) & Kepuasan Pengguna (*User Satisfaction*), 5. Manfaat Bersih (*Net Benefits*), 6 Dimensi Kesuksesan (Versi 2003), 📊 Model Kesuksesan Sistem Informasi DeLone & McLean
 
 ### Community 362 - "Community 362"
-Cohesion: 0.29
-Nodes (6): description, main, name, scripts, build, version
+Cohesion: 0.22
+Nodes (8): dependencies, docx, description, main, name, scripts, build, version
 
 ### Community 363 - "Community 363"
 Cohesion: 0.17
@@ -1505,8 +1505,8 @@ Cohesion: 0.29
 Nodes (6): Arsitektur, Definisi, Kendala Umum di UPT Daerah, Modul-Modul di Rudenim, Referensi Terkait, SIMKIM — Sistem Informasi Manajemen Keimigrasian
 
 ### Community 374 - "Community 374"
-Cohesion: 0.33
-Nodes (5): docx, dependencies, docx, dependencies, docx
+Cohesion: 0.18
+Nodes (7): docx, dependencies, docx, docx, docx, doc, docx
 
 ### Community 375 - "Community 375"
 Cohesion: 0.20
@@ -1549,21 +1549,29 @@ Cohesion: 0.33
 Nodes (6): copyTexts, extractText(), fs, normalize(), originalTexts, path
 
 ### Community 393 - "Community 393"
-Cohesion: 0.40
-Nodes (5): centered(), getPngDimensions(), getScaledDimensions(), insertFlowchartImage(), tableSource()
+Cohesion: 0.11
+Nodes (8): border0, borders0, bordersAll, borderSingle, doc, {
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
+  PageNumber, PageBreak, Header, Footer,
+  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
+  TabStopType, NumberFormat, ImageRun,
+  TableOfContents, SequentialIdentifier
+}, fs, path
 
 ### Community 394 - "Community 394"
 Cohesion: 0.50
-Nodes (4): daftarPustakaEntry(), tr(), trb(), tri()
+Nodes (3): doc, docx, fs
 
 ## Knowledge Gaps
-- **1502 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `{
+- **1517 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `{
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
-  ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,
+  PageNumber, PageBreak, Header, Footer,
   PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
-  TabStopType, TabStopPosition, NumberFormat, ImageRun
-}`, `fs`, `path`, `border0` (+1497 more)
+  TabStopType, NumberFormat, ImageRun,
+  TableOfContents, SequentialIdentifier
+}`, `fs`, `path`, `border0` (+1512 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **105 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -1571,16 +1579,16 @@ Nodes (4): daftarPustakaEntry(), tr(), trb(), tri()
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 79` to `Community 280`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `dotenv` connect `Community 79` to `Community 10`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `PART A — PRD: ULTIMATE BRAIN PRO v2.0` connect `Community 117` to `Community 70`, `Community 134`, `Community 233`, `Community 234`, `Community 141`, `Community 109`, `Community 86`, `Community 188`?**
-  _High betweenness centrality (0.000) - this node is a cross-community bridge._
-- **Why does `@notionhq/client` connect `Community 79` to `Community 11`?**
-  _High betweenness centrality (0.000) - this node is a cross-community bridge._
 - **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `Menginisialisasi klien Google GenAI.`, `Mengirim pesan ke Gemini dan menangani iterasi pemanggilan fungsi (Tool Calling)` to the rest of the system?**
-  _1519 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1534 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.07586206896551724 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
+  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
