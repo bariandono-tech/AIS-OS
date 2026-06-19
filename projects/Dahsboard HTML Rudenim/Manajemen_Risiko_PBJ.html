@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Manajemen Risiko PBJ – Rudenim Pontianak</title>
+<style>
+:root{
+  --nav:#0d2d52;--nav2:#112f58;--blue:#1a5fa8;--accent:#2980e8;
+  --st:#c0392b;--st-bg:#fdf0ef;--t:#c05621;--t-bg:#fef3ec;
+  --s:#a16207;--s-bg:#fefce8;--r:#166534;--r-bg:#f0fdf4;
+  --bg:#f0f4f8;--white:#fff;--text:#0f172a;--muted:#64748b;
+  --border:#e2e8f0;--radius:10px;--shadow:0 1px 4px rgba(0,0,0,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:14px}
+a{text-decoration:none}
+.app{display:flex;min-height:100vh}
+.sidebar{width:236px;background:var(--nav);position:fixed;top:0;left:0;height:100vh;overflow-y:auto;flex-shrink:0;z-index:200;display:flex;flex-direction:column}
+.main{margin-left:236px;flex:1;display:flex;flex-direction:column;min-height:100vh}
+.sb-top{padding:18px 14px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
+.sb-kementerian{font-size:9px;font-weight:700;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:3px}
+.sb-satker{font-size:13px;font-weight:800;color:#fff;line-height:1.3}
+.sb-chip{display:inline-block;margin-top:8px;padding:2px 9px;background:rgba(255,255,255,.12);border-radius:20px;font-size:10px;color:rgba(255,255,255,.7)}
+.sb-section{padding:14px 12px 5px;font-size:9px;font-weight:700;color:rgba(255,255,255,.28);text-transform:uppercase;letter-spacing:1.2px}
+.nav-item{display:flex;align-items:center;gap:9px;margin:1px 8px;padding:9px 11px;border-radius:8px;cursor:pointer;color:rgba(255,255,255,.6);font-size:13px;transition:background .15s,color .15s;background:none;border:none;width:calc(100% - 16px);text-align:left;font-family:inherit}
+.nav-item:hover{background:rgba(255,255,255,.08);color:#fff}
+.nav-item.active{background:rgba(255,255,255,.16);color:#fff;font-weight:700}
+.nav-icon{font-size:16px;width:20px;text-align:center;flex-shrink:0}
+.nav-badge{margin-left:auto;font-size:10px;font-weight:700;background:rgba(255,255,255,.15);padding:1px 6px;border-radius:10px;color:rgba(255,255,255,.8)}
+.sb-foot{padding:14px;margin-top:auto;border-top:1px solid rgba(255,255,255,.08);font-size:10px;color:rgba(255,255,255,.3);line-height:1.6}
+.topbar{background:rgba(255,255,255,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:13px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:var(--shadow)}
+.topbar-title{font-size:16px;font-weight:800;color:var(--text)}
+.topbar-sub{font-size:11px;color:var(--muted);margin-top:1px}
+.status-pill{padding:4px 12px;border-radius:20px;font-size:11px;font-weight:700;background:#dcfce7;color:#166534;display:flex;align-items:center;gap:5px}
+.status-dot{width:6px;height:6px;border-radius:50%;background:#16a34a;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.content{padding:20px 24px;flex:1}
+.page{display:none}.page.active{display:block;animation:fadeIn .3s ease-out}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.card{background:white;border-radius:var(--radius);box-shadow:var(--shadow);transition:box-shadow .2s}
+.card:hover{box-shadow:0 4px 12px rgba(0,0,0,.06)}
+.card-head{padding:14px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.card-title{font-size:13px;font-weight:700;color:var(--text)}
+.card-subtitle{font-size:11px;color:var(--muted);margin-top:1px}
+.card-body{padding:18px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:18px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:18px}
+.kpi{background:white;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);border-left:4px solid transparent;transition:transform .2s}
+.kpi:hover{transform:translateY(-2px)}
+.kpi-lbl{font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.8px}
+.kpi-val{font-size:34px;font-weight:900;line-height:1.1;margin:4px 0 2px}
+.kpi-desc{font-size:11px;color:var(--muted)}
+.kpi.st{border-color:var(--st)}.kpi.st .kpi-val{color:var(--st)}
+.kpi.t{border-color:var(--t)}.kpi.t .kpi-val{color:var(--t)}
+.kpi.s{border-color:var(--s)}.kpi.s .kpi-val{color:var(--s)}
+.kpi.r{border-color:var(--r)}.kpi.r .kpi-val{color:var(--r)}
+.kpi.tot{border-color:var(--blue)}.kpi.tot .kpi-val{color:var(--blue)}
+.badge{display:inline-flex;align-items:center;padding:3px 9px;border-radius:20px;font-size:11px;font-weight:700;white-space:nowrap}
+.bst{background:var(--st-bg);color:var(--st)}.bt{background:var(--t-bg);color:var(--t)}
+.bs{background:var(--s-bg);color:var(--s)}.br{background:var(--r-bg);color:var(--r)}
+.tbl-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{padding:9px 13px;text-align:left;font-size:10px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;background:#f8fafc;border-bottom:1px solid var(--border);white-space:nowrap}
+td{padding:9px 13px;border-bottom:1px solid #f3f6f9;vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#fbfdff}
+.skor-pill{display:inline-block;padding:2px 7px;border-radius:5px;font-weight:800;font-size:12px;min-width:28px;text-align:center}
+.skor-st{background:var(--st-bg);color:var(--st)}.skor-t{background:var(--t-bg);color:var(--t)}
+.skor-s{background:var(--s-bg);color:var(--s)}.skor-r{background:var(--r-bg);color:var(--r)}
+.filters{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;align-items:center}
+.search-box{flex:1;min-width:200px;padding:8px 13px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;outline:none;font-family:inherit;background:white;transition:border-color .2s}
+.search-box:focus{border-color:var(--accent)}
+.f-select{padding:8px 13px;border:1.5px solid var(--border);border-radius:8px;font-size:12px;outline:none;background:white;cursor:pointer;font-family:inherit;transition:border-color .2s}
+.f-select:focus{border-color:var(--accent)}
+.f-count{font-size:11px;color:var(--muted);margin-left:auto}
+.matrix-container{overflow-x:auto;padding:8px 0}
+.rmatrix{border-collapse:separate;border-spacing:4px}
+.rmatrix th{padding:6px 10px;font-size:11px;font-weight:700;color:var(--muted);background:transparent;border:none;text-align:center}
+.rmatrix .row-lbl{font-size:10px;font-weight:700;color:var(--muted);text-align:right;padding-right:10px;white-space:nowrap;border:none;background:transparent}
+.mcell{width:90px;height:72px;border-radius:8px;text-align:center;cursor:pointer;transition:.15s;vertical-align:middle;border:none}
+.mcell:hover{transform:scale(1.06);box-shadow:0 4px 12px rgba(0,0,0,.2)}
+.mcell .cn{font-size:22px;font-weight:900;line-height:1}.mcell .cl{font-size:9px;margin-top:2px;opacity:.85}
+.mcell-st{background:var(--st);color:white}.mcell-t{background:#ea580c;color:white}
+.mcell-s{background:#d97706;color:white}.mcell-r{background:#22c55e;color:#14532d}.mcell-0{background:#e2e8f0;color:#94a3b8}
+.matrix-legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px}
+.ml-item{display:flex;align-items:center;gap:5px;font-size:11px;color:var(--muted)}
+.ml-dot{width:12px;height:12px;border-radius:3px;flex-shrink:0}
+.dist-bar{margin-bottom:10px}.dist-row{display:flex;align-items:center;gap:10px}
+.dist-lbl{font-size:11px;font-weight:700;width:96px;flex-shrink:0;color:var(--text)}
+.dist-track{flex:1;height:20px;background:#f1f5f9;border-radius:4px;overflow:hidden}
+.dist-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;transition:width .6s ease}
+.dist-cnt{font-size:11px;font-weight:800;width:28px;text-align:right;flex-shrink:0;color:var(--muted)}
+.dfill-st{background:var(--st)}.dfill-t{background:var(--t)}.dfill-s{background:var(--s)}.dfill-r{background:var(--r)}
+.stage-row{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:12px}
+.stage-code{width:30px;font-weight:800;color:var(--blue);flex-shrink:0}
+.stage-name{width:130px;color:var(--muted);flex-shrink:0;font-size:11px}
+.stage-track{flex:1;height:16px;background:#f1f5f9;border-radius:3px;overflow:hidden}
+.stage-fill{height:100%;background:var(--blue);border-radius:3px;opacity:.7;transition:width .6s}
+.stage-cnt{width:24px;font-weight:700;text-align:right;color:var(--text)}
+.mit-section{margin-bottom:22px}
+.mit-section-title{font-size:13px;font-weight:800;color:var(--nav);margin-bottom:10px;display:flex;align-items:center;gap:8px;padding:8px 14px;background:var(--bg);border-radius:8px}
+.mit-card{background:white;border-radius:var(--radius);padding:14px 18px;box-shadow:var(--shadow);margin-bottom:10px;border-left:4px solid transparent;transition:transform .15s}
+.mit-card:hover{transform:translateX(2px)}
+.mit-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:8px}
+.mit-code{font-size:10px;font-weight:800;color:var(--accent);letter-spacing:.5px}
+.mit-risiko{font-size:13px;font-weight:700;color:var(--text);margin-top:2px}
+.mit-text{font-size:12px;color:var(--muted);line-height:1.55;margin-bottom:10px}
+.mit-meta{display:flex;gap:6px;flex-wrap:wrap}
+.meta-chip{padding:2px 9px;border-radius:12px;font-size:10px;font-weight:700}
+.chip-pic{background:#ede9fe;color:#5b21b6}.chip-time{background:#dbeafe;color:#1d4ed8}.chip-kpi{background:#dcfce7;color:#15803d}
+.mit-card.bst{border-color:var(--st)}.mit-card.bt{border-color:var(--t)}.mit-card.bs{border-color:var(--s)}
+.mon-card{background:white;border-radius:var(--radius);padding:14px;box-shadow:var(--shadow);border-top:3px solid var(--accent);transition:transform .15s}
+.mon-card:hover{transform:translateY(-2px)}.mon-icon{font-size:22px;margin-bottom:6px;display:block}
+.mon-freq{font-size:12px;font-weight:800;color:var(--nav);margin-bottom:6px}
+.mon-task{display:flex;gap:5px;font-size:11px;color:var(--muted);margin-bottom:4px;line-height:1.4}
+.mon-dot{width:4px;height:4px;background:var(--accent);border-radius:50%;margin-top:5px;flex-shrink:0}
+.esc-steps{display:flex;gap:0;background:white;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.esc-step{flex:1;padding:16px 14px;border-right:1px solid var(--border);position:relative}
+.esc-step:last-child{border-right:none}
+.esc-num{font-size:22px;font-weight:900;color:var(--accent);margin-bottom:5px}
+.esc-title{font-size:12px;font-weight:700;margin-bottom:3px}
+.esc-desc{font-size:11px;color:var(--muted);line-height:1.4}
+.sec-title{font-size:14px;font-weight:800;color:var(--nav);margin-bottom:13px;display:flex;align-items:center;gap:8px}
+.sec-title::before{content:'';display:block;width:3px;height:18px;background:var(--accent);border-radius:2px}
+.daftar-group{background:white;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:10px}
+.daftar-hdr{padding:12px 18px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;user-select:none;transition:background .12s}
+.daftar-hdr:hover{background:#fafbfc}
+.daftar-hdr-l{display:flex;align-items:center;gap:10px}
+.dg-code{font-size:15px;font-weight:900;color:var(--nav);min-width:36px}
+.dg-name{font-size:13px;font-weight:700}
+.dg-cnt{font-size:11px;color:var(--muted)}
+.dg-chev{font-size:13px;color:var(--muted);transition:transform .2s}
+.daftar-group.open .dg-chev{transform:rotate(180deg)}
+.daftar-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s ease-out}
+.daftar-body-inner{overflow:hidden}
+.daftar-group.open .daftar-body{grid-template-rows:1fr;border-top:1px solid var(--border)}
+.daftar-row{display:flex;align-items:flex-start;gap:10px;padding:9px 18px;border-bottom:1px solid #f8fafc;font-size:12px}
+.daftar-row:last-child{border-bottom:none}.daftar-row:hover{background:#fafafa}
+.dr-no{width:32px;flex-shrink:0;font-weight:800;color:var(--muted);font-size:11px;margin-top:2px}
+.dr-txt{flex:1;line-height:1.4}.dr-pic{font-size:10px;color:var(--accent);font-weight:700;margin-top:3px}
+.strat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.strat-card{background:white;border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);text-align:center;transition:transform .15s}
+.strat-card:hover{transform:translateY(-3px)}
+.strat-icon{font-size:28px;margin-bottom:8px;display:block}
+.strat-title{font-size:13px;font-weight:800;margin-bottom:4px}
+.strat-desc{font-size:11px;color:var(--muted);line-height:1.5}
+.strat-when{display:inline-block;margin-top:6px;padding:2px 8px;background:var(--bg);border-radius:12px;font-size:10px;font-weight:700;color:var(--blue)}
+.tooltip-box{position:fixed;background:#1e293b;color:white;padding:8px 12px;border-radius:7px;font-size:11px;max-width:280px;z-index:999;pointer-events:none;display:none;line-height:1.5;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:3px}::-webkit-scrollbar-thumb:hover{background:#94a3b8}
+
+/* ── INTERACTIVE REGISTER ── */
+.reg-input{width:100%;border:1.5px solid transparent;background:transparent;padding:4px 6px;border-radius:5px;font-size:12px;font-family:inherit;color:var(--text);resize:none;transition:all .15s;line-height:1.4}
+.reg-input:hover{background:#f8fafc;border-color:var(--border)}
+.reg-input:focus{background:white;border-color:var(--accent);box-shadow:0 0 0 2px rgba(41,128,232,.15);outline:none}
+.reg-select{padding:4px 6px;border:1.5px solid transparent;background:transparent;border-radius:5px;font-size:12px;font-family:inherit;color:var(--text);cursor:pointer;transition:all .15s;min-width:54px;text-align:center;appearance:auto}
+.reg-select:hover{background:#f8fafc;border-color:var(--border)}
+.reg-select:focus{background:white;border-color:var(--accent);box-shadow:0 0 0 2px rgba(41,128,232,.15);outline:none}
+.reg-select-impl{min-width:130px;max-width:160px;font-size:11px}
+.reg-select-status{min-width:110px;font-size:11px}
+.reg-textarea{min-height:32px;max-height:80px;overflow-y:auto}
+.changed{background:#fffbeb !important;border-color:#d97706 !important}
+.skor-cell{text-align:center;font-weight:900;font-size:13px;min-width:36px}
+
+/* ── BUTTONS ── */
+.btn-sm{padding:4px 10px;border-radius:6px;font-size:11px;font-weight:700;border:none;cursor:pointer;font-family:inherit;transition:all .15s;display:inline-flex;align-items:center;gap:4px}
+.btn-transfer{background:#ede9fe;color:#5b21b6}.btn-transfer:hover{background:#ddd6fe}
+.btn-save-row{background:#dcfce7;color:#166534}.btn-save-row:hover{background:#bbf7d0}
+.btn-delete{background:var(--st-bg);color:var(--st)}.btn-delete:hover{background:#fdd}
+.btn-add{padding:8px 16px;border-radius:8px;font-size:12px;font-weight:700;border:2px dashed var(--accent);background:transparent;color:var(--accent);cursor:pointer;font-family:inherit;transition:all .15s;display:inline-flex;align-items:center;gap:6px}
+.btn-add:hover{background:rgba(41,128,232,.06);border-style:solid}
+.toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.save-indicator{font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;display:none;align-items:center;gap:4px}
+.save-indicator.show{display:inline-flex}
+.save-indicator.unsaved{background:#fffbeb;color:#d97706}
+.save-indicator.saved{background:#dcfce7;color:#166534}
+
+/* ── COMBO PICKER (pilihan risiko) ── */
+.combo-wrap{position:relative;display:flex;align-items:center;min-height:32px}
+.combo-input{width:100%;border:1.5px solid transparent;background:transparent;padding:4px 24px 4px 6px;border-radius:5px;font-size:12px;font-family:inherit;color:var(--text);cursor:pointer;transition:all .15s;min-height:32px;line-height:1.4}
+.combo-input:hover{background:#f8fafc;border-color:var(--border)}
+.combo-input:focus{background:white;border-color:var(--accent);box-shadow:0 0 0 2px rgba(41,128,232,.15);outline:none;cursor:text}
+.combo-input.changed{background:#fffbeb !important;border-color:#d97706 !important}
+.combo-arrow{position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:9px;color:var(--muted);cursor:pointer;padding:3px;border-radius:4px;transition:background .1s;z-index:1;pointer-events:auto}
+.combo-arrow:hover{background:var(--bg)}
+.combo-dd{position:fixed;background:white;border:1.5px solid var(--accent);border-radius:10px;box-shadow:0 12px 36px rgba(0,0,0,.18);z-index:400;display:none;overflow:hidden;animation:comboIn .15s ease-out}
+.combo-dd.open{display:block}
+@keyframes comboIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+.combo-search{padding:8px 10px;border-bottom:1px solid var(--border);background:#f8fafc}
+.combo-search input{width:100%;border:1.5px solid var(--border);border-radius:6px;padding:6px 10px;font-size:12px;font-family:inherit;outline:none;background:white;transition:border-color .15s}
+.combo-search input:focus{border-color:var(--accent)}
+.combo-opts{max-height:220px;overflow-y:auto}
+.combo-opt{padding:8px 12px;font-size:11px;cursor:pointer;border-bottom:1px solid #f5f7f9;transition:background .08s;display:flex;align-items:flex-start;gap:8px}
+.combo-opt:hover,.combo-opt.hl{background:#eef4ff}
+.combo-opt:last-child{border-bottom:none}
+.combo-opt-code{font-weight:800;color:var(--accent);min-width:42px;flex-shrink:0;padding-top:1px}
+.combo-opt-text{color:var(--text);line-height:1.35}
+.combo-opt-meta{font-size:9px;color:var(--muted);margin-top:2px}
+.combo-opt-level{display:inline-block;padding:1px 6px;border-radius:10px;font-size:9px;font-weight:700;margin-left:6px}
+.combo-footer{padding:8px 12px;border-top:1px solid var(--border);display:flex;gap:6px}
+.combo-custom-btn{flex:1;padding:6px;border-radius:6px;font-size:11px;font-weight:700;border:1.5px dashed var(--border);background:transparent;color:var(--muted);cursor:pointer;font-family:inherit;transition:all .12s;text-align:center}
+.combo-custom-btn:hover{border-color:var(--accent);color:var(--accent);background:rgba(41,128,232,.04)}
+.combo-empty{padding:20px 12px;text-align:center;color:var(--muted);font-size:11px;font-style:italic}
+
+/* ── IMPLEMENTASI ── */
+.impl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.impl-phase{background:white;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.impl-phase-head{padding:14px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
+.impl-phase-num{width:30px;height:30px;border-radius:50%;background:var(--accent);color:white;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;flex-shrink:0}
+.impl-phase-info{margin-left:12px;flex:1}
+.impl-phase-title{font-size:13px;font-weight:800;color:var(--text)}
+.impl-phase-sub{font-size:10px;color:var(--muted);margin-top:1px}
+.impl-phase-cnt{font-size:11px;font-weight:700;color:var(--accent);background:#dbeafe;padding:2px 8px;border-radius:10px;flex-shrink:0}
+.impl-phase-body{padding:10px;min-height:60px;max-height:400px;overflow-y:auto}
+.impl-risk-chip{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:7px;margin-bottom:6px;background:var(--bg);border-left:3px solid var(--border);transition:all .15s;font-size:11px}
+.impl-risk-chip:hover{background:#e8edf2;transform:translateX(2px)}
+.impl-risk-chip.ic-st{border-color:var(--st)}.impl-risk-chip.ic-t{border-color:var(--t)}
+.impl-risk-chip.ic-s{border-color:var(--s)}.impl-risk-chip.ic-r{border-color:var(--r)}
+.impl-risk-code{font-weight:800;color:var(--accent);min-width:40px;font-size:10px}
+.impl-risk-text{flex:1;line-height:1.3;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:180px}
+.impl-risk-skor{font-weight:900;min-width:20px;text-align:center}
+.impl-risk-move{background:none;border:1px solid var(--border);border-radius:5px;padding:2px 6px;font-size:10px;cursor:pointer;color:var(--muted);font-family:inherit;transition:all .12s;white-space:nowrap}
+.impl-risk-move:hover{background:var(--accent);color:white;border-color:var(--accent)}
+.impl-add-btn{display:flex;align-items:center;justify-content:center;gap:4px;padding:8px;border:2px dashed var(--border);border-radius:7px;margin-bottom:6px;font-size:11px;font-weight:700;color:var(--muted);cursor:pointer;background:transparent;font-family:inherit;transition:all .12s;width:100%}
+.impl-add-btn:hover{border-color:var(--accent);color:var(--accent);background:rgba(41,128,232,.04)}
+.impl-empty{font-size:11px;color:var(--muted);text-align:center;padding:20px 10px;font-style:italic}
+
+/* ── MODAL TRANSFER ── */
+.modal-overlay{position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:500;display:none;align-items:center;justify-content:center;backdrop-filter:blur(3px)}
+.modal-overlay.show{display:flex}
+.modal-box{background:white;border-radius:14px;box-shadow:0 20px 60px rgba(0,0,0,.2);width:420px;max-width:90vw;max-height:80vh;overflow-y:auto;animation:modalIn .2s ease-out}
+@keyframes modalIn{from{opacity:0;transform:scale(.95) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.modal-head{padding:18px 20px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.modal-title{font-size:15px;font-weight:800;color:var(--nav)}
+.modal-close{background:none;border:none;font-size:20px;cursor:pointer;color:var(--muted);padding:4px 8px;border-radius:6px;transition:background .12s}
+.modal-close:hover{background:var(--bg)}
+.modal-body{padding:16px 20px}
+.modal-foot{padding:12px 20px 18px;display:flex;gap:8px;justify-content:flex-end;border-top:1px solid var(--border)}
+.modal-phase-opt{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;margin-bottom:6px;border:1.5px solid var(--border);cursor:pointer;transition:all .12s}
+.modal-phase-opt:hover{border-color:var(--accent);background:rgba(41,128,232,.04)}
+.modal-phase-opt.selected{border-color:var(--accent);background:#dbeafe}
+.modal-phase-opt .mpo-num{width:28px;height:28px;border-radius:50%;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:var(--nav);flex-shrink:0}
+.modal-phase-opt.selected .mpo-num{background:var(--accent);color:white}
+.modal-phase-opt .mpo-text{font-size:12px;font-weight:700;color:var(--text)}
+.modal-phase-opt .mpo-sub{font-size:10px;color:var(--muted);margin-top:1px}
+.btn-primary{padding:8px 18px;border-radius:8px;font-size:12px;font-weight:700;border:none;background:var(--accent);color:white;cursor:pointer;font-family:inherit;transition:all .15s}
+.btn-primary:hover{background:#1a6fd4}
+.btn-secondary{padding:8px 18px;border-radius:8px;font-size:12px;font-weight:700;border:1.5px solid var(--border);background:white;color:var(--text);cursor:pointer;font-family:inherit;transition:all .15s}
+.btn-secondary:hover{background:var(--bg)}
+
+/* ── TOAST ── */
+.toast-container{position:fixed;bottom:20px;right:20px;z-index:600;display:flex;flex-direction:column;gap:8px}
+.toast{padding:10px 16px;border-radius:8px;font-size:12px;font-weight:700;color:white;box-shadow:0 6px 20px rgba(0,0,0,.2);animation:toastIn .3s ease-out;display:flex;align-items:center;gap:8px;max-width:380px}
+.toast-success{background:#166534}.toast-info{background:var(--blue)}.toast-warn{background:#d97706}.toast-error{background:var(--st)}
+@keyframes toastIn{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
+@keyframes toastOut{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(40px)}}
+.prog-bar{width:100%;height:5px;background:#e2e8f0;border-radius:3px;overflow:hidden;margin-top:4px}
+.prog-fill{height:100%;background:var(--r);border-radius:3px}
+
+@media(max-width:820px){
+  .sidebar{width:60px}.sb-top>*:not(.sb-chip){display:none}.sb-top .sb-chip{display:none}
+  .nav-item span,.nav-badge,.sb-section,.sb-foot{display:none}.nav-item{justify-content:center;margin:1px 8px}
+  .main{margin-left:60px}.g4{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}
+  .strat-grid{grid-template-columns:1fr 1fr}.impl-grid{grid-template-columns:1fr}.topbar-sub{display:none}
+}
+</style>
+</head>
+<body>
+<div class="app">
+<nav class="sidebar">
+  <div class="sb-top"><div class="sb-kementerian">Kemenkumham</div><div class="sb-satker">Rudenim<br>Pontianak</div><span class="sb-chip">PRD v1.0 · 2026</span></div>
+  <div class="sb-section">Manajemen Risiko</div>
+  <button class="nav-item active" onclick="showPage('dashboard',this)"><span class="nav-icon">📊</span><span>Dashboard</span></button>
+  <button class="nav-item" onclick="showPage('register',this)"><span class="nav-icon">📋</span><span>Risk Register</span><span class="nav-badge" id="badgeReg">50</span></button>
+  <button class="nav-item" onclick="showPage('matrix',this)"><span class="nav-icon">🗂️</span><span>Matriks Risiko</span></button>
+  <button class="nav-item" onclick="showPage('mitigasi',this)"><span class="nav-icon">🛡️</span><span>Rencana Mitigasi</span><span class="nav-badge" id="badgeMit">12</span></button>
+  <div class="sb-section">Operasional</div>
+  <button class="nav-item" onclick="showPage('implementasi',this)"><span class="nav-icon">🗓️</span><span>Implementasi</span></button>
+  <button class="nav-item" onclick="showPage('monitoring',this)"><span class="nav-icon">📡</span><span>Monitoring</span></button>
+  <button class="nav-item" onclick="showPage('daftar',this)"><span class="nav-icon">📑</span><span>Daftar 100 Risiko</span><span class="nav-badge">100</span></button>
+  <div class="sb-section">Referensi</div>
+  <button class="nav-item" onclick="showPage('metodologi',this)"><span class="nav-icon">📐</span><span>Metodologi</span></button>
+  <div class="sb-foot">Perpres 16/2018 jo. 12/2021<br>PerLKPP 12/2021 · SPIP PP 60/2008</div>
+</nav>
+<div class="main">
+<div class="topbar"><div><div class="topbar-title">Sistem Manajemen Risiko PBJ</div><div class="topbar-sub">Rumah Detensi Imigrasi Pontianak · Pengadaan Jasa Konsultansi · TA 2026</div></div><div class="status-pill"><span class="status-dot"></span>Siap Implementasi</div></div>
+<div class="content">
+
+<!-- DASHBOARD -->
+<div class="page active" id="page-dashboard">
+  <div class="g4" style="margin-bottom:16px">
+    <div class="kpi tot"><div class="kpi-lbl">Total Risiko</div><div class="kpi-val" id="kpiTotal">0</div><div class="kpi-desc">7 Tahap Siklus PBJ</div></div>
+    <div class="kpi st"><div class="kpi-lbl">Sangat Tinggi</div><div class="kpi-val" id="kpiST">0</div><div class="kpi-desc">Penanganan segera</div></div>
+    <div class="kpi t"><div class="kpi-lbl">Tinggi</div><div class="kpi-val" id="kpiT">0</div><div class="kpi-desc">Prioritas mitigasi</div></div>
+    <div class="kpi s"><div class="kpi-lbl">Sedang</div><div class="kpi-val" id="kpiS">0</div><div class="kpi-desc">Monitor rutin</div></div>
+  </div>
+  <div class="g4" style="margin-bottom:20px">
+    <div class="kpi r"><div class="kpi-lbl">Rendah</div><div class="kpi-val" id="kpiR">0</div><div class="kpi-desc">Terima &amp; pantau</div></div>
+    <div class="kpi" style="border-color:#7c3aed"><div class="kpi-lbl">Target Mitigasi</div><div class="kpi-val" style="color:#7c3aed;font-size:28px">≥90%</div><div class="kpi-desc">Aksi terlaksana sesuai jadwal</div></div>
+    <div class="kpi" style="border-color:#0891b2"><div class="kpi-lbl">Dokumen Wajib</div><div class="kpi-val" style="color:#0891b2;font-size:28px">12</div><div class="kpi-desc">Formulir per paket PBJ</div></div>
+    <div class="kpi" style="border-color:#d97706"><div class="kpi-lbl">Siklus Review</div><div class="kpi-val" style="color:#d97706;font-size:28px">4×</div><div class="kpi-desc">Triwulanan ke KPA</div></div>
+  </div>
+  <div class="g2">
+    <div class="card"><div class="card-head"><div><div class="card-title">Distribusi Level Risiko</div><div class="card-subtitle">Berdasarkan Skor P×D</div></div></div><div class="card-body" id="distPanel"></div></div>
+    <div class="card"><div class="card-head"><div><div class="card-title">Risiko per Tahap PBJ</div><div class="card-subtitle">7 tahap siklus pengadaan</div></div></div><div class="card-body" id="stageBars"></div></div>
+  </div>
+</div>
+
+<!-- RISK REGISTER -->
+<div class="page" id="page-register">
+  <div class="card">
+    <div class="card-head"><div><div class="card-title">Risk Register PBJ – Interaktif</div><div class="card-subtitle">Klik kolom Risiko untuk memilih dari daftar · Data lain otomatis terisi · Transfer ke Implementasi</div></div></div>
+    <div class="card-body" style="padding-bottom:6px">
+      <div class="toolbar">
+        <input class="search-box" type="text" id="regSearch" placeholder="🔍 Cari kode, risiko, penyebab…" oninput="filterReg()" aria-label="Cari">
+        <select class="f-select" id="regTahap" onchange="filterReg()" aria-label="Filter Tahap"><option value="">Semua Tahap</option></select>
+        <select class="f-select" id="regLevel" onchange="filterReg()" aria-label="Filter Level"><option value="">Semua Level</option><option>Sangat Tinggi</option><option>Tinggi</option><option>Sedang</option><option>Rendah</option></select>
+        <select class="f-select" id="regImplFilter" onchange="filterReg()" aria-label="Filter Fase"><option value="">Semua Fase</option><option value="0">Belum Ditugaskan</option></select>
+        <span class="f-count" id="regCount">0 risiko</span>
+        <span class="save-indicator" id="saveInd"></span>
+      </div>
+      <div class="toolbar" style="margin-bottom:10px">
+        <button class="btn-add" onclick="addRisk()">＋ Tambah Risiko Baru</button>
+        <button class="btn-sm btn-save-row" onclick="saveAll()" id="btnSaveAll" style="display:none">💾 Simpan Semua</button>
+        <button class="btn-sm btn-delete" onclick="resetData()" style="margin-left:auto">↩ Reset Data Awal</button>
+      </div>
+    </div>
+    <div class="tbl-wrap">
+      <table id="regTable"><thead><tr>
+        <th style="width:32px;text-align:center">No</th>
+        <th style="width:110px">Tahap</th>
+        <th style="min-width:220px">Risiko</th>
+        <th style="min-width:180px">Penyebab</th>
+        <th style="min-width:180px">Dampak</th>
+        <th style="width:50px;text-align:center">P</th>
+        <th style="width:50px;text-align:center">D</th>
+        <th style="width:50px;text-align:center">Skor</th>
+        <th style="width:90px">Level</th>
+        <th style="width:90px">Strategi</th>
+        <th style="width:80px">PIC</th>
+        <th style="min-width:130px">Fase Impl.</th>
+        <th style="width:110px">Status</th>
+        <th style="width:80px;text-align:center">Aksi</th>
+      </tr></thead><tbody id="regBody"></tbody></table>
+    </div>
+  </div>
+</div>
+
+<!-- MATRIX -->
+<div class="page" id="page-matrix">
+  <div class="card"><div class="card-head"><div><div class="card-title">Matriks Risiko 5×5 – Probabilitas × Dampak</div><div class="card-subtitle">Klik sel untuk detail risiko</div></div></div>
+  <div class="card-body"><div class="matrix-container"><table class="rmatrix"><thead><tr><th colspan="2"></th><th>D=1<br><span style="font-weight:400;font-size:10px">Tdk Berarti</span></th><th>D=2<br><span style="font-weight:400;font-size:10px">Kecil</span></th><th>D=3<br><span style="font-weight:400;font-size:10px">Sedang</span></th><th>D=4<br><span style="font-weight:400;font-size:10px">Besar</span></th><th>D=5<br><span style="font-weight:400;font-size:10px">Luar Biasa</span></th></tr></thead><tbody id="matrixBody"></tbody></table></div>
+  <div class="matrix-legend"><div class="ml-item"><div class="ml-dot" style="background:var(--st)"></div>Sangat Tinggi (16–25)</div><div class="ml-item"><div class="ml-dot" style="background:#ea580c"></div>Tinggi (11–15)</div><div class="ml-item"><div class="ml-dot" style="background:#d97706"></div>Sedang (6–10)</div><div class="ml-item"><div class="ml-dot" style="background:#22c55e"></div>Rendah (1–5)</div></div></div></div>
+</div>
+
+<!-- MITIGASI -->
+<div class="page" id="page-mitigasi">
+  <div id="mitigasiContainer"></div>
+</div>
+
+<!-- IMPLEMENTASI -->
+<div class="page" id="page-implementasi">
+  <div class="card" style="margin-bottom:18px">
+    <div class="card-head"><div><div class="card-title">🗓️ Papan Implementasi – Pilih Risiko dari Register</div><div class="card-subtitle">Klik "+ Pilih Risiko" di setiap fase untuk memilih dari daftar risiko yang tersedia</div></div>
+      <div style="display:flex;gap:8px"><button class="btn-sm btn-transfer" onclick="autoAssign()">⚡ Auto-Assign</button><button class="btn-sm btn-delete" onclick="clearAllAssignments()">✕ Kosongkan</button></div>
+    </div>
+    <div class="card-body" style="padding:12px"><div class="impl-grid" id="implGrid"></div></div>
+  </div>
+  <div class="card"><div class="card-head"><div class="card-title">📊 Progress Implementasi</div></div><div class="card-body" id="implProgress"></div></div>
+</div>
+
+<!-- MONITORING -->
+<div class="page" id="page-monitoring">
+  <div class="g3" id="monCards"></div>
+  <div class="card" style="margin-top:18px"><div class="card-head"><div class="card-title">📋 Indikator Kinerja Risiko</div></div><div class="card-body" style="padding:0;overflow-x:auto"><table><thead><tr><th>KRK</th><th>Satuan</th><th>Target</th><th>Realisasi</th><th>Capaian</th><th>Status</th></tr></thead><tbody id="krkBody"></tbody></table></div></div>
+</div>
+
+<!-- DAFTAR -->
+<div class="page" id="page-daftar"><div class="sec-title">Daftar Risiko PBJ – Rudenim Pontianak</div><div id="daftarList"></div></div>
+
+<!-- METODOLOGI -->
+<div class="page" id="page-metodologi">
+  <div class="g2">
+    <div class="card"><div class="card-head"><div class="card-title">Strategi Penanganan Risiko</div></div><div class="card-body"><div class="strat-grid" style="grid-template-columns:1fr 1fr">
+      <div class="strat-card"><span class="strat-icon">🛡️</span><div class="strat-title">Mitigasi</div><div class="strat-desc">Turunkan P atau D melalui pengendalian</div><span class="strat-when">Skor Tinggi–ST</span></div>
+      <div class="strat-card"><span class="strat-icon">↗️</span><div class="strat-title">Transfer</div><div class="strat-desc">Alihkan ke pihak ketiga</div><span class="strat-when">Kerugian finansial</span></div>
+      <div class="strat-card"><span class="strat-icon">✅</span><div class="strat-title">Terima</div><div class="strat-desc">Pantau tanpa tindakan khusus</div><span class="strat-when">Skor Rendah</span></div>
+      <div class="strat-card"><span class="strat-icon">🚫</span><div class="strat-title">Hindari</div><div class="strat-desc">Hentikan aktivitas sumber risiko</div><span class="strat-when">Skor ST; tidak terkendali</span></div>
+    </div></div></div>
+    <div class="card"><div class="card-head"><div class="card-title">Escalation Matrix</div></div><div class="card-body"><div class="esc-steps">
+      <div class="esc-step"><div class="esc-num">1</div><div class="esc-title">PPK</div><div class="esc-desc">Risiko Rendah–Sedang</div></div>
+      <div class="esc-step"><div class="esc-num">2</div><div class="esc-title">KPA</div><div class="esc-desc">Risiko Tinggi; keputusan strategis</div></div>
+      <div class="esc-step"><div class="esc-num">3</div><div class="esc-title">APIP</div><div class="esc-desc">Risiko Sangat Tinggi</div></div>
+      <div class="esc-step"><div class="esc-num">4</div><div class="esc-title">KPK/BPK</div><div class="esc-desc">Indikasi Tipikor</div></div>
+    </div></div></div>
+  </div>
+</div>
+
+</div></div></div>
+
+<!-- Modal Transfer -->
+<div class="modal-overlay" id="transferModal">
+  <div class="modal-box">
+    <div class="modal-head"><div class="modal-title" id="modalTitle">Pilih Risiko untuk Implementasi</div><button class="modal-close" onclick="closeModal()">&times;</button></div>
+    <div class="modal-body" id="modalBody" style="max-height: 400px; overflow-y: auto;"></div>
+    <div class="modal-foot"><button class="btn-secondary" onclick="closeModal()">Batal</button></div>
+  </div>
+</div>
+
+<!-- Dropdown Risiko Global (dipakai di Register & Implementasi) -->
+<div class="combo-dd" id="globalComboDD">
+  <div class="combo-search"><input type="text" placeholder="Cari kode atau isi risiko…" oninput="searchCombo(this.value)" id="comboSearchInput"></div>
+  <div class="combo-opts" id="globalComboOpts"></div>
+  <div class="combo-footer"><button class="combo-custom-btn" onclick="switchToManual()">✏️ Tulis manual / input bebas</button></div>
+</div>
+
+<div class="tooltip-box" id="tooltip"></div>
+<div class="toast-container" id="toastContainer"></div>
+
+<script>
+/* ═══════════════════════════════════
+   DATA & KONSTANTA
+   ═══════════════════════════════════ */
+const TAHAP_LIST=['R1-Perencanaan','R2-Spesifikasi/KAK','R3-HPS','R4-Rancangan Kontrak','R5-Pemilihan Penyedia','R6-Pelaksanaan Kontrak','R7-Serah Terima & Bayar'];
+const STRATEGI_LIST=['Mitigasi','Transfer','Terima','Hindari',''];
+const PIC_LIST=['PPK','KPA','Pokja','PP','Bendahara','TPN','APIP','KPA/PPK','PPK/Pokja','PPK/TPN','PPK/Bendahara'];
+const STATUS_LIST=['Belum Ditangani','Dalam Proses','Selesai Mitigasi','Ditransfer','Diterima'];
+const PHASES=[
+  {id:1,title:'Kick-off & Tim Risiko',sub:'Minggu 1–2 · Bulan 1'},
+  {id:2,title:'Risk Register Induk',sub:'Minggu 3–4 · Bulan 1'},
+  {id:3,title:'SOP & Template Dokumen',sub:'Minggu 5–6 · Bulan 2'},
+  {id:4,title:'Sosialisasi & Pelatihan',sub:'Minggu 7–8 · Bulan 2'},
+  {id:5,title:'Pilot 1 Paket Aktif',sub:'Bulan 3'},
+  {id:6,title:'Rollout Semua Paket',sub:'Bulan 4–6'},
+  {id:7,title:'Review Triwulanan',sub:'Triwulan II–IV'},
+  {id:8,title:'Evaluasi Akhir Tahun',sub:'Desember'}
+];
+
+// Predefined Master Risk Registry (50 Risks)
+const MASTER_RISKS = [
+  {id:1,tahap:'R1-Perencanaan',risiko:'Pengadaan tidak didasari Dokumen Perencanaan',penyebab:'Penyusunan anggaran dilakukan tanpa melibatkan tim perencanaan teknis',dampak:'Pengadaan berjalan tanpa arah yang jelas, potensi temuan audit',p:3,d:4,strategi:'Mitigasi',pic:'KPA/PPK'},
+  {id:2,tahap:'R1-Perencanaan',risiko:'Pengadaan tanpa justifikasi identifikasi kebutuhan dan tidak didukung proses perencanaan yang sistematis',penyebab:'Penentuan paket pengadaan didasarkan pada asumsi sepihak, bukan data kebutuhan riil',dampak:'Barang/jasa yang dibeli tidak tepat guna atau tidak termanfaatkan secara optimal',p:4,d:3,strategi:'Mitigasi',pic:'KPA/PPK'},
+  {id:3,tahap:'R1-Perencanaan',risiko:'Tidak mencantumkan nama umum paket pengadaan',penyebab:'Staf administrasi kurang teliti saat memasukkan data paket ke aplikasi SIRUP',dampak:'Calon penyedia kesulitan mengidentifikasi paket, transparansi pengadaan berkurang',p:2,d:2,strategi:'Terima',pic:'KPA/PPK'},
+  {id:4,tahap:'R1-Perencanaan',risiko:'Intervensi negatif dalam penyusunan pengadaan',penyebab:'Tekanan kepentingan dari pihak eksternal atau pejabat tertentu',dampak:'Indikasi paket pengadaan diarahkan untuk memenangkan penyedia tertentu',p:3,d:5,strategi:'Hindari',pic:'KPA/PPK'},
+  {id:5,tahap:'R1-Perencanaan',risiko:'Penganggaran pengadaan tanpa perhitungan kebutuhan yang tepat atau berdasarkan kelayakan penyusunan studi komparatif',penyebab:'Penyusunan anggaran tidak didukung studi kelayakan yang memadai',dampak:'Anggaran tidak efisien, berpotensi kekurangan dana atau sisa anggaran besar',p:3,d:4,strategi:'Mitigasi',pic:'KPA/PPK'},
+  {id:6,tahap:'R1-Perencanaan',risiko:'Tindak pemecahan paket pengadaan yang bertujuan menghindari tender',penyebab:'Sengaja membagi paket menjadi beberapa paket kecil di bawah ambang batas tender',dampak:'Pelanggaran aturan pengadaan, temuan audit BPK, dan potensi masalah hukum',p:3,d:5,strategi:'Hindari',pic:'KPA/PPK'},
+  {id:7,tahap:'R1-Perencanaan',risiko:'Perhitungan waktu proses pengadaan yang tidak cermat',penyebab:'PPK tidak membuat jadwal pelaksanaan (Gantt Chart) yang realistis',dampak:'Proyek terlambat diselesaikan, serapan anggaran tidak tercapai di akhir tahun',p:4,d:4,strategi:'Mitigasi',pic:'KPA/PPK'},
+  {id:8,tahap:'R1-Perencanaan',risiko:'Pengangkatan pelaku pengadaan tidak memenuhi persyaratan dan tidak tepat waktu',penyebab:'Keterbatasan personel bersertifikat pengadaan barang/jasa di satker',dampak:'Proses pengadaan lambat dan rentan kesalahan administratif',p:3,d:3,strategi:'Mitigasi',pic:'KPA/PPK'},
+  {id:9,tahap:'R1-Perencanaan',risiko:'Tidak mempertimbangkan kebutuhan kerja aparatur sipil negara pada satker',penyebab:'Identifikasi kebutuhan aset operasional internal tidak dilakukan secara berkala',dampak:'Pegawai bekerja dengan sarana prasarana yang kurang memadai',p:2,d:3,strategi:'Terima',pic:'KPA/PPK'},
+  {id:10,tahap:'R1-Perencanaan',risiko:'Adanya intervensi dari pihak lain sejak perencanaan',penyebab:'Lemahnya komitmen pakta integritas pelaku pengadaan',dampak:'Independensi PPK terganggu, pengadaan diarahkan ke pihak tertentu',p:3,d:4,strategi:'Hindari',pic:'KPA/PPK'},
+  {id:11,tahap:'R1-Perencanaan',risiko:'Masalah pemahaman perencanaan pengadaan KPA terlampau diserahkan',penyebab:'KPA tidak melakukan supervisi langsung terhadap rencana pengadaan',dampak:'Rencana pengadaan yang diajukan tidak sesuai kebijakan makro instansi',p:2,d:3,strategi:'Mitigasi',pic:'KPA/PPK'},
+  {id:12,tahap:'R1-Perencanaan',risiko:'Pihak yang menyusun dan menetapkan perencanaan pengadaan tidak memahami dan tidak mempelajari dokumen yang ditetapkan',penyebab:'PPK hanya menyalin (copy-paste) dokumen perencanaan tahun sebelumnya tanpa penyesuaian',dampak:'Terdapat kesalahan sasaran atau spesifikasi yang tidak relevan dengan kebutuhan saat ini',p:3,d:4,strategi:'Mitigasi',pic:'KPA/PPK'},
+  {id:13,tahap:'R1-Perencanaan',risiko:'Tidak menggunakan RUP atau pemilihan penyedia dilakukan sebelum pengumuman RUP',penyebab:'Terburu-buru melaksanakan pemilihan penyedia demi serapan cepat',dampak:'Pemilihan dinilai cacat prosedur, tender berisiko digugat atau dibatalkan',p:2,d:4,strategi:'Mitigasi',pic:'KPA/PPK'},
+  {id:14,tahap:'R1-Perencanaan',risiko:'Pengadaan tidak dilengkapi Form Identifikasi Kebutuhan',penyebab:'Kelalaian administratif PPK dalam mendokumentasikan tahap persiapan',dampak:'Sulit membuktikan keabsahan pengadaan kepada tim pemeriksa/auditor',p:2,d:3,strategi:'Mitigasi',pic:'KPA/PPK'},
+  {id:15,tahap:'R1-Perencanaan',risiko:'Pengadaan tidak dilengkapi Form Rencana Umum Pengadaan',penyebab:'Pengabaian kelengkapan berkas administratif perencanaan',dampak:'Dokumen perencanaan pengadaan dinilai tidak lengkap secara hukum',p:2,d:3,strategi:'Mitigasi',pic:'KPA/PPK'},
+  {id:16,tahap:'R1-Perencanaan',risiko:'Pengadaan yang dilakukan satker tidak dilengkapi dokumen Surat penetapan konsolidasi',penyebab:'Kurangnya pemahaman PPK mengenai regulasi konsolidasi paket',dampak:'Paket pengadaan terpecah-pecah tanpa justifikasi yang sah',p:2,d:3,strategi:'Mitigasi',pic:'KPA/PPK'},
+  {id:17,tahap:'R1-Perencanaan',risiko:'Pengadaan tidak didukung oleh panitia/staf pendukung/survei barang/jasa / Request for Information (RFI)',penyebab:'Ketiadaan anggaran atau personel untuk melakukan survei pasar formal',dampak:'Estimasi harga dan spesifikasi tidak akurat dan tidak kompetitif',p:3,d:3,strategi:'Mitigasi',pic:'KPA/PPK'},
+  {id:18,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi teknis / KAK tidak dibuat oleh PPK secara cermat',penyebab:'PPK kurang meluangkan waktu khusus untuk meninjau detail teknis spesifikasi',dampak:'Penawaran penyedia menyimpang dari maksud sebenarnya pengadaan',p:4,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:19,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi teknis / KAK tidak realistis terhadap pasar penyedia pengadaan khususnya penyedia spesifikasi teknis/KAK',penyebab:'Tidak melakukan survei pasar penyedia secara komprehensif sebelum menetapkan spesifikasi',dampak:'Tender gagal karena tidak ada penyedia yang sanggup memenuhi spesifikasi',p:3,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:20,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi teknis tidak memuat standar spesifikasi kinerja',penyebab:'PPK hanya berfokus pada dimensi fisik tanpa menentukan output kinerja barang/jasa',dampak:'Barang/jasa yang diterima berkinerja buruk meski dimensi fisik sesuai',p:3,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:21,tahap:'R2-Spesifikasi/KAK',risiko:'Penerapan spesifikasi teknis / KAK tanpa justifikasi yang dapat dipertanggungjawabkan',penyebab:'Penyusunan KAK didasarkan pada keinginan subjektif PPK bukan analisis kebutuhan',dampak:'Pengadaan tidak efisien dan berpotensi menjadi temuan auditor pemborosan',p:3,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:22,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi teknis / KAK diskriminatif untuk pengadaan yang dilakukan dengan tender/seleksi',penyebab:'Sengaja membuat persyaratan teknis yang hanya dimiliki oleh satu penyedia tertentu',dampak:'Sanggahan peserta tender, pembatalan proses pemilihan, tuduhan monopoli',p:3,d:5,strategi:'Hindari',pic:'PPK'},
+  {id:23,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi teknis / KAK sudah mengarah ke vendor yang akan melaksanakan padahal belum kontrak/pemenang',penyebab:'Penyusunan spesifikasi dibantu langsung oleh sales representative vendor tertentu',dampak:'Pelanggaran berat terhadap prinsip keadilan pengadaan, risiko hukum tipikor',p:4,d:5,strategi:'Hindari',pic:'PPK'},
+  {id:24,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi teknis / KAK menyebut nama/merek dengan predikat atau merek tertentu, sehingga meminggirkan pihak lain dalam proses kompetisi tender/seleksi',penyebab:'Kelalaian atau kesengajaan memasukkan nama merek tanpa justifikasi kedaruratan/suku cadang',dampak:'Membatasi kompetisi sehat, menyebabkan harga penawaran menjadi lebih mahal',p:3,d:4,strategi:'Hindari',pic:'PPK'},
+  {id:25,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi teknis/KAK disusun oleh pihak/kelompok yang tidak berwenang, menetapkan Spesifikasi teknis / KAK tidak mempelajari dan tidak mempelajari dokumen yang ditetapkan',penyebab:'Penyusunan KAK didelegasikan sepenuhnya ke staf non-teknis tanpa review PPK',dampak:'Dokumen teknis tidak valid secara hukum dan berpotensi menimbulkan sengketa',p:3,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:26,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi teknis / KAK yang dibuat tidak didasari identifikasi kebutuhan dan pasar dari pelaku usaha',penyebab:'Penyusunan spesifikasi dilakukan terburu-buru tanpa riset ketersediaan pasar',dampak:'Spesifikasi tidak relevan dengan tren industri saat ini, mempersulit pencarian penyedia',p:3,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:27,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi teknis / KAK yang ditetapkan tidak dapat diukur dengan jelas capaiannya',penyebab:'Menggunakan istilah subjektif/kualitatif yang tidak memiliki unit pengukuran teknis',dampak:'Perbedaan penafsiran kualitas pekerjaan saat serah terima hasil pengadaan',p:4,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:28,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi teknis pekerjaan konstruksi tidak dapat Rancangan Keselamatan Konstruksi',penyebab:'Mengabaikan aspek keselamatan kerja (K3) konstruksi dalam penyusunan spesifikasi teknis',dampak:'Pekerjaan berjalan tanpa standar keselamatan yang jelas, risiko kecelakaan kerja',p:3,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:29,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi Teknis/KAK tidak sesuai ketentuan/syarat ruang lingkup termasuk asuransi, pada PerLKPP No. 12 Tahun 2021',penyebab:'Kurangnya pembaruan pemahaman PPK terhadap aturan turunan pengadaan terbaru',dampak:'Dokumen kontrak cacat hukum karena bertentangan dengan aturan LKPP terbaru',p:3,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:30,tahap:'R2-Spesifikasi/KAK',risiko:'Pengaturan peralatan konstruksi pada pekerjaan konstruksi tidak sesuai ketentuan',penyebab:'PPK menetapkan persyaratan jumlah/kapasitas alat berat yang berlebihan',dampak:'Mempersempit partisipasi peserta tender, biaya sewa alat terlampau mahal',p:3,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:31,tahap:'R2-Spesifikasi/KAK',risiko:'Persyaratan personel manajerial pekerjaan konstruksi tidak sesuai ketentuan',penyebab:'Persyaratan kualifikasi dan pengalaman personel manajerial dibuat terlalu tinggi',dampak:'Penyedia kesulitan mencari personel bersertifikat, potensi gugatan peserta',p:3,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:32,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi teknis pekerjaan konstruksi tidak diperbarui terkait bahan bangunan dan harganya yang sesuai dengan spesifikasi',penyebab:'Menggunakan daftar harga bahan bangunan lama yang tidak disesuaikan dengan inflasi',dampak:'Penyedia menawarkan bahan berkualitas rendah untuk menutupi selisih harga',p:4,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:33,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi teknis pekerjaan konstruksi mempersyaratkan metode pelaksanaan untuk pekerjaan konstruksi kecil/sedang',penyebab:'Penerapan aturan pekerjaan besar pada kualifikasi usaha kecil',dampak:'Menyulitkan penyedia kecil, bertentangan dengan semangat kemudahan berusaha',p:3,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:34,tahap:'R2-Spesifikasi/KAK',risiko:'Spesifikasi teknis/KAK tidak dilengkapi dengan kertas kerja penyusunan',penyebab:'PPK tidak mendokumentasikan proses diskusi dan riset pembuatan spesifikasi teknis',dampak:'Kurangnya pertanggungjawaban audit ketika ditanya dasar penentuan spesifikasi',p:2,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:35,tahap:'R3-HPS',risiko:'HPS disusun oleh ahli atau tim teknis, tapi pihak yang menetapkan HPS tidak memahami dan tidak mempelajari dokumen yang ditetapkan',penyebab:'PPK langsung menandatangani HPS yang dibuat tim teknis tanpa meneliti rinciannya',dampak:'Terjadi kesalahan kalkulasi biaya yang lolos dan merugikan keuangan negara',p:3,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:36,tahap:'R3-HPS',risiko:'Penetapan HPS tanpa justifikasi identifikasi perhitungan yang akurat',penyebab:'Dasar pengali harga satuan tidak didasarkan pada harga pasar riil',dampak:'HPS terlampau tinggi (mark-up) atau terlalu rendah sehingga tender sepi peminat',p:4,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:37,tahap:'R3-HPS',risiko:'Mengambil kalkulasi harga yang tidak dapat dipertanggungjawabkan, seperti mengambil rata-rata penawaran harga yang seharusnya tidak perlu ditambahkan penambahan unsur praktik korupsi',penyebab:'Kesalahan metodologi survei harga atau sengaja menggelembungkan harga satuan',dampak:'Kerugian keuangan negara, risiko temuan pidana korupsi',p:3,d:5,strategi:'Hindari',pic:'PPK'},
+  {id:38,tahap:'R3-HPS',risiko:'Sumber informasi HPS tidak dapat dipertanggungjawabkan',penyebab:'Menggunakan brosur fiktif atau vendor yang tidak memiliki izin usaha sah sebagai referensi',dampak:'Kredibilitas HPS dipertanyakan oleh tim pemeriksa internal maupun eksternal',p:3,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:39,tahap:'R3-HPS',risiko:'Penyusunan HPS tidak didasarkan data riil',penyebab:'Menggunakan data estimasi kasar tanpa survei lapangan langsung',dampak:'HPS menyimpang jauh dari kondisi harga pasar terkini',p:4,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:40,tahap:'R3-HPS',risiko:'Masa berlaku pasar dan HPS kadaluarsa',penyebab:'Proses pemilihan penyedia tertunda lama setelah HPS ditetapkan',dampak:'Harga satuan HPS sudah tidak relevan dengan kondisi ekonomi saat tender berlangsung',p:3,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:41,tahap:'R3-HPS',risiko:'Pada pekerjaan konstruksi HPS belum memperhitungkan Biaya K3',penyebab:'Kelalaian PPK dalam merinci item biaya keselamatan kerja konstruksi',dampak:'Penyedia meminimalkan alat pelindung diri untuk memotong biaya, rawan kecelakaan',p:3,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:42,tahap:'R3-HPS',risiko:'Pada pengadaan jasa konsultansi konstruksi HPS belum memperhitungkan Biaya Non Personel',penyebab:'Penyusunan rincian biaya tidak lengkap, hanya memperhitungkan honorarium keahlian',dampak:'Konsultan tidak dapat mendanai operasional survei lapangan secara layak',p:2,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:43,tahap:'R3-HPS',risiko:'HPS tidak dilengkapi dengan kertas kerja penyusunan',penyebab:'Staf PPK tidak mendokumentasikan rumus dan sumber harga survei',dampak:'Kesulitan memberikan pertanggungjawaban dalam audit investigatif HPS',p:2,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:44,tahap:'R3-HPS',risiko:'HPS pekerjaan konstruksi tidak menggunakan harga pasar setempat',penyebab:'Menggunakan standar harga dari kabupaten/kota lain tanpa indeks penyesuaian wilayah',dampak:'Harga satuan bahan tidak realistis bagi kontraktor lokal',p:3,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:45,tahap:'R4-Rancangan Kontrak',risiko:'Tidak merumuskan rancangan kontrak secara cermat dan belum mencakup kondisi yang nyata sesuai identifikasi kebutuhan',penyebab:'PPK mengabaikan draf kontrak awal dan hanya memakai template umum tanpa penyesuaian',dampak:'Banyak ketidakjelasan hak kewajiban yang memicu sengketa (dispute) di lapangan',p:3,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:46,tahap:'R4-Rancangan Kontrak',risiko:'Ketentuan sanksi denda tidak proporsional',penyebab:'Ketidakpahaman dalam menetapkan besaran denda keterlambatan per bagian atau total',dampak:'Penyedia keberatan tanda tangan kontrak atau denda dinilai tidak adil secara hukum',p:2,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:47,tahap:'R4-Rancangan Kontrak',risiko:'Ketentuan klausa penyesuaian harga tidak dirinci',penyebab:'Mengabaikan potensi inflasi pada kontrak tahun jamak (multi-years)',dampak:'Pekerjaan mangkrak karena penyedia rugi akibat kenaikan harga bahan baku utama',p:2,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:48,tahap:'R4-Rancangan Kontrak',risiko:'Ketentuan perancangan draf pada hak dan kewajiban barang/jasa terpilih',penyebab:'Tidak mendefinisikan batas tanggung jawab pemeliharaan pasca serah terima',dampak:'UPT menanggung biaya perbaikan kerusakan yang seharusnya tanggung jawab penyedia',p:3,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:49,tahap:'R4-Rancangan Kontrak',risiko:'Rancangan Kontrak disusun oleh pihak yang tidak berwenang, menetapkan Rancangan Kontrak tidak mempelajari dan tidak memahami dokumen yang ditetapkan',penyebab:'PPK menyerahkan penyusunan draf kontrak sepenuhnya kepada pihak ketiga tanpa review internal',dampak:'Draf kontrak melanggar aturan perundang-undangan dan berisiko batal demi hukum',p:2,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:50,tahap:'R5-Pemilihan Penyedia',risiko:'Persyaratan kualifikasi penyedia tidak sesuai ketentuan yang berlaku',penyebab:'Pokja memasukkan syarat kualifikasi tambahan di luar ketentuan LKPP',dampak:'Tender digugat oleh asosiasi penyedia, proses tertunda lama',p:3,d:4,strategi:'Mitigasi',pic:'Pokja'},
+  {id:51,tahap:'R5-Pemilihan Penyedia',risiko:'Persyaratan teknis penyedia tidak sesuai ketentuan yang berlaku',penyebab:'Syarat teknis dibuat berlebihan untuk membatasi peserta',dampak:'Gagal tender karena minimnya pelamar yang lolos evaluasi administrasi',p:3,d:4,strategi:'Mitigasi',pic:'Pokja'},
+  {id:52,tahap:'R5-Pemilihan Penyedia',risiko:'Persyaratan penyedia untuk jasa konsultansi tidak sesuai ketentuan yang berlaku',penyebab:'Pokja menyamakan syarat kualifikasi jasa konsultansi dengan pengadaan barang',dampak:'Kualitas konsultan yang terpilih tidak kompeten di bidangnya',p:3,d:3,strategi:'Mitigasi',pic:'Pokja'},
+  {id:53,tahap:'R5-Pemilihan Penyedia',risiko:'Persyaratan penyedia untuk pekerjaan konstruksi tidak sesuai ketentuan yang berlaku',penyebab:'Persyaratan sub-klasifikasi usaha konstruksi tidak konsisten dengan nilai paket',dampak:'Tender dibatalkan oleh APIP karena maladministrasi persyaratan',p:3,d:4,strategi:'Mitigasi',pic:'Pokja'},
+  {id:54,tahap:'R5-Pemilihan Penyedia',risiko:'Mempersyaratkan syarat dukungan untuk jenis pekerjaan non-rutin',penyebab:'Kesalahan analisis sifat paket pekerjaan rutin yang dianggap non-rutin',dampak:'Menyulitkan penyedia berskala kecil untuk bersaing',p:2,d:3,strategi:'Terima',pic:'Pokja'},
+  {id:55,tahap:'R5-Pemilihan Penyedia',risiko:'Mempersyaratkan nama dukungan bahan/material dalam negeri yang barangnya tersedia di Indonesia, namun dari luar negeri untuk barang impor yang tidak tersedia di Indonesia',penyebab:'Ketidakpahaman regulasi TKDN dalam menyusun dokumen pemilihan',dampak:'Pelanggaran ketentuan produk dalam negeri, potensi teguran inspektorat',p:3,d:4,strategi:'Mitigasi',pic:'Pokja'},
+  {id:56,tahap:'R5-Pemilihan Penyedia',risiko:'Dokumen pemilihan yang ditetapkan tidak memiliki lembar SDP dan kertas kerja persiapan pemilihan',penyebab:'Kelalaian Pokja dalam mengarsipkan dokumen persiapan internal',dampak:'Proses pemilihan dinilai kurang akuntabel secara administratif',p:2,d:3,strategi:'Mitigasi',pic:'Pokja'},
+  {id:57,tahap:'R5-Pemilihan Penyedia',risiko:'Melakukan evaluasi kualifikasi/dokumen pemilihan yang menyimpang dari Pedoman Lampiran Peraturan LKPP No. 12 Tahun 2021',penyebab:'Pokja sengaja atau lalai menerapkan metode evaluasi di luar petunjuk teknis',dampak:'Hasil pemenang tender cacat hukum dan berisiko digugat peserta lain',p:4,d:4,strategi:'Mitigasi',pic:'Pokja'},
+  {id:58,tahap:'R5-Pemilihan Penyedia',risiko:'Syarat peserta tender yang diskriminatif',penyebab:'Adanya kesepakatan terselubung untuk mengeliminasi penyedia luar daerah',dampak:'Terjadi persaingan tidak sehat, citra satker UPT Rudenim buruk di publik',p:3,d:4,strategi:'Hindari',pic:'Pokja'},
+  {id:59,tahap:'R5-Pemilihan Penyedia',risiko:'Pemenang terindikasi KKN dalam pemilihan penyedia',penyebab:'Hubungan kekerabatan atau aliran dana ilegal antara Pokja dan peserta',dampak:'Risiko hukum tindak pidana korupsi, pemutusan kontrak di tengah jalan',p:3,d:5,strategi:'Hindari',pic:'Pokja'},
+  {id:60,tahap:'R5-Pemilihan Penyedia',risiko:'Dokumen pemilihan yang tidak lengkap',penyebab:'Ketergesaan dalam mempublikasikan dokumen lelang di SPSE',dampak:'Peserta tender kesulitan mengajukan penawaran harga yang komprehensif',p:2,d:3,strategi:'Mitigasi',pic:'Pokja'},
+  {id:61,tahap:'R5-Pemilihan Penyedia',risiko:'Evaluasi penawaran tanpa justifikasi teknis',penyebab:'Menggugurkan peserta lelang tanpa bukti tertulis yang objektif',dampak:'Sanggahan peserta lelang dikabulkan, tender harus diulang',p:4,d:3,strategi:'Mitigasi',pic:'Pokja'},
+  {id:62,tahap:'R5-Pemilihan Penyedia',risiko:'Penjadwalan yang dapat menguntungkan pihak tertentu',penyebab:'Sengaja mempercepat waktu penawaran agar hanya penyedia mitra yang siap',dampak:'Jumlah pelamar minim, indikasi pengaturan pemenang sangat kuat',p:3,d:4,strategi:'Hindari',pic:'Pokja'},
+  {id:63,tahap:'R5-Pemilihan Penyedia',risiko:'Persekongkolan (Vertikal / Horizontal)',penyebab:'Kesepakatan antar peserta tender (arisan tender) atau dengan oknum Pokja',dampak:'Harga kontrak tidak kompetitif (kemahalan), mutu pekerjaan diragukan',p:4,d:4,strategi:'Hindari',pic:'Pokja'},
+  {id:64,tahap:'R5-Pemilihan Penyedia',risiko:'Proses tidak terdokumentasikan',penyebab:'Berita Acara evaluasi tidak diisi secara lengkap di aplikasi SPSE',dampak:'Hilangnya jejak audit administratif yang menyulitkan pembuktian jika ada sanggah',p:3,d:3,strategi:'Mitigasi',pic:'Pokja'},
+  {id:65,tahap:'R5-Pemilihan Penyedia',risiko:'Pembatalan dokumen',penyebab:'Terjadi kesalahan redaksional fatal dalam dokumen pemilihan yang sudah diunggah',dampak:'Timeline lelang mundur karena dokumen harus direvisi dan diunggah ulang',p:2,d:3,strategi:'Mitigasi',pic:'Pokja'},
+  {id:66,tahap:'R5-Pemilihan Penyedia',risiko:'Kendala pihak yang tidak bertanggungjawab / peretasan akun',penyebab:'Keamanan kredensial akun SPSE anggota Pokja lemah',dampak:'Manipulasi data penawaran oleh peretas, kebocoran rahasia lelang',p:2,d:4,strategi:'Mitigasi',pic:'Pokja'},
+  {id:67,tahap:'R5-Pemilihan Penyedia',risiko:'Klarifikasi dan pembuktian yang tidak optimal',penyebab:'Pokja tidak melakukan kunjungan fisik verifikasi berkas asli ke kantor peserta',dampak:'Meloloskan penyedia yang menggunakan dokumen palsu/fiktif',p:3,d:4,strategi:'Mitigasi',pic:'Pokja'},
+  {id:68,tahap:'R5-Pemilihan Penyedia',risiko:'Pinjam perusahaan',penyebab:'Penyedia riil meminjam bendera badan usaha lain demi legalitas formal',dampak:'Mutu pekerjaan jeblok karena dikerjakan subkontraktor amatir',p:4,d:4,strategi:'Hindari',pic:'Pokja'},
+  {id:69,tahap:'R5-Pemilihan Penyedia',risiko:'Pada pemilihan penyedia dengan pengadaan langsung proses pemilihan penyedia dilakukan dengan rekayasa oleh aparat/pihak tertentu, seolah-olah dilakukan secara kompetitif',penyebab:'Kongkalikong penunjukan langsung demi membagi jatah paket',dampak:'Pelanggaran etika pengadaan, penyalahgunaan wewenang',p:4,d:4,strategi:'Hindari',pic:'Pokja'},
+  {id:70,tahap:'R5-Pemilihan Penyedia',risiko:'Melibatkan pihak yang tidak berwenang/tidak kompeten atau sebaliknya',penyebab:'Memperkerjakan staf pembantu di luar Pokja untuk melakukan evaluasi krusial',dampak:'Kebocoran data rahasia penawaran, keputusan evaluasi yang tidak profesional',p:2,d:3,strategi:'Mitigasi',pic:'Pokja'},
+  {id:71,tahap:'R6-Pelaksanaan Kontrak',risiko:'Adanya pungutan seperti uang jaminan/lain-lain pada penyedia',penyebab:'Permintaan uang informal oleh oknum pengawas lapangan',dampak:'Beban biaya penyedia meningkat, mutu pekerjaan dikorbankan',p:3,d:4,strategi:'Hindari',pic:'PPK'},
+  {id:72,tahap:'R6-Pelaksanaan Kontrak',risiko:'Pelaksanaan kontrak tidak dilengkapi dengan dokumen laporan/progres progres progres',penyebab:'Kelalaian pengawas internal dalam menagih laporan berkas harian/mingguan',dampak:'PPK kesulitan melacak deviasi progres fisik riil di lapangan',p:4,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:73,tahap:'R6-Pelaksanaan Kontrak',risiko:'Pelaksanaan kontrak tidak dilengkapi dokumen berita acara persiapan penandatanganan kontrak',penyebab:'Administrasi penandatanganan kontrak dilakukan terburu-buru',dampak:'Cacat formil prosedur pelaksanaan kontrak',p:2,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:74,tahap:'R6-Pelaksanaan Kontrak',risiko:'Pelaksanaan kontrak pekerjaan konstruksi tidak dilengkapi dokumen berita acara penyerahan lokasi personel',penyebab:'Penyerahan lapangan dilakukan informal tanpa berita acara tertulis',dampak:'Penyedia menuntut kompensasi waktu akibat keterlambatan akses lokasi',p:2,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:75,tahap:'R6-Pelaksanaan Kontrak',risiko:'Pelaksanaan kontrak pekerjaan konstruksi tidak dilengkapi surat perintah mulai kerja (SPMK)',penyebab:'PPK lalai menerbitkan SPMK secara formal di sistem administrasi',dampak:'Dasar hukum penyedia memulai pekerjaan di lapangan diragukan',p:2,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:76,tahap:'R6-Pelaksanaan Kontrak',risiko:'Pelaksanaan kontrak tidak dilengkapi program mutu/rencana mutu Pekerjaan Konstruksi',penyebab:'PPK tidak menagih rencana mutu dari kontraktor saat rapat persiapan (PCM)',dampak:'Proses pengerjaan berjalan tanpa panduan mutu terstandar',p:3,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:77,tahap:'R6-Pelaksanaan Kontrak',risiko:'Pelaksanaan kontrak tidak dilengkapi Laporan Kemajuan Berkala Kontrak',penyebab:'Kelalaian pelaporan administrasi berkala penyedia',dampak:'Deviasi keterlambatan proyek tidak terdeteksi secara dini',p:4,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:78,tahap:'R6-Pelaksanaan Kontrak',risiko:'Kontrak yang ditandatangani tidak valid',penyebab:'Tanda tangan dibubuhkan oleh staf yang tidak memiliki surat kuasa formal dari direktur',dampak:'Kontrak batal demi hukum ketika terjadi wanprestasi',p:2,d:5,strategi:'Mitigasi',pic:'PPK'},
+  {id:79,tahap:'R6-Pelaksanaan Kontrak',risiko:'Kontrak hanya formalitas/pengadaan dini',penyebab:'Pekerjaan fisik sudah diselesaikan terlebih dahulu sebelum dokumen kontrak ditandatangani',dampak:'Pelanggaran berat tata kelola keuangan negara, temuan pidana korupsi',p:3,d:5,strategi:'Hindari',pic:'PPK'},
+  {id:80,tahap:'R6-Pelaksanaan Kontrak',risiko:'Pekerjaan dimulai tanpa kontrak',penyebab:'Perintah lisan PPK demi mengejar batas waktu operasional satker',dampak:'Ketidakjelasan perlindungan hukum bagi kedua belah pihak jika terjadi sengketa',p:3,d:4,strategi:'Hindari',pic:'PPK'},
+  {id:81,tahap:'R6-Pelaksanaan Kontrak',risiko:'Tanda tangan kontrak tanpa pertemuan masing-masing pihak',penyebab:'Tanda tangan sirkuler dikirim via kurir tanpa koordinasi tatap muka',dampak:'Risiko penyalahgunaan/pemalsuan tanda tangan oleh oknum tertentu',p:2,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:82,tahap:'R6-Pelaksanaan Kontrak',risiko:'Tidak dilakukan identifikasi jaminan',penyebab:'PPK tidak memverifikasi keaslian surat jaminan ke bank penerbit',dampak:'Jaminan pelaksanaan fiktif tidak dapat dicairkan saat penyedia lari',p:2,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:83,tahap:'R6-Pelaksanaan Kontrak',risiko:'Adendum/amandemen kontrak tanpa pembahasan bersama',penyebab:'Perubahan volume pekerjaan langsung ditandatangani PPK tanpa rapat resmi',dampak:'Penyedia tidak setuju dengan kompensasi harga baru',p:2,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:84,tahap:'R6-Pelaksanaan Kontrak',risiko:'Pengalihan pekerjaan yang tidak dapat dipertanggungjawabkan',penyebab:'Penyedia mensubkontrakkan pekerjaan utama ke pihak ketiga secara ilegal',dampak:'Mutu pekerjaan menurun drastis karena dikerjakan penyedia amatir',p:3,d:4,strategi:'Hindari',pic:'PPK'},
+  {id:85,tahap:'R6-Pelaksanaan Kontrak',risiko:'Lemahnya pengendalian kontrak',penyebab:'PPK jarang melakukan kunjungan lapangan langsung karena kesibukan struktural',dampak:'Pekerjaan menyimpang dari spesifikasi gambar rencana dan timeline awal',p:4,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:86,tahap:'R6-Pelaksanaan Kontrak',risiko:'Tidak dilakukan pemeriksaan hal-hal yang disampaikan dalam penawaran pada saat kontrak, seperti personel, alat dan metode',penyebab:'PPK mengabaikan verifikasi fisik terhadap komitmen dokumen penawaran penyedia',dampak:'Tenaga ahli dan peralatan yang digunakan di lapangan tidak sesuai standar penawaran',p:3,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:87,tahap:'R6-Pelaksanaan Kontrak',risiko:'Pemeriksaan hasil pekerjaan untuk pengadaan barang hanya dilakukan secara sampling',penyebab:'Keterbatasan waktu dan jumlah personel pemeriksa barang',dampak:'Barang cacat atau tidak berfungsi lolos pemeriksaan serah terima',p:4,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:88,tahap:'R6-Pelaksanaan Kontrak',risiko:'Kesulitan menggunakan tenaga ahli',penyebab:'Tenaga ahli yang diajukan dalam penawaran sibuk di proyek lain',dampak:'Pekerjaan berjalan lambat tanpa bimbingan teknis profesional',p:3,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:89,tahap:'R6-Pelaksanaan Kontrak',risiko:'Tenaga ahli yang dipergunakan dalam kontrak tidak pernah diperiksa',penyebab:'Pengabaian berkas absensi dan verifikasi ijazah/sertifikat keahlian di lapangan',dampak:'Pekerjaan diawasi oleh personel non-ahli, potensi cacat konstruksi',p:4,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:90,tahap:'R6-Pelaksanaan Kontrak',risiko:'Pihak yang diberikan wewenang tidak menjalankan fungsi pengendalian kontrak',penyebab:'Tim Teknis atau Konsultan Pengawas bersikap pasif dan kompromistis dengan kontraktor',dampak:'Laporan progres lapangan dimanipulasi, mutu tidak tercapai',p:3,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:91,tahap:'R6-Pelaksanaan Kontrak',risiko:'Tahapan kontrak tidak dilaksanakan, seperti PCM, MC, dll',penyebab:'Meremehkan rapat koordinasi awal dan pengukuran bersama kemajuan fisik',dampak:'Terjadi perselisihan volume pekerjaan di akhir masa kontrak',p:3,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:92,tahap:'R6-Pelaksanaan Kontrak',risiko:'Pemalasuan dokumen data pekerjaan',penyebab:'Penyedia memalsukan tanda tangan pengawas pada laporan kemajuan fisik',dampak:'Potensi tuntutan pidana pemalsuan dokumen dan kerugian negara',p:2,d:5,strategi:'Hindari',pic:'PPK'},
+  {id:93,tahap:'R7-Serah Terima & Bayar',risiko:'Tidak optimalnya pemeriksaan',penyebab:'Pemeriksa pekerjaan fisik hanya mencocokkan jumlah, bukan kualitas/spesifikasi',dampak:'Menerima barang/pekerjaan yang memiliki cacat tersembunyi',p:3,d:4,strategi:'Mitigasi',pic:'PPK'},
+  {id:94,tahap:'R7-Serah Terima & Bayar',risiko:'Rekayasa laporan pemeriksaan pekerjaan untuk tujuan bayar',penyebab:'Progres belum mencapai 100% namun laporan dibuat seolah-olah sudah selesai agar dana cair',dampak:'Temuan audit kerugian negara dan ancaman tuntutan pidana korupsi',p:3,d:5,strategi:'Hindari',pic:'PPK'},
+  {id:95,tahap:'R7-Serah Terima & Bayar',risiko:'Serah terima tidak disertai dokumen pendukung/administrasi',penyebab:'Kelalaian penataan arsip berkas sertifikat, manual book, dan garansi',dampak:'Kesulitan melakukan klaim garansi kerusakan barang di kemudian hari',p:2,d:3,strategi:'Mitigasi',pic:'PPK'},
+  {id:96,tahap:'R7-Serah Terima & Bayar',risiko:'Meminta faktur pajak untuk pelaku usaha yang berstatus non-PKP',penyebab:'Kesalahan pemahaman administrasi perpajakan bendahara satker',dampak:'Proses pembayaran termin terhambat karena kendala kelengkapan administrasi pajak',p:2,d:2,strategi:'Terima',pic:'PPK'},
+  {id:97,tahap:'R7-Serah Terima & Bayar',risiko:'Memotong PPh untuk pelaku usaha yang berstatus non-PKP',penyebab:'Kesalahan penafsiran tarif dan kualifikasi subjek pajak',dampak:'Protes dari penyedia kecil, kesalahan penyetoran pajak ke kas negara',p:2,d:2,strategi:'Terima',pic:'PPK'},
+  {id:98,tahap:'R7-Serah Terima & Bayar',risiko:'Hasil pekerjaan tanpa prestasi kerja',penyebab:'Penyedia mengajukan tagihan termin kedua namun progres termin pertama belum selesai',dampak:'Membayar penyedia melebihi hak kemajuan fisiknya, risiko kerugian negara',p:2,d:4,strategi:'Hindari',pic:'PPK'},
+  {id:99,tahap:'R7-Serah Terima & Bayar',risiko:'Pembayaran tanpa prestasi kerja',penyebab:'Bendahara langsung mencairkan tagihan penyedia tanpa dokumen persetujuan fisik PPK',dampak:'Pencairan dana ilegal, tuntutan hukum penggelapan anggaran negara',p:2,d:5,strategi:'Hindari',pic:'PPK'},
+  {id:100,tahap:'R7-Serah Terima & Bayar',risiko:'Tidak memperhatikan tanggung jawab Pengawas',penyebab:'Mengabaikan rekomendasi pengawas konstruksi mengenai penolakan hasil cor beton',dampak:'Ketahanan struktur bangunan lemah, gedung berpotensi ambruk',p:3,d:4,strategi:'Mitigasi',pic:'PPK'}
+];
+
+// Initial State (Risk Register)
+let risks = [];
+let activeComboRiskId = null;
+let activeComboInput = null;
+let activeAssignPhaseId = null;
+
+// Initialize App
+document.addEventListener('DOMContentLoaded', () => {
+  // Populate filter dropdowns
+  const regTahap = document.getElementById('regTahap');
+  TAHAP_LIST.forEach(t => {
+    let opt = document.createElement('option');
+    opt.textContent = t;
+    regTahap.appendChild(opt);
+  });
+
+  // Load from localStorage or initialize with master risks
+  const stored = localStorage.getItem('pbj_risks');
+  if (stored) {
+    try {
+      risks = JSON.parse(stored);
+    } catch(e) {
+      risks = MASTER_RISKS.map(r => ({...r, status: 'Belum Ditangani', implPhase: 0}));
+    }
+  } else {
+    risks = MASTER_RISKS.map(r => ({...r, status: 'Belum Ditangani', implPhase: 0}));
+    saveRisks();
+  }
+
+  // Handle outside clicks to close combobox
+  document.addEventListener('click', (e) => {
+    const comboDD = document.getElementById('globalComboDD');
+    if (!comboDD.contains(e.target) && !e.target.classList.contains('combo-input') && !e.target.classList.contains('combo-arrow')) {
+      comboDD.classList.remove('open');
+    }
+  });
+
+  renderAll();
+});
+
+function saveRisks() {
+  localStorage.setItem('pbj_risks', JSON.stringify(risks));
+  showSaveIndicator('saved');
+}
+
+function showSaveIndicator(state) {
+  const ind = document.getElementById('saveInd');
+  if (state === 'saved') {
+    ind.textContent = '✓ Tersimpan';
+    ind.className = 'save-indicator show saved';
+    setTimeout(() => { ind.classList.remove('show'); }, 2000);
+  } else if (state === 'unsaved') {
+    ind.textContent = '● Perubahan belum disimpan';
+    ind.className = 'save-indicator show unsaved';
+  }
+}
+
+/* ═══════════════════════════════════
+   ROUTING / SWITCH PAGES
+   ═══════════════════════════════════ */
+function showPage(pageId, btn) {
+  // Hide all pages
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  // Show target page
+  document.getElementById(`page-${pageId}`).classList.add('active');
+
+  // Update active sidebar nav
+  document.querySelectorAll('.sidebar .nav-item').forEach(i => i.classList.remove('active'));
+  btn.classList.add('active');
+
+  // Render content specific to the page
+  renderAll();
+}
+
+/* ═══════════════════════════════════
+   RENDERING
+   ═══════════════════════════════════ */
+function renderAll() {
+  updateBadges();
+  renderDashboard();
+  renderRegister();
+  renderMatrix();
+  renderMitigasi();
+  renderImplementasi();
+  renderMonitoring();
+  renderDaftar();
+}
+
+function updateBadges() {
+  document.getElementById('badgeReg').textContent = risks.length;
+  const mitCount = risks.filter(r => r.strategi === 'Mitigasi').length;
+  document.getElementById('badgeMit').textContent = mitCount;
+}
+
+// 1. Dashboard Page
+function renderDashboard() {
+  const total = risks.length;
+  let st = 0, t = 0, s = 0, r = 0;
+
+  risks.forEach(risk => {
+    const score = risk.p * risk.d;
+    if (score >= 16) st++;
+    else if (score >= 11) t++;
+    else if (score >= 6) s++;
+    else r++;
+  });
+
+  document.getElementById('kpiTotal').textContent = total;
+  document.getElementById('kpiST').textContent = st;
+  document.getElementById('kpiT').textContent = t;
+  document.getElementById('kpiS').textContent = s;
+  document.getElementById('kpiR').textContent = r;
+
+  // Render Distribution Bar Chart (HTML-based)
+  const distPanel = document.getElementById('distPanel');
+  distPanel.innerHTML = '';
+
+  const distData = [
+    { label: 'Sangat Tinggi', count: st, color: 'dfill-st' },
+    { label: 'Tinggi', count: t, color: 'dfill-t' },
+    { label: 'Sedang', count: s, color: 'dfill-s' },
+    { label: 'Rendah', count: r, color: 'dfill-r' }
+  ];
+
+  distData.forEach(item => {
+    const pct = total > 0 ? Math.round((item.count / total) * 100) : 0;
+    const row = document.createElement('div');
+    row.className = 'dist-bar';
+    row.innerHTML = `
+      <div class="dist-row">
+        <span class="dist-lbl">${item.label}</span>
+        <div class="dist-track">
+          <div class="dist-fill ${item.color}" style="width: ${pct}%">${pct > 10 ? pct + '%' : ''}</div>
+        </div>
+        <span class="dist-cnt">${item.count}</span>
+      </div>
+    `;
+    distPanel.appendChild(row);
+  });
+
+  // Render Risks per Stage (HTML-based)
+  const stageBars = document.getElementById('stageBars');
+  stageBars.innerHTML = '';
+
+  TAHAP_LIST.forEach(tahap => {
+    const count = risks.filter(r => r.tahap === tahap).length;
+    const pct = total > 0 ? Math.round((count / total) * 100) : 0;
+    const code = tahap.split('-')[0];
+    const name = tahap.split('-')[1];
+
+    const row = document.createElement('div');
+    row.className = 'stage-row';
+    row.innerHTML = `
+      <span class="stage-code">${code}</span>
+      <span class="stage-name">${name}</span>
+      <div class="stage-track"><div class="stage-fill" style="width: ${pct}%"></div></div>
+      <span class="stage-cnt">${count}</span>
+    `;
+    stageBars.appendChild(row);
+  });
+}
+
+// 2. Risk Register Page
+let searchFilter = '';
+let stageFilter = '';
+let levelFilter = '';
+let implFilter = '';
+
+function filterReg() {
+  searchFilter = document.getElementById('regSearch').value.toLowerCase();
+  stageFilter = document.getElementById('regTahap').value;
+  levelFilter = document.getElementById('regLevel').value;
+  implFilter = document.getElementById('regImplFilter').value;
+  renderRegister();
+}
+
+function renderRegister() {
+  const tbody = document.getElementById('regBody');
+  tbody.innerHTML = '';
+
+  const filtered = risks.filter((r, idx) => {
+    // Search filter
+    const matchesSearch = r.risiko.toLowerCase().includes(searchFilter) ||
+                          r.penyebab.toLowerCase().includes(searchFilter) ||
+                          r.dampak.toLowerCase().includes(searchFilter) ||
+                          r.tahap.toLowerCase().includes(searchFilter);
+    // Stage filter
+    const matchesStage = stageFilter === '' || r.tahap === stageFilter;
+    // Level filter
+    const score = r.p * r.d;
+    let lvl = 'Rendah';
+    if (score >= 16) lvl = 'Sangat Tinggi';
+    else if (score >= 11) lvl = 'Tinggi';
+    else if (score >= 6) lvl = 'Sedang';
+
+    const matchesLevel = levelFilter === '' || lvl === levelFilter;
+    // Implementation filter
+    const matchesImpl = implFilter === '' || r.implPhase.toString() === implFilter;
+
+    return matchesSearch && matchesStage && matchesLevel && matchesImpl;
+  });
+
+  document.getElementById('regCount').textContent = `${filtered.length} risiko terfilter`;
+
+  if (filtered.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="14" style="text-align:center;color:var(--muted);padding:30px 10px;">Tidak ada risiko yang sesuai filter.</td></tr>`;
+    return;
+  }
+
+  filtered.forEach((r, index) => {
+    const score = r.p * r.d;
+    let lvlClass = 'br';
+    let lvlText = 'Rendah';
+    let pClass = 'skor-r';
+    
+    if (score >= 16) { lvlClass = 'bst'; lvlText = 'Sangat Tinggi'; pClass = 'skor-st'; }
+    else if (score >= 11) { lvlClass = 'bt'; lvlText = 'Tinggi'; pClass = 'skor-t'; }
+    else if (score >= 6) { lvlClass = 'bs'; lvlText = 'Sedang'; pClass = 'skor-s'; }
+
+    const tr = document.createElement('tr');
+    tr.id = `reg-tr-${r.id}`;
+    
+    tr.innerHTML = `
+      <td style="text-align:center;font-weight:700;">${index + 1}</td>
+      <td>
+        <select class="reg-select" onchange="updateRisk(${r.id}, 'tahap', this.value)" style="text-align:left;min-width:110px;">
+          ${TAHAP_LIST.map(t => `<option ${r.tahap === t ? 'selected' : ''}>${t}</option>`).join('')}
+        </select>
+      </td>
+      <td>
+        <div class="combo-wrap">
+          <input type="text" class="combo-input" id="reg-risiko-${r.id}" value="${r.risiko}" onclick="openCombo(event, ${r.id})" oninput="filterCombo(this.value, ${r.id})">
+          <span class="combo-arrow" onclick="openCombo(event, ${r.id})">▼</span>
+        </div>
+      </td>
+      <td>
+        <textarea class="reg-input reg-textarea" onchange="updateRisk(${r.id}, 'penyebab', this.value)" rows="1">${r.penyebab}</textarea>
+      </td>
+      <td>
+        <textarea class="reg-input reg-textarea" onchange="updateRisk(${r.id}, 'dampak', this.value)" rows="1">${r.dampak}</textarea>
+      </td>
+      <td style="text-align:center">
+        <select class="reg-select" onchange="updateRisk(${r.id}, 'p', parseInt(this.value))">
+          ${[1,2,3,4,5].map(n => `<option ${r.p === n ? 'selected' : ''}>${n}</option>`).join('')}
+        </select>
+      </td>
+      <td style="text-align:center">
+        <select class="reg-select" onchange="updateRisk(${r.id}, 'd', parseInt(this.value))">
+          ${[1,2,3,4,5].map(n => `<option ${r.d === n ? 'selected' : ''}>${n}</option>`).join('')}
+        </select>
+      </td>
+      <td class="skor-cell"><span class="skor-pill ${pClass}">${score}</span></td>
+      <td><span class="badge ${lvlClass}">${lvlText}</span></td>
+      <td>
+        <select class="reg-select" onchange="updateRisk(${r.id}, 'strategi', this.value)" style="text-align:left;min-width:70px">
+          ${STRATEGI_LIST.map(s => `<option ${r.strategi === s ? 'selected' : ''}>${s}</option>`).join('')}
+        </select>
+      </td>
+      <td>
+        <select class="reg-select" onchange="updateRisk(${r.id}, 'pic', this.value)" style="text-align:left;min-width:64px">
+          ${PIC_LIST.map(pic => `<option ${r.pic === pic ? 'selected' : ''}>${pic}</option>`).join('')}
+        </select>
+      </td>
+      <td>
+        <select class="reg-select reg-select-impl" onchange="updateRisk(${r.id}, 'implPhase', parseInt(this.value))">
+          <option value="0" ${r.implPhase === 0 ? 'selected' : ''}>Belum Ditugaskan</option>
+          ${PHASES.map(p => `<option value="${p.id}" ${r.implPhase === p.id ? 'selected' : ''}>P${p.id} - ${p.title}</option>`).join('')}
+        </select>
+      </td>
+      <td>
+        <select class="reg-select reg-select-status" onchange="updateRisk(${r.id}, 'status', this.value)">
+          ${STATUS_LIST.map(st => `<option ${r.status === st ? 'selected' : ''}>${st}</option>`).join('')}
+        </select>
+      </td>
+      <td style="text-align:center;">
+        <button class="btn-sm btn-delete" onclick="deleteRisk(${r.id})">✕ Hapus</button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+function updateRisk(id, field, value) {
+  const riskIndex = risks.findIndex(r => r.id === id);
+  if (riskIndex > -1) {
+    risks[riskIndex][field] = value;
+    saveRisks();
+
+    // Trigger local DOM updates for scores/levels if P or D is updated
+    if (field === 'p' || field === 'd') {
+      const p = risks[riskIndex].p;
+      const d = risks[riskIndex].d;
+      const score = p * d;
+      let lvlText = 'Rendah';
+      let lvlClass = 'br';
+      let pClass = 'skor-r';
+
+      if (score >= 16) { lvlClass = 'bst'; lvlText = 'Sangat Tinggi'; pClass = 'skor-st'; }
+      else if (score >= 11) { lvlClass = 'bt'; lvlText = 'Tinggi'; pClass = 'skor-t'; }
+      else if (score >= 6) { lvlClass = 'bs'; lvlText = 'Sedang'; pClass = 'skor-s'; }
+
+      const tr = document.getElementById(`reg-tr-${id}`);
+      if (tr) {
+        tr.querySelector('.skor-cell').innerHTML = `<span class="skor-pill ${pClass}">${score}</span>`;
+        tr.querySelector('.badge').className = `badge ${lvlClass}`;
+        tr.querySelector('.badge').textContent = lvlText;
+      }
+    }
+    showToast('info', 'Data diperbarui & disimpan.');
+  }
+}
+
+function addRisk() {
+  const newId = risks.length > 0 ? Math.max(...risks.map(r => r.id)) + 1 : 1;
+  const newRisk = {
+    id: newId,
+    tahap: 'R1-Perencanaan',
+    risiko: 'Risiko baru belum didefinisikan',
+    penyebab: 'Tulis penyebab risiko',
+    dampak: 'Tulis dampak risiko',
+    p: 3,
+    d: 3,
+    strategi: 'Mitigasi',
+    pic: 'PPK',
+    implPhase: 0,
+    status: 'Belum Ditangani'
+  };
+
+  risks.unshift(newRisk);
+  saveRisks();
+  renderAll();
+  showToast('success', 'Risiko baru ditambahkan.');
+}
+
+function deleteRisk(id) {
+  if (confirm('Apakah Anda yakin ingin menghapus risiko ini?')) {
+    risks = risks.filter(r => r.id !== id);
+    saveRisks();
+    renderAll();
+    showToast('warn', 'Risiko berhasil dihapus.');
+  }
+}
+
+function resetData() {
+  if (confirm('Apakah Anda yakin ingin mereset seluruh data kembali ke data awal bawaan?')) {
+    risks = MASTER_RISKS.map(r => ({...r, status: 'Belum Ditangani', implPhase: 0}));
+    saveRisks();
+    renderAll();
+    showToast('success', 'Data direset ke bawaan.');
+  }
+}
+
+function saveAll() {
+  // Since it saves automatically on change, this acts as a confirmation
+  saveRisks();
+  showToast('success', 'Seluruh data risk register berhasil disimpan.');
+}
+
+/* ═══════════════════════════════════
+   COMBOBOX DROPDOWN CONTROLLER
+   ═══════════════════════════════════ */
+function openCombo(e, riskId) {
+  e.stopPropagation();
+  activeComboRiskId = riskId;
+  activeComboInput = document.getElementById(`reg-risiko-${riskId}`);
+  
+  const riskObj = risks.find(r => r.id === riskId);
+  const stage = riskObj ? riskObj.tahap : 'R1-Perencanaan';
+
+  // Position Dropdown
+  const rect = activeComboInput.getBoundingClientRect();
+  const comboDD = document.getElementById('globalComboDD');
+  comboDD.style.top = `${rect.bottom + window.scrollY}px`;
+  comboDD.style.left = `${rect.left + window.scrollX}px`;
+  comboDD.style.width = `${rect.width}px`;
+
+  // Render choices based on stage
+  renderComboOpts(stage);
+  comboDD.classList.add('open');
+  document.getElementById('comboSearchInput').value = '';
+  document.getElementById('comboSearchInput').focus();
+}
+
+function renderComboOpts(stage, searchKey = '') {
+  const optsDiv = document.getElementById('globalComboOpts');
+  optsDiv.innerHTML = '';
+
+  // Get matching risks from master data
+  const filtered = MASTER_RISKS.filter(mr => {
+    const matchesStage = mr.tahap === stage;
+    const matchesSearch = mr.risiko.toLowerCase().includes(searchKey.toLowerCase()) || 
+                          mr.code.toLowerCase().includes(searchKey.toLowerCase());
+    return matchesStage && matchesSearch;
+  });
+
+  if (filtered.length === 0) {
+    optsDiv.innerHTML = `<div class="combo-empty">Tidak ada rekomendasi risiko yang sesuai.</div>`;
+    return;
+  }
+
+  filtered.forEach(mr => {
+    const score = mr.p * mr.d;
+    let lvlClass = 'br';
+    let lvlText = 'Rnd';
+    if (score >= 16) { lvlClass = 'bst'; lvlText = 'ST'; }
+    else if (score >= 11) { lvlClass = 'bt'; lvlText = 'T'; }
+    else if (score >= 6) { lvlClass = 'bs'; lvlText = 'Sd'; }
+
+    const opt = document.createElement('div');
+    opt.className = 'combo-opt';
+    opt.onclick = () => selectComboOpt(mr);
+    opt.innerHTML = `
+      <div class="combo-opt-code">${mr.code}</div>
+      <div class="combo-opt-text">
+        ${mr.risiko}
+        <div class="combo-opt-meta">Penyebab: ${mr.penyebab.substring(0,40)}... <span class="badge ${lvlClass} combo-opt-level">${lvlText}</span></div>
+      </div>
+    `;
+    optsDiv.appendChild(opt);
+  });
+}
+
+function searchCombo(val) {
+  const riskObj = risks.find(r => r.id === activeComboRiskId);
+  const stage = riskObj ? riskObj.tahap : 'R1-Perencanaan';
+  renderComboOpts(stage, val);
+}
+
+function selectComboOpt(mr) {
+  const riskIndex = risks.findIndex(r => r.id === activeComboRiskId);
+  if (riskIndex > -1) {
+    risks[riskIndex].risiko = mr.risiko;
+    risks[riskIndex].penyebab = mr.penyebab;
+    risks[riskIndex].dampak = mr.dampak;
+    risks[riskIndex].p = mr.p;
+    risks[riskIndex].d = mr.d;
+    risks[riskIndex].strategi = mr.strategi;
+    risks[riskIndex].pic = mr.pic;
+
+    saveRisks();
+    renderRegister();
+    showToast('success', 'Rekomendasi risiko & mitigasi terisi otomatis.');
+  }
+  document.getElementById('globalComboDD').classList.remove('open');
+}
+
+function switchToManual() {
+  document.getElementById('globalComboDD').classList.remove('open');
+  if (activeComboInput) {
+    activeComboInput.focus();
+    activeComboInput.select();
+  }
+}
+
+function filterCombo(val, riskId) {
+  // Update current text input
+  const riskIndex = risks.findIndex(r => r.id === riskId);
+  if (riskIndex > -1) {
+    risks[riskIndex].risiko = val;
+    saveRisks();
+  }
+}
+
+/* ═══════════════════════════════════
+   3. MATRIX 5x5 PAGE
+   ═══════════════════════════════════ */
+function renderMatrix() {
+  const mbody = document.getElementById('matrixBody');
+  mbody.innerHTML = '';
+
+  // Standard P rows 5 down to 1
+  for (let p = 5; p >= 1; p--) {
+    const tr = document.createElement('tr');
+    
+    // Row label (vertical title only on p=3)
+    let extraHeader = '';
+    if (p === 5) {
+      extraHeader = `<td rowspan="5" style="width:24px;writing-mode:vertical-lr;transform:rotate(180deg);text-align:center;font-weight:800;color:var(--muted);border:none;">PROBABILITAS</td>`;
+    }
+    
+    tr.innerHTML = `
+      ${extraHeader}
+      <td class="row-lbl">P = ${p}</td>
+    `;
+
+    // Columns D from 1 to 5
+    for (let d = 1; d <= 5; d++) {
+      const score = p * d;
+      let cellColor = 'mcell-r';
+      let label = 'Rendah';
+
+      if (score >= 16) { cellColor = 'mcell-st'; label = 'Sangat Tinggi'; }
+      else if (score >= 11) { cellColor = 'mcell-t'; label = 'Tinggi'; }
+      else if (score >= 6) { cellColor = 'mcell-s'; label = 'Sedang'; }
+
+      const matching = risks.filter(r => r.p === p && r.d === d);
+      const cntClass = matching.length > 0 ? '' : 'style="opacity: 0.2;"';
+      const cellHtml = `
+        <td class="mcell ${matching.length > 0 ? cellColor : 'mcell-0'}" onclick="filterFromMatrix(${p}, ${d})">
+          <div class="cn" ${cntClass}>${matching.length}</div>
+          <div class="cl">${label}</div>
+        </td>
+      `;
+      tr.innerHTML += cellHtml;
+    }
+    mbody.appendChild(tr);
+  }
+}
+
+function filterFromMatrix(p, d) {
+  stageFilter = '';
+  levelFilter = '';
+  implFilter = '';
+  searchFilter = '';
+
+  document.getElementById('regTahap').value = '';
+  document.getElementById('regLevel').value = '';
+  document.getElementById('regImplFilter').value = '';
+  document.getElementById('regSearch').value = '';
+
+  // Apply matrix coordinate filter
+  risks.forEach(r => {
+    // Just force rendering
+  });
+  
+  // Custom filter register override
+  const tbody = document.getElementById('regBody');
+  tbody.innerHTML = '';
+  const filtered = risks.filter(r => r.p === p && r.d === d);
+
+  document.getElementById('regCount').textContent = `${filtered.length} risiko dari koordinas P=${p}, D=${d}`;
+  
+  // Switch to register page
+  document.getElementById('page-dashboard').classList.remove('active');
+  document.getElementById('page-matrix').classList.remove('active');
+  document.getElementById('page-register').classList.add('active');
+
+  const navReg = document.querySelector('button[onclick*="register"]');
+  document.querySelectorAll('.sidebar .nav-item').forEach(i => i.classList.remove('active'));
+  if (navReg) navReg.classList.add('active');
+
+  // Render register with matrix coordinates
+  filtered.forEach((r, index) => {
+    const score = r.p * r.d;
+    let lvlClass = 'br';
+    let lvlText = 'Rendah';
+    let pClass = 'skor-r';
+    
+    if (score >= 16) { lvlClass = 'bst'; lvlText = 'Sangat Tinggi'; pClass = 'skor-st'; }
+    else if (score >= 11) { lvlClass = 'bt'; lvlText = 'Tinggi'; pClass = 'skor-t'; }
+    else if (score >= 6) { lvlClass = 'bs'; lvlText = 'Sedang'; pClass = 'skor-s'; }
+
+    const tr = document.createElement('tr');
+    tr.id = `reg-tr-${r.id}`;
+    tr.innerHTML = `
+      <td style="text-align:center;font-weight:700;">${index + 1}</td>
+      <td>
+        <select class="reg-select" onchange="updateRisk(${r.id}, 'tahap', this.value)" style="text-align:left;min-width:110px;">
+          ${TAHAP_LIST.map(t => `<option ${r.tahap === t ? 'selected' : ''}>${t}</option>`).join('')}
+        </select>
+      </td>
+      <td>
+        <div class="combo-wrap">
+          <input type="text" class="combo-input" id="reg-risiko-${r.id}" value="${r.risiko}" onclick="openCombo(event, ${r.id})" oninput="filterCombo(this.value, ${r.id})">
+          <span class="combo-arrow" onclick="openCombo(event, ${r.id})">▼</span>
+        </div>
+      </td>
+      <td><textarea class="reg-input reg-textarea" onchange="updateRisk(${r.id}, 'penyebab', this.value)" rows="1">${r.penyebab}</textarea></td>
+      <td><textarea class="reg-input reg-textarea" onchange="updateRisk(${r.id}, 'dampak', this.value)" rows="1">${r.dampak}</textarea></td>
+      <td style="text-align:center">
+        <select class="reg-select" onchange="updateRisk(${r.id}, 'p', parseInt(this.value))">
+          ${[1,2,3,4,5].map(n => `<option ${r.p === n ? 'selected' : ''}>${n}</option>`).join('')}
+        </select>
+      </td>
+      <td style="text-align:center">
+        <select class="reg-select" onchange="updateRisk(${r.id}, 'd', parseInt(this.value))">
+          ${[1,2,3,4,5].map(n => `<option ${r.d === n ? 'selected' : ''}>${n}</option>`).join('')}
+        </select>
+      </td>
+      <td class="skor-cell"><span class="skor-pill ${pClass}">${score}</span></td>
+      <td><span class="badge ${lvlClass}">${lvlText}</span></td>
+      <td>
+        <select class="reg-select" onchange="updateRisk(${r.id}, 'strategi', this.value)" style="text-align:left;min-width:70px">
+          ${STRATEGI_LIST.map(s => `<option ${r.strategi === s ? 'selected' : ''}>${s}</option>`).join('')}
+        </select>
+      </td>
+      <td>
+        <select class="reg-select" onchange="updateRisk(${r.id}, 'pic', this.value)" style="text-align:left;min-width:64px">
+          ${PIC_LIST.map(pic => `<option ${r.pic === pic ? 'selected' : ''}>${pic}</option>`).join('')}
+        </select>
+      </td>
+      <td>
+        <select class="reg-select reg-select-impl" onchange="updateRisk(${r.id}, 'implPhase', parseInt(this.value))">
+          <option value="0" ${r.implPhase === 0 ? 'selected' : ''}>Belum Ditugaskan</option>
+          ${PHASES.map(p => `<option value="${p.id}" ${r.implPhase === p.id ? 'selected' : ''}>P${p.id} - ${p.title}</option>`).join('')}
+        </select>
+      </td>
+      <td>
+        <select class="reg-select reg-select-status" onchange="updateRisk(${r.id}, 'status', this.value)">
+          ${STATUS_LIST.map(st => `<option ${r.status === st ? 'selected' : ''}>${st}</option>`).join('')}
+        </select>
+      </td>
+      <td style="text-align:center;">
+        <button class="btn-sm btn-delete" onclick="deleteRisk(${r.id})">✕ Hapus</button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+/* ═══════════════════════════════════
+   4. MITIGASI PAGE
+   ═══════════════════════════════════ */
+function renderMitigasi() {
+  const container = document.getElementById('mitigasiContainer');
+  container.innerHTML = '';
+
+  // Filter only risks that have "Mitigasi" as handling strategy
+  const mitRisks = risks.filter(r => r.strategi === 'Mitigasi');
+
+  if (mitRisks.length === 0) {
+    container.innerHTML = `<div class="card"><div class="card-body" style="text-align:center;color:var(--muted);padding:40px;">Belum ada rencana mitigasi yang didefinisikan.</div></div>`;
+    return;
+  }
+
+  // Group by Stage
+  TAHAP_LIST.forEach(stage => {
+    const stageRisks = mitRisks.filter(r => r.tahap === stage);
+    if (stageRisks.length === 0) return;
+
+    const section = document.createElement('div');
+    section.className = 'mit-section';
+    section.innerHTML = `
+      <div class="mit-section-title">📌 ${stage} <span class="badge bt" style="margin-left:auto;background:rgba(255,255,255,0.2);color:var(--nav)">PIC: Tim Kerja</span></div>
+    `;
+
+    stageRisks.forEach(r => {
+      const score = r.p * r.d;
+      let lvlClass = 'br';
+      let lvlText = 'Rendah';
+      let cardBorder = 'br';
+
+      if (score >= 16) { lvlClass = 'bst'; lvlText = 'Sangat Tinggi'; cardBorder = 'bst'; }
+      else if (score >= 11) { lvlClass = 'bt'; lvlText = 'Tinggi'; cardBorder = 'bt'; }
+      else if (score >= 6) { lvlClass = 'bs'; lvlText = 'Sedang'; cardBorder = 'bs'; }
+
+      // Look up recommendations or provide default
+      let recText = 'Wajibkan monitoring berlapis, lengkapi formulir mitigasi khusus satker.';
+      const matchMaster = MASTER_RISKS.find(mr => mr.risiko === r.risiko);
+      if (matchMaster) {
+        // Simple mock mitigation statement
+        recText = `Lakukan audit berkala, buat SOP tertulis khusus tahapan ini, dan tunjuk pemeriksa independen untuk memantau detail.`;
+      }
+
+      const card = document.createElement('div');
+      card.className = `mit-card ${cardBorder}`;
+      card.innerHTML = `
+        <div class="mit-head">
+          <div>
+            <div class="mit-code">ID: ${r.id}</div>
+            <div class="mit-risiko">${r.risiko}</div>
+          </div>
+          <span class="badge ${lvlClass}">${lvlText}</span>
+        </div>
+        <div class="mit-text">${recText}</div>
+        <div class="mit-meta">
+          <span class="meta-chip chip-pic">👤 PIC: ${r.pic}</span>
+          <span class="meta-chip chip-time">📅 Status: ${r.status}</span>
+          <span class="meta-chip chip-kpi">✅ Target: Bebas Hambatan</span>
+        </div>
+      `;
+      section.appendChild(card);
+    });
+
+    container.appendChild(section);
+  });
+}
+
+/* ═══════════════════════════════════
+   5. IMPLEMENTASI PAGE
+   ═══════════════════════════════════ */
+function renderImplementasi() {
+  const grid = document.getElementById('implGrid');
+  grid.innerHTML = '';
+
+  let totalRisks = risks.length;
+  let assignedRisks = risks.filter(r => r.implPhase > 0).length;
+
+  PHASES.forEach(phase => {
+    const phaseRisks = risks.filter(r => r.implPhase === phase.id);
+
+    const panel = document.createElement('div');
+    panel.className = 'impl-phase';
+    panel.innerHTML = `
+      <div class="impl-phase-head">
+        <div class="impl-phase-num">${phase.id}</div>
+        <div class="impl-phase-info">
+          <div class="impl-phase-title">${phase.title}</div>
+          <div class="impl-phase-sub">${phase.sub}</div>
+        </div>
+        <div class="impl-phase-cnt">${phaseRisks.length}</div>
+      </div>
+      <div class="impl-phase-body" id="phase-body-${phase.id}"></div>
+      <button class="impl-add-btn" onclick="openTransferModal(${phase.id})">＋ Pilih Risiko dari Register</button>
+    `;
+
+    const body = panel.querySelector(`.impl-phase-body`);
+
+    if (phaseRisks.length === 0) {
+      body.innerHTML = `<div class="impl-empty">Belum ada risiko ditugaskan</div>`;
+    } else {
+      phaseRisks.forEach(pr => {
+        const score = pr.p * pr.d;
+        let cClass = 'ic-r';
+        if (score >= 16) cClass = 'ic-st';
+        else if (score >= 11) cClass = 'ic-t';
+        else if (score >= 6) cClass = 'ic-s';
+
+        const chip = document.createElement('div');
+        chip.className = `impl-risk-chip ${cClass}`;
+        chip.innerHTML = `
+          <div class="impl-risk-code">ID:${pr.id}</div>
+          <div class="impl-risk-text" title="${pr.risiko}">${pr.risiko}</div>
+          <div class="impl-risk-skor">${score}</div>
+          <button class="impl-risk-move" onclick="unassignRisk(${pr.id})">✕ Cabut</button>
+        `;
+        body.appendChild(chip);
+      });
+    }
+
+    grid.appendChild(panel);
+  });
+
+  // Render progress
+  const progressDiv = document.getElementById('implProgress');
+  const pct = totalRisks > 0 ? Math.round((assignedRisks / totalRisks) * 100) : 0;
+  progressDiv.innerHTML = `
+    <div style="display:flex;justify-content:space-between;margin-bottom:8px;font-weight:700;">
+      <span>Risiko Terpetakan di Papan Implementasi</span>
+      <span>${assignedRisks} / ${totalRisks} (${pct}%)</span>
+    </div>
+    <div class="prog-bar"><div class="prog-fill" style="width:${pct}%"></div></div>
+  `;
+}
+
+function openTransferModal(phaseId) {
+  activeAssignPhaseId = phaseId;
+  const modal = document.getElementById('transferModal');
+  const modalBody = document.getElementById('modalBody');
+  const phase = PHASES.find(p => p.id === phaseId);
+
+  document.getElementById('modalTitle').textContent = `Tugaskan ke: ${phase.title}`;
+  modalBody.innerHTML = '';
+
+  // Get risks not assigned to this phase
+  const available = risks.filter(r => r.implPhase !== phaseId);
+
+  if (available.length === 0) {
+    modalBody.innerHTML = '<div class="impl-empty">Tidak ada risiko lain yang tersedia.</div>';
+    modal.classList.add('show');
+    return;
+  }
+
+  available.forEach(r => {
+    const card = document.createElement('div');
+    card.className = 'modal-phase-opt';
+    card.onclick = () => assignRisk(r.id, phaseId);
+    card.innerHTML = `
+      <div class="mpo-num">${r.id}</div>
+      <div>
+        <div class="mpo-text">${r.risiko}</div>
+        <div class="mpo-sub">${r.tahap} · Skor: ${r.p * r.d} · PIC: ${r.pic} ${r.implPhase > 0 ? `(Saat ini di Fase ${r.implPhase})` : ''}</div>
+      </div>
+    `;
+    modalBody.appendChild(card);
+  });
+
+  modal.classList.add('show');
+}
+
+function closeModal() {
+  document.getElementById('transferModal').classList.remove('show');
+}
+
+function assignRisk(riskId, phaseId) {
+  const riskIndex = risks.findIndex(r => r.id === riskId);
+  if (riskIndex > -1) {
+    risks[riskIndex].implPhase = phaseId;
+    saveRisks();
+    renderAll();
+    closeModal();
+    showToast('success', `Risiko ditugaskan ke Fase ${phaseId}.`);
+  }
+}
+
+function unassignRisk(riskId) {
+  const riskIndex = risks.findIndex(r => r.id === riskId);
+  if (riskIndex > -1) {
+    risks[riskIndex].implPhase = 0;
+    saveRisks();
+    renderAll();
+    showToast('info', 'Risiko dicabut dari implementasi.');
+  }
+}
+
+function autoAssign() {
+  if (confirm('Otomatis tugaskan 20 risiko pertama ke fase implementasi secara acak untuk keperluan testing?')) {
+    risks.forEach((r, idx) => {
+      if (idx < 20) {
+        r.implPhase = (idx % PHASES.length) + 1;
+      }
+    });
+    saveRisks();
+    renderAll();
+    showToast('success', 'Risiko berhasil ditugaskan otomatis.');
+  }
+}
+
+function clearAllAssignments() {
+  if (confirm('Apakah Anda yakin ingin mengosongkan semua penugasan fase implementasi?')) {
+    risks.forEach(r => r.implPhase = 0);
+    saveRisks();
+    renderAll();
+    showToast('warn', 'Semua fase implementasi dikosongkan.');
+  }
+}
+
+/* ═══════════════════════════════════
+   6. MONITORING PAGE
+   ═══════════════════════════════════ */
+function renderMonitoring() {
+  const container = document.getElementById('monCards');
+  container.innerHTML = '';
+
+  // Render cards based on standard monitoring parameters
+  const monData = [
+    { icon: '📅', freq: 'Monitoring Triwulanan', tasks: ['Laporan rekapitulasi ke KPA', 'Evaluasi tren matriks risiko 5x5', 'Sinkronisasi database SIRUP'] },
+    { icon: '🛡️', freq: 'Pengendalian Harian', tasks: ['Pemeriksaan kelengkapan berkas fisik PPK', 'Verifikasi silang HPS pembanding', 'Checklist K3 area Rudenim'] },
+    { icon: '📡', freq: 'Review Pra-Tender', tasks: ['Uji spesifikasi teknis KAK', 'Verifikasi jaminan keuangan vendor', 'Catatan penjelasan (Aanwijzing) Pokja'] }
+  ];
+
+  monData.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'mon-card';
+    card.innerHTML = `
+      <span class="mon-icon">${item.icon}</span>
+      <div class="mon-freq">${item.freq}</div>
+      ${item.tasks.map(t => `
+        <div class="mon-task">
+          <div class="mon-dot"></div>
+          <div>${t}</div>
+        </div>
+      `).join('')}
+    `;
+    container.appendChild(card);
+  });
+
+  // Render Indicators Table
+  const krkBody = document.getElementById('krkBody');
+  krkBody.innerHTML = '';
+
+  const indicators = [
+    { code: 'KRK-1', unit: 'Kelengkapan Berkas HPS', target: '100% Kertas Kerja lengkap', real: '100%', cap: '100%', label: 'Sesuai' },
+    { code: 'KRK-2', unit: 'Sanggahan Banding Pokja', target: '0 sanggahan terbukti lalai', real: '0', cap: '100%', label: 'Sesuai' },
+    { code: 'KRK-3', unit: 'Ketepatan Pengiriman Logistik', target: 'Maksimal deviasi +1 hari', real: '+0 hari', cap: '100%', label: 'Sesuai' }
+  ];
+
+  indicators.forEach(ind => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td style="font-weight:700;">${ind.code}</td>
+      <td>${ind.unit}</td>
+      <td style="text-align:center">${ind.target}</td>
+      <td style="text-align:center;font-weight:700;">${ind.real}</td>
+      <td style="text-align:center;color:var(--r);font-weight:800;">${ind.cap}</td>
+      <td><span class="badge br">${ind.label}</span></td>
+    `;
+    krkBody.appendChild(tr);
+  });
+}
+
+/* ═══════════════════════════════════
+   7. DAFTAR 100 RISIKO (ACCORDION)
+   ═══════════════════════════════════ */
+function renderDaftar() {
+  const list = document.getElementById('daftarList');
+  list.innerHTML = '';
+
+  TAHAP_LIST.forEach((tahap, stageIdx) => {
+    const stageRisks = MASTER_RISKS.filter(r => r.tahap === tahap);
+    const grp = document.createElement('div');
+    grp.className = 'daftar-group';
+    
+    grp.innerHTML = `
+      <div class="daftar-hdr" onclick="toggleAccordion(this)">
+        <div class="daftar-hdr-l">
+          <span class="dg-code">R${stageIdx + 1}</span>
+          <div>
+            <span class="dg-name">${tahap.split('-')[1]}</span>
+            <span class="dg-cnt">(${stageRisks.length} Risiko Terdefinisi)</span>
+          </div>
+        </div>
+        <span class="dg-chev">▼</span>
+      </div>
+      <div class="daftar-body">
+        <div class="daftar-body-inner" id="stage-acc-body-${stageIdx}"></div>
+      </div>
+    `;
+
+    const body = grp.querySelector('.daftar-body-inner');
+    
+    stageRisks.forEach((sr, idx) => {
+      const row = document.createElement('div');
+      row.className = 'daftar-row';
+      row.innerHTML = `
+        <div class="dr-no">R${stageIdx + 1}.${idx + 1}</div>
+        <div class="dr-txt">
+          <div style="font-weight:700;margin-bottom:3px">${sr.risiko}</div>
+          <div style="color:var(--muted)">Penyebab: ${sr.penyebab}</div>
+          <div style="color:var(--muted)">Dampak: ${sr.dampak}</div>
+        </div>
+        <div class="dr-pic">👤 ${sr.pic}</div>
+      `;
+      body.appendChild(row);
+    });
+
+    list.appendChild(grp);
+  });
+}
+
+function toggleAccordion(hdr) {
+  const grp = hdr.parentElement;
+  grp.classList.toggle('open');
+}
+
+/* ═══════════════════════════════════
+   TOAST NOTIFICATION ENGINE
+   ═══════════════════════════════════ */
+function showToast(type, text) {
+  const container = document.getElementById('toastContainer');
+  const toast = document.createElement('div');
+  toast.className = `toast toast-${type}`;
+  
+  let icon = 'ℹ️';
+  if (type === 'success') icon = '✓';
+  else if (type === 'warn') icon = '⚠️';
+  else if (type === 'error') icon = '✕';
+
+  toast.innerHTML = `<span>${icon}</span> <span>${text}</span>`;
+  container.appendChild(toast);
+
+  setTimeout(() => {
+    toast.style.animation = 'toastOut 0.3s ease-in forwards';
+    setTimeout(() => { toast.remove(); }, 300);
+  }, 3000);
+}
+</script>
+</body>
+</html>
