@@ -585,9 +585,9 @@
     "semantic_hash": "04787578fc0433408d655c72be93fa1f"
   },
   ".claude/skills/pedomanmakalahakuntansi/SKILL.md": {
-    "mtime": 1781415202.4252563,
-    "ast_hash": "e134de3f9300f963cc01aaedd1a7ba3f",
-    "semantic_hash": "e134de3f9300f963cc01aaedd1a7ba3f"
+    "mtime": 1781864128.19197,
+    "ast_hash": "6dc90f108026d6703aba826a123a9374",
+    "semantic_hash": ""
   },
   ".claude/skills/pmk62/SKILL.md": {
     "mtime": 1780421093.5337481,
@@ -1665,13 +1665,13 @@
     "semantic_hash": ""
   },
   "projects/makalah-sim/build_makalah_sim_v2.js": {
-    "mtime": 1781854898.878601,
-    "ast_hash": "db69f3a17cc7a382e66269784905d8d7",
+    "mtime": 1781881290.4710057,
+    "ast_hash": "aaf0b810e367979bdea41442e3bb6b88",
     "semantic_hash": ""
   },
   "projects/makalah-sim/makalah_sim_v2.json": {
-    "mtime": 1781854987.0240893,
-    "ast_hash": "71a5b169bc23bbb51ea870d44408d1fc",
+    "mtime": 1781933739.0767176,
+    "ast_hash": "c927fd0a5ce58e6218e1d3d57a093ac8",
     "semantic_hash": ""
   },
   "projects/makalah-sim/scratch/compare.js": {
@@ -1789,9 +1789,9 @@
     "ast_hash": "c47cbd68dfc70027f9a65bc0e577d233",
     "semantic_hash": ""
   },
-  "projects/Dahsboard HTML Rudenim/extracted_risks.txt": {
-    "mtime": 1781856956.6786563,
-    "ast_hash": "96fbe9e39744a6c6fc737d4924c6d892",
+  "projects/auditdok/prd.md": {
+    "mtime": 1781934837.6492386,
+    "ast_hash": "d4e26e35b1c6a8919db62955dc59422a",
     "semantic_hash": ""
   }
 }

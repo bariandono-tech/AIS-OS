@@ -1,16 +1,16 @@
-# Graph Report - AIS-OS  (2026-06-19)
+# Graph Report - AIS-OS  (2026-06-20)
 
 ## Corpus Check
-- 323 files · ~396,819 words
+- 324 files · ~400,748 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3757 nodes · 3720 edges · 407 communities (302 shown, 105 thin omitted)
+- 3786 nodes · 3748 edges · 408 communities (303 shown, 105 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b902fcaa`
+- Built from commit: `a4cea3f8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -400,6 +400,7 @@
 - [[_COMMUNITY_Community 395|Community 395]]
 - [[_COMMUNITY_Community 396|Community 396]]
 - [[_COMMUNITY_Community 397|Community 397]]
+- [[_COMMUNITY_Community 407|Community 407]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
@@ -428,7 +429,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (407 total, 105 thin omitted)
+## Communities (408 total, 105 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -461,8 +462,8 @@ Cohesion: 0.08
 Nodes (26): 1. Kenapa PMK ini Sangat Heboh? (The Omnibus Effect), 1. Kenapa PP ini Diterbitkan? (Latar Belakang), 29 peraturan berbeda, 2. Poin-Poin Krusial yang Wajib Dikuasai:, 2. Poin-Poin Perubahan Krusial:, Akselerasi Pengadaan Barang/Jasa (Pra-DIPA / Sebelum Tahun Anggaran):, Aturan Sisa Pekerjaan Akhir Tahun (Pasal 163):, Bedah PP 50/2018 & PMK 62/2023 (Versi Cepat Paham Mahasiswa & Praktisi) (+18 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.09
-Nodes (26): 1. Latar Belakang, 2. Tujuan, 3.1 Database yang Ada, 3.2 Gap yang Ada, 3. Kondisi Saat Ini, 4.1 Database Canonical (yang dipakai), 4.2 Relasi yang Perlu Ditambahkan, 4. Arsitektur Target (+18 more)
+Cohesion: 0.10
+Nodes (25): 1. Latar Belakang, 2. Tujuan, 3.1 Database yang Ada, 3.2 Gap yang Ada, 3. Kondisi Saat Ini, 4.1 Database Canonical (yang dipakai), 4.2 Relasi yang Perlu Ditambahkan, 4. Arsitektur Target (+17 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.08
@@ -498,7 +499,7 @@ Nodes (20): 1. Peta Halaman (Page Tree), 2. Database Inti & Perannya, 3. Fitur p
 
 ### Community 15 - "Community 15"
 Cohesion: 0.11
-Nodes (18): 1. Peta Struktur Lengkap, 2. Database Inventory — Status Setelah Audit, 3. Schema Notes [PT] Setelah Enrichment, 4. Schema Projects [UT] Setelah Enrichment, 5. Relasi Final Antar Database, 6. Gap Analysis — Status Resolusi, Areas/Resources [PT], Database yang Di-retire (+10 more)
+Nodes (19): 1. Peta Struktur Lengkap, 2. Database Inventory — Status Setelah Audit, 3. Schema Notes [PT] Setelah Enrichment, 4. Schema Projects [UT] Setelah Enrichment, 5. Relasi Final Antar Database, 6. Gap Analysis — Status Resolusi, Areas/Resources [PT], Database yang Di-retire (+11 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.14
@@ -817,8 +818,8 @@ Cohesion: 0.14
 Nodes (14): A6.10 Meal Plan (new), A6.11 Task History (new; free-plan compatible), A6.12 Journal & Reviews (new) `[Beyond UB]`, A6.13 Habits & Habit Log (new, optional) `[Beyond UB]`, A6.1 Tasks (canonical; evolve `Tasks [UT]`), A6.2 Projects (canonical; evolve `Projects [UT]`), A6.3 Notes (canonical; evolve `Notes [UN]`), A6.4 Tags (canonical PARA backbone; evolve `Areas/Resources [PT]`) (+6 more)
 
 ### Community 110 - "Community 110"
-Cohesion: 0.14
-Nodes (13): 1. STRUKTUR MAKALAH SEMINAR AKUNTANSI, 2. ATURAN SPASI PENGETIKAN (LINE SPACING), 3. FORMAT DAFTAR ISI, 4. SISTEM SITASI (IN-TEXT CITATION), 5. FORMAT DAFTAR PUSTAKA, 6. ATURAN TEKS MIRING (ITALIC), 7. PENULISAN SUBBAB DAN HEADING, 8. TIPS PENERAPAN DALAM DOCX (NODE.JS) (+5 more)
+Cohesion: 0.13
+Nodes (14): 1. STRUKTUR MAKALAH SEMINAR AKUNTANSI, 2. ATURAN SPASI PENGETIKAN (LINE SPACING), 3. FORMAT DAFTAR ISI, 4. SISTEM SITASI (IN-TEXT CITATION), 5. FORMAT DAFTAR PUSTAKA, 6. ATURAN TEKS MIRING (ITALIC), 7. PENULISAN SUBBAB DAN HEADING, 8. TIPS PENERAPAN DALAM DOCX (NODE.JS) (+6 more)
 
 ### Community 111 - "Community 111"
 Cohesion: 0.14
@@ -1253,8 +1254,8 @@ Cohesion: 0.08
 Nodes (24): 6. Prosedur Otomasi Git (Commit & Push), Detail 10 Tema Alternatif & Draf Thread Siap Saji, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter:, Draf Thread Twitter: (+16 more)
 
 ### Community 269 - "Community 269"
-Cohesion: 0.07
-Nodes (22): border0, borders0, bordersAll, borderSingle, cellPara(), centered(), chapterPageSetup, createMutuBakuTable() (+14 more)
+Cohesion: 0.06
+Nodes (26): border0, borderNone, borders0, bordersAll, bordersBottom, bordersHeader, borderSingle, bordersMiddle (+18 more)
 
 ### Community 278 - "Community 278"
 Cohesion: 0.20
@@ -1563,15 +1564,19 @@ Nodes (8): border0, borders0, bordersAll, borderSingle, doc, {
 Cohesion: 0.50
 Nodes (3): doc, docx, fs
 
+### Community 407 - "Community 407"
+Cohesion: 0.08
+Nodes (23): 10. Metrik Keberhasilan (KPI), 11. Open Questions, 1. Ringkasan Eksekutif, 2. Jenis Dokumen yang Dapat Diaudit, 3.1 🟢 BASIC — Quick Audit, 3.2 🔵 PLUS — Guided Audit, 3.3 🟣 PRO — Visual Audit, 3.4 🟠 ULTRA — Full Service Audit (+15 more)
+
 ## Knowledge Gaps
-- **1517 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `{
+- **1540 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `{
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
   PageNumber, PageBreak, Header, Footer,
   PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
   TabStopType, NumberFormat, ImageRun,
   TableOfContents, SequentialIdentifier
-}`, `fs`, `path`, `border0` (+1512 more)
+}`, `fs`, `path`, `border0` (+1535 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **105 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -1580,15 +1585,15 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 79` to `Community 280`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `docx` connect `Community 362` to `Community 374`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Why does `dotenv` connect `Community 79` to `Community 10`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `Menginisialisasi klien Google GenAI.`, `Mengirim pesan ke Gemini dan menangani iterasi pemanggilan fungsi (Tool Calling)` to the rest of the system?**
-  _1534 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1557 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.07586206896551724 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._

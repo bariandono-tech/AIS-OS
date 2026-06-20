@@ -21,7 +21,7 @@ Penulis menyadari bahwa keberhasilan penulisan makalah ini tidak lepas dari bimb
 1. Bapak Dr. Purwanto, SH, M.Hum., FCBArb selaku Rektor Universitas Panca Bhakti Pontianak.
 2. Bapak Dr. Sartono, M.M. selaku Dekan Fakultas Ekonomi dan Bisnis Universitas Panca Bhakti.
 3. Bapak Risal, S.E., M.Si., Ak.CA selaku Ketua Jurusan Akuntansi Universitas Panca Bhakti.
-4. Ibu Endang Kristiawati, S.E., Ak., M.Si selaku Dosen Pengampu Mata Kuliah Sistem Informasi Manajemen yang telah meluangkan waktu memberikan bimbingan dan koreksi dalam penyusunan makalah ini.
+4. Ibu Dr. Renny Wulandari, S.E., M.Si., Ak., CA selaku Dosen Pengampu Mata Kuliah Sistem Informasi Manajemen yang telah memberikan bimbingan dan arahan.
 5. Kepala Rumah Detensi Imigrasi Pontianak beserta seluruh jajaran petugas keimigrasian yang telah memberikan izin dan bantuan data selama proses observasi dan penelitian dilakukan.
 6. Kedua orang tua dan rekan-rekan seperjuangan mahasiswa akuntansi yang senantiasa mendoakan dan memberikan dorongan semangat.
 

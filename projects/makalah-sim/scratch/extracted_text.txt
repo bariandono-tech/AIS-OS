@@ -1,0 +1,1429 @@
+MAKALAH
+
+ANALISIS STRUKTUR ORGANISASI, SISTEM INFORMASI
+
+MANAJEMEN KEIMIGRASIAN (SIMKIM), DAN
+
+STANDAR OPERASIONAL PROSEDUR (SOP)
+
+PADA RUMAH DETENSI IMIGRASI PONTIANAK
+
+Disusun untuk Memenuhi Tugas Mata Kuliah
+
+Sistem Informasi Manajemen
+
+Oleh:
+
+AJIE BARIANDONO
+
+NIM. 2110426823
+
+PROGRAM STUDI AKUNTANSI
+
+FAKULTAS EKONOMI DAN BISNIS
+
+UNIVERSITAS PANCA BHAKTI
+
+PONTIANAK
+
+2026
+
+KATA PENGANTAR
+
+Puji syukur penulis panjatkan kehadirat Allah Subhanahu Wa Ta'ala atas limpahan rahmat dan karunia-Nya sehingga penulis dapat menyelesaikan makalah yang berjudul "Analisis Struktur Organisasi, Sistem Informasi Manajemen Keimigrasian (SIMKIM), dan Standar Operasional Prosedur (SOP) pada Rumah Detensi Imigrasi Pontianak". Makalah ini disusun untuk memenuhi tugas mata kuliah Sistem Informasi Manajemen pada Program Studi Akuntansi, Fakultas Ekonomi dan Bisnis, Universitas Panca Bhakti Pontianak.
+
+Penulis menyadari bahwa penulisan makalah ini tidak terlepas dari bantuan berbagai pihak. Oleh karena itu, penulis menyampaikan ucapan terima kasih kepada:
+
+Ibu Dr. Renny Wulandari, S.E., M.Si., Ak., CA selaku Dosen Pengampu mata kuliah Sistem Informasi Manajemen yang telah memberikan bimbingan dan arahan.
+
+Kepala Rumah Detensi Imigrasi Pontianak beserta seluruh jajaran yang telah memberikan data dan informasi yang diperlukan.
+
+Penulis menyadari bahwa makalah ini masih jauh dari sempurna, oleh karena itu kritik dan saran yang membangun sangat penulis harapkan demi perbaikan di masa mendatang. Semoga makalah ini dapat memberikan manfaat bagi pembaca.
+
+Pontianak, 18 Juni 2026
+
+Penulis
+
+DAFTAR ISI
+
+KATA PENGANTARi
+
+DAFTAR ISIii
+
+BAB I PENDAHULUAN1
+
+A. Latar Belakang1
+
+B. Rumusan Masalah3
+
+C. Tujuan Penulisan3
+
+BAB II PEMBAHASAN4
+
+A. Struktur Organisasi Rumah Detensi Imigrasi Pontianak4
+
+B. Sistem Informasi Manajemen Keimigrasian (SIMKIM)7
+
+C. Standar Operasional Prosedur (SOP) Rudenim Pontianak10
+
+D. Analisis Integrasi Struktur, SIMKIM, dan SOP15
+
+BAB III PENUTUP18
+
+A. Kesimpulan18
+
+B. Saran19
+
+DAFTAR PUSTAKA20
+
+BAB I
+
+PENDAHULUAN
+
+A. Latar Belakang
+
+Perkembangan teknologi informasi telah memberikan dampak signifikan terhadap berbagai aspek kehidupan, termasuk pengelolaan organisasi di sektor publik. Laudon dan Laudon (2020) menjelaskan bahwa Sistem Informasi Manajemen (SIM) merupakan sistem yang mengumpulkan, memproses, menyimpan, dan mendistribusikan informasi untuk mendukung pengambilan keputusan, koordinasi, dan pengendalian dalam suatu organisasi. Dalam konteks pemerintahan, penerapan SIM menjadi kebutuhan mutlak untuk mewujudkan tata kelola yang baik (good governance) melalui peningkatan efisiensi, transparansi, dan akuntabilitas pelayanan publik.
+
+Di bidang keimigrasian Indonesia, Direktorat Jenderal Imigrasi telah mengembangkan Sistem Informasi Manajemen Keimigrasian (SIMKIM) sebagai pilar utama digitalisasi pelayanan dan pengawasan keimigrasian. Berdasarkan Undang-Undang Nomor 6 Tahun 2011 tentang Keimigrasian, SIMKIM dirancang sebagai sistem teknologi informasi dan komunikasi terpusat yang mengintegrasikan seluruh data keimigrasian nasional, mulai dari data paspor Warga Negara Indonesia (WNI), data visa dan izin tinggal Warga Negara Asing (WNA), data perlintasan di Tempat Pemeriksaan Imigrasi (TPI), hingga data pendataan deteni di Rumah Detensi Imigrasi (Rudenim) di seluruh Indonesia.
+
+Rumah Detensi Imigrasi (Rudenim) Pontianak merupakan Unit Pelaksana Teknis (UPT) vertikal keimigrasian yang memiliki peranan strategis di wilayah Kalimantan Barat. Secara geografis, Kalimantan Barat berbatasan darat langsung dengan Sarawak, Malaysia Timur, menjadikannya daerah rawan perlintasan orang asing ilegal maupun pelanggaran izin tinggal. Rudenim Pontianak bertugas menampung sementara orang asing yang dikenai Tindakan Administratif Keimigrasian (TAK) berupa pendetensian sambil menunggu proses pendeportasian. Kompleksitas operasional Rudenim tercermin dari adanya tujuh Standar Operasional Prosedur (SOP) utama yang mengatur siklus pengelolaan deteni, mulai dari penerimaan, pemeriksaan kesehatan, registrasi, penempatan, pengamanan, pemindahan, hingga pendeportasian.
+
+Keberhasilan pelaksanaan tugas dan fungsi Rudenim Pontianak tidak dapat dipisahkan dari tiga komponen kunci yang saling terkait, yaitu: (1) struktur organisasi yang mengatur pembagian tugas dan wewenang, (2) SIMKIM sebagai sistem informasi pengelola data deteni, dan (3) SOP yang menjadi panduan operasional seluruh kegiatan. Ketiga komponen ini dapat dianalisis secara holistik menggunakan kerangka teori Leavitt's Diamond Model (1965) yang memandang organisasi sebagai sistem yang terdiri dari empat elemen yang saling mempengaruhi: Struktur (Structure), Tugas (Task), Teknologi (Technology), dan Sumber Daya Manusia (People). Perubahan pada salah satu elemen akan berdampak pada elemen lainnya.
+
+Berdasarkan latar belakang tersebut, penulis tertarik untuk menganalisis secara komprehensif mengenai bagaimana struktur organisasi, penerapan SIMKIM, dan pelaksanaan SOP di Rudenim Pontianak saling berintegrasi dalam mendukung efektivitas pengelolaan administrasi deteni. Analisis ini dituangkan dalam makalah yang berjudul "Analisis Struktur Organisasi, Sistem Informasi Manajemen Keimigrasian (SIMKIM), dan Standar Operasional Prosedur (SOP) pada Rumah Detensi Imigrasi Pontianak".
+
+B. Rumusan Masalah
+
+Berdasarkan latar belakang di atas, rumusan masalah dalam makalah ini adalah:
+
+Bagaimana struktur organisasi Rumah Detensi Imigrasi Pontianak mendukung pelaksanaan tugas dan fungsi pengelolaan deteni?
+
+Bagaimana penerapan Sistem Informasi Manajemen Keimigrasian (SIMKIM) dalam pengelolaan administrasi deteni di Rudenim Pontianak?
+
+Bagaimana pelaksanaan Standar Operasional Prosedur (SOP) dalam operasional Rudenim Pontianak dan integrasinya dengan SIMKIM?
+
+Bagaimana integrasi struktur organisasi, SIMKIM, dan SOP dapat dianalisis menggunakan Leavitt's Diamond Model?
+
+C. Tujuan Penulisan
+
+Tujuan penulisan makalah ini adalah:
+
+Mendeskripsikan struktur organisasi Rumah Detensi Imigrasi Pontianak beserta tugas dan fungsi masing-masing unit kerja.
+
+Menganalisis penerapan SIMKIM dalam pengelolaan administrasi deteni di Rudenim Pontianak.
+
+Menjelaskan pelaksanaan SOP operasional Rudenim Pontianak dan integrasinya dengan SIMKIM.
+
+Menganalisis keterkaitan struktur organisasi, SIMKIM, dan SOP menggunakan kerangka Leavitt's Diamond Model.
+
+BAB II
+
+PEMBAHASAN
+
+A. Struktur Organisasi Rumah Detensi Imigrasi Pontianak
+
+1. Profil Singkat Rudenim Pontianak
+
+Rumah Detensi Imigrasi Pontianak merupakan Unit Pelaksana Teknis (UPT) di lingkungan Direktorat Jenderal Imigrasi, Kementerian Imigrasi dan Pemasyarakatan Republik Indonesia, yang berkedudukan di Jalan Adi Sucipto KM. 15, Sungai Raya, Kabupaten Kubu Raya, Kalimantan Barat. Kantor ini diresmikan pada tanggal 26 Januari 2005 oleh Menteri Hukum dan Hak Asasi Manusia Republik Indonesia. Wilayah kerja Rudenim Pontianak meliputi seluruh Provinsi Kalimantan Barat yang mencakup 2 (dua) Kota dan 12 (dua belas) Kabupaten.
+
+Rudenim Pontianak memiliki tugas melaksanakan sebagian tugas pokok dan fungsi Kementerian Imigrasi dan Pemasyarakatan di bidang pendetensian orang asing yang melanggar ketentuan peraturan perundang-undangan keimigrasian. Dalam melaksanakan tugasnya, Rudenim Pontianak dipimpin oleh seorang Kepala Rudenim yang bertanggung jawab kepada Direktur Jenderal Imigrasi melalui Kantor Wilayah Direktorat Jenderal Imigrasi Kalimantan Barat.
+
+2. Dasar Hukum Pembentukan
+
+Pembentukan dan organisasi Rumah Detensi Imigrasi didasarkan pada beberapa peraturan perundang-undangan, antara lain:
+
+Undang-Undang Nomor 6 Tahun 2011 tentang Keimigrasian.
+
+Peraturan Pemerintah Nomor 31 Tahun 2013 tentang Peraturan Pelaksanaan UU Keimigrasian.
+
+Keputusan Menteri Kehakiman Nomor M.01-PR.07.04 Tahun 2004 tentang Organisasi dan Tata Kerja Rumah Detensi Imigrasi.
+
+Peraturan Presiden Nomor 139 Tahun 2024 tentang Kementerian Imigrasi dan Pemasyarakatan.
+
+3. Susunan Organisasi
+
+Berdasarkan Keputusan Menteri Kehakiman Nomor M.01-PR.07.04 Tahun 2004, susunan organisasi Rumah Detensi Imigrasi Pontianak terdiri atas:
+
+Gambar 1. Struktur Organisasi Rudenim Pontianak
+
+Sumber: Website Resmi Rudenim Pontianak, rudenimpontianak.imigrasi.go.id (2026).
+
+4. Tugas dan Fungsi Masing-Masing Unit
+
+a) Kepala Rumah Detensi Imigrasi
+
+Kepala Rudenim merupakan pimpinan tertinggi UPT yang bertanggung jawab atas seluruh operasional pengelolaan deteni. Tugas utamanya meliputi: (1) mengkoordinasikan seluruh kegiatan pendetensian; (2) mengambil keputusan strategis terkait penempatan, pemindahan, dan pendeportasian deteni; (3) menandatangani Surat Keputusan Pengeluaran Deteni (SKPD); serta (4) melakukan pengawasan internal terhadap pelaksanaan tugas seluruh pegawai. Saat ini jabatan Kepala Rudenim Pontianak dijabat oleh Suriansyah, S.Sos., M.M.
+
+b) Sub Bagian Tata Usaha
+
+Subbagian Tata Usaha mempunyai tugas menyelenggarakan urusan tata usaha, administrasi kepegawaian, keuangan, perlengkapan, dan rumah tangga Rudenim. Fungsinya meliputi: (1) pengelolaan surat-menyurat dan kearsipan; (2) penyusunan rencana anggaran dan pelaporan keuangan; (3) pengelolaan data kepegawaian; serta (4) pemeliharaan sarana dan prasarana kantor.
+
+c) Seksi Registrasi, Administrasi, dan Pelaporan
+
+Seksi ini merupakan unit kerja kunci yang menjadi motor penggerak pengolahan data deteni. Tugas pokoknya meliputi: (1) penerimaan dan verifikasi berkas calon deteni dari Kantor Imigrasi pengirim; (2) registrasi identitas dan perekaman data biometrik (sidik jari, foto wajah) ke dalam aplikasi SIMKIM; (3) penerbitan Kartu Identitas Deteni; (4) pengadministrasian berkas kasus keimigrasian; serta (5) penyusunan laporan statistik bulanan dan tahunan jumlah deteni.
+
+d) Seksi Keamanan dan Ketertiban
+
+Seksi Keamanan dan Ketertiban (Kamtib) bertugas menjamin keselamatan, ketertiban, dan keamanan di lingkungan Rudenim. Fungsinya meliputi: (1) pelaksanaan penjagaan dan pengamanan 24 jam; (2) pelaksanaan apel harian untuk menghitung jumlah deteni; (3) pengawasan blok hunian dan inspeksi mendadak barang terlarang; (4) penanganan keadaan darurat (kerusuhan, percobaan melarikan diri); serta (5) pengawalan deteni dalam proses pemindahan atau pendeportasian.
+
+e) Seksi Perawatan dan Kesehatan
+
+Seksi ini bertanggung jawab atas pemenuhan hak-hak dasar deteni selama berada di Rudenim. Tugasnya meliputi: (1) penyediaan makanan dan minuman harian; (2) penyediaan pakaian dan kebutuhan sanitasi; (3) pelayanan kesehatan dasar di poliklinik internal; (4) rujukan ke rumah sakit apabila diperlukan perawatan lebih lanjut; serta (5) koordinasi dengan Seksi Kamtib untuk pengawalan deteni yang dirawat di fasilitas kesehatan di luar Rudenim.
+
+B. Sistem Informasi Manajemen Keimigrasian (SIMKIM)
+
+1. Pengertian dan Dasar Hukum SIMKIM
+
+Sistem Informasi Manajemen Keimigrasian (SIMKIM) merupakan sistem teknologi informasi dan komunikasi yang dikembangkan oleh Direktorat Jenderal Imigrasi untuk mendukung seluruh proses pelayanan dan pengawasan keimigrasian di Indonesia. Berdasarkan Pasal 1 angka 31 Undang-Undang Nomor 6 Tahun 2011 tentang Keimigrasian, Sistem Informasi Manajemen Keimigrasian didefinisikan sebagai sistem teknologi informasi dan komunikasi yang digunakan untuk mengumpulkan, mengolah, dan menyajikan informasi guna mendukung operasional, manajemen, dan pengambilan keputusan dalam pelaksanaan tugas dan fungsi keimigrasian.
+
+SIMKIM menggunakan arsitektur basis data terpusat (centralized database) yang menghubungkan seluruh Unit Pelaksana Teknis keimigrasian di Indonesia. Dengan arsitektur ini, data yang diinput di satu UPT dapat langsung diakses oleh UPT lain dan oleh Direktorat Jenderal Imigrasi di Jakarta secara real-time. Pengembangan dan pemeliharaan SIMKIM dilakukan oleh Pusat Data dan Teknologi Informasi (Pusdatin) Direktorat Jenderal Imigrasi.
+
+2. Modul-Modul SIMKIM yang Digunakan di Rudenim
+
+Dalam operasional Rudenim Pontianak, terdapat beberapa modul SIMKIM yang digunakan secara aktif oleh operator registrasi dan petugas keimigrasian:
+
+a) Modul Pendataan Deteni
+
+Modul ini merupakan modul utama yang digunakan untuk menginput seluruh data identitas deteni, mencakup nama lengkap, tempat dan tanggal lahir, kewarganegaraan, nomor paspor (apabila tersedia), jenis pelanggaran keimigrasian, nomor Surat Perintah Pendetensian, serta tanggal masuk ke Rudenim. Modul ini juga menyimpan foto wajah dan data biometrik sidik jari deteni yang direkam menggunakan perangkat flatbed scanner dan kamera web.
+
+b) Modul Pengawasan dan Cekal
+
+Modul cekal (cegah-tangkal) memungkinkan petugas untuk mencocokkan data biometrik deteni dengan database cekal nasional. Modul ini sangat penting untuk memastikan tidak ada deteni yang memiliki identitas ganda (double identity) atau yang merupakan target pencarian oleh instansi penegak hukum lainnya. Data biometrik yang direkam di Rudenim Pontianak secara otomatis diunggah ke server pusat untuk proses pencocokan.
+
+c) Modul Manifest dan Pelaporan
+
+Modul manifest menyajikan data keseluruhan deteni yang berada dalam penguasaan Rudenim secara aktual. Data manifest mencakup jumlah deteni berdasarkan kewarganegaraan, jenis kelamin, status detensi, lokasi blok hunian, dan status proses (menunggu deportasi, dalam proses pemindahan, dirawat di rumah sakit, dan sebagainya). Output manifest ini digunakan sebagai bahan laporan bulanan kepada Kantor Wilayah dan Direktorat Jenderal Imigrasi.
+
+d) Modul Deportasi
+
+Modul deportasi digunakan untuk mencatat proses pengeluaran deteni dari Rudenim, baik melalui deportasi ke negara asal, pemindahan ke Rudenim lain, maupun pengeluaran karena alasan kemanusiaan. Modul ini merekam nomor Surat Keputusan Pengeluaran Deteni (SKPD), tanggal deportasi, rute penerbangan, dan status akhir deteni.
+
+3. Kendala Penerapan SIMKIM di Rudenim Pontianak
+
+Meskipun SIMKIM telah menjadi komponen integral dalam operasional Rudenim Pontianak, terdapat beberapa kendala yang masih dihadapi dalam penerapannya:
+
+Gangguan Koneksi Jaringan: Koneksi internet yang menghubungkan server lokal Rudenim dengan server pusat Direktorat Jenderal Imigrasi di Jakarta sering mengalami gangguan, menyebabkan kelambatan (latency) dalam proses sinkronisasi data biometrik dan pembaruan status deteni.
+
+Keterbatasan Perangkat Keras: Perangkat pemindai sidik jari (fingerprint scanner) dan kamera di beberapa ruang registrasi sudah mengalami penurunan kualitas, sehingga berpotensi menghasilkan data biometrik yang kurang akurat.
+
+Pencatatan Ganda: Belum adanya integrasi otomatis antara logbook pengamanan fisik (Seksi Kamtib) dengan data log digital SIMKIM memaksa petugas melakukan pencatatan ganda (double entry), meningkatkan risiko kesalahan manusia (human error).
+
+Keterbatasan Pelatihan: Rotasi pegawai yang cukup sering tanpa disertai pelatihan SIMKIM yang memadai menyebabkan beberapa petugas baru belum sepenuhnya menguasai pengoperasian modul-modul SIMKIM secara optimal.
+
+C. Standar Operasional Prosedur (SOP) Rudenim Pontianak
+
+Pelaksanaan operasional di Rumah Detensi Imigrasi Pontianak diatur dalam 7 (tujuh) Standar Operasional Prosedur (SOP) utama yang saling terkait membentuk siklus hidup deteni dari kedatangan hingga keluar dari fasilitas. Hubungan terintegrasi ketujuh SOP tersebut digambarkan dalam diagram alur (flowchart) berikut:
+
+Gambar 2. Flowchart Siklus Hidup Deteni Terintegrasi dengan 7 SOP
+
+pada Rumah Detensi Imigrasi Pontianak
+
+Sumber: Perdirjen Imigrasi No. IMI.1917-OT.02.01/2013, diolah peneliti (2026).
+
+1. SOP Penerimaan Calon Deteni
+
+SOP Penerimaan Calon Deteni mengatur tata cara penerimaan orang asing yang akan ditempatkan di Rudenim. Prosedur dimulai ketika Kantor Imigrasi pengirim mengirimkan surat pemberitahuan rencana penyerahan calon deteni beserta berkas kasusnya. Petugas Seksi Registrasi, Administrasi, dan Pelaporan kemudian menerima berkas, meneliti kelengkapannya, mencocokkan identitas fisik, dan menandatangani Berita Acara Serah Terima (BAST). Pada tahap ini, operator SIMKIM membuka log kedatangan baru dan merekam data awal.
+
+Gambar 2.1. Flowchart SOP Penerimaan Calon Deteni
+
+Sumber: Perdirjen Imigrasi No. IMI.1917-OT.02.01/2013, diolah peneliti (2026).
+
+Tabel 2.1. Mutu Baku SOP Penerimaan Calon Deteni
+
+No
+
+Kegiatan
+
+Pelaksana
+
+Mutu Baku: Kelengkapan
+
+Waktu
+
+Output
+
+Keterangan / Catatan
+
+1
+
+Memberikan persetujuan/disposisi/arahan penerimaan calon Deteni
+
+Kepala
+
+Dokumen pengantar / berkas usulan
+
+5 Menit
+
+Disposisi persetujuan
+
+Mulai.
+
+2
+
+Mempersiapkan/mengoordinasikan penerimaan calon Deteni berdasarkan disposisi
+
+Kasi Reg
+
+a. Verifikasi penerimaan b. Disposisi surat pengantar c. Aplikasi SIMKIM
+
+5 Menit
+
+Persetujuan elektronik / disposisi manual
+
+3
+
+Melakukan penggeledahan calon Deteni
+
+Kasi Kamtib
+
+a. Metal detektor b. Kantong plastik c. Loker penyimpanan
+
+10 Menit
+
+BA Penitipan Barang &amp; Daftar Barang
+
+Mencegah penyelundupan barang berbahaya.
+
+4
+
+Melakukan pemeriksaan kesehatan fisik awal deteni
+
+Kasi Perkes
+
+a. Tensimeter, stetoskop b. Testpack narkoba/kehamilan c. Formulir medis
+
+30 Menit
+
+Surat Keterangan Sehat
+
+Memastikan kelaikan fisik deteni.
+
+5
+
+Menyusun konsep Surat Keputusan Pendetensian &amp; Berita Acara (BAST)
+
+Kasi Reg
+
+a. Surat Keterangan Sehat b. BA Penitipan Barang c. Draf SK/BAST
+
+10 Menit
+
+Konsep SK &amp; BAST
+
+Diusulkan ke Kepala Rudenim.
+
+6
+
+Menerbitkan &amp; menandatangani SK serta Surat Perintah Pendetensian
+
+Kepala
+
+a. Konsep SK &amp; SP b. Cap dinas
+
+5 Menit
+
+1. SK Pendetensian 2. Surat Perintah Pendetensian
+
+Selesai.
+
+Langkah demi Langkah Prosedur Kerja:
+
+Langkah 1: Petugas pengirim menyerahkan berkas pengantar &amp; calon deteni. Kepala Rudenim memeriksa berkas &amp; memberikan disposisi persetujuan.
+
+Langkah 2: Kasi Reg memverifikasi dokumen &amp; mengoordinasikan jadwal pemeriksaan fisik dengan seksi Kamtib &amp; Perkes.
+
+Langkah 3: Petugas Kamtib melakukan penggeledahan badan &amp; barang menggunakan metal detektor, mengamankan barang berharga, &amp; menerbitkan Berita Acara Penitipan Barang.
+
+Langkah 4: Nakes (Perkes) melakukan anamnesa medis dasar (tensi, nadi, suhu) &amp; skrining khusus (tes urine/kehamilan) di klinik, lalu menerbitkan Surat Keterangan Sehat.
+
+Langkah 5: Operator Registrasi menyusun konsep Surat Keputusan Pendetensian, Surat Perintah, &amp; BAST untuk divalidasi Kasi Reg.
+
+Langkah 6: Kepala Rudenim menandatangani SK &amp; Surat Perintah Pendetensian, salinan diberikan kepada deteni, &amp; ditembuskan ke Kedutaan terkait.
+
+Alur Integrasi SIMKIM: Data dokumen serah terima awal (surat pengantar &amp; berkas usulan) diunggah dan status kedatangan deteni direkam ke dalam modul Pengawasan SIMKIM guna mengunci data awal deteni secara terpusat.
+
+2. SOP Pemeriksaan Kesehatan Deteni
+
+SOP pemeriksaan kesehatan menjamin pemenuhan hak atas layanan kesehatan bagi deteni selama masa detensi. Prosedurnya meliputi: (1) pemeriksaan kesehatan awal pada saat deteni pertama kali masuk Rudenim; (2) pemeriksaan berkala oleh petugas medis di poliklinik internal; (3) penanganan deteni yang sakit, baik rawat jalan maupun rawat inap di poliklinik; (4) rujukan ke Rumah Sakit Umum Daerah (RSUD) apabila memerlukan perawatan spesialis, dengan pengawalan ketat dari Seksi Kamtib; serta (5) pencatatan rekam medis digital ke dalam sub-modul perawatan SIMKIM dan pembaruan status deteni menjadi "Dirawat" untuk keperluan akuntabilitas pengawasan.
+
+Gambar 2.2. Flowchart SOP Pemeriksaan Kesehatan Deteni
+
+Sumber: Perdirjen Imigrasi No. IMI.1917-OT.02.01/2013, diolah peneliti (2026).
+
+Tabel 2.2. Mutu Baku SOP Pemeriksaan Kesehatan Deteni
+
+No
+
+Kegiatan
+
+Pelaksana
+
+Mutu Baku: Kelengkapan
+
+Waktu
+
+Output
+
+Keterangan / Catatan
+
+1
+
+Petugas Jaga melaporkan adanya deteni mengeluh sakit kepada Seksi Perkes
+
+Seksi Kamtib
+
+Laporan lisan / digital
+
+2 Menit
+
+Laporan keluhan deteni
+
+Mulai.
+
+2
+
+Pemeriksaan awal oleh Nakes untuk penentuan tingkat kedaruratan medis
+
+Seksi Perkes
+
+Rekam medik, stetoskop, sphygmomanometer
+
+15 Menit
+
+Pernyataan status medis deteni
+
+3
+
+Pengajuan surat izin keluar sementara deteni untuk dirujuk ke RS/Puskesmas
+
+Seksi Reg
+
+Komputer, printer, data deteni
+
+10 Menit
+
+Berkas usulan rujukan luar
+
+Jika terindikasi darurat.
+
+4
+
+Persetujuan izin keluar sementara oleh Kepala Rudenim
+
+Kepala
+
+Berkas usulan / tanda tangan
+
+5 Menit
+
+Surat Izin Keluar Sementara
+
+5
+
+Persiapan akomodasi dan kendaraan operasional
+
+Subbag TU
+
+Kendaraan dinas / Ambulans
+
+2 Menit
+
+Kendaraan siap digunakan
+
+6
+
+Mempersiapkan petugas pengawalan keamanan
+
+Seksi Kamtib
+
+Petugas, borgol, tongkat pengamanan
+
+5 Menit
+
+Surat Perintah Pengawalan
+
+7
+
+Deteni dirawat di Rumah Sakit / Puskesmas mitra
+
+Seksi Perkes
+
+Hasil lab, resep, keterangan dokter
+
+60 Menit
+
+Surat Keterangan Medis Dokter / RS
+
+Perawatan medis di RS.
+
+8
+
+ membuat jadwal tugas jaga pengawalan deteni di RS/Puskesmas
+
+Seksi Kamtib
+
+Form jadwal piket
+
+3 Hari
+
+Jadwal piket jaga rumah sakit
+
+Pengamanan stasioner 24 jam.
+
+9
+
+Pemulangan deteni yang dinyatakan membaik/sembuh oleh RS
+
+Seksi Perkes
+
+Surat keterangan sembuh dokter
+
+60 Menit
+
+Surat Rekomendasi Pemulangan
+
+10
+
+Deteni kembali masuk ke blok hunian Rudenim
+
+Seksi Kamtib
+
+Kunci blok, catatan mutasi
+
+10 Menit
+
+Penempatan deteni ke blok semula
+
+11
+
+Melaporkan kembalinya deteni kepada pimpinan
+
+Seksi Reg
+
+Komputer, printer, data register
+
+5 Menit
+
+Laporan Atensi Pimpinan
+
+Selesai.
+
+Langkah demi Langkah Prosedur Kerja:
+
+Langkah 1: Deteni yang sakit melapor kepada petugas Kamtib, yang kemudian meneruskan keluhan secara lisan/digital ke piket medis (Perkes).
+
+Langkah 2: Nakes mendatangi deteni di blok atau poliklinik Rudenim untuk memeriksa tanda vital dan menentukan status kedaruratan.
+
+Langkah 3: Jika membutuhkan penanganan spesialis, Seksi Reg menyusun draf Surat Izin Keluar Sementara Deteni untuk pengobatan luar.
+
+Langkah 4: Kepala Rudenim menandatangani Surat Izin Keluar Sementara Deteni demi alasan kemanusiaan.
+
+Langkah 5: Subbag TU menyiapkan akomodasi berupa kendaraan dinas operasional atau ambulans untuk merujuk deteni.
+
+Langkah 6: Kasi Kamtib menunjuk personel pengamanan khusus dan menandatangani Surat Perintah Pengawalan.
+
+Langkah 7: Deteni dibawa ke RS rujukan didampingi nakes dan dikawal ketat petugas Kamtib untuk menjalani rawat inap/jalan.
+
+Langkah 8: Kasi Kamtib menyusun jadwal piket jaga bergilir stasioner 24 jam di RS guna menghindari upaya pelarian diri.
+
+Langkah 9: Setelah dokter RS menyatakan sembuh, nakes Rudenim meminta Surat Keterangan Sembuh dan memproses pemulangan.
+
+Langkah 10: Petugas pengawal membawa deteni kembali ke Rudenim Pontianak dan menempatkannya ke kamar hunian semula.
+
+Langkah 11: Seksi Reg menyusun Laporan Atensi Pimpinan tentang riwayat pemulangan deteni sakit kepada Kepala Rudenim dengan tembusan Kanwil.
+
+Alur Integrasi SIMKIM: Setiap pengeluaran deteni untuk keperluan berobat luar UPT dicatat dalam menu mutasi lokal SIMKIM. Rekam medis di-update pada database lokal agar status hukum dan riwayat pengawasan detensi tetap sinkron.
+
+3. SOP Registrasi Deteni
+
+Registrasi deteni merupakan tahapan krusial yang melibatkan perekaman data biometrik secara menyeluruh ke dalam SIMKIM. Setelah diterima secara administratif, deteni dibawa ke ruang registrasi di mana operator menggunakan perangkat flatbed scanner sidik jari untuk merekam sepuluh jari tangan, kamera web untuk foto wajah, serta menginput seluruh biodata secara manual ke dalam modul pendataan deteni SIMKIM. Data biometrik yang terekam langsung diunggah ke server pusat untuk dicocokkan dengan database cekal nasional. Output dari proses ini adalah terbitnya Nomor Registrasi Deteni dan pencetakan Kartu Identitas Deteni yang harus dibawa oleh deteni selama berada di Rudenim.
+
+Gambar 2.3. Flowchart SOP Registrasi Deteni
+
+Sumber: Perdirjen Imigrasi No. IMI.1917-OT.02.01/2013, diolah peneliti (2026).
+
+Tabel 2.3. Mutu Baku SOP Registrasi Deteni
+
+No
+
+Kegiatan
+
+Pelaksana
+
+Mutu Baku: Kelengkapan
+
+Waktu
+
+Output
+
+Keterangan / Catatan
+
+1
+
+Menerbitkan perintah pendetensian resmi
+
+Kepala
+
+Keputusan Pendetensian
+
+5 Menit
+
+Dokumen administrasi lengkap
+
+Mulai.
+
+2
+
+Memerintahkan proses registrasi deteni dan barang bawaan
+
+Kasi Reg
+
+Disposisi Kepala
+
+5 Menit
+
+Disposisi registrasi
+
+3
+
+Menginput data biometrik, biodata &amp; menyusun konsep berita acara serah terima
+
+Kasubseksi Registrasi
+
+Komputer, scanner biometrik, kamera, aplikasi SIMKIM, formulir barang
+
+10 Menit
+
+Nomor register deteni &amp; data barang
+
+Perekaman foto &amp; sidik jari.
+
+4
+
+Menyusun laporan proses perekaman data registrasi
+
+Kasubseksi Admin
+
+Komputer, printer, data terinput
+
+5 Menit
+
+Konsep BAST &amp; konsep laporan
+
+5
+
+Melaporkan hasil registrasi, menyimpan barang &amp; menyerahkan deteni ke Kamtib
+
+Kasubseksi Registrasi
+
+BAST ditandatangani, brankas penyimpanan
+
+10 Menit
+
+Berita acara serah terima deteni &amp; laporan
+
+Selesai. Laporan dikirim ke Kanwil &amp; Ditjenim.
+
+Langkah demi Langkah Prosedur Kerja:
+
+Langkah 1: Kepala Rudenim menandatangani berkas keputusan pendetensian deteni baru.
+
+Langkah 2: Kasi Reg menerima berkas tersebut dan mendisposisikan kepada kasubseksi registrasi untuk memproses pendaftaran.
+
+Langkah 3: Kasubseksi Registrasi mendata identitas, memindai 10 sidik jari deteni, mengambil foto wajah berlatar belakang merah, &amp; mencatat detail barang bawaan.
+
+Langkah 4: Kasubseksi Admin menyusun rekapitulasi data pendaftaran deteni serta draf laporan administrasi.
+
+Langkah 5: Kasubseksi Registrasi mencetak Kartu Identitas Deteni, menyimpan barang bawaan di loker khusus, &amp; menyerahkan deteni secara fisik ke petugas Kamtib.
+
+Alur Integrasi SIMKIM: Seluruh data biodata &amp; biometrik deteni diunggah secara real-time ke basis data terpusat Direktorat Jenderal Imigrasi di Jakarta guna proses pencocokan cekal terpusat dan mencegah identitas ganda.
+
+4. SOP Penempatan Deteni
+
+SOP penempatan mengatur pembagian deteni ke dalam blok hunian berdasarkan kriteria tertentu untuk menjaga ketertiban dan keamanan. Petugas Seksi Kamtib menentukan penempatan berdasarkan data yang diperoleh dari registrasi SIMKIM, meliputi: jenis kelamin, usia, kewarganegaraan, tingkat kerawanan konflik berdasarkan negara asal, dan status kerentanan khusus (wanita hamil, anak-anak, lansia, atau penyandang disabilitas). Nomor kamar dan blok hunian kemudian diinput ke dalam SIMKIM agar manifest lokasi fisik deteni selalu sinkron dengan data digital.
+
+Gambar 2.4. Flowchart SOP Penempatan Deteni Ke Blok Hunian
+
+Sumber: Perdirjen Imigrasi No. IMI.1917-OT.02.01/2013, diolah peneliti (2026).
+
+Tabel 2.4. Mutu Baku SOP Penempatan Deteni
+
+No
+
+Kegiatan
+
+Pelaksana
+
+Mutu Baku: Kelengkapan
+
+Waktu
+
+Output
+
+Keterangan / Catatan
+
+1
+
+Menerima deteni dari Registrasi &amp; memberikan disposisi penempatan
+
+Kasi Kamtib
+
+Berita Acara Serah Terima Deteni
+
+5 Menit
+
+Disposisi penempatan deteni
+
+Mulai.
+
+2
+
+Memeriksa ketersediaan &amp; kelayakan kamar serta menunjuk pengawal
+
+Kasubseksi Ketertiban
+
+Form kesehatan, data kamar hunian
+
+10 Menit
+
+Kartu Blok Deteni
+
+Profiling risiko deteni.
+
+3
+
+Memberitahukan hak, kewajiban, &amp; aturan tata tertib Rudenim
+
+Kasi Kamtib
+
+Formulir tata tertib &amp; informasi hak/kewajiban
+
+10 Menit
+
+Formulir pernyataan dimengerti
+
+4
+
+Mengawal deteni ke kamar, mengunci blok, &amp; membuat draf BA Penempatan
+
+Fungsional
+
+Alat pengamanan, kunci blok, masker, sarung tangan
+
+10 Menit
+
+Penempatan fisik deteni &amp; draf BA
+
+5
+
+Memverifikasi laporan penempatan &amp; draf Berita Acara
+
+Kasubseksi Ketertiban
+
+Komputer, draf Berita Acara
+
+5 Menit
+
+Konsep BA terverifikasi
+
+6
+
+Menerbitkan &amp; menandatangani Berita Acara Penempatan resmi
+
+Kasi Kamtib
+
+Komputer, printer, konsep BA
+
+5 Menit
+
+Berita Acara Penempatan resmi
+
+7
+
+Menyusun laporan evaluasi penempatan deteni secara periodik
+
+Kasi Kamtib
+
+Komputer, printer, data penempatan
+
+60 Menit
+
+Laporan bulanan penempatan
+
+8
+
+Menandatangani &amp; menyampaikan laporan evaluasi penempatan ke pimpinan
+
+Kasubseksi Ketertiban
+
+Laporan fisik penempatan
+
+5 Menit
+
+Laporan bertandatangan Kanwil
+
+Selesai.
+
+Langkah demi Langkah Prosedur Kerja:
+
+Langkah 1: Kasi Kamtib menerima BAST fisik deteni dari Seksi Reg dan menerbitkan disposisi penempatan.
+
+Langkah 2: Kasubseksi Ketertiban menelaah ketersediaan sel hunian dan memprofiling risiko konflik (negara asal/kasus) deteni tersebut.
+
+Langkah 3: Kasi Kamtib mensosialisasikan aturan tata tertib, hak-hak, serta kewajiban deteni selama menghuni Rudenim Pontianak.
+
+Langkah 4: Petugas Jaga (Fungsional) mengawal deteni masuk ke blok sel, mengunci pintu kamar, &amp; membuat draf Berita Acara Penempatan.
+
+Langkah 5: Kasubseksi Ketertiban memeriksa kesesuaian draf BA dengan nomor sel riil deteni.
+
+Langkah 6: Kasi Kamtib menandatangani Berita Acara Penempatan resmi sebagai bentuk legalitas penempatan deteni.
+
+Langkah 7: Kasi Kamtib menyusun laporan rekapitulasi data keterisian blok hunian UPT setiap akhir bulan.
+
+Langkah 8: Kasubseksi Ketertiban memfinalisasi laporan tersebut untuk diserahkan ke Kepala Rudenim dengan tembusan Kanwil.
+
+Alur Integrasi SIMKIM: Nomor blok dan nomor kamar yang tercantum dalam Berita Acara Penempatan diinput ke dalam modul Penempatan SIMKIM agar manifest digital detensi ter-update secara real-time.
+
+5. SOP Penjagaan dan Pengamanan Deteni
+
+SOP ini bertujuan menjamin keselamatan seluruh penghuni dan petugas Rudenim. Regu jaga melaksanakan: (1) patroli keliling setiap 2 jam; (2) apel pagi dan sore untuk menghitung kehadiran deteni; (3) penguncian dan pemeriksaan pintu jeruji setiap pergantian regu; (4) inspeksi mendadak (sidak) barang-barang terlarang di kamar blok; dan (5) penanganan keadaan darurat seperti percobaan melarikan diri atau kerusuhan. Petugas Kamtib memperbarui status harian deteni (hadir, di poliklinik, di ruang isolasi) pada SIMKIM sehingga manifest deteni selalu up-to-date.
+
+Gambar 2.5. Flowchart SOP Penjagaan &amp; Pengamanan Rudenim
+
+Sumber: Perdirjen Imigrasi No. IMI.1917-OT.02.01/2013, diolah peneliti (2026).
+
+Tabel 2.5. Mutu Baku SOP Penjagaan &amp; Pengamanan Deteni
+
+No
+
+Kegiatan
+
+Pelaksana
+
+Mutu Baku: Kelengkapan
+
+Waktu
+
+Output
+
+Keterangan / Catatan
+
+1
+
+Memerintahkan pelaksanaan tugas pengamanan &amp; penjagaan harian
+
+Kasi Kamtib
+
+Jurnal harian, buku serah terima inventaris
+
+10 Menit
+
+Perintah tertulis dalam jurnal
+
+Mulai.
+
+2
+
+Memimpin apel serah terima tugas pergantian regu jaga
+
+Kasubseksi Keamanan
+
+Alat pengeras suara, buku piket regu
+
+10 Menit
+
+Laporan serah terima regu jaga
+
+Setiap pergantian regu.
+
+3
+
+Memeriksa inventaris taktis pengamanan &amp; menugaskan penghitungan
+
+Danru
+
+Kunci blok, HT, borgol, tongkat T, senter
+
+10 Menit
+
+Daftar inventaris terverifikasi
+
+4
+
+Melaksanakan penghitungan deteni langsung di tiap kamar sel
+
+Penjaga
+
+ATK, daftar nominatif deteni
+
+60 Menit
+
+Jurnal harian terisi lengkap
+
+Pencocokan fisik visual.
+
+5
+
+Melakukan pembagian petugas penjaga di pos-pos pengamanan UPT
+
+Danru
+
+Jurnal harian, buku instruksi
+
+10 Menit
+
+Petugas standby di pos pengamanan
+
+Selesai.
+
+Langkah demi Langkah Prosedur Kerja:
+
+Langkah 1: Kasi Kamtib memberikan instruksi pengamanan harian serta atensi keamanan berdasarkan kondisi internal UPT.
+
+Langkah 2: Kasubseksi Keamanan mengumpulkan regu jaga lama &amp; baru di lapangan untuk memimpin apel serah terima tugas.
+
+Langkah 3: Danru baru melakukan cek fisik anak kunci, HT, borgol, &amp; inventaris taktis lainnya bersama Danru lama.
+
+Langkah 4: Petugas Jaga baru menyisir blok kamar sel untuk menghitung jumlah fisik deteni langsung secara visual.
+
+Langkah 5: Danru membagi petugas jaga stasioner di pos-pos rawan (P2U, blok, menara) &amp; memulai patroli keliling berkala.
+
+Alur Integrasi SIMKIM: Logbooks fisik apel &amp; hasil patroli harian digunakan sebagai sumber verifikasi data bagi administrator untuk mencocokkan status kehadiran harian deteni di aplikasi SIMKIM lokal.
+
+6. SOP Pemindahan Deteni
+
+SOP Pemindahan Deteni mengatur tata cara pemindahan deteni ke UPT Rudenim lain di Indonesia atau ke Direktorat Jenderal Imigrasi akibat kelebihan kapasitas (overcapacity) atau pertimbangan keamanan darurat. Prosedurnya dimulai ketika Seksi Registrasi, Administrasi, dan Pelaporan berkoordinasi dengan Rudenim tujuan dan Kantor Wilayah Kementerian Hukum dan HAM. Setelah mendapat persetujuan, diterbitkan Surat Perintah Pemindahan, dan petugas Seksi Kamtib melakukan pengawalan deteni ke bandara hingga tiba di UPT tujuan. Integrasi SIMKIM pada tahap ini dilakukan dengan mentransfer status kepemilikan data deteni (transfer ownership) secara sistem dari database Rudenim Pontianak ke Rudenim penerima, sehingga riwayat mutasi deteni tercatat secara nasional.
+
+Gambar 2.6. Flowchart SOP Pemindahan Deteni Antar Rudenim
+
+Sumber: Perdirjen Imigrasi No. IMI.1917-OT.02.01/2013, diolah peneliti (2026).
+
+Tabel 2.6. Mutu Baku SOP Pemindahan Deteni
+
+No
+
+Kegiatan
+
+Pelaksana
+
+Mutu Baku: Kelengkapan
+
+Waktu
+
+Output
+
+Keterangan / Catatan
+
+1
+
+Melaksanakan pembahasan terkait urgensi pemindahan Deteni
+
+Kasi Reg
+
+Data identitas deteni, notula rapat
+
+1 Jam
+
+Notula rapat urgensi
+
+Mulai.
+
+2
+
+Menyiapkan konsep Surat Permohonan Pemindahan deteni
+
+Kasi Reg
+
+Notula rapat, draf surat permohonan
+
+1 Jam
+
+Konsep Surat Permohonan Pemindahan
+
+3
+
+Mengajukan permohonan pemindahan deteni kepada Kakanwil
+
+Kepala
+
+Konsep surat permohonan resmi
+
+1 Jam
+
+Surat Permohonan Pemindahan resmi
+
+4
+
+Menindaklanjuti permohonan pemindahan deteni ke Ditjenim
+
+Kanwil
+
+Surat permohonan Rudenim
+
+1 Hari
+
+Surat Permohonan dari Kanwil
+
+5
+
+Menerbitkan surat keputusan persetujuan pemindahan deteni
+
+Ditjenim
+
+Berkas permohonan Kanwil
+
+3 Hari
+
+Surat Keputusan Persetujuan Ditjenim
+
+6
+
+Meneruskan surat persetujuan pemindahan deteni kepada Rudenim
+
+Kanwil
+
+Surat persetujuan Ditjenim
+
+1 Hari
+
+Surat persetujuan &amp; disposisi Kanwil
+
+7
+
+Menindaklanjuti surat persetujuan pemindahan deteni
+
+Kepala
+
+Surat persetujuan, disposisi Kepala
+
+1 Jam
+
+Disposisi pelaksanaan mutasi
+
+8
+
+Menyiapkan administrasi pemindahan deteni &amp; koordinasi UPT tujuan
+
+Kasi Reg
+
+Aplikasi SIMKIM/Sisumaker, draf SP pengawalan
+
+1 Jam
+
+SP Pengawalan &amp; SP Pengeluaran
+
+9
+
+Mengeluarkan deteni dari blok sel &amp; serah terima berkas ke pengawal
+
+Kasi Reg
+
+Kunci blok, portofolio deteni, barang bawaan
+
+1 Jam
+
+Berita acara serah terima pengawal
+
+10
+
+Melaksanakan pengawalan fisik deteni ke Rudenim tujuan
+
+Kasi Kamtib
+
+Borgol, HT, tiket, berkas administrasi
+
+3 Hari
+
+Laporan pengawalan fisik
+
+Pengawalan udara/darat.
+
+11
+
+Melakukan serah terima deteni kepada Rudenim penerima
+
+Kasi Kamtib
+
+BAST tujuan, berkas deteni
+
+1 Jam
+
+Berita acara serah terima UPT tujuan
+
+12
+
+Melaporkan pelaksanaan kegiatan kepada Kakanwil
+
+Kepala
+
+BAST ditandatangani UPT tujuan
+
+1 Hari
+
+Laporan pelaksanaan kegiatan resmi
+
+Selesai.
+
+Langkah demi Langkah Prosedur Kerja:
+
+Langkah 1: Kasi Reg mengidentifikasi deteni yang memenuhi alasan pemindahan (overcapacity/keamanan) &amp; mengadakan rapat koordinasi.
+
+Langkah 2: Operator Registrasi menyusun draf Surat Permohonan Pemindahan ke Kanwil Kemenkumham.
+
+Langkah 3: Kepala Rudenim menandatangani Surat Permohonan resmi dan mengirimkannya ke Kepala Divisi Keimigrasian Kanwil.
+
+Langkah 4: Kanwil memeriksa permohonan, menyusun rekomendasi pengantar, &amp; mengirimkannya ke Direktorat Jenderal Imigrasi.
+
+Langkah 5: Ditjenim (Wasdakim) menelaah kelayakan &amp; kapasitas nasional, lalu menerbitkan Surat Keputusan Persetujuan Pemindahan.
+
+Langkah 6: Ditjenim mendistribusikan surat persetujuan tersebut ke Kanwil untuk diteruskan kepada Kepala Rudenim Pontianak.
+
+Langkah 7: Kepala Rudenim menandatangani disposisi pelaksanaan mutasi deteni kepada Kasi Reg &amp; Kasi Kamtib.
+
+Langkah 8: Seksi Reg menerbitkan Surat Perintah Pengeluaran Deteni, Surat Perintah Pengawalan, &amp; berkoordinasi dengan Rudenim tujuan.
+
+Langkah 9: Petugas mengeluarkan deteni dari sel hunian, mengembalikan barang titipan, &amp; menyerahkan berkas portofolio kasus kepada pengawal.
+
+Langkah 10: Petugas Kamtib melaksanakan pengawalan fisik melekat deteni selama perjalanan menggunakan transportasi publik/dinas.
+
+Langkah 11: Petugas menyerahkan deteni secara fisik beserta berkas portofolio &amp; menandatangani BAST dengan pejabat Rudenim tujuan.
+
+Langkah 12: Kepala Rudenim menyusun Laporan Pelaksanaan Kegiatan Pemindahan Deteni untuk dikirimkan secara berkala ke Kanwil &amp; Ditjenim.
+
+Alur Integrasi SIMKIM: Saat deteni dipindahkan, status kepemilikan data deteni (transfer ownership) ditransfer secara sistem di dalam database SIMKIM terpusat dari Rudenim Pontianak ke Rudenim tujuan.
+
+7. SOP Pendeportasian Deteni
+
+SOP pendeportasian merupakan tahapan akhir dari siklus pengelolaan deteni. Prosedurnya meliputi: (1) verifikasi kelengkapan dokumen perjalanan (paspor dari Kedutaan Besar negara asal atau Surat Perjalanan Laksana Paspor/SPLP); (2) konfirmasi tiket penerbangan aktif; (3) penyusunan Surat Keputusan Pengeluaran Deteni (SKPD) dan Surat Perintah Pendeportasian (SPP) oleh Seksi Registrasi untuk ditandatangani Kepala Rudenim; (4) pengawalan melekat oleh petugas Kamtib dari Rudenim hingga ke gerbang keberangkatan Tempat Pemeriksaan Imigrasi (TPI) bandara; dan (5) pengunggahan Berita Acara Pendeportasian serta perubahan status deteni di SIMKIM menjadi "Sudah Dideportasi". Dengan demikian, seluruh siklus kehidupan deteni di Rudenim terekam lengkap secara digital.
+
+Gambar 2.7. Flowchart SOP Pendeportasian Deteni Ke Negara Asal
+
+Sumber: Perdirjen Imigrasi No. IMI.1917-OT.02.01/2013, diolah peneliti (2026).
+
+Tabel 2.7. Mutu Baku SOP Pendeportasian Deteni
+
+No
+
+Kegiatan
+
+Pelaksana
+
+Mutu Baku: Kelengkapan
+
+Waktu
+
+Output
+
+Keterangan / Catatan
+
+1
+
+Mengusulkan data deteni yang sudah siap dilakukan pendeportasian
+
+Kasi Reg
+
+Paspor/SPLP, tiket penerbangan valid
+
+20 Menit
+
+Nota Dinas usulan deportasi
+
+Mulai.
+
+2
+
+Memimpin rapat koordinasi teknis pelaksanaan pemulangan paksa
+
+Kepala
+
+Ruang rapat, nota dinas, absensi, kamera
+
+60 Menit
+
+Notulen rapat persiapan
+
+3
+
+Menyusun konsep SK deportasi, SP pengawalan, &amp; usulan penangkalan
+
+Kasi Reg
+
+Notulensi rapat, aplikasi Sisumaker
+
+15 Menit
+
+Draf SK deportasi &amp; usulan cekal
+
+4
+
+Menyusun konsep Surat Perintah Pengeluaran Deteni (SPPD)
+
+Kasubseksi Admin
+
+Notulensi rapat, aplikasi Sisumaker
+
+15 Menit
+
+Draf SPPD
+
+5
+
+Menandatangani berkas keputusan deportasi &amp; surat-surat perintah
+
+Kepala
+
+Draf SK &amp; SP, cap dinas
+
+30 Menit
+
+SK Deportasi &amp; SP Pengawalan ditandatangani
+
+6
+
+Menginput data rencana pendeportasian deteni ke modul SIMKIM
+
+Kasubseksi Admin
+
+Komputer, jaringan, printer, scanner, SIMKIM
+
+60 Menit
+
+Register pendeportasian SIMKIM
+
+7
+
+Menerakan cap stempel deportasi resmi pada paspor/SPLP deteni
+
+Kasubseksi Admin
+
+Cap deportasi, paspor deteni
+
+5 Menit
+
+Teraan cap deportasi di paspor
+
+8
+
+Pengajuan paspor tercap deportasi untuk disahkan
+
+Kasi Reg
+
+Paspor tercap, berkas pendeportasian
+
+5 Menit
+
+Paspor siap ditandatangani
+
+9
+
+Menandatangani cap deportasi di paspor &amp; perintah pengeluaran
+
+Kepala
+
+Paspor tercap, surat keputusan
+
+15 Menit
+
+Penandatanganan cap deportasi
+
+10
+
+Mengeluarkan deteni dari sel &amp; serah terima fisik/barang bawaan
+
+Kasi Kamtib
+
+BAST deteni, kunci kamar, loker barang bawaan
+
+20 Menit
+
+Berita Acara Serah Terima Deteni
+
+11
+
+Melaksanakan pengawalan fisik deteni ke bandara hingga boarding
+
+Fungsional
+
+SK TAK, SP Pengawalan, dokumen paspor, tiket
+
+3 Hari
+
+Pendeportasian deteni &amp; cap keberangkatan
+
+Hingga deteni masuk pesawat.
+
+12
+
+Menyusun &amp; mengirimkan laporan pelaksanaan pendeportasian ke Kanwil
+
+Kasi Reg
+
+Laporan tertulis, foto boarding, BAST bandara
+
+1 Hari
+
+Laporan pelaksanaan deportasi resmi
+
+Selesai.
+
+Langkah demi Langkah Prosedur Kerja:
+
+Langkah 1: Kasi Reg mengajukan Nota Dinas usulan deportasi deteni yang memiliki tiket penerbangan valid serta dokumen perjalanan (Paspor/SPLP).
+
+Langkah 2: Kepala Rudenim mengadakan rapat persiapan bersama seksi Registrasi, Kamtib, dan petugas intelijen keimigrasian.
+
+Langkah 3: Seksi Registrasi menyusun draf Keputusan TAK deportasi, Surat Perintah Pengawalan, &amp; usulan pencegahan/penangkalan cekal terpusat.
+
+Langkah 4: Kasubseksi Admin menyusun draf Surat Perintah Pengeluaran Deteni (SPPD) untuk memproses pelepasan fisik.
+
+Langkah 5: Kepala Rudenim memeriksa dan menandatangani seluruh berkas keputusan pendeportasian &amp; surat perintah secara serentak.
+
+Langkah 6: Kasubseksi Admin merekam data rencana pendeportasian &amp; mengupload softcopy tiket/paspor ke aplikasi SIMKIM.
+
+Langkah 7: Kasubseksi Admin menerakan cap stempel deportasi resmi pada halaman paspor atau lembar SPLP deteni.
+
+Langkah 8: Kasi RAP memeriksa teraan cap deportasi pada paspor &amp; mengajukannya kepada Kepala Rudenim.
+
+Langkah 9: Kepala Rudenim menandatangani langsung di atas teraan cap deportasi paspor deteni sebagai legalitas keberangkatan.
+
+Langkah 10: Kasi Kamtib mengeluarkan deteni dari blok sel, menyerahkan sisa barang bawaan yang dititipkan, &amp; melakukan serah terima fisik ke pengawal.
+
+Langkah 11: Tim pengawal (Fungsional) membawa deteni ke bandara, mengawal melalui imigrasi bandara (cap exit), hingga deteni masuk pesawat (boarding).
+
+Langkah 12: Kasi Reg menyusun Laporan Pelaksanaan Deportasi untuk dikirimkan secara resmi ke Kanwil &amp; Direktorat Jenderal Imigrasi.
+
+Alur Integrasi SIMKIM: Setelah pendeportasian selesai, operator mengubah status deteni menjadi "Telah Dideportasi" di modul SIMKIM. Sistem terpusat secara otomatis mengirimkan data biometrik usulan penangkalan ke server Ditjenim Jakarta untuk memblokir deteni masuk kembali ke wilayah Indonesia.
+
+D. Analisis Integrasi Struktur Organisasi, SIMKIM, dan SOP
+
+   (Perspektif Leavitt's Diamond Model)
+
+Untuk memahami secara komprehensif bagaimana struktur organisasi, SIMKIM, dan SOP di Rudenim Pontianak saling berinteraksi, penulis menggunakan kerangka analisis Leavitt's Diamond Model (1965). Model ini dikembangkan oleh Harold J. Leavitt yang memandang organisasi sebagai sebuah sistem dengan empat elemen yang saling terkait secara erat: Struktur (Structure), Tugas (Task), Teknologi (Technology), dan Sumber Daya Manusia (People). Perubahan pada satu elemen akan secara langsung maupun tidak langsung mempengaruhi ketiga elemen lainnya. Kerangka analisis ini digambarkan pada Gambar 3.
+
+Gambar 3. Kerangka Analisis Leavitt's Diamond Model
+
+pada Rumah Detensi Imigrasi Pontianak
+
+Sumber: Diadaptasi dari Leavitt (1965), diolah peneliti (2026).
+
+Berdasarkan kerangka di atas, berikut adalah analisis integrasi keempat elemen di Rudenim Pontianak:
+
+1. Elemen Struktur (Structure)
+
+Struktur organisasi Rudenim Pontianak membagi tanggung jawab ke dalam empat unit kerja utama yang masing-masing memiliki peran spesifik dalam siklus pengelolaan deteni. Hierarki yang jelas dari Kepala Rudenim hingga ke staf pelaksana menjamin chain of command yang tegas. Pembagian tugas antara Seksi Registrasi (pengolahan data), Seksi Kamtib (pengamanan fisik), dan Seksi Perawatan (kesejahteraan deteni) menciptakan spesialisasi fungsi yang mendukung efisiensi operasional. Namun, struktur yang kaku (rigid) juga dapat menjadi hambatan ketika diperlukan koordinasi lintas seksi yang cepat, misalnya saat terjadi keadaan darurat yang memerlukan respons simultan dari ketiga seksi sekaligus.
+
+2. Elemen Tugas (Task)
+
+Tugas operasional di Rudenim Pontianak dijabarkan dalam tujuh SOP utama yang mengatur siklus pengelolaan deteni dari hulu (penerimaan) hingga hilir (pendeportasian). Setiap SOP mendefinisikan secara rinci tahapan prosedur, penanggung jawab, dan output yang diharapkan. SOP berfungsi sebagai jembatan antara struktur organisasi (siapa yang mengerjakan) dan teknologi (bagaimana cara mengerjakannya melalui SIMKIM). Tanpa SOP yang jelas, pembagian tugas dalam struktur organisasi menjadi tidak bermakna, dan penggunaan SIMKIM menjadi tidak terarah.
+
+3. Elemen Teknologi (Technology)
+
+SIMKIM sebagai komponen teknologi memegang peranan sentral dalam mengintegrasikan seluruh proses operasional Rudenim. Aplikasi ini mengubah proses pencatatan manual menjadi digital, memungkinkan penyimpanan data terpusat, dan memfasilitasi komunikasi data antar UPT secara real-time. Namun, efektivitas SIMKIM sangat bergantung pada ketersediaan infrastruktur pendukung (jaringan internet yang stabil, perangkat keras yang memadai) serta kesiapan SDM untuk mengoperasikannya. Kendala-kendala teknis yang telah diidentifikasi sebelumnya (gangguan jaringan, perangkat usang, pencatatan ganda) menunjukkan bahwa elemen teknologi tidak dapat berdiri sendiri tanpa dukungan dari elemen lainnya.
+
+4. Elemen Sumber Daya Manusia (People)
+
+SDM merupakan elemen paling dinamis dalam Leavitt's Diamond. Di Rudenim Pontianak, SDM terdiri dari berbagai tingkatan mulai dari pimpinan (Kepala Rudenim), manajer menengah (Kepala Seksi), hingga pelaksana teknis (operator SIMKIM, petugas jaga, staf medis). Kemampuan SDM dalam mengoperasikan SIMKIM, memahami SOP, dan menjalankan perannya sesuai struktur organisasi menjadi faktor penentu keberhasilan integrasi ketiga komponen tersebut. Rotasi pegawai yang cukup sering tanpa pelatihan yang memadai menjadi tantangan tersendiri yang perlu diatasi agar kualitas pelayanan tidak menurun.
+
+5. Analisis Keterkaitan Antar Elemen
+
+Analisis menggunakan Leavitt's Diamond Model menunjukkan bahwa ketiga komponen yang diteliti (struktur organisasi, SIMKIM, dan SOP) pada Rudenim Pontianak saling bergantung dan tidak dapat dioptimalkan secara terpisah. Hubungan keterkaitan ini dapat diringkas sebagai berikut:
+
+Tabel 1. Matriks Keterkaitan Antar Elemen Leavitt's Diamond
+
+Hubungan Elemen
+
+Bentuk Keterkaitan
+
+Implikasi di Rudenim Pontianak
+
+Struktur ↔ Tugas (SOP)
+
+Pembagian tugas dalam SOP mengikuti pembagian unit kerja dalam struktur organisasi.
+
+Setiap SOP secara eksplisit menyebutkan seksi yang bertanggung jawab.
+
+Struktur ↔ Teknologi (SIMKIM)
+
+Hak akses modul SIMKIM disesuaikan dengan posisi jabatan dalam struktur.
+
+Operator registrasi memiliki akses input, Kasi memiliki akses supervisory.
+
+Tugas (SOP) ↔ Teknologi (SIMKIM)
+
+Hampir seluruh SOP mensyaratkan penggunaan SIMKIM pada tahapannya.
+
+SOP Registrasi wajib input biometrik, SOP Deportasi wajib update status.
+
+SDM ↔ Teknologi
+
+Kompetensi SDM menentukan kualitas input data di SIMKIM.
+
+Petugas terlatih menghasilkan data biometrik akurat; sebaliknya, human error meningkat.
+
+SDM ↔ Tugas (SOP)
+
+SDM melaksanakan SOP; pemahaman SDM terhadap SOP menentukan kualitas layanan.
+
+Pelatihan berkala diperlukan agar seluruh petugas memahami prosedur terbaru.
+
+SDM ↔ Struktur
+
+Penempatan SDM dalam struktur harus sesuai kompetensi.
+
+Rotasi pegawai tanpa pelatihan memadai menyebabkan penurunan kinerja unit.
+
+Sumber: Analisis peneliti berdasarkan Leavitt's Diamond Model (2026).
+
+Dari matriks di atas, terlihat bahwa setiap perubahan pada satu elemen akan berdampak pada elemen lainnya. Misalnya, apabila Direktorat Jenderal Imigrasi melakukan pembaruan versi SIMKIM (perubahan teknologi), maka diperlukan penyesuaian SOP (tugas), pelatihan ulang SDM (people), dan mungkin penyesuaian kewenangan akses dalam struktur organisasi. Hal ini menegaskan pentingnya pendekatan holistik dalam mengelola perubahan organisasi di Rudenim Pontianak.
+
+BAB III
+
+PENUTUP
+
+A. Kesimpulan
+
+Berdasarkan pembahasan yang telah diuraikan, dapat ditarik beberapa kesimpulan sebagai berikut:
+
+Struktur organisasi Rudenim Pontianak terdiri atas Kepala Rudenim, Sub Bagian Tata Usaha, Seksi Registrasi, Administrasi dan Pelaporan, Seksi Keamanan dan Ketertiban, serta Seksi Perawatan dan Kesehatan. Pembagian tugas yang jelas antar unit kerja mendukung spesialisasi fungsi dan efisiensi operasional dalam pengelolaan deteni, meskipun koordinasi lintas seksi masih perlu ditingkatkan terutama dalam penanganan keadaan darurat.
+
+SIMKIM telah diterapkan sebagai sistem informasi terintegrasi yang mendukung seluruh proses administrasi deteni di Rudenim Pontianak, meliputi modul pendataan deteni, modul pengawasan dan cekal, modul manifest dan pelaporan, serta modul deportasi. Namun, penerapannya masih menghadapi kendala berupa gangguan koneksi jaringan, keterbatasan perangkat keras, pencatatan ganda, dan keterbatasan pelatihan bagi petugas baru.
+
+Pelaksanaan SOP di Rudenim Pontianak mengatur secara sistematis siklus pengelolaan deteni dari penerimaan hingga pendeportasian. Hampir seluruh tahapan SOP mensyaratkan penggunaan SIMKIM, sehingga terdapat integrasi yang erat antara prosedur operasional dan sistem informasi.
+
+Analisis menggunakan Leavitt's Diamond Model menunjukkan bahwa struktur organisasi, SIMKIM, SOP, dan SDM di Rudenim Pontianak merupakan empat elemen yang saling bergantung. Optimalisasi satu elemen tanpa memperhatikan elemen lainnya tidak akan memberikan hasil yang maksimal. Pendekatan holistik yang mempertimbangkan keseimbangan keempat elemen diperlukan untuk meningkatkan efektivitas pengelolaan administrasi deteni secara keseluruhan.
+
+B. Saran
+
+Berdasarkan kesimpulan di atas, penulis memberikan beberapa saran sebagai berikut:
+
+Peningkatan Infrastruktur Teknologi: Direktorat Jenderal Imigrasi perlu memprioritaskan peningkatan kapasitas bandwidth dan stabilitas jaringan pada UPT di daerah, termasuk Rudenim Pontianak, agar koneksi ke server pusat SIMKIM lebih andal dan mendukung kelancaran operasional harian.
+
+Pembaruan Perangkat Keras: Perangkat penunjang SIMKIM seperti scanner biometrik dan kamera perlu diperbarui secara berkala agar kualitas data biometrik yang direkam tetap akurat dan sesuai standar.
+
+Integrasi Logbook Digital: Perlu dikembangkan fitur pada SIMKIM yang memungkinkan integrasi langsung antara logbook pengamanan fisik Seksi Kamtib dengan log digital SIMKIM untuk menghilangkan praktik pencatatan ganda (double entry).
+
+Program Pelatihan Berkala: Perlu disusun program pelatihan SIMKIM secara rutin, terutama bagi petugas baru hasil rotasi, agar seluruh SDM memiliki kompetensi yang memadai dalam mengoperasikan sistem. Pelatihan dapat dilakukan melalui modul e-learning yang terintegrasi dengan sistem internal Direktorat Jenderal Imigrasi.
+
+Evaluasi Berkala dengan Pendekatan Holistik: Rudenim Pontianak perlu melakukan evaluasi berkala terhadap integrasi struktur, SIMKIM, dan SOP menggunakan kerangka seperti Leavitt's Diamond Model untuk memastikan keselarasan keempat elemen organisasi dalam menghadapi dinamika perubahan.
+
+DAFTAR PUSTAKA
+
+Leavitt, H. J. (1965). Applied organizational change in industry: Structural, technological, and humanistic approaches. Dalam J. G. March (Ed.), Handbook of Organizations (pp. 1144–1170). Chicago: Rand McNally.
+
+Laudon, K. C., &amp; Laudon, J. P. (2020). Management Information Systems: Managing the Digital Firm (16th ed.). New York: Pearson Education.
+
+O'Brien, J. A., &amp; Marakas, G. M. (2018). Management Information Systems (11th ed.). Boston: McGraw-Hill/Irwin.
+
+Republik Indonesia. (2011). Undang-Undang Nomor 6 Tahun 2011 tentang Keimigrasian. Lembaran Negara RI Tahun 2011 Nomor 52. Jakarta.
+
+Republik Indonesia. (2013). Peraturan Pemerintah Nomor 31 Tahun 2013 tentang Peraturan Pelaksanaan Undang-Undang Nomor 6 Tahun 2011 tentang Keimigrasian. Lembaran Negara RI Tahun 2013 Nomor 68. Jakarta.
+
+Keputusan Menteri Kehakiman dan Hak Asasi Manusia RI Nomor M.01-PR.07.04 Tahun 2004 tentang Organisasi dan Tata Kerja Rumah Detensi Imigrasi. Jakarta.
+
+Peraturan Direktur Jenderal Imigrasi Nomor IMI.1917-OT.02.01 Tahun 2013 tentang Standar Operasional Prosedur Rumah Detensi Imigrasi. Jakarta: Direktorat Jenderal Imigrasi.
+
+Peraturan Presiden Republik Indonesia Nomor 139 Tahun 2024 tentang Kementerian Imigrasi dan Pemasyarakatan. Jakarta.
+
+Robbins, S. P., &amp; Judge, T. A. (2019). Organizational Behavior (18th ed.). New York: Pearson Education.
+
+Rumah Detensi Imigrasi Pontianak. (2026). Profil dan Struktur Organisasi. Diperoleh dari https://rudenimpontianak.imigrasi.go.id/. Diakses pada tanggal 17 Juni 2026.

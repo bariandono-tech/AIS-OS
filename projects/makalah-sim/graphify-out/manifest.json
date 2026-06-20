@@ -1,0 +1,222 @@
+{
+  "build_makalah_sim.js": {
+    "mtime": 1781840330.5463467,
+    "ast_hash": "d3fbf8025cb7e030449ed51e953053ba",
+    "semantic_hash": ""
+  },
+  "build_makalah_sim_v2.js": {
+    "mtime": 1781881290.4710057,
+    "ast_hash": "aaf0b810e367979bdea41442e3bb6b88",
+    "semantic_hash": ""
+  },
+  "draw_diagram_sim.py": {
+    "mtime": 1781788966.4830084,
+    "ast_hash": "d9999d1eb5a7e8a2195d78bcf0838b88",
+    "semantic_hash": ""
+  },
+  "draw_flowcharts.py": {
+    "mtime": 1781788986.462884,
+    "ast_hash": "58021199c99eb194c6332befc78f0888",
+    "semantic_hash": ""
+  },
+  "draw_flowcharts_restored.py": {
+    "mtime": 1781788685.0574274,
+    "ast_hash": "4eb25ba77d3d893bacb60a0da9954e75",
+    "semantic_hash": ""
+  },
+  "draw_individual_flowcharts.py": {
+    "mtime": 1781786991.8558495,
+    "ast_hash": "767ef02de0dd1fc669dd5a7c3ba94ea4",
+    "semantic_hash": ""
+  },
+  "draw_proper_flowcharts.py": {
+    "mtime": 1781788756.9179013,
+    "ast_hash": "77954c31b692c59df11c8de4fbce3a03",
+    "semantic_hash": ""
+  },
+  "draw_struktur.py": {
+    "mtime": 1781782157.3400826,
+    "ast_hash": "4cf0de8beb2541b106b02845698c5514",
+    "semantic_hash": ""
+  },
+  "makalah_sim_v2.json": {
+    "mtime": 1781933739.0767176,
+    "ast_hash": "c927fd0a5ce58e6218e1d3d57a093ac8",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1781677364.221149,
+    "ast_hash": "45fb5a28a83185fa3d370b966909a4a0",
+    "semantic_hash": ""
+  },
+  "scratch/check_captions.py": {
+    "mtime": 1781850541.0520546,
+    "ast_hash": "c6ed4b2db929310866f939ed8c892ea0",
+    "semantic_hash": ""
+  },
+  "scratch/check_dg.py": {
+    "mtime": 1781850531.6445973,
+    "ast_hash": "07ea8785908eba1a4192ac21de8f665e",
+    "semantic_hash": ""
+  },
+  "scratch/check_docx.py": {
+    "mtime": 1781850520.353228,
+    "ast_hash": "4f508edcda148fd2544d34663499deb0",
+    "semantic_hash": ""
+  },
+  "scratch/check_styles.py": {
+    "mtime": 1781850816.0704632,
+    "ast_hash": "72941cd896b76e66ed16b86c53aca3c5",
+    "semantic_hash": ""
+  },
+  "scratch/check_tables.py": {
+    "mtime": 1781850759.693477,
+    "ast_hash": "bf28aba71ff94a83d55d5df6aaab24a3",
+    "semantic_hash": ""
+  },
+  "scratch/compare.js": {
+    "mtime": 1781848916.1613503,
+    "ast_hash": "45fec888b0b547a212daa89c03136f43",
+    "semantic_hash": ""
+  },
+  "scratch/diff_content.js": {
+    "mtime": 1781848926.4791915,
+    "ast_hash": "ddcbea7c2a62be7c9a6aad44debf8e2d",
+    "semantic_hash": ""
+  },
+  "scratch/extract_text.js": {
+    "mtime": 1781848346.3430138,
+    "ast_hash": "7019eea60955af1a14c95044599df83b",
+    "semantic_hash": ""
+  },
+  "scratch/find_image.js": {
+    "mtime": 1781848813.921782,
+    "ast_hash": "17124780aab48945f81d00b6fdc6f2c9",
+    "semantic_hash": ""
+  },
+  "scratch/find_image_caption.js": {
+    "mtime": 1781848858.2367725,
+    "ast_hash": "398e15fa5a5334211de5531313a92fdf",
+    "semantic_hash": ""
+  },
+  "scratch/print_paragraphs.py": {
+    "mtime": 1781850745.4681585,
+    "ast_hash": "0f132ac266e8cc9f434f951822b6fa21",
+    "semantic_hash": ""
+  },
+  "makalah_sim.md": {
+    "mtime": 1781840337.3354242,
+    "ast_hash": "bb11c905d917a22e38902295363c0feb",
+    "semantic_hash": ""
+  },
+  "prd.md": {
+    "mtime": 1781751497.0977142,
+    "ast_hash": "98df67b1f88d9347ace47228523aeb0f",
+    "semantic_hash": ""
+  },
+  "scratch/extracted_text.txt": {
+    "mtime": 1781848446.0411277,
+    "ast_hash": "c9d7cbd9f2d1eeebab27b41137178c7f",
+    "semantic_hash": ""
+  },
+  "flowchart_lifecycle_deteni.png": {
+    "mtime": 1781788992.1078799,
+    "ast_hash": "6011bd81fa4b95fc716f99c9e300959b",
+    "semantic_hash": ""
+  },
+  "kerangka_penelitian_sim.png": {
+    "mtime": 1781749312.8740363,
+    "ast_hash": "2864724a4eb3bd87d1eb48d31c2163c3",
+    "semantic_hash": ""
+  },
+  "leavitt_diamond_rudenim.png": {
+    "mtime": 1781788973.8364074,
+    "ast_hash": "016d8e5c6e759383fa2b51b1a25261c0",
+    "semantic_hash": ""
+  },
+  "logo_upb.jpg": {
+    "mtime": 315507600.0,
+    "ast_hash": "2672a2f4f93dfb65ea2d5d2f870fa6c4",
+    "semantic_hash": ""
+  },
+  "sop_deportasi_flowchart.png": {
+    "mtime": 1781788801.5925565,
+    "ast_hash": "748b282f5fe9cfe4effac5ccfd8e778e",
+    "semantic_hash": ""
+  },
+  "sop_kesehatan_flowchart.png": {
+    "mtime": 1781788801.4201453,
+    "ast_hash": "b6fd44ce9f04b2e1b19dd7c3e43ebd4b",
+    "semantic_hash": ""
+  },
+  "sop_pemindahan_flowchart.png": {
+    "mtime": 1781788801.5040677,
+    "ast_hash": "1959877f836be5f99b354250a8250f25",
+    "semantic_hash": ""
+  },
+  "sop_penempatan_flowchart.png": {
+    "mtime": 1781788801.2806451,
+    "ast_hash": "488c2dcf01ba959da46d47d7c9c9a315",
+    "semantic_hash": ""
+  },
+  "sop_penerimaan_flowchart.png": {
+    "mtime": 1781788801.1544776,
+    "ast_hash": "9aa995b4a9562b5c71f39b8985a75563",
+    "semantic_hash": ""
+  },
+  "sop_penjagaan_flowchart.png": {
+    "mtime": 1781788801.3346672,
+    "ast_hash": "8fa3a0339b28206a60f50f6dc71c3206",
+    "semantic_hash": ""
+  },
+  "sop_registrasi_flowchart.png": {
+    "mtime": 1781788801.223648,
+    "ast_hash": "45d660b5887db1cdae8b61bdf90d0e23",
+    "semantic_hash": ""
+  },
+  "struktur_organisasi_rudenim.png": {
+    "mtime": 1781787184.9117985,
+    "ast_hash": "2612d7e1ec0cd7a831b3a5d078973e3c",
+    "semantic_hash": ""
+  },
+  "scratch/check_docx_options.js": {
+    "mtime": 1781851419.5581853,
+    "ast_hash": "c22d12313b2cc7e45b2c6c3b732502f0",
+    "semantic_hash": ""
+  },
+  "scratch/check_toc_xml.js": {
+    "mtime": 1781852080.3369884,
+    "ast_hash": "9f0b86ee3002b735e338ab49d6167bfd",
+    "semantic_hash": ""
+  },
+  "scratch/inspect_field_instruction.js": {
+    "mtime": 1781851516.8387105,
+    "ast_hash": "87af005d6d20a017890d59aaee942dc0",
+    "semantic_hash": ""
+  },
+  "scratch/inspect_field_instruction_def.js": {
+    "mtime": 1781851704.7151842,
+    "ast_hash": "d80fe34497857b380759c2e4ee5bda2d",
+    "semantic_hash": ""
+  },
+  "scratch/read_test_toc_xml.py": {
+    "mtime": 1781851984.7871344,
+    "ast_hash": "81711fd59218a94d67c88f68abf1a260",
+    "semantic_hash": ""
+  },
+  "scratch/check_p_style_attrs.py": {
+    "mtime": 1781852983.91825,
+    "ast_hash": "6b435f9502785af94a42e411e2a8d094",
+    "semantic_hash": ""
+  },
+  "scratch/inspect_styles_xml.py": {
+    "mtime": 1781852973.494686,
+    "ast_hash": "662380130137f7650c0aadcaf582b57f",
+    "semantic_hash": ""
+  },
+  "build_makalah_blockchain.js": {
+    "mtime": 1781855263.3952422,
+    "ast_hash": "d188868981fd3b058147f51733bd9071",
+    "semantic_hash": ""
+  }
+}

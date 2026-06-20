@@ -139,15 +139,16 @@ function getScaledDimensions(imageName, targetWidth) {
   };
 }
 
-function cellPara(text, { width, bold = false, center = false, italic = false, borders = bordersAll } = {}) {
+function cellPara(text, { width, bold = false, center = false, italic = false, borders = bordersAll, vAlign = VerticalAlign.CENTER } = {}) {
   return new TableCell({
     borders: borders,
     width: { size: width, type: WidthType.DXA },
     margins: { top: 60, bottom: 60, left: 120, right: 120 },
+    verticalAlign: vAlign,
     children: [new Paragraph({
       alignment: center ? AlignmentType.CENTER : AlignmentType.LEFT,
       spacing: { after: 0, before: 0, line: 360 },
-      children: [new TextRun({ text, font: 'Times New Roman', size: 22, bold, italics: italic })]
+      children: [new TextRun({ text, font: 'Times New Roman', size: 18, bold, italics: italic })]
     })]
   });
 }
@@ -184,6 +185,7 @@ function createMutuBakuTable(rowsData) {
   }
 
   return new Table({
+    alignment: AlignmentType.CENTER,
     rows: tableRows,
     width: { size: 7900, type: WidthType.DXA }
   });
@@ -480,19 +482,19 @@ const doc = new Document({
       children: [
         frontMatterHeader('KATA PENGANTAR'),
         justifiedPara([
-          tr('Puji syukur penulis panjatkan kehadirat Allah Subhanahu Wa Ta\'ala atas limpahan rahmat dan karunia-Nya sehingga penulis dapat menyelesaikan makalah yang berjudul '),
+          tr('Segala puji dan syukur penulis panjatkan kehadirat Allah Subhanahu Wa Ta\'ala, yang atas rahmat dan karunia-Nya penulis dapat merampungkan makalah berjudul '),
           trb('"Analisis Struktur Organisasi, Sistem Informasi Manajemen Keimigrasian (SIMKIM), dan Standar Operasional Prosedur (SOP) pada Rumah Detensi Imigrasi Pontianak"'),
-          tr('. Makalah ini disusun untuk memenuhi tugas mata kuliah Sistem Informasi Manajemen pada Program Studi Akuntansi, Fakultas Ekonomi dan Bisnis, Universitas Panca Bhakti Pontianak.')
+          tr('. Makalah ini disusun sebagai tugas mata kuliah Sistem Informasi Manajemen pada Program Studi Akuntansi, Fakultas Ekonomi dan Bisnis, Universitas Panca Bhakti Pontianak.')
         ]),
         justifiedPara([
-          tr('Penulis menyadari bahwa penulisan makalah ini tidak terlepas dari bantuan berbagai pihak. Oleh karena itu, penulis menyampaikan ucapan terima kasih kepada:')
+          tr('Makalah ini tidak akan terwujud tanpa dukungan sejumlah pihak. Untuk itu, penulis menyampaikan terima kasih kepada:')
         ]),
         ...resetList(),
         numberedItemRuns([tr('Ibu Dr. Renny Wulandari, S.E., M.Si., Ak., CA selaku Dosen Pengampu mata kuliah Sistem Informasi Manajemen yang telah memberikan bimbingan dan arahan.')]),
         numberedItemRuns([tr('Kepala Rumah Detensi Imigrasi Pontianak beserta seluruh jajaran yang telah memberikan data dan informasi yang diperlukan.')]),
         emptyRow(),
         justifiedPara([
-          tr('Penulis menyadari bahwa makalah ini masih jauh dari sempurna, oleh karena itu kritik dan saran yang membangun sangat penulis harapkan demi perbaikan di masa mendatang. Semoga makalah ini dapat memberikan manfaat bagi pembaca.')
+          tr('Penulis menyadari sepenuhnya bahwa makalah ini tentu masih menyimpan kekurangan. Kritik dan saran yang membangun sangat penulis nantikan sebagai bahan perbaikan. Semoga tulisan ini turut memberi manfaat bagi pembaca.')
         ]),
         emptyRow(),
         new Table({
@@ -581,18 +583,18 @@ const doc = new Document({
         // A. Latar Belakang
         heading2('A. Latar Belakang'),
         justifiedPara([
-          tr('Perkembangan teknologi informasi telah memberikan dampak signifikan terhadap berbagai aspek kehidupan, termasuk pengelolaan organisasi di sektor publik. Laudon dan Laudon (2020) menjelaskan bahwa Sistem Informasi Manajemen (SIM) merupakan sistem yang mengumpulkan, memproses, menyimpan, dan mendistribusikan informasi untuk mendukung pengambilan keputusan, koordinasi, dan pengendalian dalam suatu organisasi. Dalam konteks pemerintahan, penerapan SIM menjadi kebutuhan mutlak untuk mewujudkan tata kelola yang baik ('),
+          tr('Organisasi publik masa kini nyaris mustahil beroperasi tanpa dukungan teknologi informasi. Laudon dan Laudon (2020) mendefinisikan Sistem Informasi Manajemen (SIM) sebagai sistem yang mengumpulkan, memproses, menyimpan, dan mendistribusikan informasi guna menopang pengambilan keputusan, koordinasi, serta pengendalian organisasi. Di sektor pemerintahan, kehadiran SIM bukan lagi pelengkap, melainkan kebutuhan pokok untuk mewujudkan tata kelola yang baik ('),
           tri('good governance'),
-          tr(') melalui peningkatan efisiensi, transparansi, dan akuntabilitas pelayanan publik.')
+          tr('), terutama dalam meningkatkan efisiensi, transparansi, dan akuntabilitas pelayanan publik.')
         ]),
         justifiedPara([
-          tr('Di bidang keimigrasian Indonesia, Direktorat Jenderal Imigrasi telah mengembangkan Sistem Informasi Manajemen Keimigrasian (SIMKIM) sebagai pilar utama digitalisasi pelayanan dan pengawasan keimigrasian. Berdasarkan Undang-Undang Nomor 6 Tahun 2011 tentang Keimigrasian, SIMKIM dirancang sebagai sistem teknologi informasi dan komunikasi terpusat yang mengintegrasikan seluruh data keimigrasian nasional, mulai dari data paspor Warga Negara Indonesia (WNI), data visa dan izin tinggal Warga Negara Asing (WNA), data perlintasan di Tempat Pemeriksaan Imigrasi (TPI), hingga data pendataan deteni di Rumah Detensi Imigrasi (Rudenim) di seluruh Indonesia.')
+          tr('Salah satu wujud nyata transformasi digital di sektor publik Indonesia terlihat pada bidang keimigrasian. Direktorat Jenderal Imigrasi mengembangkan Sistem Informasi Manajemen Keimigrasian (SIMKIM) sebagai tulang punggung digitalisasi pelayanan dan pengawasan keimigrasian. Mengacu pada Undang-Undang Nomor 6 Tahun 2011 tentang Keimigrasian, SIMKIM dirancang sebagai sistem terpusat yang mengintegrasikan seluruh data keimigrasian nasional, mulai dari data paspor Warga Negara Indonesia (WNI), visa dan izin tinggal Warga Negara Asing (WNA), perlintasan di Tempat Pemeriksaan Imigrasi (TPI), hingga pendataan deteni di Rumah Detensi Imigrasi (Rudenim) di seluruh Indonesia.')
         ]),
         justifiedPara([
-          tr('Rumah Detensi Imigrasi (Rudenim) Pontianak merupakan Unit Pelaksana Teknis (UPT) vertikal keimigrasian yang memiliki peranan strategis di wilayah Kalimantan Barat. Secara geografis, Kalimantan Barat berbatasan darat langsung dengan Sarawak, Malaysia Timur, menjadikannya daerah rawan perlintasan orang asing ilegal maupun pelanggaran izin tinggal. Rudenim Pontianak bertugas menampung sementara orang asing yang dikenai Tindakan Administratif Keimigrasian (TAK) berupa pendetensian sambil menunggu proses pendeportasian. Kompleksitas operasional Rudenim tercermin dari adanya tujuh Standar Operasional Prosedur (SOP) utama yang mengatur siklus pengelolaan deteni, mulai dari penerimaan, pemeriksaan kesehatan, registrasi, penempatan, pengamanan, pemindahan, hingga pendeportasian.')
+          tr('Rumah Detensi Imigrasi (Rudenim) Pontianak merupakan Unit Pelaksana Teknis (UPT) keimigrasian yang mengemban peran strategis di Kalimantan Barat. Letak geografis provinsi ini, yang berbatasan darat langsung dengan Sarawak, Malaysia Timur, menjadikannya kawasan rawan perlintasan orang asing ilegal maupun pelanggaran izin tinggal. Rudenim Pontianak bertugas menampung sementara orang asing yang dikenai Tindakan Administratif Keimigrasian (TAK) berupa pendetensian sambil menunggu proses pendeportasian. Dalam praktiknya, kompleksitas operasional Rudenim tercermin dari tujuh Standar Operasional Prosedur (SOP) utama yang mengatur siklus pengelolaan deteni secara utuh, dari penerimaan, pemeriksaan kesehatan, registrasi, penempatan, pengamanan, pemindahan, hingga pendeportasian.')
         ]),
         justifiedPara([
-          tr('Keberhasilan pelaksanaan tugas dan fungsi Rudenim Pontianak tidak dapat dipisahkan dari tiga komponen kunci yang saling terkait, yaitu: (1) struktur organisasi yang mengatur pembagian tugas dan wewenang, (2) SIMKIM sebagai sistem informasi pengelola data deteni, dan (3) SOP yang menjadi panduan operasional seluruh kegiatan. Ketiga komponen ini dapat dianalisis secara holistik menggunakan kerangka teori Leavitt\'s Diamond Model (1965) yang memandang organisasi sebagai sistem yang terdiri dari empat elemen yang saling mempengaruhi: Struktur ('),
+          tr('Efektivitas Rudenim Pontianak bertumpu pada tiga komponen yang saling mengunci: (1) struktur organisasi yang membagi tugas dan wewenang, (2) SIMKIM sebagai sistem informasi pengelola data deteni, dan (3) SOP yang memandu seluruh kegiatan operasional. Untuk menganalisis ketiga komponen itu secara utuh, penulis menggunakan kerangka Leavitt\'s Diamond Model (1965), yang memandang organisasi sebagai sistem empat elemen yang saling mempengaruhi: Struktur ('),
           tri('Structure'),
           tr('), Tugas ('),
           tri('Task'),
@@ -600,10 +602,10 @@ const doc = new Document({
           tri('Technology'),
           tr('), dan Sumber Daya Manusia ('),
           tri('People'),
-          tr('). Perubahan pada salah satu elemen akan berdampak pada elemen lainnya.')
+          tr('). Inti model ini sederhana: mengubah satu elemen niscaya menggerakkan elemen lainnya.')
         ]),
         justifiedPara([
-          tr('Berdasarkan latar belakang tersebut, penulis tertarik untuk menganalisis secara komprehensif mengenai bagaimana struktur organisasi, penerapan SIMKIM, dan pelaksanaan SOP di Rudenim Pontianak saling berintegrasi dalam mendukung efektivitas pengelolaan administrasi deteni. Analisis ini dituangkan dalam makalah yang berjudul '),
+          tr('Bertolak dari latar belakang di atas, penulis bermaksud mengkaji bagaimana struktur organisasi, penerapan SIMKIM, dan pelaksanaan SOP di Rudenim Pontianak saling berintegrasi dalam menunjang efektivitas pengelolaan administrasi deteni. Hasil kajian tersebut dituangkan dalam makalah berjudul '),
           trb('"Analisis Struktur Organisasi, Sistem Informasi Manajemen Keimigrasian (SIMKIM), dan Standar Operasional Prosedur (SOP) pada Rumah Detensi Imigrasi Pontianak".'),
         ]),
 
@@ -650,10 +652,10 @@ const doc = new Document({
 
         heading3('1. Profil Singkat Rudenim Pontianak'),
         justifiedPara([
-          tr('Rumah Detensi Imigrasi Pontianak merupakan Unit Pelaksana Teknis (UPT) di lingkungan Direktorat Jenderal Imigrasi, Kementerian Imigrasi dan Pemasyarakatan Republik Indonesia, yang berkedudukan di Jalan Adi Sucipto KM. 15, Sungai Raya, Kabupaten Kubu Raya, Kalimantan Barat. Kantor ini diresmikan pada tanggal 26 Januari 2005 oleh Menteri Hukum dan Hak Asasi Manusia Republik Indonesia. Wilayah kerja Rudenim Pontianak meliputi seluruh Provinsi Kalimantan Barat yang mencakup 2 (dua) Kota dan 12 (dua belas) Kabupaten.')
+          tr('Sebagai Unit Pelaksana Teknis (UPT) di bawah Direktorat Jenderal Imigrasi pada Kementerian Imigrasi dan Pemasyarakatan Republik Indonesia, Rumah Detensi Imigrasi (Rudenim) Pontianak memegang posisi strategis di Kalimantan Barat. Berkedudukan di Jalan Adi Sucipto KM. 15, Sungai Raya, Kabupaten Kubu Raya, kantor ini resmi beroperasi pasca diresmikan pada 26 Januari 2005 oleh Menteri Hukum dan Hak Asasi Manusia Republik Indonesia. Untuk cakupan kerjanya sendiri, Rudenim Pontianak bertanggung jawab atas pengawasan di seluruh wilayah Provinsi Kalimantan Barat yang membentang di 2 (dua) Kota dan 12 (dua belas) Kabupaten.')
         ]),
         justifiedPara([
-          tr('Rudenim Pontianak memiliki tugas melaksanakan sebagian tugas pokok dan fungsi Kementerian Imigrasi dan Pemasyarakatan di bidang pendetensian orang asing yang melanggar ketentuan peraturan perundang-undangan keimigrasian. Dalam melaksanakan tugasnya, Rudenim Pontianak dipimpin oleh seorang Kepala Rudenim yang bertanggung jawab kepada Direktur Jenderal Imigrasi melalui Kantor Wilayah Direktorat Jenderal Imigrasi Kalimantan Barat.')
+          tr('Tugas utama yang diemban Rudenim Pontianak adalah mengeksekusi sebagian fungsi keimigrasian dalam hal pendetensian orang asing yang terbukti melanggar hukum keimigrasian. Agar roda organisasi berjalan selaras dengan kebijakan pusat, komando kepemimpinan berada di tangan Kepala Rudenim yang bertanggung jawab langsung kepada Direktur Jenderal Imigrasi melalui Kantor Wilayah Kementerian Hukum dan HAM Kalimantan Barat.')
         ]),
 
         heading3('2. Dasar Hukum Pembentukan'),
@@ -666,7 +668,7 @@ const doc = new Document({
 
         heading3('3. Susunan Organisasi'),
         justifiedPara([
-          tr('Berdasarkan Keputusan Menteri Kehakiman Nomor M.01-PR.07.04 Tahun 2004, susunan organisasi Rumah Detensi Imigrasi Pontianak terdiri atas:')
+          tr('Merujuk pada Keputusan Menteri Kehakiman Nomor M.01-PR.07.04 Tahun 2004, pembagian tata kerja dan hierarki internal Rumah Detensi Imigrasi Pontianak terstruktur sebagai berikut:')
         ]),
         // Gambar struktur organisasi
         new Paragraph({
@@ -697,35 +699,35 @@ const doc = new Document({
           trb('a) Kepala Rumah Detensi Imigrasi'),
         ], { indent: false }),
         justifiedPara([
-          tr('Kepala Rudenim merupakan pimpinan tertinggi UPT yang bertanggung jawab atas seluruh operasional pengelolaan deteni. Tugas utamanya meliputi: (1) mengkoordinasikan seluruh kegiatan pendetensian; (2) mengambil keputusan strategis terkait penempatan, pemindahan, dan pendeportasian deteni; (3) menandatangani Surat Keputusan Pengeluaran Deteni (SKPD); serta (4) melakukan pengawasan internal terhadap pelaksanaan tugas seluruh pegawai. Saat ini jabatan Kepala Rudenim Pontianak dijabat oleh Suriansyah, S.Sos., M.M.')
+          tr('Selaku pucuk pimpinan tertinggi di tingkat UPT, Kepala Rudenim memegang tanggung jawab penuh atas kendali operasional dan pengawasan deteni. Tanggung jawab ini mencakup koordinasi taktis seluruh kegiatan pendetensian, pengambilan keputusan krusial (seperti penempatan sel, mutasi deteni, hingga deportasi), legalisasi dokumen administrasi melalui penandatanganan Surat Keputusan Pengeluaran Deteni (SKPD), serta supervisi berkala terhadap kinerja pegawai. Saat ini, kepemimpinan Rudenim Pontianak diamanahkan kepada Suriansyah, S.Sos., M.M.')
         ]),
 
         justifiedPara([
           trb('b) Sub Bagian Tata Usaha'),
         ], { indent: false }),
         justifiedPara([
-          tr('Subbagian Tata Usaha mempunyai tugas menyelenggarakan urusan tata usaha, administrasi kepegawaian, keuangan, perlengkapan, dan rumah tangga Rudenim. Fungsinya meliputi: (1) pengelolaan surat-menyurat dan kearsipan; (2) penyusunan rencana anggaran dan pelaporan keuangan; (3) pengelolaan data kepegawaian; serta (4) pemeliharaan sarana dan prasarana kantor.')
+          tr('Urusan administrasi internal, manajemen kepegawaian, pengelolaan keuangan, pemeliharaan logistik, serta urusan rumah tangga kantor menjadi wilayah kerja Subbagian Tata Usaha. Unit ini berfungsi sebagai penyokong kelancaran operasional melalui pengelolaan persuratan dan kearsipan yang rapi, penyusunan draf anggaran tahunan, pembinaan karier pegawai, hingga perawatan seluruh aset serta sarana prasarana dinas.')
         ]),
 
         justifiedPara([
           trb('c) Seksi Registrasi, Administrasi, dan Pelaporan'),
         ], { indent: false }),
         justifiedPara([
-          tr('Seksi ini merupakan unit kerja kunci yang menjadi motor penggerak pengolahan data deteni. Tugas pokoknya meliputi: (1) penerimaan dan verifikasi berkas calon deteni dari Kantor Imigrasi pengirim; (2) registrasi identitas dan perekaman data biometrik (sidik jari, foto wajah) ke dalam aplikasi SIMKIM; (3) penerbitan Kartu Identitas Deteni; (4) pengadministrasian berkas kasus keimigrasian; serta (5) penyusunan laporan statistik bulanan dan tahunan jumlah deteni.')
+          tr('Dapat dikatakan seksi ini adalah pintu gerbang sekaligus motor penggerak utama dalam rantai pengolahan data deteni. Fokus kerjanya meliputi pemeriksaan dan verifikasi dokumen administrasi dari UPT pengirim, perekaman data biometrik (sidik jari terintegrasi dan pasfoto digital) ke dalam SIMKIM, penerbitan Kartu Identitas Deteni, pembukuan berkas perkara keimigrasian, serta penyusunan laporan berkala mengenai dinamika populasi deteni.')
         ]),
 
         justifiedPara([
           trb('d) Seksi Keamanan dan Ketertiban'),
         ], { indent: false }),
         justifiedPara([
-          tr('Seksi Keamanan dan Ketertiban (Kamtib) bertugas menjamin keselamatan, ketertiban, dan keamanan di lingkungan Rudenim. Fungsinya meliputi: (1) pelaksanaan penjagaan dan pengamanan 24 jam; (2) pelaksanaan apel harian untuk menghitung jumlah deteni; (3) pengawasan blok hunian dan inspeksi mendadak barang terlarang; (4) penanganan keadaan darurat (kerusuhan, percobaan melarikan diri); serta (5) pengawalan deteni dalam proses pemindahan atau pendeportasian.')
+          tr('Seksi Keamanan dan Ketertiban (Kamtib) berdiri sebagai garda terdepan penegak kedisiplinan dan pencegah potensi gangguan keamanan di lingkungan UPT. Fungsi strategisnya di lapangan mencakup penjagaan pos-pos rawan selama 24 jam penuh, pelaksanaan apel harian guna memantau jumlah deteni secara riil, sterilisasi blok hunian melalui razia barang terlarang, penanggulangan situasi darurat (seperti percobaan melarikan diri atau ketegangan antar-deteni), serta pengawalan melekat selama proses mutasi atau pendeportasian.')
         ]),
 
         justifiedPara([
           trb('e) Seksi Perawatan dan Kesehatan'),
         ], { indent: false }),
         justifiedPara([
-          tr('Seksi ini bertanggung jawab atas pemenuhan hak-hak dasar deteni selama berada di Rudenim. Tugasnya meliputi: (1) penyediaan makanan dan minuman harian; (2) penyediaan pakaian dan kebutuhan sanitasi; (3) pelayanan kesehatan dasar di poliklinik internal; (4) rujukan ke rumah sakit apabila diperlukan perawatan lebih lanjut; serta (5) koordinasi dengan Seksi Kamtib untuk pengawalan deteni yang dirawat di fasilitas kesehatan di luar Rudenim.')
+          tr('Menjamin terpenuhinya hak kemanusiaan dan kebutuhan dasar deteni merupakan komitmen utama Seksi Perawatan dan Kesehatan. Tanggung jawab kemanusiaan ini meliputi penyediaan makanan dan air bersih bernutrisi, pembagian perlengkapan mandi serta pakaian layak, penyediaan pertolongan pertama di klinik Rudenim, koordinasi rujukan medis ke rumah sakit umum jika deteni membutuhkan penanganan dokter spesialis, serta kolaborasi dengan Seksi Kamtib dalam menjaga deteni yang menjalani perawatan di luar kantor.')
         ]),
 
         pageBreak(),
@@ -737,77 +739,77 @@ const doc = new Document({
 
         heading3('1. Pengertian dan Dasar Hukum SIMKIM'),
         justifiedPara([
-          tr('Sistem Informasi Manajemen Keimigrasian (SIMKIM) merupakan sistem teknologi informasi dan komunikasi yang dikembangkan oleh Direktorat Jenderal Imigrasi untuk mendukung seluruh proses pelayanan dan pengawasan keimigrasian di Indonesia. Berdasarkan Pasal 1 angka 31 Undang-Undang Nomor 6 Tahun 2011 tentang Keimigrasian, Sistem Informasi Manajemen Keimigrasian didefinisikan sebagai sistem teknologi informasi dan komunikasi yang digunakan untuk mengumpulkan, mengolah, dan menyajikan informasi guna mendukung operasional, manajemen, dan pengambilan keputusan dalam pelaksanaan tugas dan fungsi keimigrasian.')
+          tr('Sebagai tulang punggung digitalisasi keimigrasian di Indonesia, Sistem Informasi Manajemen Keimigrasian (SIMKIM) dikembangkan secara terpusat oleh Direktorat Jenderal Imigrasi. Sistem ini secara khusus diatur dalam Undang-Undang Nomor 6 Tahun 2011 tentang Keimigrasian pada Pasal 1 angka 31, yang menegaskan kedudukan SIMKIM sebagai infrastruktur teknologi informasi dan komunikasi untuk menghimpun, mengolah, serta menyajikan data demi mendukung pengambilan keputusan operasional maupun manajerial keimigrasian.')
         ]),
         justifiedPara([
-          tr('SIMKIM menggunakan arsitektur basis data terpusat ('),
+          tr('Arsitektur yang menopang SIMKIM berbasis pada basis data terpusat ('),
           tri('centralized database'),
-          tr(') yang menghubungkan seluruh Unit Pelaksana Teknis keimigrasian di Indonesia. Dengan arsitektur ini, data yang diinput di satu UPT dapat langsung diakses oleh UPT lain dan oleh Direktorat Jenderal Imigrasi di Jakarta secara '),
+          tr('). Model desentralisasi akses ini memungkinkan data yang diinput oleh petugas di tingkat daerah, seperti di Rudenim Pontianak, dapat langsung diakses secara '),
           tri('real-time'),
-          tr('. Pengembangan dan pemeliharaan SIMKIM dilakukan oleh Pusat Data dan Teknologi Informasi (Pusdatin) Direktorat Jenderal Imigrasi.')
+          tr(' oleh Direktorat Jenderal Imigrasi di Jakarta. Seluruh proses standardisasi, pengembangan sistem, serta pemeliharaan keamanannya dikelola langsung oleh Pusat Data dan Teknologi Informasi (Pusdatin) Direktorat Jenderal Imigrasi.')
         ]),
 
         heading3('2. Modul-Modul SIMKIM yang Digunakan di Rudenim'),
-        justifiedPara([tr('Dalam operasional Rudenim Pontianak, terdapat beberapa modul SIMKIM yang digunakan secara aktif oleh operator registrasi dan petugas keimigrasian:')]),
+        justifiedPara([tr('Untuk mendukung alur kerja yang cepat dan terdokumentasi, operasional Rudenim Pontianak memanfaatkan beberapa modul spesifik di dalam SIMKIM:')]),
 
         justifiedPara([
           trb('a) Modul Pendataan Deteni'),
         ], { indent: false }),
         justifiedPara([
-          tr('Modul ini merupakan modul utama yang digunakan untuk menginput seluruh data identitas deteni, mencakup nama lengkap, tempat dan tanggal lahir, kewarganegaraan, nomor paspor (apabila tersedia), jenis pelanggaran keimigrasian, nomor Surat Perintah Pendetensian, serta tanggal masuk ke Rudenim. Modul ini juga menyimpan foto wajah dan data biometrik sidik jari deteni yang direkam menggunakan perangkat '),
+          tr('Sebagai pintu awal pencatatan, modul ini berfungsi merekam identitas dasar deteni secara menyeluruh—mulai dari nama lengkap, kewarganegaraan, nomor paspor, hingga dasar hukum pendetensian (Surat Perintah Pendetensian). Di samping data tekstual, modul ini mengintegrasikan perekaman biometrik berupa sidik jari menggunakan perangkat '),
           tri('flatbed scanner'),
-          tr(' dan kamera web.')
+          tr(' serta pengambilan pasfoto digital deteni sebagai validasi visual.')
         ]),
 
         justifiedPara([
           trb('b) Modul Pengawasan dan Cekal'),
         ], { indent: false }),
         justifiedPara([
-          tr('Modul cekal (cegah-tangkal) memungkinkan petugas untuk mencocokkan data biometrik deteni dengan database cekal nasional. Modul ini sangat penting untuk memastikan tidak ada deteni yang memiliki identitas ganda ('),
+          tr('Integrasi data pencegahan dan penangkalan (cekal) nasional dapat diakses melalui modul ini. Petugas memanfaatkannya untuk mencocokkan profil deteni yang baru masuk dengan daftar cekal nasional guna memitigasi penggunaan identitas ganda ('),
           tri('double identity'),
-          tr(') atau yang merupakan target pencarian oleh instansi penegak hukum lainnya. Data biometrik yang direkam di Rudenim Pontianak secara otomatis diunggah ke server pusat untuk proses pencocokan.')
+          tr(') maupun mendeteksi jika deteni masuk dalam daftar pencarian orang (DPO) penegak hukum lain. Data biometrik yang direkam di Rudenim Pontianak secara otomatis terunggah ke server pusat untuk proses penyaringan.')
         ]),
 
         justifiedPara([
           trb('c) Modul Manifest dan Pelaporan'),
         ], { indent: false }),
         justifiedPara([
-          tr('Modul manifest menyajikan data keseluruhan deteni yang berada dalam penguasaan Rudenim secara aktual. Data manifest mencakup jumlah deteni berdasarkan kewarganegaraan, jenis kelamin, status detensi, lokasi blok hunian, dan status proses (menunggu deportasi, dalam proses pemindahan, dirawat di rumah sakit, dan sebagainya). Output manifest ini digunakan sebagai bahan laporan bulanan kepada Kantor Wilayah dan Direktorat Jenderal Imigrasi.')
+          tr('Modul ini menyediakan gambaran populasi deteni secara riil ('),
+          tri('up-to-date'),
+          tr(') di dalam Rudenim. Informasi yang disajikan mencakup klasifikasi kewarganegaraan, jenis kelamin, lokasi penempatan sel hunian, hingga status hukum yang sedang berjalan (seperti proses pendeportasian atau pemindahan). Data ini menjadi dasar utama penyusunan laporan periodik bagi Kantor Wilayah dan Ditjen Imigrasi.')
         ]),
 
         justifiedPara([
           trb('d) Modul Deportasi'),
         ], { indent: false }),
         justifiedPara([
-          tr('Modul deportasi digunakan untuk mencatat proses pengeluaran deteni dari Rudenim, baik melalui deportasi ke negara asal, pemindahan ke Rudenim lain, maupun pengeluaran karena alasan kemanusiaan. Modul ini merekam nomor Surat Keputusan Pengeluaran Deteni (SKPD), tanggal deportasi, rute penerbangan, dan status akhir deteni.')
+          tr('Modul ini mencatat akhir dari siklus pendetensian orang asing. Petugas menggunakannya untuk mendokumentasikan proses pengeluaran deteni, baik karena pendeportasian, pemindahan antar-Rudenim, maupun pelepasan bersyarat. Di dalamnya terekam detail penting seperti nomor Surat Keputusan Pengeluaran Deteni (SKPD), tanggal keberangkatan, serta rute penerbangan pemulangan.')
         ]),
 
         heading3('3. Kendala Penerapan SIMKIM di Rudenim Pontianak'),
-        justifiedPara([tr('Meskipun SIMKIM telah menjadi komponen integral dalam operasional Rudenim Pontianak, terdapat beberapa kendala yang masih dihadapi dalam penerapannya:')]),
+        justifiedPara([tr('Meskipun implementasi SIMKIM telah memangkas banyak prosedur manual, di lapangan petugas masih kerap menemui hambatan teknis yang memengaruhi kelancaran operasional:')]),
         ...resetList(),
         numberedItemRuns([
-          trb('Gangguan Koneksi Jaringan: '),
-          tr('Koneksi internet yang menghubungkan server lokal Rudenim dengan server pusat Direktorat Jenderal Imigrasi di Jakarta sering mengalami gangguan, menyebabkan kelambatan ('),
+          trb('Stabilitas Jaringan Internet: '),
+          tr('Sebagai sistem yang terpusat, kelancaran SIMKIM bergantung sepenuhnya pada kualitas jaringan. Di lapangan, koneksi internet yang menghubungkan Rudenim Pontianak dengan server pusat Ditjenim seringkali mengalami kelambatan ('),
           tri('latency'),
-          tr(') dalam proses sinkronisasi data biometrik dan pembaruan status deteni.')
+          tr(') atau gangguan transmisi data, terutama saat proses pencocokan biometrik berskala besar.')
         ]),
         numberedItemRuns([
-          trb('Keterbatasan Perangkat Keras: '),
-          tr('Perangkat pemindai sidik jari ('),
+          trb('Daya Dukung Perangkat Keras: '),
+          tr('Beberapa perangkat pemindai biometrik ('),
           tri('fingerprint scanner'),
-          tr(') dan kamera di beberapa ruang registrasi sudah mengalami penurunan kualitas, sehingga berpotensi menghasilkan data biometrik yang kurang akurat.')
+          tr(') dan kamera digital yang digunakan sudah berumur dan mengalami penurunan sensitivitas. Hal ini mengharuskan petugas mengulang proses pemindaian beberapa kali untuk mendapatkan kualitas sidik jari yang memenuhi standar.')
         ]),
         numberedItemRuns([
-          trb('Pencatatan Ganda: '),
-          tr('Belum adanya integrasi otomatis antara logbook pengamanan fisik (Seksi Kamtib) dengan data log digital SIMKIM memaksa petugas melakukan pencatatan ganda ('),
-          tri('double entry'),
-          tr('), meningkatkan risiko kesalahan manusia ('),
+          trb('Tumpang Tindih Pencatatan (Double Entry): '),
+          tr('Belum terhubungnya buku mutasi fisik yang dikelola oleh petugas penjagaan Kamtib dengan log digital SIMKIM menuntut adanya input data ganda. Petugas harus menyalin data secara manual ke buku laporan fisik sekaligus ke sistem elektronik, sehingga memicu risiko salah ketik ('),
           tri('human error'),
           tr(').')
         ]),
         numberedItemRuns([
-          trb('Keterbatasan Pelatihan: '),
-          tr('Rotasi pegawai yang cukup sering tanpa disertai pelatihan SIMKIM yang memadai menyebabkan beberapa petugas baru belum sepenuhnya menguasai pengoperasian modul-modul SIMKIM secara optimal.')
+          trb('Kesenjangan Literasi Sistem Akibat Rotasi: '),
+          tr('Adanya perputaran atau rotasi personel rutin di lingkungan keimigrasian terkadang tidak diiringi dengan pelatihan teknis SIMKIM yang menyeluruh bagi petugas baru. Akibatnya, pemanfaatan modul-modul tertentu di lapangan seringkali belum optimal.')
         ]),
 
         pageBreak(),
@@ -818,9 +820,11 @@ const doc = new Document({
         heading2('C. Standar Operasional Prosedur (SOP) Rudenim Pontianak'),
 
         justifiedPara([
-          tr('Pelaksanaan operasional di Rumah Detensi Imigrasi Pontianak diatur dalam 7 (tujuh) Standar Operasional Prosedur (SOP) utama yang saling terkait membentuk siklus hidup deteni dari kedatangan hingga keluar dari fasilitas. Hubungan terintegrasi ketujuh SOP tersebut digambarkan dalam diagram alur ('),
+          tr('Seluruh sendi operasional di Rumah Detensi Imigrasi Pontianak dipandu oleh 7 (tujuh) Standar Operasional Prosedur (SOP) utama yang saling bertaut membentuk siklus hidup ('),
+          tri('lifecycle'),
+          tr(') deteni secara utuh. Siklus ini diawali dari masa awal penerimaan hingga akhirnya deteni keluar dari fasilitas detensi. Hubungan interkoneksi di antara ketujuh SOP tersebut dipetakan dalam diagram alur ('),
           tri('flowchart'),
-          tr(') berikut:')
+          tr(') di bawah ini:')
         ]),
 
         // Diagram Flowchart
@@ -848,7 +852,7 @@ const doc = new Document({
 
         heading3('1. SOP Penerimaan Calon Deteni'),
         justifiedPara([
-          tr('SOP Penerimaan Calon Deteni mengatur tata cara penerimaan orang asing yang akan ditempatkan di Rudenim. Prosedur dimulai ketika Kantor Imigrasi pengirim mengirimkan surat pemberitahuan rencana penyerahan calon deteni beserta berkas kasusnya. Petugas Seksi Registrasi, Administrasi, dan Pelaporan kemudian menerima berkas, meneliti kelengkapannya, mencocokkan identitas fisik, dan menandatangani Berita Acara Serah Terima (BAST). Pada tahap ini, operator SIMKIM membuka log kedatangan baru dan merekam data awal.')
+          tr('SOP Penerimaan Calon Deteni mendefinisikan langkah formal dalam menyambut orang asing yang akan ditempatkan di dalam fasilitas UPT. Alur kerja bergulir saat Kantor Imigrasi pengirim melayangkan surat pemberitahuan rencana penyerahan beserta kelengkapan berkas perkara deteni. Petugas dari Seksi Registrasi, Administrasi, dan Pelaporan berkewajiban memeriksa kelayakan dokumen, memverifikasi kesesuaian fisik deteni, serta menandatangani Berita Acara Serah Terima (BAST). Secara bersamaan, operator SIMKIM akan membuat entri kedatangan baru guna merekam riwayat awal deteni.')
         ]),
         ...insertFlowchartImage('sop_penerimaan_flowchart.png', 'Flowchart SOP Penerimaan Calon Deteni', 450, true),
         tableCaptionCentered('Mutu Baku SOP Penerimaan Calon Deteni'),
@@ -874,7 +878,7 @@ const doc = new Document({
 
         heading3('2. SOP Pemeriksaan Kesehatan Deteni'),
         justifiedPara([
-          tr('SOP pemeriksaan kesehatan menjamin pemenuhan hak atas layanan kesehatan bagi deteni selama masa detensi. Prosedurnya meliputi: (1) pemeriksaan kesehatan awal pada saat deteni pertama kali masuk Rudenim; (2) pemeriksaan berkala oleh petugas medis di poliklinik internal; (3) penanganan deteni yang sakit, baik rawat jalan maupun rawat inap di poliklinik; (4) rujukan ke Rumah Sakit Umum Daerah (RSUD) apabila memerlukan perawatan spesialis, dengan pengawalan ketat dari Seksi Kamtib; serta (5) pencatatan rekam medis digital ke dalam sub-modul perawatan SIMKIM dan pembaruan status deteni menjadi "Dirawat" untuk keperluan akuntabilitas pengawasan.')
+          tr('SOP Pemeriksaan Kesehatan Deteni menjamin bahwa setiap deteni memperoleh hak pelayanan kesehatan yang layak selama menjalani masa pendetensian. Lingkup prosedur ini meliputi skrining kesehatan awal begitu deteni tiba, pemeriksaan berkala oleh dokter atau perawat di poliklinik UPT, serta penanganan perawatan jalan maupun rawat inap lokal. Bila kondisi medis deteni memburuk dan memerlukan tindakan spesialis, petugas akan merujuknya ke Rumah Sakit Umum Daerah (RSUD) dengan pengawalan ketat personel Kamtib. Seluruh rekam medis dan pembaruan status deteni direkam ke dalam sistem untuk menjaga transparansi pengawasan.')
         ]),
         ...insertFlowchartImage('sop_kesehatan_flowchart.png', 'Flowchart SOP Pemeriksaan Kesehatan Deteni', 380),
         tableCaptionCentered('Mutu Baku SOP Pemeriksaan Kesehatan Deteni'),
@@ -910,9 +914,9 @@ const doc = new Document({
 
         heading3('3. SOP Registrasi Deteni'),
         justifiedPara([
-          tr('Registrasi deteni merupakan tahapan krusial yang melibatkan perekaman data biometrik secara menyeluruh ke dalam SIMKIM. Setelah diterima secara administratif, deteni dibawa ke ruang registrasi di mana operator menggunakan perangkat '),
+          tr('Registrasi Deteni menjadi tahapan vital untuk mentransformasi data fisik deteni menjadi rekaman digital pada database nasional. Begitu proses administratif awal rampung, deteni diarahkan ke ruang registrasi. Di sini, operator memindai sidik jari menggunakan perangkat '),
           tri('flatbed scanner'),
-          tr(' sidik jari untuk merekam sepuluh jari tangan, kamera web untuk foto wajah, serta menginput seluruh biodata secara manual ke dalam modul pendataan deteni SIMKIM. Data biometrik yang terekam langsung diunggah ke server pusat untuk dicocokkan dengan database cekal nasional. Output dari proses ini adalah terbitnya Nomor Registrasi Deteni dan pencetakan Kartu Identitas Deteni yang harus dibawa oleh deteni selama berada di Rudenim.')
+          tr(', mengambil pasfoto terbaru, serta mengentri biodata lengkap ke dalam modul pendataan SIMKIM. Perekaman data biometrik ini terhubung langsung dengan server pusat untuk proses penyaringan daftar cekal nasional. Hasil akhir dari prosedur ini adalah terbitnya Nomor Registrasi Deteni dan pencetakan Kartu Identitas Deteni.')
         ]),
         ...insertFlowchartImage('sop_registrasi_flowchart.png', 'Flowchart SOP Registrasi Deteni', 450),
         tableCaptionCentered('Mutu Baku SOP Registrasi Deteni'),
@@ -936,7 +940,7 @@ const doc = new Document({
 
         heading3('4. SOP Penempatan Deteni'),
         justifiedPara([
-          tr('SOP penempatan mengatur pembagian deteni ke dalam blok hunian berdasarkan kriteria tertentu untuk menjaga ketertiban dan keamanan. Petugas Seksi Kamtib menentukan penempatan berdasarkan data yang diperoleh dari registrasi SIMKIM, meliputi: jenis kelamin, usia, kewarganegaraan, tingkat kerawanan konflik berdasarkan negara asal, dan status kerentanan khusus (wanita hamil, anak-anak, lansia, atau penyandang disabilitas). Nomor kamar dan blok hunian kemudian diinput ke dalam SIMKIM agar manifest lokasi fisik deteni selalu sinkron dengan data digital.')
+          tr('SOP Penempatan Deteni mengatur pembagian ruang sel hunian untuk meminimalisir gesekan sosial dan menjaga stabilitas keamanan di dalam UPT. Berbekal profil data dari SIMKIM, petugas Kamtib melakukan pengelompokan deteni berdasarkan parameter jenis kelamin, rentang usia, kewarganegaraan, riwayat kerawanan konflik negara asal, hingga kondisi rentan (seperti wanita hamil, anak-anak, lansia, atau penyandang disabilitas). Untuk menjaga akurasi manifest, nomor blok dan kamar hunian deteni diinput secara presisi ke dalam SIMKIM.')
         ]),
         ...insertFlowchartImage('sop_penempatan_flowchart.png', 'Flowchart SOP Penempatan Deteni Ke Blok Hunian', 450),
         tableCaptionCentered('Mutu Baku SOP Penempatan Deteni'),
@@ -966,9 +970,7 @@ const doc = new Document({
 
         heading3('5. SOP Penjagaan dan Pengamanan Deteni'),
         justifiedPara([
-          tr('SOP ini bertujuan menjamin keselamatan seluruh penghuni dan petugas Rudenim. Regu jaga melaksanakan: (1) patroli keliling setiap 2 jam; (2) apel pagi dan sore untuk menghitung kehadiran deteni; (3) penguncian dan pemeriksaan pintu jeruji setiap pergantian regu; (4) inspeksi mendadak (sidak) barang-barang terlarang di kamar blok; dan (5) penanganan keadaan darurat seperti percobaan melarikan diri atau kerusuhan. Petugas Kamtib memperbarui status harian deteni (hadir, di poliklinik, di ruang isolasi) pada SIMKIM sehingga manifest deteni selalu '),
-          tri('up-to-date'),
-          tr('.')
+          tr('SOP Penjagaan dan Pengamanan Deteni dirancang demi menjaga kondusivitas serta memitigasi risiko keamanan di lingkungan kerja Rudenim. Dalam pelaksanaannya, regu jaga melakukan patroli keliling berkala setiap dua jam, menggelar apel pagi dan sore untuk verifikasi fisik deteni, menguji kekokohan jeruji besi sel, serta melakukan razia berkala terhadap barang-barang terlarang. Petugas penjagaan juga secara rutin melakukan pemutakhiran data kehadiran harian deteni ke dalam sistem agar manifest pengawasan elektronik tetap akurat.')
         ]),
         ...insertFlowchartImage('sop_penjagaan_flowchart.png', 'Flowchart SOP Penjagaan & Pengamanan Rudenim', 450),
         tableCaptionCentered('Mutu Baku SOP Penjagaan & Pengamanan Deteni'),
@@ -992,11 +994,11 @@ const doc = new Document({
 
         heading3('6. SOP Pemindahan Deteni'),
         justifiedPara([
-          tr('SOP Pemindahan Deteni mengatur tata cara pemindahan deteni ke UPT Rudenim lain di Indonesia atau ke Direktorat Jenderal Imigrasi akibat kelebihan kapasitas ('),
+          tr('SOP Pemindahan Deteni menguraikan mekanisme mutasi deteni ke UPT Rudenim lain atau ke pusat akibat kendala kelebihan kapasitas ('),
           tri('overcapacity'),
-          tr(') atau pertimbangan keamanan darurat. Prosedurnya dimulai ketika Seksi Registrasi, Administrasi, dan Pelaporan berkoordinasi dengan Rudenim tujuan dan Kantor Wilayah Kementerian Hukum dan HAM. Setelah mendapat persetujuan, diterbitkan Surat Perintah Pemindahan, dan petugas Seksi Kamtib melakukan pengawalan deteni ke bandara hingga tiba di UPT tujuan. Integrasi SIMKIM pada tahap ini dilakukan dengan mentransfer status kepemilikan data deteni ('),
+          tr(') maupun alasan keamanan yang mendesak. Proses ini diinisiasi oleh Seksi Registrasi melalui koordinasi dengan Kantor Wilayah Kemenkumham serta Rudenim penerima. Pasca terbitnya persetujuan resmi dan Surat Perintah Pemindahan, regu Kamtib melaksanakan pengawalan melekat hingga bandara dan mengantarkannya sampai ke tujuan. Dari aspek sistem, administrator melakukan transfer kepemilikan data ('),
           tri('transfer ownership'),
-          tr(') secara sistem dari database Rudenim Pontianak ke Rudenim penerima, sehingga riwayat mutasi deteni tercatat secara nasional.')
+          tr(') di SIMKIM untuk memastikan riwayat perjalanan deteni terdokumentasi secara nasional.')
         ]),
         ...insertFlowchartImage('sop_pemindahan_flowchart.png', 'Flowchart SOP Pemindahan Deteni Antar Rudenim', 380),
         tableCaptionCentered('Mutu Baku SOP Pemindahan Deteni'),
@@ -1034,7 +1036,7 @@ const doc = new Document({
 
         heading3('7. SOP Pendeportasian Deteni'),
         justifiedPara([
-          tr('SOP pendeportasian merupakan tahapan akhir dari siklus pengelolaan deteni. Prosedurnya meliputi: (1) verifikasi kelengkapan dokumen perjalanan (paspor dari Kedutaan Besar negara asal atau Surat Perjalanan Laksana Paspor/SPLP); (2) konfirmasi tiket penerbangan aktif; (3) penyusunan Surat Keputusan Pengeluaran Deteni (SKPD) dan Surat Perintah Pendeportasian (SPP) oleh Seksi Registrasi untuk ditandatangani Kepala Rudenim; (4) pengawalan melekat oleh petugas Kamtib dari Rudenim hingga ke gerbang keberangkatan Tempat Pemeriksaan Imigrasi (TPI) bandara; dan (5) pengunggahan Berita Acara Pendeportasian serta perubahan status deteni di SIMKIM menjadi "Sudah Dideportasi". Dengan demikian, seluruh siklus kehidupan deteni di Rudenim terekam lengkap secara digital.')
+          tr('SOP Pendeportasian Deteni menjadi kulminasi dari seluruh rangkaian masa pendetensian orang asing. Tahap akhir ini diawali dengan verifikasi dokumen keimigrasian (paspor aktif atau SPLP dari perwakilan negara asing) serta konfirmasi tiket kepulangan yang valid. Selanjutnya, Seksi Registrasi menyiapkan berkas Surat Keputusan Pengeluaran Deteni (SKPD) dan Surat Perintah Pendeportasian (SPP) untuk disahkan oleh Kepala Rudenim. Petugas Kamtib kemudian mengawal deteni secara melekat dari kantor menuju Tempat Pemeriksaan Imigrasi (TPI) di bandara. Setelah proses keberangkatan selesai, status deteni diubah di SIMKIM menjadi "Sudah Dideportasi" sebagai tanda siklus pendetensiannya berakhir.')
         ]),
         ...insertFlowchartImage('sop_deportasi_flowchart.png', 'Flowchart SOP Pendeportasian Deteni Ke Negara Asal', 380),
         tableCaptionCentered('Mutu Baku SOP Pendeportasian Deteni'),
@@ -1079,9 +1081,9 @@ const doc = new Document({
         heading3('   (Perspektif Leavitt\'s Diamond Model)'),
 
         justifiedPara([
-          tr('Untuk memahami secara komprehensif bagaimana struktur organisasi, SIMKIM, dan SOP di Rudenim Pontianak saling berinteraksi, penulis menggunakan kerangka analisis '),
+          tr('Guna membedah interaksi lintas-komponen antara struktur organisasi, penerapan SIMKIM, dan kepatuhan SOP di Rudenim Pontianak secara holistik, penulis menerapkan kerangka analisis '),
           trb('Leavitt\'s Diamond Model'),
-          tr(' (1965). Model ini dikembangkan oleh Harold J. Leavitt yang memandang organisasi sebagai sebuah sistem dengan empat elemen yang saling terkait secara erat: Struktur ('),
+          tr(' (1965). Harold J. Leavitt merumuskan bahwa organisasi bukanlah sekadar tumpukan fungsi terpisah, melainkan suatu kesatuan dinamis yang ditopang oleh empat pilar utama: Struktur ('),
           tri('Structure'),
           tr('), Tugas ('),
           tri('Task'),
@@ -1089,7 +1091,7 @@ const doc = new Document({
           tri('Technology'),
           tr('), dan Sumber Daya Manusia ('),
           tri('People'),
-          tr('). Perubahan pada satu elemen akan secara langsung maupun tidak langsung mempengaruhi ketiga elemen lainnya. Kerangka analisis ini digambarkan pada Gambar 2.10.')
+          tr('). Hubungan timbal balik ini bersifat interdependen, di mana dinamika pada satu pilar secara otomatis mendistribusikan pengaruh ke tiga pilar lainnya. Kerangka konseptual ini digambarkan secara visual pada Gambar 2.10.')
         ]),
 
         // Diagram Leavitt
@@ -1115,42 +1117,43 @@ const doc = new Document({
         }),
         tableSource('Sumber: Diadaptasi dari Leavitt (1965), diolah peneliti (2026).'),
 
-        justifiedPara([tr('Berdasarkan kerangka di atas, berikut adalah analisis integrasi keempat elemen di Rudenim Pontianak:')]),
+        justifiedPara([tr('Bersandarkan pada visualisasi model di atas, berikut dipaparkan hasil analisis keterkaitan antarpilar organisasi di Rudenim Pontianak:')]),
 
         heading3('1. Elemen Struktur (Structure)'),
         justifiedPara([
-          tr('Struktur organisasi Rudenim Pontianak membagi tanggung jawab ke dalam empat unit kerja utama yang masing-masing memiliki peran spesifik dalam siklus pengelolaan deteni. Hierarki yang jelas dari Kepala Rudenim hingga ke staf pelaksana menjamin '),
+          tr('Pembagian peran di Rudenim Pontianak terpetakan secara formal ke dalam empat unit kerja utama yang memandu siklus hidup deteni dari awal hingga akhir. Adanya tata tingkat (hierarki) yang tegas dari level Kepala Rudenim hingga pelaksana teknis menjamin garis komando ('),
           tri('chain of command'),
-          tr(' yang tegas. Pembagian tugas antara Seksi Registrasi (pengolahan data), Seksi Kamtib (pengamanan fisik), dan Seksi Perawatan (kesejahteraan deteni) menciptakan spesialisasi fungsi yang mendukung efisiensi operasional. Namun, struktur yang kaku (rigid) juga dapat menjadi hambatan ketika diperlukan koordinasi lintas seksi yang cepat, misalnya saat terjadi keadaan darurat yang memerlukan respons simultan dari ketiga seksi sekaligus.')
+          tr(') berjalan tanpa hambatan. Spesialisasi tugas yang memisahkan Seksi Registrasi (otoritas data digital), Seksi Kamtib (kontrol keamanan fisik), serta Seksi Perawatan (pemenuhan hak dasar) terbukti mendorong efisiensi kerja. Walau demikian, kekakuan struktural kerap memicu hambatan dalam situasi darurat di mana koordinasi lintas seksi dituntut berjalan instan tanpa harus tersangkut jalur birokrasi yang panjang.')
         ]),
 
         heading3('2. Elemen Tugas (Task)'),
         justifiedPara([
-          tr('Tugas operasional di Rudenim Pontianak dijabarkan dalam tujuh SOP utama yang mengatur siklus pengelolaan deteni dari hulu (penerimaan) hingga hilir (pendeportasian). Setiap SOP mendefinisikan secara rinci tahapan prosedur, penanggung jawab, dan '),
+          tr('Seluruh mandat operasional UPT dikristalisasikan dalam bentuk tujuh SOP utama yang mengawal pergerakan deteni secara berurutan. Setiap SOP menjabarkan batasan wewenang, tahapan aktivitas, serta keluaran ('),
           tri('output'),
-          tr(' yang diharapkan. SOP berfungsi sebagai jembatan antara struktur organisasi (siapa yang mengerjakan) dan teknologi (bagaimana cara mengerjakannya melalui SIMKIM). Tanpa SOP yang jelas, pembagian tugas dalam struktur organisasi menjadi tidak bermakna, dan penggunaan SIMKIM menjadi tidak terarah.')
+          tr(') dokumen yang harus dipenuhi. Keberadaan SOP ini memegang fungsi krusial sebagai jembatan yang menghubungkan kejelasan peran dalam struktur organisasi dengan fungsionalitas teknologi SIMKIM. Tanpa panduan prosedur yang mapan, pembagian tugas dalam struktur akan kehilangan arah, dan pemanfaatan sistem informasi keimigrasian akan berjalan tanpa orientasi yang jelas.')
         ]),
 
         heading3('3. Elemen Teknologi (Technology)'),
         justifiedPara([
-          tr('SIMKIM sebagai komponen teknologi memegang peranan sentral dalam mengintegrasikan seluruh proses operasional Rudenim. Aplikasi ini mengubah proses pencatatan manual menjadi digital, memungkinkan penyimpanan data terpusat, dan memfasilitasi komunikasi data antar UPT secara '),
+          tr('Dalam lanskap modern Rudenim, SIMKIM bertindak sebagai simpul digital yang merekatkan seluruh lini operasional. Sistem ini mengeliminasi inefisiensi pencatatan manual lewat penyimpanan data terpusat, serta mempercepat pertukaran informasi antar-UPT keimigrasian secara nirkabel dan '),
           tri('real-time'),
-          tr('. Namun, efektivitas SIMKIM sangat bergantung pada ketersediaan infrastruktur pendukung (jaringan internet yang stabil, perangkat keras yang memadai) serta kesiapan SDM untuk mengoperasikannya. Kendala-kendala teknis yang telah diidentifikasi sebelumnya (gangguan jaringan, perangkat usang, pencatatan ganda) menunjukkan bahwa elemen teknologi tidak dapat berdiri sendiri tanpa dukungan dari elemen lainnya.')
+          tr('. Kendati begitu, kinerja SIMKIM tidak berdiri di ruang hampa; kegunaannya disokong penuh oleh infrastruktur fisik (jaringan internet daerah dan perangkat keras) serta kesiapan operator di lapangan. Beberapa hambatan operasional seperti gangguan koneksi dan perangkat biometrik yang usang menjadi bukti bahwa teknologi tidak akan berjalan optimal tanpa keselarasan pilar lainnya.')
         ]),
 
         heading3('4. Elemen Sumber Daya Manusia (People)'),
         justifiedPara([
-          tr('SDM merupakan elemen paling dinamis dalam Leavitt\'s Diamond. Di Rudenim Pontianak, SDM terdiri dari berbagai tingkatan mulai dari pimpinan (Kepala Rudenim), manajer menengah (Kepala Seksi), hingga pelaksana teknis (operator SIMKIM, petugas jaga, staf medis). Kemampuan SDM dalam mengoperasikan SIMKIM, memahami SOP, dan menjalankan perannya sesuai struktur organisasi menjadi faktor penentu keberhasilan integrasi ketiga komponen tersebut. Rotasi pegawai yang cukup sering tanpa pelatihan yang memadai menjadi tantangan tersendiri yang perlu diatasi agar kualitas pelayanan tidak menurun.')
+          tr('Sebagai penggerak utama seluruh sistem, unsur Sumber Daya Manusia (SDM) merupakan pilar paling dinamis di bawah kerangka model Leavitt. Komposisi personel di Rudenim Pontianak terdistribusi mulai dari unsur kepemimpinan strategis, manajer menengah (Kepala Seksi), hingga garda pelaksana (operator registrasi, pengawal Kamtib, dan nakes). Tingkat kemahiran pegawai dalam menavigasi aplikasi SIMKIM serta komitmen mematuhi SOP menjadi penentu keberhasilan integrasi sistem. Oleh karena itu, kebijakan rotasi staf yang dinamis harus dibarengi dengan transfer pengetahuan atau pelatihan sistem berkelanjutan demi mencegah penurunan performa pelayanan di lapangan.')
         ]),
 
         heading3('5. Analisis Keterkaitan Antar Elemen'),
         justifiedPara([
-          tr('Analisis menggunakan Leavitt\'s Diamond Model menunjukkan bahwa ketiga komponen yang diteliti (struktur organisasi, SIMKIM, dan SOP) pada Rudenim Pontianak saling bergantung dan tidak dapat dioptimalkan secara terpisah. Hubungan keterkaitan ini dapat diringkas sebagai berikut:')
+          tr('Melalui kacamata Leavitt\'s Diamond Model, dapat ditarik benang merah bahwa pilar-pilar organisasi di Rudenim Pontianak bertaut secara mutlak. Mengisolasi atau mengabaikan salah satu pilar saat mencoba merestrukturisasi pelayanan publik keimigrasian terbukti tidak efektif. Untuk mempermudah pemahaman mengenai interdependensi ini, matriks keterkaitan antarelemen dirangkum sebagai berikut:')
         ]),
 
         // Tabel Keterkaitan
         tableCaptionCentered('Matriks Keterkaitan Antar Elemen Leavitt\'s Diamond'),
         new Table({
+          alignment: AlignmentType.CENTER,
           width: { size: CONTENT_W, type: WidthType.DXA },
           columnWidths: [2200, 2700, 3037],
           rows: [
@@ -1208,9 +1211,7 @@ const doc = new Document({
         tableSource('Sumber: Analisis peneliti berdasarkan Leavitt\'s Diamond Model (2026).'),
 
         justifiedPara([
-          tr('Dari matriks di atas, terlihat bahwa setiap perubahan pada satu elemen akan berdampak pada elemen lainnya. Misalnya, apabila Direktorat Jenderal Imigrasi melakukan pembaruan versi SIMKIM (perubahan teknologi), maka diperlukan penyesuaian SOP (tugas), pelatihan ulang SDM ('),
-          tri('people'),
-          tr('), dan mungkin penyesuaian kewenangan akses dalam struktur organisasi. Hal ini menegaskan pentingnya pendekatan holistik dalam mengelola perubahan organisasi di Rudenim Pontianak.')
+          tr('Matriks di atas menegaskan kembali hukum interdependensi: disfungsi atau pembaharuan pada satu elemen dipastikan memicu efek domino pada elemen lain. Sebagai contoh konkrit, bila Direktorat Jenderal Imigrasi meluncurkan pembaruan perangkat lunak SIMKIM (pilar teknologi), maka Rudenim Pontianak wajib menyesuaikan instruksi teknis (pilar tugas), melatih ulang operator (pilar SDM), serta mengkalibrasi ulang otoritas akses berdasarkan jenjang jabatan (pilar struktur). Fenomena ini memperkuat argumentasi ilmiah mengenai pentingnya tata kelola perubahan yang terintegrasi dan menyeluruh.')
         ]),
 
         pageBreak(),
@@ -1237,16 +1238,16 @@ const doc = new Document({
         justifiedPara([tr('Berdasarkan pembahasan yang telah diuraikan, dapat ditarik beberapa kesimpulan sebagai berikut:')], { indent: false }),
         ...resetList(),
         numberedItemRuns([
-          tr('Struktur organisasi Rudenim Pontianak terdiri atas Kepala Rudenim, Sub Bagian Tata Usaha, Seksi Registrasi, Administrasi dan Pelaporan, Seksi Keamanan dan Ketertiban, serta Seksi Perawatan dan Kesehatan. Pembagian tugas yang jelas antar unit kerja mendukung spesialisasi fungsi dan efisiensi operasional dalam pengelolaan deteni, meskipun koordinasi lintas seksi masih perlu ditingkatkan terutama dalam penanganan keadaan darurat.')
+          tr('Rantai birokrasi dan operasional Rudenim Pontianak secara formal terbagi ke dalam lima unit utama: Kepala Rudenim, Subbagian Tata Usaha, Seksi Registrasi, Seksi Keamanan dan Ketertiban, serta Seksi Perawatan dan Kesehatan. Pembagian ini cukup efektif dalam menciptakan spesialisasi fungsi kerja dan efisiensi harian. Kendati demikian, di lapangan sinergi koordinasi antar-seksi masih menghadapi celah hambatan, khususnya ketika dituntut merespons situasi darurat secara cepat.')
         ]),
         numberedItemRuns([
-          tr('SIMKIM telah diterapkan sebagai sistem informasi terintegrasi yang mendukung seluruh proses administrasi deteni di Rudenim Pontianak, meliputi modul pendataan deteni, modul pengawasan dan cekal, modul manifest dan pelaporan, serta modul deportasi. Namun, penerapannya masih menghadapi kendala berupa gangguan koneksi jaringan, keterbatasan perangkat keras, pencatatan ganda, dan keterbatasan pelatihan bagi petugas baru.')
+          tr('Sebagai basis teknologi pendukung, aplikasi SIMKIM berperan vital menyatukan pencatatan administratif deteni melalui empat modul utama (pendataan, pengawasan cekal, manifest pelaporan, dan pendeportasian). Implementasi sistem ini sayangnya masih dibayangi kendala klasik seperti jaringan internet yang lambat, kualitas fisik pemindai biometrik yang menurun, tuntutan pencatatan ganda manual-digital, serta belum meratanya literasi sistem bagi pegawai baru.')
         ]),
         numberedItemRuns([
-          tr('Pelaksanaan SOP di Rudenim Pontianak mengatur secara sistematis siklus pengelolaan deteni dari penerimaan hingga pendeportasian. Hampir seluruh tahapan SOP mensyaratkan penggunaan SIMKIM, sehingga terdapat integrasi yang erat antara prosedur operasional dan sistem informasi.')
+          tr('Ketujuh SOP yang berlaku telah berhasil menyusun jalannya siklus hidup deteni dari proses penerimaan awal hingga pemulangan paksa ke negara asal. Mengingat hampir setiap fase kegiatan operasional di lapangan mewajibkan input data ke sistem komputer, dapat disimpulkan bahwa integrasi antara prosedur kerja standar dan sistem teknologi informasi keimigrasian di Rudenim Pontianak terjalin sangat erat.')
         ]),
         numberedItemRuns([
-          tr('Analisis menggunakan Leavitt\'s Diamond Model menunjukkan bahwa struktur organisasi, SIMKIM, SOP, dan SDM di Rudenim Pontianak merupakan empat elemen yang saling bergantung. Optimalisasi satu elemen tanpa memperhatikan elemen lainnya tidak akan memberikan hasil yang maksimal. Pendekatan holistik yang mempertimbangkan keseimbangan keempat elemen diperlukan untuk meningkatkan efektivitas pengelolaan administrasi deteni secara keseluruhan.')
+          tr('Berdasarkan analisis Leavitt\'s Diamond Model, keempat pilar organisasi (Struktur, Tugas, Teknologi, dan Manusia) di Rudenim Pontianak terikat dalam hubungan saling mempengaruhi secara dinamis. Mengakselerasi salah satu pilar secara sektoral tanpa membenahi pilar lainnya hanya akan memicu inefisiensi baru. Oleh karena itu, perbaikan manajemen deteni harus bertumpu pada pendekatan terpadu yang menyelaraskan keempat elemen tersebut.')
         ]),
 
         // B. Saran
@@ -1254,28 +1255,28 @@ const doc = new Document({
         justifiedPara([tr('Berdasarkan kesimpulan di atas, penulis memberikan beberapa saran sebagai berikut:')], { indent: false }),
         ...resetList(),
         numberedItemRuns([
-          trb('Peningkatan Infrastruktur Teknologi: '),
-          tr('Direktorat Jenderal Imigrasi perlu memprioritaskan peningkatan kapasitas bandwidth dan stabilitas jaringan pada UPT di daerah, termasuk Rudenim Pontianak, agar koneksi ke server pusat SIMKIM lebih andal dan mendukung kelancaran operasional harian.')
+          trb('Modernisasi Infrastruktur Jaringan: '),
+          tr('Direktorat Jenderal Imigrasi perlu memberikan atensi lebih pada penyediaan kapasitas bandwidth yang memadai serta kestabilan jaringan internet pada UPT daerah. Langkah ini sangat krusial bagi Rudenim Pontianak agar akses ke database pusat SIMKIM tidak mengalami hambatan sinkronisasi data biometrik.')
         ]),
         numberedItemRuns([
-          trb('Pembaruan Perangkat Keras: '),
-          tr('Perangkat penunjang SIMKIM seperti scanner biometrik dan kamera perlu diperbarui secara berkala agar kualitas data biometrik yang direkam tetap akurat dan sesuai standar.')
+          trb('Peremajaan Perangkat Keras Biometrik: '),
+          tr('Perlu dilakukan inventarisasi dan penggantian unit pemindai sidik jari serta kamera digital yang telah usang di ruang pelayanan registrasi. Pengadaan alat baru akan mempercepat proses antrean pendaftaran deteni sekaligus menjamin akurasi data biometrik yang terekam.')
         ]),
         numberedItemRuns([
-          trb('Integrasi Logbook Digital: '),
-          tr('Perlu dikembangkan fitur pada SIMKIM yang memungkinkan integrasi langsung antara logbook pengamanan fisik Seksi Kamtib dengan log digital SIMKIM untuk menghilangkan praktik pencatatan ganda ('),
+          trb('Penyatuan Buku Mutasi Digital: '),
+          tr('Ditjen Imigrasi disarankan mengembangkan sub-modul pencatatan keamanan pada SIMKIM. Integrasi ini bertujuan menyatukan buku laporan fisik (logbook) regu jaga Kamtib dengan status digital di sistem, sehingga petugas tidak perlu lagi melakukan penginputan ganda ('),
           tri('double entry'),
-          tr(').')
+          tr(') yang memicu risiko human error.')
         ]),
         numberedItemRuns([
-          trb('Program Pelatihan Berkala: '),
-          tr('Perlu disusun program pelatihan SIMKIM secara rutin, terutama bagi petugas baru hasil rotasi, agar seluruh SDM memiliki kompetensi yang memadai dalam mengoperasikan sistem. Pelatihan dapat dilakukan melalui modul '),
+          trb('Pelatihan Sistem Berkelanjutan: '),
+          tr('Rudenim Pontianak sebaiknya merancang bimbingan teknis SIMKIM secara rutin bagi pegawai baru hasil rotasi jabatan. Pemanfaatan platform '),
           tri('e-learning'),
-          tr(' yang terintegrasi dengan sistem internal Direktorat Jenderal Imigrasi.')
+          tr(' internal kementerian dapat menjadi solusi efisien untuk menyamakan kompetensi teknis operasional sistem di kalangan petugas lapangan.')
         ]),
         numberedItemRuns([
-          trb('Evaluasi Berkala dengan Pendekatan Holistik: '),
-          tr('Rudenim Pontianak perlu melakukan evaluasi berkala terhadap integrasi struktur, SIMKIM, dan SOP menggunakan kerangka seperti Leavitt\'s Diamond Model untuk memastikan keselarasan keempat elemen organisasi dalam menghadapi dinamika perubahan.')
+          trb('Evaluasi Manajemen Holistik: '),
+          tr('Manajemen Rudenim Pontianak disarankan mengadopsi instrumen evaluasi kinerja organisasi secara komprehensif, seperti menggunakan kerangka Leavitt\'s Diamond Model. Pemantauan berkala ini penting guna memastikan keselarasan antara restrukturisasi unit, pembaruan prosedur kerja (SOP), dan peningkatan kapasitas SDM seiring perkembangan zaman.')
         ]),
 
         pageBreak(),

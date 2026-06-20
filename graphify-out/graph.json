@@ -1043,10 +1043,50 @@
       "norm_label": "bordersall"
     },
     {
+      "label": "borderNone",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_bordernone",
+      "community": 269,
+      "norm_label": "bordernone"
+    },
+    {
+      "label": "bordersHeader",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_bordersheader",
+      "community": 269,
+      "norm_label": "bordersheader"
+    },
+    {
+      "label": "bordersMiddle",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_bordersmiddle",
+      "community": 269,
+      "norm_label": "bordersmiddle"
+    },
+    {
+      "label": "bordersBottom",
+      "file_type": "code",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "makalah_sim_build_makalah_sim_v2_bordersbottom",
+      "community": 269,
+      "norm_label": "bordersbottom"
+    },
+    {
       "label": "emptyRow()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L29",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_emptyrow",
       "community": 269,
@@ -1056,7 +1096,7 @@
       "label": "centered()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L33",
+      "source_location": "L38",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_centered",
       "community": 269,
@@ -1066,7 +1106,7 @@
       "label": "justifiedPara()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L41",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_justifiedpara",
       "community": 269,
@@ -1076,7 +1116,7 @@
       "label": "chapterHeader()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L51",
+      "source_location": "L56",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_chapterheader",
       "community": 269,
@@ -1086,7 +1126,7 @@
       "label": "frontMatterHeader()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L65",
+      "source_location": "L70",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_frontmatterheader",
       "community": 269,
@@ -1096,7 +1136,7 @@
       "label": "tr()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L75",
+      "source_location": "L80",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_tr",
       "community": 269,
@@ -1106,7 +1146,7 @@
       "label": "tri()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L78",
+      "source_location": "L83",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_tri",
       "community": 269,
@@ -1116,7 +1156,7 @@
       "label": "trb()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L79",
+      "source_location": "L84",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_trb",
       "community": 269,
@@ -1126,7 +1166,7 @@
       "label": "heading2()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L81",
+      "source_location": "L86",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_heading2",
       "community": 269,
@@ -1136,7 +1176,7 @@
       "label": "heading3()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L90",
+      "source_location": "L95",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_heading3",
       "community": 269,
@@ -1146,7 +1186,7 @@
       "label": "pageBreak()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L99",
+      "source_location": "L104",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_pagebreak",
       "community": 269,
@@ -1156,7 +1196,7 @@
       "label": "resetList()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L106",
+      "source_location": "L111",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_resetlist",
       "community": 269,
@@ -1166,7 +1206,7 @@
       "label": "numberedItemRuns()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L111",
+      "source_location": "L116",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_numbereditemruns",
       "community": 269,
@@ -1176,7 +1216,7 @@
       "label": "getPngDimensions()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L120",
+      "source_location": "L125",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_getpngdimensions",
       "community": 269,
@@ -1186,7 +1226,7 @@
       "label": "getScaledDimensions()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L128",
+      "source_location": "L133",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_getscaleddimensions",
       "community": 269,
@@ -1196,7 +1236,7 @@
       "label": "cellPara()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L137",
+      "source_location": "L142",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_cellpara",
       "community": 269,
@@ -1206,7 +1246,7 @@
       "label": "createMutuBakuTable()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L150",
+      "source_location": "L156",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_createmutubakutable",
       "community": 269,
@@ -1216,7 +1256,7 @@
       "label": "insertFlowchartImage()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L184",
+      "source_location": "L194",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_insertflowchartimage",
       "community": 269,
@@ -1226,7 +1266,7 @@
       "label": "tableCaptionCentered()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L213",
+      "source_location": "L223",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_tablecaptioncentered",
       "community": 269,
@@ -1236,7 +1276,7 @@
       "label": "tableSource()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L224",
+      "source_location": "L234",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_tablesource",
       "community": 269,
@@ -1246,7 +1286,7 @@
       "label": "daftarPustakaEntry()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L232",
+      "source_location": "L242",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_daftarpustakaentry",
       "community": 269,
@@ -1256,7 +1296,7 @@
       "label": "createFrontMatterFooter()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L241",
+      "source_location": "L251",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_createfrontmatterfooter",
       "community": 269,
@@ -1266,7 +1306,7 @@
       "label": "createChapterHeadersAndFooters()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L257",
+      "source_location": "L267",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_createchapterheadersandfooters",
       "community": 269,
@@ -1276,7 +1316,7 @@
       "label": "tocEntry()",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L294",
+      "source_location": "L304",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_tocentry",
       "community": 269,
@@ -1286,7 +1326,7 @@
       "label": "chapterPageSetup",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L322",
+      "source_location": "L332",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_chapterpagesetup",
       "community": 269,
@@ -1296,7 +1336,7 @@
       "label": "frontMatterFooter",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L323",
+      "source_location": "L333",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_frontmatterfooter",
       "community": 269,
@@ -1306,7 +1346,7 @@
       "label": "numberingConfigs",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L325",
+      "source_location": "L335",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_numberingconfigs",
       "community": 269,
@@ -1316,7 +1356,7 @@
       "label": "doc",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
-      "source_location": "L350",
+      "source_location": "L360",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_doc",
       "community": 269,
@@ -11283,6 +11323,16 @@
       "norm_label": "8. tips penerapan dalam docx (node.js)"
     },
     {
+      "label": "9. ATURAN CAPTION DAN DESAIN TABEL (PENTING)",
+      "file_type": "document",
+      "source_file": ".claude/skills/pedomanmakalahakuntansi/SKILL.md",
+      "source_location": "L142",
+      "_origin": "ast",
+      "id": "pedomanmakalahakuntansi_skill_9_aturan_caption_dan_desain_tabel_penting",
+      "community": 110,
+      "norm_label": "9. aturan caption dan desain tabel (penting)"
+    },
+    {
       "label": "SKILL.md",
       "file_type": "document",
       "source_file": ".claude/skills/pmk62/SKILL.md",
@@ -15101,6 +15151,246 @@
       "id": "wiki_profil_saya_dan_evaluasi_vibecoding_panduan_latihan_anda",
       "community": 242,
       "norm_label": "panduan latihan anda:"
+    },
+    {
+      "label": "prd.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "auditdok_prd",
+      "community": 407,
+      "norm_label": "prd.md"
+    },
+    {
+      "label": "PRD \u2014 AuditDok: Jasa Audit Dokumen Berbasis AI",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "community": 407,
+      "norm_label": "prd \u2014 auditdok: jasa audit dokumen berbasis ai"
+    },
+    {
+      "label": "1. Ringkasan Eksekutif",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "auditdok_prd_1_ringkasan_eksekutif",
+      "community": 407,
+      "norm_label": "1. ringkasan eksekutif"
+    },
+    {
+      "label": "Value Proposition Utama",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "auditdok_prd_value_proposition_utama",
+      "community": 407,
+      "norm_label": "value proposition utama"
+    },
+    {
+      "label": "2. Jenis Dokumen yang Dapat Diaudit",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "auditdok_prd_2_jenis_dokumen_yang_dapat_diaudit",
+      "community": 407,
+      "norm_label": "2. jenis dokumen yang dapat diaudit"
+    },
+    {
+      "label": "3. Tier Layanan",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "auditdok_prd_3_tier_layanan",
+      "community": 407,
+      "norm_label": "3. tier layanan"
+    },
+    {
+      "label": "Filosofi Tier",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "auditdok_prd_filosofi_tier",
+      "community": 407,
+      "norm_label": "filosofi tier"
+    },
+    {
+      "label": "3.1 \ud83d\udfe2 BASIC \u2014 Quick Audit",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "auditdok_prd_3_1_basic_quick_audit",
+      "community": 407,
+      "norm_label": "3.1 \ud83d\udfe2 basic \u2014 quick audit"
+    },
+    {
+      "label": "3.2 \ud83d\udd35 PLUS \u2014 Guided Audit",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "auditdok_prd_3_2_plus_guided_audit",
+      "community": 407,
+      "norm_label": "3.2 \ud83d\udd35 plus \u2014 guided audit"
+    },
+    {
+      "label": "3.3 \ud83d\udfe3 PRO \u2014 Visual Audit",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "auditdok_prd_3_3_pro_visual_audit",
+      "community": 407,
+      "norm_label": "3.3 \ud83d\udfe3 pro \u2014 visual audit"
+    },
+    {
+      "label": "3.4 \ud83d\udfe0 ULTRA \u2014 Full Service Audit",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "auditdok_prd_3_4_ultra_full_service_audit",
+      "community": 407,
+      "norm_label": "3.4 \ud83d\udfe0 ultra \u2014 full service audit"
+    },
+    {
+      "label": "4. Perbandingan Tier (Ringkas)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "auditdok_prd_4_perbandingan_tier_ringkas",
+      "community": 407,
+      "norm_label": "4. perbandingan tier (ringkas)"
+    },
+    {
+      "label": "5. User Flow",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L184",
+      "_origin": "ast",
+      "id": "auditdok_prd_5_user_flow",
+      "community": 407,
+      "norm_label": "5. user flow"
+    },
+    {
+      "label": "6. Strategi Pricing & Positioning",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L215",
+      "_origin": "ast",
+      "id": "auditdok_prd_6_strategi_pricing_positioning",
+      "community": 407,
+      "norm_label": "6. strategi pricing & positioning"
+    },
+    {
+      "label": "6.1 Mengapa Lebih Murah dari Langganan AI?",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L217",
+      "_origin": "ast",
+      "id": "auditdok_prd_6_1_mengapa_lebih_murah_dari_langganan_ai",
+      "community": 407,
+      "norm_label": "6.1 mengapa lebih murah dari langganan ai?"
+    },
+    {
+      "label": "6.2 Paket Bundling (Opsional)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L230",
+      "_origin": "ast",
+      "id": "auditdok_prd_6_2_paket_bundling_opsional",
+      "community": 407,
+      "norm_label": "6.2 paket bundling (opsional)"
+    },
+    {
+      "label": "7. Channel Distribusi & Go-to-Market",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L241",
+      "_origin": "ast",
+      "id": "auditdok_prd_7_channel_distribusi_go_to_market",
+      "community": 407,
+      "norm_label": "7. channel distribusi & go-to-market"
+    },
+    {
+      "label": "Phase 1 \u2014 Soft Launch (Bulan 1\u20132)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L243",
+      "_origin": "ast",
+      "id": "auditdok_prd_phase_1_soft_launch_bulan_1_2",
+      "community": 407,
+      "norm_label": "phase 1 \u2014 soft launch (bulan 1\u20132)"
+    },
+    {
+      "label": "Phase 2 \u2014 Scale (Bulan 3\u20134)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L248",
+      "_origin": "ast",
+      "id": "auditdok_prd_phase_2_scale_bulan_3_4",
+      "community": 407,
+      "norm_label": "phase 2 \u2014 scale (bulan 3\u20134)"
+    },
+    {
+      "label": "Phase 3 \u2014 Automate (Bulan 5+)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L253",
+      "_origin": "ast",
+      "id": "auditdok_prd_phase_3_automate_bulan_5",
+      "community": 407,
+      "norm_label": "phase 3 \u2014 automate (bulan 5+)"
+    },
+    {
+      "label": "8. Tech Stack Operasional (Internal)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L260",
+      "_origin": "ast",
+      "id": "auditdok_prd_8_tech_stack_operasional_internal",
+      "community": 407,
+      "norm_label": "8. tech stack operasional (internal)"
+    },
+    {
+      "label": "9. Risiko & Mitigasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L273",
+      "_origin": "ast",
+      "id": "auditdok_prd_9_risiko_mitigasi",
+      "community": 407,
+      "norm_label": "9. risiko & mitigasi"
+    },
+    {
+      "label": "10. Metrik Keberhasilan (KPI)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L285",
+      "_origin": "ast",
+      "id": "auditdok_prd_10_metrik_keberhasilan_kpi",
+      "community": 407,
+      "norm_label": "10. metrik keberhasilan (kpi)"
+    },
+    {
+      "label": "11. Open Questions",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L297",
+      "_origin": "ast",
+      "id": "auditdok_prd_11_open_questions",
+      "community": 407,
+      "norm_label": "11. open questions"
     },
     {
       "label": "prd.md",
@@ -36084,7 +36374,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 6,
+      "community": 15,
       "norm_label": "tasks [ut]",
       "id": "Tasks__UT_"
     },
@@ -39775,9 +40065,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "docx",
-      "confidence_score": 1.0
+      "target": "docx"
     },
     {
       "relation": "imports_from",
@@ -39786,9 +40076,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "fs",
-      "confidence_score": 1.0
+      "target": "fs"
     },
     {
       "relation": "contains",
@@ -39796,9 +40086,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_border0",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_border0"
     },
     {
       "relation": "contains",
@@ -39806,9 +40096,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_borders0",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_borders0"
     },
     {
       "relation": "contains",
@@ -39816,9 +40106,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_bordersall",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_bordersall"
     },
     {
       "relation": "contains",
@@ -39826,9 +40116,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_bordersingle",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_bordersingle"
     },
     {
       "relation": "contains",
@@ -39836,9 +40126,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_cellpara",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_cellpara"
     },
     {
       "relation": "contains",
@@ -39846,9 +40136,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_centered",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_centered"
     },
     {
       "relation": "contains",
@@ -39856,9 +40146,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_chapterheader",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_chapterheader"
     },
     {
       "relation": "contains",
@@ -39866,9 +40156,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_doc",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_doc"
     },
     {
       "relation": "contains",
@@ -39876,9 +40166,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_numberformat_imagerun_tableofcontents_sequentialidentifier",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_numberformat_imagerun_tableofcontents_sequentialidentifier"
     },
     {
       "relation": "contains",
@@ -39886,9 +40176,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_emptyrow",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_emptyrow"
     },
     {
       "relation": "contains",
@@ -39896,9 +40186,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_figurecaption",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_figurecaption"
     },
     {
       "relation": "contains",
@@ -39906,9 +40196,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_frontmatterheader",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_frontmatterheader"
     },
     {
       "relation": "contains",
@@ -39916,9 +40206,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_fs",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_fs"
     },
     {
       "relation": "contains",
@@ -39926,9 +40216,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_heading2",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_heading2"
     },
     {
       "relation": "contains",
@@ -39936,9 +40226,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_justifiedpara",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_justifiedpara"
     },
     {
       "relation": "contains",
@@ -39946,9 +40236,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_path",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_path"
     },
     {
       "relation": "contains",
@@ -39956,9 +40246,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "makalah_sim_build_makalah_blockchain_tablecaption",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_blockchain_tablecaption"
     },
     {
       "relation": "imports_from",
@@ -39967,9 +40257,9 @@
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_blockchain",
-      "target": "path",
-      "confidence_score": 1.0
+      "target": "path"
     },
     {
       "relation": "imports_from",
@@ -40458,6 +40748,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_bordernone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
       "source_location": "L23",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -40478,11 +40778,41 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_bordersbottom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_bordersheader",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
       "source_location": "L25",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_sim_v2",
       "target": "makalah_sim_build_makalah_sim_v2_bordersingle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "makalah_sim_build_makalah_sim_v2",
+      "target": "makalah_sim_build_makalah_sim_v2_bordersmiddle",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -41457,9 +41787,9 @@
       "source_file": "projects/makalah-sim/scratch/check_docx_options.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scratch_check_docx_options",
-      "target": "docx",
-      "confidence_score": 1.0
+      "target": "docx"
     },
     {
       "relation": "contains",
@@ -41467,9 +41797,9 @@
       "source_file": "projects/makalah-sim/scratch/check_docx_options.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scratch_check_docx_options",
-      "target": "scratch_check_docx_options_docx",
-      "confidence_score": 1.0
+      "target": "scratch_check_docx_options_docx"
     },
     {
       "relation": "imports_from",
@@ -41478,9 +41808,9 @@
       "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scratch_check_toc_xml",
-      "target": "docx",
-      "confidence_score": 1.0
+      "target": "docx"
     },
     {
       "relation": "imports_from",
@@ -41489,9 +41819,9 @@
       "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scratch_check_toc_xml",
-      "target": "fs",
-      "confidence_score": 1.0
+      "target": "fs"
     },
     {
       "relation": "contains",
@@ -41499,9 +41829,9 @@
       "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scratch_check_toc_xml",
-      "target": "scratch_check_toc_xml_doc",
-      "confidence_score": 1.0
+      "target": "scratch_check_toc_xml_doc"
     },
     {
       "relation": "contains",
@@ -41509,9 +41839,9 @@
       "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scratch_check_toc_xml",
-      "target": "scratch_check_toc_xml_docx",
-      "confidence_score": 1.0
+      "target": "scratch_check_toc_xml_docx"
     },
     {
       "relation": "contains",
@@ -41519,9 +41849,9 @@
       "source_file": "projects/makalah-sim/scratch/check_toc_xml.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scratch_check_toc_xml",
-      "target": "scratch_check_toc_xml_fs",
-      "confidence_score": 1.0
+      "target": "scratch_check_toc_xml_fs"
     },
     {
       "relation": "imports_from",
@@ -42052,9 +42382,9 @@
       "source_file": "projects/makalah-sim/scratch/inspect_field_instruction.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scratch_inspect_field_instruction",
-      "target": "docx",
-      "confidence_score": 1.0
+      "target": "docx"
     },
     {
       "relation": "contains",
@@ -42062,9 +42392,9 @@
       "source_file": "projects/makalah-sim/scratch/inspect_field_instruction.js",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scratch_inspect_field_instruction",
-      "target": "scratch_inspect_field_instruction_doc",
-      "confidence_score": 1.0
+      "target": "scratch_inspect_field_instruction_doc"
     },
     {
       "relation": "contains",
@@ -42072,9 +42402,9 @@
       "source_file": "projects/makalah-sim/scratch/inspect_field_instruction.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scratch_inspect_field_instruction",
-      "target": "scratch_inspect_field_instruction_docx",
-      "confidence_score": 1.0
+      "target": "scratch_inspect_field_instruction_docx"
     },
     {
       "relation": "imports_from",
@@ -42083,9 +42413,9 @@
       "source_file": "projects/makalah-sim/scratch/inspect_field_instruction_def.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scratch_inspect_field_instruction_def",
-      "target": "docx",
-      "confidence_score": 1.0
+      "target": "docx"
     },
     {
       "relation": "contains",
@@ -42093,9 +42423,9 @@
       "source_file": "projects/makalah-sim/scratch/inspect_field_instruction_def.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scratch_inspect_field_instruction_def",
-      "target": "scratch_inspect_field_instruction_def_docx",
-      "confidence_score": 1.0
+      "target": "scratch_inspect_field_instruction_def_docx"
     },
     {
       "relation": "contains",
@@ -51258,6 +51588,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".claude/skills/pedomanmakalahakuntansi/SKILL.md",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "pedomanmakalahakuntansi_skill_panduan_penulisan_makalah_seminar_akuntansi_feb_upb",
+      "target": "pedomanmakalahakuntansi_skill_9_aturan_caption_dan_desain_tabel_penting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/pedomanmakalahakuntansi/SKILL.md",
       "source_location": "L59",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -54659,6 +54999,236 @@
       "confidence_score": 1.0,
       "source": "wiki_profil_saya_dan_evaluasi_vibecoding_4_roadmap_naik_kelas_level_up_ke_advanced_director",
       "target": "wiki_profil_saya_dan_evaluasi_vibecoding_panduan_latihan_anda"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "auditdok_prd",
+      "target": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L285",
+      "weight": 1.0,
+      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "target": "auditdok_prd_10_metrik_keberhasilan_kpi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L297",
+      "weight": 1.0,
+      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "target": "auditdok_prd_11_open_questions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "target": "auditdok_prd_1_ringkasan_eksekutif",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "target": "auditdok_prd_2_jenis_dokumen_yang_dapat_diaudit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "target": "auditdok_prd_3_tier_layanan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "target": "auditdok_prd_4_perbandingan_tier_ringkas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L184",
+      "weight": 1.0,
+      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "target": "auditdok_prd_5_user_flow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L215",
+      "weight": 1.0,
+      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "target": "auditdok_prd_6_strategi_pricing_positioning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L241",
+      "weight": 1.0,
+      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "target": "auditdok_prd_7_channel_distribusi_go_to_market",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L260",
+      "weight": 1.0,
+      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "target": "auditdok_prd_8_tech_stack_operasional_internal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L273",
+      "weight": 1.0,
+      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "target": "auditdok_prd_9_risiko_mitigasi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "auditdok_prd_1_ringkasan_eksekutif",
+      "target": "auditdok_prd_value_proposition_utama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "auditdok_prd_3_tier_layanan",
+      "target": "auditdok_prd_3_1_basic_quick_audit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "auditdok_prd_3_tier_layanan",
+      "target": "auditdok_prd_3_2_plus_guided_audit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "auditdok_prd_3_tier_layanan",
+      "target": "auditdok_prd_3_3_pro_visual_audit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "auditdok_prd_3_tier_layanan",
+      "target": "auditdok_prd_3_4_ultra_full_service_audit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "auditdok_prd_3_tier_layanan",
+      "target": "auditdok_prd_filosofi_tier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L217",
+      "weight": 1.0,
+      "source": "auditdok_prd_6_strategi_pricing_positioning",
+      "target": "auditdok_prd_6_1_mengapa_lebih_murah_dari_langganan_ai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L230",
+      "weight": 1.0,
+      "source": "auditdok_prd_6_strategi_pricing_positioning",
+      "target": "auditdok_prd_6_2_paket_bundling_opsional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L243",
+      "weight": 1.0,
+      "source": "auditdok_prd_7_channel_distribusi_go_to_market",
+      "target": "auditdok_prd_phase_1_soft_launch_bulan_1_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L248",
+      "weight": 1.0,
+      "source": "auditdok_prd_7_channel_distribusi_go_to_market",
+      "target": "auditdok_prd_phase_2_scale_bulan_3_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "auditdok_prd_7_channel_distribusi_go_to_market",
+      "target": "auditdok_prd_phase_3_automate_bulan_5",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -74082,5 +74652,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b902fcaa99a034c452dff8b3e1cf09c9db0c21ce"
+  "built_at_commit": "a4cea3f8c73fa61a5f6583ae2b0042abcfa85312"
 }

@@ -390,24 +390,39 @@ const doc = new Document({
           tr('Penulis menyadari bahwa penulisan makalah ini tidak terlepas dari bantuan berbagai pihak. Oleh karena itu, penulis menyampaikan ucapan terima kasih kepada:')
         ]),
         ...resetList(),
-        numberedItemRuns([tr('Ibu Endang Kristiawati, S.E., Ak., M.Si selaku Dosen Pengampu mata kuliah Sistem Informasi Manajemen yang telah memberikan bimbingan dan arahan.')]),
+        numberedItemRuns([tr('Ibu Dr. Renny Wulandari, S.E., M.Si., Ak., CA selaku Dosen Pengampu mata kuliah Sistem Informasi Manajemen yang telah memberikan bimbingan dan arahan.')]),
         numberedItemRuns([tr('Kepala Rumah Detensi Imigrasi Pontianak beserta seluruh jajaran yang telah memberikan data dan informasi yang diperlukan.')]),
-        numberedItemRuns([tr('Rekan-rekan mahasiswa serta semua pihak yang telah memberikan dukungan dalam penyelesaian makalah ini.')]),
         emptyRow(),
         justifiedPara([
           tr('Penulis menyadari bahwa makalah ini masih jauh dari sempurna, oleh karena itu kritik dan saran yang membangun sangat penulis harapkan demi perbaikan di masa mendatang. Semoga makalah ini dapat memberikan manfaat bagi pembaca.')
         ]),
         emptyRow(),
-        new Paragraph({
-          alignment: AlignmentType.RIGHT,
-          spacing: { after: 0, before: 0, line: 480 },
-          children: [tr('Pontianak, Juni 2026')]
-        }),
-        emptyRow(),
-        new Paragraph({
-          alignment: AlignmentType.RIGHT,
-          spacing: { after: 0, before: 0, line: 480 },
-          children: [tr('Penulis')]
+        new Table({
+          borders: borders0,
+          indent: { size: 4673, type: WidthType.DXA },
+          width: { size: 3254, type: WidthType.DXA },
+          rows: [
+            new TableRow({
+              children: [
+                new TableCell({
+                  borders: borders0,
+                  width: { size: 3254, type: WidthType.DXA },
+                  children: [
+                    new Paragraph({
+                      alignment: AlignmentType.CENTER,
+                      spacing: { after: 0, before: 0, line: 480 },
+                      children: [tr('Pontianak, 18 Juni 2026')]
+                    }),
+                    new Paragraph({
+                      alignment: AlignmentType.CENTER,
+                      spacing: { after: 0, before: 0, line: 480 },
+                      children: [tr('Penulis')]
+                    })
+                  ]
+                })
+              ]
+            })
+          ]
         }),
       ]
     },
