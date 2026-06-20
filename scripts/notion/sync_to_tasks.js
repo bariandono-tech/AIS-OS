@@ -7,8 +7,8 @@ const notion = new Client({ auth: process.env.NOTION_TOKEN });
 
 const TASKS_DATABASE_ID = '37c78c4c-e388-8191-b128-dbab3b886793'; // Tasks database ID
 const DAILY_SYNC_PROJECT_ID = '37e78c4c-e388-80e4-ae54-f6ead1158289'; // daily-sync project ID
-const TARGET_DATE = '2026-06-17';
-const TARGET_DATE_LABEL = '17 Juni 2026';
+const TARGET_DATE = '2026-06-20';
+const TARGET_DATE_LABEL = '20 Juni 2026';
 
 function parseMarkdownToRichText(text) {
   const richText = [];

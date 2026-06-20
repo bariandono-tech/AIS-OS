@@ -90,4 +90,25 @@
 - File visualisasi grafik graf lokal mutakhir.
 - Versi kode berhasil diarsipkan dan di-push ke GitHub.
 
+## 2026-06-20
+
+### Makalah SIM Refinement, Inisialisasi AuditDok, & Sinkronisasi Laptop Baru
+
+**Dikerjakan:**
+- **Penyusunan Makalah SIM v2:** Menyelesaikan kendala berkas terkunci (EBUSY) dan melakukan pembangunan ulang dokumen Word `MAKALAH_SIM_AJIE_BARIANDONO_2110426823_v2.docx` dengan seluruh prosa terpoles akademik serta field TOC/gambar dinamis.
+- **Inisialisasi Proyek Jasa AuditDok:** Membuat folder proyek baru `projects/auditdok` dan menyusun berkas `prd.md` secara lengkap (skema tier Basic/Plus/Pro/Ultra, pricing, 13 jenis dokumen, dan strategi bisnis).
+- **Setup Monorepo NPM Workspaces:** Membuat berkas `package.json` di root folder workspace untuk mengonfigurasi NPM Workspaces agar instalasi pustaka dependensi seluruh sub-proyek bisa dilakukan akumulatif dengan sekali jalankan `npm install` di root folder.
+- **Setup Laptop Baru & Sinkronisasi GitHub:**
+  - Melakukan commit dan push semua perubahan lokal serta proyek baru ke repositori `bariandono-tech/AIS-OS`.
+  - Melakukan merge cabang fitur ke cabang `main` dan melakukan push ke origin.
+  - Membantu pemindahan independen ke akun baru `zehyadiablo-bot/AIS-OS` menggunakan fitur Impor Awan GitHub.
+  - Memandu setup teknis di laptop baru (instalasi Git/Node.js, penambahan remote upstream, pull data, dan instalasi npm).
+  - Mengembalikan remote URL laptop utama ke repositori `bariandono-tech/AIS-OS`.
+
+**Hasil:**
+- Makalah SIM v2 terkompilasi sukses dengan konten matang.
+- Proyek Jasa AuditDok terinisialisasi lengkap dengan PRD bisnis.
+- Monorepo tersinkronisasi bersih antara laptop lama, laptop baru, dan kedua akun GitHub secara independen.
+
+
 

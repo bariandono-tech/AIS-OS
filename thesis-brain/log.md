@@ -9,3 +9,5 @@
 | 2026-06-17 | Ingest `raw/makalah_seminar.md` | Mengekstrak bab-bab naskah skripsi: [[Teori_Keagenan]], [[IKPA]], [[DIPA_Halaman_III]], dan data historis [[Analisis_Kasus_Rudenim_Pontianak]]. | ✅ Sukses |
 | 2026-06-17 | Ingest `raw/makalah_sim.md` | Mengekstrak draf Makalah SIM: [[Source_Makalah_SIM]], konsep [[DeLone_McLean_Model]], dan pembaruan relasi [[SAKTI]]. | ✅ Sukses |
 | 2026-06-18 | Revisi `raw/makalah_sim.md` v2 | Topik diubah menjadi Analisis Struktur Organisasi, SIMKIM, & SOP Rudenim Pontianak. Struktur 3 Bab. Kerangka teori: [[Leavitt_Diamond_Model]]. Buat wiki baru: [[SIMKIM]], [[Leavitt_Diamond_Model]]. | ✅ Sukses |
+| 2026-06-20 | Ingest & Sync | Memperbarui naskah makalah SIM v2 (TOC & captions dinamis) dan menyinkronkan catatan harian ke Notion | ✅ Sukses |
+
