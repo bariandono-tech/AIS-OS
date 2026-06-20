@@ -43,6 +43,46 @@
       "norm_label": "c:\\users\\asus\\appdata\\local\\python\\pythoncore-3.14-64\\python.exe"
     },
     {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "package",
+      "community": 39,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "package_name",
+      "community": 39,
+      "norm_label": "name"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "package_private",
+      "community": 39,
+      "norm_label": "private"
+    },
+    {
+      "label": "workspaces",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "package_workspaces",
+      "community": 39,
+      "norm_label": "workspaces"
+    },
+    {
       "label": "ai_agent.py",
       "file_type": "code",
       "source_file": "projects/botkeu/ai_agent.py",
@@ -213,14 +253,14 @@
       "norm_label": "mengunduh file excel dari google drive ke folder lokal tmp_downloads di workspac"
     },
     {
-      "label": "Membaca daftar nama sheet yang tersedia di dalam file Excel lokal.          Args",
+      "label": "Membaca daftar nama sheet yang tersedia di dalam file Excel lokal.          Ar",
       "file_type": "rationale",
       "source_file": "projects/botkeu/google_drive.py",
       "source_location": "L101",
       "_origin": "ast",
       "id": "botkeu_google_drive_rationale_101",
       "community": 77,
-      "norm_label": "membaca daftar nama sheet yang tersedia di dalam file excel lokal.          args"
+      "norm_label": "membaca daftar nama sheet yang tersedia di dalam file excel lokal.          ar"
     },
     {
       "label": "Membaca baris data pada sheet tertentu di file Excel lokal dan memformatnya seba",
@@ -253,14 +293,14 @@
       "norm_label": "search_local_wiki()"
     },
     {
-      "label": "Memindai dokumen markdown di folder office-brain/wiki.     Mencari kecocokan kat",
+      "label": "Memindai dokumen markdown di folder office-brain/wiki.     Mencari kecocokan ka",
       "file_type": "rationale",
       "source_file": "projects/botkeu/local_brain.py",
       "source_location": "L10",
       "_origin": "ast",
       "id": "botkeu_local_brain_rationale_10",
       "community": 85,
-      "norm_label": "memindai dokumen markdown di folder office-brain/wiki.     mencari kecocokan kat"
+      "norm_label": "memindai dokumen markdown di folder office-brain/wiki.     mencari kecocokan ka"
     },
     {
       "label": "main.py",
@@ -453,14 +493,14 @@
       "norm_label": "build_makalah_blockchain.js"
     },
     {
-      "label": "{\n  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,\n  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,\n  PageNumber, PageBreak, Header, Footer,\n  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,\n  TabStopType, NumberFormat, ImageRun,\n  TableOfContents, SequentialIdentifier\n}",
+      "label": "{\r\n  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,\r\n  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,\r\n  PageNumber, PageBreak, Header, Footer,\r\n  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,\r\n  TabStopType, NumberFormat, ImageRun,\r\n  TableOfContents, SequentialIdentifier\r\n}",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_blockchain.js",
       "source_location": "L2",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_blockchain_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_numberformat_imagerun_tableofcontents_sequentialidentifier",
       "community": 393,
-      "norm_label": "{\n  document, packer, paragraph, textrun, table, tablerow, tablecell,\n  alignmenttype, levelformat, headinglevel, borderstyle, widthtype,\n  pagenumber, pagebreak, header, footer,\n  positionaltab, positionaltabalignment, positionaltabrelativeto, positionaltableader,\n  tabstoptype, numberformat, imagerun,\n  tableofcontents, sequentialidentifier\n}"
+      "norm_label": "{\r\n  document, packer, paragraph, textrun, table, tablerow, tablecell,\r\n  alignmenttype, levelformat, headinglevel, borderstyle, widthtype,\r\n  pagenumber, pagebreak, header, footer,\r\n  positionaltab, positionaltabalignment, positionaltabrelativeto, positionaltableader,\r\n  tabstoptype, numberformat, imagerun,\r\n  tableofcontents, sequentialidentifier\r\n}"
     },
     {
       "label": "fs",
@@ -633,14 +673,14 @@
       "norm_label": "build_makalah_sim.js"
     },
     {
-      "label": "{\n  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,\n  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,\n  ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,\n  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,\n  TabStopType, TabStopPosition, NumberFormat, ImageRun\n}",
+      "label": "{\r\n  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,\r\n  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,\r\n  ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,\r\n  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,\r\n  TabStopType, TabStopPosition, NumberFormat, ImageRun\r\n}",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim.js",
       "source_location": "L2",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_shadingtype_verticalalign_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_tabstopposition_numberformat_imagerun",
       "community": 351,
-      "norm_label": "{\n  document, packer, paragraph, textrun, table, tablerow, tablecell,\n  alignmenttype, levelformat, headinglevel, borderstyle, widthtype,\n  shadingtype, verticalalign, pagenumber, pagebreak, header, footer,\n  positionaltab, positionaltabalignment, positionaltabrelativeto, positionaltableader,\n  tabstoptype, tabstopposition, numberformat, imagerun\n}"
+      "norm_label": "{\r\n  document, packer, paragraph, textrun, table, tablerow, tablecell,\r\n  alignmenttype, levelformat, headinglevel, borderstyle, widthtype,\r\n  shadingtype, verticalalign, pagenumber, pagebreak, header, footer,\r\n  positionaltab, positionaltabalignment, positionaltabrelativeto, positionaltableader,\r\n  tabstoptype, tabstopposition, numberformat, imagerun\r\n}"
     },
     {
       "label": "fs",
@@ -973,14 +1013,14 @@
       "norm_label": "build_makalah_sim_v2.js"
     },
     {
-      "label": "{\n  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,\n  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,\n  ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,\n  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,\n  TabStopType, TabStopPosition, NumberFormat, ImageRun,\n  TableOfContents, SequentialIdentifier\n}",
+      "label": "{\r\n  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,\r\n  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,\r\n  ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,\r\n  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,\r\n  TabStopType, TabStopPosition, NumberFormat, ImageRun,\r\n  TableOfContents, SequentialIdentifier\r\n}",
       "file_type": "code",
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
       "source_location": "L2",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_v2_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_shadingtype_verticalalign_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_tabstopposition_numberformat_imagerun_tableofcontents_sequentialidentifier",
       "community": 269,
-      "norm_label": "{\n  document, packer, paragraph, textrun, table, tablerow, tablecell,\n  alignmenttype, levelformat, headinglevel, borderstyle, widthtype,\n  shadingtype, verticalalign, pagenumber, pagebreak, header, footer,\n  positionaltab, positionaltabalignment, positionaltabrelativeto, positionaltableader,\n  tabstoptype, tabstopposition, numberformat, imagerun,\n  tableofcontents, sequentialidentifier\n}"
+      "norm_label": "{\r\n  document, packer, paragraph, textrun, table, tablerow, tablecell,\r\n  alignmenttype, levelformat, headinglevel, borderstyle, widthtype,\r\n  shadingtype, verticalalign, pagenumber, pagebreak, header, footer,\r\n  positionaltab, positionaltabalignment, positionaltabrelativeto, positionaltableader,\r\n  tabstoptype, tabstopposition, numberformat, imagerun,\r\n  tableofcontents, sequentialidentifier\r\n}"
     },
     {
       "label": "fs",
@@ -1403,14 +1443,14 @@
       "norm_label": "draw_label()"
     },
     {
-      "label": "Leavitt's Diamond Model Diagram for Makalah SIM Generates a professional academi",
+      "label": "Leavitt's Diamond Model Diagram for Makalah SIM Generates a professional academ",
       "file_type": "rationale",
       "source_file": "projects/makalah-sim/draw_diagram_sim.py",
       "source_location": "L1",
       "_origin": "ast",
       "id": "makalah_sim_draw_diagram_sim_rationale_1",
       "community": 368,
-      "norm_label": "leavitt's diamond model diagram for makalah sim generates a professional academi"
+      "norm_label": "leavitt's diamond model diagram for makalah sim generates a professional academ"
     },
     {
       "label": "draw_flowcharts.py",
@@ -1673,14 +1713,14 @@
       "norm_label": "horizontal arrow with optional label above."
     },
     {
-      "label": "Decision diamond.     no_nodes: list of P() for 'Tidak' branch.     no_type:  'm",
+      "label": "Decision diamond.     no_nodes: list of P() for 'Tidak' branch.     no_type:",
       "file_type": "rationale",
       "source_file": "projects/makalah-sim/draw_proper_flowcharts.py",
       "source_location": "L191",
       "_origin": "ast",
       "id": "makalah_sim_draw_proper_flowcharts_rationale_191",
       "community": 363,
-      "norm_label": "decision diamond.     no_nodes: list of p() for 'tidak' branch.     no_type:  'm"
+      "norm_label": "decision diamond.     no_nodes: list of p() for 'tidak' branch.     no_type:"
     },
     {
       "label": "Half-height for a node type.",
@@ -26916,31 +26956,6 @@
       "id": "list_areas_listAreas"
     },
     {
-      "label": "package",
-      "type": "file",
-      "source_location": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\package.json",
-      "confidence": "EXTRACTED",
-      "properties": {
-        "extension": ".json",
-        "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\package.json"
-      },
-      "file_type": "concept",
-      "community": 39,
-      "norm_label": "package",
-      "id": "package"
-    },
-    {
-      "label": "name",
-      "type": "property",
-      "source_location": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\package.json",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "file_type": "concept",
-      "community": 39,
-      "norm_label": "name",
-      "id": "package_name"
-    },
-    {
       "label": "version",
       "type": "property",
       "source_location": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\package.json",
@@ -36374,7 +36389,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 15,
+      "community": 6,
       "norm_label": "tasks [ut]",
       "id": "Tasks__UT_"
     },
@@ -39541,6 +39556,77 @@
       "target": "mcp_command_c_users_asus_appdata_local_python_pythoncore_3_14_64_python_exe"
     },
     {
+      "relation": "has_field",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_dependencies"
+    },
+    {
+      "relation": "has_field",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_description"
+    },
+    {
+      "relation": "has_field",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_main"
+    },
+    {
+      "relation": "has_field",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "has_field",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_scripts"
+    },
+    {
+      "relation": "has_field",
+      "confidence": "EXTRACTED",
+      "properties": {},
+      "confidence_score": 1.0,
+      "source": "package",
+      "target": "package_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_workspaces",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/botkeu/ai_agent.py",
@@ -40750,9 +40836,9 @@
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_sim_v2",
-      "target": "makalah_sim_build_makalah_sim_v2_bordernone",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_sim_v2_bordernone"
     },
     {
       "relation": "contains",
@@ -40780,9 +40866,9 @@
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_sim_v2",
-      "target": "makalah_sim_build_makalah_sim_v2_bordersbottom",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_sim_v2_bordersbottom"
     },
     {
       "relation": "contains",
@@ -40790,9 +40876,9 @@
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_sim_v2",
-      "target": "makalah_sim_build_makalah_sim_v2_bordersheader",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_sim_v2_bordersheader"
     },
     {
       "relation": "contains",
@@ -40810,9 +40896,9 @@
       "source_file": "projects/makalah-sim/build_makalah_sim_v2.js",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "makalah_sim_build_makalah_sim_v2",
-      "target": "makalah_sim_build_makalah_sim_v2_bordersmiddle",
-      "confidence_score": 1.0
+      "target": "makalah_sim_build_makalah_sim_v2_bordersmiddle"
     },
     {
       "relation": "contains",
@@ -51590,9 +51676,9 @@
       "source_file": ".claude/skills/pedomanmakalahakuntansi/SKILL.md",
       "source_location": "L142",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "pedomanmakalahakuntansi_skill_panduan_penulisan_makalah_seminar_akuntansi_feb_upb",
-      "target": "pedomanmakalahakuntansi_skill_9_aturan_caption_dan_desain_tabel_penting",
-      "confidence_score": 1.0
+      "target": "pedomanmakalahakuntansi_skill_9_aturan_caption_dan_desain_tabel_penting"
     },
     {
       "relation": "contains",
@@ -55006,9 +55092,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd",
-      "target": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai"
     },
     {
       "relation": "contains",
@@ -55016,9 +55102,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L285",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
-      "target": "auditdok_prd_10_metrik_keberhasilan_kpi",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_10_metrik_keberhasilan_kpi"
     },
     {
       "relation": "contains",
@@ -55026,9 +55112,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L297",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
-      "target": "auditdok_prd_11_open_questions",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_11_open_questions"
     },
     {
       "relation": "contains",
@@ -55036,9 +55122,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
-      "target": "auditdok_prd_1_ringkasan_eksekutif",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_1_ringkasan_eksekutif"
     },
     {
       "relation": "contains",
@@ -55046,9 +55132,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
-      "target": "auditdok_prd_2_jenis_dokumen_yang_dapat_diaudit",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_2_jenis_dokumen_yang_dapat_diaudit"
     },
     {
       "relation": "contains",
@@ -55056,9 +55142,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
-      "target": "auditdok_prd_3_tier_layanan",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_3_tier_layanan"
     },
     {
       "relation": "contains",
@@ -55066,9 +55152,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
-      "target": "auditdok_prd_4_perbandingan_tier_ringkas",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_4_perbandingan_tier_ringkas"
     },
     {
       "relation": "contains",
@@ -55076,9 +55162,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
-      "target": "auditdok_prd_5_user_flow",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_5_user_flow"
     },
     {
       "relation": "contains",
@@ -55086,9 +55172,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L215",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
-      "target": "auditdok_prd_6_strategi_pricing_positioning",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_6_strategi_pricing_positioning"
     },
     {
       "relation": "contains",
@@ -55096,9 +55182,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L241",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
-      "target": "auditdok_prd_7_channel_distribusi_go_to_market",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_7_channel_distribusi_go_to_market"
     },
     {
       "relation": "contains",
@@ -55106,9 +55192,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L260",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
-      "target": "auditdok_prd_8_tech_stack_operasional_internal",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_8_tech_stack_operasional_internal"
     },
     {
       "relation": "contains",
@@ -55116,9 +55202,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L273",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
-      "target": "auditdok_prd_9_risiko_mitigasi",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_9_risiko_mitigasi"
     },
     {
       "relation": "contains",
@@ -55126,9 +55212,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_1_ringkasan_eksekutif",
-      "target": "auditdok_prd_value_proposition_utama",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_value_proposition_utama"
     },
     {
       "relation": "contains",
@@ -55136,9 +55222,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_3_tier_layanan",
-      "target": "auditdok_prd_3_1_basic_quick_audit",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_3_1_basic_quick_audit"
     },
     {
       "relation": "contains",
@@ -55146,9 +55232,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_3_tier_layanan",
-      "target": "auditdok_prd_3_2_plus_guided_audit",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_3_2_plus_guided_audit"
     },
     {
       "relation": "contains",
@@ -55156,9 +55242,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_3_tier_layanan",
-      "target": "auditdok_prd_3_3_pro_visual_audit",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_3_3_pro_visual_audit"
     },
     {
       "relation": "contains",
@@ -55166,9 +55252,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_3_tier_layanan",
-      "target": "auditdok_prd_3_4_ultra_full_service_audit",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_3_4_ultra_full_service_audit"
     },
     {
       "relation": "contains",
@@ -55176,9 +55262,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_3_tier_layanan",
-      "target": "auditdok_prd_filosofi_tier",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_filosofi_tier"
     },
     {
       "relation": "contains",
@@ -55186,9 +55272,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L217",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_6_strategi_pricing_positioning",
-      "target": "auditdok_prd_6_1_mengapa_lebih_murah_dari_langganan_ai",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_6_1_mengapa_lebih_murah_dari_langganan_ai"
     },
     {
       "relation": "contains",
@@ -55196,9 +55282,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L230",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_6_strategi_pricing_positioning",
-      "target": "auditdok_prd_6_2_paket_bundling_opsional",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_6_2_paket_bundling_opsional"
     },
     {
       "relation": "contains",
@@ -55206,9 +55292,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L243",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_7_channel_distribusi_go_to_market",
-      "target": "auditdok_prd_phase_1_soft_launch_bulan_1_2",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_phase_1_soft_launch_bulan_1_2"
     },
     {
       "relation": "contains",
@@ -55216,9 +55302,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L248",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_7_channel_distribusi_go_to_market",
-      "target": "auditdok_prd_phase_2_scale_bulan_3_4",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_phase_2_scale_bulan_3_4"
     },
     {
       "relation": "contains",
@@ -55226,9 +55312,9 @@
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L253",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_prd_7_channel_distribusi_go_to_market",
-      "target": "auditdok_prd_phase_3_automate_bulan_5",
-      "confidence_score": 1.0
+      "target": "auditdok_prd_phase_3_automate_bulan_5"
     },
     {
       "relation": "contains",
@@ -66131,54 +66217,6 @@
       "target": "list_areas_listAreas"
     },
     {
-      "relation": "has_field",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "package",
-      "target": "package_dependencies"
-    },
-    {
-      "relation": "has_field",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "package",
-      "target": "package_description"
-    },
-    {
-      "relation": "has_field",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "package",
-      "target": "package_main"
-    },
-    {
-      "relation": "has_field",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "package",
-      "target": "package_name"
-    },
-    {
-      "relation": "has_field",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "package",
-      "target": "package_scripts"
-    },
-    {
-      "relation": "has_field",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "confidence_score": 1.0,
-      "source": "package",
-      "target": "package_version"
-    },
-    {
       "relation": "defines",
       "confidence": "EXTRACTED",
       "properties": {},
@@ -74652,5 +74690,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a4cea3f8c73fa61a5f6583ae2b0042abcfa85312"
+  "built_at_commit": "fe17b5ad3e11ec0d31799ea0f8cbd9cd6f310ee8"
 }

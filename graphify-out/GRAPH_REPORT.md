@@ -1,16 +1,16 @@
 # Graph Report - AIS-OS  (2026-06-20)
 
 ## Corpus Check
-- 324 files · ~400,748 words
+- 325 files · ~400,760 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3786 nodes · 3748 edges · 408 communities (303 shown, 105 thin omitted)
+- 3788 nodes · 3750 edges · 408 communities (303 shown, 105 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a4cea3f8`
+- Built from commit: `fe17b5ad`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -462,8 +462,8 @@ Cohesion: 0.08
 Nodes (26): 1. Kenapa PMK ini Sangat Heboh? (The Omnibus Effect), 1. Kenapa PP ini Diterbitkan? (Latar Belakang), 29 peraturan berbeda, 2. Poin-Poin Krusial yang Wajib Dikuasai:, 2. Poin-Poin Perubahan Krusial:, Akselerasi Pengadaan Barang/Jasa (Pra-DIPA / Sebelum Tahun Anggaran):, Aturan Sisa Pekerjaan Akhir Tahun (Pasal 163):, Bedah PP 50/2018 & PMK 62/2023 (Versi Cepat Paham Mahasiswa & Praktisi) (+18 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.10
-Nodes (25): 1. Latar Belakang, 2. Tujuan, 3.1 Database yang Ada, 3.2 Gap yang Ada, 3. Kondisi Saat Ini, 4.1 Database Canonical (yang dipakai), 4.2 Relasi yang Perlu Ditambahkan, 4. Arsitektur Target (+17 more)
+Cohesion: 0.09
+Nodes (26): 1. Latar Belakang, 2. Tujuan, 3.1 Database yang Ada, 3.2 Gap yang Ada, 3. Kondisi Saat Ini, 4.1 Database Canonical (yang dipakai), 4.2 Relasi yang Perlu Ditambahkan, 4. Arsitektur Target (+18 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.08
@@ -499,7 +499,7 @@ Nodes (20): 1. Peta Halaman (Page Tree), 2. Database Inti & Perannya, 3. Fitur p
 
 ### Community 15 - "Community 15"
 Cohesion: 0.11
-Nodes (19): 1. Peta Struktur Lengkap, 2. Database Inventory — Status Setelah Audit, 3. Schema Notes [PT] Setelah Enrichment, 4. Schema Projects [UT] Setelah Enrichment, 5. Relasi Final Antar Database, 6. Gap Analysis — Status Resolusi, Areas/Resources [PT], Database yang Di-retire (+11 more)
+Nodes (18): 1. Peta Struktur Lengkap, 2. Database Inventory — Status Setelah Audit, 3. Schema Notes [PT] Setelah Enrichment, 4. Schema Projects [UT] Setelah Enrichment, 5. Relasi Final Antar Database, 6. Gap Analysis — Status Resolusi, Areas/Resources [PT], Database yang Di-retire (+10 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.14
@@ -594,8 +594,8 @@ Cohesion: 0.25
 Nodes (8): However, Step 1 - Write the Whisper prompt yourself., Step 2 - Transcribe:, Step 2.5 - Transcribe video / audio files (only if video files detected), Strategy:, Whisper model:, graphify reference: transcribe video and audio, transcribe
 
 ### Community 39 - "Community 39"
-Cohesion: 0.29
-Nodes (7): package, dependencies, description, main, name, scripts, version
+Cohesion: 0.22
+Nodes (8): dependencies, description, main, name, private, scripts, version, workspaces
 
 ### Community 40 - "Community 40"
 Cohesion: 0.33
@@ -739,7 +739,7 @@ Nodes (4): Ketentuan Umum, 🛒 Mekanisme Pengkreditan PPN, 📊 Pajak Pertambah
 
 ### Community 77 - "Community 77"
 Cohesion: 0.22
-Nodes (10): download_excel_file(), get_drive_service(), list_excel_files(), query_excel_data(), Membaca daftar nama sheet yang tersedia di dalam file Excel lokal.          Args, Membaca baris data pada sheet tertentu di file Excel lokal dan memformatnya seba, Initializes and returns the Google Drive API service client., Menampilkan daftar file Excel (.xlsx, .xls) di dalam folder Google Drive yang di (+2 more)
+Nodes (10): download_excel_file(), get_drive_service(), list_excel_files(), query_excel_data(), Membaca daftar nama sheet yang tersedia di dalam file Excel lokal.          Ar, Membaca baris data pada sheet tertentu di file Excel lokal dan memformatnya seba, Initializes and returns the Google Drive API service client., Menampilkan daftar file Excel (.xlsx, .xls) di dalam folder Google Drive yang di (+2 more)
 
 ### Community 78 - "Community 78"
 Cohesion: 0.20
@@ -1551,13 +1551,13 @@ Nodes (6): copyTexts, extractText(), fs, normalize(), originalTexts, path
 
 ### Community 393 - "Community 393"
 Cohesion: 0.11
-Nodes (8): border0, borders0, bordersAll, borderSingle, doc, {
-  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
-  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
-  PageNumber, PageBreak, Header, Footer,
-  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
-  TabStopType, NumberFormat, ImageRun,
-  TableOfContents, SequentialIdentifier
+Nodes (8): border0, borders0, bordersAll, borderSingle, doc, {
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
+  PageNumber, PageBreak, Header, Footer,
+  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
+  TabStopType, NumberFormat, ImageRun,
+  TableOfContents, SequentialIdentifier
 }, fs, path
 
 ### Community 394 - "Community 394"
@@ -1569,14 +1569,14 @@ Cohesion: 0.08
 Nodes (23): 10. Metrik Keberhasilan (KPI), 11. Open Questions, 1. Ringkasan Eksekutif, 2. Jenis Dokumen yang Dapat Diaudit, 3.1 🟢 BASIC — Quick Audit, 3.2 🔵 PLUS — Guided Audit, 3.3 🟣 PRO — Visual Audit, 3.4 🟠 ULTRA — Full Service Audit (+15 more)
 
 ## Knowledge Gaps
-- **1540 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `{
-  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
-  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
-  PageNumber, PageBreak, Header, Footer,
-  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
-  TabStopType, NumberFormat, ImageRun,
-  TableOfContents, SequentialIdentifier
-}`, `fs`, `path`, `border0` (+1535 more)
+- **1543 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `workspaces`, `{
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
+  PageNumber, PageBreak, Header, Footer,
+  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
+  TabStopType, NumberFormat, ImageRun,
+  TableOfContents, SequentialIdentifier
+}` (+1538 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **105 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -1587,13 +1587,13 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Why does `docx` connect `Community 362` to `Community 374`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `dotenv` connect `Community 79` to `Community 10`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `Menginisialisasi klien Google GenAI.`, `Mengirim pesan ke Gemini dan menangani iterasi pemanggilan fungsi (Tool Calling)` to the rest of the system?**
-  _1557 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private` to the rest of the system?**
+  _1560 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.07586206896551724 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
+  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
