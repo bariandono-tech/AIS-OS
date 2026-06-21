@@ -30,4 +30,4 @@ Untuk setiap temuan penting:
 - **Bagian**: Lokasi temuan (misalnya: Bab III Metode Penelitian).
 - **Keparahan**: (Kritis / Penting / Opsional)
 - **Masalah**: Deskripsi kelemahan logika atau teori.
-- **Solusi Tindakan**: Langkah konkret yang harus dilakukan mahasiswa beserta contoh perbaikannya.
+- **Solusi Tindakan**: Langkah konkret yang harus dilakukan mahasiswa beserta contoh perbaikannya. PENTING: Istilah asing atau kata yang direkomendasikan untuk dicetak miring WAJIB ditulis dengan format italic Markdown (misalnya: *italic*) agar langsung tercetak miring pada dokumen final, bukan dibiarkan tegak atau hanya ditandai dengan tanda bintang di akhir.

@@ -1,7 +1,7 @@
-# PRD — AuditDok: Jasa Audit Dokumen Berbasis AI
+# PRD — AuditDok v1.1: Jasa Audit Dokumen Berbasis AI
 
-> **Versi:** 1.0 — Draft  
-> **Tanggal:** 20 Juni 2026  
+> **Versi:** 1.1 — Realistis v1  
+> **Tanggal:** 21 Juni 2026  
 > **Pemilik Produk:** Ajie Bariandono  
 
 ---
@@ -24,25 +24,24 @@
 
 ---
 
-## 2. Jenis Dokumen yang Dapat Diaudit
+## 2. Jenis Dokumen yang Dilayani (v1)
 
-Berikut **13 kategori dokumen** yang dilayani AuditDok:
+> [!NOTE]
+> v1 fokus pada 3 kategori dokumen yang paling banyak dicari dan sudah memiliki skill audit yang teruji.
 
-| No | Jenis Dokumen | Target Pengguna |
-|:---:|:---|:---|
-| 1 | **Laporan Keuangan** (LRA, Neraca, CALK) | PNS, akuntan, bendahara |
-| 2 | **Makalah Akademik** | Mahasiswa S1/S2 |
-| 3 | **Proposal Skripsi / Tesis** | Mahasiswa tingkat akhir |
-| 4 | **Laporan Kerja Praktik / PKL** | Mahasiswa D3/D4/S1 |
-| 5 | **Surat Dinas & Nota Dinas** | ASN, staf kantor pemerintah |
-| 6 | **Proposal Bisnis / Pitch Deck** | Startup, UMKM, freelancer |
-| 7 | **Laporan Tahunan Organisasi** | OPD, yayasan, NGO |
-| 8 | **Terms of Reference (TOR/KAK)** | Pejabat pengadaan, PPK |
-| 9 | **Dokumen Tender / Penawaran** | Vendor, CV, PT rekanan |
-| 10 | **Jurnal Ilmiah (draft pre-submit)** | Dosen, peneliti |
-| 11 | **Laporan Pertanggungjawaban (LPJ)** | Bendahara, panitia kegiatan |
-| 12 | **Standard Operating Procedure (SOP)** | Manajer operasional, QA |
-| 13 | **CV / Resume Profesional** | Job seeker, fresh graduate |
+| No | Jenis Dokumen | Skill File | Target Pengguna |
+|:---:|:---|:---|:---|
+| 1 | **Makalah Akademik** | `makalah.md` | Mahasiswa S1/S2 |
+| 2 | **Proposal Skripsi / Tesis** | `proposal_skripsi.md` | Mahasiswa tingkat akhir |
+| 3 | **Laporan Keuangan** (LRA, Neraca, CALK) | `laporan_keuangan.md` | PNS, akuntan, bendahara |
+
+### Roadmap Dokumen (v2+)
+Kategori berikut akan ditambahkan setelah v1 stabil dan memiliki klien aktif:
+- Surat Dinas & Nota Dinas
+- CV / Resume Profesional
+- Proposal Bisnis / Pitch Deck
+- Laporan Pertanggungjawaban (LPJ)
+- Standard Operating Procedure (SOP)
 
 ---
 
@@ -51,47 +50,45 @@ Berikut **13 kategori dokumen** yang dilayani AuditDok:
 ### Filosofi Tier
 
 ```
-Basic  →  "Cek cepat, tahu masalahnya"
-Plus   →  "Dapat arahan perbaikan yang actionable"  
-Pro    →  "Dapat peta visual + rekomendasi restrukturisasi"
-Ultra  →  "Terima dokumen jadi, tinggal pakai"
+Basic  →  "Cek cepat, tahu masalahnya"      (2-pass audit)
+Plus   →  "Dapat arahan perbaikan lengkap"   (3-pass audit)
 ```
 
 ---
 
-### 3.1 🟢 BASIC — Quick Audit
+### 3.1 🟢 BASIC — Quick Audit (2-Pass)
 
 **Tagline:** *"2x tembak, langsung tahu kelemahan dokumenmu."*
 
 | Aspek | Detail |
 |:---|:---|
 | **Harga** | **Rp25.000** / dokumen |
-| **Jumlah prompt audit** | 2 kali (1 audit umum + 1 audit fokus) |
+| **Jumlah pass audit** | 2 kali (Pass 1: Review Umum + Pass 2: Fokus Spesifik) |
 | **Maks halaman** | 20 halaman |
 | **Waktu pengerjaan** | ≤ 2 jam |
 
 **Deliverable:**
-- [x] **Laporan Audit Ringkas** (1–2 halaman, format PDF)
+- [x] **Laporan Audit Ringkas** (PDF)
   - Skor kualitas dokumen (skala 1–10)
-  - Daftar temuan utama (maks 10 poin)
+  - Daftar temuan utama dengan contoh sebelum/sesudah
   - Rekomendasi umum perbaikan
 - [x] **Highlight Error** — Daftar kesalahan ejaan, tata bahasa, dan inkonsistensi format
 
 **Tidak termasuk:**
+- ❌ Checklist tindakan terstruktur
+- ❌ Mindmap & diagram
 - ❌ Rewrite / penulisan ulang
-- ❌ Analisis struktur mendalam
-- ❌ File output selain PDF ringkasan
 
 ---
 
-### 3.2 🔵 PLUS — Guided Audit
+### 3.2 🔵 PLUS — Guided Audit (3-Pass)
 
 **Tagline:** *"Bukan cuma tahu salahnya, tapi tahu cara betulinnya."*
 
 | Aspek | Detail |
 |:---|:---|
 | **Harga** | **Rp75.000** / dokumen |
-| **Jumlah prompt audit** | 5 kali (multi-angle review) |
+| **Jumlah pass audit** | 3 kali (Pass 1: Review Umum + Pass 2: Fokus Spesifik + Pass 3: Checklist & Mindmap) |
 | **Maks halaman** | 50 halaman |
 | **Waktu pengerjaan** | ≤ 6 jam |
 
@@ -100,84 +97,26 @@ Ultra  →  "Terima dokumen jadi, tinggal pakai"
   - Checklist item-per-item yang harus diperbaiki
   - Prioritas perbaikan (Kritis / Penting / Opsional)
   - Contoh kalimat perbaikan untuk setiap temuan
-  - Referensi regulasi/pedoman yang relevan (jika ada)
-- [x] **Analisis Konsistensi** — Cek konsistensi istilah, singkatan, format penomoran, dan gaya sitasi di seluruh dokumen
-- [x] **Catatan Editor** — Komentar naratif dari auditor tentang kekuatan dan kelemahan dokumen secara keseluruhan
-
----
-
-### 3.3 🟣 PRO — Visual Audit
-
-**Tagline:** *"Lihat peta dokumenmu. Tahu mana yang kuat, mana yang rapuh."*
-
-| Aspek | Detail |
-|:---|:---|
-| **Harga** | **Rp150.000** / dokumen |
-| **Jumlah prompt audit** | 10 kali (deep-dive per bagian) |
-| **Maks halaman** | 100 halaman |
-| **Waktu pengerjaan** | ≤ 12 jam |
-
-**Deliverable (semua yang ada di Plus, ditambah):**
-- [x] **Markdown MiniMap** — Visualisasi struktur dokumen dalam format markdown interaktif:
-  - Peta hierarki bab/subbab dengan indikator warna kualitas (🟢 Baik / 🟡 Perlu Perbaikan / 🔴 Kritis)
-  - Diagram alur logika argumen (Mermaid diagram)
-  - Ringkasan per-bagian dengan skor kualitas individual
-- [x] **Laporan Audit Mendalam** (5–10 halaman PDF):
-  - Analisis koherensi antar-bab
-  - Evaluasi kekuatan argumentasi
-  - Gap analysis terhadap pedoman/template standar
-  - Rekomendasi restrukturisasi (jika diperlukan)
-- [x] **Comparison Table** — Tabel perbandingan sebelum vs. sesudah untuk setiap temuan kritis
-
----
-
-### 3.4 🟠 ULTRA — Full Service Audit
-
-**Tagline:** *"Serahkan draft kasarmu. Terima dokumen profesional."*
-
-| Aspek | Detail |
-|:---|:---|
-| **Harga** | **Rp350.000** / dokumen |
-| **Jumlah prompt audit** | Unlimited (sampai final) |
-| **Maks halaman** | 150 halaman |
-| **Waktu pengerjaan** | ≤ 24 jam |
-| **Revisi** | 2x revisi gratis |
-
-**Deliverable (semua yang ada di Pro, ditambah):**
-- [x] **Dokumen Final yang Sudah Dipoles** — File .docx/.pdf yang sudah di-rewrite dan diperbaiki:
-  - Prose yang dipoles (gaya bahasa alami, bukan AI-kaku)
-  - Tabel dan grafik yang dirapikan
-  - Format sesuai pedoman (APA, Turabian, template kampus, dll)
-  - Header/footer, penomoran halaman, daftar isi otomatis
-- [x] **Berkas Pendukung Utama:**
-  - PRD / Checklist Perbaikan (✅ dari tier Plus)
-  - Markdown MiniMap + Mermaid Diagram (✅ dari tier Pro)
-  - Executive Summary (1 halaman, siap cetak)
-  - Changelog / Riwayat Perubahan (diff sebelum vs sesudah)
-  - Metadata JSON (statistik dokumen: jumlah kata, halaman, sitasi, dll)
-- [x] **Konsultasi Singkat** — 15 menit voice call / chat untuk klarifikasi dan diskusi hasil audit
+- [x] **Mindmap Konsep Bertingkat** — Visualisasi struktur dokumen dalam nested bullet points
+- [x] **Diagram Alur Logika** — Kode Mermaid.js yang bisa dirender
+- [x] **Catatan Editor** — Komentar naratif tentang kekuatan dan kelemahan dokumen
 
 ---
 
 ## 4. Perbandingan Tier (Ringkas)
 
-| Fitur | 🟢 Basic | 🔵 Plus | 🟣 Pro | 🟠 Ultra |
-|:---|:---:|:---:|:---:|:---:|
-| **Harga** | Rp25rb | Rp75rb | Rp150rb | Rp350rb |
-| Laporan Audit Ringkas | ✅ | ✅ | ✅ | ✅ |
-| Highlight Error | ✅ | ✅ | ✅ | ✅ |
-| PRD / Checklist Perbaikan | ❌ | ✅ | ✅ | ✅ |
-| Analisis Konsistensi | ❌ | ✅ | ✅ | ✅ |
-| Catatan Editor | ❌ | ✅ | ✅ | ✅ |
-| Markdown MiniMap | ❌ | ❌ | ✅ | ✅ |
-| Diagram Alur (Mermaid) | ❌ | ❌ | ✅ | ✅ |
-| Laporan Audit Mendalam | ❌ | ❌ | ✅ | ✅ |
-| Dokumen Final (rewrite) | ❌ | ❌ | ❌ | ✅ |
-| Berkas Pendukung Lengkap | ❌ | ❌ | ❌ | ✅ |
-| Konsultasi Voice/Chat | ❌ | ❌ | ❌ | ✅ |
-| Revisi Gratis | ❌ | ❌ | ❌ | 2x |
-| Maks Halaman | 20 | 50 | 100 | 150 |
-| Waktu Pengerjaan | ≤ 2 jam | ≤ 6 jam | ≤ 12 jam | ≤ 24 jam |
+| Fitur | 🟢 Basic | 🔵 Plus |
+|:---|:---:|:---:|
+| **Harga** | Rp25rb | Rp75rb |
+| Pass Audit | 2x | 3x |
+| Laporan Audit (PDF) | ✅ | ✅ |
+| Highlight Error | ✅ | ✅ |
+| PRD / Checklist Perbaikan | ❌ | ✅ |
+| Mindmap Konsep | ❌ | ✅ |
+| Diagram Mermaid | ❌ | ✅ |
+| Catatan Editor | ❌ | ✅ |
+| Maks Halaman | 20 | 50 |
+| Waktu Pengerjaan | ≤ 2 jam | ≤ 6 jam |
 
 ---
 
@@ -185,36 +124,27 @@ Ultra  →  "Terima dokumen jadi, tinggal pakai"
 
 ```mermaid
 flowchart TD
-    A["Client upload dokumen\n(WhatsApp / Web Form)"] --> B{"Pilih Tier"}
-    B -->|Basic| C["Bayar Rp25rb"]
-    B -->|Plus| D["Bayar Rp75rb"]
-    B -->|Pro| E["Bayar Rp150rb"]
-    B -->|Ultra| F["Bayar Rp350rb"]
+    A["Client upload dokumen\n(WhatsApp)"] --> B{"Pilih Tier"}
+    B -->|Basic Rp25rb| C["Audit Pass 1:\nReview Umum"]
+    B -->|Plus Rp75rb| C
     
-    C --> G["Audit Pass 1:\nReview Umum"]
-    G --> H["Audit Pass 2:\nFokus Spesifik"]
-    H --> I["Kirim Laporan\nAudit Ringkas (PDF)"]
+    C --> D["Audit Pass 2:\nFokus Spesifik"]
     
-    D --> G
-    H --> J["Generate PRD\n& Checklist"]
-    J --> K["Kirim Paket Plus\n(PDF + MD)"]
+    D -->|Basic| E["Generate PDF\nLaporan Ringkas"]
+    E --> F["Kirim ke Client\n(WhatsApp)"]
     
-    E --> G
-    J --> L["Generate MiniMap\n& Diagram Mermaid"]
-    L --> M["Kirim Paket Pro\n(PDF + MD + Visual)"]
+    D -->|Plus| G["Audit Pass 3:\nChecklist & Mindmap"]
+    G --> H["Generate PDF +\nMarkdown Files"]
+    H --> F
     
-    F --> G
-    L --> N["Rewrite &\nPolish Dokumen"]
-    N --> O["Compile Berkas\nPendukung Lengkap"]
-    O --> P["Kirim Paket Ultra\n(DOCX + PDF + MD + JSON)"]
-    P --> Q["Konsultasi\n15 menit"]
+    F --> I["Log Order\nke orders.json"]
 ```
 
 ---
 
 ## 6. Strategi Pricing & Positioning
 
-### 6.1 Mengapa Lebih Murah dari Langganan AI?
+### Mengapa Lebih Murah dari Langganan AI?
 
 | Skenario | Biaya |
 |:---|:---|
@@ -222,19 +152,9 @@ flowchart TD
 | Langganan ChatGPT Plus 1 bulan | **Rp320.000** |
 | AuditDok Basic × 5 dokumen | **Rp125.000** |
 | AuditDok Plus × 3 dokumen | **Rp225.000** |
-| AuditDok Ultra × 1 dokumen | **Rp350.000** |
 
 > [!TIP]
 > **Pitch ke client:** *"Dengan Rp125 ribu kamu bisa audit 5 dokumen. Itu kurang dari sepertiga harga langganan Claude yang belum tentu kamu pakai tiap hari. Dan hasilnya? Deliverable siap pakai, bukan raw text yang harus kamu olah sendiri."*
-
-### 6.2 Paket Bundling (Opsional)
-
-| Paket | Isi | Harga | Hemat |
-|:---|:---|:---:|:---:|
-| **Mahasiswa Hemat** | 3× Basic + 1× Plus | Rp140.000 | 10% |
-| **Skripsi Warrior** | 1× Ultra (skripsi) + 2× Basic (revisi bab) | Rp380.000 | 5% |
-| **Kantor Pack** | 5× Plus | Rp340.000 | 9% |
-| **All-In Semester** | 2× Ultra + 5× Basic | Rp800.000 | 7% |
 
 ---
 
@@ -244,16 +164,18 @@ flowchart TD
 - **WhatsApp Business** sebagai channel utama order & delivery
 - Target awal: mahasiswa UPB Pontianak dan kolega ASN
 - Promosi via Instagram story + testimoni awal
+- Order diproses via CLI internal, hasil dikirim manual via WA
 
 ### Phase 2 — Scale (Bulan 3–4)
 - Landing page sederhana (1 halaman, form order + pricing)
 - Integrasi pembayaran QRIS (Dana/GoPay/OVO)
 - Ekspansi ke grup Telegram mahasiswa se-Kalbar
+- Tambah kategori dokumen baru (Surat Dinas, CV)
 
 ### Phase 3 — Automate (Bulan 5+)
 - Bot WhatsApp untuk order & tracking status
 - Dashboard sederhana untuk tracking order & revenue
-- Sistem referral: ajak teman dapat diskon 10%
+- Tambah tier Pro & Ultra jika demand memadai
 
 ---
 
@@ -261,12 +183,13 @@ flowchart TD
 
 | Komponen | Tools |
 |:---|:---|
-| AI Engine | Claude API / Gemini API |
-| Document Processing | `docx.js`, `pdf-parse`, Python `docx` |
-| Visual Output | Mermaid.js, Markdown renderer |
+| AI Engine | Gemini API (primary), Claude API (fallback) |
+| Document Parsing | Python `docx`, `pdfplumber` |
+| PDF Generation | Python `reportlab` (font Arial Unicode MS) |
+| Skills Library | File `.md` per jenis dokumen |
+| Order Tracking | `orders.json` (lokal) |
 | Delivery | WhatsApp Business, Google Drive |
 | Payment | QRIS, Transfer bank |
-| Tracking | Notion database / Google Sheets |
 
 ---
 
@@ -275,8 +198,8 @@ flowchart TD
 | Risiko | Dampak | Mitigasi |
 |:---|:---|:---|
 | Client submit dokumen rahasia/sensitif | Kebocoran data | NDA sederhana, hapus file setelah 7 hari |
-| Kualitas AI output tidak konsisten | Reputasi turun | SOP review manual sebelum kirim |
-| Volume order melebihi kapasitas | Delay pengerjaan | Batasi slot per hari (maks 5 Ultra) |
+| Kualitas AI output tidak konsisten | Reputasi turun | Multi-pass audit + SOP review manual |
+| Volume order melebihi kapasitas | Delay pengerjaan | Batasi slot per hari |
 | Plagiarisme / akademik dishonesty | Masalah etika | Disclaimer: "Audit & saran, bukan ghostwriting" |
 | Biaya API AI naik | Margin tergerus | Monitor usage, adjust pricing quarterly |
 
@@ -286,9 +209,9 @@ flowchart TD
 
 | Metrik | Target Bulan 1 | Target Bulan 3 |
 |:---|:---:|:---:|
-| Jumlah order | 20 dokumen | 60 dokumen |
-| Revenue | Rp1.500.000 | Rp5.000.000 |
-| Repeat customer rate | 20% | 40% |
+| Jumlah order | 15 dokumen | 40 dokumen |
+| Revenue | Rp750.000 | Rp3.000.000 |
+| Repeat customer rate | 15% | 30% |
 | Rating kepuasan (1–5) | ≥ 4.0 | ≥ 4.5 |
 | Waktu pengerjaan rata-rata | Sesuai SLA | < 80% SLA |
 
@@ -297,10 +220,9 @@ flowchart TD
 ## 11. Open Questions
 
 > [!IMPORTANT]
-> Beberapa keputusan yang perlu ditentukan sebelum launch:
+> Keputusan yang perlu ditentukan sebelum launch:
 
-1. **Nama brand final:** AuditDok? DokPeriksa? CekDokumen? Atau nama lain?
-2. **Apakah perlu landing page dari awal**, atau cukup WhatsApp dulu untuk validasi?
-3. **Format disclaimer etika** yang tepat untuk menghindari tuduhan ghostwriting akademik
-4. **Apakah tier Ultra harus include konsultasi voice call**, atau cukup chat saja?
-5. **Kebijakan refund** jika client tidak puas dengan hasil audit
+1. **Nama brand final:** AuditDok? DokPeriksa? CekDokumen?
+2. **Format disclaimer etika** untuk menghindari tuduhan ghostwriting akademik
+3. **Kebijakan refund** jika client tidak puas
+4. **Batas file size** per upload (saat ini belum ada validasi)

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "client": "Budi",
+    "file": "sample_makalah.docx",
+    "tier": "basic",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_basic",
+    "timestamp": "2026-06-21 15:13:54"
+  },
+  {
+    "id": 2,
+    "client": "Dewi",
+    "file": "sample_makalah.docx",
+    "tier": "plus",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_plus",
+    "timestamp": "2026-06-21 15:15:32"
+  },
+  {
+    "id": 3,
+    "client": "NamaKlien1",
+    "file": "sample_makalah.docx",
+    "tier": "basic",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_basic",
+    "timestamp": "2026-06-21 15:19:15"
+  },
+  {
+    "id": 4,
+    "client": "Ajie",
+    "file": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823.pdf",
+    "tier": "plus",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_plus_ajie",
+    "timestamp": "2026-06-21 15:27:55"
+  },
+  {
+    "id": 5,
+    "client": "Ajie",
+    "file": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823.pdf",
+    "tier": "plus",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_plus_ajie",
+    "timestamp": "2026-06-21 15:58:19"
+  },
+  {
+    "id": 6,
+    "client": "Ajie",
+    "file": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823.pdf",
+    "tier": "plus",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_plus_ajie",
+    "timestamp": "2026-06-21 16:10:59"
+  },
+  {
+    "id": 7,
+    "client": "KlienHybrid",
+    "file": "sample_makalah.docx",
+    "tier": "plus",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_hybrid",
+    "timestamp": "2026-06-21 16:28:38"
+  },
+  {
+    "id": 8,
+    "client": "Ajie",
+    "file": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823.pdf",
+    "tier": "plus",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_plus_ajie",
+    "timestamp": "2026-06-21 16:46:06"
+  },
+  {
+    "id": 9,
+    "client": "AjieAPI",
+    "file": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823.pdf",
+    "tier": "plus",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_plus_ajie_api",
+    "timestamp": "2026-06-21 17:15:50"
+  },
+  {
+    "id": 10,
+    "client": "AjieAPI",
+    "file": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823.pdf",
+    "tier": "plus",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_plus_ajie_api",
+    "timestamp": "2026-06-21 17:25:29"
+  }
+]

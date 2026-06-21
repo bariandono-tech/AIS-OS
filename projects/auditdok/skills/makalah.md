@@ -28,7 +28,7 @@ Setiap temuan harus memiliki:
 - **Tingkat Keparahan**: (Kritis / Penting / Opsional)
 - **Deskripsi**: Penjelasan mengapa hal tersebut salah.
 - **Sebelum**: Kutipan teks yang bermasalah.
-- **Sesudah**: Usulan kalimat/paragraf perbaikan yang siap dipakai.
+- **Sesudah**: Usulan kalimat/paragraf perbaikan yang siap dipakai. PENTING: Istilah asing atau kata yang direkomendasikan untuk dicetak miring WAJIB ditulis dengan format italic Markdown (misalnya: *italic*) agar langsung tercetak miring pada dokumen final, bukan dibiarkan tegak atau hanya ditandai dengan tanda bintang di akhir.
 
 ### Contoh Checklist Tindakan (PRD Format)
 - [ ] Perbaiki bagian Latar Belakang agar lebih berfokus pada...

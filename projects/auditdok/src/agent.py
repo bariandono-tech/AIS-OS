@@ -50,7 +50,7 @@ class AuditAgent:
                     contents=prompt,
                     config=config
                 )
-                return response.text
+                return response.text or "[WARNING: Respon kosong atau diblokir filter keamanan oleh API Gemini.]"
             except Exception as e:
                 print(f"[ERROR] Gagal memanggil Gemini API: {e}. Beralih ke Mock Mode.")
                 return self._generate_mock_response(system_instruction, focus_prompt)
@@ -69,7 +69,7 @@ class AuditAgent:
                         {"role": "user", "content": prompt}
                     ]
                 )
-                return message.content[0].text
+                return message.content[0].text or "[WARNING: Respon kosong dari API Anthropic.]"
             except Exception as e:
                 print(f"[ERROR] Gagal memanggil Anthropic API: {e}. Beralih ke Mock Mode.")
                 return self._generate_mock_response(system_instruction, focus_prompt)

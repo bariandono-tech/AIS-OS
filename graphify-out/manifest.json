@@ -1790,8 +1790,8 @@
     "semantic_hash": ""
   },
   "projects/auditdok/prd.md": {
-    "mtime": 1781935080.4971657,
-    "ast_hash": "cd667aeae0ac9b523b99eb2f39495b33",
+    "mtime": 1782029516.0982313,
+    "ast_hash": "50dd63dc26377e61d6dee9e75529110f",
     "semantic_hash": ""
   },
   "package.json": {
@@ -1800,18 +1800,18 @@
     "semantic_hash": ""
   },
   "projects/auditdok/src/agent.py": {
-    "mtime": 1782025072.0850184,
-    "ast_hash": "550b395eeca6a6ed020cf60587c10408",
+    "mtime": 1782032827.2109692,
+    "ast_hash": "6a4c972357c55afd927a3b9c6a6a288f",
     "semantic_hash": ""
   },
   "projects/auditdok/src/cli.py": {
-    "mtime": 1782024574.831352,
-    "ast_hash": "da0949d24180f572ac1ee46d1fd4880f",
+    "mtime": 1782033985.7179732,
+    "ast_hash": "142dbe5397a91c2bd01e65e04b464b49",
     "semantic_hash": ""
   },
   "projects/auditdok/src/generator.py": {
-    "mtime": 1782024494.6944215,
-    "ast_hash": "b0121e8cbc546e63b988f2b67301acda",
+    "mtime": 1782036787.799837,
+    "ast_hash": "579b2dbfaca1f87770356c25309c6127",
     "semantic_hash": ""
   },
   "projects/auditdok/src/parser.py": {
@@ -1820,8 +1820,8 @@
     "semantic_hash": ""
   },
   "projects/auditdok/src/workflow.py": {
-    "mtime": 1782024503.7056582,
-    "ast_hash": "1b49a9eaab609325f88522b361ee66fc",
+    "mtime": 1782036800.3838978,
+    "ast_hash": "59f1383952fd32a796fa9bc0ad57e510",
     "semantic_hash": ""
   },
   "projects/auditdok/00-ideation.md": {
@@ -1855,18 +1855,113 @@
     "semantic_hash": ""
   },
   "projects/auditdok/skills/laporan_keuangan.md": {
-    "mtime": 1782024469.780657,
-    "ast_hash": "6d22e8101716e8cb8a58c00d68ae7d02",
+    "mtime": 1782031678.3346674,
+    "ast_hash": "1687b8fc65c011e50962667704a78502",
     "semantic_hash": ""
   },
   "projects/auditdok/skills/makalah.md": {
-    "mtime": 1782024460.294846,
-    "ast_hash": "6cda5121fe8839adc9561bb130205c74",
+    "mtime": 1782031669.0214036,
+    "ast_hash": "ac636d0889d925873324c4da12545318",
     "semantic_hash": ""
   },
   "projects/auditdok/skills/proposal_skripsi.md": {
-    "mtime": 1782024465.1309175,
-    "ast_hash": "fccf3ef3aeb65db4f1e967c67735ceaa",
+    "mtime": 1782031674.0148656,
+    "ast_hash": "2713efe0158aa21150e6499b1df451dc",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/orders.json": {
+    "mtime": 1782037529.8845267,
+    "ast_hash": "249c093374b99afa9ae2033d5d1ecbca",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/src/__init__.py": {
+    "mtime": 1782029285.2116177,
+    "ast_hash": "0f9db4a03058240fb25ef61e64eb8a0e",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_plus/checklist_perbaikan.md": {
+    "mtime": 1782029732.253904,
+    "ast_hash": "bca55e172600b1da07284ae4098c1a45",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_plus/laporan_audit.md": {
+    "mtime": 1782029732.252878,
+    "ast_hash": "9dd7c956ada2eef42375ee7627d4e77a",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_plus/minimap.md": {
+    "mtime": 1782029732.253904,
+    "ast_hash": "073e309474b6638d205392516c9221ba",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_plus_ajie/checklist_perbaikan.md": {
+    "mtime": 1782036848.9197986,
+    "ast_hash": "8f0de33e95de4c79231749c1799bd7e3",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_plus_ajie/laporan_audit.md": {
+    "mtime": 1782036848.9192698,
+    "ast_hash": "32d132818a8c125a240c5a0a0488679d",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_plus_ajie/minimap.md": {
+    "mtime": 1782036848.9203186,
+    "ast_hash": "303cdf68e9f1baf112eb831ad15aa160",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_hybrid/checklist_perbaikan.md": {
+    "mtime": 1782034118.9947155,
+    "ast_hash": "cfff9f4f2732cf695ce69f6bcfee2674",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_hybrid/laporan_audit.md": {
+    "mtime": 1782034118.9941125,
+    "ast_hash": "1f2cde10be01c201e345661eddcf378a",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_hybrid/minimap.md": {
+    "mtime": 1782034118.9952226,
+    "ast_hash": "ce66c2e7186838e0939073595ae37733",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md": {
+    "mtime": 1782034112.141233,
+    "ast_hash": "1f2cde10be01c201e345661eddcf378a",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_manual/prompt_manual.txt": {
+    "mtime": 1782033499.836225,
+    "ast_hash": "4d0fdd1b34ce1d44e2a88bd5509c4184",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md": {
+    "mtime": 1782036807.1162386,
+    "ast_hash": "c15e3d509ff62f594dab23856259a9f9",
+    "semantic_hash": ""
+  },
+  ".agents/skills/multi-pass-prompting/SKILL.md": {
+    "mtime": 1782036237.8366344,
+    "ast_hash": "7027e1064e9dc8909cadfc29786f75e8",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md": {
+    "mtime": 1782037081.9908118,
+    "ast_hash": "25eb375ca8eee516326753cc8300799a",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_plus_ajie_api/checklist_perbaikan.md": {
+    "mtime": 1782037529.8684673,
+    "ast_hash": "987c7a92ee14e67908db7ec46dd0e363",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_plus_ajie_api/laporan_audit.md": {
+    "mtime": 1782037529.8679225,
+    "ast_hash": "eb5de6041ad96e306f6a0d83d4a2444a",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_plus_ajie_api/minimap.md": {
+    "mtime": 1782037529.8705165,
+    "ast_hash": "d154ea48c182c10d6d7dcff24edf32e6",
     "semantic_hash": ""
   }
 }

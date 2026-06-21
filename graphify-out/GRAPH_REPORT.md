@@ -1,16 +1,16 @@
 # Graph Report - AIS-OS  (2026-06-21)
 
 ## Corpus Check
-- 338 files · ~407,050 words
+- 356 files · ~432,622 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3869 nodes · 3841 edges · 417 communities (310 shown, 107 thin omitted)
+- 4032 nodes · 3997 edges · 434 communities (319 shown, 115 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a800874a`
+- Built from commit: `d2083677`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -410,6 +410,22 @@
 - [[_COMMUNITY_Community 414|Community 414]]
 - [[_COMMUNITY_Community 415|Community 415]]
 - [[_COMMUNITY_Community 416|Community 416]]
+- [[_COMMUNITY_Community 417|Community 417]]
+- [[_COMMUNITY_Community 418|Community 418]]
+- [[_COMMUNITY_Community 420|Community 420]]
+- [[_COMMUNITY_Community 421|Community 421]]
+- [[_COMMUNITY_Community 422|Community 422]]
+- [[_COMMUNITY_Community 423|Community 423]]
+- [[_COMMUNITY_Community 424|Community 424]]
+- [[_COMMUNITY_Community 425|Community 425]]
+- [[_COMMUNITY_Community 426|Community 426]]
+- [[_COMMUNITY_Community 427|Community 427]]
+- [[_COMMUNITY_Community 428|Community 428]]
+- [[_COMMUNITY_Community 429|Community 429]]
+- [[_COMMUNITY_Community 430|Community 430]]
+- [[_COMMUNITY_Community 431|Community 431]]
+- [[_COMMUNITY_Community 432|Community 432]]
+- [[_COMMUNITY_Community 433|Community 433]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
@@ -428,17 +444,17 @@
   projects/auditdok/src/workflow.py → projects/auditdok/src/agent.py
 - `draw_flowchart()` --calls--> `draw_arrow()`  [INFERRED]
   projects/makalah-sim/draw_flowcharts.py → projects/makalah-sim/draw_individual_flowcharts.py
+- `main()` --calls--> `generate_markdown_files()`  [EXTRACTED]
+  projects/auditdok/src/cli.py → projects/auditdok/src/generator.py
+- `main()` --calls--> `generate_pdf_report()`  [EXTRACTED]
+  projects/auditdok/src/cli.py → projects/auditdok/src/generator.py
 - `main()` --calls--> `AuditWorkflow`  [EXTRACTED]
   projects/auditdok/src/cli.py → projects/auditdok/src/workflow.py
-- `syncEngine()` --calls--> `blocksToMarkdown()`  [EXTRACTED]
-  projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
-- `syncEngine()` --calls--> `blocksToResume()`  [EXTRACTED]
-  projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (417 total, 107 thin omitted)
+## Communities (434 total, 115 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -450,13 +466,13 @@ Nodes (47): 1. Katalog Layanan & Harga, 1. Team-reaches-out:, 2. Alur Kerja Prom
 
 ### Community 2 - "Community 2"
 Cohesion: 0.08
-Nodes (14): border0, borders0, bordersAll, borderSingle, chapterPageSetup, daftarPustakaEntry(), doc, {
+Nodes (9): border0, borders0, bordersAll, borderSingle, chapterPageSetup, doc, {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
   ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,
   PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
   TabStopType, TabStopPosition, NumberFormat, TableOfContents, ImageRun
-} (+6 more)
+}, frontMatterFooter (+1 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.06
@@ -1443,8 +1459,8 @@ Cohesion: 0.50
 Nodes (3): Modul & Kegunaan, 📊 Sistem Aplikasi Keuangan Tingkat Instansi (SAKTI), Evaluasi Sistem Informasi
 
 ### Community 351 - "Community 351"
-Cohesion: 0.08
-Nodes (17): border0, borders0, bordersAll, borderSingle, cellPara(), chapterPageSetup, createMutuBakuTable(), daftarPustakaEntry() (+9 more)
+Cohesion: 0.07
+Nodes (22): border0, borders0, bordersAll, borderSingle, cellPara(), centered(), chapterPageSetup, createMutuBakuTable() (+14 more)
 
 ### Community 352 - "Community 352"
 Cohesion: 0.10
@@ -1570,12 +1586,20 @@ Nodes (8): border0, borders0, bordersAll, borderSingle, doc, {
 }, fs, path
 
 ### Community 394 - "Community 394"
+Cohesion: 0.09
+Nodes (27): AuditAgent, Menjalankan audit terhadap dokumen menggunakan LLM pilihan., Menghasilkan output mock terstruktur untuk keperluan pengujian luring., find_draft_order_by_compile_path(), log_order(), main(), print_banner(), Mencetak banner program. (+19 more)
+
+### Community 395 - "Community 395"
 Cohesion: 0.10
-Nodes (21): AuditAgent, Menjalankan audit terhadap dokumen menggunakan LLM pilihan., Menghasilkan output mock terstruktur untuk keperluan pengujian luring., main(), print_banner(), Mencetak banner program yang estetis dan premium., clean_markdown_formatting(), generate_markdown_files() (+13 more)
+Nodes (19): Bab I: Pendahuluan, Bab II: Pembahasan, CHECKLIST TINDAKAN, Contoh Checklist Tindakan (PRD Format), Contoh Checklist Tindakan (PRD Format), DIAGRAM ALUR, HASIL AUDIT DOKUMEN, HASIL AUDIT DOKUMEN (MOCK) (+11 more)
+
+### Community 396 - "Community 396"
+Cohesion: 0.10
+Nodes (19): Bab I: Pendahuluan, Bab II: Pembahasan, CHECKLIST TINDAKAN, Contoh Checklist Tindakan (PRD Format), Contoh Checklist Tindakan (PRD Format), DIAGRAM ALUR, HASIL AUDIT DOKUMEN, HASIL AUDIT DOKUMEN (MOCK) (+11 more)
 
 ### Community 407 - "Community 407"
-Cohesion: 0.08
-Nodes (23): 10. Metrik Keberhasilan (KPI), 11. Open Questions, 1. Ringkasan Eksekutif, 2. Jenis Dokumen yang Dapat Diaudit, 3.1 🟢 BASIC — Quick Audit, 3.2 🔵 PLUS — Guided Audit, 3.3 🟣 PRO — Visual Audit, 3.4 🟠 ULTRA — Full Service Audit (+15 more)
+Cohesion: 0.09
+Nodes (21): 10. Metrik Keberhasilan (KPI), 11. Open Questions, 1. Ringkasan Eksekutif, 2. Jenis Dokumen yang Dilayani (v1), 3.1 🟢 BASIC — Quick Audit (2-Pass), 3.2 🔵 PLUS — Guided Audit (3-Pass), 3. Tier Layanan, 4. Perbandingan Tier (Ringkas) (+13 more)
 
 ### Community 408 - "Community 408"
 Cohesion: 0.22
@@ -1602,35 +1626,59 @@ Cohesion: 0.33
 Nodes (5): Contoh Checklist Tindakan, Kode Diagram Alur Logis, Skor Evaluasi, Struktur Mindmap Konsep Bertingkat, Temuan Utama
 
 ### Community 414 - "Community 414"
+Cohesion: 0.13
+Nodes (14): CHECKLIST TINDAKAN, Contoh Checklist Tindakan (PRD Format), Contoh Checklist Tindakan (PRD Format), DIAGRAM ALUR, PASS 1: Review Umum, PASS 2: Analisis Fokus Per-Bagian, PASS 3: Checklist & Mindmap, Skor Evaluasi (+6 more)
+
+### Community 420 - "Community 420"
+Cohesion: 0.11
+Nodes (19): 1. Bab I Pendahuluan - Latar Belakang (Halaman 6), 2. Bab II Pembahasan - Teori SIMKIM (Halaman 13-14), 3. Bab II Pembahasan - Kendala Penerapan SIMKIM (Halaman 15), 4. Bab II Pembahasan - Alur SOP & Flowchart (Halaman 16), 5. Bab II Pembahasan - Tabel 2.1 Mutu Baku SOP Penerimaan (Halaman 19), 6. Bab II Pembahasan - Tabel 2.3 & 2.4 Mutu Baku Registrasi & Penempatan (Halaman 28-31), 7. Bab II Pembahasan - SOP Pemindahan & Pendeportasian (Halaman 36-43), 8. Bab II Pembahasan - Analisis Leavitt's Diamond Model (Halaman 41-49) (+11 more)
+
+### Community 423 - "Community 423"
+Cohesion: 0.10
+Nodes (19): 1. Bab I Pendahuluan - Latar Belakang (Halaman 6), 2. Bab II Pembahasan - Teori SIMKIM (Halaman 13-14), 3. Bab II Pembahasan - Kendala Penerapan SIMKIM (Halaman 15), 4. Bab II Pembahasan - Alur SOP & Flowchart (Halaman 16), 5. Bab II Pembahasan - Tabel 2.1 Mutu Baku SOP Penerimaan (Halaman 19), 6. Bab II Pembahasan - Tabel 2.3 & 2.4 Mutu Baku Registrasi & Penempatan (Halaman 28-31), 7. Bab II Pembahasan - SOP Pemindahan & Pendeportasian (Halaman 36-43), 8. Bab II Pembahasan - Analisis Leavitt's Diamond Model (Halaman 41-49) (+11 more)
+
+### Community 424 - "Community 424"
+Cohesion: 0.13
+Nodes (14): CHECKLIST TINDAKAN, Contoh Checklist Tindakan (PRD Format), Contoh Checklist Tindakan (PRD Format), DIAGRAM ALUR, PASS 1: Review Umum, PASS 2: Analisis Fokus Per-Bagian, PASS 3: Checklist & Mindmap, Skor Evaluasi (+6 more)
+
+### Community 427 - "Community 427"
+Cohesion: 0.22
+Nodes (8): Alur Kerja Multi-Pass Manual (3 Langkah), Mengapa Multi-Pass Lebih Unggul?, Multi-Pass Prompting Playbook (HITL Manual Audit), Tahap 1: Lakukan Persiapan Dokumen, Tahap 2: Eksekusi Pass 1 — Review Struktur & Bahasa Umum, Tahap 3: Eksekusi Pass 2 — Analisis Temuan Detail, Tahap 4: Eksekusi Pass 3 — Checklist Tindakan & Visualisasi, Tahap 5: Verifikasi Manual & Kompilasi PDF Offline
+
+### Community 430 - "Community 430"
+Cohesion: 0.11
+Nodes (17): 1. Latar Belakang (Halaman 6), 2. Teori Arsitektur SIMKIM (Halaman 13-14), 3. Kendala Penerapan SIMKIM (Halaman 15), 4. Siklus Hidup & Diagram SOP (Halaman 16), 5. Tabel Mutu Baku Penerimaan (Halaman 19), 6. Tabel SOP Registrasi & Penempatan (Halaman 28-31), 7. SOP Pemindahan & Pendeportasian (Halaman 36-43), 8. Kerangka Analisis Leavitt's Diamond (Halaman 41-49) (+9 more)
+
+### Community 433 - "Community 433"
 Cohesion: 0.40
-Nodes (5): centered(), getPngDimensions(), getScaledDimensions(), insertFlowchartImage(), tableSource()
+Nodes (5): daftarPustakaEntry(), numberedItem(), tr(), trb(), tri()
 
 ## Knowledge Gaps
-- **1574 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `workspaces`, `{
+- **1679 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `workspaces`, `{
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
   PageNumber, PageBreak, Header, Footer,
   PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
   TabStopType, NumberFormat, ImageRun,
   TableOfContents, SequentialIdentifier
-}` (+1569 more)
+}` (+1674 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **107 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **115 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 79` to `Community 280`?**
-  _High betweenness centrality (0.003) - this node is a cross-community bridge._
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Why does `dotenv` connect `Community 79` to `Community 10`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `@notionhq/client` connect `Community 79` to `Community 11`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private` to the rest of the system?**
-  _1602 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1710 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.07586206896551724 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08 - nodes in this community are weakly interconnected._

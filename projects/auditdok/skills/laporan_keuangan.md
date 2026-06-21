@@ -25,4 +25,4 @@ Daftar ketidaksesuaian angka antar-tabel (misal: "Saldo Kas di Neraca tertulis R
 - **Bagian/Tabel**: Lokasi temuan.
 - **Tingkat Keparahan**: (Kritis / Penting / Opsional).
 - **Deskripsi Masalah**: Penjelasan penyimpangan dari standar akuntansi/aturan.
-- **Tindakan Korektif**: Jurnal penyesuaian atau penjelasan narasi baru yang harus dimasukkan ke CALK.
+- **Tindakan Korektif**: Jurnal penyesuaian atau penjelasan narasi baru yang harus dimasukkan ke CALK. PENTING: Istilah asing atau kata yang direkomendasikan untuk dicetak miring WAJIB ditulis dengan format italic Markdown (misalnya: *italic*) agar langsung tercetak miring pada dokumen final, bukan dibiarkan tegak atau hanya ditandai dengan tanda bintang di akhir.

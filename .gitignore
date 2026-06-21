@@ -13,4 +13,11 @@ audits/
 *.pdf
 ~$*
 .obsidian/
-
+graphify-out/cache/
+*.tmp
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+poetry.lock
+Gemfile.lock
+Cargo.lock

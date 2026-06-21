@@ -83,6 +83,16 @@
       "norm_label": "workspaces"
     },
     {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_init",
+      "community": 419,
+      "norm_label": "__init__.py"
+    },
+    {
       "label": "agent.py",
       "file_type": "code",
       "source_file": "projects/auditdok/src/agent.py",
@@ -166,31 +176,71 @@
       "label": "print_banner()",
       "file_type": "code",
       "source_file": "projects/auditdok/src/cli.py",
-      "source_location": "L11",
+      "source_location": "L13",
       "_origin": "ast",
       "id": "src_cli_print_banner",
       "community": 394,
       "norm_label": "print_banner()"
     },
     {
+      "label": "log_order()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "src_cli_log_order",
+      "community": 394,
+      "norm_label": "log_order()"
+    },
+    {
+      "label": "find_draft_order_by_compile_path()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "src_cli_find_draft_order_by_compile_path",
+      "community": 394,
+      "norm_label": "find_draft_order_by_compile_path()"
+    },
+    {
       "label": "main()",
       "file_type": "code",
       "source_file": "projects/auditdok/src/cli.py",
-      "source_location": "L28",
+      "source_location": "L127",
       "_origin": "ast",
       "id": "src_cli_main",
       "community": 394,
       "norm_label": "main()"
     },
     {
-      "label": "Mencetak banner program yang estetis dan premium.",
+      "label": "Mencetak banner program.",
       "file_type": "rationale",
       "source_file": "projects/auditdok/src/cli.py",
-      "source_location": "L12",
+      "source_location": "L14",
       "_origin": "ast",
-      "id": "src_cli_rationale_12",
+      "id": "src_cli_rationale_14",
       "community": 394,
-      "norm_label": "mencetak banner program yang estetis dan premium."
+      "norm_label": "mencetak banner program."
+    },
+    {
+      "label": "Mencatat atau memperbarui status order ke file orders.json untuk tracking.",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "src_cli_rationale_31",
+      "community": 394,
+      "norm_label": "mencatat atau memperbarui status order ke file orders.json untuk tracking."
+    },
+    {
+      "label": "Mencari draft order di orders.json yang cocok dengan path file yang di-compile.",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "src_cli_rationale_87",
+      "community": 394,
+      "norm_label": "mencari draft order di orders.json yang cocok dengan path file yang di-compile."
     },
     {
       "label": "generator.py",
@@ -206,17 +256,27 @@
       "label": "clean_markdown_formatting()",
       "file_type": "code",
       "source_file": "projects/auditdok/src/generator.py",
-      "source_location": "L8",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "src_generator_clean_markdown_formatting",
       "community": 394,
       "norm_label": "clean_markdown_formatting()"
     },
     {
+      "label": "_build_pdf_story()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "src_generator_build_pdf_story",
+      "community": 394,
+      "norm_label": "_build_pdf_story()"
+    },
+    {
       "label": "generate_pdf_report()",
       "file_type": "code",
       "source_file": "projects/auditdok/src/generator.py",
-      "source_location": "L17",
+      "source_location": "L154",
       "_origin": "ast",
       "id": "src_generator_generate_pdf_report",
       "community": 394,
@@ -226,29 +286,29 @@
       "label": "generate_markdown_files()",
       "file_type": "code",
       "source_file": "projects/auditdok/src/generator.py",
-      "source_location": "L135",
+      "source_location": "L213",
       "_origin": "ast",
       "id": "src_generator_generate_markdown_files",
       "community": 394,
       "norm_label": "generate_markdown_files()"
     },
     {
-      "label": "Menghilangkan tag bold markdown (**) agar ReportLab tidak bingung,     dan mengg",
-      "file_type": "rationale",
-      "source_file": "projects/auditdok/src/generator.py",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "src_generator_rationale_9",
-      "community": 394,
-      "norm_label": "menghilangkan tag bold markdown (**) agar reportlab tidak bingung,     dan mengg"
-    },
-    {
-      "label": "Membuat file PDF profesional berdasarkan hasil audit teks dari LLM.     Mengguna",
+      "label": "Mengkonversi tag Markdown ke HTML yang dimengerti ReportLab,     dan membersihka",
       "file_type": "rationale",
       "source_file": "projects/auditdok/src/generator.py",
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_generator_rationale_18",
+      "community": 394,
+      "norm_label": "mengkonversi tag markdown ke html yang dimengerti reportlab,     dan membersihka"
+    },
+    {
+      "label": "Membuat file PDF profesional berdasarkan hasil audit teks dari LLM.     Mengguna",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L155",
+      "_origin": "ast",
+      "id": "src_generator_rationale_155",
       "community": 394,
       "norm_label": "membuat file pdf profesional berdasarkan hasil audit teks dari llm.     mengguna"
     },
@@ -256,9 +316,9 @@
       "label": "Mengekstrak bagian-bagian tertentu dari output audit (seperti Checklist dan Mini",
       "file_type": "rationale",
       "source_file": "projects/auditdok/src/generator.py",
-      "source_location": "L136",
+      "source_location": "L214",
       "_origin": "ast",
-      "id": "src_generator_rationale_136",
+      "id": "src_generator_rationale_214",
       "community": 394,
       "norm_label": "mengekstrak bagian-bagian tertentu dari output audit (seperti checklist dan mini"
     },
@@ -346,7 +406,7 @@
       "label": "AuditWorkflow",
       "file_type": "code",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L6",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "src_workflow_auditworkflow",
       "community": 394,
@@ -356,7 +416,7 @@
       "label": ".__init__()",
       "file_type": "code",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L7",
+      "source_location": "L8",
       "_origin": "ast",
       "id": "src_workflow_auditworkflow_init",
       "community": 394,
@@ -366,17 +426,27 @@
       "label": "._load_skill_prompt()",
       "file_type": "code",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L14",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "src_workflow_auditworkflow_load_skill_prompt",
       "community": 394,
       "norm_label": "._load_skill_prompt()"
     },
     {
+      "label": "._run_multi_pass()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "src_workflow_auditworkflow_run_multi_pass",
+      "community": 394,
+      "norm_label": "._run_multi_pass()"
+    },
+    {
       "label": ".run()",
       "file_type": "code",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L29",
+      "source_location": "L102",
       "_origin": "ast",
       "id": "src_workflow_auditworkflow_run",
       "community": 394,
@@ -386,19 +456,29 @@
       "label": "Membaca isi file Markdown dari pustaka Skills.",
       "file_type": "rationale",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "_origin": "ast",
-      "id": "src_workflow_rationale_15",
+      "id": "src_workflow_rationale_16",
       "community": 394,
       "norm_label": "membaca isi file markdown dari pustaka skills."
+    },
+    {
+      "label": "Menjalankan audit multi-pass sesuai tier layanan:         - Basic: 2 pass (Revie",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "src_workflow_rationale_31",
+      "community": 394,
+      "norm_label": "menjalankan audit multi-pass sesuai tier layanan:         - basic: 2 pass (revie"
     },
     {
       "label": "Menjalankan orkestrasi alur kerja audit berdasarkan Tier layanan.",
       "file_type": "rationale",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L30",
+      "source_location": "L103",
       "_origin": "ast",
-      "id": "src_workflow_rationale_30",
+      "id": "src_workflow_rationale_103",
       "community": 394,
       "norm_label": "menjalankan orkestrasi alur kerja audit berdasarkan tier layanan."
     },
@@ -1079,7 +1159,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_centered",
-      "community": 414,
+      "community": 351,
       "norm_label": "centered()"
     },
     {
@@ -1179,7 +1259,7 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_getpngdimensions",
-      "community": 414,
+      "community": 351,
       "norm_label": "getpngdimensions()"
     },
     {
@@ -1189,7 +1269,7 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_getscaleddimensions",
-      "community": 414,
+      "community": 351,
       "norm_label": "getscaleddimensions()"
     },
     {
@@ -1219,7 +1299,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_insertflowchartimage",
-      "community": 414,
+      "community": 351,
       "norm_label": "insertflowchartimage()"
     },
     {
@@ -1239,7 +1319,7 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_tablesource",
-      "community": 414,
+      "community": 351,
       "norm_label": "tablesource()"
     },
     {
@@ -7839,7 +7919,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "drafts_build_makalah_tr",
-      "community": 2,
+      "community": 433,
       "norm_label": "tr()"
     },
     {
@@ -7849,7 +7929,7 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "drafts_build_makalah_tri",
-      "community": 2,
+      "community": 433,
       "norm_label": "tri()"
     },
     {
@@ -7859,7 +7939,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "drafts_build_makalah_trb",
-      "community": 2,
+      "community": 433,
       "norm_label": "trb()"
     },
     {
@@ -7909,7 +7989,7 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "drafts_build_makalah_numbereditem",
-      "community": 2,
+      "community": 433,
       "norm_label": "numbereditem()"
     },
     {
@@ -7969,7 +8049,7 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "drafts_build_makalah_daftarpustakaentry",
-      "community": 2,
+      "community": 433,
       "norm_label": "daftarpustakaentry()"
     },
     {
@@ -9261,6 +9341,96 @@
       "id": "templates_04_retrospective_next_version_ideas",
       "community": 284,
       "norm_label": "next version ideas"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "multi_pass_prompting_skill",
+      "community": 427,
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "Multi-Pass Prompting Playbook (HITL Manual Audit)",
+      "file_type": "document",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "multi_pass_prompting_skill_multi_pass_prompting_playbook_hitl_manual_audit",
+      "community": 427,
+      "norm_label": "multi-pass prompting playbook (hitl manual audit)"
+    },
+    {
+      "label": "Mengapa Multi-Pass Lebih Unggul?",
+      "file_type": "document",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "multi_pass_prompting_skill_mengapa_multi_pass_lebih_unggul",
+      "community": 427,
+      "norm_label": "mengapa multi-pass lebih unggul?"
+    },
+    {
+      "label": "Alur Kerja Multi-Pass Manual (3 Langkah)",
+      "file_type": "document",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "multi_pass_prompting_skill_alur_kerja_multi_pass_manual_3_langkah",
+      "community": 427,
+      "norm_label": "alur kerja multi-pass manual (3 langkah)"
+    },
+    {
+      "label": "Tahap 1: Lakukan Persiapan Dokumen",
+      "file_type": "document",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "multi_pass_prompting_skill_tahap_1_lakukan_persiapan_dokumen",
+      "community": 427,
+      "norm_label": "tahap 1: lakukan persiapan dokumen"
+    },
+    {
+      "label": "Tahap 2: Eksekusi Pass 1 \u2014 Review Struktur & Bahasa Umum",
+      "file_type": "document",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "multi_pass_prompting_skill_tahap_2_eksekusi_pass_1_review_struktur_bahasa_umum",
+      "community": 427,
+      "norm_label": "tahap 2: eksekusi pass 1 \u2014 review struktur & bahasa umum"
+    },
+    {
+      "label": "Tahap 3: Eksekusi Pass 2 \u2014 Analisis Temuan Detail",
+      "file_type": "document",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "multi_pass_prompting_skill_tahap_3_eksekusi_pass_2_analisis_temuan_detail",
+      "community": 427,
+      "norm_label": "tahap 3: eksekusi pass 2 \u2014 analisis temuan detail"
+    },
+    {
+      "label": "Tahap 4: Eksekusi Pass 3 \u2014 Checklist Tindakan & Visualisasi",
+      "file_type": "document",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "multi_pass_prompting_skill_tahap_4_eksekusi_pass_3_checklist_tindakan_visualisasi",
+      "community": 427,
+      "norm_label": "tahap 4: eksekusi pass 3 \u2014 checklist tindakan & visualisasi"
+    },
+    {
+      "label": "Tahap 5: Verifikasi Manual & Kompilasi PDF Offline",
+      "file_type": "document",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "multi_pass_prompting_skill_tahap_5_verifikasi_manual_kompilasi_pdf_offline",
+      "community": 427,
+      "norm_label": "tahap 5: verifikasi manual & kompilasi pdf offline"
     },
     {
       "label": "graphify.md",
@@ -15773,6 +15943,1486 @@
       "norm_label": "map struktur dokumen (minimap)"
     },
     {
+      "label": "checklist_perbaikan.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_hybrid_checklist_perbaikan",
+      "community": 428,
+      "norm_label": "checklist_perbaikan.md"
+    },
+    {
+      "label": "CHECKLIST PERBAIKAN DOKUMEN (PRD)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_hybrid_checklist_perbaikan_checklist_perbaikan_dokumen_prd",
+      "community": 428,
+      "norm_label": "checklist perbaikan dokumen (prd)"
+    },
+    {
+      "label": "laporan_audit.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit",
+      "community": 395,
+      "norm_label": "laporan_audit.md"
+    },
+    {
+      "label": "PASS 1: Review Umum",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_pass_1_review_umum",
+      "community": 395,
+      "norm_label": "pass 1: review umum"
+    },
+    {
+      "label": "HASIL AUDIT DOKUMEN (MOCK)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_hasil_audit_dokumen_mock",
+      "community": 395,
+      "norm_label": "hasil audit dokumen (mock)"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_skor_evaluasi",
+      "community": 395,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_temuan_utama_daftar_masalah",
+      "community": 395,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Contoh Checklist Tindakan (PRD Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_contoh_checklist_tindakan_prd_format",
+      "community": 395,
+      "norm_label": "contoh checklist tindakan (prd format)"
+    },
+    {
+      "label": "PASS 2: Analisis Fokus Per-Bagian",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "community": 395,
+      "norm_label": "pass 2: analisis fokus per-bagian"
+    },
+    {
+      "label": "HASIL AUDIT DOKUMEN (MOCK)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_hasil_audit_dokumen_mock_31",
+      "community": 395,
+      "norm_label": "hasil audit dokumen (mock)"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_skor_evaluasi_33",
+      "community": 395,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_temuan_utama_daftar_masalah_36",
+      "community": 395,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Contoh Checklist Tindakan (PRD Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_contoh_checklist_tindakan_prd_format_51",
+      "community": 395,
+      "norm_label": "contoh checklist tindakan (prd format)"
+    },
+    {
+      "label": "PASS 3: Checklist & Mindmap",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_pass_3_checklist_mindmap",
+      "community": 395,
+      "norm_label": "pass 3: checklist & mindmap"
+    },
+    {
+      "label": "HASIL AUDIT DOKUMEN",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_hasil_audit_dokumen",
+      "community": 395,
+      "norm_label": "hasil audit dokumen"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_skor_evaluasi_67",
+      "community": 395,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_temuan_utama_daftar_masalah_71",
+      "community": 395,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "CHECKLIST TINDAKAN",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_checklist_tindakan",
+      "community": 395,
+      "norm_label": "checklist tindakan"
+    },
+    {
+      "label": "Bab I: Pendahuluan",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_bab_i_pendahuluan",
+      "community": 395,
+      "norm_label": "bab i: pendahuluan"
+    },
+    {
+      "label": "Bab II: Pembahasan",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_bab_ii_pembahasan",
+      "community": 395,
+      "norm_label": "bab ii: pembahasan"
+    },
+    {
+      "label": "STRUKTUR MINDMAP KONSEP",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_struktur_mindmap_konsep",
+      "community": 395,
+      "norm_label": "struktur mindmap konsep"
+    },
+    {
+      "label": "DIAGRAM ALUR",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "output_hybrid_laporan_audit_diagram_alur",
+      "community": 395,
+      "norm_label": "diagram alur"
+    },
+    {
+      "label": "minimap.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_hybrid_minimap",
+      "community": 425,
+      "norm_label": "minimap.md"
+    },
+    {
+      "label": "MAP STRUKTUR DOKUMEN (MINIMAP)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_hybrid_minimap_map_struktur_dokumen_minimap",
+      "community": 425,
+      "norm_label": "map struktur dokumen (minimap)"
+    },
+    {
+      "label": "STRUKTUR MINDMAP KONSEP",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/minimap.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "output_hybrid_minimap_struktur_mindmap_konsep",
+      "community": 425,
+      "norm_label": "struktur mindmap konsep"
+    },
+    {
+      "label": "sample_makalah_laporan_audit_draft.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft",
+      "community": 396,
+      "norm_label": "sample_makalah_laporan_audit_draft.md"
+    },
+    {
+      "label": "PASS 1: Review Umum",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_pass_1_review_umum",
+      "community": 396,
+      "norm_label": "pass 1: review umum"
+    },
+    {
+      "label": "HASIL AUDIT DOKUMEN (MOCK)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen_mock",
+      "community": 396,
+      "norm_label": "hasil audit dokumen (mock)"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_skor_evaluasi",
+      "community": 396,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_temuan_utama_daftar_masalah",
+      "community": 396,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Contoh Checklist Tindakan (PRD Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_contoh_checklist_tindakan_prd_format",
+      "community": 396,
+      "norm_label": "contoh checklist tindakan (prd format)"
+    },
+    {
+      "label": "PASS 2: Analisis Fokus Per-Bagian",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_pass_2_analisis_fokus_per_bagian",
+      "community": 396,
+      "norm_label": "pass 2: analisis fokus per-bagian"
+    },
+    {
+      "label": "HASIL AUDIT DOKUMEN (MOCK)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen_mock_31",
+      "community": 396,
+      "norm_label": "hasil audit dokumen (mock)"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_skor_evaluasi_33",
+      "community": 396,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_temuan_utama_daftar_masalah_36",
+      "community": 396,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Contoh Checklist Tindakan (PRD Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_contoh_checklist_tindakan_prd_format_51",
+      "community": 396,
+      "norm_label": "contoh checklist tindakan (prd format)"
+    },
+    {
+      "label": "PASS 3: Checklist & Mindmap",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_pass_3_checklist_mindmap",
+      "community": 396,
+      "norm_label": "pass 3: checklist & mindmap"
+    },
+    {
+      "label": "HASIL AUDIT DOKUMEN",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen",
+      "community": 396,
+      "norm_label": "hasil audit dokumen"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_skor_evaluasi_67",
+      "community": 396,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_temuan_utama_daftar_masalah_71",
+      "community": 396,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "CHECKLIST TINDAKAN",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L89",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_checklist_tindakan",
+      "community": 396,
+      "norm_label": "checklist tindakan"
+    },
+    {
+      "label": "Bab I: Pendahuluan",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_bab_i_pendahuluan",
+      "community": 396,
+      "norm_label": "bab i: pendahuluan"
+    },
+    {
+      "label": "Bab II: Pembahasan",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_bab_ii_pembahasan",
+      "community": 396,
+      "norm_label": "bab ii: pembahasan"
+    },
+    {
+      "label": "STRUKTUR MINDMAP KONSEP",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_struktur_mindmap_konsep",
+      "community": 396,
+      "norm_label": "struktur mindmap konsep"
+    },
+    {
+      "label": "DIAGRAM ALUR",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "output_hybrid_sample_makalah_laporan_audit_draft_diagram_alur",
+      "community": 396,
+      "norm_label": "diagram alur"
+    },
+    {
+      "label": "checklist_perbaikan.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_checklist_perbaikan",
+      "community": 418,
+      "norm_label": "checklist_perbaikan.md"
+    },
+    {
+      "label": "CHECKLIST PERBAIKAN DOKUMEN (PRD)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_checklist_perbaikan_checklist_perbaikan_dokumen_prd",
+      "community": 418,
+      "norm_label": "checklist perbaikan dokumen (prd)"
+    },
+    {
+      "label": "laporan_audit.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit",
+      "community": 414,
+      "norm_label": "laporan_audit.md"
+    },
+    {
+      "label": "PASS 1: Review Umum",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_pass_1_review_umum",
+      "community": 414,
+      "norm_label": "pass 1: review umum"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_skor_evaluasi",
+      "community": 414,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_temuan_utama_daftar_masalah",
+      "community": 414,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Contoh Checklist Tindakan (PRD Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_contoh_checklist_tindakan_prd_format",
+      "community": 414,
+      "norm_label": "contoh checklist tindakan (prd format)"
+    },
+    {
+      "label": "PASS 2: Analisis Fokus Per-Bagian",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "community": 414,
+      "norm_label": "pass 2: analisis fokus per-bagian"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_skor_evaluasi_87",
+      "community": 414,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L92",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_temuan_utama_daftar_masalah_92",
+      "community": 414,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Contoh Checklist Tindakan (PRD Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L194",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_contoh_checklist_tindakan_prd_format_194",
+      "community": 414,
+      "norm_label": "contoh checklist tindakan (prd format)"
+    },
+    {
+      "label": "PASS 3: Checklist & Mindmap",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L209",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_pass_3_checklist_mindmap",
+      "community": 414,
+      "norm_label": "pass 3: checklist & mindmap"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L213",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_skor_evaluasi_213",
+      "community": 414,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L218",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_temuan_utama_daftar_masalah_218",
+      "community": 414,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "CHECKLIST TINDAKAN",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L306",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_checklist_tindakan",
+      "community": 414,
+      "norm_label": "checklist tindakan"
+    },
+    {
+      "label": "STRUKTUR MINDMAP KONSEP",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L362",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_struktur_mindmap_konsep",
+      "community": 414,
+      "norm_label": "struktur mindmap konsep"
+    },
+    {
+      "label": "DIAGRAM ALUR",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L412",
+      "_origin": "ast",
+      "id": "output_plus_laporan_audit_diagram_alur",
+      "community": 414,
+      "norm_label": "diagram alur"
+    },
+    {
+      "label": "minimap.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_minimap",
+      "community": 417,
+      "norm_label": "minimap.md"
+    },
+    {
+      "label": "MAP STRUKTUR DOKUMEN (MINIMAP)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_minimap_map_struktur_dokumen_minimap",
+      "community": 417,
+      "norm_label": "map struktur dokumen (minimap)"
+    },
+    {
+      "label": "STRUKTUR MINDMAP KONSEP",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus/minimap.md",
+      "source_location": "L159",
+      "_origin": "ast",
+      "id": "output_plus_minimap_struktur_mindmap_konsep",
+      "community": 417,
+      "norm_label": "struktur mindmap konsep"
+    },
+    {
+      "label": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft",
+      "community": 423,
+      "norm_label": "makalah_sim - ajie_bariandono_2110426823_laporan_audit_draft.md"
+    },
+    {
+      "label": "PASS 1: Review Umum",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_1_review_umum",
+      "community": 423,
+      "norm_label": "pass 1: review umum"
+    },
+    {
+      "label": "HASIL AUDIT DOKUMEN: MAKALAH SISTEM INFORMASI MANAJEMEN",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_hasil_audit_dokumen_makalah_sistem_informasi_manajemen",
+      "community": 423,
+      "norm_label": "hasil audit dokumen: makalah sistem informasi manajemen"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_skor_evaluasi",
+      "community": 423,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Ringkasan Temuan Umum",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_ringkasan_temuan_umum",
+      "community": 423,
+      "norm_label": "ringkasan temuan umum"
+    },
+    {
+      "label": "PASS 2: Analisis Fokus Per-Bagian",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_2_analisis_fokus_per_bagian",
+      "community": 423,
+      "norm_label": "pass 2: analisis fokus per-bagian"
+    },
+    {
+      "label": "1. Bab I Pendahuluan - Latar Belakang (Halaman 6)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_1_bab_i_pendahuluan_latar_belakang_halaman_6",
+      "community": 423,
+      "norm_label": "1. bab i pendahuluan - latar belakang (halaman 6)"
+    },
+    {
+      "label": "2. Bab II Pembahasan - Teori SIMKIM (Halaman 13-14)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_2_bab_ii_pembahasan_teori_simkim_halaman_13_14",
+      "community": 423,
+      "norm_label": "2. bab ii pembahasan - teori simkim (halaman 13-14)"
+    },
+    {
+      "label": "3. Bab II Pembahasan - Kendala Penerapan SIMKIM (Halaman 15)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_3_bab_ii_pembahasan_kendala_penerapan_simkim_halaman_15",
+      "community": 423,
+      "norm_label": "3. bab ii pembahasan - kendala penerapan simkim (halaman 15)"
+    },
+    {
+      "label": "4. Bab II Pembahasan - Alur SOP & Flowchart (Halaman 16)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_4_bab_ii_pembahasan_alur_sop_flowchart_halaman_16",
+      "community": 423,
+      "norm_label": "4. bab ii pembahasan - alur sop & flowchart (halaman 16)"
+    },
+    {
+      "label": "5. Bab II Pembahasan - Tabel 2.1 Mutu Baku SOP Penerimaan (Halaman 19)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_5_bab_ii_pembahasan_tabel_2_1_mutu_baku_sop_penerimaan_halaman_19",
+      "community": 423,
+      "norm_label": "5. bab ii pembahasan - tabel 2.1 mutu baku sop penerimaan (halaman 19)"
+    },
+    {
+      "label": "6. Bab II Pembahasan - Tabel 2.3 & 2.4 Mutu Baku Registrasi & Penempatan (Halaman 28-31)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_6_bab_ii_pembahasan_tabel_2_3_2_4_mutu_baku_registrasi_penempatan_halaman_28_31",
+      "community": 423,
+      "norm_label": "6. bab ii pembahasan - tabel 2.3 & 2.4 mutu baku registrasi & penempatan (halaman 28-31)"
+    },
+    {
+      "label": "7. Bab II Pembahasan - SOP Pemindahan & Pendeportasian (Halaman 36-43)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_7_bab_ii_pembahasan_sop_pemindahan_pendeportasian_halaman_36_43",
+      "community": 423,
+      "norm_label": "7. bab ii pembahasan - sop pemindahan & pendeportasian (halaman 36-43)"
+    },
+    {
+      "label": "8. Bab II Pembahasan - Analisis Leavitt's Diamond Model (Halaman 41-49)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_8_bab_ii_pembahasan_analisis_leavitt_s_diamond_model_halaman_41_49",
+      "community": 423,
+      "norm_label": "8. bab ii pembahasan - analisis leavitt's diamond model (halaman 41-49)"
+    },
+    {
+      "label": "PASS 3: Checklist & Mindmap",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_3_checklist_mindmap",
+      "community": 423,
+      "norm_label": "pass 3: checklist & mindmap"
+    },
+    {
+      "label": "CHECKLIST TINDAKAN",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_checklist_tindakan",
+      "community": 423,
+      "norm_label": "checklist tindakan"
+    },
+    {
+      "label": "Bab I: Pendahuluan",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L114",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_bab_i_pendahuluan",
+      "community": 423,
+      "norm_label": "bab i: pendahuluan"
+    },
+    {
+      "label": "Bab II: Pembahasan",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_bab_ii_pembahasan",
+      "community": 423,
+      "norm_label": "bab ii: pembahasan"
+    },
+    {
+      "label": "STRUKTUR MINDMAP KONSEP",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_struktur_mindmap_konsep",
+      "community": 423,
+      "norm_label": "struktur mindmap konsep"
+    },
+    {
+      "label": "DIAGRAM ALUR",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L161",
+      "_origin": "ast",
+      "id": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_diagram_alur",
+      "community": 423,
+      "norm_label": "diagram alur"
+    },
+    {
+      "label": "checklist_perbaikan.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_ajie_checklist_perbaikan",
+      "community": 422,
+      "norm_label": "checklist_perbaikan.md"
+    },
+    {
+      "label": "CHECKLIST PERBAIKAN DOKUMEN (PRD)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_ajie_checklist_perbaikan_checklist_perbaikan_dokumen_prd",
+      "community": 422,
+      "norm_label": "checklist perbaikan dokumen (prd)"
+    },
+    {
+      "label": "laporan_audit.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit",
+      "community": 420,
+      "norm_label": "laporan_audit.md"
+    },
+    {
+      "label": "PASS 1: Review Umum",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_pass_1_review_umum",
+      "community": 420,
+      "norm_label": "pass 1: review umum"
+    },
+    {
+      "label": "HASIL AUDIT DOKUMEN: MAKALAH SISTEM INFORMASI MANAJEMEN",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_hasil_audit_dokumen_makalah_sistem_informasi_manajemen",
+      "community": 420,
+      "norm_label": "hasil audit dokumen: makalah sistem informasi manajemen"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_skor_evaluasi",
+      "community": 420,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Ringkasan Temuan Umum",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_ringkasan_temuan_umum",
+      "community": 420,
+      "norm_label": "ringkasan temuan umum"
+    },
+    {
+      "label": "PASS 2: Analisis Fokus Per-Bagian",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "community": 420,
+      "norm_label": "pass 2: analisis fokus per-bagian"
+    },
+    {
+      "label": "1. Bab I Pendahuluan - Latar Belakang (Halaman 6)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_1_bab_i_pendahuluan_latar_belakang_halaman_6",
+      "community": 420,
+      "norm_label": "1. bab i pendahuluan - latar belakang (halaman 6)"
+    },
+    {
+      "label": "2. Bab II Pembahasan - Teori SIMKIM (Halaman 13-14)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_2_bab_ii_pembahasan_teori_simkim_halaman_13_14",
+      "community": 420,
+      "norm_label": "2. bab ii pembahasan - teori simkim (halaman 13-14)"
+    },
+    {
+      "label": "3. Bab II Pembahasan - Kendala Penerapan SIMKIM (Halaman 15)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_3_bab_ii_pembahasan_kendala_penerapan_simkim_halaman_15",
+      "community": 420,
+      "norm_label": "3. bab ii pembahasan - kendala penerapan simkim (halaman 15)"
+    },
+    {
+      "label": "4. Bab II Pembahasan - Alur SOP & Flowchart (Halaman 16)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_4_bab_ii_pembahasan_alur_sop_flowchart_halaman_16",
+      "community": 420,
+      "norm_label": "4. bab ii pembahasan - alur sop & flowchart (halaman 16)"
+    },
+    {
+      "label": "5. Bab II Pembahasan - Tabel 2.1 Mutu Baku SOP Penerimaan (Halaman 19)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_5_bab_ii_pembahasan_tabel_2_1_mutu_baku_sop_penerimaan_halaman_19",
+      "community": 420,
+      "norm_label": "5. bab ii pembahasan - tabel 2.1 mutu baku sop penerimaan (halaman 19)"
+    },
+    {
+      "label": "6. Bab II Pembahasan - Tabel 2.3 & 2.4 Mutu Baku Registrasi & Penempatan (Halaman 28-31)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_6_bab_ii_pembahasan_tabel_2_3_2_4_mutu_baku_registrasi_penempatan_halaman_28_31",
+      "community": 420,
+      "norm_label": "6. bab ii pembahasan - tabel 2.3 & 2.4 mutu baku registrasi & penempatan (halaman 28-31)"
+    },
+    {
+      "label": "7. Bab II Pembahasan - SOP Pemindahan & Pendeportasian (Halaman 36-43)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_7_bab_ii_pembahasan_sop_pemindahan_pendeportasian_halaman_36_43",
+      "community": 420,
+      "norm_label": "7. bab ii pembahasan - sop pemindahan & pendeportasian (halaman 36-43)"
+    },
+    {
+      "label": "8. Bab II Pembahasan - Analisis Leavitt's Diamond Model (Halaman 41-49)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_8_bab_ii_pembahasan_analisis_leavitt_s_diamond_model_halaman_41_49",
+      "community": 420,
+      "norm_label": "8. bab ii pembahasan - analisis leavitt's diamond model (halaman 41-49)"
+    },
+    {
+      "label": "PASS 3: Checklist & Mindmap",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_pass_3_checklist_mindmap",
+      "community": 420,
+      "norm_label": "pass 3: checklist & mindmap"
+    },
+    {
+      "label": "CHECKLIST TINDAKAN",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_checklist_tindakan",
+      "community": 420,
+      "norm_label": "checklist tindakan"
+    },
+    {
+      "label": "Bab I: Pendahuluan",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L114",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_bab_i_pendahuluan",
+      "community": 420,
+      "norm_label": "bab i: pendahuluan"
+    },
+    {
+      "label": "Bab II: Pembahasan",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_bab_ii_pembahasan",
+      "community": 420,
+      "norm_label": "bab ii: pembahasan"
+    },
+    {
+      "label": "STRUKTUR MINDMAP KONSEP",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_struktur_mindmap_konsep",
+      "community": 420,
+      "norm_label": "struktur mindmap konsep"
+    },
+    {
+      "label": "DIAGRAM ALUR",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L161",
+      "_origin": "ast",
+      "id": "output_plus_ajie_laporan_audit_diagram_alur",
+      "community": 420,
+      "norm_label": "diagram alur"
+    },
+    {
+      "label": "minimap.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_ajie_minimap",
+      "community": 421,
+      "norm_label": "minimap.md"
+    },
+    {
+      "label": "MAP STRUKTUR DOKUMEN (MINIMAP)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_ajie_minimap_map_struktur_dokumen_minimap",
+      "community": 421,
+      "norm_label": "map struktur dokumen (minimap)"
+    },
+    {
+      "label": "STRUKTUR MINDMAP KONSEP",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie/minimap.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "output_plus_ajie_minimap_struktur_mindmap_konsep",
+      "community": 421,
+      "norm_label": "struktur mindmap konsep"
+    },
+    {
+      "label": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit",
+      "community": 430,
+      "norm_label": "makalah_sim - ajie_bariandono_2110426823_laporan_audit.md"
+    },
+    {
+      "label": "PASS 1: Review Umum",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_1_review_umum",
+      "community": 430,
+      "norm_label": "pass 1: review umum"
+    },
+    {
+      "label": "HASIL AUDIT DOKUMEN: MAKALAH SISTEM INFORMASI MANAJEMEN",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_hasil_audit_dokumen_makalah_sistem_informasi_manajemen",
+      "community": 430,
+      "norm_label": "hasil audit dokumen: makalah sistem informasi manajemen"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_skor_evaluasi",
+      "community": 430,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Ringkasan Temuan Umum",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_ringkasan_temuan_umum",
+      "community": 430,
+      "norm_label": "ringkasan temuan umum"
+    },
+    {
+      "label": "PASS 2: Analisis Fokus Per-Bagian",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "community": 430,
+      "norm_label": "pass 2: analisis fokus per-bagian"
+    },
+    {
+      "label": "1. Latar Belakang (Halaman 6)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_1_latar_belakang_halaman_6",
+      "community": 430,
+      "norm_label": "1. latar belakang (halaman 6)"
+    },
+    {
+      "label": "2. Teori Arsitektur SIMKIM (Halaman 13-14)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_2_teori_arsitektur_simkim_halaman_13_14",
+      "community": 430,
+      "norm_label": "2. teori arsitektur simkim (halaman 13-14)"
+    },
+    {
+      "label": "3. Kendala Penerapan SIMKIM (Halaman 15)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_3_kendala_penerapan_simkim_halaman_15",
+      "community": 430,
+      "norm_label": "3. kendala penerapan simkim (halaman 15)"
+    },
+    {
+      "label": "4. Siklus Hidup & Diagram SOP (Halaman 16)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_4_siklus_hidup_diagram_sop_halaman_16",
+      "community": 430,
+      "norm_label": "4. siklus hidup & diagram sop (halaman 16)"
+    },
+    {
+      "label": "5. Tabel Mutu Baku Penerimaan (Halaman 19)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_5_tabel_mutu_baku_penerimaan_halaman_19",
+      "community": 430,
+      "norm_label": "5. tabel mutu baku penerimaan (halaman 19)"
+    },
+    {
+      "label": "6. Tabel SOP Registrasi & Penempatan (Halaman 28-31)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_6_tabel_sop_registrasi_penempatan_halaman_28_31",
+      "community": 430,
+      "norm_label": "6. tabel sop registrasi & penempatan (halaman 28-31)"
+    },
+    {
+      "label": "7. SOP Pemindahan & Pendeportasian (Halaman 36-43)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_7_sop_pemindahan_pendeportasian_halaman_36_43",
+      "community": 430,
+      "norm_label": "7. sop pemindahan & pendeportasian (halaman 36-43)"
+    },
+    {
+      "label": "8. Kerangka Analisis Leavitt's Diamond (Halaman 41-49)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_8_kerangka_analisis_leavitt_s_diamond_halaman_41_49",
+      "community": 430,
+      "norm_label": "8. kerangka analisis leavitt's diamond (halaman 41-49)"
+    },
+    {
+      "label": "PASS 3: Checklist & Mindmap",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_3_checklist_mindmap",
+      "community": 430,
+      "norm_label": "pass 3: checklist & mindmap"
+    },
+    {
+      "label": "CHECKLIST TINDAKAN",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_checklist_tindakan",
+      "community": 430,
+      "norm_label": "checklist tindakan"
+    },
+    {
+      "label": "STRUKTUR MINDMAP KONSEP",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_struktur_mindmap_konsep",
+      "community": 430,
+      "norm_label": "struktur mindmap konsep"
+    },
+    {
+      "label": "DIAGRAM ALUR",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_diagram_alur",
+      "community": 430,
+      "norm_label": "diagram alur"
+    },
+    {
+      "label": "checklist_perbaikan.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_checklist_perbaikan",
+      "community": 432,
+      "norm_label": "checklist_perbaikan.md"
+    },
+    {
+      "label": "CHECKLIST PERBAIKAN DOKUMEN (PRD)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_checklist_perbaikan_checklist_perbaikan_dokumen_prd",
+      "community": 432,
+      "norm_label": "checklist perbaikan dokumen (prd)"
+    },
+    {
+      "label": "laporan_audit.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit",
+      "community": 424,
+      "norm_label": "laporan_audit.md"
+    },
+    {
+      "label": "PASS 1: Review Umum",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_pass_1_review_umum",
+      "community": 424,
+      "norm_label": "pass 1: review umum"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_skor_evaluasi",
+      "community": 424,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_temuan_utama_daftar_masalah",
+      "community": 424,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Contoh Checklist Tindakan (PRD Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L282",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_contoh_checklist_tindakan_prd_format",
+      "community": 424,
+      "norm_label": "contoh checklist tindakan (prd format)"
+    },
+    {
+      "label": "PASS 2: Analisis Fokus Per-Bagian",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L293",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "community": 424,
+      "norm_label": "pass 2: analisis fokus per-bagian"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L297",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_skor_evaluasi_297",
+      "community": 424,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L300",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_temuan_utama_daftar_masalah_300",
+      "community": 424,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Contoh Checklist Tindakan (PRD Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L880",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_contoh_checklist_tindakan_prd_format_880",
+      "community": 424,
+      "norm_label": "contoh checklist tindakan (prd format)"
+    },
+    {
+      "label": "PASS 3: Checklist & Mindmap",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L900",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_pass_3_checklist_mindmap",
+      "community": 424,
+      "norm_label": "pass 3: checklist & mindmap"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L904",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_skor_evaluasi_904",
+      "community": 424,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L907",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_temuan_utama_daftar_masalah_907",
+      "community": 424,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "CHECKLIST TINDAKAN",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L958",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_checklist_tindakan",
+      "community": 424,
+      "norm_label": "checklist tindakan"
+    },
+    {
+      "label": "STRUKTUR MINDMAP KONSEP",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L976",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_struktur_mindmap_konsep",
+      "community": 424,
+      "norm_label": "struktur mindmap konsep"
+    },
+    {
+      "label": "DIAGRAM ALUR",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L1009",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_laporan_audit_diagram_alur",
+      "community": 424,
+      "norm_label": "diagram alur"
+    },
+    {
+      "label": "minimap.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_minimap",
+      "community": 431,
+      "norm_label": "minimap.md"
+    },
+    {
+      "label": "MAP STRUKTUR DOKUMEN (MINIMAP)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_minimap_map_struktur_dokumen_minimap",
+      "community": 431,
+      "norm_label": "map struktur dokumen (minimap)"
+    },
+    {
+      "label": "STRUKTUR MINDMAP KONSEP",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_plus_ajie_api/minimap.md",
+      "source_location": "L281",
+      "_origin": "ast",
+      "id": "output_plus_ajie_api_minimap_struktur_mindmap_konsep",
+      "community": 431,
+      "norm_label": "struktur mindmap konsep"
+    },
+    {
       "label": "prd.md",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
@@ -15783,14 +17433,14 @@
       "norm_label": "prd.md"
     },
     {
-      "label": "PRD \u2014 AuditDok: Jasa Audit Dokumen Berbasis AI",
+      "label": "PRD \u2014 AuditDok v1.1: Jasa Audit Dokumen Berbasis AI",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "id": "auditdok_prd_prd_auditdok_v1_1_jasa_audit_dokumen_berbasis_ai",
       "community": 407,
-      "norm_label": "prd \u2014 auditdok: jasa audit dokumen berbasis ai"
+      "norm_label": "prd \u2014 auditdok v1.1: jasa audit dokumen berbasis ai"
     },
     {
       "label": "1. Ringkasan Eksekutif",
@@ -15813,20 +17463,30 @@
       "norm_label": "value proposition utama"
     },
     {
-      "label": "2. Jenis Dokumen yang Dapat Diaudit",
+      "label": "2. Jenis Dokumen yang Dilayani (v1)",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L27",
       "_origin": "ast",
-      "id": "auditdok_prd_2_jenis_dokumen_yang_dapat_diaudit",
+      "id": "auditdok_prd_2_jenis_dokumen_yang_dilayani_v1",
       "community": 407,
-      "norm_label": "2. jenis dokumen yang dapat diaudit"
+      "norm_label": "2. jenis dokumen yang dilayani (v1)"
+    },
+    {
+      "label": "Roadmap Dokumen (v2+)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/prd.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "auditdok_prd_roadmap_dokumen_v2",
+      "community": 407,
+      "norm_label": "roadmap dokumen (v2+)"
     },
     {
       "label": "3. Tier Layanan",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L49",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "auditdok_prd_3_tier_layanan",
       "community": 407,
@@ -15836,57 +17496,37 @@
       "label": "Filosofi Tier",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L51",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "auditdok_prd_filosofi_tier",
       "community": 407,
       "norm_label": "filosofi tier"
     },
     {
-      "label": "3.1 \ud83d\udfe2 BASIC \u2014 Quick Audit",
+      "label": "3.1 \ud83d\udfe2 BASIC \u2014 Quick Audit (2-Pass)",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L62",
+      "source_location": "L59",
       "_origin": "ast",
-      "id": "auditdok_prd_3_1_basic_quick_audit",
+      "id": "auditdok_prd_3_1_basic_quick_audit_2_pass",
       "community": 407,
-      "norm_label": "3.1 \ud83d\udfe2 basic \u2014 quick audit"
+      "norm_label": "3.1 \ud83d\udfe2 basic \u2014 quick audit (2-pass)"
     },
     {
-      "label": "3.2 \ud83d\udd35 PLUS \u2014 Guided Audit",
+      "label": "3.2 \ud83d\udd35 PLUS \u2014 Guided Audit (3-Pass)",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L87",
+      "source_location": "L84",
       "_origin": "ast",
-      "id": "auditdok_prd_3_2_plus_guided_audit",
+      "id": "auditdok_prd_3_2_plus_guided_audit_3_pass",
       "community": 407,
-      "norm_label": "3.2 \ud83d\udd35 plus \u2014 guided audit"
-    },
-    {
-      "label": "3.3 \ud83d\udfe3 PRO \u2014 Visual Audit",
-      "file_type": "document",
-      "source_file": "projects/auditdok/prd.md",
-      "source_location": "L109",
-      "_origin": "ast",
-      "id": "auditdok_prd_3_3_pro_visual_audit",
-      "community": 407,
-      "norm_label": "3.3 \ud83d\udfe3 pro \u2014 visual audit"
-    },
-    {
-      "label": "3.4 \ud83d\udfe0 ULTRA \u2014 Full Service Audit",
-      "file_type": "document",
-      "source_file": "projects/auditdok/prd.md",
-      "source_location": "L134",
-      "_origin": "ast",
-      "id": "auditdok_prd_3_4_ultra_full_service_audit",
-      "community": 407,
-      "norm_label": "3.4 \ud83d\udfe0 ultra \u2014 full service audit"
+      "norm_label": "3.2 \ud83d\udd35 plus \u2014 guided audit (3-pass)"
     },
     {
       "label": "4. Perbandingan Tier (Ringkas)",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L162",
+      "source_location": "L106",
       "_origin": "ast",
       "id": "auditdok_prd_4_perbandingan_tier_ringkas",
       "community": 407,
@@ -15896,7 +17536,7 @@
       "label": "5. User Flow",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L184",
+      "source_location": "L123",
       "_origin": "ast",
       "id": "auditdok_prd_5_user_flow",
       "community": 407,
@@ -15906,37 +17546,27 @@
       "label": "6. Strategi Pricing & Positioning",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L215",
+      "source_location": "L145",
       "_origin": "ast",
       "id": "auditdok_prd_6_strategi_pricing_positioning",
       "community": 407,
       "norm_label": "6. strategi pricing & positioning"
     },
     {
-      "label": "6.1 Mengapa Lebih Murah dari Langganan AI?",
+      "label": "Mengapa Lebih Murah dari Langganan AI?",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L217",
+      "source_location": "L147",
       "_origin": "ast",
-      "id": "auditdok_prd_6_1_mengapa_lebih_murah_dari_langganan_ai",
+      "id": "auditdok_prd_mengapa_lebih_murah_dari_langganan_ai",
       "community": 407,
-      "norm_label": "6.1 mengapa lebih murah dari langganan ai?"
-    },
-    {
-      "label": "6.2 Paket Bundling (Opsional)",
-      "file_type": "document",
-      "source_file": "projects/auditdok/prd.md",
-      "source_location": "L230",
-      "_origin": "ast",
-      "id": "auditdok_prd_6_2_paket_bundling_opsional",
-      "community": 407,
-      "norm_label": "6.2 paket bundling (opsional)"
+      "norm_label": "mengapa lebih murah dari langganan ai?"
     },
     {
       "label": "7. Channel Distribusi & Go-to-Market",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L241",
+      "source_location": "L161",
       "_origin": "ast",
       "id": "auditdok_prd_7_channel_distribusi_go_to_market",
       "community": 407,
@@ -15946,7 +17576,7 @@
       "label": "Phase 1 \u2014 Soft Launch (Bulan 1\u20132)",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L243",
+      "source_location": "L163",
       "_origin": "ast",
       "id": "auditdok_prd_phase_1_soft_launch_bulan_1_2",
       "community": 407,
@@ -15956,7 +17586,7 @@
       "label": "Phase 2 \u2014 Scale (Bulan 3\u20134)",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L248",
+      "source_location": "L169",
       "_origin": "ast",
       "id": "auditdok_prd_phase_2_scale_bulan_3_4",
       "community": 407,
@@ -15966,7 +17596,7 @@
       "label": "Phase 3 \u2014 Automate (Bulan 5+)",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L253",
+      "source_location": "L175",
       "_origin": "ast",
       "id": "auditdok_prd_phase_3_automate_bulan_5",
       "community": 407,
@@ -15976,7 +17606,7 @@
       "label": "8. Tech Stack Operasional (Internal)",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L260",
+      "source_location": "L182",
       "_origin": "ast",
       "id": "auditdok_prd_8_tech_stack_operasional_internal",
       "community": 407,
@@ -15986,7 +17616,7 @@
       "label": "9. Risiko & Mitigasi",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L273",
+      "source_location": "L196",
       "_origin": "ast",
       "id": "auditdok_prd_9_risiko_mitigasi",
       "community": 407,
@@ -15996,7 +17626,7 @@
       "label": "10. Metrik Keberhasilan (KPI)",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L285",
+      "source_location": "L208",
       "_origin": "ast",
       "id": "auditdok_prd_10_metrik_keberhasilan_kpi",
       "community": 407,
@@ -16006,7 +17636,7 @@
       "label": "11. Open Questions",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L297",
+      "source_location": "L220",
       "_origin": "ast",
       "id": "auditdok_prd_11_open_questions",
       "community": 407,
@@ -27464,7 +29094,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_block.js"
       },
       "file_type": "concept",
-      "community": 395,
+      "community": 426,
       "norm_label": "inspect_block",
       "id": "inspect_block"
     },
@@ -27475,7 +29105,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 395,
+      "community": 426,
       "norm_label": "inspectblock",
       "id": "inspect_block_inspectBlock"
     },
@@ -27539,7 +29169,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_old_property.js"
       },
       "file_type": "concept",
-      "community": 396,
+      "community": 429,
       "norm_label": "inspect_old_property",
       "id": "inspect_old_property"
     },
@@ -27550,7 +29180,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 396,
+      "community": 429,
       "norm_label": "inspect",
       "id": "inspect_old_property_inspect"
     },
@@ -40443,9 +42073,9 @@
       "source_file": "projects/auditdok/src/agent.py",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_agent",
-      "target": "dotenv",
-      "confidence_score": 1.0
+      "target": "dotenv"
     },
     {
       "relation": "contains",
@@ -40453,9 +42083,9 @@
       "source_file": "projects/auditdok/src/agent.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_agent",
-      "target": "src_agent_auditagent",
-      "confidence_score": 1.0
+      "target": "src_agent_auditagent"
     },
     {
       "relation": "imports_from",
@@ -40464,9 +42094,9 @@
       "source_file": "projects/auditdok/src/workflow.py",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_workflow",
-      "target": "src_agent",
-      "confidence_score": 1.0
+      "target": "src_agent"
     },
     {
       "relation": "method",
@@ -40474,9 +42104,9 @@
       "source_file": "projects/auditdok/src/agent.py",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_agent_auditagent",
-      "target": "src_agent_auditagent_generate_mock_response",
-      "confidence_score": 1.0
+      "target": "src_agent_auditagent_generate_mock_response"
     },
     {
       "relation": "method",
@@ -40484,9 +42114,9 @@
       "source_file": "projects/auditdok/src/agent.py",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_agent_auditagent",
-      "target": "src_agent_auditagent_init",
-      "confidence_score": 1.0
+      "target": "src_agent_auditagent_init"
     },
     {
       "relation": "method",
@@ -40494,9 +42124,9 @@
       "source_file": "projects/auditdok/src/agent.py",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_agent_auditagent",
-      "target": "src_agent_auditagent_run_audit",
-      "confidence_score": 1.0
+      "target": "src_agent_auditagent_run_audit"
     },
     {
       "relation": "imports",
@@ -40505,9 +42135,9 @@
       "source_file": "projects/auditdok/src/workflow.py",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_workflow",
-      "target": "src_agent_auditagent",
-      "confidence_score": 1.0
+      "target": "src_agent_auditagent"
     },
     {
       "relation": "uses",
@@ -40515,9 +42145,9 @@
       "source_file": "projects/auditdok/src/workflow.py",
       "source_location": "L3",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "src_workflow_auditworkflow",
-      "target": "src_agent_auditagent",
-      "confidence_score": 0.5
+      "target": "src_agent_auditagent"
     },
     {
       "relation": "calls",
@@ -40537,9 +42167,9 @@
       "source_file": "projects/auditdok/src/agent.py",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_agent_auditagent_run_audit",
-      "target": "src_agent_auditagent_generate_mock_response",
-      "confidence_score": 1.0
+      "target": "src_agent_auditagent_generate_mock_response"
     },
     {
       "relation": "rationale_for",
@@ -40547,9 +42177,9 @@
       "source_file": "projects/auditdok/src/agent.py",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_agent_rationale_25",
-      "target": "src_agent_auditagent_run_audit",
-      "confidence_score": 1.0
+      "target": "src_agent_auditagent_run_audit"
     },
     {
       "relation": "rationale_for",
@@ -40557,9 +42187,29 @@
       "source_file": "projects/auditdok/src/agent.py",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_agent_rationale_78",
-      "target": "src_agent_auditagent_generate_mock_response",
-      "confidence_score": 1.0
+      "target": "src_agent_auditagent_generate_mock_response"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_cli",
+      "target": "src_cli_find_draft_order_by_compile_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_cli",
+      "target": "src_cli_log_order"
     },
     {
       "relation": "contains",
@@ -40567,9 +42217,9 @@
       "source_file": "projects/auditdok/src/cli.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_cli",
-      "target": "src_cli_main",
-      "confidence_score": 1.0
+      "target": "src_cli_main"
     },
     {
       "relation": "contains",
@@ -40577,9 +42227,31 @@
       "source_file": "projects/auditdok/src/cli.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_cli",
-      "target": "src_cli_print_banner",
-      "confidence_score": 1.0
+      "target": "src_cli_print_banner"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_cli",
+      "target": "src_generator_generate_markdown_files"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_cli",
+      "target": "src_generator_generate_pdf_report"
     },
     {
       "relation": "imports_from",
@@ -40588,9 +42260,9 @@
       "source_file": "projects/auditdok/src/cli.py",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_cli",
-      "target": "src_workflow",
-      "confidence_score": 1.0
+      "target": "src_workflow"
     },
     {
       "relation": "imports",
@@ -40599,9 +42271,9 @@
       "source_file": "projects/auditdok/src/cli.py",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_cli",
-      "target": "src_workflow_auditworkflow",
-      "confidence_score": 1.0
+      "target": "src_workflow_auditworkflow"
     },
     {
       "relation": "calls",
@@ -40610,19 +42282,83 @@
       "source_file": "projects/auditdok/src/cli.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_cli_main",
-      "target": "src_cli_print_banner",
-      "confidence_score": 1.0
+      "target": "src_cli_print_banner"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/src/cli.py",
-      "source_location": "L12",
+      "source_location": "L14",
       "weight": 1.0,
-      "source": "src_cli_rationale_12",
-      "target": "src_cli_print_banner",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_cli_rationale_14",
+      "target": "src_cli_print_banner"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_cli_main",
+      "target": "src_cli_log_order"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_cli_rationale_31",
+      "target": "src_cli_log_order"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L168",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_cli_main",
+      "target": "src_cli_find_draft_order_by_compile_path"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_cli_rationale_87",
+      "target": "src_cli_find_draft_order_by_compile_path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_cli_main",
+      "target": "src_generator_generate_markdown_files"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L164",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_cli_main",
+      "target": "src_generator_generate_pdf_report"
     },
     {
       "relation": "calls",
@@ -40631,9 +42367,19 @@
       "source_file": "projects/auditdok/src/cli.py",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_cli_main",
-      "target": "src_workflow_auditworkflow",
-      "confidence_score": 1.0
+      "target": "src_workflow_auditworkflow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_generator",
+      "target": "src_generator_build_pdf_story"
     },
     {
       "relation": "contains",
@@ -40641,9 +42387,9 @@
       "source_file": "projects/auditdok/src/generator.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_generator",
-      "target": "src_generator_clean_markdown_formatting",
-      "confidence_score": 1.0
+      "target": "src_generator_clean_markdown_formatting"
     },
     {
       "relation": "contains",
@@ -40651,9 +42397,9 @@
       "source_file": "projects/auditdok/src/generator.py",
       "source_location": "L135",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_generator",
-      "target": "src_generator_generate_markdown_files",
-      "confidence_score": 1.0
+      "target": "src_generator_generate_markdown_files"
     },
     {
       "relation": "contains",
@@ -40661,9 +42407,9 @@
       "source_file": "projects/auditdok/src/generator.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_generator",
-      "target": "src_generator_generate_pdf_report",
-      "confidence_score": 1.0
+      "target": "src_generator_generate_pdf_report"
     },
     {
       "relation": "imports_from",
@@ -40672,9 +42418,20 @@
       "source_file": "projects/auditdok/src/workflow.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_workflow",
-      "target": "src_generator",
-      "confidence_score": 1.0
+      "target": "src_generator"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_generator_build_pdf_story",
+      "target": "src_generator_clean_markdown_formatting"
     },
     {
       "relation": "calls",
@@ -40683,19 +42440,9 @@
       "source_file": "projects/auditdok/src/generator.py",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_generator_generate_pdf_report",
-      "target": "src_generator_clean_markdown_formatting",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "projects/auditdok/src/generator.py",
-      "source_location": "L9",
-      "weight": 1.0,
-      "source": "src_generator_rationale_9",
-      "target": "src_generator_clean_markdown_formatting",
-      "confidence_score": 1.0
+      "target": "src_generator_clean_markdown_formatting"
     },
     {
       "relation": "rationale_for",
@@ -40703,9 +42450,30 @@
       "source_file": "projects/auditdok/src/generator.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_generator_rationale_18",
-      "target": "src_generator_generate_pdf_report",
-      "confidence_score": 1.0
+      "target": "src_generator_clean_markdown_formatting"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L165",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_generator_generate_pdf_report",
+      "target": "src_generator_build_pdf_story"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L155",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_generator_rationale_155",
+      "target": "src_generator_generate_pdf_report"
     },
     {
       "relation": "imports",
@@ -40714,9 +42482,9 @@
       "source_file": "projects/auditdok/src/workflow.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_workflow",
-      "target": "src_generator_generate_pdf_report",
-      "confidence_score": 1.0
+      "target": "src_generator_generate_pdf_report"
     },
     {
       "relation": "calls",
@@ -40733,11 +42501,11 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/src/generator.py",
-      "source_location": "L136",
+      "source_location": "L214",
       "weight": 1.0,
-      "source": "src_generator_rationale_136",
-      "target": "src_generator_generate_markdown_files",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_generator_rationale_214",
+      "target": "src_generator_generate_markdown_files"
     },
     {
       "relation": "imports",
@@ -40746,9 +42514,9 @@
       "source_file": "projects/auditdok/src/workflow.py",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_workflow",
-      "target": "src_generator_generate_markdown_files",
-      "confidence_score": 1.0
+      "target": "src_generator_generate_markdown_files"
     },
     {
       "relation": "calls",
@@ -40768,9 +42536,9 @@
       "source_file": "projects/auditdok/src/parser.py",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_parser",
-      "target": "docx",
-      "confidence_score": 1.0
+      "target": "docx"
     },
     {
       "relation": "contains",
@@ -40778,9 +42546,9 @@
       "source_file": "projects/auditdok/src/parser.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_parser",
-      "target": "src_parser_extract_text_from_docx",
-      "confidence_score": 1.0
+      "target": "src_parser_extract_text_from_docx"
     },
     {
       "relation": "contains",
@@ -40788,9 +42556,9 @@
       "source_file": "projects/auditdok/src/parser.py",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_parser",
-      "target": "src_parser_extract_text_from_pdf",
-      "confidence_score": 1.0
+      "target": "src_parser_extract_text_from_pdf"
     },
     {
       "relation": "contains",
@@ -40798,9 +42566,9 @@
       "source_file": "projects/auditdok/src/parser.py",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_parser",
-      "target": "src_parser_parse_document",
-      "confidence_score": 1.0
+      "target": "src_parser_parse_document"
     },
     {
       "relation": "imports_from",
@@ -40809,9 +42577,9 @@
       "source_file": "projects/auditdok/src/workflow.py",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_workflow",
-      "target": "src_parser",
-      "confidence_score": 1.0
+      "target": "src_parser"
     },
     {
       "relation": "calls",
@@ -40820,9 +42588,9 @@
       "source_file": "projects/auditdok/src/parser.py",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_parser_parse_document",
-      "target": "src_parser_extract_text_from_pdf",
-      "confidence_score": 1.0
+      "target": "src_parser_extract_text_from_pdf"
     },
     {
       "relation": "rationale_for",
@@ -40830,9 +42598,9 @@
       "source_file": "projects/auditdok/src/parser.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_parser_rationale_6",
-      "target": "src_parser_extract_text_from_pdf",
-      "confidence_score": 1.0
+      "target": "src_parser_extract_text_from_pdf"
     },
     {
       "relation": "calls",
@@ -40841,9 +42609,9 @@
       "source_file": "projects/auditdok/src/parser.py",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_parser_parse_document",
-      "target": "src_parser_extract_text_from_docx",
-      "confidence_score": 1.0
+      "target": "src_parser_extract_text_from_docx"
     },
     {
       "relation": "rationale_for",
@@ -40851,9 +42619,9 @@
       "source_file": "projects/auditdok/src/parser.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_parser_rationale_38",
-      "target": "src_parser_extract_text_from_docx",
-      "confidence_score": 1.0
+      "target": "src_parser_extract_text_from_docx"
     },
     {
       "relation": "rationale_for",
@@ -40861,9 +42629,9 @@
       "source_file": "projects/auditdok/src/parser.py",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_parser_rationale_73",
-      "target": "src_parser_parse_document",
-      "confidence_score": 1.0
+      "target": "src_parser_parse_document"
     },
     {
       "relation": "imports",
@@ -40872,9 +42640,9 @@
       "source_file": "projects/auditdok/src/workflow.py",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_workflow",
-      "target": "src_parser_parse_document",
-      "confidence_score": 1.0
+      "target": "src_parser_parse_document"
     },
     {
       "relation": "calls",
@@ -40893,9 +42661,9 @@
       "source_file": "projects/auditdok/src/workflow.py",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_workflow",
-      "target": "src_workflow_auditworkflow",
-      "confidence_score": 1.0
+      "target": "src_workflow_auditworkflow"
     },
     {
       "relation": "method",
@@ -40903,9 +42671,9 @@
       "source_file": "projects/auditdok/src/workflow.py",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_workflow_auditworkflow",
-      "target": "src_workflow_auditworkflow_init",
-      "confidence_score": 1.0
+      "target": "src_workflow_auditworkflow_init"
     },
     {
       "relation": "method",
@@ -40913,9 +42681,9 @@
       "source_file": "projects/auditdok/src/workflow.py",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_workflow_auditworkflow",
-      "target": "src_workflow_auditworkflow_load_skill_prompt",
-      "confidence_score": 1.0
+      "target": "src_workflow_auditworkflow_load_skill_prompt"
     },
     {
       "relation": "method",
@@ -40923,9 +42691,19 @@
       "source_file": "projects/auditdok/src/workflow.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_workflow_auditworkflow",
-      "target": "src_workflow_auditworkflow_run",
-      "confidence_score": 1.0
+      "target": "src_workflow_auditworkflow_run"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_workflow_auditworkflow",
+      "target": "src_workflow_auditworkflow_run_multi_pass"
     },
     {
       "relation": "calls",
@@ -40934,29 +42712,50 @@
       "source_file": "projects/auditdok/src/workflow.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_workflow_auditworkflow_run",
-      "target": "src_workflow_auditworkflow_load_skill_prompt",
-      "confidence_score": 1.0
+      "target": "src_workflow_auditworkflow_load_skill_prompt"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
-      "source": "src_workflow_rationale_15",
-      "target": "src_workflow_auditworkflow_load_skill_prompt",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_workflow_rationale_16",
+      "target": "src_workflow_auditworkflow_load_skill_prompt"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_workflow_auditworkflow_run",
+      "target": "src_workflow_auditworkflow_run_multi_pass"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0,
-      "source": "src_workflow_rationale_30",
-      "target": "src_workflow_auditworkflow_run",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "src_workflow_rationale_31",
+      "target": "src_workflow_auditworkflow_run_multi_pass"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_workflow_rationale_103",
+      "target": "src_workflow_auditworkflow_run"
     },
     {
       "relation": "contains",
@@ -50865,6 +52664,86 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "multi_pass_prompting_skill",
+      "target": "multi_pass_prompting_skill_multi_pass_prompting_playbook_hitl_manual_audit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "multi_pass_prompting_skill_multi_pass_prompting_playbook_hitl_manual_audit",
+      "target": "multi_pass_prompting_skill_alur_kerja_multi_pass_manual_3_langkah"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "multi_pass_prompting_skill_multi_pass_prompting_playbook_hitl_manual_audit",
+      "target": "multi_pass_prompting_skill_mengapa_multi_pass_lebih_unggul"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "multi_pass_prompting_skill_multi_pass_prompting_playbook_hitl_manual_audit",
+      "target": "multi_pass_prompting_skill_tahap_5_verifikasi_manual_kompilasi_pdf_offline"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "multi_pass_prompting_skill_alur_kerja_multi_pass_manual_3_langkah",
+      "target": "multi_pass_prompting_skill_tahap_1_lakukan_persiapan_dokumen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "multi_pass_prompting_skill_alur_kerja_multi_pass_manual_3_langkah",
+      "target": "multi_pass_prompting_skill_tahap_2_eksekusi_pass_1_review_struktur_bahasa_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "multi_pass_prompting_skill_alur_kerja_multi_pass_manual_3_langkah",
+      "target": "multi_pass_prompting_skill_tahap_3_eksekusi_pass_2_analisis_temuan_detail"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".agents/skills/multi-pass-prompting/SKILL.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "multi_pass_prompting_skill_alur_kerja_multi_pass_manual_3_langkah",
+      "target": "multi_pass_prompting_skill_tahap_4_eksekusi_pass_3_checklist_tindakan_visualisasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": ".agents/workflows/graphify.md",
       "source_location": "L6",
       "weight": 1.0,
@@ -56434,9 +58313,9 @@
       "source_file": "projects/auditdok/00-ideation.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_00_ideation",
-      "target": "auditdok_00_ideation_ideation_auditdok_agentic_workflow",
-      "confidence_score": 1.0
+      "target": "auditdok_00_ideation_ideation_auditdok_agentic_workflow"
     },
     {
       "relation": "contains",
@@ -56444,9 +58323,9 @@
       "source_file": "projects/auditdok/00-ideation.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_00_ideation_ideation_auditdok_agentic_workflow",
-      "target": "auditdok_00_ideation_brain_dump",
-      "confidence_score": 1.0
+      "target": "auditdok_00_ideation_brain_dump"
     },
     {
       "relation": "contains",
@@ -56454,9 +58333,9 @@
       "source_file": "projects/auditdok/00-ideation.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_00_ideation_ideation_auditdok_agentic_workflow",
-      "target": "auditdok_00_ideation_chosen_direction_grill_me_decisions",
-      "confidence_score": 1.0
+      "target": "auditdok_00_ideation_chosen_direction_grill_me_decisions"
     },
     {
       "relation": "contains",
@@ -56464,9 +58343,9 @@
       "source_file": "projects/auditdok/00-ideation.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_00_ideation_ideation_auditdok_agentic_workflow",
-      "target": "auditdok_00_ideation_market_scan_value_prop",
-      "confidence_score": 1.0
+      "target": "auditdok_00_ideation_market_scan_value_prop"
     },
     {
       "relation": "contains",
@@ -56474,9 +58353,9 @@
       "source_file": "projects/auditdok/00-ideation.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_00_ideation_ideation_auditdok_agentic_workflow",
-      "target": "auditdok_00_ideation_parked_ideas_untuk_versi_mendatang",
-      "confidence_score": 1.0
+      "target": "auditdok_00_ideation_parked_ideas_untuk_versi_mendatang"
     },
     {
       "relation": "contains",
@@ -56484,9 +58363,9 @@
       "source_file": "projects/auditdok/01-architecture.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_01_architecture",
-      "target": "auditdok_01_architecture_architecture_auditdok_agentic_workflow",
-      "confidence_score": 1.0
+      "target": "auditdok_01_architecture_architecture_auditdok_agentic_workflow"
     },
     {
       "relation": "contains",
@@ -56494,9 +58373,9 @@
       "source_file": "projects/auditdok/01-architecture.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_01_architecture_architecture_auditdok_agentic_workflow",
-      "target": "auditdok_01_architecture_deliverables_v1_cli",
-      "confidence_score": 1.0
+      "target": "auditdok_01_architecture_deliverables_v1_cli"
     },
     {
       "relation": "contains",
@@ -56504,9 +58383,9 @@
       "source_file": "projects/auditdok/01-architecture.md",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_01_architecture_architecture_auditdok_agentic_workflow",
-      "target": "auditdok_01_architecture_directory_structure",
-      "confidence_score": 1.0
+      "target": "auditdok_01_architecture_directory_structure"
     },
     {
       "relation": "contains",
@@ -56514,9 +58393,9 @@
       "source_file": "projects/auditdok/01-architecture.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_01_architecture_architecture_auditdok_agentic_workflow",
-      "target": "auditdok_01_architecture_scope_v1_cli_teruji",
-      "confidence_score": 1.0
+      "target": "auditdok_01_architecture_scope_v1_cli_teruji"
     },
     {
       "relation": "contains",
@@ -56524,9 +58403,9 @@
       "source_file": "projects/auditdok/01-architecture.md",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_01_architecture_architecture_auditdok_agentic_workflow",
-      "target": "auditdok_01_architecture_stack_tools",
-      "confidence_score": 1.0
+      "target": "auditdok_01_architecture_stack_tools"
     },
     {
       "relation": "contains",
@@ -56534,9 +58413,9 @@
       "source_file": "projects/auditdok/01-architecture.md",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_01_architecture_architecture_auditdok_agentic_workflow",
-      "target": "auditdok_01_architecture_target_audience_value_proposition",
-      "confidence_score": 1.0
+      "target": "auditdok_01_architecture_target_audience_value_proposition"
     },
     {
       "relation": "contains",
@@ -56544,9 +58423,9 @@
       "source_file": "projects/auditdok/01-architecture.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_01_architecture_scope_v1_cli_teruji",
-      "target": "auditdok_01_architecture_in_v1",
-      "confidence_score": 1.0
+      "target": "auditdok_01_architecture_in_v1"
     },
     {
       "relation": "contains",
@@ -56554,9 +58433,9 @@
       "source_file": "projects/auditdok/01-architecture.md",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "auditdok_01_architecture_scope_v1_cli_teruji",
-      "target": "auditdok_01_architecture_not_in_v1_parked",
-      "confidence_score": 1.0
+      "target": "auditdok_01_architecture_not_in_v1_parked"
     },
     {
       "relation": "contains",
@@ -56564,9 +58443,9 @@
       "source_file": "projects/auditdok/output/checklist_perbaikan.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_checklist_perbaikan",
-      "target": "output_checklist_perbaikan_checklist_perbaikan_dokumen_prd",
-      "confidence_score": 1.0
+      "target": "output_checklist_perbaikan_checklist_perbaikan_dokumen_prd"
     },
     {
       "relation": "contains",
@@ -56574,9 +58453,9 @@
       "source_file": "projects/auditdok/output/laporan_audit.md",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_laporan_audit",
-      "target": "output_laporan_audit_contoh_checklist_tindakan",
-      "confidence_score": 1.0
+      "target": "output_laporan_audit_contoh_checklist_tindakan"
     },
     {
       "relation": "contains",
@@ -56584,9 +58463,9 @@
       "source_file": "projects/auditdok/output/laporan_audit.md",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_laporan_audit",
-      "target": "output_laporan_audit_kode_diagram_alur_logis",
-      "confidence_score": 1.0
+      "target": "output_laporan_audit_kode_diagram_alur_logis"
     },
     {
       "relation": "contains",
@@ -56594,9 +58473,9 @@
       "source_file": "projects/auditdok/output/laporan_audit.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_laporan_audit",
-      "target": "output_laporan_audit_skor_evaluasi",
-      "confidence_score": 1.0
+      "target": "output_laporan_audit_skor_evaluasi"
     },
     {
       "relation": "contains",
@@ -56604,9 +58483,9 @@
       "source_file": "projects/auditdok/output/laporan_audit.md",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_laporan_audit",
-      "target": "output_laporan_audit_struktur_mindmap_konsep_bertingkat",
-      "confidence_score": 1.0
+      "target": "output_laporan_audit_struktur_mindmap_konsep_bertingkat"
     },
     {
       "relation": "contains",
@@ -56614,9 +58493,9 @@
       "source_file": "projects/auditdok/output/laporan_audit.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_laporan_audit",
-      "target": "output_laporan_audit_temuan_utama",
-      "confidence_score": 1.0
+      "target": "output_laporan_audit_temuan_utama"
     },
     {
       "relation": "contains",
@@ -56624,9 +58503,1349 @@
       "source_file": "projects/auditdok/output/minimap.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_minimap",
-      "target": "output_minimap_map_struktur_dokumen_minimap",
+      "target": "output_minimap_map_struktur_dokumen_minimap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/checklist_perbaikan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_checklist_perbaikan",
+      "target": "output_hybrid_checklist_perbaikan_checklist_perbaikan_dokumen_prd"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit",
+      "target": "output_hybrid_laporan_audit_hasil_audit_dokumen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit",
+      "target": "output_hybrid_laporan_audit_hasil_audit_dokumen_mock"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit",
+      "target": "output_hybrid_laporan_audit_hasil_audit_dokumen_mock_31"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit",
+      "target": "output_hybrid_laporan_audit_pass_1_review_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit",
+      "target": "output_hybrid_laporan_audit_pass_2_analisis_fokus_per_bagian"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit",
+      "target": "output_hybrid_laporan_audit_pass_3_checklist_mindmap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit_hasil_audit_dokumen_mock",
+      "target": "output_hybrid_laporan_audit_contoh_checklist_tindakan_prd_format"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit_hasil_audit_dokumen_mock",
+      "target": "output_hybrid_laporan_audit_skor_evaluasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit_hasil_audit_dokumen_mock",
+      "target": "output_hybrid_laporan_audit_temuan_utama_daftar_masalah"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit_hasil_audit_dokumen_mock_31",
+      "target": "output_hybrid_laporan_audit_contoh_checklist_tindakan_prd_format_51"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit_hasil_audit_dokumen_mock_31",
+      "target": "output_hybrid_laporan_audit_skor_evaluasi_33"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit_hasil_audit_dokumen_mock_31",
+      "target": "output_hybrid_laporan_audit_temuan_utama_daftar_masalah_36"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit_hasil_audit_dokumen",
+      "target": "output_hybrid_laporan_audit_checklist_tindakan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit_hasil_audit_dokumen",
+      "target": "output_hybrid_laporan_audit_diagram_alur"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit_hasil_audit_dokumen",
+      "target": "output_hybrid_laporan_audit_skor_evaluasi_67"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L105",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit_hasil_audit_dokumen",
+      "target": "output_hybrid_laporan_audit_struktur_mindmap_konsep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit_hasil_audit_dokumen",
+      "target": "output_hybrid_laporan_audit_temuan_utama_daftar_masalah_71"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit_checklist_tindakan",
+      "target": "output_hybrid_laporan_audit_bab_i_pendahuluan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/laporan_audit.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_laporan_audit_checklist_tindakan",
+      "target": "output_hybrid_laporan_audit_bab_ii_pembahasan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/minimap.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_minimap",
+      "target": "output_hybrid_minimap_map_struktur_dokumen_minimap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/minimap.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_minimap_map_struktur_dokumen_minimap",
+      "target": "output_hybrid_minimap_struktur_mindmap_konsep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen_mock"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen_mock_31"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_pass_1_review_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_pass_2_analisis_fokus_per_bagian"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_pass_3_checklist_mindmap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen_mock",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_contoh_checklist_tindakan_prd_format"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen_mock",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_skor_evaluasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen_mock",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_temuan_utama_daftar_masalah"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen_mock_31",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_contoh_checklist_tindakan_prd_format_51"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen_mock_31",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_skor_evaluasi_33"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen_mock_31",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_temuan_utama_daftar_masalah_36"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_checklist_tindakan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_diagram_alur"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_skor_evaluasi_67"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L105",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_struktur_mindmap_konsep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft_hasil_audit_dokumen",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_temuan_utama_daftar_masalah_71"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft_checklist_tindakan",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_bab_i_pendahuluan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_hybrid/sample_makalah_laporan_audit_draft.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_hybrid_sample_makalah_laporan_audit_draft_checklist_tindakan",
+      "target": "output_hybrid_sample_makalah_laporan_audit_draft_bab_ii_pembahasan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/checklist_perbaikan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_checklist_perbaikan",
+      "target": "output_plus_checklist_perbaikan_checklist_perbaikan_dokumen_prd"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit",
+      "target": "output_plus_laporan_audit_pass_1_review_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit",
+      "target": "output_plus_laporan_audit_pass_2_analisis_fokus_per_bagian"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L209",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit",
+      "target": "output_plus_laporan_audit_pass_3_checklist_mindmap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit_pass_1_review_umum",
+      "target": "output_plus_laporan_audit_contoh_checklist_tindakan_prd_format"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit_pass_1_review_umum",
+      "target": "output_plus_laporan_audit_skor_evaluasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit_pass_1_review_umum",
+      "target": "output_plus_laporan_audit_temuan_utama_daftar_masalah"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L194",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_laporan_audit_contoh_checklist_tindakan_prd_format_194"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_laporan_audit_skor_evaluasi_87"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_laporan_audit_temuan_utama_daftar_masalah_92"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L306",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_laporan_audit_checklist_tindakan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L412",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_laporan_audit_diagram_alur"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L213",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_laporan_audit_skor_evaluasi_213"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L362",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_laporan_audit_struktur_mindmap_konsep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/laporan_audit.md",
+      "source_location": "L218",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_laporan_audit_temuan_utama_daftar_masalah_218"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/minimap.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_minimap",
+      "target": "output_plus_minimap_map_struktur_dokumen_minimap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus/minimap.md",
+      "source_location": "L159",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_minimap_map_struktur_dokumen_minimap",
+      "target": "output_plus_minimap_struktur_mindmap_konsep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_hasil_audit_dokumen_makalah_sistem_informasi_manajemen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_1_review_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_2_analisis_fokus_per_bagian"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_3_checklist_mindmap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_hasil_audit_dokumen_makalah_sistem_informasi_manajemen",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_ringkasan_temuan_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_hasil_audit_dokumen_makalah_sistem_informasi_manajemen",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_skor_evaluasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_1_bab_i_pendahuluan_latar_belakang_halaman_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_2_bab_ii_pembahasan_teori_simkim_halaman_13_14"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_3_bab_ii_pembahasan_kendala_penerapan_simkim_halaman_15"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_4_bab_ii_pembahasan_alur_sop_flowchart_halaman_16"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_5_bab_ii_pembahasan_tabel_2_1_mutu_baku_sop_penerimaan_halaman_19"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_6_bab_ii_pembahasan_tabel_2_3_2_4_mutu_baku_registrasi_penempatan_halaman_28_31"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_7_bab_ii_pembahasan_sop_pemindahan_pendeportasian_halaman_36_43"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_8_bab_ii_pembahasan_analisis_leavitt_s_diamond_model_halaman_41_49"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_checklist_tindakan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_diagram_alur"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_struktur_mindmap_konsep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_checklist_tindakan",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_bab_i_pendahuluan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit_draft.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_checklist_tindakan",
+      "target": "output_plus_ajie_makalah_sim_ajie_bariandono_2110426823_laporan_audit_draft_bab_ii_pembahasan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/checklist_perbaikan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_checklist_perbaikan",
+      "target": "output_plus_ajie_checklist_perbaikan_checklist_perbaikan_dokumen_prd"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit",
+      "target": "output_plus_ajie_laporan_audit_hasil_audit_dokumen_makalah_sistem_informasi_manajemen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit",
+      "target": "output_plus_ajie_laporan_audit_pass_1_review_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L141",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit",
+      "target": "output_plus_ajie_laporan_audit_pass_2_analisis_fokus_per_bagian"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L405",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit",
+      "target": "output_plus_ajie_laporan_audit_pass_3_checklist_mindmap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_pass_1_review_umum",
+      "target": "output_plus_ajie_laporan_audit_skor_evaluasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_hasil_audit_dokumen_makalah_sistem_informasi_manajemen",
+      "target": "output_plus_ajie_laporan_audit_ringkasan_temuan_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_hasil_audit_dokumen_makalah_sistem_informasi_manajemen",
+      "target": "output_plus_ajie_laporan_audit_skor_evaluasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_laporan_audit_1_bab_i_pendahuluan_latar_belakang_halaman_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_laporan_audit_2_bab_ii_pembahasan_teori_simkim_halaman_13_14"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_laporan_audit_3_bab_ii_pembahasan_kendala_penerapan_simkim_halaman_15"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_laporan_audit_4_bab_ii_pembahasan_alur_sop_flowchart_halaman_16"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_laporan_audit_5_bab_ii_pembahasan_tabel_2_1_mutu_baku_sop_penerimaan_halaman_19"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L77",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_laporan_audit_6_bab_ii_pembahasan_tabel_2_3_2_4_mutu_baku_registrasi_penempatan_halaman_28_31"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_laporan_audit_7_bab_ii_pembahasan_sop_pemindahan_pendeportasian_halaman_36_43"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_laporan_audit_8_bab_ii_pembahasan_analisis_leavitt_s_diamond_model_halaman_41_49"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_laporan_audit_checklist_tindakan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_laporan_audit_diagram_alur"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_laporan_audit_struktur_mindmap_konsep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_checklist_tindakan",
+      "target": "output_plus_ajie_laporan_audit_bab_i_pendahuluan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/laporan_audit.md",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_laporan_audit_checklist_tindakan",
+      "target": "output_plus_ajie_laporan_audit_bab_ii_pembahasan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/minimap.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_minimap",
+      "target": "output_plus_ajie_minimap_map_struktur_dokumen_minimap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie/minimap.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_minimap_map_struktur_dokumen_minimap",
+      "target": "output_plus_ajie_minimap_struktur_mindmap_konsep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_hasil_audit_dokumen_makalah_sistem_informasi_manajemen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_1_review_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_2_analisis_fokus_per_bagian"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_3_checklist_mindmap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_hasil_audit_dokumen_makalah_sistem_informasi_manajemen",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_ringkasan_temuan_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_hasil_audit_dokumen_makalah_sistem_informasi_manajemen",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_skor_evaluasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_1_latar_belakang_halaman_6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_2_teori_arsitektur_simkim_halaman_13_14"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_3_kendala_penerapan_simkim_halaman_15"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_4_siklus_hidup_diagram_sop_halaman_16"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_5_tabel_mutu_baku_penerimaan_halaman_19"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_6_tabel_sop_registrasi_penempatan_halaman_28_31"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_7_sop_pemindahan_pendeportasian_halaman_36_43"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_8_kerangka_analisis_leavitt_s_diamond_halaman_41_49"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_checklist_tindakan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_diagram_alur"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/MAKALAH_SIM - AJIE_BARIANDONO_2110426823_laporan_audit.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_api_makalah_sim_ajie_bariandono_2110426823_laporan_audit_struktur_mindmap_konsep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/checklist_perbaikan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_checklist_perbaikan",
+      "target": "output_plus_ajie_api_checklist_perbaikan_checklist_perbaikan_dokumen_prd"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit",
+      "target": "output_plus_ajie_api_laporan_audit_pass_1_review_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit",
+      "target": "output_plus_ajie_api_laporan_audit_pass_2_analisis_fokus_per_bagian"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit",
+      "target": "output_plus_ajie_api_laporan_audit_pass_3_checklist_mindmap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L282",
+      "weight": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit_pass_1_review_umum",
+      "target": "output_plus_ajie_api_laporan_audit_contoh_checklist_tindakan_prd_format",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit_pass_1_review_umum",
+      "target": "output_plus_ajie_api_laporan_audit_skor_evaluasi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit_pass_1_review_umum",
+      "target": "output_plus_ajie_api_laporan_audit_temuan_utama_daftar_masalah",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L880",
+      "weight": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_api_laporan_audit_contoh_checklist_tindakan_prd_format_880",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L297",
+      "weight": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_api_laporan_audit_skor_evaluasi_297",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L300",
+      "weight": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_plus_ajie_api_laporan_audit_temuan_utama_daftar_masalah_300",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_api_laporan_audit_checklist_tindakan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L128",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_api_laporan_audit_diagram_alur"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L904",
+      "weight": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_api_laporan_audit_skor_evaluasi_904",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_api_laporan_audit_struktur_mindmap_konsep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
+      "source_location": "L907",
+      "weight": 1.0,
+      "source": "output_plus_ajie_api_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_plus_ajie_api_laporan_audit_temuan_utama_daftar_masalah_907",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/minimap.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_minimap",
+      "target": "output_plus_ajie_api_minimap_map_struktur_dokumen_minimap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_plus_ajie_api/minimap.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_plus_ajie_api_minimap_map_struktur_dokumen_minimap",
+      "target": "output_plus_ajie_api_minimap_struktur_mindmap_konsep"
     },
     {
       "relation": "contains",
@@ -56636,26 +59855,26 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "auditdok_prd",
-      "target": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai"
+      "target": "auditdok_prd_prd_auditdok_v1_1_jasa_audit_dokumen_berbasis_ai"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L285",
+      "source_location": "L208",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "source": "auditdok_prd_prd_auditdok_v1_1_jasa_audit_dokumen_berbasis_ai",
       "target": "auditdok_prd_10_metrik_keberhasilan_kpi"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L297",
+      "source_location": "L220",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "source": "auditdok_prd_prd_auditdok_v1_1_jasa_audit_dokumen_berbasis_ai",
       "target": "auditdok_prd_11_open_questions"
     },
     {
@@ -56665,7 +59884,7 @@
       "source_location": "L9",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "source": "auditdok_prd_prd_auditdok_v1_1_jasa_audit_dokumen_berbasis_ai",
       "target": "auditdok_prd_1_ringkasan_eksekutif"
     },
     {
@@ -56675,77 +59894,77 @@
       "source_location": "L27",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
-      "target": "auditdok_prd_2_jenis_dokumen_yang_dapat_diaudit"
+      "source": "auditdok_prd_prd_auditdok_v1_1_jasa_audit_dokumen_berbasis_ai",
+      "target": "auditdok_prd_2_jenis_dokumen_yang_dilayani_v1"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L49",
+      "source_location": "L48",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "source": "auditdok_prd_prd_auditdok_v1_1_jasa_audit_dokumen_berbasis_ai",
       "target": "auditdok_prd_3_tier_layanan"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L162",
+      "source_location": "L106",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "source": "auditdok_prd_prd_auditdok_v1_1_jasa_audit_dokumen_berbasis_ai",
       "target": "auditdok_prd_4_perbandingan_tier_ringkas"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L184",
+      "source_location": "L123",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "source": "auditdok_prd_prd_auditdok_v1_1_jasa_audit_dokumen_berbasis_ai",
       "target": "auditdok_prd_5_user_flow"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L215",
+      "source_location": "L145",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "source": "auditdok_prd_prd_auditdok_v1_1_jasa_audit_dokumen_berbasis_ai",
       "target": "auditdok_prd_6_strategi_pricing_positioning"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L241",
+      "source_location": "L161",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "source": "auditdok_prd_prd_auditdok_v1_1_jasa_audit_dokumen_berbasis_ai",
       "target": "auditdok_prd_7_channel_distribusi_go_to_market"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L260",
+      "source_location": "L182",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "source": "auditdok_prd_prd_auditdok_v1_1_jasa_audit_dokumen_berbasis_ai",
       "target": "auditdok_prd_8_tech_stack_operasional_internal"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L273",
+      "source_location": "L196",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "auditdok_prd_prd_auditdok_jasa_audit_dokumen_berbasis_ai",
+      "source": "auditdok_prd_prd_auditdok_v1_1_jasa_audit_dokumen_berbasis_ai",
       "target": "auditdok_prd_9_risiko_mitigasi"
     },
     {
@@ -56762,41 +59981,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L62",
+      "source_location": "L38",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "auditdok_prd_3_tier_layanan",
-      "target": "auditdok_prd_3_1_basic_quick_audit"
+      "source": "auditdok_prd_2_jenis_dokumen_yang_dilayani_v1",
+      "target": "auditdok_prd_roadmap_dokumen_v2"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L87",
+      "source_location": "L59",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "auditdok_prd_3_tier_layanan",
-      "target": "auditdok_prd_3_2_plus_guided_audit"
+      "target": "auditdok_prd_3_1_basic_quick_audit_2_pass"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L109",
+      "source_location": "L84",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "auditdok_prd_3_tier_layanan",
-      "target": "auditdok_prd_3_3_pro_visual_audit"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "projects/auditdok/prd.md",
-      "source_location": "L134",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "auditdok_prd_3_tier_layanan",
-      "target": "auditdok_prd_3_4_ultra_full_service_audit"
+      "target": "auditdok_prd_3_2_plus_guided_audit_3_pass"
     },
     {
       "relation": "contains",
@@ -56812,21 +60021,11 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
-      "source_location": "L217",
+      "source_location": "L147",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "auditdok_prd_6_strategi_pricing_positioning",
-      "target": "auditdok_prd_6_1_mengapa_lebih_murah_dari_langganan_ai"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "projects/auditdok/prd.md",
-      "source_location": "L230",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "auditdok_prd_6_strategi_pricing_positioning",
-      "target": "auditdok_prd_6_2_paket_bundling_opsional"
+      "target": "auditdok_prd_mengapa_lebih_murah_dari_langganan_ai"
     },
     {
       "relation": "contains",
@@ -56864,9 +60063,9 @@
       "source_file": "projects/auditdok/skills/laporan_keuangan.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_laporan_keuangan",
-      "target": "skills_laporan_keuangan_skill_audit_laporan_keuangan_akuntabilitas",
-      "confidence_score": 1.0
+      "target": "skills_laporan_keuangan_skill_audit_laporan_keuangan_akuntabilitas"
     },
     {
       "relation": "contains",
@@ -56874,9 +60073,9 @@
       "source_file": "projects/auditdok/skills/laporan_keuangan.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_laporan_keuangan_skill_audit_laporan_keuangan_akuntabilitas",
-      "target": "skills_laporan_keuangan_fokus_penilaian",
-      "confidence_score": 1.0
+      "target": "skills_laporan_keuangan_fokus_penilaian"
     },
     {
       "relation": "contains",
@@ -56884,9 +60083,9 @@
       "source_file": "projects/auditdok/skills/laporan_keuangan.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_laporan_keuangan_skill_audit_laporan_keuangan_akuntabilitas",
-      "target": "skills_laporan_keuangan_struktur_hasil_audit_output_format",
-      "confidence_score": 1.0
+      "target": "skills_laporan_keuangan_struktur_hasil_audit_output_format"
     },
     {
       "relation": "contains",
@@ -56894,9 +60093,9 @@
       "source_file": "projects/auditdok/skills/laporan_keuangan.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_laporan_keuangan_struktur_hasil_audit_output_format",
-      "target": "skills_laporan_keuangan_daftar_temuan_operasional_kepatuhan",
-      "confidence_score": 1.0
+      "target": "skills_laporan_keuangan_daftar_temuan_operasional_kepatuhan"
     },
     {
       "relation": "contains",
@@ -56904,9 +60103,9 @@
       "source_file": "projects/auditdok/skills/laporan_keuangan.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_laporan_keuangan_struktur_hasil_audit_output_format",
-      "target": "skills_laporan_keuangan_rekonsiliasi_temuan_ketidakselarasan_angka",
-      "confidence_score": 1.0
+      "target": "skills_laporan_keuangan_rekonsiliasi_temuan_ketidakselarasan_angka"
     },
     {
       "relation": "contains",
@@ -56914,9 +60113,9 @@
       "source_file": "projects/auditdok/skills/laporan_keuangan.md",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_laporan_keuangan_struktur_hasil_audit_output_format",
-      "target": "skills_laporan_keuangan_skor_evaluasi_opini_awal",
-      "confidence_score": 1.0
+      "target": "skills_laporan_keuangan_skor_evaluasi_opini_awal"
     },
     {
       "relation": "contains",
@@ -56924,9 +60123,9 @@
       "source_file": "projects/auditdok/skills/makalah.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_makalah",
-      "target": "skills_makalah_skill_audit_makalah_akademik",
-      "confidence_score": 1.0
+      "target": "skills_makalah_skill_audit_makalah_akademik"
     },
     {
       "relation": "contains",
@@ -56934,9 +60133,9 @@
       "source_file": "projects/auditdok/skills/makalah.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_makalah_skill_audit_makalah_akademik",
-      "target": "skills_makalah_fokus_penilaian",
-      "confidence_score": 1.0
+      "target": "skills_makalah_fokus_penilaian"
     },
     {
       "relation": "contains",
@@ -56944,9 +60143,9 @@
       "source_file": "projects/auditdok/skills/makalah.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_makalah_skill_audit_makalah_akademik",
-      "target": "skills_makalah_struktur_hasil_audit_output_format",
-      "confidence_score": 1.0
+      "target": "skills_makalah_struktur_hasil_audit_output_format"
     },
     {
       "relation": "contains",
@@ -56954,9 +60153,9 @@
       "source_file": "projects/auditdok/skills/makalah.md",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_makalah_struktur_hasil_audit_output_format",
-      "target": "skills_makalah_contoh_checklist_tindakan_prd_format",
-      "confidence_score": 1.0
+      "target": "skills_makalah_contoh_checklist_tindakan_prd_format"
     },
     {
       "relation": "contains",
@@ -56964,9 +60163,9 @@
       "source_file": "projects/auditdok/skills/makalah.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_makalah_struktur_hasil_audit_output_format",
-      "target": "skills_makalah_skor_evaluasi",
-      "confidence_score": 1.0
+      "target": "skills_makalah_skor_evaluasi"
     },
     {
       "relation": "contains",
@@ -56974,9 +60173,9 @@
       "source_file": "projects/auditdok/skills/makalah.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_makalah_struktur_hasil_audit_output_format",
-      "target": "skills_makalah_temuan_utama_daftar_masalah",
-      "confidence_score": 1.0
+      "target": "skills_makalah_temuan_utama_daftar_masalah"
     },
     {
       "relation": "contains",
@@ -56984,9 +60183,9 @@
       "source_file": "projects/auditdok/skills/proposal_skripsi.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_proposal_skripsi",
-      "target": "skills_proposal_skripsi_skill_audit_proposal_skripsi_tesis",
-      "confidence_score": 1.0
+      "target": "skills_proposal_skripsi_skill_audit_proposal_skripsi_tesis"
     },
     {
       "relation": "contains",
@@ -56994,9 +60193,9 @@
       "source_file": "projects/auditdok/skills/proposal_skripsi.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_proposal_skripsi_skill_audit_proposal_skripsi_tesis",
-      "target": "skills_proposal_skripsi_fokus_penilaian",
-      "confidence_score": 1.0
+      "target": "skills_proposal_skripsi_fokus_penilaian"
     },
     {
       "relation": "contains",
@@ -57004,9 +60203,9 @@
       "source_file": "projects/auditdok/skills/proposal_skripsi.md",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_proposal_skripsi_skill_audit_proposal_skripsi_tesis",
-      "target": "skills_proposal_skripsi_struktur_hasil_audit_output_format",
-      "confidence_score": 1.0
+      "target": "skills_proposal_skripsi_struktur_hasil_audit_output_format"
     },
     {
       "relation": "contains",
@@ -57014,9 +60213,9 @@
       "source_file": "projects/auditdok/skills/proposal_skripsi.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_proposal_skripsi_struktur_hasil_audit_output_format",
-      "target": "skills_proposal_skripsi_analisis_kritis_metodologi",
-      "confidence_score": 1.0
+      "target": "skills_proposal_skripsi_analisis_kritis_metodologi"
     },
     {
       "relation": "contains",
@@ -57024,9 +60223,9 @@
       "source_file": "projects/auditdok/skills/proposal_skripsi.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_proposal_skripsi_struktur_hasil_audit_output_format",
-      "target": "skills_proposal_skripsi_skor_evaluasi",
-      "confidence_score": 1.0
+      "target": "skills_proposal_skripsi_skor_evaluasi"
     },
     {
       "relation": "contains",
@@ -57034,9 +60233,9 @@
       "source_file": "projects/auditdok/skills/proposal_skripsi.md",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "skills_proposal_skripsi_struktur_hasil_audit_output_format",
-      "target": "skills_proposal_skripsi_temuan_rekomendasi",
-      "confidence_score": 1.0
+      "target": "skills_proposal_skripsi_temuan_rekomendasi"
     },
     {
       "relation": "contains",
@@ -76432,5 +79631,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a800874a7f3d7ce91fb4929b71eeccd0974fdbfb"
+  "built_at_commit": "d20836774e38a4232d1192f9b7b528d422d80f83"
 }
