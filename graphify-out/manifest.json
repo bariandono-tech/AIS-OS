@@ -1070,8 +1070,8 @@
     "semantic_hash": ""
   },
   "projects/studios/work-log.md": {
-    "mtime": 1781935080.7515292,
-    "ast_hash": "2115ef3e31bad8dfc2ac0c6f46444da2",
+    "mtime": 1781939981.3044834,
+    "ast_hash": "95e378925419dfcbfecf63e109dbdd54",
     "semantic_hash": ""
   },
   "projects/studios/app/public/favicon.svg": {
@@ -1185,8 +1185,8 @@
     "semantic_hash": ""
   },
   "thesis-brain/log.md": {
-    "mtime": 1781935081.144635,
-    "ast_hash": "10b3a105d5ec6d8558cc0d691387d7be",
+    "mtime": 1781939981.3049927,
+    "ast_hash": "8af5b6c96c889ea8ce37ac315b0cdc34",
     "semantic_hash": ""
   },
   "thesis-brain/raw/aios-intake.md": {
@@ -1310,8 +1310,8 @@
     "semantic_hash": ""
   },
   "business-brain/log.md": {
-    "mtime": 1781935079.8624015,
-    "ast_hash": "007ba7a65410c4d389521e1622845a5a",
+    "mtime": 1781939981.3019443,
+    "ast_hash": "ba8eb00b513659609545e7c0a9dfa98b",
     "semantic_hash": ""
   },
   "office-brain/CLAUDE.md": {
@@ -1350,8 +1350,8 @@
     "semantic_hash": ""
   },
   "scripts/notion/sync_to_tasks.js": {
-    "mtime": 1781935080.7941148,
-    "ast_hash": "ee2f9b4d35edcfa2f6e4f01d78a2b40f",
+    "mtime": 1781939981.3049927,
+    "ast_hash": "354e42af708a3da88ff9a5152b82e272",
     "semantic_hash": ""
   },
   "office-brain/wiki/Project_Botkeu.md": {
@@ -1797,6 +1797,76 @@
   "package.json": {
     "mtime": 1781937258.346583,
     "ast_hash": "eabc012100923e11d5c9df0974f01154",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/src/agent.py": {
+    "mtime": 1782025072.0850184,
+    "ast_hash": "550b395eeca6a6ed020cf60587c10408",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/src/cli.py": {
+    "mtime": 1782024574.831352,
+    "ast_hash": "da0949d24180f572ac1ee46d1fd4880f",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/src/generator.py": {
+    "mtime": 1782024494.6944215,
+    "ast_hash": "b0121e8cbc546e63b988f2b67301acda",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/src/parser.py": {
+    "mtime": 1782024476.0249147,
+    "ast_hash": "d324715e648ac2a2faa301f481687414",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/src/workflow.py": {
+    "mtime": 1782024503.7056582,
+    "ast_hash": "1b49a9eaab609325f88522b361ee66fc",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/00-ideation.md": {
+    "mtime": 1782024415.5371797,
+    "ast_hash": "926ca8e7580387f5df50f62b145bb8c3",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/01-architecture.md": {
+    "mtime": 1782024421.5578208,
+    "ast_hash": "485debe349866281daec7a18b765d648",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output/checklist_perbaikan.md": {
+    "mtime": 1782025112.180724,
+    "ast_hash": "b98975396f22e7cff9ec6a1a8adc8bd3",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output/laporan_audit.md": {
+    "mtime": 1782025112.180724,
+    "ast_hash": "82f729dc405d720be183a9ac240e3c7f",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output/minimap.md": {
+    "mtime": 1782025112.180724,
+    "ast_hash": "2d8668822a87fd20538c26710ee8bfcc",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/requirements.txt": {
+    "mtime": 1782024449.639232,
+    "ast_hash": "18dbaff75d35ffe691c8900ef48045b8",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/skills/laporan_keuangan.md": {
+    "mtime": 1782024469.780657,
+    "ast_hash": "6d22e8101716e8cb8a58c00d68ae7d02",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/skills/makalah.md": {
+    "mtime": 1782024460.294846,
+    "ast_hash": "6cda5121fe8839adc9561bb130205c74",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/skills/proposal_skripsi.md": {
+    "mtime": 1782024465.1309175,
+    "ast_hash": "fccf3ef3aeb65db4f1e967c67735ceaa",
     "semantic_hash": ""
   }
 }

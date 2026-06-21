@@ -1,0 +1,7 @@
+# Ignore local configs and outputs
+.env
+output/
+output_basic/
+*.docx
+__pycache__/
+*.pyc

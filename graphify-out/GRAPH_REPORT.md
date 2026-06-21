@@ -1,16 +1,16 @@
-# Graph Report - AIS-OS  (2026-06-20)
+# Graph Report - AIS-OS  (2026-06-21)
 
 ## Corpus Check
-- 325 files · ~400,760 words
+- 338 files · ~407,050 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 3788 nodes · 3750 edges · 408 communities (303 shown, 105 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
+- 3869 nodes · 3841 edges · 417 communities (310 shown, 107 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fe17b5ad`
+- Built from commit: `a800874a`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -401,6 +401,15 @@
 - [[_COMMUNITY_Community 396|Community 396]]
 - [[_COMMUNITY_Community 397|Community 397]]
 - [[_COMMUNITY_Community 407|Community 407]]
+- [[_COMMUNITY_Community 408|Community 408]]
+- [[_COMMUNITY_Community 409|Community 409]]
+- [[_COMMUNITY_Community 410|Community 410]]
+- [[_COMMUNITY_Community 411|Community 411]]
+- [[_COMMUNITY_Community 412|Community 412]]
+- [[_COMMUNITY_Community 413|Community 413]]
+- [[_COMMUNITY_Community 414|Community 414]]
+- [[_COMMUNITY_Community 415|Community 415]]
+- [[_COMMUNITY_Community 416|Community 416]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
@@ -415,21 +424,21 @@
 10. `📽️ Struktur & Konten Slide` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `AuditWorkflow` --uses--> `AuditAgent`  [INFERRED]
+  projects/auditdok/src/workflow.py → projects/auditdok/src/agent.py
 - `draw_flowchart()` --calls--> `draw_arrow()`  [INFERRED]
   projects/makalah-sim/draw_flowcharts.py → projects/makalah-sim/draw_individual_flowcharts.py
+- `main()` --calls--> `AuditWorkflow`  [EXTRACTED]
+  projects/auditdok/src/cli.py → projects/auditdok/src/workflow.py
 - `syncEngine()` --calls--> `blocksToMarkdown()`  [EXTRACTED]
   projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
 - `syncEngine()` --calls--> `blocksToResume()`  [EXTRACTED]
-  projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
-- `syncEngine()` --calls--> `blocksToBrainstorm()`  [EXTRACTED]
-  projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
-- `syncEngine()` --calls--> `blocksToFlashcards()`  [EXTRACTED]
   projects/studios/app/scripts/sync.js → projects/studios/app/scripts/notionParser.js
 
 ## Import Cycles
 - None detected.
 
-## Communities (408 total, 105 thin omitted)
+## Communities (417 total, 107 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -1322,8 +1331,8 @@ Cohesion: 0.50
 Nodes (3): Expanding the ESLint configuration, React Compiler, React + Vite
 
 ### Community 295 - "Community 295"
-Cohesion: 0.20
-Nodes (9): 2026-06-15, 2026-06-16, 2026-06-17, Inisialisasi Proyek StudiOS & Refinement UI, Optimasi WebGL & Sinkronisasi Kurikulum Medis (Phase 3 - Anatomi Dasar), Sinkronisasi & Restrukturisasi Knowledge Base Proyek, Tahap 2: Integrasi Frontend ke Supabase & Sistem Otorisasi Akses, Tahap 3: Notion Sync Engine (Otomatisasi Sinkronisasi Konten) (+1 more)
+Cohesion: 0.17
+Nodes (11): 2026-06-15, 2026-06-16, 2026-06-17, 2026-06-20, Inisialisasi Proyek StudiOS & Refinement UI, Makalah SIM Refinement, Inisialisasi AuditDok, & Sinkronisasi Laptop Baru, Optimasi WebGL & Sinkronisasi Kurikulum Medis (Phase 3 - Anatomi Dasar), Sinkronisasi & Restrukturisasi Knowledge Base Proyek (+3 more)
 
 ### Community 299 - "Community 299"
 Cohesion: 0.50
@@ -1406,8 +1415,8 @@ Cohesion: 0.50
 Nodes (3): [2026-06-17] ingest - initialized profile and vibe coding self-evaluation page, [2026-06-17] session - personal knowledge base initialized, Personal Knowledge Base Log
 
 ### Community 333 - "Community 333"
-Cohesion: 0.50
-Nodes (3): [2026-06-17] ingest - synced worklog to Notion Mythos Brain, [2026-06-17] session - business knowledge base initialized, Business Knowledge Base Log
+Cohesion: 0.40
+Nodes (4): [2026-06-17] ingest - synced worklog to Notion Mythos Brain, [2026-06-17] session - business knowledge base initialized, [2026-06-20] ingest - synced worklog to Notion Mythos Brain, Business Knowledge Base Log
 
 ### Community 334 - "Community 334"
 Cohesion: 0.40
@@ -1434,8 +1443,8 @@ Cohesion: 0.50
 Nodes (3): Modul & Kegunaan, 📊 Sistem Aplikasi Keuangan Tingkat Instansi (SAKTI), Evaluasi Sistem Informasi
 
 ### Community 351 - "Community 351"
-Cohesion: 0.07
-Nodes (22): border0, borders0, bordersAll, borderSingle, cellPara(), centered(), chapterPageSetup, createMutuBakuTable() (+14 more)
+Cohesion: 0.08
+Nodes (17): border0, borders0, bordersAll, borderSingle, cellPara(), chapterPageSetup, createMutuBakuTable(), daftarPustakaEntry() (+9 more)
 
 ### Community 352 - "Community 352"
 Cohesion: 0.10
@@ -1506,8 +1515,8 @@ Cohesion: 0.29
 Nodes (6): Arsitektur, Definisi, Kendala Umum di UPT Daerah, Modul-Modul di Rudenim, Referensi Terkait, SIMKIM — Sistem Informasi Manajemen Keimigrasian
 
 ### Community 374 - "Community 374"
-Cohesion: 0.18
-Nodes (7): docx, dependencies, docx, docx, docx, doc, docx
+Cohesion: 0.13
+Nodes (10): docx, dependencies, docx, docx, doc, docx, fs, docx (+2 more)
 
 ### Community 375 - "Community 375"
 Cohesion: 0.20
@@ -1561,34 +1570,62 @@ Nodes (8): border0, borders0, bordersAll, borderSingle, doc, {
 }, fs, path
 
 ### Community 394 - "Community 394"
-Cohesion: 0.50
-Nodes (3): doc, docx, fs
+Cohesion: 0.10
+Nodes (21): AuditAgent, Menjalankan audit terhadap dokumen menggunakan LLM pilihan., Menghasilkan output mock terstruktur untuk keperluan pengujian luring., main(), print_banner(), Mencetak banner program yang estetis dan premium., clean_markdown_formatting(), generate_markdown_files() (+13 more)
 
 ### Community 407 - "Community 407"
 Cohesion: 0.08
 Nodes (23): 10. Metrik Keberhasilan (KPI), 11. Open Questions, 1. Ringkasan Eksekutif, 2. Jenis Dokumen yang Dapat Diaudit, 3.1 🟢 BASIC — Quick Audit, 3.2 🔵 PLUS — Guided Audit, 3.3 🟣 PRO — Visual Audit, 3.4 🟠 ULTRA — Full Service Audit (+15 more)
 
+### Community 408 - "Community 408"
+Cohesion: 0.22
+Nodes (8): Architecture: AuditDok Agentic Workflow, Deliverables (v1 CLI), Directory Structure, In v1, NOT in v1 (Parked), Scope v1 (CLI Teruji), Stack / Tools, Target Audience & Value Proposition
+
+### Community 409 - "Community 409"
+Cohesion: 0.29
+Nodes (6): Daftar Temuan Operasional & Kepatuhan, Fokus Penilaian, Rekonsiliasi & Temuan Ketidakselarasan Angka, SKILL: Audit Laporan Keuangan & Akuntabilitas, Skor Evaluasi & Opini Awal, Struktur Hasil Audit (Output Format)
+
+### Community 410 - "Community 410"
+Cohesion: 0.29
+Nodes (6): Contoh Checklist Tindakan (PRD Format), Fokus Penilaian, SKILL: Audit Makalah Akademik, Skor Evaluasi, Struktur Hasil Audit (Output Format), Temuan Utama (Daftar Masalah)
+
+### Community 411 - "Community 411"
+Cohesion: 0.29
+Nodes (6): Analisis Kritis Metodologi, Fokus Penilaian, SKILL: Audit Proposal Skripsi / Tesis, Skor Evaluasi, Struktur Hasil Audit (Output Format), Temuan & Rekomendasi
+
+### Community 412 - "Community 412"
+Cohesion: 0.33
+Nodes (5): Brain Dump, Chosen Direction & Grill-Me Decisions, Ideation: AuditDok Agentic Workflow, Market Scan & Value Prop, Parked Ideas (Untuk Versi Mendatang)
+
+### Community 413 - "Community 413"
+Cohesion: 0.33
+Nodes (5): Contoh Checklist Tindakan, Kode Diagram Alur Logis, Skor Evaluasi, Struktur Mindmap Konsep Bertingkat, Temuan Utama
+
+### Community 414 - "Community 414"
+Cohesion: 0.40
+Nodes (5): centered(), getPngDimensions(), getScaledDimensions(), insertFlowchartImage(), tableSource()
+
 ## Knowledge Gaps
-- **1543 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `workspaces`, `{
+- **1574 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `workspaces`, `{
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
   PageNumber, PageBreak, Header, Footer,
   PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
   TabStopType, NumberFormat, ImageRun,
   TableOfContents, SequentialIdentifier
-}` (+1538 more)
+}` (+1569 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **105 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **107 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 79` to `Community 280`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `docx` connect `Community 362` to `Community 374`?**
+  _High betweenness centrality (0.003) - this node is a cross-community bridge._
+- **Why does `dotenv` connect `Community 79` to `Community 10`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private` to the rest of the system?**
-  _1560 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1602 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

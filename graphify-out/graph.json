@@ -83,6 +83,326 @@
       "norm_label": "workspaces"
     },
     {
+      "label": "agent.py",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_agent",
+      "community": 394,
+      "norm_label": "agent.py"
+    },
+    {
+      "label": "AuditAgent",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_agent_auditagent",
+      "community": 394,
+      "norm_label": "auditagent"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "src_agent_auditagent_init",
+      "community": 394,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".run_audit()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "src_agent_auditagent_run_audit",
+      "community": 394,
+      "norm_label": ".run_audit()"
+    },
+    {
+      "label": "._generate_mock_response()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "src_agent_auditagent_generate_mock_response",
+      "community": 394,
+      "norm_label": "._generate_mock_response()"
+    },
+    {
+      "label": "Menjalankan audit terhadap dokumen menggunakan LLM pilihan.",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "src_agent_rationale_25",
+      "community": 394,
+      "norm_label": "menjalankan audit terhadap dokumen menggunakan llm pilihan."
+    },
+    {
+      "label": "Menghasilkan output mock terstruktur untuk keperluan pengujian luring.",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "src_agent_rationale_78",
+      "community": 394,
+      "norm_label": "menghasilkan output mock terstruktur untuk keperluan pengujian luring."
+    },
+    {
+      "label": "cli.py",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_cli",
+      "community": 394,
+      "norm_label": "cli.py"
+    },
+    {
+      "label": "print_banner()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "src_cli_print_banner",
+      "community": 394,
+      "norm_label": "print_banner()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "src_cli_main",
+      "community": 394,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Mencetak banner program yang estetis dan premium.",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "src_cli_rationale_12",
+      "community": 394,
+      "norm_label": "mencetak banner program yang estetis dan premium."
+    },
+    {
+      "label": "generator.py",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_generator",
+      "community": 394,
+      "norm_label": "generator.py"
+    },
+    {
+      "label": "clean_markdown_formatting()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_generator_clean_markdown_formatting",
+      "community": 394,
+      "norm_label": "clean_markdown_formatting()"
+    },
+    {
+      "label": "generate_pdf_report()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "src_generator_generate_pdf_report",
+      "community": 394,
+      "norm_label": "generate_pdf_report()"
+    },
+    {
+      "label": "generate_markdown_files()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "src_generator_generate_markdown_files",
+      "community": 394,
+      "norm_label": "generate_markdown_files()"
+    },
+    {
+      "label": "Menghilangkan tag bold markdown (**) agar ReportLab tidak bingung,     dan mengg",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "src_generator_rationale_9",
+      "community": 394,
+      "norm_label": "menghilangkan tag bold markdown (**) agar reportlab tidak bingung,     dan mengg"
+    },
+    {
+      "label": "Membuat file PDF profesional berdasarkan hasil audit teks dari LLM.     Mengguna",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "src_generator_rationale_18",
+      "community": 394,
+      "norm_label": "membuat file pdf profesional berdasarkan hasil audit teks dari llm.     mengguna"
+    },
+    {
+      "label": "Mengekstrak bagian-bagian tertentu dari output audit (seperti Checklist dan Mini",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "src_generator_rationale_136",
+      "community": 394,
+      "norm_label": "mengekstrak bagian-bagian tertentu dari output audit (seperti checklist dan mini"
+    },
+    {
+      "label": "parser.py",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_parser",
+      "community": 394,
+      "norm_label": "parser.py"
+    },
+    {
+      "label": "extract_text_from_pdf()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "src_parser_extract_text_from_pdf",
+      "community": 394,
+      "norm_label": "extract_text_from_pdf()"
+    },
+    {
+      "label": "extract_text_from_docx()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "src_parser_extract_text_from_docx",
+      "community": 394,
+      "norm_label": "extract_text_from_docx()"
+    },
+    {
+      "label": "parse_document()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "src_parser_parse_document",
+      "community": 394,
+      "norm_label": "parse_document()"
+    },
+    {
+      "label": "Mengambil seluruh teks dari file PDF, halaman per halaman.",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "src_parser_rationale_6",
+      "community": 394,
+      "norm_label": "mengambil seluruh teks dari file pdf, halaman per halaman."
+    },
+    {
+      "label": "Mengambil seluruh teks dari file DOCX.",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "src_parser_rationale_38",
+      "community": 394,
+      "norm_label": "mengambil seluruh teks dari file docx."
+    },
+    {
+      "label": "Mendeteksi ekstensi file dan mengekstrak konten serta metadata-nya.",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "src_parser_rationale_73",
+      "community": 394,
+      "norm_label": "mendeteksi ekstensi file dan mengekstrak konten serta metadata-nya."
+    },
+    {
+      "label": "workflow.py",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "src_workflow",
+      "community": 394,
+      "norm_label": "workflow.py"
+    },
+    {
+      "label": "AuditWorkflow",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "src_workflow_auditworkflow",
+      "community": 394,
+      "norm_label": "auditworkflow"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "src_workflow_auditworkflow_init",
+      "community": 394,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": "._load_skill_prompt()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "src_workflow_auditworkflow_load_skill_prompt",
+      "community": 394,
+      "norm_label": "._load_skill_prompt()"
+    },
+    {
+      "label": ".run()",
+      "file_type": "code",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "src_workflow_auditworkflow_run",
+      "community": 394,
+      "norm_label": ".run()"
+    },
+    {
+      "label": "Membaca isi file Markdown dari pustaka Skills.",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "src_workflow_rationale_15",
+      "community": 394,
+      "norm_label": "membaca isi file markdown dari pustaka skills."
+    },
+    {
+      "label": "Menjalankan orkestrasi alur kerja audit berdasarkan Tier layanan.",
+      "file_type": "rationale",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "src_workflow_rationale_30",
+      "community": 394,
+      "norm_label": "menjalankan orkestrasi alur kerja audit berdasarkan tier layanan."
+    },
+    {
       "label": "ai_agent.py",
       "file_type": "code",
       "source_file": "projects/botkeu/ai_agent.py",
@@ -759,7 +1079,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_centered",
-      "community": 351,
+      "community": 414,
       "norm_label": "centered()"
     },
     {
@@ -859,7 +1179,7 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_getpngdimensions",
-      "community": 351,
+      "community": 414,
       "norm_label": "getpngdimensions()"
     },
     {
@@ -869,7 +1189,7 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_getscaleddimensions",
-      "community": 351,
+      "community": 414,
       "norm_label": "getscaleddimensions()"
     },
     {
@@ -899,7 +1219,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_insertflowchartimage",
-      "community": 351,
+      "community": 414,
       "norm_label": "insertflowchartimage()"
     },
     {
@@ -919,7 +1239,7 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "makalah_sim_build_makalah_sim_tablesource",
-      "community": 351,
+      "community": 414,
       "norm_label": "tablesource()"
     },
     {
@@ -1929,7 +2249,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scratch_check_toc_xml",
-      "community": 394,
+      "community": 374,
       "norm_label": "check_toc_xml.js"
     },
     {
@@ -1939,7 +2259,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scratch_check_toc_xml_docx",
-      "community": 394,
+      "community": 374,
       "norm_label": "docx"
     },
     {
@@ -1949,7 +2269,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "scratch_check_toc_xml_fs",
-      "community": 394,
+      "community": 374,
       "norm_label": "fs"
     },
     {
@@ -1959,7 +2279,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "scratch_check_toc_xml_doc",
-      "community": 394,
+      "community": 374,
       "norm_label": "doc"
     },
     {
@@ -12673,6 +12993,16 @@
       "norm_label": "[2026-06-17] ingest - synced worklog to notion mythos brain"
     },
     {
+      "label": "[2026-06-20] ingest - synced worklog to Notion Mythos Brain",
+      "file_type": "document",
+      "source_file": "business-brain/log.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "business_brain_log_2026_06_20_ingest_synced_worklog_to_notion_mythos_brain",
+      "community": 333,
+      "norm_label": "[2026-06-20] ingest - synced worklog to notion mythos brain"
+    },
+    {
       "label": "connections.md",
       "file_type": "document",
       "source_file": "connections.md",
@@ -15193,6 +15523,256 @@
       "norm_label": "panduan latihan anda:"
     },
     {
+      "label": "00-ideation.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/00-ideation.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "auditdok_00_ideation",
+      "community": 412,
+      "norm_label": "00-ideation.md"
+    },
+    {
+      "label": "Ideation: AuditDok Agentic Workflow",
+      "file_type": "document",
+      "source_file": "projects/auditdok/00-ideation.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "auditdok_00_ideation_ideation_auditdok_agentic_workflow",
+      "community": 412,
+      "norm_label": "ideation: auditdok agentic workflow"
+    },
+    {
+      "label": "Brain Dump",
+      "file_type": "document",
+      "source_file": "projects/auditdok/00-ideation.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "auditdok_00_ideation_brain_dump",
+      "community": 412,
+      "norm_label": "brain dump"
+    },
+    {
+      "label": "Market Scan & Value Prop",
+      "file_type": "document",
+      "source_file": "projects/auditdok/00-ideation.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "auditdok_00_ideation_market_scan_value_prop",
+      "community": 412,
+      "norm_label": "market scan & value prop"
+    },
+    {
+      "label": "Chosen Direction & Grill-Me Decisions",
+      "file_type": "document",
+      "source_file": "projects/auditdok/00-ideation.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "auditdok_00_ideation_chosen_direction_grill_me_decisions",
+      "community": 412,
+      "norm_label": "chosen direction & grill-me decisions"
+    },
+    {
+      "label": "Parked Ideas (Untuk Versi Mendatang)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/00-ideation.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "auditdok_00_ideation_parked_ideas_untuk_versi_mendatang",
+      "community": 412,
+      "norm_label": "parked ideas (untuk versi mendatang)"
+    },
+    {
+      "label": "01-architecture.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "auditdok_01_architecture",
+      "community": 408,
+      "norm_label": "01-architecture.md"
+    },
+    {
+      "label": "Architecture: AuditDok Agentic Workflow",
+      "file_type": "document",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "auditdok_01_architecture_architecture_auditdok_agentic_workflow",
+      "community": 408,
+      "norm_label": "architecture: auditdok agentic workflow"
+    },
+    {
+      "label": "Deliverables (v1 CLI)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "auditdok_01_architecture_deliverables_v1_cli",
+      "community": 408,
+      "norm_label": "deliverables (v1 cli)"
+    },
+    {
+      "label": "Target Audience & Value Proposition",
+      "file_type": "document",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "auditdok_01_architecture_target_audience_value_proposition",
+      "community": 408,
+      "norm_label": "target audience & value proposition"
+    },
+    {
+      "label": "Scope v1 (CLI Teruji)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "auditdok_01_architecture_scope_v1_cli_teruji",
+      "community": 408,
+      "norm_label": "scope v1 (cli teruji)"
+    },
+    {
+      "label": "In v1",
+      "file_type": "document",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "auditdok_01_architecture_in_v1",
+      "community": 408,
+      "norm_label": "in v1"
+    },
+    {
+      "label": "NOT in v1 (Parked)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "auditdok_01_architecture_not_in_v1_parked",
+      "community": 408,
+      "norm_label": "not in v1 (parked)"
+    },
+    {
+      "label": "Directory Structure",
+      "file_type": "document",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "auditdok_01_architecture_directory_structure",
+      "community": 408,
+      "norm_label": "directory structure"
+    },
+    {
+      "label": "Stack / Tools",
+      "file_type": "document",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "auditdok_01_architecture_stack_tools",
+      "community": 408,
+      "norm_label": "stack / tools"
+    },
+    {
+      "label": "checklist_perbaikan.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_checklist_perbaikan",
+      "community": 415,
+      "norm_label": "checklist_perbaikan.md"
+    },
+    {
+      "label": "CHECKLIST PERBAIKAN DOKUMEN (PRD)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_checklist_perbaikan_checklist_perbaikan_dokumen_prd",
+      "community": 415,
+      "norm_label": "checklist perbaikan dokumen (prd)"
+    },
+    {
+      "label": "laporan_audit.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output/laporan_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_laporan_audit",
+      "community": 413,
+      "norm_label": "laporan_audit.md"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output/laporan_audit.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "output_laporan_audit_skor_evaluasi",
+      "community": 413,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output/laporan_audit.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "output_laporan_audit_temuan_utama",
+      "community": 413,
+      "norm_label": "temuan utama"
+    },
+    {
+      "label": "Contoh Checklist Tindakan",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output/laporan_audit.md",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "output_laporan_audit_contoh_checklist_tindakan",
+      "community": 413,
+      "norm_label": "contoh checklist tindakan"
+    },
+    {
+      "label": "Struktur Mindmap Konsep Bertingkat",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output/laporan_audit.md",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "output_laporan_audit_struktur_mindmap_konsep_bertingkat",
+      "community": 413,
+      "norm_label": "struktur mindmap konsep bertingkat"
+    },
+    {
+      "label": "Kode Diagram Alur Logis",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output/laporan_audit.md",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "output_laporan_audit_kode_diagram_alur_logis",
+      "community": 413,
+      "norm_label": "kode diagram alur logis"
+    },
+    {
+      "label": "minimap.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_minimap",
+      "community": 416,
+      "norm_label": "minimap.md"
+    },
+    {
+      "label": "MAP STRUKTUR DOKUMEN (MINIMAP)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_minimap_map_struktur_dokumen_minimap",
+      "community": 416,
+      "norm_label": "map struktur dokumen (minimap)"
+    },
+    {
       "label": "prd.md",
       "file_type": "document",
       "source_file": "projects/auditdok/prd.md",
@@ -15431,6 +16011,216 @@
       "id": "auditdok_prd_11_open_questions",
       "community": 407,
       "norm_label": "11. open questions"
+    },
+    {
+      "label": "laporan_keuangan.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/laporan_keuangan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "skills_laporan_keuangan",
+      "community": 409,
+      "norm_label": "laporan_keuangan.md"
+    },
+    {
+      "label": "SKILL: Audit Laporan Keuangan & Akuntabilitas",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/laporan_keuangan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "skills_laporan_keuangan_skill_audit_laporan_keuangan_akuntabilitas",
+      "community": 409,
+      "norm_label": "skill: audit laporan keuangan & akuntabilitas"
+    },
+    {
+      "label": "Fokus Penilaian",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/laporan_keuangan.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "skills_laporan_keuangan_fokus_penilaian",
+      "community": 409,
+      "norm_label": "fokus penilaian"
+    },
+    {
+      "label": "Struktur Hasil Audit (Output Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/laporan_keuangan.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "skills_laporan_keuangan_struktur_hasil_audit_output_format",
+      "community": 409,
+      "norm_label": "struktur hasil audit (output format)"
+    },
+    {
+      "label": "Skor Evaluasi & Opini Awal",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/laporan_keuangan.md",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "skills_laporan_keuangan_skor_evaluasi_opini_awal",
+      "community": 409,
+      "norm_label": "skor evaluasi & opini awal"
+    },
+    {
+      "label": "Rekonsiliasi & Temuan Ketidakselarasan Angka",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/laporan_keuangan.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "skills_laporan_keuangan_rekonsiliasi_temuan_ketidakselarasan_angka",
+      "community": 409,
+      "norm_label": "rekonsiliasi & temuan ketidakselarasan angka"
+    },
+    {
+      "label": "Daftar Temuan Operasional & Kepatuhan",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/laporan_keuangan.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "skills_laporan_keuangan_daftar_temuan_operasional_kepatuhan",
+      "community": 409,
+      "norm_label": "daftar temuan operasional & kepatuhan"
+    },
+    {
+      "label": "makalah.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "skills_makalah",
+      "community": 410,
+      "norm_label": "makalah.md"
+    },
+    {
+      "label": "SKILL: Audit Makalah Akademik",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "skills_makalah_skill_audit_makalah_akademik",
+      "community": 410,
+      "norm_label": "skill: audit makalah akademik"
+    },
+    {
+      "label": "Fokus Penilaian",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "skills_makalah_fokus_penilaian",
+      "community": 410,
+      "norm_label": "fokus penilaian"
+    },
+    {
+      "label": "Struktur Hasil Audit (Output Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "skills_makalah_struktur_hasil_audit_output_format",
+      "community": 410,
+      "norm_label": "struktur hasil audit (output format)"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "skills_makalah_skor_evaluasi",
+      "community": 410,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "skills_makalah_temuan_utama_daftar_masalah",
+      "community": 410,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Contoh Checklist Tindakan (PRD Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "skills_makalah_contoh_checklist_tindakan_prd_format",
+      "community": 410,
+      "norm_label": "contoh checklist tindakan (prd format)"
+    },
+    {
+      "label": "proposal_skripsi.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/proposal_skripsi.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "skills_proposal_skripsi",
+      "community": 411,
+      "norm_label": "proposal_skripsi.md"
+    },
+    {
+      "label": "SKILL: Audit Proposal Skripsi / Tesis",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/proposal_skripsi.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "skills_proposal_skripsi_skill_audit_proposal_skripsi_tesis",
+      "community": 411,
+      "norm_label": "skill: audit proposal skripsi / tesis"
+    },
+    {
+      "label": "Fokus Penilaian",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/proposal_skripsi.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "skills_proposal_skripsi_fokus_penilaian",
+      "community": 411,
+      "norm_label": "fokus penilaian"
+    },
+    {
+      "label": "Struktur Hasil Audit (Output Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/proposal_skripsi.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "skills_proposal_skripsi_struktur_hasil_audit_output_format",
+      "community": 411,
+      "norm_label": "struktur hasil audit (output format)"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/proposal_skripsi.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "skills_proposal_skripsi_skor_evaluasi",
+      "community": 411,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Analisis Kritis Metodologi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/proposal_skripsi.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "skills_proposal_skripsi_analisis_kritis_metodologi",
+      "community": 411,
+      "norm_label": "analisis kritis metodologi"
+    },
+    {
+      "label": "Temuan & Rekomendasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/proposal_skripsi.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "skills_proposal_skripsi_temuan_rekomendasi",
+      "community": 411,
+      "norm_label": "temuan & rekomendasi"
     },
     {
       "label": "prd.md",
@@ -22401,6 +23191,26 @@
       "id": "studios_work_log_sinkronisasi_restrukturisasi_knowledge_base_proyek",
       "community": 295,
       "norm_label": "sinkronisasi & restrukturisasi knowledge base proyek"
+    },
+    {
+      "label": "2026-06-20",
+      "file_type": "document",
+      "source_file": "projects/studios/work-log.md",
+      "source_location": "L93",
+      "_origin": "ast",
+      "id": "studios_work_log_2026_06_20",
+      "community": 295,
+      "norm_label": "2026-06-20"
+    },
+    {
+      "label": "Makalah SIM Refinement, Inisialisasi AuditDok, & Sinkronisasi Laptop Baru",
+      "file_type": "document",
+      "source_file": "projects/studios/work-log.md",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "studios_work_log_makalah_sim_refinement_inisialisasi_auditdok_sinkronisasi_laptop_baru",
+      "community": 295,
+      "norm_label": "makalah sim refinement, inisialisasi auditdok, & sinkronisasi laptop baru"
     },
     {
       "label": "jurnal-harian.md",
@@ -39596,9 +40406,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_private",
-      "confidence_score": 1.0
+      "target": "package_private"
     },
     {
       "relation": "has_field",
@@ -39622,8 +40432,530 @@
       "source_file": "package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_workspaces",
+      "target": "package_workspaces"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_agent",
+      "target": "dotenv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_agent",
+      "target": "src_agent_auditagent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_workflow",
+      "target": "src_agent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "src_agent_auditagent",
+      "target": "src_agent_auditagent_generate_mock_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_agent_auditagent",
+      "target": "src_agent_auditagent_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "src_agent_auditagent",
+      "target": "src_agent_auditagent_run_audit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_workflow",
+      "target": "src_agent_auditagent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L3",
+      "weight": 0.8,
+      "source": "src_workflow_auditworkflow",
+      "target": "src_agent_auditagent",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_workflow_auditworkflow_init",
+      "target": "src_agent_auditagent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "src_agent_auditagent_run_audit",
+      "target": "src_agent_auditagent_generate_mock_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "src_agent_rationale_25",
+      "target": "src_agent_auditagent_run_audit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/agent.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "src_agent_rationale_78",
+      "target": "src_agent_auditagent_generate_mock_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "src_cli",
+      "target": "src_cli_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "src_cli",
+      "target": "src_cli_print_banner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_cli",
+      "target": "src_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_cli",
+      "target": "src_workflow_auditworkflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_cli_main",
+      "target": "src_cli_print_banner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_cli_rationale_12",
+      "target": "src_cli_print_banner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/cli.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "src_cli_main",
+      "target": "src_workflow_auditworkflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_generator",
+      "target": "src_generator_clean_markdown_formatting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "src_generator",
+      "target": "src_generator_generate_markdown_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_generator",
+      "target": "src_generator_generate_pdf_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_workflow",
+      "target": "src_generator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "src_generator_generate_pdf_report",
+      "target": "src_generator_clean_markdown_formatting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_generator_rationale_9",
+      "target": "src_generator_clean_markdown_formatting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "src_generator_rationale_18",
+      "target": "src_generator_generate_pdf_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_workflow",
+      "target": "src_generator_generate_pdf_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "src_workflow_auditworkflow_run",
+      "target": "src_generator_generate_pdf_report"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/generator.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "src_generator_rationale_136",
+      "target": "src_generator_generate_markdown_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "src_workflow",
+      "target": "src_generator_generate_markdown_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "src_workflow_auditworkflow_run",
+      "target": "src_generator_generate_markdown_files"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_parser",
+      "target": "docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "src_parser",
+      "target": "src_parser_extract_text_from_docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_parser",
+      "target": "src_parser_extract_text_from_pdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "src_parser",
+      "target": "src_parser_parse_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_workflow",
+      "target": "src_parser",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "src_parser_parse_document",
+      "target": "src_parser_extract_text_from_pdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_parser_rationale_6",
+      "target": "src_parser_extract_text_from_pdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "src_parser_parse_document",
+      "target": "src_parser_extract_text_from_docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "src_parser_rationale_38",
+      "target": "src_parser_extract_text_from_docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/parser.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "src_parser_rationale_73",
+      "target": "src_parser_parse_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "src_workflow",
+      "target": "src_parser_parse_document",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "src_workflow_auditworkflow_run",
+      "target": "src_parser_parse_document"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_workflow",
+      "target": "src_workflow_auditworkflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_workflow_auditworkflow",
+      "target": "src_workflow_auditworkflow_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_workflow_auditworkflow",
+      "target": "src_workflow_auditworkflow_load_skill_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_workflow_auditworkflow",
+      "target": "src_workflow_auditworkflow_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "src_workflow_auditworkflow_run",
+      "target": "src_workflow_auditworkflow_load_skill_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_workflow_rationale_15",
+      "target": "src_workflow_auditworkflow_load_skill_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/src/workflow.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_workflow_rationale_30",
+      "target": "src_workflow_auditworkflow_run",
       "confidence_score": 1.0
     },
     {
@@ -52891,6 +54223,16 @@
       "target": "business_brain_log_2026_06_17_session_business_knowledge_base_initialized"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "business-brain/log.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "business_brain_log_business_knowledge_base_log",
+      "target": "business_brain_log_2026_06_20_ingest_synced_worklog_to_notion_mythos_brain"
+    },
+    {
       "relation": "contains_section",
       "confidence": "EXTRACTED",
       "properties": {},
@@ -55089,6 +56431,206 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/00-ideation.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "auditdok_00_ideation",
+      "target": "auditdok_00_ideation_ideation_auditdok_agentic_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/00-ideation.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "auditdok_00_ideation_ideation_auditdok_agentic_workflow",
+      "target": "auditdok_00_ideation_brain_dump",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/00-ideation.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "auditdok_00_ideation_ideation_auditdok_agentic_workflow",
+      "target": "auditdok_00_ideation_chosen_direction_grill_me_decisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/00-ideation.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "auditdok_00_ideation_ideation_auditdok_agentic_workflow",
+      "target": "auditdok_00_ideation_market_scan_value_prop",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/00-ideation.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "auditdok_00_ideation_ideation_auditdok_agentic_workflow",
+      "target": "auditdok_00_ideation_parked_ideas_untuk_versi_mendatang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "auditdok_01_architecture",
+      "target": "auditdok_01_architecture_architecture_auditdok_agentic_workflow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "auditdok_01_architecture_architecture_auditdok_agentic_workflow",
+      "target": "auditdok_01_architecture_deliverables_v1_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "auditdok_01_architecture_architecture_auditdok_agentic_workflow",
+      "target": "auditdok_01_architecture_directory_structure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "auditdok_01_architecture_architecture_auditdok_agentic_workflow",
+      "target": "auditdok_01_architecture_scope_v1_cli_teruji",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "auditdok_01_architecture_architecture_auditdok_agentic_workflow",
+      "target": "auditdok_01_architecture_stack_tools",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "auditdok_01_architecture_architecture_auditdok_agentic_workflow",
+      "target": "auditdok_01_architecture_target_audience_value_proposition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "auditdok_01_architecture_scope_v1_cli_teruji",
+      "target": "auditdok_01_architecture_in_v1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/01-architecture.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "auditdok_01_architecture_scope_v1_cli_teruji",
+      "target": "auditdok_01_architecture_not_in_v1_parked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output/checklist_perbaikan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "output_checklist_perbaikan",
+      "target": "output_checklist_perbaikan_checklist_perbaikan_dokumen_prd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output/laporan_audit.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "output_laporan_audit",
+      "target": "output_laporan_audit_contoh_checklist_tindakan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output/laporan_audit.md",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "output_laporan_audit",
+      "target": "output_laporan_audit_kode_diagram_alur_logis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output/laporan_audit.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "output_laporan_audit",
+      "target": "output_laporan_audit_skor_evaluasi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output/laporan_audit.md",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "output_laporan_audit",
+      "target": "output_laporan_audit_struktur_mindmap_konsep_bertingkat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output/laporan_audit.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "output_laporan_audit",
+      "target": "output_laporan_audit_temuan_utama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output/minimap.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "output_minimap",
+      "target": "output_minimap_map_struktur_dokumen_minimap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/prd.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -55315,6 +56857,186 @@
       "confidence_score": 1.0,
       "source": "auditdok_prd_7_channel_distribusi_go_to_market",
       "target": "auditdok_prd_phase_3_automate_bulan_5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/laporan_keuangan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "skills_laporan_keuangan",
+      "target": "skills_laporan_keuangan_skill_audit_laporan_keuangan_akuntabilitas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/laporan_keuangan.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "skills_laporan_keuangan_skill_audit_laporan_keuangan_akuntabilitas",
+      "target": "skills_laporan_keuangan_fokus_penilaian",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/laporan_keuangan.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "skills_laporan_keuangan_skill_audit_laporan_keuangan_akuntabilitas",
+      "target": "skills_laporan_keuangan_struktur_hasil_audit_output_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/laporan_keuangan.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "skills_laporan_keuangan_struktur_hasil_audit_output_format",
+      "target": "skills_laporan_keuangan_daftar_temuan_operasional_kepatuhan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/laporan_keuangan.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "skills_laporan_keuangan_struktur_hasil_audit_output_format",
+      "target": "skills_laporan_keuangan_rekonsiliasi_temuan_ketidakselarasan_angka",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/laporan_keuangan.md",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "skills_laporan_keuangan_struktur_hasil_audit_output_format",
+      "target": "skills_laporan_keuangan_skor_evaluasi_opini_awal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/makalah.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "skills_makalah",
+      "target": "skills_makalah_skill_audit_makalah_akademik",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/makalah.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "skills_makalah_skill_audit_makalah_akademik",
+      "target": "skills_makalah_fokus_penilaian",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/makalah.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "skills_makalah_skill_audit_makalah_akademik",
+      "target": "skills_makalah_struktur_hasil_audit_output_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/makalah.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "skills_makalah_struktur_hasil_audit_output_format",
+      "target": "skills_makalah_contoh_checklist_tindakan_prd_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/makalah.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "skills_makalah_struktur_hasil_audit_output_format",
+      "target": "skills_makalah_skor_evaluasi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/makalah.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "skills_makalah_struktur_hasil_audit_output_format",
+      "target": "skills_makalah_temuan_utama_daftar_masalah",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/proposal_skripsi.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "skills_proposal_skripsi",
+      "target": "skills_proposal_skripsi_skill_audit_proposal_skripsi_tesis",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/proposal_skripsi.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "skills_proposal_skripsi_skill_audit_proposal_skripsi_tesis",
+      "target": "skills_proposal_skripsi_fokus_penilaian",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/proposal_skripsi.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "skills_proposal_skripsi_skill_audit_proposal_skripsi_tesis",
+      "target": "skills_proposal_skripsi_struktur_hasil_audit_output_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/proposal_skripsi.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "skills_proposal_skripsi_struktur_hasil_audit_output_format",
+      "target": "skills_proposal_skripsi_analisis_kritis_metodologi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/proposal_skripsi.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "skills_proposal_skripsi_struktur_hasil_audit_output_format",
+      "target": "skills_proposal_skripsi_skor_evaluasi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/proposal_skripsi.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "skills_proposal_skripsi_struktur_hasil_audit_output_format",
+      "target": "skills_proposal_skripsi_temuan_rekomendasi",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -61780,6 +63502,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/studios/work-log.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_work_log_work_log_studios",
+      "target": "studios_work_log_2026_06_20"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/work-log.md",
       "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -61825,6 +63557,16 @@
       "confidence_score": 1.0,
       "source": "studios_work_log_2026_06_17",
       "target": "studios_work_log_sinkronisasi_restrukturisasi_knowledge_base_proyek"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/work-log.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_work_log_2026_06_20",
+      "target": "studios_work_log_makalah_sim_refinement_inisialisasi_auditdok_sinkronisasi_laptop_baru"
     },
     {
       "relation": "contains",
@@ -74690,5 +76432,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fe17b5ad3e11ec0d31799ea0f8cbd9cd6f310ee8"
+  "built_at_commit": "a800874a7f3d7ce91fb4929b71eeccd0974fdbfb"
 }
