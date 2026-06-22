@@ -1,16 +1,16 @@
-# Graph Report - AIS-OS  (2026-06-21)
+# Graph Report - AIS-OS  (2026-06-22)
 
 ## Corpus Check
-- 356 files · ~432,622 words
+- 365 files · ~472,579 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4032 nodes · 3997 edges · 434 communities (319 shown, 115 thin omitted)
+- 4118 nodes · 4081 edges · 443 communities (326 shown, 117 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d2083677`
+- Built from commit: `942f9272`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -426,6 +426,15 @@
 - [[_COMMUNITY_Community 431|Community 431]]
 - [[_COMMUNITY_Community 432|Community 432]]
 - [[_COMMUNITY_Community 433|Community 433]]
+- [[_COMMUNITY_Community 434|Community 434]]
+- [[_COMMUNITY_Community 435|Community 435]]
+- [[_COMMUNITY_Community 436|Community 436]]
+- [[_COMMUNITY_Community 437|Community 437]]
+- [[_COMMUNITY_Community 438|Community 438]]
+- [[_COMMUNITY_Community 439|Community 439]]
+- [[_COMMUNITY_Community 440|Community 440]]
+- [[_COMMUNITY_Community 441|Community 441]]
+- [[_COMMUNITY_Community 442|Community 442]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
@@ -454,7 +463,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (434 total, 115 thin omitted)
+## Communities (443 total, 117 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -466,13 +475,13 @@ Nodes (47): 1. Katalog Layanan & Harga, 1. Team-reaches-out:, 2. Alur Kerja Prom
 
 ### Community 2 - "Community 2"
 Cohesion: 0.08
-Nodes (9): border0, borders0, bordersAll, borderSingle, chapterPageSetup, doc, {
+Nodes (14): border0, borders0, bordersAll, borderSingle, chapterPageSetup, daftarPustakaEntry(), doc, {
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
   ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,
   PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
   TabStopType, TabStopPosition, NumberFormat, TableOfContents, ImageRun
-}, frontMatterFooter (+1 more)
+} (+6 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.06
@@ -1531,8 +1540,8 @@ Cohesion: 0.29
 Nodes (6): Arsitektur, Definisi, Kendala Umum di UPT Daerah, Modul-Modul di Rudenim, Referensi Terkait, SIMKIM — Sistem Informasi Manajemen Keimigrasian
 
 ### Community 374 - "Community 374"
-Cohesion: 0.13
-Nodes (10): docx, dependencies, docx, docx, doc, docx, fs, docx (+2 more)
+Cohesion: 0.18
+Nodes (7): docx, dependencies, docx, docx, docx, doc, docx
 
 ### Community 375 - "Community 375"
 Cohesion: 0.20
@@ -1623,11 +1632,19 @@ Nodes (5): Brain Dump, Chosen Direction & Grill-Me Decisions, Ideation: AuditDok
 
 ### Community 413 - "Community 413"
 Cohesion: 0.33
-Nodes (5): Contoh Checklist Tindakan, Kode Diagram Alur Logis, Skor Evaluasi, Struktur Mindmap Konsep Bertingkat, Temuan Utama
+Nodes (5): Contoh Checklist Tindakan, Kode Diagram Alur Logis, Struktur Mindmap Konsep Bertingkat, Temuan Utama, Skor Evaluasi
 
 ### Community 414 - "Community 414"
 Cohesion: 0.13
 Nodes (14): CHECKLIST TINDAKAN, Contoh Checklist Tindakan (PRD Format), Contoh Checklist Tindakan (PRD Format), DIAGRAM ALUR, PASS 1: Review Umum, PASS 2: Analisis Fokus Per-Bagian, PASS 3: Checklist & Mindmap, Skor Evaluasi (+6 more)
+
+### Community 415 - "Community 415"
+Cohesion: 0.13
+Nodes (14): Checklist Tindakan Perbaikan, Checklist Tindakan Perbaikan, Checklist Tindakan Perbaikan, Diagram Alur, PASS 1: Review Umum, PASS 2: Analisis Fokus Per-Bagian, PASS 3: Checklist & Mindmap, Skor Evaluasi (+6 more)
+
+### Community 416 - "Community 416"
+Cohesion: 0.25
+Nodes (7): Architecture: Finalisasi Makalah Seminar Akuntansi, Deliverables, In v1, NOT in v1 (parked), Scope, Stack / Tools, Target Akademis
 
 ### Community 420 - "Community 420"
 Cohesion: 0.11
@@ -1650,35 +1667,61 @@ Cohesion: 0.11
 Nodes (17): 1. Latar Belakang (Halaman 6), 2. Teori Arsitektur SIMKIM (Halaman 13-14), 3. Kendala Penerapan SIMKIM (Halaman 15), 4. Siklus Hidup & Diagram SOP (Halaman 16), 5. Tabel Mutu Baku Penerimaan (Halaman 19), 6. Tabel SOP Registrasi & Penempatan (Halaman 28-31), 7. SOP Pemindahan & Pendeportasian (Halaman 36-43), 8. Kerangka Analisis Leavitt's Diamond (Halaman 41-49) (+9 more)
 
 ### Community 433 - "Community 433"
+Cohesion: 0.29
+Nodes (6): Checklist Tindakan Perbaikan, Fokus Penilaian & Pedoman Audit, SKILL: Audit Makalah Seminar Akuntansi Sektor Publik, Skor Evaluasi, Struktur Hasil Audit (Output Format), Temuan Utama (Daftar Masalah)
+
+### Community 434 - "Community 434"
 Cohesion: 0.40
-Nodes (5): daftarPustakaEntry(), numberedItem(), tr(), trb(), tri()
+Nodes (4): Alur Kerja Finalisasi (Thesis HITL Workflow), Brain Dump, Fokus Analisis & Gap Akademik, Ideation: Finalisasi Makalah Seminar Akuntansi (Thesis Brain)
+
+### Community 439 - "Community 439"
+Cohesion: 0.08
+Nodes (14): border0, borders0, bordersAll, borderSingle, chapterPageSetup, daftarPustakaEntry(), doc, {
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
+  ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,
+  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
+  TabStopType, TabStopPosition, NumberFormat, TableOfContents, ImageRun
+} (+6 more)
+
+### Community 440 - "Community 440"
+Cohesion: 0.15
+Nodes (12): author, dependencies, docx, description, keywords, license, main, name (+4 more)
+
+### Community 441 - "Community 441"
+Cohesion: 0.50
+Nodes (3): Tabel 1.3 Deviasi Halaman III DIPA Belanja Modal Rudenim Pontianak TA 2023–2025, Tabel 1.4 Bulan Kritis Deviasi Belanja Modal Rudenim Pontianak TA 2023–2025, Tabel 1.5 Contoh Paket Belanja Modal yang Mengalami Pergeseran Realisasi TA 2023–2025
+
+### Community 442 - "Community 442"
+Cohesion: 0.50
+Nodes (3): doc, docx, fs
 
 ## Knowledge Gaps
-- **1679 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `workspaces`, `{
+- **1725 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `workspaces`, `{
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
   PageNumber, PageBreak, Header, Footer,
   PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
   TabStopType, NumberFormat, ImageRun,
   TableOfContents, SequentialIdentifier
-}` (+1674 more)
+}` (+1720 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **115 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **117 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 79` to `Community 280`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+  _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **Why does `dotenv` connect `Community 79` to `Community 10`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `@notionhq/client` connect `Community 79` to `Community 11`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private` to the rest of the system?**
-  _1710 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1756 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07586206896551724 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
+  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._

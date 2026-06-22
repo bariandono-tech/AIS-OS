@@ -410,9 +410,9 @@
     "semantic_hash": ""
   },
   "skripsi/drafts/build_makalah.js": {
-    "mtime": 1781935080.801954,
-    "ast_hash": "95b0c2024dda505ec98b438f32330040",
-    "semantic_hash": "95b0c2024dda505ec98b438f32330040"
+    "mtime": 1782100918.257176,
+    "ast_hash": "423034b56690696389790787f66b4146",
+    "semantic_hash": ""
   },
   "skripsi/drafts/package.json": {
     "mtime": 1781935080.8142378,
@@ -825,8 +825,8 @@
     "semantic_hash": "3ee71458ef8f8aed9cac30d298c67312"
   },
   "skripsi/drafts/makalah_seminar.md": {
-    "mtime": 1781935080.8059716,
-    "ast_hash": "aefa1be944bd204873e45d725f07c40c",
+    "mtime": 1782100918.2632616,
+    "ast_hash": "7c8a16320cce60d75d6fc309f5020f38",
     "semantic_hash": ""
   },
   "skripsi/revisi/audit-catatan-dosen-2026-06-11.md": {
@@ -1185,8 +1185,8 @@
     "semantic_hash": ""
   },
   "thesis-brain/log.md": {
-    "mtime": 1781939981.3049927,
-    "ast_hash": "8af5b6c96c889ea8ce37ac315b0cdc34",
+    "mtime": 1782100946.7425175,
+    "ast_hash": "a798598bae471bf4aba804a21d255983",
     "semantic_hash": ""
   },
   "thesis-brain/raw/aios-intake.md": {
@@ -1200,8 +1200,8 @@
     "semantic_hash": ""
   },
   "thesis-brain/raw/makalah_seminar.md": {
-    "mtime": 1781935081.1491573,
-    "ast_hash": "aefa1be944bd204873e45d725f07c40c",
+    "mtime": 1782100918.2698011,
+    "ast_hash": "7c8a16320cce60d75d6fc309f5020f38",
     "semantic_hash": ""
   },
   "thesis-brain/wiki/Analisis_Kasus_Rudenim_Pontianak.md": {
@@ -1805,8 +1805,8 @@
     "semantic_hash": ""
   },
   "projects/auditdok/src/cli.py": {
-    "mtime": 1782033985.7179732,
-    "ast_hash": "142dbe5397a91c2bd01e65e04b464b49",
+    "mtime": 1782099430.3409903,
+    "ast_hash": "bcf52ffc1cc69d5a3d982d3d6e932589",
     "semantic_hash": ""
   },
   "projects/auditdok/src/generator.py": {
@@ -1870,8 +1870,8 @@
     "semantic_hash": ""
   },
   "projects/auditdok/orders.json": {
-    "mtime": 1782037529.8845267,
-    "ast_hash": "249c093374b99afa9ae2033d5d1ecbca",
+    "mtime": 1782099664.7323325,
+    "ast_hash": "c74f4f6ae399053aff73b88b8f8cef96",
     "semantic_hash": ""
   },
   "projects/auditdok/src/__init__.py": {
@@ -1962,6 +1962,61 @@
   "projects/auditdok/output_plus_ajie_api/minimap.md": {
     "mtime": 1782037529.8705165,
     "ast_hash": "d154ea48c182c10d6d7dcff24edf32e6",
+    "semantic_hash": ""
+  },
+  "projects/Zai PARA PKM/New Text Document.html": {
+    "mtime": 1782100691.3623168,
+    "ast_hash": "871c184b1be802b84ba04b2e32f85d27",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/skills/makalah_akuntansi.md": {
+    "mtime": 1782099288.643859,
+    "ast_hash": "c35b52575348e579bfbd84cb059e738a",
+    "semantic_hash": ""
+  },
+  "projects/revisi-makalah-akuntansi/00-ideation.md": {
+    "mtime": 1782099272.0577183,
+    "ast_hash": "ee68489115acdb7e2860310d5d289824",
+    "semantic_hash": ""
+  },
+  "projects/revisi-makalah-akuntansi/01-architecture.md": {
+    "mtime": 1782099277.9801552,
+    "ast_hash": "bce2f91f295105ac6be2c6f017b57cdd",
+    "semantic_hash": ""
+  },
+  "projects/revisi-makalah-akuntansi/output/checklist_perbaikan.md": {
+    "mtime": 1782100938.3286715,
+    "ast_hash": "b5d56ba050908cff60bdedbb12ed9529",
+    "semantic_hash": ""
+  },
+  "projects/revisi-makalah-akuntansi/output/laporan_audit.md": {
+    "mtime": 1782099664.7158997,
+    "ast_hash": "4130f7eae028256fc636b46cdc47ce38",
+    "semantic_hash": ""
+  },
+  "projects/revisi-makalah-akuntansi/output/minimap.md": {
+    "mtime": 1782099664.7158997,
+    "ast_hash": "8dc72a05ddbc26d7a9cbfcc6e99ebfeb",
+    "semantic_hash": ""
+  },
+  "projects/revisi-makalah-akuntansi/build_makalah.js": {
+    "mtime": 1782100918.257176,
+    "ast_hash": "423034b56690696389790787f66b4146",
+    "semantic_hash": ""
+  },
+  "projects/revisi-makalah-akuntansi/package.json": {
+    "mtime": 1782105688.143883,
+    "ast_hash": "7a4d33ed04218a8a2daaa529c57faa43",
+    "semantic_hash": ""
+  },
+  "projects/revisi-makalah-akuntansi/makalah_seminar.md": {
+    "mtime": 1782100918.2632616,
+    "ast_hash": "7c8a16320cce60d75d6fc309f5020f38",
+    "semantic_hash": ""
+  },
+  "projects/revisi-makalah-akuntansi/kerangka_penelitian.png": {
+    "mtime": 1781935080.8039627,
+    "ast_hash": "e505b7dd13046818684520a3c0a59ce4",
     "semantic_hash": ""
   }
 }

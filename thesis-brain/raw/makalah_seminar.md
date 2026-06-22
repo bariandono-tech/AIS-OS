@@ -82,7 +82,7 @@ BAB II TINJAUAN PUSTAKA ........................................................
 2.3 Proposisi Penelitian ................................................................................... 27
 2.4 Kerangka Penelitian ................................................................................... 28
 BAB III METODE PENELITIAN .................................................................... 29
-3.1 Bentuk Penelitian ....................................................................................... 29
+3.1 Bentuk dan Subjek Penelitian ....................................................................................... 29
 3.2 Teknik Pengumpulan Data ......................................................................... 31
 3.3 Teknik Pengolahan dan Analisis Data ....................................................... 35
 DAFTAR PUSTAKA .......................................................................................... 42
@@ -96,8 +96,8 @@ Tabel 1.4 Bulan Kritis Deviasi Belanja Modal Rudenim Pontianak TA 2023–2025
 Tabel 1.5 Contoh Paket Belanja Modal yang Mengalami Pergeseran Realisasi TA 2023–2025
 Tabel 2.1 Ringkasan Penelitian Terdahulu dan Relevansinya dengan Pelaksanaan
 Anggaran Belanja Modal
-Tabel 3.1 Daftar Dokumen Studi Dokumentasi
-Tabel 3.2 Daftar Informan Target Penelitian
+Tabel 3.1 Daftar Informan Target Penelitian
+Tabel 3.2 Daftar Dokumen Studi Dokumentasi
 
 DAFTAR GAMBAR
 Gambar 2.1 Kerangka Penelitian ......................................................................... 28
@@ -244,7 +244,7 @@ Fenomena deviasi tersebut nyata terjadi pada objek penelitian ini. Sebagaimana d
 | 2024 | 27,87 | 3.372.224.900 | 28,77 | 88,31 | Cukup |
 | 2025 | 65,92 | 6.567.577.362 | 5,41 | 100,00 | Sangat Baik |
 
-*\*Rata-rata proporsi pagu Belanja Modal terhadap total pagu DIPA. \*\*Rata-rata deviasi bulanan |RPD − Realisasi|/RPD Belanja Modal, sesuai basis perhitungan PER-5/PB/2024 Pasal 7. \*\*\*Nilai akhir tahun, seluruh jenis belanja. Sumber: OM-SPAN/MEBE, diolah peneliti (2026).*
+*\*Rata-rata proporsi pagu Belanja Modal terhadap total pagu DIPA. \*\*Rata-rata deviasi bulanan |RPD − Realisasi|/RPD Belanja Modal, sesuai basis perhitungan PER-5/PB/2024 Pasal 7. \*\*\*Nilai akhir tahun, seluruh jenis belanja. Sumber: OM-SPAN/MEBE (Monitoring and Evaluation of Budget Execution), diolah peneliti (2026).*
 
 *Catatan Analisis:* RPD Halaman III DIPA mengalami pemutakhiran berkala; RPD yang gagal terealisasi pada suatu bulan dimutakhirkan dan muncul kembali pada bulan berikutnya. Sebagai contoh dari data internal: RPD Maret 2024 Rp700 juta (realisasi 0) muncul kembali sebagai RPD April Rp737,76 juta yang terealisasi penuh. Menjumlahkan RPD setahun berarti menghitung dana yang sama lebih dari sekali, sehingga satuan analisis deviasi yang sah adalah bulanan (rata-rata deviasi bulanan kumulatif). Nilai indikator Deviasi Hal. III di atas mengacu pada nilai indikator dengan bobot 15% dari total penilaian IKPA satker.
 
@@ -262,7 +262,7 @@ Pola deviasi tersebut terkonsentrasi pada bulan-bulan kritis tertentu sebagaiman
 | 2025 | Juni | 50.000.000 | 35.587.371 | 28,83 |
 | 2025 | Agustus | 697.466.021 | 560.399.255 | 19,65 |
 
-*Sumber: OM-SPAN/MEBE, diolah peneliti (2026).*
+*Sumber: OM-SPAN/MEBE (Monitoring and Evaluation of Budget Execution), diolah peneliti (2026).*
 
 ### Tabel 1.5 Contoh Paket Belanja Modal yang Mengalami Pergeseran Realisasi TA 2023–2025
 
@@ -552,7 +552,7 @@ Meckling (1976) mendefinisikan hubungan keagenan sebagai kontrak di mana
 prinsipal melibatkan agen untuk melaksanakan pekerjaan atas namanya, disertai
 pendelegasian sebagian otoritas pengambilan keputusan. Permasalahan inti muncul
 
-akibat asimetri informasi, yaitu kondisi ketika agen memiliki akses informasi yang
+akibat *asymmetric information*, yaitu kondisi ketika agen memiliki akses informasi yang
 lebih lengkap dibandingkan prinsipal, yang berpotensi menimbulkan adverse
 selection sebelum kontrak dan moral hazard setelah kontrak berjalan, sehingga
 prinsipal menanggung agency cost berupa biaya pengawasan, penjaminan, dan
@@ -569,7 +569,7 @@ satuan kerja. Dalam kerangka ini, Rudenim Pontianak berkedudukan sebagai agen
 yang bertanggung jawab kepada prinsipal berlapis tersebut.
 Dari perspektif agency theory, deviasi antara RPD dan realisasi dapat
 ditafsirkan sebagai sinyal adanya agency problem, baik berupa keterbatasan
-kapasitas agen maupun asimetri informasi mengenai kondisi operasional di
+kapasitas agen maupun *asymmetric information* mengenai kondisi operasional di
 lapangan. Pada pelaksanaan Belanja Modal, relasi keagenan menjadi lebih
 kompleks karena melibatkan pihak ketiga (penyedia barang/jasa) sebagai agen
 tambahan yang kinerjanya turut menentukan ketepatan realisasi. IKPA, dalam
@@ -628,7 +628,7 @@ determinan utama. Faktor komitmen pimpinan dan kompetensi tersebut
 berpengaruh langsung terhadap efektivitas pelaksanaan Belanja Modal yang sarat
 pengambilan keputusan kontraktual.
 Hanafi dan Wulandari (2023) melakukan analisis pengelompokan
-(clustering) terhadap profil IKPA satuan kerja menggunakan metode Fuzzy C-
+(*clustering*) terhadap profil IKPA satuan kerja menggunakan metode Fuzzy C-
 Means terhadap data ratusan satuan kerja, dan menemukan bahwa satuan kerja
 rumpun penegakan hukum secara konsisten membentuk kluster dengan nilai rendah
 pada indikator deviasi. Temuan ini memberikan pijakan empiris bahwa Rudenim,
@@ -721,7 +721,7 @@ Gambar 2.1 Kerangka Penelitian
 
 BAB III
 METODE PENELITIAN
-3.1 Bentuk Penelitian
+3.1 Bentuk dan Subjek Penelitian
 Metode yang digunakan dalam penelitian ini adalah pendekatan kualitatif
 dengan jenis penelitian deskriptif. Creswell (2014, hlm. 4) mendefinisikan
 penelitian kualitatif sebagai an approach for exploring and understanding the
@@ -756,6 +756,25 @@ Data penelitian bersumber dari dua jenis: data primer yang diperoleh melalui in-
 depth interview dengan para pejabat pengelola anggaran, dan data sekunder yang
 bersumber dari dokumen anggaran (DIPA, LRA, laporan IKPA, dokumen kontrak
 pengadaan Belanja Modal, dan peraturan terkait).
+
+Untuk memperoleh data primer yang kredibel dan mendalam mengenai pelaksanaan anggaran Belanja Modal, peneliti menetapkan informan kunci yang terlibat langsung dalam siklus perencanaan dan pelaksanaan anggaran di Rumah Detensi Imigrasi Pontianak. Pemilihan informan dilakukan menggunakan teknik *purposive sampling* (Patton, 2015) berdasarkan kriteria substantif sebagai berikut:
+1. Memiliki posisi struktural atau fungsional yang terkait langsung dengan perencanaan dan/atau pelaksanaan anggaran Belanja Modal Rudenim Pontianak.
+2. Memiliki masa kerja minimal satu tahun pada posisi tersebut selama periode Tahun Anggaran 2023–2025.
+3. Bersedia diwawancara dan direkam sebagaimana dinyatakan dalam lembar *informed consent*.
+
+Berdasarkan kriteria tersebut, teridentifikasi enam informan target yang disajikan pada Tabel 3.1.
+
+**Tabel 3.1 Daftar Informan Target Penelitian**
+| Kode | Posisi/Jabatan | Justifikasi Keterlibatan |
+|---|---|---|
+| KPA | Kuasa Pengguna Anggaran (Kepala Rudenim Pontianak) | Otoritas tertinggi pengelolaan anggaran satker; penetapan DIPA dan RPD; perspektif strategis pelaksanaan Belanja Modal |
+| PPK | Pejabat Pembuat Komitmen | Penanggung jawab komitmen pengadaan Belanja Modal; touchpoint utama kontrak, BAST, dan SPP-LS |
+| PPSPM | Pejabat Penandatangan SPM | Penanggung jawab pencairan dana; verifikasi SPM; touchpoint teknis SAKTI/OM-SPAN |
+| BPG | Bendahara Pengeluaran | Pelaksana operasional kas; akses penuh realisasi harian; perspektif teknis-operasional |
+| SRKA | Staf Penyusun Rencana Kerja dan Anggaran | Pelaksana teknis penyusunan RPD bulanan; touchpoint perencanaan anggaran |
+| PBJ | Pejabat Pengadaan/Pejabat Fungsional Pengadaan Barang/Jasa | Pelaksana pemilihan penyedia untuk paket Belanja Modal; perspektif operasional pengadaan |
+
+*Sumber: Disusun berdasarkan struktur organisasi pengelola keuangan dan pengadaan Rudenim Pontianak.
 Pendekatan kualitatif secara khusus relevan dengan fokus penelitian pada
 pelaksanaan anggaran Belanja Modal yang melibatkan banyak aktor dan proses
 yang sulit ditangkap secara kuantitatif. Belanja Modal (kode akun 53) memiliki
@@ -804,12 +823,12 @@ keyakinan atas temuan meningkat; apabila terdapat inkonsistensi, hal tersebut
 menjadi bahan klarifikasi pada wawancara lanjutan. Untuk memastikan keaslian
 dan kredibilitas, peneliti mengutamakan dokumen yang memiliki tanda tangan
 digital BSrE/BSSN atau dokumen yang ditarik langsung dari sistem OM-SPAN dan
-SAKTI yang teraudit. Daftar dokumen yang akan diakses disajikan pada Tabel 3.1.
-Tabel 3.1 Daftar Dokumen Studi Dokumentasi
+SAKTI yang teraudit. Daftar dokumen yang akan diakses disajikan pada Tabel 3.2.
+Tabel 3.2 Daftar Dokumen Studi Dokumentasi
 No Dokumen
 1 DIPA Rudenim Pontianak TA 2023, 2024, 2025 (termasuk Halaman III RPD)
 2 Laporan Realisasi Anggaran (LRA) per jenis belanja
-3 Laporan IKPA per semester (OM-SPAN/MEBE)
+3 Laporan IKPA per semester (OM-SPAN/MEBE - Monitoring and Evaluation of Budget Execution)
 4 Dokumen kontrak pengadaan Belanja Modal dan BAST
 5 Dokumen RKA-K/L Ditjen Imigrasi
 6 PMK 62/2023; Perpres 16/2018 jo. Perpres 12/2021; PER-5/PB/2024
@@ -818,7 +837,7 @@ Sumber: Disusun berdasarkan kebutuhan data untuk menjawab RM 1, RM
 2, dan RM 3.
 
 3.2.3 Observasi Non-Partisipatif
-Sebagai teknik pelengkap, observasi non-partisipatif dilaksanakan untuk
+Sebagai teknik pelengkap, *observasi non-partisipatif* dilaksanakan untuk
 menangkap dimensi alur kerja unit keuangan Rudenim Pontianak yang tidak selalu
 terekam dalam dokumen maupun terungkap dalam wawancara. Peneliti berposisi
 sebagai pengamat eksternal, hadir di setting organisasi tetapi tidak terlibat dalam
@@ -853,7 +872,7 @@ ketidakakuratan estimasi harga: harga referensi e-katalog yang digunakan saat
 penyusunan RKA-K/L dapat berbeda signifikan dari harga pasar aktual pada saat
 pelaksanaan pengadaan, sehingga memaksa revisi atau bahkan pembatalan paket
 Belanja Modal. Selain itu, TOR dan RAB yang tidak cukup mendetail dalam
-spesifikasi teknis menimbulkan gap antara kebutuhan unit teknis dan penawaran
+spesifikasi teknis menimbulkan *gap* antara kebutuhan unit teknis dan penawaran
 penyedia pada tahap pengadaan. Asumsi waktu pengadaan yang terlalu optimistik,
 misalnya mengasumsikan kontrak sudah ditandatangani pada Q1 padahal proses
 tender memerlukan waktu minimal tiga bulan, juga berkontribusi pada
@@ -880,28 +899,11 @@ dijadwalkan. Keseluruhan titik kritis ini menjadi fokus eksplorasi dalam wawanca
 mendalam, khususnya untuk menjawab RM 2 (penyebab deviasi) dan RM 3 (dampak deviasi).
 
 3.3.2 In-depth Interview (Wawancara Mendalam)
-Untuk memperoleh data primer yang kredibel dan mendalam mengenai pelaksanaan anggaran Belanja Modal, peneliti menetapkan informan kunci yang terlibat langsung dalam siklus perencanaan dan pelaksanaan anggaran di Rumah Detensi Imigrasi Pontianak. Pemilihan informan dilakukan menggunakan teknik *purposive sampling* (Patton, 2015) berdasarkan kriteria substantif sebagai berikut:
-1. Memiliki posisi struktural atau fungsional yang terkait langsung dengan perencanaan dan/atau pelaksanaan anggaran Belanja Modal Rudenim Pontianak.
-2. Memiliki masa kerja minimal satu tahun pada posisi tersebut selama periode Tahun Anggaran 2023–2025.
-3. Bersedia diwawancara dan direkam sebagaimana dinyatakan dalam lembar *informed consent*.
+*
 
-Berdasarkan kriteria tersebut, teridentifikasi enam informan target yang disajikan pada Tabel 3.2.
+Secara operasional, pelaksanaan wawancara mendalam dilakukan secara semi-terstruktur dengan durasi berkisar antara 60 hingga 90 menit per sesi. Wawancara diselenggarakan di ruang tertutup pada kantor Rudenim Pontianak atau lokasi alternatif lain demi kenyamanan informan. Seluruh proses wawancara direkam menggunakan alat perekam audio atas persetujuan tertulis dari informan. Rekaman audio tersebut kemudian ditranskripsikan secara *verbatim* dalam Bahasa Indonesia dengan tetap mempertahankan istilah-istilah teknis penganggaran. Sebagai bentuk verifikasi keabsahan data (Lincoln & Guba, 1985), transkrip hasil wawancara dikirimkan kembali kepada informan dalam waktu tujuh hari untuk dilakukan pengecekan ulang dan konfirmasi kebenarannya (*member check*).
 
-**Tabel 3.2 Daftar Informan Target Penelitian**
-| Kode | Posisi/Jabatan | Justifikasi Keterlibatan |
-|---|---|---|
-| KPA | Kuasa Pengguna Anggaran (Kepala Rudenim Pontianak) | Otoritas tertinggi pengelolaan anggaran satker; penetapan DIPA dan RPD; perspektif strategis pelaksanaan Belanja Modal |
-| PPK | Pejabat Pembuat Komitmen | Penanggung jawab komitmen pengadaan Belanja Modal; touchpoint utama kontrak, BAST, dan SPP-LS |
-| PPSPM | Pejabat Penandatangan SPM | Penanggung jawab pencairan dana; verifikasi SPM; touchpoint teknis SAKTI/OM-SPAN |
-| BPG | Bendahara Pengeluaran | Pelaksana operasional kas; akses penuh realisasi harian; perspektif teknis-operasional |
-| SRKA | Staf Penyusun Rencana Kerja dan Anggaran | Pelaksana teknis penyusunan RPD bulanan; touchpoint perencanaan anggaran |
-| PBJ | Pejabat Pengadaan/Pejabat Fungsional Pengadaan Barang/Jasa | Pelaksana pemilihan penyedia untuk paket Belanja Modal; perspektif operasional pengadaan |
-
-*Sumber: Disusun berdasarkan struktur organisasi pengelola keuangan dan pengadaan Rudenim Pontianak.*
-
-Secara operasional, pelaksanaan wawancara mendalam dilakukan secara semi-terstruktur dengan durasi berkisar antara 60 hingga 90 menit per sesi. Wawancara diselenggarakan di ruang tertutup pada kantor Rudenim Pontianak atau lokasi alternatif lain demi kenyamanan informan. Seluruh proses wawancara direkam menggunakan alat perekam audio atas persetujuan tertulis dari informan. Rekaman audio tersebut kemudian ditranskripsikan secara verbatim dalam Bahasa Indonesia dengan tetap mempertahankan istilah-istilah teknis penganggaran. Sebagai bentuk verifikasi keabsahan data (Lincoln & Guba, 1985), transkrip hasil wawancara dikirimkan kembali kepada informan dalam waktu tujuh hari untuk dilakukan pengecekan ulang dan konfirmasi kebenarannya (*member check*).
-
-3.3.3 Model Analisis Miles dan Huberman (1994)
+3.3.2 Model Analisis Miles dan Huberman (1994)
 Analisis data dalam penelitian ini dilaksanakan menggunakan interactive
 model yang dikembangkan Miles dan Huberman (1994, hlm. 10–12). Model ini
 dipilih karena sesuai dengan karakter penelitian kualitatif yang prosesnya bersifat
@@ -913,7 +915,7 @@ ulang terhadap data baru.
 Tahap pertama adalah reduksi data, yakni proses memilih, memfokuskan,
 menyederhanakan, mengabstraksi, dan mentransformasi data mentah menjadi
 satuan-satuan makna yang dapat dianalisis (Miles dan Huberman, 1994, hlm. 10–
-11). Reduksi dilaksanakan melalui transkripsi verbatim rekaman wawancara,
+11). Reduksi dilaksanakan melalui transkripsi *verbatim* rekaman wawancara,
 kemudian pengkodean bertahap dari open coding (label pada unit makna), axial
 
 coding (pengelompokan ke kategori yang dipetakan ke faktor-faktor deviasi pada
@@ -931,17 +933,17 @@ yang terus diuji melalui pattern matching terhadap kerangka konseptual dan data
 baru. Verifikasi dilaksanakan melalui konfrontasi balik ke data mentah, member
 check dengan informan, triangulasi lintas-sumber dan lintas-metode, serta peer
 debriefing bersama dosen pembimbing.
-3.3.4 Uji Keabsahan Data (Lincoln dan Guba, 1985)
+3.3.3 Uji Keabsahan Data (Lincoln dan Guba, 1985)
 Kualitas penelitian kualitatif dinilai melalui empat kriteria yang diajukan
 Lincoln dan Guba (1985, hlm. 289–331) sebagai alternatif dari kriteria positivistik:
 credibility, transferability, dependability, dan confirmability.
 Credibility (kredibilitas) dijamin melalui dua strategi utama. Pertama,
-triangulasi sumber: setiap temuan substantif dikonfirmasi dari minimal tiga
+*triangulasi sumber*: setiap temuan substantif dikonfirmasi dari minimal tiga
 informan yang berbeda posisinya; misalnya, apakah kesimpulan mengenai faktor
 penyebab deviasi Belanja Modal dikonfirmasi oleh KPA, PPK, dan Pejabat
 
 Pengadaan secara independen. Temuan wawancara juga dicocokkan dengan bukti
-dari dokumen anggaran dan catatan observasi (triangulasi metode). Kedua, member
+dari dokumen anggaran dan catatan observasi (*triangulasi metode*). Kedua, member
 check: transkrip wawancara dan ringkasan temuan per informan dikonfirmasi ulang
 kepada informan bersangkutan dalam tujuh hari setelah wawancara; koreksi yang
 diberikan diintegrasikan ke dalam analisis.
@@ -978,18 +980,18 @@ agency costs and ownership structure. Journal of Financial Economics,
 3(4), 305–360. https://doi.org/10.1016/0304-405X(76)90026-X
 Lane, J.-E. (2003). Management and public organisation: The principal-agent
 framework [Working paper]. University of Geneva.
-Lincoln, Y. S., & Guba, E. G. (1985). Naturalistic inquiry. SAGE Publications.
+Lincoln, Y. S., & Guba, E. G. (1985). *Naturalistic inquiry*. SAGE Publications.
 Manangin, C., Tinangon, J. J., & Gamaliel, H. (2023). Faktor-faktor yang
 memengaruhi pencapaian nilai indikator kinerja pelaksanaan anggaran
-satuan kerja di lingkup KPPN Manado. Jurnal Goodwill, 14(2), 535–550.
-Mardiasmo. (2018). Akuntansi sektor publik (Edisi terbaru). Andi.
+satuan kerja di lingkup KPPN Manado. *Jurnal Goodwill*, 14(2), 535–550.
+Mardiasmo. (2018). *Akuntansi sektor publik* (Edisi terbaru). Andi.
 Miles, M. B., & Huberman, A. M. (1994). Qualitative data analysis: An expanded
 sourcebook (2nd ed.). SAGE Publications.
 
 Nugroho, B., Widodo, T., & Pratama, R. (2023). Evaluasi implementasi IKPA:
 Studi kasus 20 satuan kerja di Jawa Tengah. Jurnal Keuangan dan
 Perbendaharaan Negara, 27(3), 112–130.
-Patton, M. Q. (2015). Qualitative research & evaluation methods (4th ed.). SAGE
+Patton, M. Q. (2015). *Qualitative research & evaluation methods* (4th ed.). SAGE
 Publications.
 Peraturan Direktur Jenderal Perbendaharaan Nomor PER-5/PB/2024 tentang
 Petunjuk Teknis Penilaian Indikator Kinerja Pelaksanaan Anggaran
@@ -1028,7 +1030,7 @@ Rumah Detensi Imigrasi Pontianak. (2025). Laporan Kinerja Instansi Pemerintah
 Dokumen internal tidak dipublikasikan.
 Sholawatunnisa, N., & Supriyanto, A. (2025). Early warning system deviasi
 anggaran berbasis model SARIMA pada IKPA Kantor Wilayah DJPb Nusa
-Tenggara Barat. Jurnal Elastisitas, 7(1), 19–38.
+Tenggara Barat. *Jurnal Elastisitas*, 7(1), 19–38.
 Undang-Undang Republik Indonesia Nomor 1 Tahun 2004 tentang
 Perbendaharaan Negara. (2004). Lembaran Negara Republik Indonesia
 Tahun 2004 Nomor 5.

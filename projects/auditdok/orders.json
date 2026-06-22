@@ -98,5 +98,15 @@
     "status": "success",
     "output_dir": "projects/auditdok/output_plus_ajie_api",
     "timestamp": "2026-06-21 17:25:29"
+  },
+  {
+    "id": 11,
+    "client": "Ajie",
+    "file": "MAKALAH SEMINAR AKUNTANSI_AJIE BARIANDONO_2110426823.pdf",
+    "tier": "plus",
+    "type": "makalah_akuntansi",
+    "status": "success",
+    "output_dir": "projects/revisi-makalah-akuntansi/output",
+    "timestamp": "2026-06-22 10:41:04"
   }
 ]

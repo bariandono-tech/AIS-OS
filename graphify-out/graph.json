@@ -2329,7 +2329,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scratch_check_toc_xml",
-      "community": 374,
+      "community": 442,
       "norm_label": "check_toc_xml.js"
     },
     {
@@ -2339,7 +2339,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scratch_check_toc_xml_docx",
-      "community": 374,
+      "community": 442,
       "norm_label": "docx"
     },
     {
@@ -2349,7 +2349,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "scratch_check_toc_xml_fs",
-      "community": 374,
+      "community": 442,
       "norm_label": "fs"
     },
     {
@@ -2359,7 +2359,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "scratch_check_toc_xml_doc",
-      "community": 374,
+      "community": 442,
       "norm_label": "doc"
     },
     {
@@ -3091,6 +3091,436 @@
       "id": "project_management_excel_create_gantt_chart_create_gantt_chart",
       "community": 296,
       "norm_label": "create_gantt_chart()"
+    },
+    {
+      "label": "build_makalah.js",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah",
+      "community": 439,
+      "norm_label": "build_makalah.js"
+    },
+    {
+      "label": "{\r\n  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,\r\n  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,\r\n  ShadingType, VerticalAlign, PageNumber, PageBreak, Header, Footer,\r\n  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,\r\n  TabStopType, TabStopPosition, NumberFormat, TableOfContents, ImageRun\r\n}",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_shadingtype_verticalalign_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_tabstopposition_numberformat_tableofcontents_imagerun",
+      "community": 439,
+      "norm_label": "{\r\n  document, packer, paragraph, textrun, table, tablerow, tablecell,\r\n  alignmenttype, levelformat, headinglevel, borderstyle, widthtype,\r\n  shadingtype, verticalalign, pagenumber, pagebreak, header, footer,\r\n  positionaltab, positionaltabalignment, positionaltabrelativeto, positionaltableader,\r\n  tabstoptype, tabstopposition, numberformat, tableofcontents, imagerun\r\n}"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_fs",
+      "community": 439,
+      "norm_label": "fs"
+    },
+    {
+      "label": "border0",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_border0",
+      "community": 439,
+      "norm_label": "border0"
+    },
+    {
+      "label": "borders0",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_borders0",
+      "community": 439,
+      "norm_label": "borders0"
+    },
+    {
+      "label": "borderSingle",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_bordersingle",
+      "community": 439,
+      "norm_label": "bordersingle"
+    },
+    {
+      "label": "bordersAll",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_bordersall",
+      "community": 439,
+      "norm_label": "bordersall"
+    },
+    {
+      "label": "emptyRow()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_emptyrow",
+      "community": 439,
+      "norm_label": "emptyrow()"
+    },
+    {
+      "label": "centered()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_centered",
+      "community": 439,
+      "norm_label": "centered()"
+    },
+    {
+      "label": "justifiedPara()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_justifiedpara",
+      "community": 439,
+      "norm_label": "justifiedpara()"
+    },
+    {
+      "label": "tr()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_tr",
+      "community": 439,
+      "norm_label": "tr()"
+    },
+    {
+      "label": "tri()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_tri",
+      "community": 439,
+      "norm_label": "tri()"
+    },
+    {
+      "label": "trb()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_trb",
+      "community": 439,
+      "norm_label": "trb()"
+    },
+    {
+      "label": "heading1()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_heading1",
+      "community": 439,
+      "norm_label": "heading1()"
+    },
+    {
+      "label": "heading2()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_heading2",
+      "community": 439,
+      "norm_label": "heading2()"
+    },
+    {
+      "label": "heading3()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_heading3",
+      "community": 439,
+      "norm_label": "heading3()"
+    },
+    {
+      "label": "pageBreak()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_pagebreak",
+      "community": 439,
+      "norm_label": "pagebreak()"
+    },
+    {
+      "label": "numberedItem()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_numbereditem",
+      "community": 439,
+      "norm_label": "numbereditem()"
+    },
+    {
+      "label": "numberedItemRuns()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_numbereditemruns",
+      "community": 439,
+      "norm_label": "numbereditemruns()"
+    },
+    {
+      "label": "cell()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_cell",
+      "community": 439,
+      "norm_label": "cell()"
+    },
+    {
+      "label": "cellPara()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L124",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_cellpara",
+      "community": 439,
+      "norm_label": "cellpara()"
+    },
+    {
+      "label": "tableCaptionCentered()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_tablecaptioncentered",
+      "community": 439,
+      "norm_label": "tablecaptioncentered()"
+    },
+    {
+      "label": "tableSource()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L145",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_tablesource",
+      "community": 439,
+      "norm_label": "tablesource()"
+    },
+    {
+      "label": "daftarPustakaEntry()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L153",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_daftarpustakaentry",
+      "community": 439,
+      "norm_label": "daftarpustakaentry()"
+    },
+    {
+      "label": "createFrontMatterFooter()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_createfrontmatterfooter",
+      "community": 439,
+      "norm_label": "createfrontmatterfooter()"
+    },
+    {
+      "label": "createChapterHeadersAndFooters()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L178",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_createchapterheadersandfooters",
+      "community": 439,
+      "norm_label": "createchapterheadersandfooters()"
+    },
+    {
+      "label": "tocEntry()",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L216",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_tocentry",
+      "community": 439,
+      "norm_label": "tocentry()"
+    },
+    {
+      "label": "chapterPageSetup",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L244",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_chapterpagesetup",
+      "community": 439,
+      "norm_label": "chapterpagesetup"
+    },
+    {
+      "label": "frontMatterFooter",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L245",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_frontmatterfooter",
+      "community": 439,
+      "norm_label": "frontmatterfooter"
+    },
+    {
+      "label": "doc",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L247",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_build_makalah_doc",
+      "community": 439,
+      "norm_label": "doc"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_package",
+      "community": 440,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_package_name",
+      "community": 440,
+      "norm_label": "name"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_package_version",
+      "community": 440,
+      "norm_label": "version"
+    },
+    {
+      "label": "description",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_package_description",
+      "community": 440,
+      "norm_label": "description"
+    },
+    {
+      "label": "main",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_package_main",
+      "community": 440,
+      "norm_label": "main"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_package_scripts",
+      "community": 440,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "test",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_package_scripts_test",
+      "community": 440,
+      "norm_label": "test"
+    },
+    {
+      "label": "keywords",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_package_keywords",
+      "community": 440,
+      "norm_label": "keywords"
+    },
+    {
+      "label": "author",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_package_author",
+      "community": 440,
+      "norm_label": "author"
+    },
+    {
+      "label": "license",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_package_license",
+      "community": 440,
+      "norm_label": "license"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_package_type",
+      "community": 440,
+      "norm_label": "type"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_package_dependencies",
+      "community": 440,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "docx",
+      "file_type": "code",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_package_dependencies_docx",
+      "community": 440,
+      "norm_label": "docx"
     },
     {
       "label": "pay-webhook.js",
@@ -7919,7 +8349,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "drafts_build_makalah_tr",
-      "community": 433,
+      "community": 2,
       "norm_label": "tr()"
     },
     {
@@ -7929,7 +8359,7 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "drafts_build_makalah_tri",
-      "community": 433,
+      "community": 2,
       "norm_label": "tri()"
     },
     {
@@ -7939,7 +8369,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "drafts_build_makalah_trb",
-      "community": 433,
+      "community": 2,
       "norm_label": "trb()"
     },
     {
@@ -7989,7 +8419,7 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "drafts_build_makalah_numbereditem",
-      "community": 433,
+      "community": 2,
       "norm_label": "numbereditem()"
     },
     {
@@ -8049,7 +8479,7 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "drafts_build_makalah_daftarpustakaentry",
-      "community": 433,
+      "community": 2,
       "norm_label": "daftarpustakaentry()"
     },
     {
@@ -15848,8 +16278,8 @@
       "source_file": "projects/auditdok/output/checklist_perbaikan.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "output_checklist_perbaikan",
-      "community": 415,
+      "id": "projects_auditdok_output_checklist_perbaikan_md_output_checklist_perbaikan",
+      "community": 435,
       "norm_label": "checklist_perbaikan.md"
     },
     {
@@ -15858,8 +16288,8 @@
       "source_file": "projects/auditdok/output/checklist_perbaikan.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "output_checklist_perbaikan_checklist_perbaikan_dokumen_prd",
-      "community": 415,
+      "id": "projects_auditdok_output_checklist_perbaikan_md_output_checklist_perbaikan_checklist_perbaikan_dokumen_prd",
+      "community": 435,
       "norm_label": "checklist perbaikan dokumen (prd)"
     },
     {
@@ -15868,7 +16298,7 @@
       "source_file": "projects/auditdok/output/laporan_audit.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "output_laporan_audit",
+      "id": "projects_auditdok_output_laporan_audit_md_output_laporan_audit",
       "community": 413,
       "norm_label": "laporan_audit.md"
     },
@@ -15878,7 +16308,7 @@
       "source_file": "projects/auditdok/output/laporan_audit.md",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "output_laporan_audit_skor_evaluasi",
+      "id": "projects_auditdok_output_laporan_audit_md_output_laporan_audit_skor_evaluasi",
       "community": 413,
       "norm_label": "skor evaluasi"
     },
@@ -15928,8 +16358,8 @@
       "source_file": "projects/auditdok/output/minimap.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "output_minimap",
-      "community": 416,
+      "id": "projects_auditdok_output_minimap_md_output_minimap",
+      "community": 436,
       "norm_label": "minimap.md"
     },
     {
@@ -15938,8 +16368,8 @@
       "source_file": "projects/auditdok/output/minimap.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "output_minimap_map_struktur_dokumen_minimap",
-      "community": 416,
+      "id": "projects_auditdok_output_minimap_md_output_minimap_map_struktur_dokumen_minimap",
+      "community": 436,
       "norm_label": "map struktur dokumen (minimap)"
     },
     {
@@ -17781,6 +18211,76 @@
       "id": "skills_makalah_contoh_checklist_tindakan_prd_format",
       "community": 410,
       "norm_label": "contoh checklist tindakan (prd format)"
+    },
+    {
+      "label": "makalah_akuntansi.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah_akuntansi.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "skills_makalah_akuntansi",
+      "community": 433,
+      "norm_label": "makalah_akuntansi.md"
+    },
+    {
+      "label": "SKILL: Audit Makalah Seminar Akuntansi Sektor Publik",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah_akuntansi.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "skills_makalah_akuntansi_skill_audit_makalah_seminar_akuntansi_sektor_publik",
+      "community": 433,
+      "norm_label": "skill: audit makalah seminar akuntansi sektor publik"
+    },
+    {
+      "label": "Fokus Penilaian & Pedoman Audit",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah_akuntansi.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "skills_makalah_akuntansi_fokus_penilaian_pedoman_audit",
+      "community": 433,
+      "norm_label": "fokus penilaian & pedoman audit"
+    },
+    {
+      "label": "Struktur Hasil Audit (Output Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah_akuntansi.md",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "skills_makalah_akuntansi_struktur_hasil_audit_output_format",
+      "community": 433,
+      "norm_label": "struktur hasil audit (output format)"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah_akuntansi.md",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "skills_makalah_akuntansi_skor_evaluasi",
+      "community": 433,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah_akuntansi.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "skills_makalah_akuntansi_temuan_utama_daftar_masalah",
+      "community": 433,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Checklist Tindakan Perbaikan",
+      "file_type": "document",
+      "source_file": "projects/auditdok/skills/makalah_akuntansi.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "skills_makalah_akuntansi_checklist_tindakan_perbaikan",
+      "community": 433,
+      "norm_label": "checklist tindakan perbaikan"
     },
     {
       "label": "proposal_skripsi.md",
@@ -23671,6 +24171,366 @@
       "id": "project_management_excel_readme_panduan_kompatibilitas",
       "community": 291,
       "norm_label": "\ud83d\udcbb panduan kompatibilitas"
+    },
+    {
+      "label": "00-ideation.md",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/00-ideation.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_00_ideation",
+      "community": 434,
+      "norm_label": "00-ideation.md"
+    },
+    {
+      "label": "Ideation: Finalisasi Makalah Seminar Akuntansi (Thesis Brain)",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/00-ideation.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_00_ideation_ideation_finalisasi_makalah_seminar_akuntansi_thesis_brain",
+      "community": 434,
+      "norm_label": "ideation: finalisasi makalah seminar akuntansi (thesis brain)"
+    },
+    {
+      "label": "Brain Dump",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/00-ideation.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_00_ideation_brain_dump",
+      "community": 434,
+      "norm_label": "brain dump"
+    },
+    {
+      "label": "Fokus Analisis & Gap Akademik",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/00-ideation.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_00_ideation_fokus_analisis_gap_akademik",
+      "community": 434,
+      "norm_label": "fokus analisis & gap akademik"
+    },
+    {
+      "label": "Alur Kerja Finalisasi (Thesis HITL Workflow)",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/00-ideation.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_00_ideation_alur_kerja_finalisasi_thesis_hitl_workflow",
+      "community": 434,
+      "norm_label": "alur kerja finalisasi (thesis hitl workflow)"
+    },
+    {
+      "label": "01-architecture.md",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_01_architecture",
+      "community": 416,
+      "norm_label": "01-architecture.md"
+    },
+    {
+      "label": "Architecture: Finalisasi Makalah Seminar Akuntansi",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_01_architecture_architecture_finalisasi_makalah_seminar_akuntansi",
+      "community": 416,
+      "norm_label": "architecture: finalisasi makalah seminar akuntansi"
+    },
+    {
+      "label": "Deliverables",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_01_architecture_deliverables",
+      "community": 416,
+      "norm_label": "deliverables"
+    },
+    {
+      "label": "Target Akademis",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_01_architecture_target_akademis",
+      "community": 416,
+      "norm_label": "target akademis"
+    },
+    {
+      "label": "Scope",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_01_architecture_scope",
+      "community": 416,
+      "norm_label": "scope"
+    },
+    {
+      "label": "In v1",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_01_architecture_in_v1",
+      "community": 416,
+      "norm_label": "in v1"
+    },
+    {
+      "label": "NOT in v1 (parked)",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_01_architecture_not_in_v1_parked",
+      "community": 416,
+      "norm_label": "not in v1 (parked)"
+    },
+    {
+      "label": "Stack / Tools",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_01_architecture_stack_tools",
+      "community": 416,
+      "norm_label": "stack / tools"
+    },
+    {
+      "label": "makalah_seminar.md",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/makalah_seminar.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_makalah_seminar",
+      "community": 441,
+      "norm_label": "makalah_seminar.md"
+    },
+    {
+      "label": "Tabel 1.3 Deviasi Halaman III DIPA Belanja Modal Rudenim Pontianak TA 2023\u20132025",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/makalah_seminar.md",
+      "source_location": "L239",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_makalah_seminar_tabel_1_3_deviasi_halaman_iii_dipa_belanja_modal_rudenim_pontianak_ta_2023_2025",
+      "community": 441,
+      "norm_label": "tabel 1.3 deviasi halaman iii dipa belanja modal rudenim pontianak ta 2023\u20132025"
+    },
+    {
+      "label": "Tabel 1.4 Bulan Kritis Deviasi Belanja Modal Rudenim Pontianak TA 2023\u20132025",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/makalah_seminar.md",
+      "source_location": "L253",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_makalah_seminar_tabel_1_4_bulan_kritis_deviasi_belanja_modal_rudenim_pontianak_ta_2023_2025",
+      "community": 441,
+      "norm_label": "tabel 1.4 bulan kritis deviasi belanja modal rudenim pontianak ta 2023\u20132025"
+    },
+    {
+      "label": "Tabel 1.5 Contoh Paket Belanja Modal yang Mengalami Pergeseran Realisasi TA 2023\u20132025",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/makalah_seminar.md",
+      "source_location": "L267",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_makalah_seminar_tabel_1_5_contoh_paket_belanja_modal_yang_mengalami_pergeseran_realisasi_ta_2023_2025",
+      "community": 441,
+      "norm_label": "tabel 1.5 contoh paket belanja modal yang mengalami pergeseran realisasi ta 2023\u20132025"
+    },
+    {
+      "label": "checklist_perbaikan.md",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "projects_revisi_makalah_akuntansi_output_checklist_perbaikan_md_output_checklist_perbaikan",
+      "community": 437,
+      "norm_label": "checklist_perbaikan.md"
+    },
+    {
+      "label": "CHECKLIST PERBAIKAN DOKUMEN (PRD)",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "projects_revisi_makalah_akuntansi_output_checklist_perbaikan_md_output_checklist_perbaikan_checklist_perbaikan_dokumen_prd",
+      "community": 437,
+      "norm_label": "checklist perbaikan dokumen (prd)"
+    },
+    {
+      "label": "laporan_audit.md",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "projects_revisi_makalah_akuntansi_output_laporan_audit_md_output_laporan_audit",
+      "community": 415,
+      "norm_label": "laporan_audit.md"
+    },
+    {
+      "label": "PASS 1: Review Umum",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_laporan_audit_pass_1_review_umum",
+      "community": 415,
+      "norm_label": "pass 1: review umum"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "projects_revisi_makalah_akuntansi_output_laporan_audit_md_output_laporan_audit_skor_evaluasi",
+      "community": 415,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "output_laporan_audit_temuan_utama_daftar_masalah",
+      "community": 415,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Checklist Tindakan Perbaikan",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L246",
+      "_origin": "ast",
+      "id": "output_laporan_audit_checklist_tindakan_perbaikan",
+      "community": 415,
+      "norm_label": "checklist tindakan perbaikan"
+    },
+    {
+      "label": "PASS 2: Analisis Fokus Per-Bagian",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L274",
+      "_origin": "ast",
+      "id": "output_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "community": 415,
+      "norm_label": "pass 2: analisis fokus per-bagian"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L276",
+      "_origin": "ast",
+      "id": "output_laporan_audit_skor_evaluasi_276",
+      "community": 415,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L284",
+      "_origin": "ast",
+      "id": "output_laporan_audit_temuan_utama_daftar_masalah_284",
+      "community": 415,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Checklist Tindakan Perbaikan",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L395",
+      "_origin": "ast",
+      "id": "output_laporan_audit_checklist_tindakan_perbaikan_395",
+      "community": 415,
+      "norm_label": "checklist tindakan perbaikan"
+    },
+    {
+      "label": "PASS 3: Checklist & Mindmap",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L415",
+      "_origin": "ast",
+      "id": "output_laporan_audit_pass_3_checklist_mindmap",
+      "community": 415,
+      "norm_label": "pass 3: checklist & mindmap"
+    },
+    {
+      "label": "Skor Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L421",
+      "_origin": "ast",
+      "id": "output_laporan_audit_skor_evaluasi_421",
+      "community": 415,
+      "norm_label": "skor evaluasi"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L429",
+      "_origin": "ast",
+      "id": "output_laporan_audit_temuan_utama_daftar_masalah_429",
+      "community": 415,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Checklist Tindakan Perbaikan",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L482",
+      "_origin": "ast",
+      "id": "output_laporan_audit_checklist_tindakan_perbaikan_482",
+      "community": 415,
+      "norm_label": "checklist tindakan perbaikan"
+    },
+    {
+      "label": "Struktur Mindmap Konsep",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L518",
+      "_origin": "ast",
+      "id": "output_laporan_audit_struktur_mindmap_konsep",
+      "community": 415,
+      "norm_label": "struktur mindmap konsep"
+    },
+    {
+      "label": "Diagram Alur",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L563",
+      "_origin": "ast",
+      "id": "output_laporan_audit_diagram_alur",
+      "community": 415,
+      "norm_label": "diagram alur"
+    },
+    {
+      "label": "minimap.md",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "projects_revisi_makalah_akuntansi_output_minimap_md_output_minimap",
+      "community": 438,
+      "norm_label": "minimap.md"
+    },
+    {
+      "label": "MAP STRUKTUR DOKUMEN (MINIMAP)",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/output/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "projects_revisi_makalah_akuntansi_output_minimap_md_output_minimap_map_struktur_dokumen_minimap",
+      "community": 438,
+      "norm_label": "map struktur dokumen (minimap)"
     },
     {
       "label": "work-log.md",
@@ -45914,6 +46774,493 @@
       "target": "project_management_excel_create_gantt_chart_create_gantt_chart"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_border0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_borders0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_bordersall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_bordersingle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_cell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_cellpara",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_centered",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L244",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_chapterpagesetup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_createchapterheadersandfooters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_createfrontmatterfooter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L153",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_daftarpustakaentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L247",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_doc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_shadingtype_verticalalign_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_tabstopposition_numberformat_tableofcontents_imagerun",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_emptyrow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L245",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_frontmatterfooter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_fs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_heading1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_heading2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_heading3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_justifiedpara",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_numbereditem",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_numbereditemruns",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_pagebreak",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_tablecaptioncentered",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_tablesource",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L216",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_tocentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_tr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_trb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah",
+      "target": "revisi_makalah_akuntansi_build_makalah_tri",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah_daftarpustakaentry",
+      "target": "revisi_makalah_akuntansi_build_makalah_tr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah_numbereditem",
+      "target": "revisi_makalah_akuntansi_build_makalah_tr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah_trb",
+      "target": "revisi_makalah_akuntansi_build_makalah_tr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_build_makalah_tri",
+      "target": "revisi_makalah_akuntansi_build_makalah_tr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_package",
+      "target": "revisi_makalah_akuntansi_package_author",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_package",
+      "target": "revisi_makalah_akuntansi_package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_package",
+      "target": "revisi_makalah_akuntansi_package_description",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_package",
+      "target": "revisi_makalah_akuntansi_package_keywords",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_package",
+      "target": "revisi_makalah_akuntansi_package_license",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_package",
+      "target": "revisi_makalah_akuntansi_package_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_package",
+      "target": "revisi_makalah_akuntansi_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_package",
+      "target": "revisi_makalah_akuntansi_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_package",
+      "target": "revisi_makalah_akuntansi_package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_package",
+      "target": "revisi_makalah_akuntansi_package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_package_scripts",
+      "target": "revisi_makalah_akuntansi_package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_package_dependencies",
+      "target": "revisi_makalah_akuntansi_package_dependencies_docx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "import",
+      "source": "revisi_makalah_akuntansi_package_dependencies_docx",
+      "target": "docx",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/studios/app/api/pay-webhook.js",
@@ -58444,8 +59791,8 @@
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "output_checklist_perbaikan",
-      "target": "output_checklist_perbaikan_checklist_perbaikan_dokumen_prd"
+      "source": "projects_auditdok_output_checklist_perbaikan_md_output_checklist_perbaikan",
+      "target": "projects_auditdok_output_checklist_perbaikan_md_output_checklist_perbaikan_checklist_perbaikan_dokumen_prd"
     },
     {
       "relation": "contains",
@@ -58454,7 +59801,7 @@
       "source_location": "L58",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "output_laporan_audit",
+      "source": "projects_auditdok_output_laporan_audit_md_output_laporan_audit",
       "target": "output_laporan_audit_contoh_checklist_tindakan"
     },
     {
@@ -58464,18 +59811,8 @@
       "source_location": "L129",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "output_laporan_audit",
+      "source": "projects_auditdok_output_laporan_audit_md_output_laporan_audit",
       "target": "output_laporan_audit_kode_diagram_alur_logis"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "projects/auditdok/output/laporan_audit.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "output_laporan_audit",
-      "target": "output_laporan_audit_skor_evaluasi"
     },
     {
       "relation": "contains",
@@ -58484,7 +59821,7 @@
       "source_location": "L76",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "output_laporan_audit",
+      "source": "projects_auditdok_output_laporan_audit_md_output_laporan_audit",
       "target": "output_laporan_audit_struktur_mindmap_konsep_bertingkat"
     },
     {
@@ -58494,8 +59831,18 @@
       "source_location": "L7",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "output_laporan_audit",
+      "source": "projects_auditdok_output_laporan_audit_md_output_laporan_audit",
       "target": "output_laporan_audit_temuan_utama"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output/laporan_audit.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "projects_auditdok_output_laporan_audit_md_output_laporan_audit",
+      "target": "projects_auditdok_output_laporan_audit_md_output_laporan_audit_skor_evaluasi"
     },
     {
       "relation": "contains",
@@ -58504,8 +59851,8 @@
       "source_location": "L1",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "output_minimap",
-      "target": "output_minimap_map_struktur_dokumen_minimap"
+      "source": "projects_auditdok_output_minimap_md_output_minimap",
+      "target": "projects_auditdok_output_minimap_md_output_minimap_map_struktur_dokumen_minimap"
     },
     {
       "relation": "contains",
@@ -59723,9 +61070,9 @@
       "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
       "source_location": "L282",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_plus_ajie_api_laporan_audit_pass_1_review_umum",
-      "target": "output_plus_ajie_api_laporan_audit_contoh_checklist_tindakan_prd_format",
-      "confidence_score": 1.0
+      "target": "output_plus_ajie_api_laporan_audit_contoh_checklist_tindakan_prd_format"
     },
     {
       "relation": "contains",
@@ -59733,9 +61080,9 @@
       "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_plus_ajie_api_laporan_audit_pass_1_review_umum",
-      "target": "output_plus_ajie_api_laporan_audit_skor_evaluasi",
-      "confidence_score": 1.0
+      "target": "output_plus_ajie_api_laporan_audit_skor_evaluasi"
     },
     {
       "relation": "contains",
@@ -59743,9 +61090,9 @@
       "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_plus_ajie_api_laporan_audit_pass_1_review_umum",
-      "target": "output_plus_ajie_api_laporan_audit_temuan_utama_daftar_masalah",
-      "confidence_score": 1.0
+      "target": "output_plus_ajie_api_laporan_audit_temuan_utama_daftar_masalah"
     },
     {
       "relation": "contains",
@@ -59753,9 +61100,9 @@
       "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
       "source_location": "L880",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_plus_ajie_api_laporan_audit_pass_2_analisis_fokus_per_bagian",
-      "target": "output_plus_ajie_api_laporan_audit_contoh_checklist_tindakan_prd_format_880",
-      "confidence_score": 1.0
+      "target": "output_plus_ajie_api_laporan_audit_contoh_checklist_tindakan_prd_format_880"
     },
     {
       "relation": "contains",
@@ -59763,9 +61110,9 @@
       "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
       "source_location": "L297",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_plus_ajie_api_laporan_audit_pass_2_analisis_fokus_per_bagian",
-      "target": "output_plus_ajie_api_laporan_audit_skor_evaluasi_297",
-      "confidence_score": 1.0
+      "target": "output_plus_ajie_api_laporan_audit_skor_evaluasi_297"
     },
     {
       "relation": "contains",
@@ -59773,9 +61120,9 @@
       "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
       "source_location": "L300",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_plus_ajie_api_laporan_audit_pass_2_analisis_fokus_per_bagian",
-      "target": "output_plus_ajie_api_laporan_audit_temuan_utama_daftar_masalah_300",
-      "confidence_score": 1.0
+      "target": "output_plus_ajie_api_laporan_audit_temuan_utama_daftar_masalah_300"
     },
     {
       "relation": "contains",
@@ -59803,9 +61150,9 @@
       "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
       "source_location": "L904",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_plus_ajie_api_laporan_audit_pass_3_checklist_mindmap",
-      "target": "output_plus_ajie_api_laporan_audit_skor_evaluasi_904",
-      "confidence_score": 1.0
+      "target": "output_plus_ajie_api_laporan_audit_skor_evaluasi_904"
     },
     {
       "relation": "contains",
@@ -59823,9 +61170,9 @@
       "source_file": "projects/auditdok/output_plus_ajie_api/laporan_audit.md",
       "source_location": "L907",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "output_plus_ajie_api_laporan_audit_pass_3_checklist_mindmap",
-      "target": "output_plus_ajie_api_laporan_audit_temuan_utama_daftar_masalah_907",
-      "confidence_score": 1.0
+      "target": "output_plus_ajie_api_laporan_audit_temuan_utama_daftar_masalah_907"
     },
     {
       "relation": "contains",
@@ -60176,6 +61523,66 @@
       "confidence_score": 1.0,
       "source": "skills_makalah_struktur_hasil_audit_output_format",
       "target": "skills_makalah_temuan_utama_daftar_masalah"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/makalah_akuntansi.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_makalah_akuntansi",
+      "target": "skills_makalah_akuntansi_skill_audit_makalah_seminar_akuntansi_sektor_publik"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/makalah_akuntansi.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_makalah_akuntansi_skill_audit_makalah_seminar_akuntansi_sektor_publik",
+      "target": "skills_makalah_akuntansi_fokus_penilaian_pedoman_audit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/makalah_akuntansi.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_makalah_akuntansi_skill_audit_makalah_seminar_akuntansi_sektor_publik",
+      "target": "skills_makalah_akuntansi_struktur_hasil_audit_output_format"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/makalah_akuntansi.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_makalah_akuntansi_struktur_hasil_audit_output_format",
+      "target": "skills_makalah_akuntansi_checklist_tindakan_perbaikan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/makalah_akuntansi.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_makalah_akuntansi_struktur_hasil_audit_output_format",
+      "target": "skills_makalah_akuntansi_skor_evaluasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/skills/makalah_akuntansi.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "skills_makalah_akuntansi_struktur_hasil_audit_output_format",
+      "target": "skills_makalah_akuntansi_temuan_utama_daftar_masalah"
     },
     {
       "relation": "contains",
@@ -65696,6 +67103,306 @@
       "confidence_score": 1.0,
       "source": "project_management_excel_readme_interactive_gantt_chart_template_mocha_warm_theme",
       "target": "project_management_excel_readme_warna_estetika_mocha_warm_palette"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/00-ideation.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_00_ideation",
+      "target": "revisi_makalah_akuntansi_00_ideation_ideation_finalisasi_makalah_seminar_akuntansi_thesis_brain"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/00-ideation.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_00_ideation_ideation_finalisasi_makalah_seminar_akuntansi_thesis_brain",
+      "target": "revisi_makalah_akuntansi_00_ideation_alur_kerja_finalisasi_thesis_hitl_workflow"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/00-ideation.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_00_ideation_ideation_finalisasi_makalah_seminar_akuntansi_thesis_brain",
+      "target": "revisi_makalah_akuntansi_00_ideation_brain_dump"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/00-ideation.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_00_ideation_ideation_finalisasi_makalah_seminar_akuntansi_thesis_brain",
+      "target": "revisi_makalah_akuntansi_00_ideation_fokus_analisis_gap_akademik"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_01_architecture",
+      "target": "revisi_makalah_akuntansi_01_architecture_architecture_finalisasi_makalah_seminar_akuntansi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_01_architecture_architecture_finalisasi_makalah_seminar_akuntansi",
+      "target": "revisi_makalah_akuntansi_01_architecture_deliverables"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_01_architecture_architecture_finalisasi_makalah_seminar_akuntansi",
+      "target": "revisi_makalah_akuntansi_01_architecture_scope"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_01_architecture_architecture_finalisasi_makalah_seminar_akuntansi",
+      "target": "revisi_makalah_akuntansi_01_architecture_stack_tools"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_01_architecture_architecture_finalisasi_makalah_seminar_akuntansi",
+      "target": "revisi_makalah_akuntansi_01_architecture_target_akademis"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_01_architecture_scope",
+      "target": "revisi_makalah_akuntansi_01_architecture_in_v1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/01-architecture.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_01_architecture_scope",
+      "target": "revisi_makalah_akuntansi_01_architecture_not_in_v1_parked"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/makalah_seminar.md",
+      "source_location": "L239",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_makalah_seminar",
+      "target": "revisi_makalah_akuntansi_makalah_seminar_tabel_1_3_deviasi_halaman_iii_dipa_belanja_modal_rudenim_pontianak_ta_2023_2025",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/makalah_seminar.md",
+      "source_location": "L253",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_makalah_seminar",
+      "target": "revisi_makalah_akuntansi_makalah_seminar_tabel_1_4_bulan_kritis_deviasi_belanja_modal_rudenim_pontianak_ta_2023_2025",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/makalah_seminar.md",
+      "source_location": "L267",
+      "weight": 1.0,
+      "source": "revisi_makalah_akuntansi_makalah_seminar",
+      "target": "revisi_makalah_akuntansi_makalah_seminar_tabel_1_5_contoh_paket_belanja_modal_yang_mengalami_pergeseran_realisasi_ta_2023_2025",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/checklist_perbaikan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "projects_revisi_makalah_akuntansi_output_checklist_perbaikan_md_output_checklist_perbaikan",
+      "target": "projects_revisi_makalah_akuntansi_output_checklist_perbaikan_md_output_checklist_perbaikan_checklist_perbaikan_dokumen_prd"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "projects_revisi_makalah_akuntansi_output_laporan_audit_md_output_laporan_audit",
+      "target": "output_laporan_audit_pass_1_review_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L274",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "projects_revisi_makalah_akuntansi_output_laporan_audit_md_output_laporan_audit",
+      "target": "output_laporan_audit_pass_2_analisis_fokus_per_bagian"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L415",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "projects_revisi_makalah_akuntansi_output_laporan_audit_md_output_laporan_audit",
+      "target": "output_laporan_audit_pass_3_checklist_mindmap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L246",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_laporan_audit_pass_1_review_umum",
+      "target": "output_laporan_audit_checklist_tindakan_perbaikan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_laporan_audit_pass_1_review_umum",
+      "target": "output_laporan_audit_temuan_utama_daftar_masalah"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_laporan_audit_pass_1_review_umum",
+      "target": "projects_revisi_makalah_akuntansi_output_laporan_audit_md_output_laporan_audit_skor_evaluasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L395",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_laporan_audit_checklist_tindakan_perbaikan_395"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L276",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_laporan_audit_skor_evaluasi_276"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L284",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_laporan_audit_temuan_utama_daftar_masalah_284"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L482",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_laporan_audit_checklist_tindakan_perbaikan_482"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L563",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_laporan_audit_diagram_alur"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L421",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_laporan_audit_skor_evaluasi_421"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L518",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_laporan_audit_struktur_mindmap_konsep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/laporan_audit.md",
+      "source_location": "L429",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_laporan_audit_temuan_utama_daftar_masalah_429"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/output/minimap.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "projects_revisi_makalah_akuntansi_output_minimap_md_output_minimap",
+      "target": "projects_revisi_makalah_akuntansi_output_minimap_md_output_minimap_map_struktur_dokumen_minimap"
     },
     {
       "relation": "contains",
@@ -79631,5 +81338,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d20836774e38a4232d1192f9b7b528d422d80f83"
+  "built_at_commit": "942f92722db6a45245fd0f9350964b706f66e19c"
 }

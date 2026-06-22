@@ -130,7 +130,7 @@ def main():
     parser = argparse.ArgumentParser(description="AuditDok: Audit Dokumen Berbasis AI Agent")
     parser.add_argument("--file", "-f", default=None, help="Path ke file dokumen (.pdf atau .docx)")
     parser.add_argument("--tier", "-t", default="basic", choices=["basic", "plus"], help="Tier layanan: basic (2-pass) atau plus (3-pass)")
-    parser.add_argument("--type", "-y", default="makalah", choices=["makalah", "proposal_skripsi", "laporan_keuangan"], help="Jenis dokumen / Skill")
+    parser.add_argument("--type", "-y", default="makalah", help="Jenis dokumen / Skill (nama file di folder skills tanpa .md)")
     parser.add_argument("--client", "-n", default="Umum", help="Nama klien (untuk tracking order)")
     parser.add_argument("--focus", "-c", default="", help="Fokus atau permintaan khusus tambahan")
     parser.add_argument("--output", "-o", default="output", help="Folder tujuan penyimpanan hasil")

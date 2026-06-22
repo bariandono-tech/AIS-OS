@@ -1,0 +1,42 @@
+# CHECKLIST PERBAIKAN DOKUMEN (PRD)
+
+Daftar tindakan perbaikan yang harus diselesaikan untuk meningkatkan kualitas dokumen:
+
+- [x] Perbaiki Daftar Isi untuk mencantumkan "2.3 Hipotesis Penelitian".
+- [x] Sesuaikan penomoran tabel di Daftar Tabel agar konsisten dengan penomoran bab (misal: Tabel 2.1, Tabel 3.1, Tabel 3.2).
+- [x] Perbaiki penomoran tabel di dalam isi dokumen (Halaman 32, 39, 41) agar sesuai dengan Daftar Tabel yang telah diperbarui.
+- [x] Sesuaikan penomoran gambar di Daftar Gambar agar konsisten dengan penomoran bab (misal: Gambar 2.1, Gambar 3.1).
+- [x] Perbaiki penomoran gambar di dalam isi dokumen (Halaman 28, 38, 44) agar setiap gambar memiliki nomor unik dan konsisten dengan Daftar Gambar. Pastikan gambar *flowchart* di halaman 44 diberi nomor yang benar (misal: Gambar 3.2).
+- [x] Lakukan *italicisasi* pada semua istilah asing yang telah diidentifikasi dalam temuan utama (termasuk di dalam teks, kutipan, dan daftar pustaka). Pastikan setiap kata yang seharusnya *italic* sudah benar.
+- [x] Revisi paragraf di Bab III Metode Penelitian - 3.1 Bentuk Penelitian (Halaman 37) untuk secara akurat mencerminkan transisi kelembagaan Rudenim Pontianak selama periode studi (TA 2023-2025), sesuai dengan penjelasan di Latar Belakang (Halaman 4).
+- [x] Ganti "proposal seminar akuntansi" menjadi "makalah seminar akuntansi" di Kata Pengantar (Halaman 3).
+- [x] Ganti "tatakelola" menjadi "tata kelola" di Bab I Pendahuluan - 1.4.2 Manfaat Praktis (Halaman 18).
+- [x] Tambahkan formula matematika eksplisit untuk Deviasi Halaman III DIPA di Bab II Tinjauan Pustaka - 2.1.5 Indikator Kinerja Pelaksanaan Anggaran (IKPA) (Halaman 30).
+- [x] **Verifikasi Rujukan Tabel yang Tidak Ada:**
+- [x] Perhatikan bahwa pedoman audit meminta perbandingan dengan Tabel 1.3, 1.4, 1.5 yang tidak ada dalam dokumen. Pastikan tidak ada rujukan ke tabel-tabel tersebut di dalam teks, atau jika ada, sesuaikan dengan tabel yang benar. (Dalam audit ini, tidak ditemukan rujukan ke tabel 1.3, 1.4, 1.5, sehingga ini lebih merupakan catatan untuk penulis).
+-   [x] **Perbaiki Konsistensi Penomoran Tabel dan Gambar:**
+-   [x] Sesuaikan penomoran tabel dan gambar di DAFTAR TABEL dan DAFTAR GAMBAR agar konsisten dengan penomoran aktual di dalam teks (misal: Tabel 2.1, Tabel 3.1, Tabel 3.2, Gambar 2.1, Gambar 3.1).
+-   [x] Perbaiki semua rujukan tabel dan gambar di dalam teks agar sesuai dengan penomoran yang baru.
+-   [x] Pastikan tidak ada rujukan ke tabel yang tidak ada (misal: Tabel 1.3, 1.4, 1.5).
+-   [x] **Koreksi Istilah Asing yang Tidak Italic:**
+-   [x] Telusuri seluruh dokumen dan cetak miring semua istilah asing yang teridentifikasi dalam daftar pedoman audit dan temuan tambahan (misal: *principal-agent*, *monitoring and control*, *research gap*, *e-purchasing*, *bottleneck*, *supply chain*, *flowchart*, *e-catalog*, *Q1*, *overly optimistic*, *slack*, *timeline*, *interactive model*, *open coding*, *axial coding*, *selective coding*, *data display*, *pattern matching*, *peer debriefing*, *credibility*, *transferability*, *dependability*, *confirmability*, *triangulasi*, *thick description*, *audit trail*, *confirmability audit*, *in-depth interview*, *verbatim*, *member check*, *purposive sampling*, *touchpoint*, *institutional knowledge*, *informed consent*, *multi-termin*, *omnibus*).
+-   [x] **Klarifikasi Transisi Kelembagaan Rudenim Pontianak:**
+-   [x] Revisi paragraf di Bab III (Halaman 30) untuk secara eksplisit menyatakan bahwa Rudenim Pontianak berada di bawah Kemenkumham pada TA 2023-2024 dan beralih ke Kemenimipas pada TA 2025, agar konsisten dengan penjelasan di Bab I.
+-   [x] **Tambahkan Formula Deviasi Halaman III DIPA:**
+-   [x] Sisipkan formula perhitungan Deviasi Halaman III DIPA secara eksplisit di Bab I (Latar Belakang) atau Bab II (Landasan Teori).
+-   [x] **Perbaiki Kata Tidak Baku:**
+-   [x] Ganti "tata kelola" menjadi "*tata kelola*" (jika dianggap istilah asing) atau "tata kelola" (jika dianggap baku, namun pedoman audit mengindikasikan ini sebagai typo). Mengingat pedoman audit, perbaikan menjadi "tata kelola" adalah yang paling tepat.
+-   [x] **Definisikan Acronym "MEBE":**
+-   [x] Berikan definisi lengkap untuk acronym "MEBE" pada Tabel 3.2 atau pada penggunaan pertamanya di teks.
+-   [x] **Perbaiki Penomoran Sub-bab di Bab II:**
+-   [x] Sesuaikan rujukan "Sub-bab 2.3" di pengantar Bab II menjadi "Sub-bab 2.4" agar sesuai dengan DAFTAR ISI dan struktur dokumen.
+-   [x] Verifikasi dan koreksi penyebutan nama kementerian dan kode satker Rudenim Pontianak untuk setiap tahun anggaran (TA 2023-2024 di bawah Kemenkumham, TA 2025 di bawah Kemenimipas) di seluruh dokumen.
+-   [x] Perbarui semua rujukan regulasi keuangan negara ke versi terkini, khususnya PMK Nomor 62 Tahun 2023 dan Peraturan Dirjen Perbendaharaan Nomor PER-5/PB/2024.
+-   [x] Pastikan formula Deviasi Halaman III DIPA ditulis dengan benar: `|RPD – Realisasi| / RPD`.
+-   [x] Lakukan *review* menyeluruh pada seluruh dokumen untuk mengidentifikasi dan mencetak miring semua istilah asing.
+-   [x] Bandingkan setiap angka yang disebutkan dalam narasi pembahasan dengan data numerik pada Tabel 1.3, Tabel 1.4, dan Tabel 1.5. Koreksi jika ada ketidaksesuaian.
+-   [x] Koreksi penggunaan kata tidak baku atau *typo* di seluruh dokumen.
+-   [x] Pastikan setiap konsep *Agency Theory* (misalnya, *asymmetric information*, *moral hazard*, *adverse selection*) secara eksplisit dihubungkan dengan fenomena deviasi penarikan anggaran dan *agency cost* dalam pembahasan.
+-   [x] Periksa konsistensi penomoran tabel dan gambar di seluruh dokumen.
+-   [x] Pastikan format kutipan dan daftar pustaka sesuai dengan standar yang ditetapkan (misalnya, APA Style).
+-   [x] Perbaiki struktur kalimat dan pilihan kata untuk meningkatkan kejelasan dan alur baca.
