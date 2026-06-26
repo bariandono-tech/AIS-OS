@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart Manajemen Risiko - Rudenim Pontianak</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #e2e8f0;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border-color);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        h2::before {
+            content: "";
+            display: block;
+            width: 4px;
+            height: 1.5rem;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        .btn-download {
+            background-color: #0ea5e9;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+        }
+
+        .btn-download:hover {
+            background-color: #0284c7;
+        }
+
+        .btn-download-png {
+            background-color: #8b5cf6;
+        }
+
+        .btn-download-png:hover {
+            background-color: #7c3aed;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .mermaid {
+            background-color: #0d1117;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+            display: flex;
+            justify-content: center;
+            min-height: 200px;
+        }
+
+        .info-box {
+            background-color: rgba(56, 189, 248, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem;
+            border-radius: 0 8px 8px 0;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+    </style>
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark',
+            securityLevel: 'loose',
+            flowchart: {
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+
+        // Function to download SVG
+        function downloadSVG(containerId, filename) {
+            const container = document.getElementById(containerId);
+            const svg = container.querySelector('svg');
+
+            if (!svg) {
+                alert('Diagram belum selesai dirender. Tunggu sebentar lalu coba lagi.');
+                return;
+            }
+
+            const svgClone = svg.cloneNode(true);
+            if (!svgClone.getAttribute('xmlns')) {
+                svgClone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+            }
+
+            const svgData = new XMLSerializer().serializeToString(svgClone);
+            const blob = new Blob([svgData], { type: 'image/svg+xml;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = filename + '.svg';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+
+        // Function to download PNG (High Res) using html2canvas
+        function downloadPNG(containerId, filename) {
+            const container = document.getElementById(containerId);
+            if (!container.querySelector('svg')) {
+                alert('Diagram belum selesai dirender. Tunggu sebentar lalu coba lagi.');
+                return;
+            }
+
+            // Using html2canvas to take an exact snapshot of the DOM
+            html2canvas(container, {
+                backgroundColor: '#0d1117',
+                scale: 3, // High resolution
+                logging: false
+            }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = filename + '_HD.png';
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            }).catch(err => {
+                console.error("html2canvas error:", err);
+                alert("Gagal mengunduh PNG. Silakan gunakan fitur Screenshot / Snipping Tool.");
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Flowchart Manajemen Risiko</h1>
+            <p class="subtitle">Berdasarkan Pedoman KEMENIMIPAS MIP-OT.02.02-47 TAHUN 2025</p>
+        </header>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>1. Siklus Manajemen Risiko Global</h2>
+                <div class="action-buttons">
+                    <button class="btn-download btn-download-png"
+                        onclick="downloadPNG('mermaid-global', 'Flowchart_Global_Manajemen_Risiko')">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                        Download PNG (HD)
+                    </button>
+                    <button class="btn-download"
+                        onclick="downloadSVG('mermaid-global', 'Flowchart_Global_Manajemen_Risiko')">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                        Download SVG
+                    </button>
+                </div>
+            </div>
+            <div id="mermaid-global" class="mermaid">
+                flowchart TB
+                subgraph INFRA["INFRASTRUKTUR MANAJEMEN RISIKO"]
+                direction LR
+                L1["Lini Pertama\nPemilik & Pengelola Risiko\n(Menteri s.d. Kepala UPT)"]
+                L2["Lini Kedua\nUnit Manajemen Risiko\n(Biro SDMA, Inspektorat,\nBidang di Kanwil)"]
+                L3["Lini Ketiga\nUnit Pengawas Intern\n(Inspektorat Jenderal)"]
+                L1 --- L2 --- L3
+                end
+
+                INFRA --> S1
+
+                S1["1️⃣ PENETAPAN KONTEKS\n• Sasaran Strategis & Proses Bisnis\n• Pemangku Kepentingan\n• Kriteria Dampak & Frekuensi\n• Selera Risiko (Risk Appetite)"]
+
+                S1 --> S2
+
+                S2["2️⃣ IDENTIFIKASI RISIKO\n(Batas Akhir: 31 Januari)\nBerdasarkan Renstra & Perjanjian Kinerja"]
+
+                S2 --> KAT
+
+                subgraph KAT["6 KATEGORI RISIKO RESMI"]
+                direction LR
+                K1["Kebijakan"]
+                K2["Bencana"]
+                K3["Kecurangan\n(Fraud)"]
+                K4["Kepatuhan"]
+                K5["Operasional"]
+                K6["Pemangku\nKepentingan"]
+                end
+
+                KAT --> S3
+
+                S3["3️⃣ ANALISIS RISIKO\n• Ukur Kemungkinan (1-5)\n• Ukur Dampak (1-5)\n• Hitung Inherent Risk\n• Matriks 5x5"]
+
+                S3 --> S4
+
+                S4["4️⃣ EVALUASI RISIKO\n• Bandingkan dengan Selera Risiko\n• Buat Peta Risiko\n• Tentukan Prioritas"]
+
+                S4 --> S5
+
+                S5["5️⃣ RESPONS RISIKO\n• Root Cause Analysis (RCA)\n• Rencana Tindak Pengendalian (RTP)\n• Turunkan ke Residual Risk"]
+
+                S5 --> S6
+
+                S6["6️⃣ PEMANTAUAN\n• Triwulanan & Tahunan\n• Pantau peristiwa risiko\n• Evaluasi efektivitas RTP"]
+
+                S6 --> S7
+
+                S7["7️⃣ INFORMASI & KOMUNIKASI\n• Rapat Berkala & Dialog Risiko\n• Laporan Triwulanan ke Kanwil\n• Laporan Tahunan"]
+
+                S7 -.->|"Siklus Berulang\nTahun Berikutnya"| S1
+
+                subgraph DAMPAK["6 AREA PENGUKURAN DAMPAK (Lampiran II)"]
+                direction LR
+                D1["Beban\nKeuangan"]
+                D2["Reputasi"]
+                D3["Keselamatan\nKerja"]
+                D4["Kinerja\n/ IKU"]
+                D5["Temuan\nPemeriksaan"]
+                D6["Gugatan\nHukum"]
+                end
+
+                S3 ---|"Menggunakan\nKriteria"| DAMPAK
+
+                subgraph OUTPUT["DOKUMEN OUTPUT"]
+                direction LR
+                O1["Piagam MR"]
+                O2["Register Risiko"]
+                O3["Peta Risiko"]
+                O4["RTP"]
+                O5["Laporan\nTriwulanan/Tahunan"]
+                end
+
+                S7 --> OUTPUT
+
+                style INFRA fill:#1a1a2e,stroke:#e94560,color:#fff
+                style KAT fill:#16213e,stroke:#0f3460,color:#fff
+                style DAMPAK fill:#0f3460,stroke:#533483,color:#fff
+                style OUTPUT fill:#1a1a2e,stroke:#e94560,color:#fff
+                style S1 fill:#533483,stroke:#e94560,color:#fff
+                style S2 fill:#533483,stroke:#e94560,color:#fff
+                style S3 fill:#533483,stroke:#e94560,color:#fff
+                style S4 fill:#533483,stroke:#e94560,color:#fff
+                style S5 fill:#533483,stroke:#e94560,color:#fff
+                style S6 fill:#533483,stroke:#e94560,color:#fff
+                style S7 fill:#533483,stroke:#e94560,color:#fff
+            </div>
+            <div class="info-box">
+                Menggambarkan siklus lengkap 7 tahapan proses Manajemen Risiko sesuai pedoman, dari Penetapan Konteks
+                hingga Informasi & Komunikasi. Disertai Model Tiga Lini sebagai infrastruktur dan 6 Kategori Risiko
+                resmi sebagai acuan identifikasi.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>2. Siklus Khusus Keuangan - Rudenim Pontianak</h2>
+                <div class="action-buttons">
+                    <button class="btn-download btn-download-png"
+                        onclick="downloadPNG('mermaid-keuangan', 'Flowchart_Keuangan_Manajemen_Risiko')">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                        Download PNG (HD)
+                    </button>
+                    <button class="btn-download"
+                        onclick="downloadSVG('mermaid-keuangan', 'Flowchart_Keuangan_Manajemen_Risiko')">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                        </svg>
+                        Download SVG
+                    </button>
+                </div>
+            </div>
+            <div id="mermaid-keuangan" class="mermaid">
+                flowchart TB
+                START["PENETAPAN KONTEKS KEUANGAN\nSatker: Rudenim Pontianak\nPemilik Risiko: Kepala Rudenim (KPA)\nKoordinator: Kaur TU / PPK"]
+
+                START --> IDENT["IDENTIFIKASI RISIKO\nDomain: Seluruh Proses Bisnis Keuangan"]
+
+                IDENT --> SPLIT{"Klasifikasi ke\nKategori Resmi\nPedoman"}
+
+                SPLIT -->|"Proses bisnis keuangan\ntidak berfungsi"| OPS
+                SPLIT -->|"Kecurangan yang\nmerugikan keuangan negara"| FRAUD
+                SPLIT -->|"Pelanggaran\nperaturan perundang-undangan"| COMPLY
+
+                subgraph OPS["RISIKO OPERASIONAL"]
+                direction TB
+                O1["R1: Tender Sarana Internal\nMemakan Waktu Lama"]
+                O2["R2: Wanprestasi Vendor\n(kualitas/kuantitas tidak sesuai kontrak)"]
+                O3["R3: Keterlambatan Pencairan\n/ Penyerapan DIPA Rendah"]
+                O4["R4: Kehilangan / Kerusakan\nAset BMN"]
+                end
+
+                subgraph FRAUD["RISIKO KECURANGAN"]
+                direction TB
+                F1["R5: Gratifikasi / Kick-back\ndari Vendor ke PPK/Pejabat Pengadaan"]
+                F2["R6: Mark-up HPS\n(Harga Perkiraan Sendiri)"]
+                F3["R7: SPJ Fiktif /\nBukti Pertanggungjawaban Palsu"]
+                end
+
+                subgraph COMPLY["RISIKO KEPATUHAN"]
+                direction TB
+                C1["R8: Pelanggaran Perpres PBJ\n(prosedur lelang tidak sesuai)"]
+                C2["R9: Keterlambatan\nPertanggungjawaban UP/TUP"]
+                C3["R10: Pencatatan BMN\nTidak Sesuai SAP"]
+                end
+
+                OPS --> ANALISIS
+                FRAUD --> ANALISIS
+                COMPLY --> ANALISIS
+
+                ANALISIS["ANALISIS RISIKO\nMatriks 5x5"]
+
+                ANALISIS --> UKUR
+
+                subgraph UKUR["PARAMETER DAMPAK KEUANGAN"]
+                direction LR
+                U1["Beban Keuangan Negara\nLv5: Kerugian &gt; 5% anggaran\nLv4: Kerugian 1-5%\nLv3: Kerugian &lt; 1%"] 
+                U2["Temuan Pemeriksaan\nLv5: Pengembalian ke kas negara\n+ penyimpangan material\nLv4: Pengembalian ke kas negara\nLv3: Temuan administratif"]
+                end
+
+                UKUR --> EVAL["EVALUASI RISIKO\nBandingkan dengan Selera Risiko UPT\n(tidak boleh melebihi Selera Risiko Kanwil)"]
+
+                EVAL --> PETA
+
+                subgraph PETA["PETA RISIKO"]
+                direction LR
+                P1["Sangat Tinggi\n(Merah)"]
+                P2["Tinggi\n(Oranye)"]
+                P3["Sedang\n(Kuning)"]
+                P4["Rendah\n(Hijau)"]
+                P5["Sangat Rendah\n(Biru)"]
+                end
+
+                PETA --> RTP["RESPONS RISIKO\n• Root Cause Analysis (RCA)\n• Rencana Tindak Pengendalian (RTP)\n• Target: Turunkan Inherent Risk → Residual Risk"]
+
+                RTP --> MONITOR
+
+                subgraph MONITOR["PEMANTAUAN & PELAPORAN"]
+                direction TB
+                M1["Triwulanan\n(April, Juli, Oktober)\nLaporan ke Kanwil via Kaur TU"]
+                M2["Tahunan\n(Januari tahun berikutnya)\nEvaluasi efektivitas RTP"]
+                end
+
+                MONITOR -.->|"Siklus Ulang"| IDENT
+
+                style START fill:#0d1b2a,stroke:#1b263b,color:#fff
+                style IDENT fill:#1b263b,stroke:#415a77,color:#fff
+                style SPLIT fill:#415a77,stroke:#778da9,color:#fff
+                style OPS fill:#1b4332,stroke:#2d6a4f,color:#fff
+                style FRAUD fill:#6a040f,stroke:#9d0208,color:#fff
+                style COMPLY fill:#003566,stroke:#0077b6,color:#fff
+                style ANALISIS fill:#240046,stroke:#7b2cbf,color:#fff
+                style UKUR fill:#3c096c,stroke:#7b2cbf,color:#fff
+                style EVAL fill:#240046,stroke:#7b2cbf,color:#fff
+                style PETA fill:#10002b,stroke:#7b2cbf,color:#fff
+                style RTP fill:#240046,stroke:#c77dff,color:#fff
+                style MONITOR fill:#0d1b2a,stroke:#1b263b,color:#fff
+            </div>
+            <div class="info-box">
+                Menggambarkan alur kerja spesifik untuk scope keuangan di Rudenim Pontianak. Setiap risiko dipetakan ke
+                3 kategori resmi yang relevan, dianalisis dengan parameter dampak keuangan, dan dievaluasi hingga
+                menjadi Rencana Tindak Pengendalian (RTP).
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

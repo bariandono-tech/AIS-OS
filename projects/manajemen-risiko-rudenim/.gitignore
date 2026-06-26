@@ -1,0 +1,17 @@
+# Virtual environment
+venv/
+env/
+.env
+
+# Temporary files
+.tmp/
+*.pdf
+*.docx
+
+# Python
+__pycache__/
+*.pyc
+
+# Agent Outputs
+outputs/
+*.log

@@ -1,0 +1,4 @@
+1. Staf keuangan beberapa kali terlambat menginput data SPJ ke dalam aplikasi SAKTI sehingga SPM ditolak oleh KPPN.
+2. Proses pengadaan makanan deteni (sarana internal) gagal mendapatkan vendor karena harga HPS yang disusun PPK ternyata tidak realistis dan di bawah harga pasar.
+3. Terdapat desas-desus bahwa vendor penyedia jasa pemeliharaan gedung memberikan bingkisan/hadiah kepada panitia pengadaan setelah kontrak ditandatangani.
+4. Pencatatan aset berupa 5 unit laptop di aplikasi SIMAK BMN belum bisa dilakukan karena dokumen Berita Acara Serah Terima (BAST) hilang entah ke mana.
