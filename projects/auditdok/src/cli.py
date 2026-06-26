@@ -134,7 +134,7 @@ def main():
     parser.add_argument("--client", "-n", default="Umum", help="Nama klien (untuk tracking order)")
     parser.add_argument("--focus", "-c", default="", help="Fokus atau permintaan khusus tambahan")
     parser.add_argument("--output", "-o", default="output", help="Folder tujuan penyimpanan hasil")
-    parser.add_argument("--provider", "-p", default="gemini", choices=["gemini", "claude"], help="Provider LLM")
+    parser.add_argument("--provider", "-p", default="gemini", choices=["gemini", "claude", "openrouter"], help="Provider LLM")
     parser.add_argument("--model", "-m", default=None, help="Nama model spesifik (opsional)")
     parser.add_argument("--compile", "-compile", default=None, help="Path ke file markdown hasil audit untuk dicompile langsung ke PDF (Mode Offline/Tanpa API)")
     parser.add_argument("--prompt-only", "-po", action="store_true", help="Hanya susun file prompt gabungan untuk di-copy ke Web AI (Mode Gratis/Bebas Kuota)")
@@ -219,8 +219,7 @@ def main():
         console.print(f"    - Engine : [yellow]{args.provider.upper()} ({args.model or 'Default'})[/yellow]\n")
     
     # Jalankan Workflow
-    use_gemini = (args.provider == "gemini")
-    workflow = AuditWorkflow(use_gemini=use_gemini, model_name=args.model)
+    workflow = AuditWorkflow(provider=args.provider, model_name=args.model)
     
     result = workflow.run(
         file_path=args.file,

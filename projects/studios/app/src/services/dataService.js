@@ -27,10 +27,14 @@ export async function getStacks() {
 
       if (fallbackError) throw fallbackError;
       
-      return fallbackData.map(stack => ({
+      const mappedFallback = fallbackData.map(stack => ({
         ...stack,
         content_count: 0
       }));
+      
+      // Deduplikasi berdasarkan slug (mengatasi efek push mock berkali-kali ke Notion)
+      const uniqueStacks = Array.from(new Map(mappedFallback.map(s => [s.slug, s])).values());
+      return uniqueStacks;
     } catch (err) {
       console.warn('Supabase getStacks failed, using mock fallback:', err.message);
     }

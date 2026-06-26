@@ -44,7 +44,7 @@ def ask_gemini(user_message: str, chat_history: list = None) -> tuple:
         client = get_gemini_client()
     except Exception as e:
         print(f"[AI Agent] Error in get_gemini_client: {e}")
-        return "Maaf, bot sedang mengalami gangguan koneksi ke sistem AI. Silakan coba beberapa saat lagi.", chat_history or []
+        return f"Maaf, terjadi masalah saat menginisialisasi koneksi ke sistem AI: {e}. Pastikan API Key sudah benar.", chat_history or []
         
     # Susun payload percakapan
     contents = []
@@ -92,6 +92,11 @@ def ask_gemini(user_message: str, chat_history: list = None) -> tuple:
                         system_instruction=system_instruction
                     )
                 )
+                # Jika response None tapi tidak ada exception, anggap sebagai kegagalan sementara
+                if response is None:
+                    print(f"[AI Agent] Percobaan {attempt + 1} gagal: Menerima respons None dari API.")
+                    # Lanjutkan ke blok 'except' untuk logic retry
+                    raise ConnectionError("API returned a None response.")
                 break  # Berhasil, keluar dari loop retry
             except Exception as e:
                 error_str = str(e).lower()
@@ -108,10 +113,14 @@ def ask_gemini(user_message: str, chat_history: list = None) -> tuple:
                     delay *= 2  # Exponential backoff
                 else:
                     print(f"[AI Agent] Gemini API Critical Error: {e}")
-                    return "Maaf, koneksi ke sistem AI sedang sibuk atau mengalami gangguan. Silakan coba lagi nanti.", contents
+                    # Jika semua retry gagal, kembalikan pesan error yang jelas
+                    if attempt == max_retries - 1:
+                        return "Maaf, sistem AI sedang mengalami beban tinggi atau gangguan. Mohon coba beberapa saat lagi.", contents
+                    # Jika bukan error transient, langsung gagal
+                    return f"Maaf, terjadi error kritis saat menghubungi sistem AI: {e}", contents
             
         # Tambahkan respon model ke riwayat konten
-        if response.candidates and response.candidates[0].content:
+        if response and response.candidates and response.candidates[0].content:
             contents.append(response.candidates[0].content)
         else:
             return "Maaf, respon dari model kosong.", contents

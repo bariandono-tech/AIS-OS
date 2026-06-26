@@ -1,16 +1,16 @@
 # Graph Report - AIS-OS  (2026-06-22)
 
 ## Corpus Check
-- 365 files · ~472,579 words
+- 374 files · ~569,134 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4118 nodes · 4081 edges · 443 communities (326 shown, 117 thin omitted)
+- 4207 nodes · 4174 edges · 450 communities (331 shown, 119 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `942f9272`
+- Built from commit: `536ef184`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -435,6 +435,12 @@
 - [[_COMMUNITY_Community 440|Community 440]]
 - [[_COMMUNITY_Community 441|Community 441]]
 - [[_COMMUNITY_Community 442|Community 442]]
+- [[_COMMUNITY_Community 443|Community 443]]
+- [[_COMMUNITY_Community 445|Community 445]]
+- [[_COMMUNITY_Community 446|Community 446]]
+- [[_COMMUNITY_Community 447|Community 447]]
+- [[_COMMUNITY_Community 448|Community 448]]
+- [[_COMMUNITY_Community 449|Community 449]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
@@ -463,7 +469,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (443 total, 117 thin omitted)
+## Communities (450 total, 119 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -513,11 +519,11 @@ Nodes (24): Dep:, Fase 1.0 — Pondasi (WAJIB duluan, semua lain bergantung di s
 
 ### Community 10 - "Community 10"
 Cohesion: 0.07
-Nodes (29): add_created_property, addCreated, add_edited_property, addEdited, Validates that all essential config parameters are set., validate_config(), check_note_properties, checkNote (+21 more)
+Nodes (30): @notionhq/client, check_para_views, checkViews, clean_remaining_tf, runCleanup, create_homepage, buildHomepage, dump_para_blocks (+22 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.07
-Nodes (30): @notionhq/client, check_para_views, checkViews, clean_remaining_tf, runCleanup, create_homepage, buildHomepage, dump_para_blocks (+22 more)
+Nodes (29): add_created_property, addCreated, add_edited_property, addEdited, Validates that all essential config parameters are set., validate_config(), check_note_properties, checkNote (+21 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.09
@@ -628,8 +634,8 @@ Cohesion: 0.25
 Nodes (8): However, Step 1 - Write the Whisper prompt yourself., Step 2 - Transcribe:, Step 2.5 - Transcribe video / audio files (only if video files detected), Strategy:, Whisper model:, graphify reference: transcribe video and audio, transcribe
 
 ### Community 39 - "Community 39"
-Cohesion: 0.22
-Nodes (8): dependencies, description, main, name, private, scripts, version, workspaces
+Cohesion: 0.20
+Nodes (9): dependencies, description, main, name, private, scripts, sync, version (+1 more)
 
 ### Community 40 - "Community 40"
 Cohesion: 0.33
@@ -1008,8 +1014,8 @@ Cohesion: 0.48
 Nodes (6): { Client }, deepInspectParaDashboard(), getBlockChildren(), getRichText(), notion, printBlockInfo()
 
 ### Community 150 - "Community 150"
-Cohesion: 0.20
-Nodes (9): dependencies, dotenv, @notionhq/client, description, main, name, scripts, start (+1 more)
+Cohesion: 0.18
+Nodes (10): dependencies, dotenv, @notionhq/client, description, main, name, scripts, start (+2 more)
 
 ### Community 151 - "Community 151"
 Cohesion: 0.38
@@ -1276,8 +1282,8 @@ Cohesion: 0.50
 Nodes (3): 🏛️ 1. Core Architecture, 📂 2. Categories in index.md, CLAUDE.md — LLM Wiki Agent Rules (Office & Employment)
 
 ### Community 266 - "Community 266"
-Cohesion: 0.10
-Nodes (25): PaymentSimulatorModal(), contentItems, contentTypeConfig, flashcards, getContentByStack(), getFlashcardsByContentId(), getReferencesByContentId(), references (+17 more)
+Cohesion: 0.08
+Nodes (28): PaymentSimulatorModal(), contentItems, contentTypeConfig, flashcards, getContentByStack(), getFlashcardsByContentId(), getReferencesByContentId(), references (+20 more)
 
 ### Community 267 - "Community 267"
 Cohesion: 0.07
@@ -1459,6 +1465,14 @@ Nodes (8): 1. Otorisasi Akses (Access Control), 2. Pencarian Dokumen Lokal (Loca
 Cohesion: 0.33
 Nodes (6): { Client }, fs, notion, parseMarkdownToRichText(), path, sync()
 
+### Community 341 - "Community 341"
+Cohesion: 0.27
+Nodes (10): checkIfTaskExists(), { Client }, fs, getIndonesianDateLabel(), getTargetDate(), main(), notion, parseMarkdownToRichText() (+2 more)
+
+### Community 344 - "Community 344"
+Cohesion: 0.05
+Nodes (42): 10. Kepentingan Ilmu Fisiologi Tubuh Manusia dalam Ilmu Gizi, 1. Anatomi dan fisiologi merupakan pondasi saat kita memahami, 1. Berikan contoh tentang berbagai level organisasi tubuh manusia, 1. Nefron adalah contoh sebuah ….., 1. Pengertian Fisiologi Tubuh Manusia, 1. Sel adalah unit dasar dari struktur dan fungsi makhluk hidup. Selsel tersebut merupakan unit terkecil yang mampu melaksanakan, 1. Teori Organisasi Seluler, 2. Fisiologi adalah ilmu yang mempelajari tentang karakteristik khusus dan mekanisme yang mencirikan manusia sebagai makhluk hidup. Manusia sebagai makhluk hidup mampu bertahan sebagai ha- (+34 more)
+
 ### Community 347 - "Community 347"
 Cohesion: 0.13
 Nodes (14): 1. Headline (Judul Profil), 2. About / Summary (Tentang Saya), 3. Featured Section (Bagian Unggulan), 4. Experience Section (Pengalaman Kerja), 5. Skills Section (Keahlian), Contoh Penulisan:, LinkedIn Profile Blueprint for Junior JS/TS Vibe Coder, Opsi A: Fullstack-Focused (Sangat disarankan jika Anda menguasai frontend + backend) (+6 more)
@@ -1596,7 +1610,7 @@ Nodes (8): border0, borders0, bordersAll, borderSingle, doc, {
 
 ### Community 394 - "Community 394"
 Cohesion: 0.09
-Nodes (27): AuditAgent, Menjalankan audit terhadap dokumen menggunakan LLM pilihan., Menghasilkan output mock terstruktur untuk keperluan pengujian luring., find_draft_order_by_compile_path(), log_order(), main(), print_banner(), Mencetak banner program. (+19 more)
+Nodes (27): AuditAgent, Menghasilkan output mock terstruktur untuk keperluan pengujian luring., Menjalankan audit terhadap dokumen menggunakan LLM pilihan., find_draft_order_by_compile_path(), log_order(), main(), print_banner(), Mencetak banner program. (+19 more)
 
 ### Community 395 - "Community 395"
 Cohesion: 0.10
@@ -1693,30 +1707,31 @@ Cohesion: 0.50
 Nodes (3): Tabel 1.3 Deviasi Halaman III DIPA Belanja Modal Rudenim Pontianak TA 2023–2025, Tabel 1.4 Bulan Kritis Deviasi Belanja Modal Rudenim Pontianak TA 2023–2025, Tabel 1.5 Contoh Paket Belanja Modal yang Mengalami Pergeseran Realisasi TA 2023–2025
 
 ### Community 442 - "Community 442"
+Cohesion: 0.12
+Nodes (15): **1. Struktur dan Kepentingan**, **2. Perbaikan dan Penambahan**, **3. Struktur Rekomendasi**, **4. Contoh Penutup**, **5. Catatan Penting**, **Audit Integrasi (Integration)**, **Audit Struktur Organisasi (SOP)**, Contoh Checklist Tindakan (PRD Format) (+7 more)
+
+### Community 443 - "Community 443"
+Cohesion: 0.50
+Nodes (3): 2026-06-22, Menyusun Kerangka Hasil Review, Work Log - Revisi Makalah Akuntansi
+
+### Community 445 - "Community 445"
 Cohesion: 0.50
 Nodes (3): doc, docx, fs
 
 ## Knowledge Gaps
-- **1725 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `workspaces`, `{
-  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
-  AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
-  PageNumber, PageBreak, Header, Footer,
-  PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
-  TabStopType, NumberFormat, ImageRun,
-  TableOfContents, SequentialIdentifier
-}` (+1720 more)
+- **1781 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `workspaces`, `sync` (+1776 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **117 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **119 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 79` to `Community 280`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `dotenv` connect `Community 79` to `Community 10`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `docx` connect `Community 362` to `Community 374`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private` to the rest of the system?**
-  _1756 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1812 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

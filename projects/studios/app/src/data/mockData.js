@@ -107,6 +107,7 @@ export const contentItems = [
       ],
     },
     order_index: 1,
+    prerequisites: ["c2"],
   },
   {
     id: "c2",
@@ -115,6 +116,7 @@ export const contentItems = [
     title: "Flashcard: Dasar-Dasar Perpajakan Indonesia",
     body: null,
     order_index: 2,
+    prerequisites: [],
   },
   {
     id: "c3",
@@ -159,9 +161,42 @@ PPN yang dibayar saat **membeli/memperoleh** BKP/JKP
 3. **Faktur Pajak cacat** = tidak bisa dikreditkan sebagai Pajak Masukan
 
 > 💡 **Tips ujian**: Fokus pada mekanisme pengkreditan PK-PM dan kode faktur pajak!
+
+## Uji Coba Koding: Simulasi Hitung PPN
+Berikut adalah editor interaktif untuk mensimulasikan penghitungan PPN di JavaScript. Anda dapat mengubah nominal transaksi:
+
+\`\`\`js-playground
+// Simulasi Hitung PPN 11%
+const transaksi = [
+  { barang: "Laptop", harga: 15000000 },
+  { barang: "Mouse", harga: 300000 }
+];
+
+const tarifPPN = 0.11; // 11%
+
+transaksi.forEach(item => {
+  const ppn = item.harga * tarifPPN;
+  const total = item.harga + ppn;
+  console.log(\`\${item.barang}: Rp \${item.harga.toLocaleString()} | PPN: Rp \${ppn.toLocaleString()} | Total: Rp \${total.toLocaleString()}\`);
+});
+\`\`\`
+
+## Refaktor Kode Pajak
+Berikut adalah contoh perbedaan struktur kode ketika melakukan migrasi modul hitung PPN dari model konvensional ke model fungsional berorientasi PMK terbaru:
+
+\`\`\`diff-widget
+- function hitungPajak(harga) {
+-   return harga * 0.1; // tarif lama 10%
+- }
++ function hitungPajak(harga, tarif = 0.11) {
++   // tarif baru 11% sesuai UU HPP
++   return harga * tarif;
++ }
+\`\`\`
 `,
     },
     order_index: 3,
+    prerequisites: ["c2"],
   },
   {
     id: "c4",
@@ -170,6 +205,7 @@ PPN yang dibayar saat **membeli/memperoleh** BKP/JKP
     title: "Referensi & Link Penting Perpajakan",
     body: null,
     order_index: 4,
+    recommended: ["c2"],
   },
   {
     id: "c5",
@@ -196,6 +232,7 @@ PPN yang dibayar saat **membeli/memperoleh** BKP/JKP
       ],
     },
     order_index: 5,
+    prerequisites: ["c1"],
   },
   {
     id: "c6",
@@ -223,6 +260,7 @@ PPN yang dibayar saat **membeli/memperoleh** BKP/JKP
       ],
     },
     order_index: 6,
+    prerequisites: ["c3"],
   },
   {
     id: "c7",
@@ -269,6 +307,7 @@ Penghasilan Bruto
 `,
     },
     order_index: 7,
+    prerequisites: ["c1", "c3"],
   },
 
   // --- Hukum Syariah Stack ---

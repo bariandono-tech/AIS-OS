@@ -5,5 +5,8 @@
     "projects/*",
     "scripts/*",
     "skripsi/drafts"
-  ]
+  ],
+  "scripts": {
+    "sync": "node scripts/notion/sync_active_worklogs.js"
+  }
 }

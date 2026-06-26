@@ -5,8 +5,11 @@ from .agent import AuditAgent
 from .generator import generate_pdf_report, generate_markdown_files
 
 class AuditWorkflow:
-    def __init__(self, use_gemini=True, model_name=None):
-        self.agent = AuditAgent(use_gemini=use_gemini, model_name=model_name)
+    def __init__(self, provider="gemini", model_name=None, use_gemini=None):
+        # Backward compatibility for use_gemini
+        if use_gemini is not None:
+            provider = "gemini" if use_gemini else "claude"
+        self.agent = AuditAgent(provider=provider, model_name=model_name)
         
         # Cari lokasi folder skills
         current_dir = os.path.dirname(os.path.abspath(__file__))

@@ -1,11 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import "./index.css";
 import { getStacks, getPurchases, purchaseStack, getReferences, getContentByStack } from "./services/dataService";
 import { supabase, HAS_SUPABASE } from "./lib/supabaseClient";
 import Dashboard from "./pages/Dashboard";
 import StackPage from "./pages/StackPage";
 import ContentViewer from "./pages/ContentViewer";
+import { createClient } from '@supabase/supabase-js';
 import AuthPage from "./pages/AuthPage";
+import MarginaliaView from "./pages/MarginaliaView";
+import { contentItems as mockContents } from "./data/mockData";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("dashboard");
@@ -15,9 +18,54 @@ function App() {
   const [user, setUser] = useState(null);
   const [purchases, setPurchases] = useState([]);
 
+  // Forge: Theme + Reading Progress
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('studios-theme') || 'light';
+    }
+    return 'light';
+  });
+  const [readingProgress, setReadingProgress] = useState(0);
+  const viewportRef = useRef(null);
+
+  // Celebration toast
+  const [celebration, setCelebration] = useState(null);
+
+  // Apply theme to document
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('studios-theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => setTheme(t => t === 'light' ? 'dim' : 'light');
+
+  // Reading progress tracker
+  const handleViewportScroll = useCallback(() => {
+    const el = viewportRef.current;
+    if (!el) return;
+    const scrollTop = el.scrollTop;
+    const scrollHeight = el.scrollHeight - el.clientHeight;
+    const progress = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    setReadingProgress(Math.min(progress, 100));
+  }, []);
+
+  useEffect(() => {
+    const el = viewportRef.current;
+    if (el) {
+      el.addEventListener('scroll', handleViewportScroll, { passive: true });
+      return () => el.removeEventListener('scroll', handleViewportScroll);
+    }
+  }, [handleViewportScroll]);
+
+  // Show celebration toast
+  const showCelebration = (title, sub) => {
+    setCelebration({ title, sub });
+    setTimeout(() => setCelebration(null), 4000);
+  };
+
   // Sidebar visibility states
   const [leftSidebarOpen, setLeftSidebarOpen] = useState(true);
-  const [rightSidebarOpen, setRightSidebarOpen] = useState(true);
+  const [rightSidebarOpen, setRightSidebarOpen] = useState(false);
 
   // Cache contents of all stacks to list them hierarchically in left sidebar
   const [contentsCache, setContentsCache] = useState({});
@@ -96,6 +144,7 @@ function App() {
       await purchaseStack(stackId);
       const purchasedIds = await getPurchases();
       setPurchases(purchasedIds || []);
+      setRightSidebarOpen(false);
     } catch (err) {
       alert("Gagal membeli stack: " + err.message);
     }
@@ -110,10 +159,8 @@ function App() {
   };
 
   const isStackLocked = (stack) => {
-    if (!stack) return false;
-    if (stack.color === "#free" || stack.color === "free") return false;
-    if (!HAS_SUPABASE) return false;
-    return !purchases.includes(stack.id);
+    // DEV MODE: Unlock everything so user can test their synced Notion data
+    return false;
   };
 
   const navigateTo = (page, data) => {
@@ -122,13 +169,13 @@ function App() {
       setCurrentStack(null);
       setCurrentContent(null);
       setLeftSidebarOpen(true);
-      setRightSidebarOpen(true);
+      setRightSidebarOpen(false);
     } else if (page === "stack") {
       setCurrentPage("stack");
       setCurrentStack(data);
       setCurrentContent(null);
       setLeftSidebarOpen(true);
-      setRightSidebarOpen(true);
+      setRightSidebarOpen(isStackLocked(data));
       if (data) {
         setExpandedStacks((prev) => ({ ...prev, [data.slug]: true }));
         // If content cache not loaded yet, fetch it
@@ -146,16 +193,13 @@ function App() {
           setExpandedStacks((prev) => ({ ...prev, [matchingStack.slug]: true }));
         }
       }
-      // Check if it is interactive HTML widget
-      const isHTML = data && data.type === "notes" && data.body?.markdown && (
-        data.body.markdown.trim().startsWith("<") || 
-        data.body.markdown.trim().includes("</script>") ||
-        data.body.markdown.toLowerCase().includes("<iframe")
-      );
-      if (isHTML) {
-        setLeftSidebarOpen(false);
-        setRightSidebarOpen(false);
-      }
+      // Auto-Focus Reading Mode: close left and right sidebars on reader load
+      setLeftSidebarOpen(false);
+      setRightSidebarOpen(false);
+    } else if (page === "marginalia") {
+      setCurrentPage("marginalia");
+      setLeftSidebarOpen(false);
+      setRightSidebarOpen(false);
     } else if (page === "auth") {
       setCurrentPage("auth");
     }
@@ -209,79 +253,92 @@ function App() {
             className={`header-toggle-btn ${leftSidebarOpen ? "header-toggle-btn--active" : ""}`}
             title="Toggle File Explorer (Kiri)"
             id="toggle-left-sidebar"
+            style={{ marginRight: "4px" }}
           >
             <i className="fa-solid fa-bars"></i>
           </button>
           
           <div className="app-logo-immersive" onClick={() => navigateTo("dashboard")}>
-            <div className="navbar__logo-icon" style={{ fontSize: "14px", width: "28px", height: "28px" }}>📚</div>
-            <div className="navbar__logo-text" style={{ fontSize: "16px" }}>
-              Studi<span>OS</span>
-            </div>
-          </div>
-
-          {/* Breadcrumb */}
-          <div className="app-breadcrumb-immersive">
-            <span className="app-breadcrumb-item" onClick={() => navigateTo("dashboard")}>
-              root
+            <span className="brand-mark" style={{ fontFamily: "var(--serif-display)", fontWeight: 800, fontSize: "22px", color: "var(--accent)", marginRight: "4px" }}>S.</span>
+            <span className="brand-name" style={{ fontFamily: "var(--serif-display)", fontWeight: 700, fontSize: "18px" }}>StudiOS</span>
+            <span className="brand-tag" style={{ borderLeft: "1px solid var(--rule)", paddingLeft: "8px", marginLeft: "8px", fontStyle: "italic", fontSize: "11px", color: "var(--ink-3)", fontFamily: "var(--serif-body)" }}>
+              your study operating system
             </span>
-            {currentStack && (
-              <>
-                <span>/</span>
-                <span 
-                  className={`app-breadcrumb-item ${!currentContent ? "active" : ""}`}
-                  onClick={() => navigateTo("stack", currentStack)}
-                >
-                  {currentStack.icon} {currentStack.title}
-                </span>
-              </>
-            )}
-            {currentContent && (
-              <>
-                <span>/</span>
-                <span className="app-breadcrumb-item active">
-                  {currentContent.title}
-                </span>
-              </>
-            )}
           </div>
         </div>
 
         <div className="header-right-group">
-          {user ? (
-            <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <span style={{ fontSize: "11px", color: "var(--text-secondary)" }}>
-                👤 {user.email}
-              </span>
-              <button
-                className="type-tab"
-                onClick={handleLogout}
-                id="header-logout"
-                style={{ fontSize: "11px", padding: "4px 10px" }}
-              >
-                Keluar
-              </button>
-            </div>
-          ) : (
-            <button
-              className="type-tab type-tab--active"
-              onClick={() => navigateTo("auth")}
-              id="header-login"
-              style={{ fontSize: "11px", padding: "4px 10px" }}
+          <nav className="primary-nav" style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+            <button 
+              className={`nav-link-tab ${currentPage === "dashboard" ? "active" : ""}`} 
+              onClick={() => navigateTo("dashboard")}
             >
-              Masuk
+              Library
             </button>
-          )}
+            <button 
+              className={`nav-link-tab ${currentPage === "stack" ? "active" : ""}`} 
+              onClick={() => currentStack && navigateTo("stack", currentStack)}
+              style={{ opacity: currentStack ? 1 : 0.4, cursor: currentStack ? "pointer" : "not-allowed" }}
+              disabled={!currentStack}
+            >
+              Series
+            </button>
+            <button 
+              className={`nav-link-tab ${currentPage === "viewer" ? "active" : ""}`} 
+              onClick={() => currentContent && navigateTo("viewer", currentContent)}
+              style={{ opacity: currentContent ? 1 : 0.4, cursor: currentContent ? "pointer" : "not-allowed" }}
+              disabled={!currentContent}
+            >
+              Reading
+            </button>
+            <button 
+              className={`nav-link-tab ${currentPage === "marginalia" ? "active" : ""}`} 
+              onClick={() => currentContent && navigateTo("marginalia")}
+              style={{ opacity: currentContent ? 1 : 0.4, cursor: currentContent ? "pointer" : "not-allowed" }}
+              disabled={!currentContent}
+            >
+              Marginalia
+            </button>
+            
+            <span className="nav-separator" style={{ color: "var(--rule)", userSelect: "none" }}>|</span>
+            
+            <button
+              className="theme-toggle"
+              onClick={toggleTheme}
+              id="theme-toggle"
+              style={{ border: "1px solid var(--rule)", padding: "4px 8px", fontSize: "11px", fontVariant: "small-caps", letterSpacing: "0.08em" }}
+            >
+              {theme === 'light' ? 'dim' : 'light'}
+            </button>
 
-          <button
-            onClick={toggleRightSidebar}
-            className={`header-toggle-btn ${rightSidebarOpen ? "header-toggle-btn--active" : ""}`}
-            title="Toggle Detail & Referensi (Kanan)"
-            id="toggle-right-sidebar"
-          >
-            <i className="fa-solid fa-circle-info"></i>
-          </button>
+            {user ? (
+              <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+                <span className="user-email-header" style={{ fontSize: "11px", color: "var(--ink-3)", fontStyle: "italic", maxWidth: "120px", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                  {user.email}
+                </span>
+                <button
+                  className="theme-toggle"
+                  onClick={handleLogout}
+                  id="header-logout"
+                  style={{ border: "1px solid var(--rule)", padding: "4px 8px", fontSize: "11px", fontVariant: "small-caps", letterSpacing: "0.08em" }}
+                >
+                  keluar
+                </button>
+              </div>
+            ) : (
+              <button
+                className="theme-toggle"
+                onClick={() => navigateTo("auth")}
+                id="header-login"
+                style={{ border: "1px solid var(--rule)", padding: "4px 8px", fontSize: "11px", fontVariant: "small-caps", letterSpacing: "0.08em" }}
+              >
+                masuk
+              </button>
+            )}
+          </nav>
         </div>
+        {/* Reading Progress Bar */}
+        <div className="reading-progress" style={{ width: `${readingProgress}%` }} />
       </header>
 
       {/* 2. Workspace Area */}
@@ -382,7 +439,7 @@ function App() {
         </aside>
 
         {/* Viewport Tengah: Halaman Aktif */}
-        <main className="app-main-viewport-immersive">
+        <main className="app-main-viewport-immersive" ref={viewportRef}>
           {currentPage === "dashboard" && (
             <Dashboard
               stacks={stacks}
@@ -408,6 +465,15 @@ function App() {
               stack={currentStack}
               onBack={() => navigateTo("stack", currentStack)}
               onFlashcardProgress={(index, total) => setFlashcardProgress({ index, total })}
+              showCelebration={(title, sub) => showCelebration(title, sub)}
+            />
+          )}
+
+          {currentPage === "marginalia" && currentContent && (
+            <MarginaliaView
+              content={currentContent}
+              user={user}
+              onBack={() => navigateTo("viewer", currentContent)}
             />
           )}
 
@@ -427,113 +493,52 @@ function App() {
           <div className="sidebar-right-scroll">
             
             {/* Context 1: Dashboard Context */}
-            {currentPage === "dashboard" && (
-              <>
-                <div className="right-sidebar-section">
-                  <div className="right-sidebar-section-title">Informasi Akun</div>
-                  <div className="sidebar-meta-list">
-                    <div className="sidebar-meta-item">
-                      <span className="sidebar-meta-label">Status Sesi</span>
-                      <span className="sidebar-meta-val">
-                        {user ? "Terautentikasi" : "Tamu (Belum Masuk)"}
-                      </span>
-                    </div>
-                    {user && (
-                      <div className="sidebar-meta-item">
-                        <span className="sidebar-meta-label">Email</span>
-                        <span className="sidebar-meta-val" style={{ wordBreak: "break-all" }}>
-                          {user.email}
-                        </span>
-                      </div>
-                    )}
-                  </div>
-                </div>
-
-                <div className="right-sidebar-section">
-                  <div className="right-sidebar-section-title">Informasi Workspace</div>
-                  <div className="sidebar-meta-list">
-                    <div className="sidebar-meta-item">
-                      <span className="sidebar-meta-label">Total Topik (Stacks)</span>
-                      <span className="sidebar-meta-val">{stacks.length} mata kuliah</span>
-                    </div>
-                    <div className="sidebar-meta-item">
-                      <span className="sidebar-meta-label">Fitur Utama</span>
-                      <span className="sidebar-meta-val" style={{ fontSize: "11px", color: "var(--text-secondary)", lineHeight: "1.4" }}>
-                        Navigasi instan antar-kuliah menggunakan Explorer sebelah kiri. Aktifkan drawer kanan untuk melihat referensi, progress deck, dan ringkasan.
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </>
-            )}
+            {currentPage === "dashboard" && null}
 
             {/* Context 2: Stack Detail Context (Locked / Unlocked) */}
-            {currentPage === "stack" && currentStack && (
-              <>
-                <div className="right-sidebar-section">
-                  <div className="right-sidebar-section-title">Detail Mata Kuliah</div>
-                  <div className="sidebar-meta-list">
-                    <div className="sidebar-meta-item">
-                      <span className="sidebar-meta-label">Nama Stack</span>
-                      <span className="sidebar-meta-val">
-                        {currentStack.icon} {currentStack.title}
-                      </span>
-                    </div>
-                    <div className="sidebar-meta-item">
-                      <span className="sidebar-meta-label">Status Pembelian</span>
-                      <span className="sidebar-meta-val">
-                        {currentStackLocked ? "🔒 Terkunci (Premium)" : "🔓 Terbuka / Free"}
-                      </span>
-                    </div>
+            {currentPage === "stack" && currentStack && currentStackLocked && (
+              <div className="right-sidebar-section" style={{ background: "rgba(255, 255, 255, 0.02)", padding: "16px", borderRadius: "8px", border: "1px solid rgba(225,112,85,0.3)" }}>
+                <div className="right-sidebar-section-title" style={{ color: "var(--color-reference)", border: "none" }}>PAKET PREMIUM</div>
+                <p style={{ fontSize: "12px", color: "var(--text-secondary)", marginBottom: "16px", lineHeight: "1.4" }}>
+                  Buka akses lengkap ke resume terstruktur, flashcard, dan bank referensi untuk topik ini.
+                </p>
+                <div className="sidebar-right-benefits" style={{ marginBottom: "16px" }}>
+                  <div className="sidebar-right-benefit-item">
+                    <span>⚡</span> Rangkuman (Resume & Catatan)
+                  </div>
+                  <div className="sidebar-right-benefit-item">
+                    <span>🃏</span> Dek Flashcard Latihan Mengingat
+                  </div>
+                  <div className="sidebar-right-benefit-item">
+                    <span>🌿</span> Visualisasi Mind Map Interaktif
                   </div>
                 </div>
-
-                {/* If Stack is Locked, display checkout box in sidebar! */}
-                {currentStackLocked && (
-                  <div className="right-sidebar-section" style={{ background: "rgba(255, 255, 255, 0.02)", padding: "16px", borderRadius: "8px", border: "1px solid rgba(225,112,85,0.3)" }}>
-                    <div className="right-sidebar-section-title" style={{ color: "var(--color-reference)", border: "none" }}>PAKET PREMIUM</div>
-                    <p style={{ fontSize: "12px", color: "var(--text-secondary)", marginBottom: "16px", lineHeight: "1.4" }}>
-                      Buka akses lengkap ke resume terstruktur, flashcard, dan bank referensi untuk topik ini.
-                    </p>
-                    <div className="sidebar-right-benefits" style={{ marginBottom: "16px" }}>
-                      <div className="sidebar-right-benefit-item">
-                        <span>⚡</span> Rangkuman (Resume & Catatan)
-                      </div>
-                      <div className="sidebar-right-benefit-item">
-                        <span>🃏</span> Dek Flashcard Latihan Mengingat
-                      </div>
-                      <div className="sidebar-right-benefit-item">
-                        <span>🌿</span> Visualisasi Mind Map Interaktif
-                      </div>
-                    </div>
-                    <div style={{ fontSize: "16px", fontWeight: "800", color: "var(--text-primary)", marginBottom: "16px" }}>
-                      Rp 49.000 <span style={{ fontSize: "10px", color: "var(--text-muted)" }}>/ akses selamanya</span>
-                    </div>
-                    
-                    {user ? (
-                      <button 
-                        className="form-submit" 
-                        onClick={() => {
-                          // Dispatch a click on the main unlock button
-                          const unlockBtn = document.getElementById("btn-unlock-premium");
-                          if (unlockBtn) unlockBtn.click();
-                        }}
-                        style={{ width: "100%", padding: "10px" }}
-                      >
-                        Beli Sekarang
-                      </button>
-                    ) : (
-                      <button 
-                        className="form-submit" 
-                        onClick={() => navigateTo("auth")}
-                        style={{ width: "100%", padding: "10px" }}
-                      >
-                        Masuk untuk Membeli
-                      </button>
-                    )}
-                  </div>
+                <div style={{ fontSize: "16px", fontWeight: "800", color: "var(--text-primary)", marginBottom: "16px" }}>
+                  Rp 49.000 <span style={{ fontSize: "10px", color: "var(--text-muted)" }}>/ akses selamanya</span>
+                </div>
+                
+                {user ? (
+                  <button 
+                    className="form-submit" 
+                    onClick={() => {
+                      // Dispatch a click on the main unlock button
+                      const unlockBtn = document.getElementById("btn-unlock-premium");
+                      if (unlockBtn) unlockBtn.click();
+                    }}
+                    style={{ width: "100%", padding: "10px" }}
+                  >
+                    Beli Sekarang
+                  </button>
+                ) : (
+                  <button 
+                    className="form-submit" 
+                    onClick={() => navigateTo("auth")}
+                    style={{ width: "100%", padding: "10px" }}
+                  >
+                    Masuk untuk Membeli
+                  </button>
                 )}
-              </>
+              </div>
             )}
 
             {/* Context 3: Content Viewer Context */}
@@ -629,6 +634,17 @@ function App() {
           </div>
         </aside>
       </div>
+
+      {/* Celebration Toast */}
+      {celebration && (
+        <div className={`celebration ${celebration ? 'show' : ''}`}>
+          <div className="celebration-text">
+            <div className="celebration-title">{celebration.title}</div>
+            <div className="celebration-sub">{celebration.sub}</div>
+          </div>
+          <button className="celebration-close" onClick={() => setCelebration(null)}>×</button>
+        </div>
+      )}
     </div>
   );
 }

@@ -225,8 +225,8 @@
     "semantic_hash": ""
   },
   "scripts/notion/package.json": {
-    "mtime": 1781935080.7731595,
-    "ast_hash": "b21373e2534d2fe95625c9e9dcb5b1ad",
+    "mtime": 1782107266.0287638,
+    "ast_hash": "c21705f894ea76d8a992dd57300de3a6",
     "semantic_hash": ""
   },
   "scripts/notion/para_blocks.json": {
@@ -950,13 +950,13 @@
     "semantic_hash": ""
   },
   "projects/studios/app/src/App.jsx": {
-    "mtime": 1781935080.7372777,
-    "ast_hash": "25671e6d51266c64b7d63b5d67327636",
+    "mtime": 1782184020.4871306,
+    "ast_hash": "ad824412557261bcc36223f699af9e1b",
     "semantic_hash": ""
   },
   "projects/studios/app/src/data/mockData.js": {
-    "mtime": 1781935080.7372777,
-    "ast_hash": "b2e522f697555fe6ec5b94970d93a472",
+    "mtime": 1782113854.741368,
+    "ast_hash": "49a713dba5b55e1c936bfbccc5441646",
     "semantic_hash": ""
   },
   "projects/studios/app/src/main.jsx": {
@@ -965,18 +965,18 @@
     "semantic_hash": ""
   },
   "projects/studios/app/src/pages/ContentViewer.jsx": {
-    "mtime": 1781935080.7410536,
-    "ast_hash": "f937eaa45ba599983e6d0d568a56e1a3",
+    "mtime": 1782140828.7757795,
+    "ast_hash": "6c33199c2c785f4190e175604bd200b5",
     "semantic_hash": ""
   },
   "projects/studios/app/src/pages/Dashboard.jsx": {
-    "mtime": 1781935080.7410536,
-    "ast_hash": "15429f2501740b186769d2faed4c7ea1",
+    "mtime": 1782113895.1696343,
+    "ast_hash": "6f04fbb19dfac92bd70b3f09f5e7a30c",
     "semantic_hash": ""
   },
   "projects/studios/app/src/pages/StackPage.jsx": {
-    "mtime": 1781935080.7421803,
-    "ast_hash": "eacee21bf17efee9ac37bc8ee03d65df",
+    "mtime": 1782113827.0566182,
+    "ast_hash": "3b5ff0931d685708a0a03863bbcbbdca",
     "semantic_hash": ""
   },
   "projects/studios/app/vite.config.js": {
@@ -1065,8 +1065,8 @@
     "semantic_hash": ""
   },
   "projects/studios/app/index.html": {
-    "mtime": 1781935080.7268574,
-    "ast_hash": "6a74cbeb6117f6ac1eea35a76c09cb76",
+    "mtime": 1782117923.475782,
+    "ast_hash": "82f94ac5d80061cf8c32e3ec0d18f46a",
     "semantic_hash": ""
   },
   "projects/studios/work-log.md": {
@@ -1795,18 +1795,18 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1781937258.346583,
-    "ast_hash": "eabc012100923e11d5c9df0974f01154",
+    "mtime": 1782107260.058227,
+    "ast_hash": "98a0e87fabee428efed00436478846ff",
     "semantic_hash": ""
   },
   "projects/auditdok/src/agent.py": {
-    "mtime": 1782032827.2109692,
-    "ast_hash": "6a4c972357c55afd927a3b9c6a6a288f",
+    "mtime": 1782109729.0427048,
+    "ast_hash": "4ea764a6ff0b060bbdc1b548b9ac7cbd",
     "semantic_hash": ""
   },
   "projects/auditdok/src/cli.py": {
-    "mtime": 1782099430.3409903,
-    "ast_hash": "bcf52ffc1cc69d5a3d982d3d6e932589",
+    "mtime": 1782109478.7169383,
+    "ast_hash": "96112ca8ca24feb92da577fed6e12ec2",
     "semantic_hash": ""
   },
   "projects/auditdok/src/generator.py": {
@@ -1820,8 +1820,8 @@
     "semantic_hash": ""
   },
   "projects/auditdok/src/workflow.py": {
-    "mtime": 1782036800.3838978,
-    "ast_hash": "59f1383952fd32a796fa9bc0ad57e510",
+    "mtime": 1782109468.6952372,
+    "ast_hash": "6b2f2111f30bcdcca252f268a5017ae1",
     "semantic_hash": ""
   },
   "projects/auditdok/00-ideation.md": {
@@ -1870,8 +1870,8 @@
     "semantic_hash": ""
   },
   "projects/auditdok/orders.json": {
-    "mtime": 1782099664.7323325,
-    "ast_hash": "c74f4f6ae399053aff73b88b8f8cef96",
+    "mtime": 1782110411.2262561,
+    "ast_hash": "edcf78f45469d88db084c515016a97e6",
     "semantic_hash": ""
   },
   "projects/auditdok/src/__init__.py": {
@@ -1964,11 +1964,6 @@
     "ast_hash": "d154ea48c182c10d6d7dcff24edf32e6",
     "semantic_hash": ""
   },
-  "projects/Zai PARA PKM/New Text Document.html": {
-    "mtime": 1782100691.3623168,
-    "ast_hash": "871c184b1be802b84ba04b2e32f85d27",
-    "semantic_hash": ""
-  },
   "projects/auditdok/skills/makalah_akuntansi.md": {
     "mtime": 1782099288.643859,
     "ast_hash": "c35b52575348e579bfbd84cb059e738a",
@@ -2017,6 +2012,81 @@
   "projects/revisi-makalah-akuntansi/kerangka_penelitian.png": {
     "mtime": 1781935080.8039627,
     "ast_hash": "e505b7dd13046818684520a3c0a59ce4",
+    "semantic_hash": ""
+  },
+  "scripts/notion/projects_mapping.json": {
+    "mtime": 1782107229.5631907,
+    "ast_hash": "04c78c6ae7334d16dade83a70f4b6a85",
+    "semantic_hash": ""
+  },
+  "scripts/notion/sync_active_worklogs.js": {
+    "mtime": 1782107254.9118087,
+    "ast_hash": "8bbf0beb104c52818f17ffc90b663fb7",
+    "semantic_hash": ""
+  },
+  "projects/Zai PARA PKM/New Text Document.md": {
+    "mtime": 1782100691.3623168,
+    "ast_hash": "871c184b1be802b84ba04b2e32f85d27",
+    "semantic_hash": ""
+  },
+  "projects/revisi-makalah-akuntansi/work-log.md": {
+    "mtime": 1782107277.5995827,
+    "ast_hash": "b4370648b4bb750f41482396f3398f21",
+    "semantic_hash": ""
+  },
+  "projects/Zai PARA PKM/New Text Document 2 - Copy.txt": {
+    "mtime": 1782109363.9813385,
+    "ast_hash": "4727de35fe87fb3249f34990e9e2d415",
+    "semantic_hash": ""
+  },
+  "projects/Zai PARA PKM/New Text Document 2.html": {
+    "mtime": 1782111334.7732852,
+    "ast_hash": "576a839b2cce1541afdb4ba26aa7bce5",
+    "semantic_hash": ""
+  },
+  "projects/Zai PARA PKM/New Text Document.html": {
+    "mtime": 1782107631.4663498,
+    "ast_hash": "fac60bbce1aa98063134e887b150a716",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_openrouter_plus/checklist_perbaikan.md": {
+    "mtime": 1782110411.217039,
+    "ast_hash": "6d50b57e396a0046bd8fcf5320275abc",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_openrouter_plus/laporan_audit.md": {
+    "mtime": 1782110411.2161276,
+    "ast_hash": "f001b2598c25ba61fcfee0dc232a39db",
+    "semantic_hash": ""
+  },
+  "projects/auditdok/output_openrouter_plus/minimap.md": {
+    "mtime": 1782110411.217039,
+    "ast_hash": "471da7c9e0de5044a5f98d07f48b1627",
+    "semantic_hash": ""
+  },
+  "projects/Zai PARA PKM/sdfadf.html": {
+    "mtime": 1782111941.0760148,
+    "ast_hash": "eae164113402cdf4938de2eca3751b9d",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/zai reff.html": {
+    "mtime": 1782111941.0760148,
+    "ast_hash": "eae164113402cdf4938de2eca3751b9d",
+    "semantic_hash": ""
+  },
+  "projects/studios/A4_Buku_Ajar_text.txt": {
+    "mtime": 1782116429.1855555,
+    "ast_hash": "b834a1b68526d6c8ffd87f4109c3eccc",
+    "semantic_hash": ""
+  },
+  "projects/studios/buku_ajar_bab_1_2.md": {
+    "mtime": 1782116674.3164537,
+    "ast_hash": "4930a9e364236d19fd40f7b42ab1e2d3",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/src/pages/MarginaliaView.jsx": {
+    "mtime": 1782123051.02807,
+    "ast_hash": "0fd305e25a2d55da9e654367a457192a",
     "semantic_hash": ""
   }
 }

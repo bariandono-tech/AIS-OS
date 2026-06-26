@@ -4,7 +4,8 @@
   "description": "Notion Integration Testing",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "sync": "node sync_active_worklogs.js"
   },
   "dependencies": {
     "@notionhq/client": "*",

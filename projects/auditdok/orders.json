@@ -108,5 +108,75 @@
     "status": "success",
     "output_dir": "projects/revisi-makalah-akuntansi/output",
     "timestamp": "2026-06-22 10:41:04"
+  },
+  {
+    "id": 12,
+    "client": "SIM-OR",
+    "file": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823.pdf",
+    "tier": "basic",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_openrouter",
+    "timestamp": "2026-06-22 13:26:19"
+  },
+  {
+    "id": 13,
+    "client": "SIM-OR",
+    "file": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823.pdf",
+    "tier": "basic",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_openrouter",
+    "timestamp": "2026-06-22 13:28:45"
+  },
+  {
+    "id": 14,
+    "client": "SIM-OR",
+    "file": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823.pdf",
+    "tier": "basic",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_openrouter",
+    "timestamp": "2026-06-22 13:28:59"
+  },
+  {
+    "id": 15,
+    "client": "SIM-OR",
+    "file": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823.pdf",
+    "tier": "basic",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_openrouter",
+    "timestamp": "2026-06-22 13:29:14"
+  },
+  {
+    "id": 16,
+    "client": "SIM-OR",
+    "file": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823.pdf",
+    "tier": "basic",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_openrouter",
+    "timestamp": "2026-06-22 13:31:47"
+  },
+  {
+    "id": 17,
+    "client": "SIM-OR",
+    "file": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823.pdf",
+    "tier": "basic",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_openrouter",
+    "timestamp": "2026-06-22 13:34:09"
+  },
+  {
+    "id": 18,
+    "client": "SIM-OR-PLUS",
+    "file": "MAKALAH_SIM - AJIE_BARIANDONO_2110426823.pdf",
+    "tier": "plus",
+    "type": "makalah",
+    "status": "success",
+    "output_dir": "projects/auditdok/output_openrouter_plus",
+    "timestamp": "2026-06-22 13:40:11"
   }
 ]

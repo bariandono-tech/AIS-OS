@@ -1,0 +1,133 @@
+{
+  "stacksCount": 6,
+  "contentsCount": 19,
+  "stacks": [
+    {
+      "id": "38978c4c-e388-81db-8fc2-e2ae867aa3e3",
+      "slug": "metodologi-penelitian",
+      "title": "Metodologi Penelitian"
+    },
+    {
+      "id": "38978c4c-e388-814f-a67b-c17307a05c27",
+      "slug": "audit-assurance",
+      "title": "Audit & Assurance"
+    },
+    {
+      "id": "38978c4c-e388-8161-b12c-d52aa5ed57fe",
+      "slug": "manajemen-keuangan",
+      "title": "Manajemen Keuangan"
+    },
+    {
+      "id": "38978c4c-e388-818b-8383-f15cae79612c",
+      "slug": "statistika-penelitian",
+      "title": "Statistika Penelitian"
+    },
+    {
+      "id": "38978c4c-e388-813c-b320-daa0bf014b5a",
+      "slug": "hukum-syariah",
+      "title": "Hukum Syariah"
+    },
+    {
+      "id": "38978c4c-e388-814e-b33f-e1961b1a46dd",
+      "slug": "akuntansi-pajak",
+      "title": "Akuntansi Pajak"
+    }
+  ],
+  "contents": [
+    {
+      "id": "38978c4c-e388-81dc-84fb-ee44da857177",
+      "stack_id": "38978c4c-e388-81db-8fc2-e2ae867aa3e3",
+      "title": "Referensi Tools & Jurnal Metodologi Penelitian"
+    },
+    {
+      "id": "38978c4c-e388-8101-a7ef-ea32495b4754",
+      "stack_id": "38978c4c-e388-81db-8fc2-e2ae867aa3e3",
+      "title": "Ringkasan Sistematika Penulisan Bab I - III Skripsi"
+    },
+    {
+      "id": "38978c4c-e388-8126-a9b6-d1b1ee9bb281",
+      "stack_id": "38978c4c-e388-814f-a67b-c17307a05c27",
+      "title": "Flashcard: Jenis Opini Audit Laporan Keuangan"
+    },
+    {
+      "id": "38978c4c-e388-817e-8de0-ee2282cd42d0",
+      "stack_id": "38978c4c-e388-814f-a67b-c17307a05c27",
+      "title": "Catatan: Prosedur Audit & Bukti Audit"
+    },
+    {
+      "id": "38978c4c-e388-8127-8676-d3c250894d9a",
+      "stack_id": "38978c4c-e388-8161-b12c-d52aa5ed57fe",
+      "title": "Mind Map: Metode Kelayakan Investasi (Capital Budgeting)"
+    },
+    {
+      "id": "38978c4c-e388-812f-8062-e688bf233d26",
+      "stack_id": "38978c4c-e388-8161-b12c-d52aa5ed57fe",
+      "title": "Ringkasan Time Value of Money & Valuasi Aset"
+    },
+    {
+      "id": "38978c4c-e388-8112-b6f5-c7419e4d2af6",
+      "stack_id": "38978c4c-e388-818b-8383-f15cae79612c",
+      "title": "Flashcard: Konsep Uji Hipotesis Statistika"
+    },
+    {
+      "id": "38978c4c-e388-81c9-9488-d70be0249a1a",
+      "stack_id": "38978c4c-e388-818b-8383-f15cae79612c",
+      "title": "Catatan: Uji Asumsi Klasik Regresi OLS"
+    },
+    {
+      "id": "38978c4c-e388-8112-a1ed-e8306aba780d",
+      "stack_id": "38978c4c-e388-813c-b320-daa0bf014b5a",
+      "title": "Referensi Kajian & Fatwa Keuangan Syariah"
+    },
+    {
+      "id": "38978c4c-e388-819f-b832-d9c2ab513885",
+      "stack_id": "38978c4c-e388-813c-b320-daa0bf014b5a",
+      "title": "Mind Map: Pembagian Riba dalam Fiqh Muamalah"
+    },
+    {
+      "id": "38978c4c-e388-81aa-b186-e15d6a5e403d",
+      "stack_id": "38978c4c-e388-813c-b320-daa0bf014b5a",
+      "title": "Flashcard: Istilah-Istilah Fiqh Muamalah"
+    },
+    {
+      "id": "38978c4c-e388-8145-90ab-d334b4cd5e04",
+      "stack_id": "38978c4c-e388-813c-b320-daa0bf014b5a",
+      "title": "Ringkasan Akad-Akad dalam Perbankan Syariah"
+    },
+    {
+      "id": "38978c4c-e388-8120-b4a0-d2420bd28784",
+      "stack_id": "38978c4c-e388-814e-b33f-e1961b1a46dd",
+      "title": "Catatan: PPh Badan dan Tarif Pasal 17"
+    },
+    {
+      "id": "38978c4c-e388-81c7-b889-f2f994a8e1b9",
+      "stack_id": "38978c4c-e388-814e-b33f-e1961b1a46dd",
+      "title": "Mind Map: Jenis-Jenis Pajak di Indonesia"
+    },
+    {
+      "id": "38978c4c-e388-8192-b240-c4a04b1eea3a",
+      "stack_id": "38978c4c-e388-814e-b33f-e1961b1a46dd",
+      "title": "Rangkuman Coretax System — Sistem Baru DJP 2025"
+    },
+    {
+      "id": "38978c4c-e388-81b3-9d89-c28d5ed3b466",
+      "stack_id": "38978c4c-e388-814e-b33f-e1961b1a46dd",
+      "title": "Referensi & Link Penting Perpajakan"
+    },
+    {
+      "id": "38978c4c-e388-81b7-a3cb-d7ace322ca41",
+      "stack_id": "38978c4c-e388-814e-b33f-e1961b1a46dd",
+      "title": "Catatan Kuliah: PPN dan PPnBM"
+    },
+    {
+      "id": "38978c4c-e388-81e9-a918-c02f04f45d17",
+      "stack_id": "38978c4c-e388-814e-b33f-e1961b1a46dd",
+      "title": "Flashcard: Dasar-Dasar Perpajakan Indonesia"
+    },
+    {
+      "id": "38978c4c-e388-8126-87de-ff93748a456d",
+      "stack_id": "38978c4c-e388-814e-b33f-e1961b1a46dd",
+      "title": "Ringkasan PPh Pasal 21 — Tarif TER Terbaru 2025"
+    }
+  ]
+}

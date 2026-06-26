@@ -83,6 +83,26 @@
       "norm_label": "workspaces"
     },
     {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "package_scripts",
+      "community": 39,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "sync",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "package_scripts_sync",
+      "community": 39,
+      "norm_label": "sync"
+    },
+    {
       "label": "__init__.py",
       "file_type": "code",
       "source_file": "projects/auditdok/src/__init__.py",
@@ -126,7 +146,7 @@
       "label": ".run_audit()",
       "file_type": "code",
       "source_file": "projects/auditdok/src/agent.py",
-      "source_location": "L24",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "src_agent_auditagent_run_audit",
       "community": 394,
@@ -136,7 +156,7 @@
       "label": "._generate_mock_response()",
       "file_type": "code",
       "source_file": "projects/auditdok/src/agent.py",
-      "source_location": "L77",
+      "source_location": "L129",
       "_origin": "ast",
       "id": "src_agent_auditagent_generate_mock_response",
       "community": 394,
@@ -146,9 +166,9 @@
       "label": "Menjalankan audit terhadap dokumen menggunakan LLM pilihan.",
       "file_type": "rationale",
       "source_file": "projects/auditdok/src/agent.py",
-      "source_location": "L25",
+      "source_location": "L35",
       "_origin": "ast",
-      "id": "src_agent_rationale_25",
+      "id": "src_agent_rationale_35",
       "community": 394,
       "norm_label": "menjalankan audit terhadap dokumen menggunakan llm pilihan."
     },
@@ -156,9 +176,9 @@
       "label": "Menghasilkan output mock terstruktur untuk keperluan pengujian luring.",
       "file_type": "rationale",
       "source_file": "projects/auditdok/src/agent.py",
-      "source_location": "L78",
+      "source_location": "L130",
       "_origin": "ast",
-      "id": "src_agent_rationale_78",
+      "id": "src_agent_rationale_130",
       "community": 394,
       "norm_label": "menghasilkan output mock terstruktur untuk keperluan pengujian luring."
     },
@@ -426,7 +446,7 @@
       "label": "._load_skill_prompt()",
       "file_type": "code",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L15",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "src_workflow_auditworkflow_load_skill_prompt",
       "community": 394,
@@ -436,7 +456,7 @@
       "label": "._run_multi_pass()",
       "file_type": "code",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L30",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "src_workflow_auditworkflow_run_multi_pass",
       "community": 394,
@@ -446,7 +466,7 @@
       "label": ".run()",
       "file_type": "code",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L102",
+      "source_location": "L105",
       "_origin": "ast",
       "id": "src_workflow_auditworkflow_run",
       "community": 394,
@@ -456,9 +476,9 @@
       "label": "Membaca isi file Markdown dari pustaka Skills.",
       "file_type": "rationale",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L16",
+      "source_location": "L19",
       "_origin": "ast",
-      "id": "src_workflow_rationale_16",
+      "id": "src_workflow_rationale_19",
       "community": 394,
       "norm_label": "membaca isi file markdown dari pustaka skills."
     },
@@ -466,9 +486,9 @@
       "label": "Menjalankan audit multi-pass sesuai tier layanan:         - Basic: 2 pass (Revie",
       "file_type": "rationale",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L31",
+      "source_location": "L34",
       "_origin": "ast",
-      "id": "src_workflow_rationale_31",
+      "id": "src_workflow_rationale_34",
       "community": 394,
       "norm_label": "menjalankan audit multi-pass sesuai tier layanan:         - basic: 2 pass (revie"
     },
@@ -476,9 +496,9 @@
       "label": "Menjalankan orkestrasi alur kerja audit berdasarkan Tier layanan.",
       "file_type": "rationale",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L103",
+      "source_location": "L106",
       "_origin": "ast",
-      "id": "src_workflow_rationale_103",
+      "id": "src_workflow_rationale_106",
       "community": 394,
       "norm_label": "menjalankan orkestrasi alur kerja audit berdasarkan tier layanan."
     },
@@ -539,7 +559,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "botkeu_config",
-      "community": 10,
+      "community": 11,
       "norm_label": "config.py"
     },
     {
@@ -549,7 +569,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "botkeu_config_validate_config",
-      "community": 10,
+      "community": 11,
       "norm_label": "validate_config()"
     },
     {
@@ -559,7 +579,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "botkeu_config_rationale_31",
-      "community": 10,
+      "community": 11,
       "norm_label": "validates that all essential config parameters are set."
     },
     {
@@ -2329,7 +2349,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scratch_check_toc_xml",
-      "community": 442,
+      "community": 445,
       "norm_label": "check_toc_xml.js"
     },
     {
@@ -2339,7 +2359,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scratch_check_toc_xml_docx",
-      "community": 442,
+      "community": 445,
       "norm_label": "docx"
     },
     {
@@ -2349,7 +2369,7 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "scratch_check_toc_xml_fs",
-      "community": 442,
+      "community": 445,
       "norm_label": "fs"
     },
     {
@@ -2359,7 +2379,7 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "scratch_check_toc_xml_doc",
-      "community": 442,
+      "community": 445,
       "norm_label": "doc"
     },
     {
@@ -4066,7 +4086,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/App.jsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "src_app_app",
       "community": 266,
@@ -4126,7 +4146,7 @@
       "label": "flashcards",
       "file_type": "code",
       "source_file": "projects/studios/app/src/data/mockData.js",
-      "source_location": "L481",
+      "source_location": "L513",
       "_origin": "ast",
       "id": "data_mockdata_flashcards",
       "community": 266,
@@ -4136,7 +4156,7 @@
       "label": "references",
       "file_type": "code",
       "source_file": "projects/studios/app/src/data/mockData.js",
-      "source_location": "L582",
+      "source_location": "L614",
       "_origin": "ast",
       "id": "data_mockdata_references",
       "community": 266,
@@ -4146,7 +4166,7 @@
       "label": "getContentByStack()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/data/mockData.js",
-      "source_location": "L662",
+      "source_location": "L694",
       "_origin": "ast",
       "id": "data_mockdata_getcontentbystack",
       "community": 266,
@@ -4156,7 +4176,7 @@
       "label": "getFlashcardsByContentId()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/data/mockData.js",
-      "source_location": "L669",
+      "source_location": "L701",
       "_origin": "ast",
       "id": "data_mockdata_getflashcardsbycontentid",
       "community": 266,
@@ -4166,7 +4186,7 @@
       "label": "getReferencesByContentId()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/data/mockData.js",
-      "source_location": "L674",
+      "source_location": "L706",
       "_origin": "ast",
       "id": "data_mockdata_getreferencesbycontentid",
       "community": 266,
@@ -4176,7 +4196,7 @@
       "label": "contentTypeConfig",
       "file_type": "code",
       "source_file": "projects/studios/app/src/data/mockData.js",
-      "source_location": "L679",
+      "source_location": "L711",
       "_origin": "ast",
       "id": "data_mockdata_contenttypeconfig",
       "community": 266,
@@ -4233,10 +4253,40 @@
       "norm_label": "contentviewer.jsx"
     },
     {
+      "label": "playChime()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "pages_contentviewer_playchime",
+      "community": 266,
+      "norm_label": "playchime()"
+    },
+    {
+      "label": "CodePlayground()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "pages_contentviewer_codeplayground",
+      "community": 266,
+      "norm_label": "codeplayground()"
+    },
+    {
+      "label": "DiffWidget()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "pages_contentviewer_diffwidget",
+      "community": 266,
+      "norm_label": "diffwidget()"
+    },
+    {
       "label": "ContentViewer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L5",
+      "source_location": "L178",
       "_origin": "ast",
       "id": "pages_contentviewer_contentviewer",
       "community": 266,
@@ -4246,7 +4296,7 @@
       "label": "TableRenderer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L91",
+      "source_location": "L478",
       "_origin": "ast",
       "id": "pages_contentviewer_tablerenderer",
       "community": 266,
@@ -4256,7 +4306,7 @@
       "label": "parseAndRenderBlocks()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L149",
+      "source_location": "L535",
       "_origin": "ast",
       "id": "pages_contentviewer_parseandrenderblocks",
       "community": 266,
@@ -4266,7 +4316,7 @@
       "label": "ResumeRenderer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L228",
+      "source_location": "L645",
       "_origin": "ast",
       "id": "pages_contentviewer_resumerenderer",
       "community": 266,
@@ -4276,7 +4326,7 @@
       "label": "HTMLContentRenderer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L244",
+      "source_location": "L663",
       "_origin": "ast",
       "id": "pages_contentviewer_htmlcontentrenderer",
       "community": 266,
@@ -4286,7 +4336,7 @@
       "label": "NotesRenderer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L393",
+      "source_location": "L791",
       "_origin": "ast",
       "id": "pages_contentviewer_notesrenderer",
       "community": 266,
@@ -4296,7 +4346,7 @@
       "label": "FlashcardRenderer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L413",
+      "source_location": "L797",
       "_origin": "ast",
       "id": "pages_contentviewer_flashcardrenderer",
       "community": 266,
@@ -4306,7 +4356,7 @@
       "label": "BrainstormRenderer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L578",
+      "source_location": "L946",
       "_origin": "ast",
       "id": "pages_contentviewer_brainstormrenderer",
       "community": 266,
@@ -4316,7 +4366,7 @@
       "label": "MindMapNode()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L599",
+      "source_location": "L968",
       "_origin": "ast",
       "id": "pages_contentviewer_mindmapnode",
       "community": 266,
@@ -4326,7 +4376,7 @@
       "label": "ReferenceRenderer()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L654",
+      "source_location": "L1023",
       "_origin": "ast",
       "id": "pages_contentviewer_referencerenderer",
       "community": 266,
@@ -4336,7 +4386,7 @@
       "label": "formatText()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
-      "source_location": "L670",
+      "source_location": "L1039",
       "_origin": "ast",
       "id": "pages_contentviewer_formattext",
       "community": 266,
@@ -4356,11 +4406,31 @@
       "label": "Dashboard()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/Dashboard.jsx",
-      "source_location": "L3",
+      "source_location": "L4",
       "_origin": "ast",
       "id": "pages_dashboard_dashboard",
       "community": 266,
       "norm_label": "dashboard()"
+    },
+    {
+      "label": "MarginaliaView.jsx",
+      "file_type": "code",
+      "source_file": "projects/studios/app/src/pages/MarginaliaView.jsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pages_marginaliaview",
+      "community": 266,
+      "norm_label": "marginaliaview.jsx"
+    },
+    {
+      "label": "MarginaliaView()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/src/pages/MarginaliaView.jsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "pages_marginaliaview_marginaliaview",
+      "community": 266,
+      "norm_label": "marginaliaview()"
     },
     {
       "label": "StackPage.jsx",
@@ -4373,10 +4443,30 @@
       "norm_label": "stackpage.jsx"
     },
     {
+      "label": "GRAPH_CONFIG",
+      "file_type": "code",
+      "source_file": "projects/studios/app/src/pages/StackPage.jsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "pages_stackpage_graph_config",
+      "community": 266,
+      "norm_label": "graph_config"
+    },
+    {
+      "label": "getGraphForStack()",
+      "file_type": "code",
+      "source_file": "projects/studios/app/src/pages/StackPage.jsx",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "pages_stackpage_getgraphforstack",
+      "community": 266,
+      "norm_label": "getgraphforstack()"
+    },
+    {
       "label": "StackPage()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/StackPage.jsx",
-      "source_location": "L6",
+      "source_location": "L95",
       "_origin": "ast",
       "id": "pages_stackpage_stackpage",
       "community": 266,
@@ -4386,7 +4476,7 @@
       "label": "getPreview()",
       "file_type": "code",
       "source_file": "projects/studios/app/src/pages/StackPage.jsx",
-      "source_location": "L190",
+      "source_location": "L478",
       "_origin": "ast",
       "id": "pages_stackpage_getpreview",
       "community": 266,
@@ -6363,10 +6453,20 @@
       "norm_label": "start"
     },
     {
+      "label": "sync",
+      "file_type": "code",
+      "source_file": "scripts/notion/package.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "notion_package_scripts_sync",
+      "community": 150,
+      "norm_label": "sync"
+    },
+    {
       "label": "dependencies",
       "file_type": "code",
       "source_file": "scripts/notion/package.json",
-      "source_location": "L9",
+      "source_location": "L10",
       "_origin": "ast",
       "id": "notion_package_dependencies",
       "community": 150,
@@ -6376,7 +6476,7 @@
       "label": "@notionhq/client",
       "file_type": "code",
       "source_file": "scripts/notion/package.json",
-      "source_location": "L10",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "notion_package_dependencies_notionhq_client",
       "community": 150,
@@ -6386,7 +6486,7 @@
       "label": "dotenv",
       "file_type": "code",
       "source_file": "scripts/notion/package.json",
-      "source_location": "L11",
+      "source_location": "L12",
       "_origin": "ast",
       "id": "notion_package_dependencies_dotenv",
       "community": 150,
@@ -7661,6 +7761,116 @@
       "id": "notion_step_241_code_decoded_createpageindatabase",
       "community": 166,
       "norm_label": "createpageindatabase()"
+    },
+    {
+      "label": "sync_active_worklogs.js",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "notion_sync_active_worklogs",
+      "community": 341,
+      "norm_label": "sync_active_worklogs.js"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "notion_sync_active_worklogs_fs",
+      "community": 341,
+      "norm_label": "fs"
+    },
+    {
+      "label": "path",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "notion_sync_active_worklogs_path",
+      "community": 341,
+      "norm_label": "path"
+    },
+    {
+      "label": "{ Client }",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "notion_sync_active_worklogs_client",
+      "community": 341,
+      "norm_label": "{ client }"
+    },
+    {
+      "label": "notion",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "notion_sync_active_worklogs_notion",
+      "community": 341,
+      "norm_label": "notion"
+    },
+    {
+      "label": "getIndonesianDateLabel()",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "notion_sync_active_worklogs_getindonesiandatelabel",
+      "community": 341,
+      "norm_label": "getindonesiandatelabel()"
+    },
+    {
+      "label": "getTargetDate()",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "notion_sync_active_worklogs_gettargetdate",
+      "community": 341,
+      "norm_label": "gettargetdate()"
+    },
+    {
+      "label": "parseMarkdownToRichText()",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "notion_sync_active_worklogs_parsemarkdowntorichtext",
+      "community": 341,
+      "norm_label": "parsemarkdowntorichtext()"
+    },
+    {
+      "label": "checkIfTaskExists()",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "notion_sync_active_worklogs_checkiftaskexists",
+      "community": 341,
+      "norm_label": "checkiftaskexists()"
+    },
+    {
+      "label": "syncProjectWorklog()",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "notion_sync_active_worklogs_syncprojectworklog",
+      "community": 341,
+      "norm_label": "syncprojectworklog()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L247",
+      "_origin": "ast",
+      "id": "notion_sync_active_worklogs_main",
+      "community": 341,
+      "norm_label": "main()"
     },
     {
       "label": "sync_studios_worklog.js",
@@ -16123,6 +16333,16 @@
       "norm_label": "panduan latihan anda:"
     },
     {
+      "label": "New Text Document.md",
+      "file_type": "document",
+      "source_file": "projects/Zai PARA PKM/New Text Document.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "zai_para_pkm_new_text_document",
+      "community": 444,
+      "norm_label": "new text document.md"
+    },
+    {
       "label": "00-ideation.md",
       "file_type": "document",
       "source_file": "projects/auditdok/00-ideation.md",
@@ -16821,6 +17041,216 @@
       "id": "output_hybrid_sample_makalah_laporan_audit_draft_diagram_alur",
       "community": 396,
       "norm_label": "diagram alur"
+    },
+    {
+      "label": "checklist_perbaikan.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_checklist_perbaikan",
+      "community": 448,
+      "norm_label": "checklist_perbaikan.md"
+    },
+    {
+      "label": "CHECKLIST PERBAIKAN DOKUMEN (PRD)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/checklist_perbaikan.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_checklist_perbaikan_checklist_perbaikan_dokumen_prd",
+      "community": 448,
+      "norm_label": "checklist perbaikan dokumen (prd)"
+    },
+    {
+      "label": "laporan_audit.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit",
+      "community": 442,
+      "norm_label": "laporan_audit.md"
+    },
+    {
+      "label": "PASS 1: Review Umum",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_pass_1_review_umum",
+      "community": 442,
+      "norm_label": "pass 1: review umum"
+    },
+    {
+      "label": "**1. Struktur dan Kepentingan**",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_1_struktur_dan_kepentingan",
+      "community": 442,
+      "norm_label": "**1. struktur dan kepentingan**"
+    },
+    {
+      "label": "**2. Perbaikan dan Penambahan**",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_2_perbaikan_dan_penambahan",
+      "community": 442,
+      "norm_label": "**2. perbaikan dan penambahan**"
+    },
+    {
+      "label": "**3. Struktur Rekomendasi**",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_3_struktur_rekomendasi",
+      "community": 442,
+      "norm_label": "**3. struktur rekomendasi**"
+    },
+    {
+      "label": "**4. Contoh Penutup**",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_4_contoh_penutup",
+      "community": 442,
+      "norm_label": "**4. contoh penutup**"
+    },
+    {
+      "label": "**5. Catatan Penting**",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_5_catatan_penting",
+      "community": 442,
+      "norm_label": "**5. catatan penting**"
+    },
+    {
+      "label": "PASS 2: Analisis Fokus Per-Bagian",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "community": 442,
+      "norm_label": "pass 2: analisis fokus per-bagian"
+    },
+    {
+      "label": "**Audit Struktur Organisasi (SOP)**",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_audit_struktur_organisasi_sop",
+      "community": 442,
+      "norm_label": "**audit struktur organisasi (sop)**"
+    },
+    {
+      "label": "**Audit Integrasi (Integration)**",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_audit_integrasi_integration",
+      "community": 442,
+      "norm_label": "**audit integrasi (integration)**"
+    },
+    {
+      "label": "**Kesimpulan dan Rekomendasi**",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_kesimpulan_dan_rekomendasi",
+      "community": 442,
+      "norm_label": "**kesimpulan dan rekomendasi**"
+    },
+    {
+      "label": "PASS 3: Checklist & Mindmap",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L164",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_pass_3_checklist_mindmap",
+      "community": 442,
+      "norm_label": "pass 3: checklist & mindmap"
+    },
+    {
+      "label": "Temuan Utama (Daftar Masalah)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L171",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_temuan_utama_daftar_masalah",
+      "community": 442,
+      "norm_label": "temuan utama (daftar masalah)"
+    },
+    {
+      "label": "Contoh Checklist Tindakan (PRD Format)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L193",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_contoh_checklist_tindakan_prd_format",
+      "community": 442,
+      "norm_label": "contoh checklist tindakan (prd format)"
+    },
+    {
+      "label": "STRUKTUR MINDMAP KONSEP",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L213",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_struktur_mindmap_konsep",
+      "community": 442,
+      "norm_label": "struktur mindmap konsep"
+    },
+    {
+      "label": "DIAGRAM ALUR (Mermaid)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L248",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_laporan_audit_diagram_alur_mermaid",
+      "community": 442,
+      "norm_label": "diagram alur (mermaid)"
+    },
+    {
+      "label": "minimap.md",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_minimap",
+      "community": 447,
+      "norm_label": "minimap.md"
+    },
+    {
+      "label": "MAP STRUKTUR DOKUMEN (MINIMAP)",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/minimap.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_minimap_map_struktur_dokumen_minimap",
+      "community": 447,
+      "norm_label": "map struktur dokumen (minimap)"
+    },
+    {
+      "label": "STRUKTUR MINDMAP KONSEP",
+      "file_type": "document",
+      "source_file": "projects/auditdok/output_openrouter_plus/minimap.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "output_openrouter_plus_minimap_struktur_mindmap_konsep",
+      "community": 447,
+      "norm_label": "struktur mindmap konsep"
     },
     {
       "label": "checklist_perbaikan.md",
@@ -24535,6 +24965,46 @@
     {
       "label": "work-log.md",
       "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/work-log.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_work_log",
+      "community": 443,
+      "norm_label": "work-log.md"
+    },
+    {
+      "label": "Work Log - Revisi Makalah Akuntansi",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/work-log.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_work_log_work_log_revisi_makalah_akuntansi",
+      "community": 443,
+      "norm_label": "work log - revisi makalah akuntansi"
+    },
+    {
+      "label": "2026-06-22",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/work-log.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_work_log_2026_06_22",
+      "community": 443,
+      "norm_label": "2026-06-22"
+    },
+    {
+      "label": "Menyusun Kerangka Hasil Review",
+      "file_type": "document",
+      "source_file": "projects/revisi-makalah-akuntansi/work-log.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "revisi_makalah_akuntansi_work_log_menyusun_kerangka_hasil_review",
+      "community": 443,
+      "norm_label": "menyusun kerangka hasil review"
+    },
+    {
+      "label": "work-log.md",
+      "file_type": "document",
       "source_file": "projects/sieka-rudenim/work-log.md",
       "source_location": "L1",
       "_origin": "ast",
@@ -25271,6 +25741,436 @@
       "id": "studios_architecture_5_notion_synchronization_pipeline",
       "community": 73,
       "norm_label": "5. notion synchronization pipeline"
+    },
+    {
+      "label": "buku_ajar_bab_1_2.md",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2",
+      "community": 344,
+      "norm_label": "buku_ajar_bab_1_2.md"
+    },
+    {
+      "label": "BUKU AJAR DASAR-DASAR ANATOMI DAN FISIOLOGI TUBUH MANUSIA",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_buku_ajar_dasar_dasar_anatomi_dan_fisiologi_tubuh_manusia",
+      "community": 344,
+      "norm_label": "buku ajar dasar-dasar anatomi dan fisiologi tubuh manusia"
+    },
+    {
+      "label": "(Sampai BAB II)",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_sampai_bab_ii",
+      "community": 344,
+      "norm_label": "(sampai bab ii)"
+    },
+    {
+      "label": "A. Tujuan Pembelajaran",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_a_tujuan_pembelajaran",
+      "community": 344,
+      "norm_label": "a. tujuan pembelajaran"
+    },
+    {
+      "label": "B. Materi Pembelajaran",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran",
+      "community": 344,
+      "norm_label": "b. materi pembelajaran"
+    },
+    {
+      "label": "1. Pengertian Fisiologi Tubuh Manusia",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_1_pengertian_fisiologi_tubuh_manusia",
+      "community": 344,
+      "norm_label": "1. pengertian fisiologi tubuh manusia"
+    },
+    {
+      "label": "2. Keterkaitan Antara Ilmu Anatomi dan Fisiologi",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_2_keterkaitan_antara_ilmu_anatomi_dan_fisiologi",
+      "community": 344,
+      "norm_label": "2. keterkaitan antara ilmu anatomi dan fisiologi"
+    },
+    {
+      "label": "3. Level Organisasi dalam Tubuh Manusia",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_3_level_organisasi_dalam_tubuh_manusia",
+      "community": 344,
+      "norm_label": "3. level organisasi dalam tubuh manusia"
+    },
+    {
+      "label": "4. Berbagai Sistem Organ dalam Tubuh Manusia",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_4_berbagai_sistem_organ_dalam_tubuh_manusia",
+      "community": 344,
+      "norm_label": "4. berbagai sistem organ dalam tubuh manusia"
+    },
+    {
+      "label": "5. Proses Kehidupan Manusia Sebagai Makhluk Hidup",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_5_proses_kehidupan_manusia_sebagai_makhluk_hidup",
+      "community": 344,
+      "norm_label": "5. proses kehidupan manusia sebagai makhluk hidup"
+    },
+    {
+      "label": "6. Istilah dan Posisi Anatomi",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L141",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_6_istilah_dan_posisi_anatomi",
+      "community": 344,
+      "norm_label": "6. istilah dan posisi anatomi"
+    },
+    {
+      "label": "7. Istilah Anatomi",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L165",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_7_istilah_anatomi",
+      "community": 344,
+      "norm_label": "7. istilah anatomi"
+    },
+    {
+      "label": "8. Arah Gerakan",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L208",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_8_arah_gerakan",
+      "community": 344,
+      "norm_label": "8. arah gerakan"
+    },
+    {
+      "label": "9. Istilah Anatomi atau Nomenklatur Anatomi",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L234",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_9_istilah_anatomi_atau_nomenklatur_anatomi",
+      "community": 344,
+      "norm_label": "9. istilah anatomi atau nomenklatur anatomi"
+    },
+    {
+      "label": "10. Kepentingan Ilmu Fisiologi Tubuh Manusia dalam Ilmu Gizi",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L251",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_10_kepentingan_ilmu_fisiologi_tubuh_manusia_dalam_ilmu_gizi",
+      "community": 344,
+      "norm_label": "10. kepentingan ilmu fisiologi tubuh manusia dalam ilmu gizi"
+    },
+    {
+      "label": "C. Rangkuman",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L259",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_c_rangkuman",
+      "community": 344,
+      "norm_label": "c. rangkuman"
+    },
+    {
+      "label": "1. Anatomi dan fisiologi merupakan pondasi saat kita memahami",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L261",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_1_anatomi_dan_fisiologi_merupakan_pondasi_saat_kita_memahami",
+      "community": 344,
+      "norm_label": "1. anatomi dan fisiologi merupakan pondasi saat kita memahami"
+    },
+    {
+      "label": "2. Fisiologi adalah ilmu yang mempelajari tentang karakteristik khusus dan mekanisme yang mencirikan manusia sebagai makhluk hidup. Manusia sebagai makhluk hidup mampu bertahan sebagai ha-",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L266",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_2_fisiologi_adalah_ilmu_yang_mempelajari_tentang_karakteristik_khusus_dan_mekanisme_yang_mencirikan_manusia_sebagai_makhluk_hidup_manusia_sebagai_makhluk_hidup_mampu_bertahan_sebagai_ha",
+      "community": 344,
+      "norm_label": "2. fisiologi adalah ilmu yang mempelajari tentang karakteristik khusus dan mekanisme yang mencirikan manusia sebagai makhluk hidup. manusia sebagai makhluk hidup mampu bertahan sebagai ha-"
+    },
+    {
+      "label": "3. Level organisasi dalam tubuh manusia adalah level kimia (molekul",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L274",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_3_level_organisasi_dalam_tubuh_manusia_adalah_level_kimia_molekul",
+      "community": 344,
+      "norm_label": "3. level organisasi dalam tubuh manusia adalah level kimia (molekul"
+    },
+    {
+      "label": "4. Beberapa sistem organ dalam tubuh manusia, yaitu sistem otot dan",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L280",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_4_beberapa_sistem_organ_dalam_tubuh_manusia_yaitu_sistem_otot_dan",
+      "community": 344,
+      "norm_label": "4. beberapa sistem organ dalam tubuh manusia, yaitu sistem otot dan"
+    },
+    {
+      "label": "5. Posisi anatomi tubuh adalah saat subjek berdiri tegak, kepala, dan",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L285",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_5_posisi_anatomi_tubuh_adalah_saat_subjek_berdiri_tegak_kepala_dan",
+      "community": 344,
+      "norm_label": "5. posisi anatomi tubuh adalah saat subjek berdiri tegak, kepala, dan"
+    },
+    {
+      "label": "D. Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L290",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_d_evaluasi",
+      "community": 344,
+      "norm_label": "d. evaluasi"
+    },
+    {
+      "label": "1. Berikan contoh tentang berbagai level organisasi tubuh manusia",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L292",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_1_berikan_contoh_tentang_berbagai_level_organisasi_tubuh_manusia",
+      "community": 344,
+      "norm_label": "1. berikan contoh tentang berbagai level organisasi tubuh manusia"
+    },
+    {
+      "label": "2. Jelaskan mengapa ilmu anatomi dan fisiologi sangat berkaitan!",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L296",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_2_jelaskan_mengapa_ilmu_anatomi_dan_fisiologi_sangat_berkaitan",
+      "community": 344,
+      "norm_label": "2. jelaskan mengapa ilmu anatomi dan fisiologi sangat berkaitan!"
+    },
+    {
+      "label": "3. Jelaskan kepentingan mengapa calon ahli gizi perlu memahami ilmu anatomi dan fisiologi?",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L298",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_3_jelaskan_kepentingan_mengapa_calon_ahli_gizi_perlu_memahami_ilmu_anatomi_dan_fisiologi",
+      "community": 344,
+      "norm_label": "3. jelaskan kepentingan mengapa calon ahli gizi perlu memahami ilmu anatomi dan fisiologi?"
+    },
+    {
+      "label": "BAB II: ORGANISASI TUBUH MANUSIA",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L302",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_bab_ii_organisasi_tubuh_manusia",
+      "community": 344,
+      "norm_label": "bab ii: organisasi tubuh manusia"
+    },
+    {
+      "label": "A. Tujuan Pembelajaran",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L304",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_a_tujuan_pembelajaran_304",
+      "community": 344,
+      "norm_label": "a. tujuan pembelajaran"
+    },
+    {
+      "label": "B. Materi Pembelajaran",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L311",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran_311",
+      "community": 344,
+      "norm_label": "b. materi pembelajaran"
+    },
+    {
+      "label": "1. Teori Organisasi Seluler",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L313",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_1_teori_organisasi_seluler",
+      "community": 344,
+      "norm_label": "1. teori organisasi seluler"
+    },
+    {
+      "label": "2. Jaringan",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L352",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_2_jaringan",
+      "community": 344,
+      "norm_label": "2. jaringan"
+    },
+    {
+      "label": "3. Organ dan Sistem Organ",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L412",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_3_organ_dan_sistem_organ",
+      "community": 344,
+      "norm_label": "3. organ dan sistem organ"
+    },
+    {
+      "label": "4. Homeostasis",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L426",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_4_homeostasis",
+      "community": 344,
+      "norm_label": "4. homeostasis"
+    },
+    {
+      "label": "C. Rangkuman",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L515",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_c_rangkuman_515",
+      "community": 344,
+      "norm_label": "c. rangkuman"
+    },
+    {
+      "label": "1. Sel adalah unit dasar dari struktur dan fungsi makhluk hidup. Selsel tersebut merupakan unit terkecil yang mampu melaksanakan",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L517",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_1_sel_adalah_unit_dasar_dari_struktur_dan_fungsi_makhluk_hidup_selsel_tersebut_merupakan_unit_terkecil_yang_mampu_melaksanakan",
+      "community": 344,
+      "norm_label": "1. sel adalah unit dasar dari struktur dan fungsi makhluk hidup. selsel tersebut merupakan unit terkecil yang mampu melaksanakan"
+    },
+    {
+      "label": "2. Jaringan adalah kumpulan sel-sel dengan struktur dan fungsi khusus yang sama. Empat jenis jaringan utama terdapat dalam tubuh",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L522",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_2_jaringan_adalah_kumpulan_sel_sel_dengan_struktur_dan_fungsi_khusus_yang_sama_empat_jenis_jaringan_utama_terdapat_dalam_tubuh",
+      "community": 344,
+      "norm_label": "2. jaringan adalah kumpulan sel-sel dengan struktur dan fungsi khusus yang sama. empat jenis jaringan utama terdapat dalam tubuh"
+    },
+    {
+      "label": "3. Dua atau lebih jenis jaringan yang tersusun dengan berbagai proporsi disebut sebagai organ. Organ ini juga dapat tersusun atas beberapa subunit kecil dan sejenis yang disebut sebagai unit fungsional. Unit fungsional tersebut masing-masing menjalankan fungsi",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L526",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_3_dua_atau_lebih_jenis_jaringan_yang_tersusun_dengan_berbagai_proporsi_disebut_sebagai_organ_organ_ini_juga_dapat_tersusun_atas_beberapa_subunit_kecil_dan_sejenis_yang_disebut_sebagai_unit_fungsional_unit_fungsional_tersebut_masing_masing_menjalankan_fungsi",
+      "community": 344,
+      "norm_label": "3. dua atau lebih jenis jaringan yang tersusun dengan berbagai proporsi disebut sebagai organ. organ ini juga dapat tersusun atas beberapa subunit kecil dan sejenis yang disebut sebagai unit fungsional. unit fungsional tersebut masing-masing menjalankan fungsi"
+    },
+    {
+      "label": "4. Homeostasis disebut sebagai kondisi yang dinamis karena variabelvariabel tersebut (suhu tubuh, cairan, ion, dan lain-lain).",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L530",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_4_homeostasis_disebut_sebagai_kondisi_yang_dinamis_karena_variabelvariabel_tersebut_suhu_tubuh_cairan_ion_dan_lain_lain",
+      "community": 344,
+      "norm_label": "4. homeostasis disebut sebagai kondisi yang dinamis karena variabelvariabel tersebut (suhu tubuh, cairan, ion, dan lain-lain)."
+    },
+    {
+      "label": "D. Evaluasi",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L532",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_d_evaluasi_532",
+      "community": 344,
+      "norm_label": "d. evaluasi"
+    },
+    {
+      "label": "1. Nefron adalah contoh sebuah \u2026..",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L534",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_1_nefron_adalah_contoh_sebuah",
+      "community": 344,
+      "norm_label": "1. nefron adalah contoh sebuah ....."
+    },
+    {
+      "label": "2. Lapisan dinding lambung ada bagian organisasi tubuh manusia pada tingkat \u2026...",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L544",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_2_lapisan_dinding_lambung_ada_bagian_organisasi_tubuh_manusia_pada_tingkat",
+      "community": 344,
+      "norm_label": "2. lapisan dinding lambung ada bagian organisasi tubuh manusia pada tingkat ......"
+    },
+    {
+      "label": "3. Manusia adalah organisme \u2026..",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L552",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_3_manusia_adalah_organisme",
+      "community": 344,
+      "norm_label": "3. manusia adalah organisme ....."
+    },
+    {
+      "label": "4. Fungsi dasar sel tubuh manusia secara garis besar dibagi menjadi",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L560",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_4_fungsi_dasar_sel_tubuh_manusia_secara_garis_besar_dibagi_menjadi",
+      "community": 344,
+      "norm_label": "4. fungsi dasar sel tubuh manusia secara garis besar dibagi menjadi"
+    },
+    {
+      "label": "5. Contoh mekanisme feedforward adalah \u2026...",
+      "file_type": "document",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L569",
+      "_origin": "ast",
+      "id": "studios_buku_ajar_bab_1_2_5_contoh_mekanisme_feedforward_adalah",
+      "community": 344,
+      "norm_label": "5. contoh mekanisme feedforward adalah ......"
     },
     {
       "label": "prd.md",
@@ -29139,7 +30039,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\add_created_property.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "add_created_property",
       "id": "add_created_property"
     },
@@ -29150,7 +30050,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "addcreated",
       "id": "add_created_property_addCreated"
     },
@@ -29161,7 +30061,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "dotenv",
       "id": "dotenv"
     },
@@ -29172,7 +30072,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "@notionhq/client",
       "id": "_notionhq_client"
     },
@@ -29186,7 +30086,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\add_edited_property.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "add_edited_property",
       "id": "add_edited_property"
     },
@@ -29197,7 +30097,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "addedited",
       "id": "add_edited_property_addEdited"
     },
@@ -29443,7 +30343,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_note_content.js"
       },
       "file_type": "concept",
-      "community": 344,
+      "community": 446,
       "norm_label": "check_note_content",
       "id": "check_note_content"
     },
@@ -29454,7 +30354,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 344,
+      "community": 446,
       "norm_label": "checknotecontent",
       "id": "check_note_content_checkNoteContent"
     },
@@ -29468,7 +30368,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_note_properties.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "check_note_properties",
       "id": "check_note_properties"
     },
@@ -29479,7 +30379,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "checknote",
       "id": "check_note_properties_checkNote"
     },
@@ -29518,7 +30418,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\check_para_views.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "check_para_views",
       "id": "check_para_views"
     },
@@ -29529,7 +30429,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "checkviews",
       "id": "check_para_views_checkViews"
     },
@@ -29593,7 +30493,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\clean_callout_children.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "clean_callout_children",
       "id": "clean_callout_children"
     },
@@ -29604,7 +30504,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "cleancalloutchildren",
       "id": "clean_callout_children_cleanCalloutChildren"
     },
@@ -29618,7 +30518,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\clean_remaining_tf.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "clean_remaining_tf",
       "id": "clean_remaining_tf"
     },
@@ -29629,7 +30529,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "runcleanup",
       "id": "clean_remaining_tf_runCleanup"
     },
@@ -29668,7 +30568,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\compare_schemas.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "compare_schemas",
       "id": "compare_schemas"
     },
@@ -29679,7 +30579,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "compare",
       "id": "compare_schemas_compare"
     },
@@ -29693,7 +30593,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\create_homepage.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "create_homepage",
       "id": "create_homepage"
     },
@@ -29704,7 +30604,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "buildhomepage",
       "id": "create_homepage_buildHomepage"
     },
@@ -29718,7 +30618,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\create_notion_project.js"
       },
       "file_type": "concept",
-      "community": 341,
+      "community": 426,
       "norm_label": "create_notion_project",
       "id": "create_notion_project"
     },
@@ -29729,7 +30629,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 341,
+      "community": 426,
       "norm_label": "createproject",
       "id": "create_notion_project_createProject"
     },
@@ -29771,7 +30671,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\dump_para_blocks.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "dump_para_blocks",
       "id": "dump_para_blocks"
     },
@@ -29782,7 +30682,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "dumpblocks",
       "id": "dump_para_blocks_dumpBlocks"
     },
@@ -29796,7 +30696,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\enrich_dbs.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "enrich_dbs",
       "id": "enrich_dbs"
     },
@@ -29807,7 +30707,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "enrichnotes",
       "id": "enrich_dbs_enrichNotes"
     },
@@ -29821,7 +30721,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\find_all_databases.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "find_all_databases",
       "id": "find_all_databases"
     },
@@ -29832,7 +30732,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "findalldatabases",
       "id": "find_all_databases_findAllDatabases"
     },
@@ -29846,7 +30746,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\fix_recurring_nav.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "fix_recurring_nav",
       "id": "fix_recurring_nav"
     },
@@ -29857,7 +30757,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "fixnav",
       "id": "fix_recurring_nav_fixNav"
     },
@@ -29929,7 +30829,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_archive_blocks.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 429,
       "norm_label": "inspect_archive_blocks",
       "id": "inspect_archive_blocks"
     },
@@ -29940,7 +30840,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 429,
       "norm_label": "inspect",
       "id": "inspect_archive_blocks_inspect"
     },
@@ -29954,7 +30854,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_block.js"
       },
       "file_type": "concept",
-      "community": 426,
+      "community": 10,
       "norm_label": "inspect_block",
       "id": "inspect_block"
     },
@@ -29965,7 +30865,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 426,
+      "community": 10,
       "norm_label": "inspectblock",
       "id": "inspect_block_inspectBlock"
     },
@@ -29979,7 +30879,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_failed_views.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 449,
       "norm_label": "inspect_failed_views",
       "id": "inspect_failed_views"
     },
@@ -29990,7 +30890,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 449,
       "norm_label": "inspectviews",
       "id": "inspect_failed_views_inspectViews"
     },
@@ -30004,7 +30904,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_homepage_blocks.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "inspect_homepage_blocks",
       "id": "inspect_homepage_blocks"
     },
@@ -30015,7 +30915,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "inspectroot",
       "id": "inspect_homepage_blocks_inspectRoot"
     },
@@ -30029,7 +30929,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_old_property.js"
       },
       "file_type": "concept",
-      "community": 429,
+      "community": 11,
       "norm_label": "inspect_old_property",
       "id": "inspect_old_property"
     },
@@ -30040,7 +30940,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 429,
+      "community": 11,
       "norm_label": "inspect",
       "id": "inspect_old_property_inspect"
     },
@@ -30054,7 +30954,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_pages.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "inspect_pages",
       "id": "inspect_pages"
     },
@@ -30068,7 +30968,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\inspect_para_blocks.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "inspect_para_blocks",
       "id": "inspect_para_blocks"
     },
@@ -30079,7 +30979,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "inspect",
       "id": "inspect_para_blocks_inspect"
     },
@@ -30215,7 +31115,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\list_all_pages.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "list_all_pages",
       "id": "list_all_pages"
     },
@@ -30226,7 +31126,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "listallpages",
       "id": "list_all_pages_listAllPages"
     },
@@ -30287,17 +31187,6 @@
       "community": 39,
       "norm_label": "main",
       "id": "package_main"
-    },
-    {
-      "label": "scripts",
-      "type": "property",
-      "source_location": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\package.json",
-      "confidence": "EXTRACTED",
-      "properties": {},
-      "file_type": "concept",
-      "community": 39,
-      "norm_label": "scripts",
-      "id": "package_scripts"
     },
     {
       "label": "dependencies",
@@ -30484,7 +31373,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\print_page_properties.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "print_page_properties",
       "id": "print_page_properties"
     },
@@ -30495,7 +31384,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "inspectproperties",
       "id": "print_page_properties_inspectProperties"
     },
@@ -30598,7 +31487,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\relink_para_page_views.js"
       },
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "relink_para_page_views",
       "id": "relink_para_page_views"
     },
@@ -30609,7 +31498,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 11,
+      "community": 10,
       "norm_label": "relink",
       "id": "relink_para_page_views_relink"
     },
@@ -30720,7 +31609,7 @@
         "path": "D:\\WORKSPACE\\AIS-OS\\scripts\\notion\\retrieve_new_db.js"
       },
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "retrieve_new_db",
       "id": "retrieve_new_db"
     },
@@ -30731,7 +31620,7 @@
       "confidence": "EXTRACTED",
       "properties": {},
       "file_type": "concept",
-      "community": 10,
+      "community": 11,
       "norm_label": "retrievenewdb",
       "id": "retrieve_new_db_retrieveNewDB"
     },
@@ -42903,6 +43792,9 @@
     {
       "relation": "has_field",
       "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
       "properties": {},
       "confidence_score": 1.0,
       "source": "package",
@@ -42925,6 +43817,16 @@
       "confidence_score": 1.0,
       "source": "package",
       "target": "package_workspaces"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_sync"
     },
     {
       "relation": "imports_from",
@@ -43035,20 +43937,20 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/src/agent.py",
-      "source_location": "L25",
+      "source_location": "L35",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_agent_rationale_25",
+      "source": "src_agent_rationale_35",
       "target": "src_agent_auditagent_run_audit"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/src/agent.py",
-      "source_location": "L78",
+      "source_location": "L130",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_agent_rationale_78",
+      "source": "src_agent_rationale_130",
       "target": "src_agent_auditagent_generate_mock_response"
     },
     {
@@ -43580,10 +44482,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L16",
+      "source_location": "L19",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_workflow_rationale_16",
+      "source": "src_workflow_rationale_19",
       "target": "src_workflow_auditworkflow_load_skill_prompt"
     },
     {
@@ -43601,20 +44503,20 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L31",
+      "source_location": "L34",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_workflow_rationale_31",
+      "source": "src_workflow_rationale_34",
       "target": "src_workflow_auditworkflow_run_multi_pass"
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/src/workflow.py",
-      "source_location": "L103",
+      "source_location": "L106",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "src_workflow_rationale_103",
+      "source": "src_workflow_rationale_106",
       "target": "src_workflow_auditworkflow_run"
     },
     {
@@ -46780,9 +47682,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "docx",
-      "confidence_score": 1.0
+      "target": "docx"
     },
     {
       "relation": "imports_from",
@@ -46791,9 +47693,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "fs",
-      "confidence_score": 1.0
+      "target": "fs"
     },
     {
       "relation": "contains",
@@ -46801,9 +47703,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_border0",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_border0"
     },
     {
       "relation": "contains",
@@ -46811,9 +47713,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_borders0",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_borders0"
     },
     {
       "relation": "contains",
@@ -46821,9 +47723,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_bordersall",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_bordersall"
     },
     {
       "relation": "contains",
@@ -46831,9 +47733,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_bordersingle",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_bordersingle"
     },
     {
       "relation": "contains",
@@ -46841,9 +47743,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_cell",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_cell"
     },
     {
       "relation": "contains",
@@ -46851,9 +47753,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L124",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_cellpara",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_cellpara"
     },
     {
       "relation": "contains",
@@ -46861,9 +47763,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_centered",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_centered"
     },
     {
       "relation": "contains",
@@ -46871,9 +47773,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L244",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_chapterpagesetup",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_chapterpagesetup"
     },
     {
       "relation": "contains",
@@ -46881,9 +47783,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_createchapterheadersandfooters",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_createchapterheadersandfooters"
     },
     {
       "relation": "contains",
@@ -46891,9 +47793,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_createfrontmatterfooter",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_createfrontmatterfooter"
     },
     {
       "relation": "contains",
@@ -46901,9 +47803,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L153",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_daftarpustakaentry",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_daftarpustakaentry"
     },
     {
       "relation": "contains",
@@ -46911,9 +47813,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L247",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_doc",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_doc"
     },
     {
       "relation": "contains",
@@ -46921,9 +47823,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_shadingtype_verticalalign_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_tabstopposition_numberformat_tableofcontents_imagerun",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_document_packer_paragraph_textrun_table_tablerow_tablecell_alignmenttype_levelformat_headinglevel_borderstyle_widthtype_shadingtype_verticalalign_pagenumber_pagebreak_header_footer_positionaltab_positionaltabalignment_positionaltabrelativeto_positionaltableader_tabstoptype_tabstopposition_numberformat_tableofcontents_imagerun"
     },
     {
       "relation": "contains",
@@ -46931,9 +47833,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_emptyrow",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_emptyrow"
     },
     {
       "relation": "contains",
@@ -46941,9 +47843,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L245",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_frontmatterfooter",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_frontmatterfooter"
     },
     {
       "relation": "contains",
@@ -46951,9 +47853,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_fs",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_fs"
     },
     {
       "relation": "contains",
@@ -46961,9 +47863,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_heading1",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_heading1"
     },
     {
       "relation": "contains",
@@ -46971,9 +47873,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_heading2",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_heading2"
     },
     {
       "relation": "contains",
@@ -46981,9 +47883,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_heading3",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_heading3"
     },
     {
       "relation": "contains",
@@ -46991,9 +47893,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_justifiedpara",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_justifiedpara"
     },
     {
       "relation": "contains",
@@ -47001,9 +47903,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_numbereditem",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_numbereditem"
     },
     {
       "relation": "contains",
@@ -47011,9 +47913,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_numbereditemruns",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_numbereditemruns"
     },
     {
       "relation": "contains",
@@ -47021,9 +47923,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_pagebreak",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_pagebreak"
     },
     {
       "relation": "contains",
@@ -47031,9 +47933,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_tablecaptioncentered",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_tablecaptioncentered"
     },
     {
       "relation": "contains",
@@ -47041,9 +47943,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_tablesource",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_tablesource"
     },
     {
       "relation": "contains",
@@ -47051,9 +47953,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L216",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_tocentry",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_tocentry"
     },
     {
       "relation": "contains",
@@ -47061,9 +47963,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_tr",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_tr"
     },
     {
       "relation": "contains",
@@ -47071,9 +47973,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_trb",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_trb"
     },
     {
       "relation": "contains",
@@ -47081,9 +47983,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah",
-      "target": "revisi_makalah_akuntansi_build_makalah_tri",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_tri"
     },
     {
       "relation": "calls",
@@ -47092,9 +47994,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L158",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah_daftarpustakaentry",
-      "target": "revisi_makalah_akuntansi_build_makalah_tr",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_tr"
     },
     {
       "relation": "calls",
@@ -47103,9 +48005,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah_numbereditem",
-      "target": "revisi_makalah_akuntansi_build_makalah_tr",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_tr"
     },
     {
       "relation": "calls",
@@ -47114,9 +48016,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah_trb",
-      "target": "revisi_makalah_akuntansi_build_makalah_tr",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_tr"
     },
     {
       "relation": "calls",
@@ -47125,9 +48027,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/build_makalah.js",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_build_makalah_tri",
-      "target": "revisi_makalah_akuntansi_build_makalah_tr",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_build_makalah_tr"
     },
     {
       "relation": "contains",
@@ -47135,9 +48037,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/package.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_package",
-      "target": "revisi_makalah_akuntansi_package_author",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_package_author"
     },
     {
       "relation": "contains",
@@ -47145,9 +48047,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/package.json",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_package",
-      "target": "revisi_makalah_akuntansi_package_dependencies",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_package_dependencies"
     },
     {
       "relation": "contains",
@@ -47155,9 +48057,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_package",
-      "target": "revisi_makalah_akuntansi_package_description",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_package_description"
     },
     {
       "relation": "contains",
@@ -47165,9 +48067,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_package",
-      "target": "revisi_makalah_akuntansi_package_keywords",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_package_keywords"
     },
     {
       "relation": "contains",
@@ -47175,9 +48077,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/package.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_package",
-      "target": "revisi_makalah_akuntansi_package_license",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_package_license"
     },
     {
       "relation": "contains",
@@ -47185,9 +48087,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_package",
-      "target": "revisi_makalah_akuntansi_package_main",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_package_main"
     },
     {
       "relation": "contains",
@@ -47195,9 +48097,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_package",
-      "target": "revisi_makalah_akuntansi_package_name",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_package_name"
     },
     {
       "relation": "contains",
@@ -47205,9 +48107,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_package",
-      "target": "revisi_makalah_akuntansi_package_scripts",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_package_scripts"
     },
     {
       "relation": "contains",
@@ -47215,9 +48117,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_package",
-      "target": "revisi_makalah_akuntansi_package_type",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_package_type"
     },
     {
       "relation": "contains",
@@ -47225,9 +48127,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_package",
-      "target": "revisi_makalah_akuntansi_package_version",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_package_version"
     },
     {
       "relation": "contains",
@@ -47235,9 +48137,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_package_scripts",
-      "target": "revisi_makalah_akuntansi_package_scripts_test",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_package_scripts_test"
     },
     {
       "relation": "contains",
@@ -47245,9 +48147,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/package.json",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_package_dependencies",
-      "target": "revisi_makalah_akuntansi_package_dependencies_docx",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_package_dependencies_docx"
     },
     {
       "relation": "imports",
@@ -47256,9 +48158,9 @@
       "source_location": "L14",
       "weight": 1.0,
       "context": "import",
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_package_dependencies_docx",
-      "target": "docx",
-      "confidence_score": 1.0
+      "target": "docx"
     },
     {
       "relation": "contains",
@@ -48262,6 +49164,28 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "projects/studios/app/src/App.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "pages_marginaliaview"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/App.jsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app",
+      "target": "pages_marginaliaview_marginaliaview"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/App.jsx",
       "source_location": "L5",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -48570,6 +49494,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/pages/Dashboard.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_dashboard",
+      "target": "data_mockdata"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "projects/studios/app/src/pages/StackPage.jsx",
       "source_location": "L2",
       "weight": 1.0,
@@ -48587,6 +49522,17 @@
       "confidence_score": 1.0,
       "source": "services_dataservice",
       "target": "data_mockdata"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/pages/Dashboard.jsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_dashboard",
+      "target": "data_mockdata_contentitems"
     },
     {
       "relation": "imports",
@@ -48711,11 +49657,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_contentviewer",
+      "target": "pages_contentviewer_codeplayground"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
       "source_location": "L8",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "pages_contentviewer",
       "target": "pages_contentviewer_contentviewer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
+      "source_location": "L130",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_contentviewer",
+      "target": "pages_contentviewer_diffwidget"
     },
     {
       "relation": "contains",
@@ -48776,6 +49742,16 @@
       "confidence_score": 1.0,
       "source": "pages_contentviewer",
       "target": "pages_contentviewer_parseandrenderblocks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_contentviewer",
+      "target": "pages_contentviewer_playchime"
     },
     {
       "relation": "contains",
@@ -48856,6 +49832,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
+      "source_location": "L591",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_contentviewer_parseandrenderblocks",
+      "target": "pages_contentviewer_formattext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/pages/ContentViewer.jsx",
       "source_location": "L201",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -48886,12 +49873,42 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/pages/MarginaliaView.jsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_marginaliaview",
+      "target": "pages_marginaliaview_marginaliaview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/pages/StackPage.jsx",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_stackpage",
+      "target": "pages_stackpage_getgraphforstack"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "projects/studios/app/src/pages/StackPage.jsx",
       "source_location": "L107",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "pages_stackpage",
       "target": "pages_stackpage_getpreview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/app/src/pages/StackPage.jsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "pages_stackpage",
+      "target": "pages_stackpage_graph_config"
     },
     {
       "relation": "contains",
@@ -50753,6 +51770,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/notion/package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_package_scripts",
+      "target": "notion_package_scripts_sync"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/package.json",
       "source_location": "L11",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -50773,7 +51800,7 @@
       "relation": "imports",
       "confidence": "EXTRACTED",
       "source_file": "scripts/notion/package.json",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "context": "import",
       "confidence_score": 1.0,
@@ -51967,6 +52994,183 @@
       "confidence_score": 1.0,
       "source": "notion_step_241_code_decoded",
       "target": "notion_step_241_code_decoded_tutorial_keywords"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs",
+      "target": "fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L84",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs",
+      "target": "notion_sync_active_worklogs_checkiftaskexists"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs",
+      "target": "notion_sync_active_worklogs_client"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs",
+      "target": "notion_sync_active_worklogs_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs",
+      "target": "notion_sync_active_worklogs_getindonesiandatelabel"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs",
+      "target": "notion_sync_active_worklogs_gettargetdate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L247",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs",
+      "target": "notion_sync_active_worklogs_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs",
+      "target": "notion_sync_active_worklogs_notion"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs",
+      "target": "notion_sync_active_worklogs_parsemarkdowntorichtext"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs",
+      "target": "notion_sync_active_worklogs_path"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs",
+      "target": "notion_sync_active_worklogs_syncprojectworklog"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs",
+      "target": "path"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L249",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs_main",
+      "target": "notion_sync_active_worklogs_getindonesiandatelabel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L248",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs_main",
+      "target": "notion_sync_active_worklogs_gettargetdate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L189",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs_syncprojectworklog",
+      "target": "notion_sync_active_worklogs_parsemarkdowntorichtext"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L155",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs_syncprojectworklog",
+      "target": "notion_sync_active_worklogs_checkiftaskexists"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/notion/sync_active_worklogs.js",
+      "source_location": "L283",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "notion_sync_active_worklogs_main",
+      "target": "notion_sync_active_worklogs_syncprojectworklog"
     },
     {
       "relation": "imports_from",
@@ -60267,6 +61471,186 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/checklist_perbaikan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_checklist_perbaikan",
+      "target": "output_openrouter_plus_checklist_perbaikan_checklist_perbaikan_dokumen_prd"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit",
+      "target": "output_openrouter_plus_laporan_audit_pass_1_review_umum"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit",
+      "target": "output_openrouter_plus_laporan_audit_pass_2_analisis_fokus_per_bagian"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L164",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit",
+      "target": "output_openrouter_plus_laporan_audit_pass_3_checklist_mindmap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit_pass_1_review_umum",
+      "target": "output_openrouter_plus_laporan_audit_1_struktur_dan_kepentingan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit_pass_1_review_umum",
+      "target": "output_openrouter_plus_laporan_audit_2_perbaikan_dan_penambahan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit_pass_1_review_umum",
+      "target": "output_openrouter_plus_laporan_audit_3_struktur_rekomendasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit_pass_1_review_umum",
+      "target": "output_openrouter_plus_laporan_audit_4_contoh_penutup"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit_pass_1_review_umum",
+      "target": "output_openrouter_plus_laporan_audit_5_catatan_penting"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_openrouter_plus_laporan_audit_audit_integrasi_integration"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_openrouter_plus_laporan_audit_audit_struktur_organisasi_sop"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit_pass_2_analisis_fokus_per_bagian",
+      "target": "output_openrouter_plus_laporan_audit_kesimpulan_dan_rekomendasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L193",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_openrouter_plus_laporan_audit_contoh_checklist_tindakan_prd_format"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L248",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_openrouter_plus_laporan_audit_diagram_alur_mermaid"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L213",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_openrouter_plus_laporan_audit_struktur_mindmap_konsep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/laporan_audit.md",
+      "source_location": "L171",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_laporan_audit_pass_3_checklist_mindmap",
+      "target": "output_openrouter_plus_laporan_audit_temuan_utama_daftar_masalah"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/minimap.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_minimap",
+      "target": "output_openrouter_plus_minimap_map_struktur_dokumen_minimap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/auditdok/output_openrouter_plus/minimap.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "output_openrouter_plus_minimap_map_struktur_dokumen_minimap",
+      "target": "output_openrouter_plus_minimap_struktur_mindmap_konsep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "projects/auditdok/output_plus/checklist_perbaikan.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -67220,9 +68604,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/makalah_seminar.md",
       "source_location": "L239",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_makalah_seminar",
-      "target": "revisi_makalah_akuntansi_makalah_seminar_tabel_1_3_deviasi_halaman_iii_dipa_belanja_modal_rudenim_pontianak_ta_2023_2025",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_makalah_seminar_tabel_1_3_deviasi_halaman_iii_dipa_belanja_modal_rudenim_pontianak_ta_2023_2025"
     },
     {
       "relation": "contains",
@@ -67230,9 +68614,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/makalah_seminar.md",
       "source_location": "L253",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_makalah_seminar",
-      "target": "revisi_makalah_akuntansi_makalah_seminar_tabel_1_4_bulan_kritis_deviasi_belanja_modal_rudenim_pontianak_ta_2023_2025",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_makalah_seminar_tabel_1_4_bulan_kritis_deviasi_belanja_modal_rudenim_pontianak_ta_2023_2025"
     },
     {
       "relation": "contains",
@@ -67240,9 +68624,9 @@
       "source_file": "projects/revisi-makalah-akuntansi/makalah_seminar.md",
       "source_location": "L267",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "revisi_makalah_akuntansi_makalah_seminar",
-      "target": "revisi_makalah_akuntansi_makalah_seminar_tabel_1_5_contoh_paket_belanja_modal_yang_mengalami_pergeseran_realisasi_ta_2023_2025",
-      "confidence_score": 1.0
+      "target": "revisi_makalah_akuntansi_makalah_seminar_tabel_1_5_contoh_paket_belanja_modal_yang_mengalami_pergeseran_realisasi_ta_2023_2025"
     },
     {
       "relation": "contains",
@@ -67403,6 +68787,36 @@
       "confidence_score": 1.0,
       "source": "projects_revisi_makalah_akuntansi_output_minimap_md_output_minimap",
       "target": "projects_revisi_makalah_akuntansi_output_minimap_md_output_minimap_map_struktur_dokumen_minimap"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/work-log.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_work_log",
+      "target": "revisi_makalah_akuntansi_work_log_work_log_revisi_makalah_akuntansi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/work-log.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_work_log_work_log_revisi_makalah_akuntansi",
+      "target": "revisi_makalah_akuntansi_work_log_2026_06_22"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/revisi-makalah-akuntansi/work-log.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "revisi_makalah_akuntansi_work_log_2026_06_22",
+      "target": "revisi_makalah_akuntansi_work_log_menyusun_kerangka_hasil_review"
     },
     {
       "relation": "contains",
@@ -68083,6 +69497,426 @@
       "confidence_score": 1.0,
       "source": "studios_architecture_3_database_schema_postgresql_ddl",
       "target": "studios_architecture_5_table_purchases"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L302",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2",
+      "target": "studios_buku_ajar_bab_1_2_bab_ii_organisasi_tubuh_manusia"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2",
+      "target": "studios_buku_ajar_bab_1_2_buku_ajar_dasar_dasar_anatomi_dan_fisiologi_tubuh_manusia"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_buku_ajar_dasar_dasar_anatomi_dan_fisiologi_tubuh_manusia",
+      "target": "studios_buku_ajar_bab_1_2_a_tujuan_pembelajaran"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_buku_ajar_dasar_dasar_anatomi_dan_fisiologi_tubuh_manusia",
+      "target": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L259",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_buku_ajar_dasar_dasar_anatomi_dan_fisiologi_tubuh_manusia",
+      "target": "studios_buku_ajar_bab_1_2_c_rangkuman"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L290",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_buku_ajar_dasar_dasar_anatomi_dan_fisiologi_tubuh_manusia",
+      "target": "studios_buku_ajar_bab_1_2_d_evaluasi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_buku_ajar_dasar_dasar_anatomi_dan_fisiologi_tubuh_manusia",
+      "target": "studios_buku_ajar_bab_1_2_sampai_bab_ii"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L251",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran",
+      "target": "studios_buku_ajar_bab_1_2_10_kepentingan_ilmu_fisiologi_tubuh_manusia_dalam_ilmu_gizi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran",
+      "target": "studios_buku_ajar_bab_1_2_1_pengertian_fisiologi_tubuh_manusia"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran",
+      "target": "studios_buku_ajar_bab_1_2_2_keterkaitan_antara_ilmu_anatomi_dan_fisiologi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran",
+      "target": "studios_buku_ajar_bab_1_2_3_level_organisasi_dalam_tubuh_manusia"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran",
+      "target": "studios_buku_ajar_bab_1_2_4_berbagai_sistem_organ_dalam_tubuh_manusia"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran",
+      "target": "studios_buku_ajar_bab_1_2_5_proses_kehidupan_manusia_sebagai_makhluk_hidup"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L141",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran",
+      "target": "studios_buku_ajar_bab_1_2_6_istilah_dan_posisi_anatomi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L165",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran",
+      "target": "studios_buku_ajar_bab_1_2_7_istilah_anatomi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L208",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran",
+      "target": "studios_buku_ajar_bab_1_2_8_arah_gerakan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L234",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran",
+      "target": "studios_buku_ajar_bab_1_2_9_istilah_anatomi_atau_nomenklatur_anatomi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L261",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_c_rangkuman",
+      "target": "studios_buku_ajar_bab_1_2_1_anatomi_dan_fisiologi_merupakan_pondasi_saat_kita_memahami"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L266",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_c_rangkuman",
+      "target": "studios_buku_ajar_bab_1_2_2_fisiologi_adalah_ilmu_yang_mempelajari_tentang_karakteristik_khusus_dan_mekanisme_yang_mencirikan_manusia_sebagai_makhluk_hidup_manusia_sebagai_makhluk_hidup_mampu_bertahan_sebagai_ha"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L274",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_c_rangkuman",
+      "target": "studios_buku_ajar_bab_1_2_3_level_organisasi_dalam_tubuh_manusia_adalah_level_kimia_molekul"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L280",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_c_rangkuman",
+      "target": "studios_buku_ajar_bab_1_2_4_beberapa_sistem_organ_dalam_tubuh_manusia_yaitu_sistem_otot_dan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L285",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_c_rangkuman",
+      "target": "studios_buku_ajar_bab_1_2_5_posisi_anatomi_tubuh_adalah_saat_subjek_berdiri_tegak_kepala_dan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L292",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_d_evaluasi",
+      "target": "studios_buku_ajar_bab_1_2_1_berikan_contoh_tentang_berbagai_level_organisasi_tubuh_manusia"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L296",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_d_evaluasi",
+      "target": "studios_buku_ajar_bab_1_2_2_jelaskan_mengapa_ilmu_anatomi_dan_fisiologi_sangat_berkaitan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L298",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_d_evaluasi",
+      "target": "studios_buku_ajar_bab_1_2_3_jelaskan_kepentingan_mengapa_calon_ahli_gizi_perlu_memahami_ilmu_anatomi_dan_fisiologi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L304",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_bab_ii_organisasi_tubuh_manusia",
+      "target": "studios_buku_ajar_bab_1_2_a_tujuan_pembelajaran_304"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L311",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_bab_ii_organisasi_tubuh_manusia",
+      "target": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran_311"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L515",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_bab_ii_organisasi_tubuh_manusia",
+      "target": "studios_buku_ajar_bab_1_2_c_rangkuman_515"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L532",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_bab_ii_organisasi_tubuh_manusia",
+      "target": "studios_buku_ajar_bab_1_2_d_evaluasi_532"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L313",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran_311",
+      "target": "studios_buku_ajar_bab_1_2_1_teori_organisasi_seluler"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L352",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran_311",
+      "target": "studios_buku_ajar_bab_1_2_2_jaringan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L412",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran_311",
+      "target": "studios_buku_ajar_bab_1_2_3_organ_dan_sistem_organ"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L426",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_b_materi_pembelajaran_311",
+      "target": "studios_buku_ajar_bab_1_2_4_homeostasis"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L517",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_c_rangkuman_515",
+      "target": "studios_buku_ajar_bab_1_2_1_sel_adalah_unit_dasar_dari_struktur_dan_fungsi_makhluk_hidup_selsel_tersebut_merupakan_unit_terkecil_yang_mampu_melaksanakan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L522",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_c_rangkuman_515",
+      "target": "studios_buku_ajar_bab_1_2_2_jaringan_adalah_kumpulan_sel_sel_dengan_struktur_dan_fungsi_khusus_yang_sama_empat_jenis_jaringan_utama_terdapat_dalam_tubuh"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L526",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_c_rangkuman_515",
+      "target": "studios_buku_ajar_bab_1_2_3_dua_atau_lebih_jenis_jaringan_yang_tersusun_dengan_berbagai_proporsi_disebut_sebagai_organ_organ_ini_juga_dapat_tersusun_atas_beberapa_subunit_kecil_dan_sejenis_yang_disebut_sebagai_unit_fungsional_unit_fungsional_tersebut_masing_masing_menjalankan_fungsi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L530",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_c_rangkuman_515",
+      "target": "studios_buku_ajar_bab_1_2_4_homeostasis_disebut_sebagai_kondisi_yang_dinamis_karena_variabelvariabel_tersebut_suhu_tubuh_cairan_ion_dan_lain_lain"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L534",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_d_evaluasi_532",
+      "target": "studios_buku_ajar_bab_1_2_1_nefron_adalah_contoh_sebuah"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L544",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_d_evaluasi_532",
+      "target": "studios_buku_ajar_bab_1_2_2_lapisan_dinding_lambung_ada_bagian_organisasi_tubuh_manusia_pada_tingkat"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L552",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_d_evaluasi_532",
+      "target": "studios_buku_ajar_bab_1_2_3_manusia_adalah_organisme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L560",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_d_evaluasi_532",
+      "target": "studios_buku_ajar_bab_1_2_4_fungsi_dasar_sel_tubuh_manusia_secara_garis_besar_dibagi_menjadi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "projects/studios/buku_ajar_bab_1_2.md",
+      "source_location": "L569",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "studios_buku_ajar_bab_1_2_d_evaluasi_532",
+      "target": "studios_buku_ajar_bab_1_2_5_contoh_mekanisme_feedforward_adalah"
     },
     {
       "relation": "contains",
@@ -81338,5 +83172,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "942f92722db6a45245fd0f9350964b706f66e19c"
+  "built_at_commit": "536ef1845978bd3770bbda907976575a880092d3"
 }

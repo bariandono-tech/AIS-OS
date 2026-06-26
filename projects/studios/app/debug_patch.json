@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Ringkasan PPh Pasal 21 — Tarif TER Terbaru 2025",
+    "prereqs": [
+      "38978c4c-e388-81e9-a918-c02f04f45d17"
+    ]
+  },
+  {
+    "title": "Catatan Kuliah: PPN dan PPnBM",
+    "prereqs": [
+      "38978c4c-e388-81e9-a918-c02f04f45d17"
+    ]
+  },
+  {
+    "title": "Rangkuman Coretax System — Sistem Baru DJP 2025",
+    "prereqs": [
+      "38978c4c-e388-8126-87de-ff93748a456d"
+    ]
+  },
+  {
+    "title": "Mind Map: Jenis-Jenis Pajak di Indonesia",
+    "prereqs": [
+      "38978c4c-e388-81b7-a3cb-d7ace322ca41"
+    ]
+  },
+  {
+    "title": "Catatan: PPh Badan dan Tarif Pasal 17",
+    "prereqs": [
+      "38978c4c-e388-8126-87de-ff93748a456d",
+      "38978c4c-e388-81b7-a3cb-d7ace322ca41"
+    ]
+  }
+]

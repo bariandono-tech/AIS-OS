@@ -14,4 +14,5 @@ export const supabase = isSupabaseConfigured
   ? createClient(supabaseUrl, supabaseAnonKey) 
   : null;
 
+// ENABLE SUPABASE in V1 to fetch from the newly synced database
 export const HAS_SUPABASE = isSupabaseConfigured;

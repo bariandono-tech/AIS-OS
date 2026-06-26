@@ -1,0 +1,19 @@
+{
+  "matchCount": 8,
+  "prerequisitesType": "object",
+  "isArray": true,
+  "samplePrereq": [
+    "38978c4c-e388-8126-87de-ff93748a456d",
+    "38978c4c-e388-81b7-a3cb-d7ace322ca41"
+  ],
+  "sampleId": "38978c4c-e388-81e9-a918-c02f04f45d17",
+  "inDegrees": {
+    "38978c4c-e388-81e9-a918-c02f04f45d17": 2,
+    "38978c4c-e388-81b3-9d89-c28d5ed3b466": 0,
+    "38978c4c-e388-8126-87de-ff93748a456d": 1,
+    "38978c4c-e388-81b7-a3cb-d7ace322ca41": 1,
+    "38978c4c-e388-8192-b240-c4a04b1eea3a": 1,
+    "38978c4c-e388-81c7-b889-f2f994a8e1b9": 1,
+    "38978c4c-e388-8120-b4a0-d2420bd28784": 2
+  }
+}

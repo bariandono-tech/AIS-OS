@@ -3,13 +3,13 @@
 -- ============================================
 
 -- 1. CLEANUP (Optional, for fresh start)
--- DROP TABLE IF EXISTS public.purchases CASCADE;
--- DROP TABLE IF EXISTS public."references" CASCADE;
--- DROP TABLE IF EXISTS public.flashcards CASCADE;
--- DROP TABLE IF EXISTS public.content_items CASCADE;
--- DROP TABLE IF EXISTS public.stacks CASCADE;
--- DROP TYPE IF EXISTS public.content_type CASCADE;
--- DROP TYPE IF EXISTS public.ref_category CASCADE;
+ DROP TABLE IF EXISTS public.purchases CASCADE;
+ DROP TABLE IF EXISTS public."references" CASCADE;
+ DROP TABLE IF EXISTS public.flashcards CASCADE;
+ DROP TABLE IF EXISTS public.content_items CASCADE;
+ DROP TABLE IF EXISTS public.stacks CASCADE;
+ DROP TYPE IF EXISTS public.content_type CASCADE;
+ DROP TYPE IF EXISTS public.ref_category CASCADE;
 
 -- 2. CUSTOM TYPES
 CREATE TYPE public.content_type AS ENUM (
@@ -45,9 +45,11 @@ CREATE TABLE public.stacks (
 CREATE TABLE public.content_items (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     stack_id UUID NOT NULL REFERENCES public.stacks(id) ON DELETE CASCADE,
-    type public.content_type NOT NULL,
+    type TEXT DEFAULT 'notes',
     title TEXT NOT NULL,
     body JSONB DEFAULT '{}'::jsonb,
+    prerequisites JSONB DEFAULT '[]'::jsonb,
+    recommended JSONB DEFAULT '[]'::jsonb,
     order_index INTEGER DEFAULT 0,
     is_published BOOLEAN DEFAULT FALSE,
     created_at TIMESTAMPTZ DEFAULT NOW()

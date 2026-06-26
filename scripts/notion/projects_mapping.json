@@ -1,0 +1,22 @@
+{
+  "revisi-makalah-akuntansi": {
+    "project_id": "37f78c4c-e388-81d1-837a-dad887723e8e",
+    "area_id": "37f78c4c-e388-8064-abbc-d4df85b7eda0",
+    "db_type": "tasks"
+  },
+  "studios": {
+    "project_id": "38078c4c-e388-8103-90f8-c8aea75f70a3",
+    "area_id": "37c78c4c-e388-81f1-99a3-d9e3b16d3d86",
+    "db_type": "tasks"
+  },
+  "sieka-rudenim": {
+    "project_id": "37c78c4c-e388-8149-ba66-fbd0ea94aaf8",
+    "area_id": "37c78c4c-e388-8162-814b-ef33783d7ab3",
+    "db_type": "tasks"
+  },
+  "jasa-ppt-akuntansi": {
+    "project_id": "37f78c4c-e388-81d1-837a-dad887723e8e",
+    "area_id": "37f78c4c-e388-8064-abbc-d4df85b7eda0",
+    "db_type": "tasks"
+  }
+}
