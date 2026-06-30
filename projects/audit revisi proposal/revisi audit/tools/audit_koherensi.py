@@ -15,8 +15,8 @@ def run_koherensi_audit(input_path, output_path):
     with open(input_path, 'r', encoding='utf-8') as f:
         raw_text = f.read()[:100000]
 
-    # Layer 2: Force Dinoiki/Claude (paid, cross-bab reasoning)
-    client, model = get_client(force_provider="dinoiki")
+    # Layer 2: Read from .env
+    client, model = get_client()
 
     prompt = f"""
 Anda adalah Quality Assurance akademik yang tugasnya satu: memastikan BENANG MERAH proposal skripsi ini lurus sempurna dari Judul hingga Metodologi.
@@ -95,7 +95,7 @@ Teks Proposal:
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=8192
+        max_tokens=16384
     )
 
     with open(output_path, 'w', encoding='utf-8') as f:

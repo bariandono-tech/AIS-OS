@@ -15,8 +15,8 @@ def run_metodologi_audit(input_path, output_path):
     with open(input_path, 'r', encoding='utf-8') as f:
         raw_text = f.read()[:100000]
 
-    # Layer 2: Force Dinoiki/Claude (paid, deep reasoning critical for methodology)
-    client, model = get_client(force_provider="dinoiki")
+    # Layer 2: Read from .env
+    client, model = get_client()
 
     prompt = f"""
 Anda adalah Profesor Metodologi Penelitian dengan pengalaman 20 tahun membimbing dan menguji proposal skripsi/tesis. Tugas Anda: melakukan BEDAH TOTAL terhadap Bab III (Metodologi Penelitian) dari proposal ini.
@@ -84,7 +84,7 @@ Teks Proposal:
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=8192
+        max_tokens=16384
     )
 
     with open(output_path, 'w', encoding='utf-8') as f:

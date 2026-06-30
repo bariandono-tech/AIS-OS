@@ -15,8 +15,8 @@ def run_structure_audit(input_path, output_path):
     with open(input_path, 'r', encoding='utf-8') as f:
         raw_text = f.read()[:100000]
 
-    # Layer 2: Force Dinoiki/Claude (paid, deep reasoning required)
-    client, model = get_client(force_provider="dinoiki")
+    # Layer 2: Read from .env
+    client, model = get_client()
 
     prompt = f"""
 Anda adalah Dosen Penguji senior yang sangat kritis. Tugas Anda: mengevaluasi STRUKTUR dan RESEARCH GAP dari proposal skripsi Bab I-III ini.
@@ -95,7 +95,7 @@ Teks Proposal:
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=8192
+        max_tokens=16384
     )
 
     with open(output_path, 'w', encoding='utf-8') as f:

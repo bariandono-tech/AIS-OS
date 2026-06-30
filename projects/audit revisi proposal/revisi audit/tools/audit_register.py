@@ -15,8 +15,8 @@ def run_register_audit(input_path, output_path):
     with open(input_path, 'r', encoding='utf-8') as f:
         raw_text = f.read()[:100000]
 
-    # Layer 1: Force Gemini (free)
-    client, model = get_client(force_provider="google")
+    # Layer 1: Read from .env (fallback to google if not set)
+    client, model = get_client()
 
     prompt = f"""
 Anda adalah reviewer jurnal ilmiah terakreditasi SINTA 1. Tugas Anda: mengevaluasi KUALITAS BAHASA AKADEMIK dari proposal skripsi ini. 
@@ -71,7 +71,7 @@ Teks Proposal:
     response = client.chat.completions.create(
         model=model,
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=8192
+        max_tokens=16384
     )
 
     with open(output_path, 'w', encoding='utf-8') as f:

@@ -20,6 +20,7 @@ const M_LEFT = 2268;
 const M_RIGHT = 1701;
 const CONTENT_W = PAGE_W - M_LEFT - M_RIGHT; // 7937
 
+
 // ── HELPERS ────────────────────────────────────────────────────────────
 const border0 = { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' };
 const borders0 = { top: border0, bottom: border0, left: border0, right: border0 };
@@ -778,6 +779,7 @@ const doc = new Document({
         justifiedPara([tr('Penelitian ini diharapkan memberikan kontribusi pada pengembangan literatur Akuntansi Sektor Publik dan Akuntansi Pemerintahan, khususnya pada subbidang pelaksanaan anggaran belanja modal dan evaluasi kinerja melalui IKPA. Secara konseptual, penelitian ini memperkaya elaborasi penerapan '), tri('Agency Theory'), tr(' (Jensen & Meckling, 1976; Lane, 2003) yang dilengkapi dengan kerangka regulasi PMK 62/2023 dan mekanisme pengadaan barang/jasa pemerintah berdasarkan Perpres 16/2018 jo. Perpres 12/2021 dalam konteks satker UPT dengan dominasi Belanja Modal. Konteks ini belum dieksplorasi secara memadai dalam penelitian-penelitian terdahulu yang umumnya berfokus pada IKPA agregat tanpa membedakan per jenis belanja. Selain itu, penelitian ini dapat menjadi rujukan metodologis dan substantif bagi penelitian lanjutan pada satker sejenis, seperti Rumah Tahanan Negara (Rutan), Lembaga Pemasyarakatan (Lapas), atau UPT penegakan hukum lainnya yang memiliki karakteristik dominasi Belanja Modal serupa.')]),
         heading3('1.4.2  Manfaat Praktis'),
         justifiedPara([tr('Dari sisi praktis, penelitian ini memberikan manfaat bagi berbagai pemangku kepentingan. Bagi Rudenim Pontianak selaku objek penelitian, hasil kajian ini diharapkan menghasilkan rekomendasi konkret untuk meningkatkan kualitas perencanaan dan pelaksanaan anggaran Belanja Modal, memperkuat koordinasi antara Pejabat Pembuat Komitmen (PPK) dengan penyedia barang/jasa, serta menyempurnakan manajemen pengadaan agar lebih selaras dengan siklus kas aktual. Bagi Direktorat Jenderal Imigrasi, penelitian ini dapat menjadi masukan kebijakan dalam pembinaan tata kelola pelaksanaan anggaran Belanja Modal pada UPT detensi imigrasi se-Indonesia. Bagi KPPN Pontianak dan Kanwil DJPb, hasil penelitian ini menyediakan referensi dalam pembinaan satker yang memiliki dominasi Belanja Modal, sehingga pendekatan pembinaan dapat lebih kontekstual dan tepat sasaran. Bagi Direktorat Jenderal Perbendaharaan secara kelembagaan, temuan penelitian ini dapat menjadi bahan pertimbangan dalam penyempurnaan formula IKPA agar lebih mengakomodasi karakteristik pelaksanaan anggaran Belanja Modal yang bersifat kontraktual dan multi-termin.')]),
+
       ]
     },
     // ═══════════════════════════════════════════════════════════════
@@ -795,6 +797,7 @@ const doc = new Document({
       headers: chapterPageSetup.headers,
       footers: chapterPageSetup.footers,
       children: [
+
         centered('BAB II', { bold: true, size: 24, spaceAfter: 0 }),
         centered('TINJAUAN PUSTAKA', { bold: true, size: 24, spaceAfter: 240 }),
         justifiedPara([tr('Berdasarkan latar belakang dan rumusan masalah yang telah diuraikan pada BAB I, bab ini menyajikan landasan teoretis dan empiris yang menopang penelitian mengenai pelaksanaan anggaran belanja, khususnya Belanja Modal, pada Rumah Detensi Imigrasi Pontianak. Pembahasan disusun secara berjenjang. Sub-bab 2.1 Landasan Teori menguraikan lima pokok bahasan yang saling melengkapi, yaitu pelaksanaan anggaran belanja negara, Belanja Modal beserta mekanisme pengadaan barang/jasa, konsep deviasi pelaksanaan anggaran, '), tri('Agency Theory'), tr(' sebagai lensa analitis, serta Indikator Kinerja Pelaksanaan Anggaran (IKPA) sebagai instrumen evaluasi. Sub-bab 2.2 memetakan ringkasan penelitian terdahulu yang relevan, Sub-bab 2.3 merumuskan proposisi penelitian, dan Sub-bab 2.4 menyajikan kerangka penelitian yang mengintegrasikan keseluruhan landasan tersebut ke dalam alur analisis yang menjawab ketiga rumusan masalah.')]),
@@ -927,6 +930,7 @@ const doc = new Document({
             }),
           ]
         }),
+
       ]
     },
     // ═══════════════════════════════════════════════════════════════
@@ -944,6 +948,7 @@ const doc = new Document({
       headers: chapterPageSetup.headers,
       footers: chapterPageSetup.footers,
       children: [
+
         centered('BAB III', { bold: true, size: 24, spaceAfter: 0 }),
         centered('METODE PENELITIAN', { bold: true, size: 24, spaceAfter: 240 }),
         heading2('3.1  Bentuk dan Subjek Penelitian'),
@@ -1037,6 +1042,7 @@ const doc = new Document({
         justifiedPara([tri('Transferability'), tr(' (keteralihan) dipenuhi melalui penyediaan '), tri('thick description'), tr(', deskripsi konteks yang cukup kaya dan terperinci mengenai karakteristik Rudenim Pontianak (geografis, struktural, anggaran, dan operasional), sehingga pembaca dapat menilai relevansi temuan untuk konteks lain yang memiliki karakteristik serupa, misalnya Rudenim lain di wilayah perbatasan atau satker UPT lain dengan tingkat ketidakpastian operasional tinggi.')]),
         justifiedPara([tri('Dependability'), tr(' (ketergantungan) dijamin melalui '), tri('audit trail'), tr(': pendokumentasian sistematis seluruh keputusan metodologis, meliputi alasan pemilihan informan, perubahan pedoman wawancara, evolusi tema dalam pengkodean, yang tersimpan dalam log metodologis dan dapat diakses oleh auditor eksternal. Dosen pembimbing berperan sebagai auditor primer.')]),
         justifiedPara([tri('Confirmability'), tr(' (kepastian) dipenuhi melalui '), tri('confirmability audit'), tr(': setiap pernyataan kesimpulan dalam laporan penelitian dapat dilacak ke data sumbernya, yaitu kutipan wawancara spesifik (dengan kode informan dan nomor baris transkrip) atau bukti dokumenter spesifik (dengan nama dokumen dan halaman).')]),
+
       ]
     },
     // ═══════════════════════════════════════════════════════════════
@@ -1054,6 +1060,7 @@ const doc = new Document({
       headers: chapterPageSetup.headers,
       footers: chapterPageSetup.footers,
       children: [
+
         centered('DAFTAR PUSTAKA', { bold: true, size: 24, spaceAfter: 240 }),
         daftarPustakaEntry([tr('Creswell, J. W. (2014). '), tri('Research design: Qualitative, quantitative, and mixed methods approaches'), tr(' (4th ed.). SAGE Publications.')]),
         daftarPustakaEntry([tr('Direktorat Jenderal Imigrasi. (2025). '), tri('Rencana kerja dan anggaran Kementerian/Lembaga Direktorat Jenderal Imigrasi Tahun Anggaran 2025'), tr('. Kementerian Imigrasi dan Pemasyarakatan Republik Indonesia.')]),
@@ -1082,6 +1089,7 @@ const doc = new Document({
         daftarPustakaEntry([tr('Undang-Undang Republik Indonesia Nomor 17 Tahun 2003 tentang Keuangan Negara. (2003). '), tri('Lembaran Negara Republik Indonesia Tahun 2003 Nomor 47'), tr('.')]),
         daftarPustakaEntry([tr('Undang-Undang Republik Indonesia Nomor 30 Tahun 2014 tentang Administrasi Pemerintahan. (2014). '), tri('Lembaran Negara Republik Indonesia Tahun 2014 Nomor 292'), tr('.')]),
         daftarPustakaEntry([tr('Undang-Undang Republik Indonesia Nomor 6 Tahun 2011 tentang Keimigrasian. (2011). '), tri('Lembaran Negara Republik Indonesia Tahun 2011 Nomor 52'), tr('.')]),
+
       ]
     },
   ]
