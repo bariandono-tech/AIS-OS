@@ -1,0 +1,12 @@
+{
+  "name": "revisi-audit-builder",
+  "version": "1.0.0",
+  "description": "Document builder for audit revisi proposal",
+  "main": "build_revisi.js",
+  "scripts": {
+    "build": "node build_revisi.js"
+  },
+  "dependencies": {
+    "docx": "^9.7.1"
+  }
+}

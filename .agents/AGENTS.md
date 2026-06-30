@@ -13,3 +13,7 @@ When the user asks to create a flowchart or diagram, ALWAYS use an HTML file for
 - Implement a "Download PNG (HD)" button that uses `html2canvas` (`html2canvas(container, {backgroundColor: '#0d1117', scale: 3})`) to capture the DOM exactly as rendered.
 - Do NOT rely on Mermaid's native SVG/PNG export if the user wants an image download, as it strips HTML labels in offline viewers. Use the `html2canvas` boilerplate instead to guarantee exact rendering.
 - Always include modern CSS styling (e.g. dark mode, gradients, Inter font) to make it look premium.
+
+# Language Rule
+
+- **MANDATORY**: ALWAYS respond, think, and communicate with the user in **Bahasa Indonesia**. All chat messages, artifacts (unless requested otherwise), and explanations must be in Indonesian.
