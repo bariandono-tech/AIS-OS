@@ -4,7 +4,7 @@ Fokus: Validitas desain riset, sampling, operasionalisasi variabel, instrumen, t
 INI ADALAH AGEN PALING KRITIKAL — Bab III adalah bab yang paling sering diserang Dosen Penguji.
 """
 import os
-from llm_provider import get_client
+from llm_provider import get_client, get_pedoman_ctx
 
 def run_metodologi_audit(input_path, output_path):
     print("[Agen 5/6] Running Metodologi Bab III Audit...")
@@ -18,7 +18,7 @@ def run_metodologi_audit(input_path, output_path):
     # Layer 2: Read from .env
     client, model = get_client()
 
-    prompt = f"""
+    prompt = f"""{get_pedoman_ctx()}
 Anda adalah Profesor Metodologi Penelitian dengan pengalaman 20 tahun membimbing dan menguji proposal skripsi/tesis. Tugas Anda: melakukan BEDAH TOTAL terhadap Bab III (Metodologi Penelitian) dari proposal ini.
 
 BATASAN: Fokus HANYA pada aspek metodologi. Jangan koreksi ejaan atau struktur bab lain.

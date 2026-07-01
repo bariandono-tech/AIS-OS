@@ -3,7 +3,7 @@ Agen 1: Audit PUEBI & Ejaan (Layer 1 — Gemini/Gratis)
 Fokus: Typo, PUEBI, tanda baca, istilah asing, penulisan angka, tanda hubung.
 """
 import os
-from llm_provider import get_client
+from llm_provider import get_client, get_pedoman_ctx
 
 def run_puebi_audit(input_path, output_path):
     print("[Agen 1/6] Running PUEBI & Ejaan Audit...")
@@ -17,7 +17,7 @@ def run_puebi_audit(input_path, output_path):
     # Layer 1: Read from .env (fallback to google if not set)
     client, model = get_client()
 
-    prompt = f"""
+    prompt = f"""{get_pedoman_ctx()}
 Anda adalah editor PUEBI profesional bersertifikat. Tugas Anda: melakukan AUDIT TOTAL ejaan dan tata bahasa Indonesia pada teks proposal skripsi berikut.
 
 ATURAN KETAT:

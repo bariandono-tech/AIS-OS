@@ -4,7 +4,7 @@ Fokus: Pleonasme, bahasa kasual, subjektivitas, kalimat tidak efektif, hedging.
 BEDA dari PUEBI: PUEBI cek ejaan SALAH, Register cek bahasa BENAR tapi TIDAK AKADEMIS.
 """
 import os
-from llm_provider import get_client
+from llm_provider import get_client, get_pedoman_ctx
 
 def run_register_audit(input_path, output_path):
     print("[Agen 2/6] Running Register & Kualitas Bahasa Akademik Audit...")
@@ -18,7 +18,7 @@ def run_register_audit(input_path, output_path):
     # Layer 1: Read from .env (fallback to google if not set)
     client, model = get_client()
 
-    prompt = f"""
+    prompt = f"""{get_pedoman_ctx()}
 Anda adalah reviewer jurnal ilmiah terakreditasi SINTA 1. Tugas Anda: mengevaluasi KUALITAS BAHASA AKADEMIK dari proposal skripsi ini. 
 
 PENTING: Anda BUKAN mengecek ejaan atau PUEBI (itu tugas agen lain). Anda mengecek apakah GAYA BAHASA dan REGISTER tulisan ini sudah setara standar karya ilmiah.

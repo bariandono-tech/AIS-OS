@@ -4,7 +4,7 @@ Fokus: Piramida terbalik, research gap, kelengkapan sub-bab, kesesuaian judul.
 CATATAN: Agen ini TIDAK lagi menangani metodologi (Agen 5) dan sitasi (Agen 3).
 """
 import os
-from llm_provider import get_client
+from llm_provider import get_client, get_pedoman_ctx
 
 def run_structure_audit(input_path, output_path):
     print("[Agen 4/6] Running Struktur & Research Gap Audit...")
@@ -18,7 +18,7 @@ def run_structure_audit(input_path, output_path):
     # Layer 2: Read from .env
     client, model = get_client()
 
-    prompt = f"""
+    prompt = f"""{get_pedoman_ctx()}
 Anda adalah Dosen Penguji senior yang sangat kritis. Tugas Anda: mengevaluasi STRUKTUR dan RESEARCH GAP dari proposal skripsi Bab I-III ini.
 
 BATASAN TUGAS: Anda HANYA mengevaluasi struktur dan logika argumen. JANGAN mengoreksi ejaan/PUEBI (agen lain yang menangani), JANGAN mengevaluasi metodologi secara detail (agen lain yang menangani), dan JANGAN mengevaluasi sitasi secara detail (agen lain yang menangani).

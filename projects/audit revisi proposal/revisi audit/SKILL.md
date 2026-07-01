@@ -16,10 +16,14 @@ Pipeline ini merupakan adaptasi dari evaluasi `Opus` yang memfungsikan arsitektu
 > **Peta lengkap & resmi ada di `README.md`.** Bagian ini hanya ringkasan.
 > Folder `stages/` berisi 11 file bernomor (01–11) yang merupakan urutan sebenarnya.
 
-- **Fase A — Audit** → `python tools/main.py <path-to-pdf>`
+- **Fase A — Audit** → `python tools/main.py audits/<nama-job> --pedoman <kampus>`
+  1 folder job = 1 dokumen (`audits/<nama-job>/input/*.pdf` → hasil di folder yang sama).
   Ekstraksi (`01`) + **6 agen audit**: PUEBI (`02`), Register (`03`), Sitasi (`04`),
-  Struktur (`05`), Metodologi (`06`), Koherensi (`07`) → konsolidasi `08-final-report` →
-  `Final_Audit_Report.pdf`. File perantara di `.tmp/`.
+  Struktur (`05`), Metodologi (`06`), Koherensi (`07`) → konsolidasi `08-combined-report` →
+  `Final_Audit_Report.pdf`. File perantara di `<job>/work/` (BUKAN `.tmp/` global lagi).
+  `--pedoman <kampus>` memuat aturan format dari `pedoman/<kampus>.json` ke tiap prompt.
+  Panduan lengkap: `audits/README.md`. Mode legacy `main.py <file.pdf>` (→ `.tmp/`) masih ada
+  untuk uji cepat. **Audit lama tidak pernah ketiban karena tiap job punya `work/` sendiri.**
 - **[SESSION HANDOFF]** — bersihkan konteks chat sebelum fase berikut (cegah *context rot*).
 - **Fase B — Writing** → `python tools/main_writing.py <topik> <versi>`
   Writing ulang Bab 1–3 + Daftar Pustaka (`09`) → Verification pass (`10`,

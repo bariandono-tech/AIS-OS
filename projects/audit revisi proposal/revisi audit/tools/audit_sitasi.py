@@ -3,7 +3,7 @@ Agen 3: Audit Sitasi & Daftar Pustaka (Layer 1 — Gemini/Gratis)
 Fokus: Ghost citation, orphan reference, format sitasi, recency check.
 """
 import os
-from llm_provider import get_client
+from llm_provider import get_client, get_pedoman_ctx
 
 def run_sitasi_audit(input_path, output_path):
     print("[Agen 3/6] Running Sitasi & Daftar Pustaka Audit...")
@@ -17,7 +17,7 @@ def run_sitasi_audit(input_path, output_path):
     # Layer 1: Read from .env (fallback to google if not set)
     client, model = get_client()
 
-    prompt = f"""
+    prompt = f"""{get_pedoman_ctx()}
 Anda adalah pustakawan akademik dan ahli manajemen referensi. Tugas Anda: mengaudit SELURUH aspek sitasi dan daftar pustaka dari proposal skripsi ini secara menyeluruh.
 
 FORMAT LAPORAN WAJIB (Markdown):

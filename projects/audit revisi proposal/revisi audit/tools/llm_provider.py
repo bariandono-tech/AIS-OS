@@ -3,6 +3,7 @@ LLM Provider Helper — Centralized API client initialization.
 Supports hybrid routing: different agents can use different providers.
 """
 import os
+import json
 from openai import OpenAI
 from dotenv import load_dotenv
 
@@ -69,5 +70,47 @@ def get_client(force_provider=None):
         model_name = "nvidia/nemotron-3-ultra-550b-a55b:free"
     else:
         raise ValueError(f"Unknown LLM_PROVIDER: {provider}. Use 'google', 'dinoiki', 'nararouter', or 'openrouter'.")
-    
+
     return client, model_name
+
+
+def get_pedoman_ctx():
+    """
+    Membaca aturan format kampus dari file JSON yang path-nya diset di env
+    AUDIT_PEDOMAN (diset oleh main.py lewat flag --pedoman <kampus>).
+
+    Return: string blok konteks untuk disisipkan ke prompt audit.
+    Jika env tidak diset / file tidak ada / gagal parse → return "" (audit
+    tetap jalan tanpa konteks kampus, tidak error).
+    """
+    path = os.getenv("AUDIT_PEDOMAN", "").strip()
+    if not path or not os.path.exists(path):
+        return ""
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            p = json.load(f)
+    except Exception:
+        return ""
+
+    lines = ["", "=== KONTEKS PEDOMAN KAMPUS (jadikan acuan penilaian format) ==="]
+    fields = [
+        (p.get("_meta", {}).get("nama"),            "Pedoman"),
+        (p.get("sitasi", {}).get("gaya"),           "Gaya sitasi"),
+        (p.get("gaya", {}).get("tandaPisah"),       "Tanda pisah"),
+        (p.get("gaya", {}).get("sitasiDanSimbol"),  "Aturan '&' vs 'dan'"),
+        (p.get("italic", {}).get("wajibMiring"),    "Wajib dicetak miring"),
+        (p.get("italic", {}).get("janganMiring"),   "Jangan dicetak miring"),
+        (p.get("spasi", {}).get("notasiDesimal"),   "Notasi desimal"),
+        (p.get("ketentuan", {}).get("bahasa"),      "Bahasa"),
+    ]
+    for value, label in fields:
+        if value:
+            lines.append(f"- {label}: {value}")
+
+    struktur = p.get("struktur", {}).get("proposal")
+    if struktur:
+        lines.append(f"- Struktur proposal wajib: {', '.join(struktur)}")
+
+    lines.append("=== AKHIR KONTEKS PEDOMAN ===")
+    lines.append("")
+    return "\n".join(lines) + "\n"

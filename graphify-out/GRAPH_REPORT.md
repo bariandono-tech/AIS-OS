@@ -1,16 +1,16 @@
-# Graph Report - AIS-OS  (2026-06-30)
+# Graph Report - AIS-OS  (2026-07-01)
 
 ## Corpus Check
-- 532 files · ~674,700 words
+- 542 files · ~709,042 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 5152 nodes · 5126 edges · 582 communities (452 shown, 130 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.73)
+- 5359 nodes · 5341 edges · 593 communities (469 shown, 124 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 10 edges (avg confidence: 0.77)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7d8b0f02`
+- Built from commit: `3040051f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -566,35 +566,46 @@
 - [[_COMMUNITY_Community 573|Community 573]]
 - [[_COMMUNITY_Community 574|Community 574]]
 - [[_COMMUNITY_Community 575|Community 575]]
+- [[_COMMUNITY_Community 582|Community 582]]
+- [[_COMMUNITY_Community 583|Community 583]]
+- [[_COMMUNITY_Community 584|Community 584]]
+- [[_COMMUNITY_Community 585|Community 585]]
+- [[_COMMUNITY_Community 586|Community 586]]
+- [[_COMMUNITY_Community 587|Community 587]]
+- [[_COMMUNITY_Community 588|Community 588]]
+- [[_COMMUNITY_Community 589|Community 589]]
+- [[_COMMUNITY_Community 590|Community 590]]
+- [[_COMMUNITY_Community 591|Community 591]]
+- [[_COMMUNITY_Community 592|Community 592]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
 2. `A8. Module Specifications` - 19 edges
 3. `🎞️ DETAIL SLIDE PER SLIDE (Slide 1 - 15)` - 16 edges
 4. `Ultimate Brain — Complete Second Brain System in Notion` - 16 edges
-5. `A6. Target Architecture — Canonical Databases & Full Schemas` - 14 edges
-6. `Architecture: StudiOS — Database-Driven Knowledge Viewer` - 14 edges
-7. `buildDocxChildren()` - 13 edges
+5. `buildDocxChildren()` - 15 edges
+6. `A6. Target Architecture — Canonical Databases & Full Schemas` - 14 edges
+7. `Architecture: StudiOS — Database-Driven Knowledge Viewer` - 14 edges
 8. `Update` - 13 edges
 9. `syncEngine()` - 13 edges
 10. `🔄 5. Tahapan Prosedur Kerja (Langkah demi Langkah)` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `main()` --calls--> `run_build_document()`  [INFERRED]
-  projects/audit revisi proposal/revisi audit/tools/main_writing.py → projects/audit revisi proposal/revisi audit/tools/convert_to_word.py
-- `main()` --calls--> `generate_pdf()`  [INFERRED]
-  projects/audit revisi proposal/revisi audit/tools/main.py → projects/audit revisi proposal/revisi audit/tools/generate_pdf_report.py
-- `AuditWorkflow` --uses--> `AuditAgent`  [INFERRED]
-  projects/auditdok/src/workflow.py → projects/auditdok/src/agent.py
-- `draw_flowchart()` --calls--> `draw_arrow()`  [INFERRED]
-  projects/makalah-sim/draw_flowcharts.py → projects/makalah-sim/draw_individual_flowcharts.py
-- `main()` --calls--> `generate_markdown_files()`  [EXTRACTED]
-  projects/auditdok/src/cli.py → projects/auditdok/src/generator.py
+- `run_koherensi_audit()` --calls--> `get_pedoman_ctx()`  [INFERRED]
+  projects/audit revisi proposal/revisi audit/tools/audit_koherensi.py → projects/audit revisi proposal/revisi audit/tools/llm_provider.py
+- `run_metodologi_audit()` --calls--> `get_pedoman_ctx()`  [INFERRED]
+  projects/audit revisi proposal/revisi audit/tools/audit_metodologi.py → projects/audit revisi proposal/revisi audit/tools/llm_provider.py
+- `run_puebi_audit()` --calls--> `get_pedoman_ctx()`  [INFERRED]
+  projects/audit revisi proposal/revisi audit/tools/audit_puebi.py → projects/audit revisi proposal/revisi audit/tools/llm_provider.py
+- `run_register_audit()` --calls--> `get_pedoman_ctx()`  [INFERRED]
+  projects/audit revisi proposal/revisi audit/tools/audit_register.py → projects/audit revisi proposal/revisi audit/tools/llm_provider.py
+- `run_sitasi_audit()` --calls--> `get_pedoman_ctx()`  [INFERRED]
+  projects/audit revisi proposal/revisi audit/tools/audit_sitasi.py → projects/audit revisi proposal/revisi audit/tools/llm_provider.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (582 total, 130 thin omitted)
+## Communities (593 total, 124 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -627,8 +638,8 @@ Cohesion: 0.08
 Nodes (26): 1. Kenapa PMK ini Sangat Heboh? (The Omnibus Effect), 1. Kenapa PP ini Diterbitkan? (Latar Belakang), 29 peraturan berbeda, 2. Poin-Poin Krusial yang Wajib Dikuasai:, 2. Poin-Poin Perubahan Krusial:, Akselerasi Pengadaan Barang/Jasa (Pra-DIPA / Sebelum Tahun Anggaran):, Aturan Sisa Pekerjaan Akhir Tahun (Pasal 163):, Bedah PP 50/2018 & PMK 62/2023 (Versi Cepat Paham Mahasiswa & Praktisi) (+18 more)
 
 ### Community 6 - "Community 6"
-Cohesion: 0.09
-Nodes (26): 1. Latar Belakang, 2. Tujuan, 3.1 Database yang Ada, 3.2 Gap yang Ada, 3. Kondisi Saat Ini, 4.1 Database Canonical (yang dipakai), 4.2 Relasi yang Perlu Ditambahkan, 4. Arsitektur Target (+18 more)
+Cohesion: 0.10
+Nodes (25): 1. Latar Belakang, 2. Tujuan, 3.1 Database yang Ada, 3.2 Gap yang Ada, 3. Kondisi Saat Ini, 4.1 Database Canonical (yang dipakai), 4.2 Relasi yang Perlu Ditambahkan, 4. Arsitektur Target (+17 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.08
@@ -644,11 +655,11 @@ Nodes (24): Dep:, Fase 1.0 — Pondasi (WAJIB duluan, semua lain bergantung di s
 
 ### Community 10 - "Community 10"
 Cohesion: 0.06
-Nodes (35): @notionhq/client, check_note_properties, checkNote, check_pt_schemas, checkPTSchemas, check_real_connections, inspectViewBlock, create_homepage (+27 more)
+Nodes (33): add_created_property, addCreated, add_edited_property, addEdited, check_note_content, checkNoteContent, check_real_connections, inspectViewBlock (+25 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.06
-Nodes (33): add_created_property, addCreated, check_note_content, checkNoteContent, check_page_details, checkPages, check_para_views, checkViews (+25 more)
+Nodes (34): @notionhq/client, check_note_properties, checkNote, check_page_details, checkPages, clean_callout_children, cleanCalloutChildren, create_notion_project (+26 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.09
@@ -664,7 +675,7 @@ Nodes (20): 1. Peta Halaman (Page Tree), 2. Database Inti & Perannya, 3. Fitur p
 
 ### Community 15 - "Community 15"
 Cohesion: 0.11
-Nodes (18): 1. Peta Struktur Lengkap, 2. Database Inventory — Status Setelah Audit, 3. Schema Notes [PT] Setelah Enrichment, 4. Schema Projects [UT] Setelah Enrichment, 5. Relasi Final Antar Database, 6. Gap Analysis — Status Resolusi, Areas/Resources [PT], Database yang Di-retire (+10 more)
+Nodes (19): 1. Peta Struktur Lengkap, 2. Database Inventory — Status Setelah Audit, 3. Schema Notes [PT] Setelah Enrichment, 4. Schema Projects [UT] Setelah Enrichment, 5. Relasi Final Antar Database, 6. Gap Analysis — Status Resolusi, Areas/Resources [PT], Database yang Di-retire (+11 more)
 
 ### Community 16 - "Community 16"
 Cohesion: 0.14
@@ -915,8 +926,8 @@ Cohesion: 0.29
 Nodes (7): dependencies, dotenv, @notionhq/client, react, react-dom, react-force-graph-2d, @supabase/supabase-js
 
 ### Community 80 - "Community 80"
-Cohesion: 0.05
-Nodes (25): decode_manual, decode_step_241, fs, fs, fs, { Client }, fs, notion (+17 more)
+Cohesion: 0.06
+Nodes (22): decode_manual, decode_step_241, fs, fs, fs, { Client }, fs, notion (+14 more)
 
 ### Community 81 - "Community 81"
 Cohesion: 0.10
@@ -1251,8 +1262,8 @@ Cohesion: 0.40
 Nodes (3): { Client }, notion, targets
 
 ### Community 179 - "Community 179"
-Cohesion: 0.10
-Nodes (31): border0, borders0, bordersAll, borderSingle, buildDocxChildren(), buildFrontMatterSections(), cellPara(), centered() (+23 more)
+Cohesion: 0.09
+Nodes (36): border0, borders0, bordersAll, bordersBottom, bordersHeader, borderSingle, bordersMiddle, buildDocxChildren() (+28 more)
 
 ### Community 180 - "Community 180"
 Cohesion: 0.40
@@ -1412,7 +1423,7 @@ Nodes (3): 🏛️ 1. Core Architecture, 📂 2. Categories in index.md, CLAUDE.
 
 ### Community 265 - "Community 265"
 Cohesion: 0.07
-Nodes (15): { execSync }, path, path, __dirname, headers, __dirname, supabase, __dirname (+7 more)
+Nodes (16): { execSync }, path, path, __dirname, headers, __dirname, supabase, __dirname (+8 more)
 
 ### Community 266 - "Community 266"
 Cohesion: 0.05
@@ -1455,8 +1466,8 @@ Cohesion: 0.11
 Nodes (17): A. Inventaris Catatan Dosen (hasil rekonsiliasi), Audit Rekonsiliasi Catatan Dosen — Makalah Seminar Akuntansi, B. Hasil Audit makalah_seminar.md, C. Tiga Perbaikan Prioritas, Catatan 10 — hlm. 37 docx (flowchart): "Duplikat punya siapa?", Catatan 1 — hlm. 4 docx: "Data dalam bentuk tabel", Catatan 2 — hlm. 6 docx: "Terlalu luas, tidak spesifik untuk indikasi", Catatan 3 — hlm. 6 docx (bawah): "Pendahuluan terlalu luas, bisa runut apa yang menjadi fokus" (+9 more)
 
 ### Community 284 - "Community 284"
-Cohesion: 0.12
-Nodes (16): 10. Contoh Output (Few-Shot), 1. Heading Hierarchy, 2. Paragraf, 3. Inline Formatting, 4.1 Caption Tabel, 4.2 Isi Tabel, 4.3 Sumber Tabel, 4. Tabel (+8 more)
+Cohesion: 0.11
+Nodes (17): 10. Contoh Output (Few-Shot), 11. Aturan Gaya Penulisan (WAJIB — hindari penanda "AI"), 1. Heading Hierarchy, 2. Paragraf, 3. Inline Formatting, 4.1 Caption Tabel, 4.2 Isi Tabel, 4.3 Sumber Tabel (+9 more)
 
 ### Community 285 - "Community 285"
 Cohesion: 0.12
@@ -1602,6 +1613,10 @@ Nodes (6): { Client }, fs, notion, parseMarkdownToRichText(), path, sync()
 Cohesion: 0.15
 Nodes (12): 2.1.1 Pelaksanaan Anggaran Belanja Negara, 2.1.2 Belanja Modal: Konsep, Mekanisme, dan Pengadaan Barang/Jasa, 2.1.3 Deviasi Pelaksanaan Anggaran: Konsep, Penyebab, dan Dampak, 2.1.4 *Agency Theory* sebagai Lensa Analitis, 2.1 Landasan Teori, Hasil Revisi Bab 2: Tinjauan Pustaka, TINJAUAN PUSTAKA, 2.1.5 Indikator Kinerja Pelaksanaan Anggaran (IKPA) (+4 more)
 
+### Community 340 - "Community 340"
+Cohesion: 0.07
+Nodes (26): 1. Latar Belakang & Research Gap (Piramida Terbalik), 2. Kesesuaian Rumusan Masalah dengan Tujuan, 3. Kelengkapan Sitasi, 4.1 Variabel/Dimensi yang Terlewat, 4.2 Celah Metodologis, 4.3 Celah Teori/Konsep, 4. Gap Analysis & Saran Penambahan Khusus, ⚠️ Catatan Kritis (+18 more)
+
 ### Community 341 - "Community 341"
 Cohesion: 0.27
 Nodes (10): checkIfTaskExists(), { Client }, fs, getIndonesianDateLabel(), getTargetDate(), main(), notion, parseMarkdownToRichText() (+2 more)
@@ -1643,8 +1658,8 @@ Cohesion: 0.47
 Nodes (4): draw_flowchart(), draw_arrow(), generate_sop_flowchart(), wrap_text()
 
 ### Community 357 - "Community 357"
-Cohesion: 0.17
-Nodes (11): 1.1 Latar Belakang, 1.2 Rumusan Masalah, 1.3 Tujuan Penelitian, Hasil Revisi Bab 1: Pendahuluan, PENDAHULUAN, 1.4.1 Manfaat Teoritis, 1.4.2 Manfaat Praktis, 1.4 Manfaat Penelitian (+3 more)
+Cohesion: 0.20
+Nodes (9): 1.1 Latar Belakang, 1.2 Rumusan Masalah, 1.3 Tujuan Penelitian, Hasil Revisi Bab 1: Pendahuluan, PENDAHULUAN, 1.4.1 Manfaat Teoritis, 1.4.2 Manfaat Praktis, 1.4 Manfaat Penelitian (+1 more)
 
 ### Community 358 - "Community 358"
 Cohesion: 0.17
@@ -1703,8 +1718,8 @@ Cohesion: 0.29
 Nodes (6): Arsitektur, Definisi, Kendala Umum di UPT Daerah, Modul-Modul di Rudenim, Referensi Terkait, SIMKIM — Sistem Informasi Manajemen Keimigrasian
 
 ### Community 374 - "Community 374"
-Cohesion: 0.18
-Nodes (7): docx, dependencies, docx, docx, docx, doc, docx
+Cohesion: 0.13
+Nodes (10): docx, dependencies, docx, docx, doc, docx, fs, docx (+2 more)
 
 ### Community 375 - "Community 375"
 Cohesion: 0.20
@@ -1741,6 +1756,14 @@ Nodes (10): end, fs, image1RelMatch, index, path, rels, relsPath, start (+2 more
 ### Community 383 - "Community 383"
 Cohesion: 0.17
 Nodes (11): 3.1  Bentuk dan Subjek Penelitian, 3.2.1  In-depth Interview (Wawancara Mendalam), 3.2.2  Studi Dokumentasi, 3.2.3  Observasi Non-Partisipatif, 3.2  Teknik Pengumpulan Data, 3.3.1  Alur Pelaksanaan Anggaran: Perencanaan, Penyusunan, dan Pelaksanaan (Flowchart), 3.3.2  Model Analisis Data: Analisis Interaktif Miles dan Huberman, 3.3.3  Uji Keabsahan Data (+3 more)
+
+### Community 385 - "Community 385"
+Cohesion: 0.10
+Nodes (19): 1. SKOR EVALUASI STRUKTUR (1-10), 2. EVALUASI JUDUL, 3.1 Latar Belakang, 3.2 Rumusan Masalah, 3.3 Tujuan Penelitian, 3.4 Kelengkapan Sub-bab, 3. EVALUASI BAB I — PENDAHULUAN, 4.1 Kerangka Teori (+11 more)
+
+### Community 386 - "Community 386"
+Cohesion: 0.11
+Nodes (18): 1. Ghost Citations (Dikutip di Teks, Tidak Ada di Daftar Pustaka), 2. Orphan References (Ada di Daftar Pustaka, Tidak Pernah Dikutip), 3. Konsistensi Format Sitasi, 4. Recency Check (Kebaruan Referensi), 5. Klaim Tanpa Sitasi, 6. Masalah Format Daftar Pustaka, a. Urutan Alfabetis, Analisis Kebaruan Sumber Ilmiah (14 entri): (+10 more)
 
 ### Community 387 - "Community 387"
 Cohesion: 0.26
@@ -1846,8 +1869,12 @@ Cohesion: 0.18
 Nodes (10): Alur 3 fase (yang BENAR), Apa ini, Dua jalur audit (catatan), Dua sumber config (untuk reusability), Fase A — Audit  →  `python tools/main.py <path-to-pdf>`, Fase B — Writing  →  `python tools/main_writing.py <topik> <versi>`, Fase C — Build .docx  →  `node build_revisi.js <input_dir> [output_docx]`, Jangan bingung lagi (+2 more)
 
 ### Community 427 - "Community 427"
-Cohesion: 0.22
-Nodes (9): generate_pdf(), Agen 7: Konsolidasi & PDF Report Generator Menerima combined markdown (atau dua, Generate PDF from markdown report(s).          Supports two modes:     1. Single, main(), main.py — Orkestrator Pipeline Audit (Fase A) Menjalankan 6 agen audit secara be, Menjalankan fungsi dengan retry logic.     Jika gagal, tunggu `delay` detik lalu, Cek apakah file sudah ada dan cukup besar (> 100 bytes)., run_with_retry() (+1 more)
+Cohesion: 0.14
+Nodes (17): generate_pdf(), Agen 7: Konsolidasi & PDF Report Generator Menerima combined markdown (atau dua, Generate PDF from markdown report(s).          Supports two modes:     1. Single, apply_pedoman(), clean_work(), main(), parse_args(), main.py — Orkestrator Pipeline Audit (Fase A) Menjalankan 6 agen audit secara be (+9 more)
+
+### Community 429 - "Community 429"
+Cohesion: 0.13
+Nodes (14): AUDIT KOHERENSI & BENANG MERAH, AUDIT METODOLOGI BAB III, AUDIT PUEBI & EJAAN, AUDIT REGISTER & BAHASA AKADEMIK, AUDIT SITASI & DAFTAR PUSTAKA, AUDIT STRUKTUR & RESEARCH GAP, Catatan Prioritas, Hasil Audit PUEBI dan Tata Bahasa (+6 more)
 
 ### Community 430 - "Community 430"
 Cohesion: 0.11
@@ -1894,6 +1921,10 @@ Nodes (9): Knowledge Base Updates, Metrics, Next Version Ideas, Retrospective: {
 ### Community 446 - "Community 446"
 Cohesion: 0.20
 Nodes (9): Knowledge Base Updates, Metrics, Next Version Ideas, Retrospective: {{PRODUCT_NAME}}, Reusable Patterns, Surprises, Timeline, What Didn't Work (+1 more)
+
+### Community 449 - "Community 449"
+Cohesion: 0.15
+Nodes (12): 10. CHECKLIST KELENGKAPAN METODOLOGI, 11. PERTANYAAN YANG KEMUNGKINAN AKAN DITANYAKAN DOSEN PENGUJI (5-10 TAJAM), 1. SKOR KUALITAS METODOLOGI (1-10), 2. JENIS & DESAIN PENELITIAN, 3. POPULASI & SAMPEL, 4. OPERASIONALISASI VARIABEL (KONSEP), 5. INSTRUMEN PENELITIAN, 6. TEKNIK PENGUMPULAN DATA (+4 more)
 
 ### Community 450 - "Community 450"
 Cohesion: 0.20
@@ -1987,7 +2018,7 @@ Nodes (7): convert_to_word.py — Simplified document converter.  Calls build_re
 
 ### Community 469 - "Community 469"
 Cohesion: 0.25
-Nodes (7): Catatan Revisi Daftar Pustaka, Daftar Pustaka (Revisi), Hasil Revisi Daftar Pustaka, 1. Daftar Perubahan yang Dilakukan, 2. Referensi yang Hilang (Ghost Citation) — **WAJIB DICARI/ DITAMBAHKAN MAHASISWA**, 3. Referensi yang Tidak Dikutip (Orphan References) — **Dihapus dari Daftar Pustaka Utama**, 📌 **Catatan Penting untuk Mahasiswa (AJIE):**
+Nodes (7): Catatan Revisi Daftar Pustaka, Daftar Pustaka (Revisi), Hasil Revisi Daftar Pustaka, 1. Daftar Perubahan yang Dilakukan, 2. Referensi yang Hilang (Ghost Citation), **WAJIB DICARI/ DITAMBAHKAN MAHASISWA**, 3. Referensi yang Tidak Dikutip (Orphan References), **Dihapus dari Daftar Pustaka Utama**, 📌 **Catatan Penting untuk Mahasiswa (AJIE):**
 
 ### Community 470 - "Community 470"
 Cohesion: 0.32
@@ -2146,8 +2177,8 @@ Cohesion: 0.40
 Nodes (5): 1A. Tags (PARA backbone), 1B. Tasks, 1C. Projects, 1D. Notes, Phase 1 — Wire Canonical Relations, Properties & Formulas
 
 ### Community 509 - "Community 509"
-Cohesion: 0.40
-Nodes (4): 1. JUDUL BARU (SUDAH DISETUJUI DOSEN), 2. REVISI RUMUSAN MASALAH (WAJIB), 3. TUJUAN PENELITIAN (SESUAIKAN DENGAN RM), Catatan Dosen Pembimbing — Instruksi Revisi
+Cohesion: 0.33
+Nodes (5): 1. JUDUL BARU (SUDAH DISETUJUI DOSEN), 2. REVISI RUMUSAN MASALAH (WAJIB), 3. TUJUAN PENELITIAN (SESUAIKAN DENGAN RM), 4. INFORMAN UTAMA (INSTRUKSI DOSEN), Catatan Dosen Pembimbing — Instruksi Revisi
 
 ### Community 510 - "Community 510"
 Cohesion: 0.60
@@ -2266,8 +2297,12 @@ Cohesion: 0.50
 Nodes (3): Instruksi Eksekusi, Stage 1: Ekstraksi Dokumen Mentah (Raw Extraction), Tujuan
 
 ### Community 540 - "Community 540"
-Cohesion: 0.67
-Nodes (3): __dirname, queryNotionDB(), run()
+Cohesion: 0.15
+Nodes (13): 1. SKOR EVALUASI STRUKTUR (1-10), 2. EVALUASI JUDUL, 4.1 Kerangka Teori, 4.2 Penelitian Terdahulu, 4.3 Kerangka Berpikir / Kerangka Konseptual, 4.4 Hipotesis, 4. EVALUASI BAB II — TINJAUAN PUSTAKA, 5. CHECKLIST KELENGKAPAN STRUKTUR (+5 more)
+
+### Community 541 - "Community 541"
+Cohesion: 0.17
+Nodes (12): 10. CHECKLIST KELENGKAPAN METODOLOGI, 11. PERTANYAAN YANG KEMUNGKINAN AKAN DITANYAKAN DOSEN PENGUJI (5-10 TAJAM), 1. SKOR KUALITAS METODOLOGI (1-10), 2. JENIS & DESAIN PENELITIAN, 3. POPULASI & SAMPEL, 4. OPERASIONALISASI VARIABEL (KONSEP), 5. INSTRUMEN PENELITIAN, 6. TEKNIK PENGUMPULAN DATA (+4 more)
 
 ### Community 543 - "Community 543"
 Cohesion: 0.50
@@ -2286,8 +2321,8 @@ Cohesion: 0.50
 Nodes (3): 1. DAFTAR PEMANTAUAN KEGIATAN PENGENDALIAN (LAMPIRAN XI), 2. PEMANTAUAN TERHADAP PERISTIWA RISIKO (LAMPIRAN XII), LAPORAN PEMANTAUAN TRIWULANAN (KEUANGAN & PBJ)
 
 ### Community 547 - "Community 547"
-Cohesion: 0.50
-Nodes (3): get_client(), LLM Provider Helper — Centralized API client initialization. Supports hybrid rou, Returns (client, model_name) tuple.          Args:         force_provider: Overr
+Cohesion: 0.08
+Nodes (17): Agen 6: Audit Koherensi & Benang Merah Lintas-Bab (Layer 2 — Opus/Berbayar) Foku, run_koherensi_audit(), Agen 5: Audit Metodologi Bab III (Layer 2 — Opus/Berbayar) Fokus: Validitas desa, run_metodologi_audit(), Agen 1: Audit PUEBI & Ejaan (Layer 1 — Gemini/Gratis) Fokus: Typo, PUEBI, tanda, run_puebi_audit(), Agen 2: Audit Register & Kualitas Bahasa Akademik (Layer 1 — Gemini/Gratis) Foku, run_register_audit() (+9 more)
 
 ### Community 548 - "Community 548"
 Cohesion: 0.50
@@ -2313,8 +2348,52 @@ Nodes (3): Instruksi Eksekusi, Stage 3: Audit Struktur, Logika & Sitasi, Tujuan
 Cohesion: 0.50
 Nodes (3): Instruksi Eksekusi, Stage 4: Konsolidasi Final Report, Tujuan
 
+### Community 556 - "Community 556"
+Cohesion: 0.17
+Nodes (12): 1. Ghost Citations (Dikutip di Teks, Tidak Ada di Daftar Pustaka), 2. Orphan References (Ada di Daftar Pustaka, Tidak Pernah Dikutip), 3. Konsistensi Format Sitasi, 5. Klaim Tanpa Sitasi, 6. Masalah Format Daftar Pustaka, a. Urutan Alfabetis, b. Kelengkapan Entri, c. Cetak Miring (Italic) (+4 more)
+
+### Community 557 - "Community 557"
+Cohesion: 0.20
+Nodes (9): 1. PETA BENANG MERAH (6 Titik Koneksi), 2. ANALISIS KONSISTENSI VARIABEL, 3. ANALISIS JUMLAH POIN (Quantity Mismatch), 4. ANALISIS KATA KERJA OPERASIONAL, 5. ANALISIS KERANGKA BERPIKIR vs HIPOTESIS (PROPOSISI), 6. TEMUAN INKONSISTENSI (Diurutkan berdasarkan Keparahan), 7. MINDMAP ALUR LOGIKA IDEAL (Mermaid.js), Hasil Audit Koherensi & Benang Merah Lintas-Bab (+1 more)
+
+### Community 559 - "Community 559"
+Cohesion: 0.22
+Nodes (8): BAB I — PENDAHULUAN, BAB II — TINJAUAN PUSTAKA, BAB III — METODE PENELITIAN, Catatan Pembuka Reviewer, Hasil Audit Register & Kualitas Bahasa Akademik, LAPORAN EVALUASI KUALITAS BAHASA AKADEMIK, REKOMENDASI PRIORITAS, RINGKASAN TEMUAN
+
+### Community 560 - "Community 560"
+Cohesion: 0.22
+Nodes (9): 1. PETA BENANG MERAH (6 Titik Koneksi), 2. ANALISIS KONSISTENSI VARIABEL, 3. ANALISIS JUMLAH POIN (Quantity Mismatch), 4. ANALISIS KATA KERJA OPERASIONAL, 5. ANALISIS KERANGKA BERPIKIR vs HIPOTESIS (PROPOSISI), 6. TEMUAN INKONSISTENSI (Diurutkan berdasarkan Keparahan), 7. MINDMAP ALUR LOGIKA IDEAL (Mermaid.js), Hasil Audit Koherensi & Benang Merah Lintas-Bab (+1 more)
+
+### Community 561 - "Community 561"
+Cohesion: 0.29
+Nodes (7): BAB I — PENDAHULUAN, BAB II — TINJAUAN PUSTAKA, BAB III — METODE PENELITIAN, Catatan Pembuka Reviewer, LAPORAN EVALUASI KUALITAS BAHASA AKADEMIK, REKOMENDASI PRIORITAS, RINGKASAN TEMUAN
+
+### Community 562 - "Community 562"
+Cohesion: 0.33
+Nodes (5): 2026-06-30 — Finalisasi & generalisasi pipeline, 2026-06-30 (lanjutan) — Daftar Isi auto + format tabel terbuka, 2026-07-01 (lanjutan) — Review user putaran 2 + propagasi aturan ke tool, 2026-07-01 — Perbaikan render dari review user + hapus 1.5/1.6, Work Log — Revisi-Audit Proposal
+
+### Community 564 - "Community 564"
+Cohesion: 0.40
+Nodes (4): Catatan Prioritas, Hasil Audit PUEBI dan Tata Bahasa, Laporan Temuan Kesalahan Tata Bahasa dan PUEBI, Makalah Seminar: Analisis Pelaksanaan Anggaran Belanja pada Rumah Detensi Imigrasi Pontianak
+
+### Community 565 - "Community 565"
+Cohesion: 0.40
+Nodes (5): 3.1 Latar Belakang, 3.2 Rumusan Masalah, 3.3 Tujuan Penelitian, 3.4 Kelengkapan Sub-bab, 3. EVALUASI BAB I — PENDAHULUAN
+
+### Community 568 - "Community 568"
+Cohesion: 0.40
+Nodes (5): 4. Recency Check (Kebaruan Referensi), Analisis Kebaruan Sumber Ilmiah (14 entri):, Klasifikasi (Hanya menghitung sumber ilmiah — buku, jurnal, working paper; regulasi dikecualikan dari recency karena sifatnya sebagai dasar hukum):, Penilaian:, Persentase Referensi Terbaru (< 5 tahun):
+
+### Community 569 - "Community 569"
+Cohesion: 0.83
+Nodes (3): smoke.sh script, ok(), xml()
+
+### Community 573 - "Community 573"
+Cohesion: 0.67
+Nodes (3): sync_to_notion, parseMarkdownToRichText, sync
+
 ## Knowledge Gaps
-- **2301 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `fs`, `path`, `{
+- **2447 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `fs`, `path`, `{
   Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
   AlignmentType, NumberFormat, ImageRun, PageBreak,
   PAGE_W, PAGE_H, M_TOP, M_BOTTOM, M_LEFT, M_RIGHT, CONTENT_W,
@@ -2328,19 +2407,19 @@ Nodes (3): Instruksi Eksekusi, Stage 4: Konsolidasi Final Report, Tujuan
   tableCaptionCentered, tableSource, daftarPustakaEntry,
   createFrontMatterFooter, createChapterHeadersAndFooters,
   numberingConfig, stylesConfig,
-}`, `name` (+2296 more)
+}`, `name` (+2442 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **130 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **124 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 79` to `Community 280`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
-- **Why does `dotenv` connect `Community 79` to `Community 11`?**
+- **Why does `dotenv` connect `Community 79` to `Community 10`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `fs`, `path` to the rest of the system?**
-  _2360 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _2511 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

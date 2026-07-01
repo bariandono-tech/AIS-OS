@@ -4,7 +4,7 @@ Fokus: Konsistensi variabel, kesesuaian kata kerja, jumlah poin RM↔Tujuan↔An
 Agen ini MEMBUTUHKAN konteks dari seluruh Bab I-III sekaligus.
 """
 import os
-from llm_provider import get_client
+from llm_provider import get_client, get_pedoman_ctx
 
 def run_koherensi_audit(input_path, output_path):
     print("[Agen 6/6] Running Koherensi & Benang Merah Lintas-Bab Audit...")
@@ -18,7 +18,7 @@ def run_koherensi_audit(input_path, output_path):
     # Layer 2: Read from .env
     client, model = get_client()
 
-    prompt = f"""
+    prompt = f"""{get_pedoman_ctx()}
 Anda adalah Quality Assurance akademik yang tugasnya satu: memastikan BENANG MERAH proposal skripsi ini lurus sempurna dari Judul hingga Metodologi.
 
 PENTING: Anda BUKAN mengevaluasi kualitas masing-masing bab (agen lain yang menangani). Anda mengevaluasi KONEKSI dan KONSISTENSI antar-bab.
