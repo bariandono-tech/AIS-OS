@@ -1,6 +1,7 @@
 """
-main.py — Orkestrator Pipeline 7 Agen Pro Max
-Menjalankan 6 agen audit secara berurutan, lalu menghasilkan Final Report PDF.
+main.py — Orkestrator Pipeline Audit (Fase A)
+Menjalankan 6 agen audit secara berurutan (PUEBI, Register, Sitasi, Struktur,
+Metodologi, Koherensi), lalu menghasilkan Final Report PDF.
 Fitur: retry logic (3x), skip-if-exists, error isolation per agen.
 """
 import sys
@@ -65,7 +66,7 @@ def main():
     pdf_input = sys.argv[1] if len(sys.argv) > 1 else os.path.join(tmp_dir, "proposal.pdf")
     
     print("=" * 60)
-    print("  AGENTIC PROPOSAL AUDIT — TIER PRO MAX (7 AGEN)")
+    print("  AGENTIC PROPOSAL AUDIT — FASE A (6 AGEN AUDIT)")
     print("=" * 60)
     print(f"  Input: {pdf_input}")
     print(f"  Output: {os.path.join(project_dir, 'Final_Audit_Report.pdf')}")

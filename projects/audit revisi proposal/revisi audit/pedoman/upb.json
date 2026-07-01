@@ -1,0 +1,86 @@
+{
+  "_meta": {
+    "nama": "Pedoman Skripsi/Makalah FEB Universitas Panca Bhakti (UPB) Pontianak",
+    "sumber": "Pedoman Skripsi FEB UPB (Maret 2023) + templates/build_schema.md",
+    "catatan": "Aturan format kampus, terpisah dari identitas dokumen (lihat config.thesis.json). Kampus baru = salin file ini jadi pedoman/<kampus>.json lalu ubah nilainya, set env PEDOMAN=<kampus>. Field di blok 'page' DIPAKAI langsung oleh build_revisi.js; field lain = referensi/dokumentasi untuk prompt audit & writing.",
+    "satuan": "Nilai page/margin dalam TWIPS (1 cm = 567 twips). Ukuran font dalam half-points (12pt = 24)."
+  },
+
+  "page": {
+    "_dipakaiBuilder": true,
+    "ukuran": "A4",
+    "width": 11906,
+    "height": 16838,
+    "margin": { "top": 2268, "bottom": 1701, "left": 2268, "right": 1701 },
+    "marginCm": { "atas": 4, "bawah": 3, "kiri": 4, "kanan": 3 }
+  },
+
+  "font": {
+    "_dipakaiBuilder": false,
+    "nama": "Times New Roman",
+    "ukuranPt": 12,
+    "ukuranHalfPoint": 24
+  },
+
+  "spasi": {
+    "_dipakaiBuilder": false,
+    "isiBadan": "2.0 (ganda) — line 480",
+    "daftarIsiDanDaftarLain": "1.5 — line 360",
+    "abstrakDanKutipanPanjang": "1.0 (tunggal)",
+    "antarEntriDaftarPustaka": "1.5",
+    "dalamEntriDaftarPustaka": "1.0",
+    "notasiDesimal": "koma, bukan titik (contoh: 53,20)"
+  },
+
+  "heading": {
+    "_dipakaiBuilder": false,
+    "bab": "ALL CAPS, bold, centered (mis. BAB I / PENDAHULUAN)",
+    "subBab": "x.x — sentence case, bold, rata kiri",
+    "subSubBab": "x.x.x — sentence case, bold, rata kiri",
+    "maksKedalaman": "x.x.x (jangan h4)"
+  },
+
+  "sitasi": {
+    "_dipakaiBuilder": false,
+    "gaya": "APA 7th Edition",
+    "satuPenulis": "(Widyani, 2022)",
+    "duaPenulis": "(Sari & Pravitasari, 2022)",
+    "tigaAtauLebih": "(Kurniawan et al., 2022) — 'et al.' italic",
+    "daftarPustaka": "alfabetis nama belakang; gelar tidak ditulis"
+  },
+
+  "italic": {
+    "_dipakaiBuilder": false,
+    "wajibMiring": "kata/frasa asing yang belum diserap (e-commerce, agency theory, et al.), judul buku/jurnal",
+    "janganMiring": "akronim Indonesia (APBN, DIPA, IKPA, NKA)"
+  },
+
+  "gaya": {
+    "_dipakaiBuilder": false,
+    "_catatan": "Aturan gaya penulisan; ditegakkan oleh Writing Agent (build_schema §11) & audit register.",
+    "tandaPisah": "DILARANG em-dash (—) & en-dash (–). Ganti koma/'yaitu'/titik/tanda hubung biasa. Rentang angka: 2023-2025.",
+    "placeholder": "DILARANG 'hlm. xx', 'xx', '[TBD]'. Nomor halaman/tahun belum ada = jangan dicantumkan.",
+    "sitasiDanSimbol": "'&' hanya di dalam kurung (Jensen & Meckling, 1976); di narasi pakai 'dan': Jensen dan Meckling (1976)."
+  },
+
+  "tabelGambar": {
+    "_dipakaiBuilder": false,
+    "captionTabel": "di ATAS tabel, format 'Tabel X.Y', tanpa titik, bold",
+    "sumberTabel": "di BAWAH tabel, prefix 'Sumber:', italic, 2 spasi di bawah",
+    "captionGambar": "di BAWAH gambar, format 'Gambar X.Y', tanpa titik"
+  },
+
+  "struktur": {
+    "_dipakaiBuilder": false,
+    "proposal": ["BAB I Pendahuluan", "BAB II Tinjauan Pustaka", "BAB III Metode Penelitian"],
+    "skripsi": ["BAB I Pendahuluan", "BAB II Tinjauan Pustaka", "BAB III Metode Penelitian", "BAB IV Hasil dan Pembahasan", "BAB V Penutup"]
+  },
+
+  "ketentuan": {
+    "_dipakaiBuilder": false,
+    "minHalamanSkripsi": 60,
+    "abstrakMaksKata": 250,
+    "kataKunci": "3-5, dipisah titik koma",
+    "bahasa": "Indonesia baku (TBBI)"
+  }
+}

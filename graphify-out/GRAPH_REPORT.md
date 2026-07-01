@@ -1,16 +1,16 @@
-# Graph Report - AIS-OS  (2026-06-22)
+# Graph Report - AIS-OS  (2026-06-30)
 
 ## Corpus Check
-- 374 files · ~569,134 words
+- 532 files · ~674,700 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4207 nodes · 4174 edges · 450 communities (331 shown, 119 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 2 edges (avg confidence: 0.65)
+- 5152 nodes · 5126 edges · 582 communities (452 shown, 130 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.73)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `536ef184`
+- Built from commit: `7d8b0f02`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -441,6 +441,131 @@
 - [[_COMMUNITY_Community 447|Community 447]]
 - [[_COMMUNITY_Community 448|Community 448]]
 - [[_COMMUNITY_Community 449|Community 449]]
+- [[_COMMUNITY_Community 450|Community 450]]
+- [[_COMMUNITY_Community 451|Community 451]]
+- [[_COMMUNITY_Community 452|Community 452]]
+- [[_COMMUNITY_Community 453|Community 453]]
+- [[_COMMUNITY_Community 454|Community 454]]
+- [[_COMMUNITY_Community 455|Community 455]]
+- [[_COMMUNITY_Community 456|Community 456]]
+- [[_COMMUNITY_Community 457|Community 457]]
+- [[_COMMUNITY_Community 458|Community 458]]
+- [[_COMMUNITY_Community 459|Community 459]]
+- [[_COMMUNITY_Community 460|Community 460]]
+- [[_COMMUNITY_Community 461|Community 461]]
+- [[_COMMUNITY_Community 462|Community 462]]
+- [[_COMMUNITY_Community 463|Community 463]]
+- [[_COMMUNITY_Community 464|Community 464]]
+- [[_COMMUNITY_Community 465|Community 465]]
+- [[_COMMUNITY_Community 466|Community 466]]
+- [[_COMMUNITY_Community 467|Community 467]]
+- [[_COMMUNITY_Community 468|Community 468]]
+- [[_COMMUNITY_Community 469|Community 469]]
+- [[_COMMUNITY_Community 470|Community 470]]
+- [[_COMMUNITY_Community 471|Community 471]]
+- [[_COMMUNITY_Community 472|Community 472]]
+- [[_COMMUNITY_Community 473|Community 473]]
+- [[_COMMUNITY_Community 474|Community 474]]
+- [[_COMMUNITY_Community 475|Community 475]]
+- [[_COMMUNITY_Community 476|Community 476]]
+- [[_COMMUNITY_Community 477|Community 477]]
+- [[_COMMUNITY_Community 478|Community 478]]
+- [[_COMMUNITY_Community 479|Community 479]]
+- [[_COMMUNITY_Community 480|Community 480]]
+- [[_COMMUNITY_Community 481|Community 481]]
+- [[_COMMUNITY_Community 482|Community 482]]
+- [[_COMMUNITY_Community 483|Community 483]]
+- [[_COMMUNITY_Community 484|Community 484]]
+- [[_COMMUNITY_Community 485|Community 485]]
+- [[_COMMUNITY_Community 486|Community 486]]
+- [[_COMMUNITY_Community 487|Community 487]]
+- [[_COMMUNITY_Community 488|Community 488]]
+- [[_COMMUNITY_Community 489|Community 489]]
+- [[_COMMUNITY_Community 490|Community 490]]
+- [[_COMMUNITY_Community 491|Community 491]]
+- [[_COMMUNITY_Community 492|Community 492]]
+- [[_COMMUNITY_Community 493|Community 493]]
+- [[_COMMUNITY_Community 494|Community 494]]
+- [[_COMMUNITY_Community 495|Community 495]]
+- [[_COMMUNITY_Community 496|Community 496]]
+- [[_COMMUNITY_Community 497|Community 497]]
+- [[_COMMUNITY_Community 498|Community 498]]
+- [[_COMMUNITY_Community 499|Community 499]]
+- [[_COMMUNITY_Community 500|Community 500]]
+- [[_COMMUNITY_Community 501|Community 501]]
+- [[_COMMUNITY_Community 502|Community 502]]
+- [[_COMMUNITY_Community 503|Community 503]]
+- [[_COMMUNITY_Community 504|Community 504]]
+- [[_COMMUNITY_Community 505|Community 505]]
+- [[_COMMUNITY_Community 506|Community 506]]
+- [[_COMMUNITY_Community 507|Community 507]]
+- [[_COMMUNITY_Community 508|Community 508]]
+- [[_COMMUNITY_Community 509|Community 509]]
+- [[_COMMUNITY_Community 510|Community 510]]
+- [[_COMMUNITY_Community 511|Community 511]]
+- [[_COMMUNITY_Community 512|Community 512]]
+- [[_COMMUNITY_Community 513|Community 513]]
+- [[_COMMUNITY_Community 514|Community 514]]
+- [[_COMMUNITY_Community 515|Community 515]]
+- [[_COMMUNITY_Community 516|Community 516]]
+- [[_COMMUNITY_Community 517|Community 517]]
+- [[_COMMUNITY_Community 518|Community 518]]
+- [[_COMMUNITY_Community 519|Community 519]]
+- [[_COMMUNITY_Community 520|Community 520]]
+- [[_COMMUNITY_Community 521|Community 521]]
+- [[_COMMUNITY_Community 522|Community 522]]
+- [[_COMMUNITY_Community 523|Community 523]]
+- [[_COMMUNITY_Community 524|Community 524]]
+- [[_COMMUNITY_Community 525|Community 525]]
+- [[_COMMUNITY_Community 526|Community 526]]
+- [[_COMMUNITY_Community 527|Community 527]]
+- [[_COMMUNITY_Community 528|Community 528]]
+- [[_COMMUNITY_Community 529|Community 529]]
+- [[_COMMUNITY_Community 530|Community 530]]
+- [[_COMMUNITY_Community 531|Community 531]]
+- [[_COMMUNITY_Community 532|Community 532]]
+- [[_COMMUNITY_Community 533|Community 533]]
+- [[_COMMUNITY_Community 534|Community 534]]
+- [[_COMMUNITY_Community 535|Community 535]]
+- [[_COMMUNITY_Community 536|Community 536]]
+- [[_COMMUNITY_Community 537|Community 537]]
+- [[_COMMUNITY_Community 538|Community 538]]
+- [[_COMMUNITY_Community 539|Community 539]]
+- [[_COMMUNITY_Community 540|Community 540]]
+- [[_COMMUNITY_Community 541|Community 541]]
+- [[_COMMUNITY_Community 542|Community 542]]
+- [[_COMMUNITY_Community 543|Community 543]]
+- [[_COMMUNITY_Community 544|Community 544]]
+- [[_COMMUNITY_Community 545|Community 545]]
+- [[_COMMUNITY_Community 546|Community 546]]
+- [[_COMMUNITY_Community 547|Community 547]]
+- [[_COMMUNITY_Community 548|Community 548]]
+- [[_COMMUNITY_Community 549|Community 549]]
+- [[_COMMUNITY_Community 550|Community 550]]
+- [[_COMMUNITY_Community 551|Community 551]]
+- [[_COMMUNITY_Community 552|Community 552]]
+- [[_COMMUNITY_Community 553|Community 553]]
+- [[_COMMUNITY_Community 554|Community 554]]
+- [[_COMMUNITY_Community 555|Community 555]]
+- [[_COMMUNITY_Community 556|Community 556]]
+- [[_COMMUNITY_Community 557|Community 557]]
+- [[_COMMUNITY_Community 558|Community 558]]
+- [[_COMMUNITY_Community 559|Community 559]]
+- [[_COMMUNITY_Community 560|Community 560]]
+- [[_COMMUNITY_Community 561|Community 561]]
+- [[_COMMUNITY_Community 562|Community 562]]
+- [[_COMMUNITY_Community 563|Community 563]]
+- [[_COMMUNITY_Community 564|Community 564]]
+- [[_COMMUNITY_Community 565|Community 565]]
+- [[_COMMUNITY_Community 566|Community 566]]
+- [[_COMMUNITY_Community 567|Community 567]]
+- [[_COMMUNITY_Community 568|Community 568]]
+- [[_COMMUNITY_Community 569|Community 569]]
+- [[_COMMUNITY_Community 570|Community 570]]
+- [[_COMMUNITY_Community 571|Community 571]]
+- [[_COMMUNITY_Community 573|Community 573]]
+- [[_COMMUNITY_Community 574|Community 574]]
+- [[_COMMUNITY_Community 575|Community 575]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `PART A — PRD: ULTIMATE BRAIN PRO v2.0` - 19 edges
@@ -449,27 +574,27 @@
 4. `Ultimate Brain — Complete Second Brain System in Notion` - 16 edges
 5. `A6. Target Architecture — Canonical Databases & Full Schemas` - 14 edges
 6. `Architecture: StudiOS — Database-Driven Knowledge Viewer` - 14 edges
-7. `Update` - 13 edges
-8. `syncEngine()` - 13 edges
-9. `🔄 5. Tahapan Prosedur Kerja (Langkah demi Langkah)` - 13 edges
-10. `📽️ Struktur & Konten Slide` - 13 edges
+7. `buildDocxChildren()` - 13 edges
+8. `Update` - 13 edges
+9. `syncEngine()` - 13 edges
+10. `🔄 5. Tahapan Prosedur Kerja (Langkah demi Langkah)` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `main()` --calls--> `run_build_document()`  [INFERRED]
+  projects/audit revisi proposal/revisi audit/tools/main_writing.py → projects/audit revisi proposal/revisi audit/tools/convert_to_word.py
+- `main()` --calls--> `generate_pdf()`  [INFERRED]
+  projects/audit revisi proposal/revisi audit/tools/main.py → projects/audit revisi proposal/revisi audit/tools/generate_pdf_report.py
 - `AuditWorkflow` --uses--> `AuditAgent`  [INFERRED]
   projects/auditdok/src/workflow.py → projects/auditdok/src/agent.py
 - `draw_flowchart()` --calls--> `draw_arrow()`  [INFERRED]
   projects/makalah-sim/draw_flowcharts.py → projects/makalah-sim/draw_individual_flowcharts.py
 - `main()` --calls--> `generate_markdown_files()`  [EXTRACTED]
   projects/auditdok/src/cli.py → projects/auditdok/src/generator.py
-- `main()` --calls--> `generate_pdf_report()`  [EXTRACTED]
-  projects/auditdok/src/cli.py → projects/auditdok/src/generator.py
-- `main()` --calls--> `AuditWorkflow`  [EXTRACTED]
-  projects/auditdok/src/cli.py → projects/auditdok/src/workflow.py
 
 ## Import Cycles
 - None detected.
 
-## Communities (450 total, 119 thin omitted)
+## Communities (582 total, 130 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.01
@@ -518,12 +643,12 @@ Cohesion: 0.08
 Nodes (24): Dep:, Fase 1.0 — Pondasi (WAJIB duluan, semua lain bergantung di sini), Fase 1.1 — Skema database (PARALEL setelah T1.2), Fase 1.2 — Relasi antar-database (SEQ — butuh semua skema siap), Fase 1.3 — Formula (PARALEL — formula independen), Fase 1.4 — Views & Dashboard (SEQ — butuh data & relasi final), Fase 1.5 — Konten jual (PARALEL — tidak sentuh database), Fase 1.6 — Rilis (SEQ — gerbang akhir) (+16 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.07
-Nodes (30): @notionhq/client, check_para_views, checkViews, clean_remaining_tf, runCleanup, create_homepage, buildHomepage, dump_para_blocks (+22 more)
+Cohesion: 0.06
+Nodes (35): @notionhq/client, check_note_properties, checkNote, check_pt_schemas, checkPTSchemas, check_real_connections, inspectViewBlock, create_homepage (+27 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.07
-Nodes (29): add_created_property, addCreated, add_edited_property, addEdited, Validates that all essential config parameters are set., validate_config(), check_note_properties, checkNote (+21 more)
+Cohesion: 0.06
+Nodes (33): add_created_property, addCreated, check_note_content, checkNoteContent, check_page_details, checkPages, check_para_views, checkViews (+25 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.09
@@ -750,8 +875,8 @@ Cohesion: 0.12
 Nodes (15): 🏛️ 1. KETENTUAN UMUM & TATA CARA PERPAJAKAN (KUP), 💸 2. PPh 21 METODE TER (TARIF EFEKTIF RATA-RATA), 💼 3. WITHHOLDING TAX PPh (PEMOTONGAN/PEMUNGUTAN PIHAK KETIGA), 🛒 4. PAJAK PERTAMBAHAN NILAI (PPN), 🌐 5. CORETAX SYSTEM & PMK 1/2026 (RESTRUKTURISASI BUMN), 🧠 6. CHEAT-SHEETS & TRIK CEPAT MAHASISWA, A. Formula Pengkreditan Pajak PPN (Masa Bulanan), A. Jembatan Keledai Mengingat Jenis PPh (+7 more)
 
 ### Community 70 - "Community 70"
-Cohesion: 0.07
-Nodes (28): 1A. Tags (PARA backbone), 1B. Tasks, 1C. Projects, 1D. Notes, Appendix B — New-Database Schema DDL (for API/MCP build), Appendix C — Live Database & Data-Source IDs (audited 2026-06-01), Appendix D — Live-Build Reconciliation (executed 2026-06-02), B12 — End-to-End Smoke Test (+20 more)
+Cohesion: 0.13
+Nodes (14): Appendix B — New-Database Schema DDL (for API/MCP build), Appendix C — Live Database & Data-Source IDs (audited 2026-06-01), B12 — End-to-End Smoke Test, Design Decisions (preamble), How to read this document, PART B — NOTION BUILD GUIDE (EXECUTION), Phase 0 — Backup & Audit, Phase 2 — Consolidate Duplicates (data-preserving) (+6 more)
 
 ### Community 71 - "Community 71"
 Cohesion: 0.08
@@ -786,12 +911,12 @@ Cohesion: 0.20
 Nodes (9): 🗺️ Alur Ketergantungan Tugas (Dependency Map), 📋 Daftar Tugas & Kualifikasi Berurutan, Phase 1: Database & Security (Prasarana), Phase 2: Integrasi Frontend ke Supabase, Phase 3: Notion Sync Engine, Phase 4: Sistem Monetisasi & Akses Premium, Phase 5: Deployment & Otomatisasi Produksi, Phase 6: Validasi Akhir (End-to-End) (+1 more)
 
 ### Community 79 - "Community 79"
-Cohesion: 0.33
-Nodes (6): dependencies, dotenv, @notionhq/client, react, react-dom, @supabase/supabase-js
+Cohesion: 0.29
+Nodes (7): dependencies, dotenv, @notionhq/client, react, react-dom, react-force-graph-2d, @supabase/supabase-js
 
 ### Community 80 - "Community 80"
-Cohesion: 0.07
-Nodes (19): decode_manual, decode_step_241, fs, fs, fs, fs, fs, fs (+11 more)
+Cohesion: 0.05
+Nodes (25): decode_manual, decode_step_241, fs, fs, fs, { Client }, fs, notion (+17 more)
 
 ### Community 81 - "Community 81"
 Cohesion: 0.10
@@ -1126,8 +1251,8 @@ Cohesion: 0.40
 Nodes (3): { Client }, notion, targets
 
 ### Community 179 - "Community 179"
-Cohesion: 0.40
-Nodes (3): { Client }, fs, notion
+Cohesion: 0.10
+Nodes (31): border0, borders0, bordersAll, borderSingle, buildDocxChildren(), buildFrontMatterSections(), cellPara(), centered() (+23 more)
 
 ### Community 180 - "Community 180"
 Cohesion: 0.40
@@ -1253,6 +1378,10 @@ Nodes (4): 8. Tujuan dan Perencanaan Masa Depan (Goals & Future Planning), Datab
 Cohesion: 0.22
 Nodes (8): 🔍 1. Profil Singkat Anda (Siapa Ajie?), 🧠 2. Seberapa Paham AI Tentang Anda?, 📊 3. Evaluasi Tingkat Teknis Vibe Coding Anda, 🗺️ 4. Roadmap Naik Kelas (Level Up) ke *Advanced Director*, 🟢 Kekuatan Anda (Apa yang Sudah Anda Kuasai):, Panduan Latihan Anda:, 👤 Profil Saya & Evaluasi Kemampuan Vibe Coding (Ajie Bariandono), 🟡 Tantangan Anda (Area yang Perlu Ditingkatkan):
 
+### Community 249 - "Community 249"
+Cohesion: 0.15
+Nodes (29): border0, borders0, bordersAll, borderSingle, cellPara(), cellParaRuns(), centered(), createChapterHeadersAndFooters() (+21 more)
+
 ### Community 254 - "Community 254"
 Cohesion: 0.25
 Nodes (7): 🏛️ 1. Core Architecture, 🏷️ 2. File & Page Naming Conventions, 📂 3. Categories in index.md, ⚙️ 4. Agent Workflows & Prompts, CLAUDE.md — LLM Wiki Agent Rules (Business & Digital Products), 📥 INGEST (Mengimpor data mentah dari `raw/`), 🔍 LINT & AUDIT (Pembersihan & Konsistensi Data)
@@ -1281,9 +1410,13 @@ Nodes (21): 🎯 1. Tujuan & Ruang Lingkup, 👥 2. Pihak yang Terlibat, 🛠️
 Cohesion: 0.50
 Nodes (3): 🏛️ 1. Core Architecture, 📂 2. Categories in index.md, CLAUDE.md — LLM Wiki Agent Rules (Office & Employment)
 
+### Community 265 - "Community 265"
+Cohesion: 0.07
+Nodes (15): { execSync }, path, path, __dirname, headers, __dirname, supabase, __dirname (+7 more)
+
 ### Community 266 - "Community 266"
-Cohesion: 0.08
-Nodes (28): PaymentSimulatorModal(), contentItems, contentTypeConfig, flashcards, getContentByStack(), getFlashcardsByContentId(), getReferencesByContentId(), references (+20 more)
+Cohesion: 0.05
+Nodes (44): PaymentSimulatorModal(), contentItems, contentTypeConfig, flashcards, getContentByStack(), getFlashcardsByContentId(), getReferencesByContentId(), references (+36 more)
 
 ### Community 267 - "Community 267"
 Cohesion: 0.07
@@ -1318,24 +1451,24 @@ Cohesion: 0.18
 Nodes (10): closeSearchResults(), getToolTitle(), handleWhtFilter(), initQuizEngine(), initWithholdingFinder(), navigateToChapter(), nextQuizQuestion(), renderQuizQuestion() (+2 more)
 
 ### Community 283 - "Community 283"
+Cohesion: 0.11
+Nodes (17): A. Inventaris Catatan Dosen (hasil rekonsiliasi), Audit Rekonsiliasi Catatan Dosen — Makalah Seminar Akuntansi, B. Hasil Audit makalah_seminar.md, C. Tiga Perbaikan Prioritas, Catatan 10 — hlm. 37 docx (flowchart): "Duplikat punya siapa?", Catatan 1 — hlm. 4 docx: "Data dalam bentuk tabel", Catatan 2 — hlm. 6 docx: "Terlalu luas, tidak spesifik untuk indikasi", Catatan 3 — hlm. 6 docx (bawah): "Pendahuluan terlalu luas, bisa runut apa yang menjadi fokus" (+9 more)
+
+### Community 284 - "Community 284"
+Cohesion: 0.12
+Nodes (16): 10. Contoh Output (Few-Shot), 1. Heading Hierarchy, 2. Paragraf, 3. Inline Formatting, 4.1 Caption Tabel, 4.2 Isi Tabel, 4.3 Sumber Tabel, 4. Tabel (+8 more)
+
+### Community 285 - "Community 285"
+Cohesion: 0.12
+Nodes (15): 3.1 Bentuk dan Subjek Penelitian, 3.2.1 In-depth Interview (Wawancara Mendalam), 3.2.2 Studi Dokumentasi, 3.2.3 Observasi Non-Partisipatif, 3.2 Teknik Pengumpulan Data, 3.3.1 Alur Pelaksanaan Anggaran: Perencanaan, Penyusunan, dan Pelaksanaan (*Flowchart*), 3.3 Teknik Pengolahan dan Analisis Data, BAB III (+7 more)
+
+### Community 286 - "Community 286"
 Cohesion: 0.13
 Nodes (14): Core Philosophy, Integration Points, Karpathy Method — Vibe Product Builder, Phase 1: IDEATE (Vibe Brainstorm), Phase 2: ARCHITECT (Define the Blueprint), Phase 3: BUILD (Full AI Trust Execution), Phase 4: REFINE (Quality Gate), Phase 5: LAUNCH (Ship It) (+6 more)
 
-### Community 284 - "Community 284"
-Cohesion: 0.20
-Nodes (9): Knowledge Base Updates, Metrics, Next Version Ideas, Retrospective: {{PRODUCT_NAME}}, Reusable Patterns, Surprises, Timeline, What Didn't Work (+1 more)
-
-### Community 285 - "Community 285"
-Cohesion: 0.22
-Nodes (8): Architecture: {{PRODUCT_NAME}}, Deliverables, In v1, NOT in v1 (parked), Scope, Stack / Tools, Target Audience, Value Proposition
-
-### Community 286 - "Community 286"
-Cohesion: 0.22
-Nodes (8): Accuracy, Brand & Quality, Completeness, Functionality, Gate Decision, Polish, Pre-Publish Checklist, Quality Gate: {{PRODUCT_NAME}}
-
 ### Community 287 - "Community 287"
-Cohesion: 0.22
-Nodes (8): Distribution Channels, Launch Checklist, Launch Plan: {{PRODUCT_NAME}}, Marketing Content, Other Channels, Post-Launch (First 48h), Pricing, Twitter Thread (Launch Day)
+Cohesion: 0.13
+Nodes (14): Core Philosophy, Integration Points, Karpathy Method — Vibe Product Builder, Phase 1: IDEATE (Vibe Brainstorm), Phase 2: ARCHITECT (Define the Blueprint), Phase 3: BUILD (Full AI Trust Execution), Phase 4: REFINE (Quality Gate), Phase 5: LAUNCH (Ship It) (+6 more)
 
 ### Community 288 - "Community 288"
 Cohesion: 0.33
@@ -1346,8 +1479,8 @@ Cohesion: 0.33
 Nodes (6): { Client }, fs, notion, parseMarkdownToRichText(), path, sync()
 
 ### Community 290 - "Community 290"
-Cohesion: 0.29
-Nodes (6): Angles Explored, Brain Dump, Chosen Direction, Ideation: {{PRODUCT_NAME}}, Market Scan, Parked Ideas
+Cohesion: 0.13
+Nodes (14): Frasa AI Generik yang Terdeteksi, Istilah Asing yang Belum Di-Italic, Pengecekan Tambahan, Ringkasan Verifikasi, Tabel Verifikasi Temuan Audit, Temuan yang Belum Diperbaiki, 1. PUEBI #1–3 — Penulisan Gelar di Kata Pengantar, 2. Struktur §3 — UU 30/2014 (Orphan Reference) (+6 more)
 
 ### Community 291 - "Community 291"
 Cohesion: 0.33
@@ -1465,6 +1598,10 @@ Nodes (8): 1. Otorisasi Akses (Access Control), 2. Pencarian Dokumen Lokal (Loca
 Cohesion: 0.33
 Nodes (6): { Client }, fs, notion, parseMarkdownToRichText(), path, sync()
 
+### Community 339 - "Community 339"
+Cohesion: 0.15
+Nodes (12): 2.1.1 Pelaksanaan Anggaran Belanja Negara, 2.1.2 Belanja Modal: Konsep, Mekanisme, dan Pengadaan Barang/Jasa, 2.1.3 Deviasi Pelaksanaan Anggaran: Konsep, Penyebab, dan Dampak, 2.1.4 *Agency Theory* sebagai Lensa Analitis, 2.1 Landasan Teori, Hasil Revisi Bab 2: Tinjauan Pustaka, TINJAUAN PUSTAKA, 2.1.5 Indikator Kinerja Pelaksanaan Anggaran (IKPA) (+4 more)
+
 ### Community 341 - "Community 341"
 Cohesion: 0.27
 Nodes (10): checkIfTaskExists(), { Client }, fs, getIndonesianDateLabel(), getTargetDate(), main(), notion, parseMarkdownToRichText() (+2 more)
@@ -1472,6 +1609,10 @@ Nodes (10): checkIfTaskExists(), { Client }, fs, getIndonesianDateLabel(), getTa
 ### Community 344 - "Community 344"
 Cohesion: 0.05
 Nodes (42): 10. Kepentingan Ilmu Fisiologi Tubuh Manusia dalam Ilmu Gizi, 1. Anatomi dan fisiologi merupakan pondasi saat kita memahami, 1. Berikan contoh tentang berbagai level organisasi tubuh manusia, 1. Nefron adalah contoh sebuah ….., 1. Pengertian Fisiologi Tubuh Manusia, 1. Sel adalah unit dasar dari struktur dan fungsi makhluk hidup. Selsel tersebut merupakan unit terkecil yang mampu melaksanakan, 1. Teori Organisasi Seluler, 2. Fisiologi adalah ilmu yang mempelajari tentang karakteristik khusus dan mekanisme yang mencirikan manusia sebagai makhluk hidup. Manusia sebagai makhluk hidup mampu bertahan sebagai ha- (+34 more)
+
+### Community 345 - "Community 345"
+Cohesion: 0.15
+Nodes (12): 1. Hlm. 4 — "DATA DALAM BENTUK TABEL", 2. Hlm. 6 — "PENDAHULUAN TERLALU LUAS, BISA RUNUT APA YANG MENJADI FOKUS", 3. Hlm. 7 — "HAPUS" (dua kali), 4. Hlm. 8 — "HAPUS" (dua kali lagi), 5. Hlm. 9 — "HAPUS" (lagi), 6. Hlm. 32 — "TIDAK DI PENGUMPULAN DATA", 7. Hlm. 33 — "TIDAK DI BAB INI", 8. Hlm. 36 — "DUPLIKAT GAMBAR, SIMPAN YG LEBIH JELAS" (+4 more)
 
 ### Community 347 - "Community 347"
 Cohesion: 0.13
@@ -1500,6 +1641,14 @@ Nodes (17): 🎯 1. Tujuan & Ruang Lingkup, 👥 2. Pihak yang Terlibat, 🛠️
 ### Community 356 - "Community 356"
 Cohesion: 0.47
 Nodes (4): draw_flowchart(), draw_arrow(), generate_sop_flowchart(), wrap_text()
+
+### Community 357 - "Community 357"
+Cohesion: 0.17
+Nodes (11): 1.1 Latar Belakang, 1.2 Rumusan Masalah, 1.3 Tujuan Penelitian, Hasil Revisi Bab 1: Pendahuluan, PENDAHULUAN, 1.4.1 Manfaat Teoritis, 1.4.2 Manfaat Praktis, 1.4 Manfaat Penelitian (+3 more)
+
+### Community 358 - "Community 358"
+Cohesion: 0.17
+Nodes (11): Arsitektur File, Riset Pipeline — Internal StudiOS Dev Tool, Sebelum Mulai: Konfirmasi Topik, Setelah Selesai, Stage 1 — Cari Referensi Akademik, Stage 2 — Audit Konten/Kredibilitas, Stage 3 — Audit Struktur, Stage 4 — Peta HTML Interaktif (+3 more)
 
 ### Community 359 - "Community 359"
 Cohesion: 0.13
@@ -1562,8 +1711,8 @@ Cohesion: 0.20
 Nodes (9): 1. Angle "SEO-Driven Profile Builder", 2. Angle "Project-First Portfolio Showcasing", 3. Angle "Direct Outreach & Networking Strategy", Angles Explored, Brain Dump, Chosen Direction, Ideation: LinkedIn Profile Optimization for Junior JS/TS Remote Jobs, Market Scan (+1 more)
 
 ### Community 376 - "Community 376"
-Cohesion: 0.18
-Nodes (10): path, fs, outputPath, paragraphs, path, xml, xmlPath, sync_to_notion (+2 more)
+Cohesion: 0.29
+Nodes (6): fs, outputPath, paragraphs, path, xml, xmlPath
 
 ### Community 377 - "Community 377"
 Cohesion: 0.20
@@ -1581,9 +1730,29 @@ Nodes (8): Architecture: LinkedIn Optimization Guide for Junior Vibe Coder, Deli
 Cohesion: 0.25
 Nodes (7): Langkah 1: Pahami Strategi & Ide Dasar, Langkah 2: Poles Profil LinkedIn Anda, Langkah 3: Mulai Berburu Lowongan & Lakukan Outreach, Langkah 4: Kuasai Kode Anda & Hadapi Interview, 🚀 Panduan Optimasi LinkedIn & Cari Kerja Remote (Vibe Coder Edition), 🗺️ Peta Jalan Eksekusi (Roadmap), 💡 Prinsip Sukses Vibe Coder
 
+### Community 381 - "Community 381"
+Cohesion: 0.17
+Nodes (11): 2.1.1  Pelaksanaan Anggaran Belanja Negara, 2.1.2  Belanja Modal: Konsep, Mekanisme, dan Pengadaan Barang/Jasa, 2.1.3  Deviasi Pelaksanaan Anggaran: Konsep, Penyebab, dan Dampak, 2.1.4  Agency Theory sebagai Lensa Analitis, 2.1.5  Indikator Kinerja Pelaksanaan Anggaran (IKPA), 2.1  Landasan Teori, 2.2  Ringkasan Penelitian Terdahulu, 2.3  Proposisi Penelitian (+3 more)
+
 ### Community 382 - "Community 382"
 Cohesion: 0.18
 Nodes (10): end, fs, image1RelMatch, index, path, rels, relsPath, start (+2 more)
+
+### Community 383 - "Community 383"
+Cohesion: 0.17
+Nodes (11): 3.1  Bentuk dan Subjek Penelitian, 3.2.1  In-depth Interview (Wawancara Mendalam), 3.2.2  Studi Dokumentasi, 3.2.3  Observasi Non-Partisipatif, 3.2  Teknik Pengumpulan Data, 3.3.1  Alur Pelaksanaan Anggaran: Perencanaan, Penyusunan, dan Pelaksanaan (Flowchart), 3.3.2  Model Analisis Data: Analisis Interaktif Miles dan Huberman, 3.3.3  Uji Keabsahan Data (+3 more)
+
+### Community 387 - "Community 387"
+Cohesion: 0.26
+Nodes (11): _load_audit_reports(), _load_build_schema(), _load_catatan_dosen(), Agen Writing: Revisi Per-Bab (Stage 5) Membaca draf mentah + temuan audit, mengh, Load the build_schema.md format rules for injection into prompts., Revise the bibliography (Daftar Pustaka) based on audit findings., Load all audit report files from .tmp/ directory., Load optional dosen notes if they exist. (+3 more)
+
+### Community 388 - "Community 388"
+Cohesion: 0.18
+Nodes (10): 1. Pendahuluan & Tujuan, 2. Struktur Organisasi Tata Kelola Risiko (Fokus Keuangan), 3. Konteks & Pemetaan Risiko Spesifik Keuangan & Pengadaan, 4. Parameter Dampak Khusus Keuangan (Translasi Pedoman), 5. Timeline Siklus Manajemen Risiko Tahunan, 6. Langkah Aksi (Action Plan) Terdekat Urusan Keuangan, Januari (Fase Perencanaan), Rencana Implementasi Manajemen Risiko Komprehensif (+2 more)
+
+### Community 389 - "Community 389"
+Cohesion: 0.18
+Nodes (10): 3.1 Bentuk dan Subjek Penelitian, 3.2.1 In-depth Interview (Wawancara Mendalam), 3.2.2 Studi Dokumentasi, 3.2.3 Observasi Non-Partisipatif, 3.2 Teknik Pengumpulan Data, 3.3.1 Alur Pelaksanaan Anggaran: Perencanaan, Penyusunan, dan Pelaksanaan (Flowchart), 3.3 Teknik Pengolahan dan Analisis Data, BAB III (+2 more)
 
 ### Community 390 - "Community 390"
 Cohesion: 0.20
@@ -1672,9 +1841,13 @@ Nodes (19): 1. Bab I Pendahuluan - Latar Belakang (Halaman 6), 2. Bab II Pembaha
 Cohesion: 0.13
 Nodes (14): CHECKLIST TINDAKAN, Contoh Checklist Tindakan (PRD Format), Contoh Checklist Tindakan (PRD Format), DIAGRAM ALUR, PASS 1: Review Umum, PASS 2: Analisis Fokus Per-Bagian, PASS 3: Checklist & Mindmap, Skor Evaluasi (+6 more)
 
+### Community 426 - "Community 426"
+Cohesion: 0.18
+Nodes (10): Alur 3 fase (yang BENAR), Apa ini, Dua jalur audit (catatan), Dua sumber config (untuk reusability), Fase A — Audit  →  `python tools/main.py <path-to-pdf>`, Fase B — Writing  →  `python tools/main_writing.py <topik> <versi>`, Fase C — Build .docx  →  `node build_revisi.js <input_dir> [output_docx]`, Jangan bingung lagi (+2 more)
+
 ### Community 427 - "Community 427"
 Cohesion: 0.22
-Nodes (8): Alur Kerja Multi-Pass Manual (3 Langkah), Mengapa Multi-Pass Lebih Unggul?, Multi-Pass Prompting Playbook (HITL Manual Audit), Tahap 1: Lakukan Persiapan Dokumen, Tahap 2: Eksekusi Pass 1 — Review Struktur & Bahasa Umum, Tahap 3: Eksekusi Pass 2 — Analisis Temuan Detail, Tahap 4: Eksekusi Pass 3 — Checklist Tindakan & Visualisasi, Tahap 5: Verifikasi Manual & Kompilasi PDF Offline
+Nodes (9): generate_pdf(), Agen 7: Konsolidasi & PDF Report Generator Menerima combined markdown (atau dua, Generate PDF from markdown report(s).          Supports two modes:     1. Single, main(), main.py — Orkestrator Pipeline Audit (Fase A) Menjalankan 6 agen audit secara be, Menjalankan fungsi dengan retry logic.     Jika gagal, tunggu `delay` detik lalu, Cek apakah file sudah ada dan cukup besar (> 100 bytes)., run_with_retry() (+1 more)
 
 ### Community 430 - "Community 430"
 Cohesion: 0.11
@@ -1715,23 +1888,459 @@ Cohesion: 0.50
 Nodes (3): 2026-06-22, Menyusun Kerangka Hasil Review, Work Log - Revisi Makalah Akuntansi
 
 ### Community 445 - "Community 445"
+Cohesion: 0.20
+Nodes (9): Knowledge Base Updates, Metrics, Next Version Ideas, Retrospective: {{PRODUCT_NAME}}, Reusable Patterns, Surprises, Timeline, What Didn't Work (+1 more)
+
+### Community 446 - "Community 446"
+Cohesion: 0.20
+Nodes (9): Knowledge Base Updates, Metrics, Next Version Ideas, Retrospective: {{PRODUCT_NAME}}, Reusable Patterns, Surprises, Timeline, What Didn't Work (+1 more)
+
+### Community 450 - "Community 450"
+Cohesion: 0.20
+Nodes (9): Frasa AI Generik yang Terdeteksi, Istilah Asing yang Belum Di-Italic, Pengecekan Tambahan, Ringkasan Verifikasi, Tabel Verifikasi Temuan Audit, Temuan yang Belum Diperbaiki, Catatan Akhir QA, Paragraf yang Tidak Natural (Bukan Suara Mahasiswa) (+1 more)
+
+### Community 451 - "Community 451"
+Cohesion: 0.22
+Nodes (8): Architecture: {{PRODUCT_NAME}}, Deliverables, In v1, NOT in v1 (parked), Scope, Stack / Tools, Target Audience, Value Proposition
+
+### Community 452 - "Community 452"
+Cohesion: 0.22
+Nodes (8): Accuracy, Brand & Quality, Completeness, Functionality, Gate Decision, Polish, Pre-Publish Checklist, Quality Gate: {{PRODUCT_NAME}}
+
+### Community 453 - "Community 453"
+Cohesion: 0.22
+Nodes (8): Distribution Channels, Launch Checklist, Launch Plan: {{PRODUCT_NAME}}, Marketing Content, Other Channels, Post-Launch (First 48h), Pricing, Twitter Thread (Launch Day)
+
+### Community 454 - "Community 454"
+Cohesion: 0.22
+Nodes (8): Alur Kerja Multi-Pass Manual (3 Langkah), Mengapa Multi-Pass Lebih Unggul?, Multi-Pass Prompting Playbook (HITL Manual Audit), Tahap 1: Lakukan Persiapan Dokumen, Tahap 2: Eksekusi Pass 1 — Review Struktur & Bahasa Umum, Tahap 3: Eksekusi Pass 2 — Analisis Temuan Detail, Tahap 4: Eksekusi Pass 3 — Checklist Tindakan & Visualisasi, Tahap 5: Verifikasi Manual & Kompilasi PDF Offline
+
+### Community 455 - "Community 455"
+Cohesion: 0.22
+Nodes (8): Architecture: {{PRODUCT_NAME}}, Deliverables, In v1, NOT in v1 (parked), Scope, Stack / Tools, Target Audience, Value Proposition
+
+### Community 456 - "Community 456"
+Cohesion: 0.22
+Nodes (8): Accuracy, Brand & Quality, Completeness, Functionality, Gate Decision, Polish, Pre-Publish Checklist, Quality Gate: {{PRODUCT_NAME}}
+
+### Community 457 - "Community 457"
+Cohesion: 0.22
+Nodes (8): Distribution Channels, Launch Checklist, Launch Plan: {{PRODUCT_NAME}}, Marketing Content, Other Channels, Post-Launch (First 48h), Pricing, Twitter Thread (Launch Day)
+
+### Community 458 - "Community 458"
+Cohesion: 0.22
+Nodes (8): Alur Kerja Multi-Pass Manual (3 Langkah), Mengapa Multi-Pass Lebih Unggul?, Multi-Pass Prompting Playbook (HITL Manual Audit), Tahap 1: Lakukan Persiapan Dokumen, Tahap 2: Eksekusi Pass 1 — Review Struktur & Bahasa Umum, Tahap 3: Eksekusi Pass 2 — Analisis Temuan Detail, Tahap 4: Eksekusi Pass 3 — Checklist Tindakan & Visualisasi, Tahap 5: Verifikasi Manual & Kompilasi PDF Offline
+
+### Community 459 - "Community 459"
+Cohesion: 0.31
+Nodes (8): buildDocxChildren(), buildFrontMatterSections(), {
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  AlignmentType, NumberFormat, ImageRun, PageBreak,
+  PAGE_W, PAGE_H, M_TOP, M_BOTTOM, M_LEFT, M_RIGHT, CONTENT_W,
+  bordersAll, borderSingle,
+  WidthType,
+  emptyRow, centered, justifiedPara,
+  tr, tri, trb,
+  heading1, heading2, heading3,
+  pageBreak, numberedItem,
+  cellPara, cellParaRuns,
+  tableCaptionCentered, tableSource, daftarPustakaEntry,
+  createFrontMatterFooter, createChapterHeadersAndFooters,
+  numberingConfig, stylesConfig,
+}, fs, main(), parseMarkdownRuns(), parseMdFileToBlocks(), path
+
+### Community 460 - "Community 460"
+Cohesion: 0.22
+Nodes (7): bab1Content, bab1Lines, files, fs, path, result, revisiPath
+
+### Community 461 - "Community 461"
+Cohesion: 0.22
+Nodes (8): 1. Risiko Tahap Perencanaan & Persiapan (R1 & R2), 2. Risiko Penyusunan HPS (R3), 3. Risiko Pemilihan Penyedia (R5), 4. Risiko Pelaksanaan Kontrak (R4 & R6), 5. Risiko Serah Terima & Pembayaran (R7), 6. Risiko Pelaksanaan Anggaran (Non-Pengadaan), 7. Risiko Pertanggungjawaban & Aset (Non-Pengadaan), Draf Register Risiko & Analisis (Keuangan & PBJ Rudenim Pontianak)
+
+### Community 462 - "Community 462"
+Cohesion: 0.22
+Nodes (9): Appendix D — Live-Build Reconciliation (executed 2026-06-02), D.1 Canonical Tags — corrected choice, D.2 Formula-engine constraints (validator-verified), D.3 Validated formulas actually deployed (copy-paste — these supersede A9 where they differ), D.4 Phase 1 — completed live (additive, reversible), D.5 Still pending (awaiting approval / later phases), D.6 Phase 3 / 5 / 6 — built live (2026-06-02), D.7 Remaining steps — Notion UI only (the API connector cannot create these) (+1 more)
+
+### Community 463 - "Community 463"
+Cohesion: 0.22
+Nodes (8): 2.1.1 Pelaksanaan Anggaran Belanja Negara, 2.1.2 Belanja Modal: Konsep, Mekanisme, dan Pengadaan Barang/Jasa, 2.1.3 Deviasi Pelaksanaan Anggaran: Konsep, Penyebab, dan Dampak, 2.1.4 *Agency Theory* sebagai Lensa Analitis, 2.1 Landasan Teori, Hasil Revisi Bab 2: Tinjauan Pustaka, TINJAUAN PUSTAKA, BAB II
+
+### Community 464 - "Community 464"
+Cohesion: 0.22
+Nodes (8): Catatan Revisi Daftar Pustaka, Daftar Pustaka (Revisi), Hasil Revisi Daftar Pustaka, A. Perubahan Format & Penyusunan, B. Referensi Hilang (PERLU DICARI/DITAMBAHKAN MAHASISWA), C. Referensi Tidak Dikutip (PERTIMBANGKAN UNTUK DIHAPUS / DIINTEGRASIKAN), D. Catatan Verifikasi Sumber (dari Audit Struktur), E. Status Konsistensi
+
+### Community 465 - "Community 465"
+Cohesion: 0.22
+Nodes (8): dependencies, docx, description, main, name, scripts, build, version
+
+### Community 466 - "Community 466"
+Cohesion: 0.22
+Nodes (8): Input, Konten yang Disertakan, Output, Proses Desain (ikuti pola frontend-design skill), Stage 4 — Peta HTML Interaktif (Mind-Map + Citation Network), Struktur Teknis, Tujuan, WAJIB: Baca Skill Frontend-Design Dulu
+
+### Community 467 - "Community 467"
+Cohesion: 0.22
+Nodes (8): 1.1  Latar Belakang, 1.2  Rumusan Masalah, 1.3  Tujuan Penelitian, 1.4.1  Manfaat Teoritis, 1.4.2  Manfaat Praktis, 1.4  Manfaat Penelitian, BAB I, PENDAHULUAN
+
+### Community 468 - "Community 468"
+Cohesion: 0.25
+Nodes (7): convert_to_word.py — Simplified document converter.  Calls build_revisi.js (Node, Build a Word document from revision Markdown files.      Uses build_revisi.js (N, run_build_document(), main(), main_writing.py — Orkestrator Pipeline Writing (Stage 5 + 6) Menjalankan revisi, Retry wrapper with exponential backoff., run_with_retry()
+
+### Community 469 - "Community 469"
+Cohesion: 0.25
+Nodes (7): Catatan Revisi Daftar Pustaka, Daftar Pustaka (Revisi), Hasil Revisi Daftar Pustaka, 1. Daftar Perubahan yang Dilakukan, 2. Referensi yang Hilang (Ghost Citation) — **WAJIB DICARI/ DITAMBAHKAN MAHASISWA**, 3. Referensi yang Tidak Dikutip (Orphan References) — **Dihapus dari Daftar Pustaka Utama**, 📌 **Catatan Penting untuk Mahasiswa (AJIE):**
+
+### Community 470 - "Community 470"
+Cohesion: 0.32
+Nodes (7): __dirname, formatUUID(), getPropValue(), notion, queryNotionDB(), supabase, sync()
+
+### Community 471 - "Community 471"
+Cohesion: 0.25
+Nodes (7): Format Log Output, Input, Jika Field/Database Tidak Ditemukan Sesuai Ekspektasi, Langkah, Output, Stage 6 — Auto-Inject ke Notion (PARA Dashboard), Tujuan
+
+### Community 472 - "Community 472"
+Cohesion: 0.25
+Nodes (7): Format Log Output, Input, Langkah 1 — INGEST ke Second-Brain, Langkah 2 — Refleksi Karpathy Lens, Output, Stage 7 — Update Obsidian (Second-Brain) + Refleksi Karpathy Lens, Tujuan
+
+### Community 473 - "Community 473"
+Cohesion: 0.25
+Nodes (7): Arsitektur Eksekusi (DAG 6 Stage), Fase Audit (Stage 1–4) — `python tools/main.py <path-to-pdf>`, Fase Writing (Stage 5–6) — `python tools/main_writing.py <topik> <versi>`, Instruksi Orkestrator, Pipeline Revisi Audit Proposal, [SESSION HANDOFF] — Bersihkan konteks, paste handoff, lanjut di sesi baru., Siklus Revisi (Versioning)
+
+### Community 474 - "Community 474"
+Cohesion: 0.29
+Nodes (6): Angles Explored, Brain Dump, Chosen Direction, Ideation: {{PRODUCT_NAME}}, Market Scan, Parked Ideas
+
+### Community 475 - "Community 475"
+Cohesion: 0.29
+Nodes (6): Anti-patterns — do not do these, Hard rules, How to produce the summary, Output template — use exactly this structure, every time, Session Handoff, When to invoke
+
+### Community 476 - "Community 476"
+Cohesion: 0.29
+Nodes (6): Agent Instructions, Bottom Line, File Structure, How to Operate, The Self-Improvement Loop, The WAT Architecture
+
+### Community 477 - "Community 477"
+Cohesion: 0.29
+Nodes (6): Angles Explored, Brain Dump, Chosen Direction, Ideation: {{PRODUCT_NAME}}, Market Scan, Parked Ideas
+
+### Community 478 - "Community 478"
+Cohesion: 0.29
+Nodes (6): Anti-patterns — do not do these, Hard rules, How to produce the summary, Output template — use exactly this structure, every time, Session Handoff, When to invoke
+
+### Community 479 - "Community 479"
+Cohesion: 0.29
+Nodes (6): Agent Instructions, Bottom Line, File Structure, How to Operate, The Self-Improvement Loop, The WAT Architecture
+
+### Community 480 - "Community 480"
+Cohesion: 0.29
+Nodes (6): 1.1 Latar Belakang, 1.2 Rumusan Masalah, 1.3 Tujuan Penelitian, Hasil Revisi Bab 1: Pendahuluan, PENDAHULUAN, BAB I
+
+### Community 481 - "Community 481"
+Cohesion: 0.29
+Nodes (6): Anti-patterns — do not do these, Hard rules, How to produce the summary, Output template — use exactly this structure, every time, Session Handoff, When to invoke
+
+### Community 482 - "Community 482"
+Cohesion: 0.29
+Nodes (6): Format Output, Input, Kriteria Audit (per sumber), Output, Stage 2 — Audit Konten/Kredibilitas, Tujuan
+
+### Community 483 - "Community 483"
+Cohesion: 0.29
+Nodes (6): Format Output, Input, Output, Stage 3 — Audit Struktur, Tujuan, Yang Dicek
+
+### Community 484 - "Community 484"
+Cohesion: 0.29
+Nodes (6): ATURAN HAK CIPTA — WAJIB DIPATUHI, Format Output, Input, Output, Stage 5 — Markdown Siap Pakai, Tujuan
+
+### Community 485 - "Community 485"
+Cohesion: 0.29
+Nodes (6): Guardrails, Input, Instruksi Eksekusi, Stage 9: Writing / Revisi Per-Bab, Tool, Tujuan
+
+### Community 486 - "Community 486"
+Cohesion: 0.29
+Nodes (6): Input, Instruksi Eksekusi, Output, Stage 11: Build Final Document, Tool, Tujuan
+
+### Community 487 - "Community 487"
+Cohesion: 0.33
+Nodes (5): Batasan, Format Output (kembalikan ke orchestrator, bukan tulis file sendiri), Input yang Diterima, Langkah, Sub-Agent: Deep Research
+
+### Community 488 - "Community 488"
+Cohesion: 0.33
+Nodes (5): Rules, Step 1: Get the brief, Step 2: Convene the council (5 agents, in parallel), Step 3: The Judge delivers the verdict, What this does
+
+### Community 489 - "Community 489"
+Cohesion: 0.33
+Nodes (5): Rules, Step 1: Get the brief, Step 2: Convene the council (5 agents, in parallel), Step 3: The Judge delivers the verdict, What this does
+
+### Community 490 - "Community 490"
+Cohesion: 0.33
+Nodes (5): Rules, Step 1: Get the brief, Step 2: Convene the council (5 agents, in parallel), Step 3: The Judge delivers the verdict, What this does
+
+### Community 491 - "Community 491"
+Cohesion: 0.33
+Nodes (5): Rules, Step 1: Get the brief, Step 2: Convene the council (5 agents, in parallel), Step 3: The Judge delivers the verdict, What this does
+
+### Community 492 - "Community 492"
+Cohesion: 0.33
+Nodes (5): Agent Instructions: Manajemen Risiko Rudenim Pontianak, File Structure, How to Operate, Objective, The WAT Architecture
+
+### Community 493 - "Community 493"
+Cohesion: 0.33
+Nodes (5): DRAF REGISTER RISIKO, 🔑 Legenda Tingkat Risiko, 📈 Matriks Ringkasan Risiko, Subbagian Tata Usaha (Keuangan & Pengadaan), 📊 Tabel Register Risiko
+
+### Community 494 - "Community 494"
+Cohesion: 0.33
+Nodes (5): 1. Pendahuluan, 2. Infrastruktur Manajemen Risiko, 3. Proses Manajemen Risiko, 4. Pelaporan dan Lampiran, Struktur dan Audit Isi Pedoman Manajemen Risiko
+
+### Community 495 - "Community 495"
+Cohesion: 0.33
+Nodes (5): Instruksi Eksekusi, Tujuan, Input, Stage 2: Audit PUEBI & Ejaan, Tool
+
+### Community 496 - "Community 496"
+Cohesion: 0.33
+Nodes (5): External links, Files in this folder, Resources — I asked Claude Code to make me as much money as possible, The four upgrades, Video
+
+### Community 497 - "Community 497"
+Cohesion: 0.33
+Nodes (5): Rules, Step 1: Get the brief, Step 2: Convene the council (5 agents, in parallel), Step 3: The Judge delivers the verdict, What this does
+
+### Community 498 - "Community 498"
+Cohesion: 0.33
+Nodes (5): Jika Sub-Agent Tidak Tersedia, Langkah, Output, Stage 1 — Cari Referensi Akademik, Tujuan
+
+### Community 499 - "Community 499"
+Cohesion: 0.33
+Nodes (5): Input, Instruksi Eksekusi, Stage 3: Audit Register & Kualitas Bahasa Akademik, Tool, Tujuan
+
+### Community 500 - "Community 500"
+Cohesion: 0.33
+Nodes (5): Input, Instruksi Eksekusi, Stage 4: Audit Sitasi & Daftar Pustaka, Tool, Tujuan
+
+### Community 501 - "Community 501"
+Cohesion: 0.33
+Nodes (5): Input, Instruksi Eksekusi, Stage 5: Audit Struktur & Research Gap, Tool, Tujuan
+
+### Community 502 - "Community 502"
+Cohesion: 0.33
+Nodes (5): Input, Instruksi Eksekusi, Stage 6: Audit Metodologi Bab III, Tool, Tujuan
+
+### Community 503 - "Community 503"
+Cohesion: 0.33
+Nodes (5): Input, Instruksi Eksekusi, Stage 7: Audit Koherensi & Benang Merah Lintas-Bab, Tool, Tujuan
+
+### Community 504 - "Community 504"
+Cohesion: 0.33
+Nodes (5): Input, Instruksi Eksekusi, Stage 8: Konsolidasi Final Report, Tool, Tujuan
+
+### Community 505 - "Community 505"
+Cohesion: 0.33
+Nodes (5): Input, Instruksi Eksekusi, Stage 10: Verification Pass (Quality Assurance), Tool, Tujuan
+
+### Community 506 - "Community 506"
+Cohesion: 0.33
+Nodes (5): 1. Kategori: Risiko Operasional, 2. Kategori: Risiko Kecurangan (Fraud), 3. Kategori: Risiko Kecurangan (Fraud), 4. Kategori: Risiko Kepatuhan, REGISTER RISIKO DAN ANALISIS (FOKUS KEUANGAN & PBJ)
+
+### Community 507 - "Community 507"
+Cohesion: 0.33
+Nodes (5): BAB I: PENDAHULUAN, BAB II: EVALUASI IMPLEMENTASI MANAJEMEN RISIKO, BAB III: PERISTIWA RISIKO DAN KERUGIAN (LOGBOOK TAHUNAN), BAB IV: KESIMPULAN DAN REKOMENDASI TAHUN DEPAN, LAPORAN TAHUNAN MANAJEMEN RISIKO
+
+### Community 508 - "Community 508"
+Cohesion: 0.40
+Nodes (5): 1A. Tags (PARA backbone), 1B. Tasks, 1C. Projects, 1D. Notes, Phase 1 — Wire Canonical Relations, Properties & Formulas
+
+### Community 509 - "Community 509"
+Cohesion: 0.40
+Nodes (4): 1. JUDUL BARU (SUDAH DISETUJUI DOSEN), 2. REVISI RUMUSAN MASALAH (WAJIB), 3. TUJUAN PENELITIAN (SESUAIKAN DENGAN RM), Catatan Dosen Pembimbing — Instruksi Revisi
+
+### Community 510 - "Community 510"
+Cohesion: 0.60
+Nodes (4): archivePage(), clean(), __dirname, queryNotionDB()
+
+### Community 511 - "Community 511"
+Cohesion: 0.40
+Nodes (3): __dirname, headers, masterTreeMap
+
+### Community 512 - "Community 512"
+Cohesion: 0.40
+Nodes (4): Eksekusi, Objektif, Prasyarat, Stage 1: Ekstraksi Pedoman
+
+### Community 513 - "Community 513"
+Cohesion: 0.40
+Nodes (4): Eksekusi, Objektif, Prasyarat, Stage 2: Audit Struktur dan Poin Isi
+
+### Community 514 - "Community 514"
+Cohesion: 0.40
+Nodes (4): Eksekusi, Objektif, Prasyarat, Stage 3: Plan Implementasi Rudenim
+
+### Community 515 - "Community 515"
+Cohesion: 0.40
+Nodes (4): A. Proses Bisnis Unit Pemilik Risiko, B. Daftar Pemangku Kepentingan, C. Selera Risiko (Risk Appetite), FORMULIR PENETAPAN KONTEKS MANAJEMEN RISIKO
+
+### Community 516 - "Community 516"
+Cohesion: 0.60
+Nodes (4): get_client(), main(), process_raw_text(), Returns (client, model_name) tuple based on .env configuration     Supports:
+
+### Community 517 - "Community 517"
 Cohesion: 0.50
-Nodes (3): doc, docx, fs
+Nodes (3): Debugging and Execution Rule, Flowchart Generation Rule, Language Rule
+
+### Community 518 - "Community 518"
+Cohesion: 0.50
+Nodes (3): Arsitektur Eksekusi (DAG), Audit Skripsi Pipeline, Instruksi Orkestrator
+
+### Community 519 - "Community 519"
+Cohesion: 0.50
+Nodes (3): Format Output (`01-audit-puebi.md`), Instruksi Eksekusi, Stage 1: Audit PUEBI & Tipografi
+
+### Community 520 - "Community 520"
+Cohesion: 0.50
+Nodes (3): Format Output (`02-audit-struktur.md`), Instruksi Eksekusi, Stage 2: Audit Struktur & TOC (Daftar Isi)
+
+### Community 521 - "Community 521"
+Cohesion: 0.50
+Nodes (3): Format Output (`03-audit-sitasi.md`), Instruksi Eksekusi, Stage 3: Audit Sitasi & Referensi
+
+### Community 522 - "Community 522"
+Cohesion: 0.50
+Nodes (3): Format Output (`04-audit-logika.md`), Instruksi Eksekusi, Stage 4: Audit Logika Lintas Bab (Substansi)
+
+### Community 523 - "Community 523"
+Cohesion: 0.50
+Nodes (3): Format Output (`07-final-report.html` atau `.md`), Instruksi Eksekusi, Stage 5: Final Report Generation
+
+### Community 524 - "Community 524"
+Cohesion: 0.50
+Nodes (3): Instruksi Orkestrator, Pipeline Revisi Audit Proposal, Arsitektur Eksekusi (DAG Lokal)
+
+### Community 525 - "Community 525"
+Cohesion: 0.50
+Nodes (3): Instruksi Eksekusi, Stage 1: Ekstraksi Dokumen Mentah (Raw Extraction), Tujuan
+
+### Community 526 - "Community 526"
+Cohesion: 0.50
+Nodes (3): Instruksi Eksekusi, Tujuan, Stage 2: Audit PUEBI dan Tata Bahasa
+
+### Community 527 - "Community 527"
+Cohesion: 0.50
+Nodes (3): Arsitektur Eksekusi (DAG), Audit Skripsi Pipeline, Instruksi Orkestrator
+
+### Community 528 - "Community 528"
+Cohesion: 0.50
+Nodes (3): Format Output (`01-audit-puebi.md`), Instruksi Eksekusi, Stage 1: Audit PUEBI & Tipografi
+
+### Community 529 - "Community 529"
+Cohesion: 0.50
+Nodes (3): Format Output (`02-audit-struktur.md`), Instruksi Eksekusi, Stage 2: Audit Struktur & TOC (Daftar Isi)
+
+### Community 530 - "Community 530"
+Cohesion: 0.50
+Nodes (3): Format Output (`03-audit-sitasi.md`), Instruksi Eksekusi, Stage 3: Audit Sitasi & Referensi
+
+### Community 531 - "Community 531"
+Cohesion: 0.50
+Nodes (3): Format Output (`04-audit-logika.md`), Instruksi Eksekusi, Stage 4: Audit Logika Lintas Bab (Substansi)
+
+### Community 532 - "Community 532"
+Cohesion: 0.50
+Nodes (3): Format Output (`07-final-report.html` atau `.md`), Instruksi Eksekusi, Stage 5: Final Report Generation
+
+### Community 533 - "Community 533"
+Cohesion: 0.50
+Nodes (3): Cara Kerja, Cara Menggunakan, Project: Evaluasi Cuti PNS (Agentic Workflow)
+
+### Community 534 - "Community 534"
+Cohesion: 0.50
+Nodes (3): 1. Draf Formulir Penetapan Konteks, 2. Draf Piagam Manajemen Risiko, Draf Dokumen Pelengkap Manajemen Risiko (Keuangan & PBJ)
+
+### Community 535 - "Community 535"
+Cohesion: 0.50
+Nodes (3): 1. Daftar Pemantauan Kegiatan Pengendalian, 2. Pemantauan Terhadap Peristiwa Risiko, Format Laporan Pemantauan Triwulanan (Keuangan & PBJ)
+
+### Community 536 - "Community 536"
+Cohesion: 0.50
+Nodes (3): Arsitektur Eksekusi (DAG Lokal), Instruksi Orkestrator, Pipeline Manajemen Risiko Rudenim Pontianak
+
+### Community 537 - "Community 537"
+Cohesion: 0.50
+Nodes (3): Instruksi Orkestrator, Pipeline Revisi Audit Proposal, Arsitektur Eksekusi
+
+### Community 538 - "Community 538"
+Cohesion: 0.50
+Nodes (3): Instruksi Eksekusi, Stage 1: Ekstraksi Dokumen Mentah (Raw Extraction), Tujuan
+
+### Community 540 - "Community 540"
+Cohesion: 0.67
+Nodes (3): __dirname, queryNotionDB(), run()
+
+### Community 543 - "Community 543"
+Cohesion: 0.50
+Nodes (3): Instruksi Eksekusi, Stage 3: Audit Struktur, Logika & Sitasi, Tujuan
+
+### Community 544 - "Community 544"
+Cohesion: 0.50
+Nodes (3): Instruksi Eksekusi, Stage 4: Konsolidasi Final Report, Tujuan
+
+### Community 545 - "Community 545"
+Cohesion: 0.50
+Nodes (3): BAGIAN I: MATRIKS PETA RISIKO, BAGIAN II: RENCANA TINDAK PENGENDALIAN (RTP), PETA RISIKO & RENCANA TINDAK PENGENDALIAN (RTP)
+
+### Community 546 - "Community 546"
+Cohesion: 0.50
+Nodes (3): 1. DAFTAR PEMANTAUAN KEGIATAN PENGENDALIAN (LAMPIRAN XI), 2. PEMANTAUAN TERHADAP PERISTIWA RISIKO (LAMPIRAN XII), LAPORAN PEMANTAUAN TRIWULANAN (KEUANGAN & PBJ)
+
+### Community 547 - "Community 547"
+Cohesion: 0.50
+Nodes (3): get_client(), LLM Provider Helper — Centralized API client initialization. Supports hybrid rou, Returns (client, model_name) tuple.          Args:         force_provider: Overr
+
+### Community 548 - "Community 548"
+Cohesion: 0.50
+Nodes (3): Agen Verification Pass (Stage 6) Cross-checks setiap temuan audit terhadap draf, Cross-check all audit findings against revised drafts.          Args:         tm, run_verification()
+
+### Community 549 - "Community 549"
+Cohesion: 0.50
+Nodes (3): Arsitektur Eksekusi (DAG Lokal), Instruksi Orkestrator, Pipeline Manajemen Risiko Rudenim Pontianak
+
+### Community 550 - "Community 550"
+Cohesion: 0.50
+Nodes (3): Instruksi Eksekusi, Stage 1: Ekstraksi Dokumen Mentah (Raw Extraction), Tujuan
+
+### Community 551 - "Community 551"
+Cohesion: 0.50
+Nodes (3): Instruksi Eksekusi, Stage 2: Audit PUEBI dan Tata Bahasa, Tujuan
+
+### Community 552 - "Community 552"
+Cohesion: 0.50
+Nodes (3): Instruksi Eksekusi, Stage 3: Audit Struktur, Logika & Sitasi, Tujuan
+
+### Community 553 - "Community 553"
+Cohesion: 0.50
+Nodes (3): Instruksi Eksekusi, Stage 4: Konsolidasi Final Report, Tujuan
 
 ## Knowledge Gaps
-- **1781 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private`, `workspaces`, `sync` (+1776 more)
+- **2301 isolated node(s):** `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `fs`, `path`, `{
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  AlignmentType, NumberFormat, ImageRun, PageBreak,
+  PAGE_W, PAGE_H, M_TOP, M_BOTTOM, M_LEFT, M_RIGHT, CONTENT_W,
+  bordersAll, borderSingle,
+  WidthType,
+  emptyRow, centered, justifiedPara,
+  tr, tri, trb,
+  heading1, heading2, heading3,
+  pageBreak, numberedItem,
+  cellPara, cellParaRuns,
+  tableCaptionCentered, tableSource, daftarPustakaEntry,
+  createFrontMatterFooter, createChapterHeadersAndFooters,
+  numberingConfig, stylesConfig,
+}`, `name` (+2296 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **119 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **130 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 79` to `Community 280`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `docx` connect `Community 362` to `Community 374`?**
-  _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `name`, `private` to the rest of the system?**
-  _1812 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `dotenv` connect `Community 79` to `Community 11`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **What connects `C:\Users\Asus\AppData\Local\Python\pythoncore-3.14-64\python.exe`, `fs`, `path` to the rest of the system?**
+  _2360 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.005797101449275362 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**

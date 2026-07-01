@@ -6,7 +6,7 @@
 #### 1.1 Latar Belakang
 Pengelolaan keuangan negara merupakan instrumen krusial dalam mewujudkan tujuan bernegara. Undang-Undang Nomor 17 Tahun 2003 tentang Keuangan Negara menegaskan bahwa keuangan negara harus dikelola secara tertib, taat pada peraturan perundang-undangan, efisien, ekonomis, efektif, transparan, dan bertanggung jawab dengan memperhatikan rasa keadilan dan kepatutan. **Ketujuh prinsip tersebut tidak bersifat opsional, melainkan merupakan standar minimum yang harus dipenuhi oleh setiap entitas pemerintah dalam mengelola sumber daya publik yang dipercayakan kepadanya** (Undang-Undang Nomor 17 Tahun 2003).
 
-Instrumen utama dalam pengelolaan keuangan negara adalah Anggaran Pendapatan dan Belanja Negara (APBN). Sebagaimana diuraikan oleh Mardiasmo (2018, hlm. xx), APBN berfungsi tidak hanya sebagai rencana keuangan tahunan pemerintah, tetapi juga sebagai instrumen fiskal multifungsi yang mencakup fungsi perencanaan, pengendalian, koordinasi, distribusi, dan stabilisasi ekonomi nasional. Dalam posisinya sebagai instrumen fiskal, APBN mencerminkan prioritas dan komitmen pemerintah terhadap program-program pembangunan yang telah ditetapkan. Oleh karena itu, kualitas pelaksanaan APBN, mulai dari perencanaan, pencairan, hingga pertanggungjawaban, memiliki konsekuensi langsung terhadap capaian tujuan pembangunan nasional.
+Instrumen utama dalam pengelolaan keuangan negara adalah Anggaran Pendapatan dan Belanja Negara (APBN). Sebagaimana diuraikan oleh Mardiasmo (2018), APBN berfungsi tidak hanya sebagai rencana keuangan tahunan pemerintah, tetapi juga sebagai instrumen fiskal multifungsi yang mencakup fungsi perencanaan, pengendalian, koordinasi, distribusi, dan stabilisasi ekonomi nasional. Dalam posisinya sebagai instrumen fiskal, APBN mencerminkan prioritas dan komitmen pemerintah terhadap program-program pembangunan yang telah ditetapkan. Oleh karena itu, kualitas pelaksanaan APBN, mulai dari perencanaan, pencairan, hingga pertanggungjawaban, memiliki konsekuensi langsung terhadap capaian tujuan pembangunan nasional.
 
 Secara operasional, APBN dilaksanakan oleh K/L melalui mekanisme Daftar Isian Pelaksanaan Anggaran (DIPA). Tata cara pelaksanaan anggaran K/L diatur dalam Peraturan Pemerintah Nomor 45 Tahun 2013 jo. Peraturan Pemerintah Nomor 50 Tahun 2018, yang mengatur siklus mulai dari pencairan dana, penatausahaan, hingga pelaporan realisasi. Tata cara pelaksanaan anggaran ini diperjelas dan disempurnakan melalui Peraturan Menteri Keuangan Nomor 62 Tahun 2023 tentang Perencanaan Anggaran, Pelaksanaan Anggaran, serta Akuntansi dan Pelaporan Keuangan pada Kementerian Negara/Lembaga, yang mengatur tiga jenis belanja utama yakni Belanja Pegawai, Belanja Barang, dan Belanja Modal, dengan mekanisme khusus pada Belanja Modal yang mengacu pada Peraturan Presiden Nomor 16 Tahun 2018 sebagaimana telah diubah dengan Peraturan Presiden Nomor 12 Tahun 2021 tentang Pengadaan Barang/Jasa Pemerintah. Setiap satker yang menerima DIPA berkewajiban untuk menyusun Rencana Penarikan Dana (RPD) bulanan, yang tertuang dalam Halaman III DIPA, sebagai peta jalan pencairan anggaran sepanjang tahun. **RPD bulanan ini bukan sekadar formalitas administratif, melainkan merupakan instrumen perencanaan kas yang memungkinkan pemerintah mengalokasikan likuiditas secara tepat waktu dan tepat jumlah kepada seluruh satker di seluruh Indonesia.**
 
@@ -36,8 +36,8 @@ Kategorisasi nilai IKPA yang menjadi rujukan bagi KPPN dan Kanwil DJPb dalam pem
 | Kategori | Nilai IKPA |
 | :--- | :--- |
 | Sangat Baik | ≥ 95 |
-| Baik | 89 – 94 |
-| Cukup | 70 – 88 |
+| Baik | 89 - 94 |
+| Cukup | 70 - 88 |
 | Kurang | < 70 |
 
 *Sumber: PER-5/PB/2024*
@@ -52,21 +52,23 @@ Temuan serupa juga diperoleh di wilayah lain di Indonesia. Sholawatunnisa dan Su
 
 **Komposisi Belanja Modal pada Rudenim Pontianak meningkat secara tajam mencapai 65,92% dari total pagu DIPA pada Tahun Anggaran 2025 (lihat Tabel 1.3), menjadikan Belanja Modal sebagai komponen dominan dan paling material dalam pelaksanaan anggaran satker pada periode tersebut.** Pergeseran komposisi ini menuntut kapasitas perencanaan dan pelaksanaan yang berbeda dibanding Belanja Pegawai dan Belanja Barang, karena Belanja Modal melibatkan proses pengadaan kontraktual, pekerjaan fisik multi-termin, dan koordinasi dengan penyedia barang/jasa eksternal.
 
-Fenomena deviasi tersebut nyata terjadi pada objek penelitian ini. Sebagaimana disajikan pada Tabel 1.3, rata-rata deviasi Belanja Modal Rudenim Pontianak mencapai 20,16% pada TA 2023 dan meningkat menjadi 28,77% pada TA 2024, sehingga nilai indikator Deviasi Halaman III DIPA satker turun ke kategori Cukup (88,31). **Kondisi ini mengalami perbaikan yang substansial pada TA 2025 dengan rata-rata deviasi 5,41%, namun justru perbaikan drastis tersebut memperkuat relevansi pertanyaan penelitian: faktor apa yang menyebabkan deviasi tinggi pada periode sebelumnya dan mekanisme apa yang mengubahnya — pertanyaan yang belum dapat dijawab secara memadai melalui data agregat semata dan memerlukan eksplorasi kualitatif.**
+Fenomena deviasi tersebut nyata terjadi pada objek penelitian ini. Sebagaimana disajikan pada Tabel 1.3, rata-rata deviasi Belanja Modal Rudenim Pontianak mencapai 20,16% pada TA 2023 dan meningkat menjadi 28,77% pada TA 2024, sehingga nilai indikator Deviasi Halaman III DIPA satker turun ke kategori Cukup (88,31). **Kondisi ini mengalami perbaikan yang substansial pada TA 2025 dengan rata-rata deviasi 5,41%, namun justru perbaikan drastis tersebut memperkuat relevansi pertanyaan penelitian: faktor apa yang menyebabkan deviasi tinggi pada periode sebelumnya dan mekanisme apa yang mengubahnya, pertanyaan yang belum dapat dijawab secara memadai melalui data agregat semata dan memerlukan eksplorasi kualitatif.**
 
-**Tabel 1.3 Deviasi Halaman III DIPA Belanja Modal Rudenim Pontianak TA 2023–2025**
+**Tabel 1.3 Deviasi Halaman III DIPA Belanja Modal Rudenim Pontianak TA 2023-2025**
 
-| Tahun | Proporsi Pagu Belanja Modal (%)* | Realisasi Belanja Modal (Rp) | Rata-rata Deviasi Bulanan (%)** | Nilai Indikator Deviasi Hal. III*** | Kategori |
+| Tahun | Proporsi Pagu Belanja Modal (%) (a) | Realisasi Belanja Modal (Rp) | Rata-rata Deviasi Bulanan (%) (b) | Nilai Indikator Deviasi Hal. III (c) | Kategori |
 | :--- | :---: | :---: | :---: | :---: | :--- |
 | 2023 | 11,50 | 362.282.510 | 20,16 | 89,80 | Baik |
 | 2024 | 27,87 | 3.372.224.900 | 28,77 | 88,31 | Cukup |
 | 2025 | 65,92 | 6.567.577.362 | 5,41 | 100,00 | Sangat Baik |
 
-*Rata-rata proporsi pagu Belanja Modal terhadap total pagu DIPA. **Rata-rata deviasi bulanan \|RPD − Realisasi\|/RPD Belanja Modal, sesuai basis perhitungan PER-5/PB/2024 Pasal 7. ***Nilai akhir tahun, seluruh jenis belanja. Sumber: OM-SPAN/MEBE (Monitoring and Evaluation of Budget Execution), diolah peneliti (2026).
+(a) Rata-rata proporsi pagu Belanja Modal terhadap total pagu DIPA. (b) Rata-rata deviasi bulanan |RPD − Realisasi|/RPD Belanja Modal, sesuai basis perhitungan PER-5/PB/2024 Pasal 7. (c) Nilai akhir tahun, seluruh jenis belanja.
+
+Sumber: OM-SPAN/MEBE (Monitoring and Evaluation of Budget Execution), diolah peneliti (2026).
 
 Pola deviasi tersebut terkonsentrasi pada bulan-bulan kritis tertentu sebagaimana disajikan pada Tabel 1.4. Pada TA 2024, rencana penarikan dana Belanja Modal sebesar Rp700 juta pada bulan Maret, Rp1,79 miliar pada bulan Agustus, dan Rp194,5 juta pada bulan September **tidak terealisasi sepenuhnya** pada bulan bersangkutan (deviasi 100%), yang mengindikasikan adanya pergeseran jadwal pengadaan dan pembayaran ke bulan berikutnya.
 
-**Tabel 1.4 Bulan Kritis Deviasi Belanja Modal Rudenim Pontianak TA 2023–2025**
+**Tabel 1.4 Bulan Kritis Deviasi Belanja Modal Rudenim Pontianak TA 2023-2025**
 
 | Tahun | Bulan | RPD (Rp) | Realisasi (Rp) | Deviasi (%) |
 | :--- | :--- | :---: | :---: | :---: |
@@ -80,7 +82,7 @@ Pola deviasi tersebut terkonsentrasi pada bulan-bulan kritis tertentu sebagaiman
 
 *Sumber: OM-SPAN/MEBE (Monitoring and Evaluation of Budget Execution), diolah peneliti (2026).*
 
-**Tabel 1.5 Contoh Paket Belanja Modal yang Mengalami Pergeseran Realisasi TA 2023–2025**
+**Tabel 1.5 Contoh Paket Belanja Modal yang Mengalami Pergeseran Realisasi TA 2023-2025**
 
 | No | Tahun | Nama Paket | Pagu (Rp) | Bulan RPD | SP2D Aktual | Geser (Bln) | Penyebab Utama Pergeseran |
 | :--- | :--- | :--- | :---: | :--- | :--- | :---: | :--- |
@@ -94,20 +96,20 @@ Pola deviasi tersebut terkonsentrasi pada bulan-bulan kritis tertentu sebagaiman
 
 *Sumber: OM-SPAN/SAKTI, diolah peneliti (2026).*
 
-Di samping dominasi Belanja Modal, Rudenim Pontianak juga menghadapi fluktuasi Belanja Barang akibat ketidakpastian jumlah deteni di wilayah perbatasan, yang turut memengaruhi akurasi penyusunan RPD. **Untuk memahami dinamika relasi keagenan di balik deviasi tersebut, penelitian ini memanfaatkan *Agency Theory* sebagai lensa analitis sebagaimana diuraikan pada BAB II.** Berdasarkan uraian di atas, dapat diidentifikasi tiga indikasi masalah yang melatarbelakangi penelitian ini. Pertama, terjadinya deviasi antara rencana dan penyerapan anggaran **Belanja Modal** pada Rumah Detensi Imigrasi Pontianak tahun 2023–2025. Kedua, perlunya menelaah penyebab terjadinya deviasi pelaksanaan anggaran **Belanja Modal** tersebut. Ketiga, perlunya menganalisis dampak dari terjadinya deviasi pelaksanaan anggaran **Belanja Modal** bagi pengelolaan anggaran satker. Penelitian ini berfokus pada pelaksanaan anggaran belanja Rudenim Pontianak periode Tahun Anggaran 2023–2025, dengan penekanan khusus pada **Belanja Modal**. Kerangka evaluasi merujuk pada PMK 62/2023 sebagai regulasi omnibus pelaksanaan anggaran dan PER-5/PB/2024 sebagai petunjuk teknis penilaian IKPA.
+Di samping dominasi Belanja Modal, Rudenim Pontianak juga menghadapi fluktuasi Belanja Barang akibat ketidakpastian jumlah deteni di wilayah perbatasan, yang turut memengaruhi akurasi penyusunan RPD. **Untuk memahami dinamika relasi keagenan di balik deviasi tersebut, penelitian ini memanfaatkan *Agency Theory* sebagai lensa analitis sebagaimana diuraikan pada BAB II.** Berdasarkan uraian di atas, dapat diidentifikasi tiga indikasi masalah yang melatarbelakangi penelitian ini. Pertama, terjadinya deviasi antara rencana dan penyerapan anggaran **Belanja Modal** pada Rumah Detensi Imigrasi Pontianak tahun 2023-2025. Kedua, perlunya menelaah penyebab terjadinya deviasi pelaksanaan anggaran **Belanja Modal** tersebut. Ketiga, perlunya menganalisis dampak dari terjadinya deviasi pelaksanaan anggaran **Belanja Modal** bagi pengelolaan anggaran satker. Penelitian ini berfokus pada pelaksanaan anggaran belanja Rudenim Pontianak periode Tahun Anggaran 2023-2025, dengan penekanan khusus pada **Belanja Modal**. Kerangka evaluasi merujuk pada PMK 62/2023 sebagai regulasi omnibus pelaksanaan anggaran dan PER-5/PB/2024 sebagai petunjuk teknis penilaian IKPA.
 
 #### 1.2 Rumusan Masalah
 Berdasarkan latar belakang dan indikasi masalah yang telah diuraikan, penelitian ini merumuskan tiga pertanyaan penelitian sebagai berikut:
 
-1. Bagaimana implementasi pelaksanaan anggaran **Belanja Modal** pada Rumah Detensi Imigrasi Pontianak TA 2023–2025?
-2. Apa faktor-faktor penyebab terjadinya deviasi pelaksanaan anggaran **Belanja Modal** pada Rumah Detensi Imigrasi Pontianak TA 2023–2025?
+1. Bagaimana implementasi pelaksanaan anggaran **Belanja Modal** pada Rumah Detensi Imigrasi Pontianak TA 2023-2025?
+2. Apa faktor-faktor penyebab terjadinya deviasi pelaksanaan anggaran **Belanja Modal** pada Rumah Detensi Imigrasi Pontianak TA 2023-2025?
 3. Apa dampak deviasi pelaksanaan anggaran **Belanja Modal** terhadap kinerja pengelolaan anggaran pada Rumah Detensi Imigrasi Pontianak?
 
 #### 1.3 Tujuan Penelitian
 Berdasarkan rumusan masalah di atas, tujuan penelitian ini adalah:
 
-1. Mendeskripsikan implementasi pelaksanaan anggaran **Belanja Modal** pada Rumah Detensi Imigrasi Pontianak TA 2023–2025.
-2. Menganalisis faktor-faktor penyebab terjadinya deviasi pelaksanaan anggaran **Belanja Modal** pada Rumah Detensi Imigrasi Pontianak TA 2023–2025.
+1. Mendeskripsikan implementasi pelaksanaan anggaran **Belanja Modal** pada Rumah Detensi Imigrasi Pontianak TA 2023-2025.
+2. Menganalisis faktor-faktor penyebab terjadinya deviasi pelaksanaan anggaran **Belanja Modal** pada Rumah Detensi Imigrasi Pontianak TA 2023-2025.
 3. Mengevaluasi dampak deviasi pelaksanaan anggaran **Belanja Modal** terhadap kinerja pengelolaan anggaran pada Rumah Detensi Imigrasi Pontianak.
 
 #### 1.4 Manfaat Penelitian
@@ -117,36 +119,20 @@ Penelitian ini diharapkan memberikan kontribusi pada pengembangan literatur Akun
 ##### 1.4.2 Manfaat Praktis
 Dari sisi praktis, penelitian ini memberikan manfaat bagi berbagai pemangku kepentingan. Bagi Rudenim Pontianak selaku objek penelitian, hasil kajian ini diharapkan menghasilkan rekomendasi konkret untuk meningkatkan kualitas perencanaan dan pelaksanaan anggaran Belanja Modal, memperkuat koordinasi antara Pejabat Pembuat Komitmen (PPK) dengan penyedia barang/jasa, serta menyempurnakan manajemen pengadaan agar lebih selaras dengan siklus kas aktual. Bagi Direktorat Jenderal Imigrasi, penelitian ini dapat menjadi masukan kebijakan dalam pembinaan tata kelola pelaksanaan anggaran Belanja Modal pada UPT detensi imigrasi se-Indonesia. Bagi KPPN Pontianak dan Kanwil DJPb, hasil penelitian ini menyediakan referensi dalam pembinaan satker yang memiliki dominasi Belanja Modal, sehingga pendekatan pembinaan dapat lebih kontekstual dan tepat sasaran. Bagi Direktorat Jenderal Perbendaharaan secara kelembagaan, temuan penelitian ini dapat menjadi bahan pertimbangan dalam penyempurnaan formula IKPA agar lebih mengakomodasi karakteristik pelaksanaan anggaran Belanja Modal yang bersifat kontraktual dan multi-termin.
 
-#### 1.5 Batasan Masalah
-Agar penelitian terfokus dan terarah, batasan masalah ditetapkan sebagai berikut:
-1. Penelitian difokuskan pada analisis pelaksanaan anggaran **Belanja Modal** (kode akun 53) di Rumah Detensi Imigrasi Pontianak.
-2. Periode penelitian mencakup Tahun Anggaran 2023, 2024, dan 2025, yang mencakup fase transisi kelembagaan dari Kementerian Hukum dan Hak Asasi Manusia ke Kementerian Imigrasi dan Pemasyarakatan.
-3. Analisis deviasi difokuskan pada indikator **Deviasi Halaman III DIPA** sebagai bagian dari IKPA berdasarkan PER-5/PB/2024.
-4. Lensa analisis utama menggunakan *Agency Theory* (Jensen & Meckling, 1976; Lane, 2003) untuk membedah relasi keagenan antara prinsipal (Kemenkeu/DJPb/KPPN) dan agen (KPA/PPK/Penyedia) dalam konteks pelaksanaan Belanja Modal.
-5. Subjek penelitian dibatasi pada pejabat pengelola anggaran dan pengadaan di Rudenim Pontianak (KPA, PPK, PPSPM, BPG, SRKA, PBJ) serta dokumen anggaran terkait.
-
-#### 1.6 Definisi Operasional
-Untuk menghindari ambiguitas makna, istilah-istilah kunci dalam penelitian ini didefinisikan secara operasional sebagai berikut:
-1. **Pelaksanaan Anggaran Belanja Modal** adalah serangkaian proses kegiatan mulai dari perencanaan (penyusunan RKA-K/L, DIPA, RPD), pengadaan (pemilihan penyedia, penandatanganan kontrak), pelaksanaan fisik (progres pekerjaan, BAST), hingga pencairan dana (SPP, SPM, SP2D) untuk memperoleh aset tetap/aset lain (kode akun 53) di Rudenim Pontianak TA 2023–2025.
-2. **Deviasi Halaman III DIPA** adalah persentase simpangan absolut antara Rencana Penarikan Dana (RPD) bulanan pada Halaman III DIPA dengan realisasi anggaran aktual pada bulan yang sama untuk jenis Belanja Modal, dihitung dengan rumus: $\frac{|RPD - Realisasi|}{RPD} \times 100\%$ sesuai PER-5/PB/2024.
-3. **Faktor Penyebab Deviasi** adalah kondisi atau peristiwa (internal: perencanaan, SDM, administratif; eksternal: penyedia, *supply chain*, regulasi) yang mengakibatkan terjadinya pergeseran realisasi dari rencana bulanan pada Belanja Modal.
-4. **Dampak Deviasi** adalah konsekuensi dari terjadinya deviasi terhadap kinerja pengelolaan anggaran satker, diukur melalui nilai IKPA (khususnya indikator Deviasi Halaman III), beban kerja revisi administrasi, keterlambatan penyelesaian aset, serta implikasi akuntabilitas terhadap prinsipal (KPPN/DJPb).
-5. ***Agency Theory*** adalah kerangka teori yang digunakan untuk menganalisis hubungan kontrak antara prinsipal yang mendelegasikan wewenang pengelolaan anggaran dan agen yang melaksanakannya, dengan fokus pada asimetri informasi, *moral hazard*, *adverse selection*, dan *monitoring and control* dalam konteks pelaksanaan Belanja Modal.
-
 ---
 
 ## Catatan Revisi
 
 | No | Bagian/Sub-bab | Perubahan yang Dilakukan | Alasan & Referensi Temuan Audit |
 | :--- | :--- | :--- | :--- |
-| 1 | **Judul Bab 1 (Implisit)** | Menyesuaikan fokus penulisan secara konsisten ke **"Belanja Modal"** (bukan "Anggaran Belanja" umum) di seluruh paragraf latar belakang, rumusan masalah, tujuan, batasan, dan definisi operasional. | **Prioritas Tertinggi (Dosen Pembimbing):** Judul baru disepakati: *"... (Studi Kasus Belanja Modal TA 2023–2025)"*. **Audit 05 (Koherensi):** Inkonsistensi kritis Judul/RM vs Isi (Belanja Modal hilang di Judul & RM). **Audit 03 (Struktur):** RM 1 terlalu luas. |
+| 1 | **Judul Bab 1 (Implisit)** | Menyesuaikan fokus penulisan secara konsisten ke **"Belanja Modal"** (bukan "Anggaran Belanja" umum) di seluruh paragraf latar belakang, rumusan masalah, tujuan, batasan, dan definisi operasional. | **Prioritas Tertinggi (Dosen Pembimbing):** Judul baru disepakati: *"... (Studi Kasus Belanja Modal TA 2023-2025)"*. **Audit 05 (Koherensi):** Inkonsistensi kritis Judul/RM vs Isi (Belanja Modal hilang di Judul & RM). **Audit 03 (Struktur):** RM 1 terlalu luas. |
 | 2 | **1.1 Latar Belakang (Prinsip UU 17/2003)** | Mengubah "Kelima prinsip tersebut, yaitu efisiensi, efektivitas, transparansi, keadilan, dan kepatutan" menjadi **"Ketujuh prinsip tersebut tidak bersifat opsional..."** dan menghapus daftar lima prinsip yang tidak lengkap. Prinsip ketujuh (tertib, taat peraturan, efisien, ekonomis, efektif, transparan, bertanggung jawab) sudah tercantum di kalimat sebelumnya. | **Audit 02 (PUEBI) No. 4:** Inkonsistensi faktual fatal (7 vs 5 prinsip). Berpotensi ditanyakan penguji. |
 | 3 | **1.1 Latar Belakang (Kalimat RPD)** | Mengubah *"RPD bulanan ini bukan sekadar formalitas administratif; ia merupakan..."* menjadi *"RPD bulanan ini bukan sekadar formalitas administratif, **melainkan** merupakan..."* | **Audit 03 (Register) No. 1:** Penggunaan "ia" untuk benda mati bergaya esai, kurang formal. Disarankan "melainkan". |
 | 4 | **1.1 Latar Belakang (Pola Deviasi)** | Mengubah *"Salah satu pola yang persisten bermasalah..."* menjadi *"Salah satu pola yang **secara persisten menjadi permasalahan**..."* | **Audit 03 (Register) No. 2:** Kolokasi "persisten bermasalah" tidak baku/campuran register. |
 | 5 | **1.1 Latar Belakang (Perbaikan TA 2025)** | Mengubah *"Kondisi ini membaik signifikan pada TA 2025..."* menjadi *"Kondisi ini **mengalami perbaikan yang substansial** pada TA 2025..."* | **Audit 03 (Register) No. 3 & 7:** "Signifikan" dicadangkan untuk konteks statistik inferensial. Penelitian kualitatif → gunakan "substansial/tajam/nyata". |
 | 6 | **1.1 Latar Belakang (Pertanyaan Penelitian)** | Mengubah *"...pertanyaan yang masih belum optimal dijawab..."* menjadi *"...pertanyaan yang **belum dapat dijawab secara memadai**..."* | **Audit 03 (Register) No. 4:** Konstruksi "belum optimal dijawab" rancu/ tidak efektif. |
 | 7 | **1.1 Latar Belakang (Deviasi 100%)** | Mengubah *"...sama sekali tidak terealisasi..."* menjadi *"...**tidak terealisasi sepenuhnya**..."* | **Audit 03 (Register) No. 5:** "Sama sekali" intensifier kasual melemahkan nada akademik. |
-| 8 | **1.1 Latar Belakang (Komposisi Belanja Modal)** | Mengubah *"...meningkat signifikan menjadi 60–70%..."* menjadi *"...meningkat **secara tajam mencapai 65,92%... (lihat Tabel 1.3)**"*. | **Audit 03 (Register) No. 7 & Audit 05 (Struktur):** Angka 60-70% tidak konsisten dengan Tabel 1.3 (65,92%). Klaim data kuantitatif wajib rujuk tabel. Hindari "signifikan". |
+| 8 | **1.1 Latar Belakang (Komposisi Belanja Modal)** | Mengubah *"...meningkat signifikan menjadi 60-70%..."* menjadi *"...meningkat **secara tajam mencapai 65,92%... (lihat Tabel 1.3)**"*. | **Audit 03 (Register) No. 7 & Audit 05 (Struktur):** Angka 60-70% tidak konsisten dengan Tabel 1.3 (65,92%). Klaim data kuantitatif wajib rujuk tabel. Hindari "signifikan". |
 | 9 | **1.1 Latar Belakang (Konteks Perbatasan)** | Menambahkan frasa *"...sehingga memiliki karakteristik dinamika kependudukan asing yang memengaruhi volume dan pola pengeluaran anggarannya secara nyata, **khususnya pada kebutuhan fasilitas penampungan dan sarana pendukung operasional (Belanja Modal)**."* | **Audit 05 (Struktur):** Konteks geografis perbatasan disebut tapi tidak dikaitkan eksplisit dengan dampak pola deviasi Belanja Modal. |
 | 10 | **1.1 Latar Belakang (Reframing Anomali 2025)** | Menyempurnakan paragraf penutup latar belakang: *"...namun justru perbaikan drastis tersebut memperkuat relevansi pertanyaan penelitian: faktor apa yang menyebabkan deviasi tinggi pada periode sebelumnya dan mekanisme apa yang mengubahnya..."* | **Audit 05 (Struktur) & Audit 03 (Struktur):** Anomali 2025 melemahkan premis "masalah persisten". Perlu diframing jadi "fenomena pembelajaran organisasi/perubahan struktural yang menarik dikaji". |
 | 11 | **1.1 Latar Belakang (Perkenalan Agency Theory)** | Mengubah *"...penelitian ini menggunakan Agency Theory sebagai lensa analitis..."* menjadi *"...penelitian ini **memanfaatkan *Agency Theory* sebagai lensa analitis**..."* + menambahkan tanda kurung miring pada istilah asing. | **Audit 02 (PUEBI) No. 5:** *Agency Theory* wajib dicetak miring. **Audit 03 (Register) No. 6:** Klaim metodologis sebaiknya hedging ("memanfaatkan"). **Audit 05 (Koherensi):** Perkenalan teori terlalu mendadak; diberi jembatan "Untuk memahami dinamika relasi keagenan...". |

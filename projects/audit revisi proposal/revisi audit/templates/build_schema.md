@@ -172,3 +172,20 @@ Instrumen utama dalam pengelolaan keuangan negara adalah Anggaran Pendapatan dan
 
 Di antara tujuh indikator IKPA, Deviasi Halaman III DIPA mengukur selisih antara Rencana Penarikan Dana (RPD) bulanan yang telah disusun dalam Halaman III DIPA dengan realisasi anggaran aktual. Permasalahan ini terutama mengemuka pada Belanja Modal karena karakteristiknya yang kontraktual dan melibatkan *multi-pihak* dalam proses pengadaan barang/jasa pemerintah.
 ```
+
+---
+
+## 11. Aturan Gaya Penulisan (WAJIB — hindari penanda "AI")
+
+Aturan ini WAJIB dipatuhi oleh Writing Agent dan diperiksa oleh audit register.
+
+- **DILARANG tanda pisah panjang** em-dash (`—`) dan en-dash (`–`). Ganti dengan koma,
+  kata "yaitu"/"yakni", titik, atau tanda hubung biasa (`-`). Rentang tahun/angka memakai
+  tanda hubung biasa: tulis `2023-2025` dan `hlm. 190-192`, BUKAN `2023–2025`.
+- **DILARANG placeholder** yang tertinggal di naskah: `hlm. xx`, `xx`, `[TBD]`, `(tahun?)`, dsb.
+  Jika nomor halaman/tahun belum diketahui, JANGAN cantumkan sama sekali (mis. tulis
+  `(Mardiasmo, 2018)` tanpa `hlm. xx`).
+- **Sitasi penulis ganda (kaidah APA):** gunakan `&` HANYA di dalam kurung, contoh
+  `(Jensen & Meckling, 1976)`; gunakan kata `dan` bila nama menjadi bagian kalimat, contoh
+  `Jensen dan Meckling (1976)`. Jangan pakai `&` di luar kurung.
+- **Istilah asing** wajib *miring* (lihat §3). Jangan tinggalkan tanda `*` terlihat di naskah.

@@ -410,8 +410,8 @@
     "semantic_hash": ""
   },
   "skripsi/drafts/build_makalah.js": {
-    "mtime": 1782100918.257176,
-    "ast_hash": "423034b56690696389790787f66b4146",
+    "mtime": 1782723107.7354417,
+    "ast_hash": "a52f2cd4d0d087029329671eed7cc232",
     "semantic_hash": ""
   },
   "skripsi/drafts/package.json": {
@@ -615,7 +615,7 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1781935079.860394,
+    "mtime": 1782808345.90801,
     "ast_hash": "89c66bf2ebfbe24df19e706eeb76fe90",
     "semantic_hash": ""
   },
@@ -945,18 +945,18 @@
     "semantic_hash": ""
   },
   "projects/studios/app/package.json": {
-    "mtime": 1781935080.7288656,
-    "ast_hash": "6fa08aaa67fb76ce634f97bb35971b23",
+    "mtime": 1782356493.7288077,
+    "ast_hash": "cc575af2b40a2a29b49afa2b7a292d1c",
     "semantic_hash": ""
   },
   "projects/studios/app/src/App.jsx": {
-    "mtime": 1782184020.4871306,
-    "ast_hash": "ad824412557261bcc36223f699af9e1b",
+    "mtime": 1782293837.3368328,
+    "ast_hash": "d26e6f608cc2fed4be88636c19de00ba",
     "semantic_hash": ""
   },
   "projects/studios/app/src/data/mockData.js": {
-    "mtime": 1782113854.741368,
-    "ast_hash": "49a713dba5b55e1c936bfbccc5441646",
+    "mtime": 1782214121.2018812,
+    "ast_hash": "e80c1e2fd616fe90b081803a6940d1ad",
     "semantic_hash": ""
   },
   "projects/studios/app/src/main.jsx": {
@@ -965,8 +965,8 @@
     "semantic_hash": ""
   },
   "projects/studios/app/src/pages/ContentViewer.jsx": {
-    "mtime": 1782140828.7757795,
-    "ast_hash": "6c33199c2c785f4190e175604bd200b5",
+    "mtime": 1782287631.6698287,
+    "ast_hash": "f35c2bff40187edaa3b8662726190a61",
     "semantic_hash": ""
   },
   "projects/studios/app/src/pages/Dashboard.jsx": {
@@ -975,13 +975,13 @@
     "semantic_hash": ""
   },
   "projects/studios/app/src/pages/StackPage.jsx": {
-    "mtime": 1782113827.0566182,
-    "ast_hash": "3b5ff0931d685708a0a03863bbcbbdca",
+    "mtime": 1782360310.7845976,
+    "ast_hash": "4f4df16d0b9b34e93094120358c31973",
     "semantic_hash": ""
   },
   "projects/studios/app/vite.config.js": {
-    "mtime": 1781935080.7476351,
-    "ast_hash": "199e1221ae03d6974fdc8b5e23787b98",
+    "mtime": 1782294493.2624621,
+    "ast_hash": "88439104b3c207f17d33ef3160e3b080",
     "semantic_hash": ""
   },
   "scripts/notion/search_custom.js": {
@@ -1100,8 +1100,8 @@
     "semantic_hash": ""
   },
   "projects/studios/supabase_schema.sql": {
-    "mtime": 1781935080.7494583,
-    "ast_hash": "a4b68a9c2123360deb5c92bf88eda4b0",
+    "mtime": 1782288770.58492,
+    "ast_hash": "48c213ec879b7390f9c8e51f8084c7c1",
     "semantic_hash": ""
   },
   "projects/studios/supabase_seed.sql": {
@@ -1110,8 +1110,8 @@
     "semantic_hash": ""
   },
   "projects/studios/app/src/lib/supabaseClient.js": {
-    "mtime": 1781935080.740037,
-    "ast_hash": "3349de4957e519efccd262a7e178eb84",
+    "mtime": 1782289348.7993917,
+    "ast_hash": "164cbd4be4879320d1d6b04809044db9",
     "semantic_hash": ""
   },
   "projects/studios/app/src/pages/AuthPage.jsx": {
@@ -1120,8 +1120,8 @@
     "semantic_hash": ""
   },
   "projects/studios/app/src/services/dataService.js": {
-    "mtime": 1781935080.7476351,
-    "ast_hash": "1adaf875be0ea36d7d2d2c3744727a21",
+    "mtime": 1782289549.5821877,
+    "ast_hash": "6491ff734e1b864163167235d5521a20",
     "semantic_hash": ""
   },
   "projects/studios/app/scripts/notionParser.js": {
@@ -1365,8 +1365,8 @@
     "semantic_hash": ""
   },
   "projects/botkeu/ai_agent.py": {
-    "mtime": 1781935080.4991834,
-    "ast_hash": "4310b832c6a14e7ffb4d51b981d85c0b",
+    "mtime": 1782316143.0765152,
+    "ast_hash": "a0e80e6150fe2e8b9ad78a643faa998b",
     "semantic_hash": ""
   },
   "projects/botkeu/config.py": {
@@ -2087,6 +2087,826 @@
   "projects/studios/app/src/pages/MarginaliaView.jsx": {
     "mtime": 1782123051.02807,
     "ast_hash": "0fd305e25a2d55da9e654367a457192a",
+    "semantic_hash": ""
+  },
+  "archives/cleanup-audit-revisi-2026-06-30/skripsi-drafts-build_revisi.js": {
+    "mtime": 1782801261.9780571,
+    "ast_hash": "cd5a451ca005430a2e9a58cc55d0041e",
+    "semantic_hash": ""
+  },
+  "extract_demo.py": {
+    "mtime": 1782315533.2903042,
+    "ast_hash": "022b18e0ff3be9a04e458579fda33863",
+    "semantic_hash": ""
+  },
+  "get_last_user_input.py": {
+    "mtime": 1782787018.2658894,
+    "ast_hash": "c484df5e08b3808b629d2311edd57d28",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/build_revisi.js": {
+    "mtime": 1782831582.4236898,
+    "ast_hash": "0a2a6b02d3a9eeb5c40d05e3ce05b40b",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/analisis-anggaran-rudenim/revisi-v1/config.thesis.json": {
+    "mtime": 1782831165.6998813,
+    "ast_hash": "f2b5079196e3cfcaf1851324405e6174",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/analisis-anggaran-rudenim/revisi-v1/data_revisi.json": {
+    "mtime": 1782721016.4363801,
+    "ast_hash": "cfd2662830f67fdb94e5178679f36bee",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/package.json": {
+    "mtime": 1782808582.4785936,
+    "ast_hash": "bd45d867945ebef0d7598566a7cbfa14",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/pedoman/upb.json": {
+    "mtime": 1782831567.2686052,
+    "ast_hash": "2f935ab8dd361dcd82784bd1b94039a4",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/audit_koherensi.py": {
+    "mtime": 1782566192.488798,
+    "ast_hash": "7b620d3068f994e74516e711e296e5ad",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/audit_metodologi.py": {
+    "mtime": 1782566190.1002326,
+    "ast_hash": "00f54815773919e456c610d9f3dc93b5",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/audit_puebi.py": {
+    "mtime": 1782566178.580821,
+    "ast_hash": "50cc7f72f0432279fdcac8fd22269382",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/audit_register.py": {
+    "mtime": 1782566181.2730203,
+    "ast_hash": "530877651355058e619ba4e752c12066",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/audit_sitasi.py": {
+    "mtime": 1782566184.2822235,
+    "ast_hash": "4eba2f83f4b70638cd51d0d339a3095c",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/audit_struktur.py": {
+    "mtime": 1782566187.280917,
+    "ast_hash": "68b711864f39db19d0e6963c93735094",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/convert_to_word.py": {
+    "mtime": 1782808712.170319,
+    "ast_hash": "6a8cb8b7705a71494cd14a298ca5eeb6",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/extract_pdf.py": {
+    "mtime": 1782358087.1684215,
+    "ast_hash": "6b993eb5255d87de6d4324e29b0e801e",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/generate_json_revisi.py": {
+    "mtime": 1782716057.076518,
+    "ast_hash": "5e54068c7129f826aabb9babad194514",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/generate_pdf_report.py": {
+    "mtime": 1782401695.3403373,
+    "ast_hash": "0620f6917e8f56c8a4fe417aefec3813",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/llm_provider.py": {
+    "mtime": 1782710265.1455932,
+    "ast_hash": "ae515569cd332f2c1b1523478afe20d8",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/main.py": {
+    "mtime": 1782831021.9824033,
+    "ast_hash": "646595752d03891bd26108e8571e3c53",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/main_writing.py": {
+    "mtime": 1782719799.2740371,
+    "ast_hash": "31393b70c20f44a659f5fc511a0fbfcc",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/revisi_bab.py": {
+    "mtime": 1782788832.4868832,
+    "ast_hash": "bb992dc7772686bdab9c50e2638d9220",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/test_api.py": {
+    "mtime": 1782401714.4994223,
+    "ast_hash": "d8347cb296b25e5e9f4eefc69a116a02",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/tools/verification_pass.py": {
+    "mtime": 1782711434.926535,
+    "ast_hash": "e128bbdc4971f2c242146ba5db0da81f",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/tools/agent_risiko.py": {
+    "mtime": 1782455072.3016777,
+    "ast_hash": "4783f53ce1893f9342213fb1aadfa033",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/tools/audit_pdf.py": {
+    "mtime": 1782446350.3586552,
+    "ast_hash": "6fb0bed4493fd1ac60814bf92eb7bdd9",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/tools/extract_pdf.py": {
+    "mtime": 1782448451.0879138,
+    "ast_hash": "d2907480d27cd8ad20cad7dad3ef966d",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/debug_db.json": {
+    "mtime": 1782294242.2199373,
+    "ast_hash": "7d33d1060c6e847e1be7e028027414cd",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/debug_graph.json": {
+    "mtime": 1782294417.8042014,
+    "ast_hash": "c18b96dcb7007699d4a97c89b65c82b9",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/debug_patch.json": {
+    "mtime": 1782294276.638528,
+    "ast_hash": "c157c4e5e4133cc9c0e4605a362a0696",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/notion_schema.json": {
+    "mtime": 1782284071.5926232,
+    "ast_hash": "c15c435aac414a1076471ee4692f6765",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/add_dummy_syariah.js": {
+    "mtime": 1782294864.0615728,
+    "ast_hash": "37132034ccd180c3ae19651a72979bb0",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/audit_notion_relations.js": {
+    "mtime": 1782313389.5189452,
+    "ast_hash": "54ddee27cb16a5ebfa161fc05f6a2f62",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/audit_supabase_state.js": {
+    "mtime": 1782313766.7963307,
+    "ast_hash": "0fc4d9293a456a8efccade608f98ddaf",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/check_db_schema.js": {
+    "mtime": 1782292437.1007044,
+    "ast_hash": "ae89014356992e4d32029fc1cf948c84",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/check_db_state.js": {
+    "mtime": 1782290234.9169052,
+    "ast_hash": "a5d3719da2237af8453217cad48fe62d",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/check_notion.js": {
+    "mtime": 1782294083.851647,
+    "ast_hash": "22e7dea01e674a3d43e6094f5034f36a",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/check_notion_props.js": {
+    "mtime": 1782289704.022861,
+    "ast_hash": "1782955c7311e203865fd9c99144242a",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/check_supabase.js": {
+    "mtime": 1782288101.6770337,
+    "ast_hash": "745ea94799fbcc8fdd8dd16dc5fe590e",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/check_syariah.js": {
+    "mtime": 1782295079.6243453,
+    "ast_hash": "4fb19e106579bb86b8dbd6121e333e7c",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/clean_notion.js": {
+    "mtime": 1782289785.2077637,
+    "ast_hash": "6a8daa611c5c95ffb7f818ec9fcd1057",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/db_check.json": {
+    "mtime": 1782290531.1609948,
+    "ast_hash": "763891d85d5a97271cd6bf88f790e878",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/fix_map.js": {
+    "mtime": 1782294450.4327507,
+    "ast_hash": "8c9dfba0fa2484e7a8dc42b57361dcc2",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/fix_syariah_map.js": {
+    "mtime": 1782295191.2255528,
+    "ast_hash": "b78013f7077832507ffcd33aeca28f1d",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/get_notion_schema.js": {
+    "mtime": 1782284046.6132166,
+    "ast_hash": "a8824503af9fa246f897a78cc0cf1f46",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/get_notion_stacks.js": {
+    "mtime": 1782294834.936147,
+    "ast_hash": "f2eed10bb701ca3d114db1765404c800",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/inject_all_notion_relations.js": {
+    "mtime": 1782313798.463302,
+    "ast_hash": "abb3935ad46602fa3a4b86e865ef1a28",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/inject_notion_relations.js": {
+    "mtime": 1782293445.0621865,
+    "ast_hash": "d4afd9003285c6722d88c15b7417e397",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/push_mock_to_notion.js": {
+    "mtime": 1782284334.7729433,
+    "ast_hash": "dfb20c47a8ee0e87f2f808877cdb13ba",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/restore_dependencies.js": {
+    "mtime": 1782290945.0546067,
+    "ast_hash": "db879d8cdebb2a0e1883dbbdc224295f",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/scripts/sync_notion_to_supabase.js": {
+    "mtime": 1782294102.730352,
+    "ast_hash": "9004b16784052988010ce2338f8f269a",
+    "semantic_hash": ""
+  },
+  "projects/studios/app/src/utils/graphUtils.js": {
+    "mtime": 1782355200.980598,
+    "ast_hash": "be42c521c2ae57739e1f1b411bc1e854",
+    "semantic_hash": ""
+  },
+  "skripsi/drafts/debug_parse.js": {
+    "mtime": 1782789597.1399965,
+    "ast_hash": "5ef36710f2e0897937ad866283d3562d",
+    "semantic_hash": ""
+  },
+  "skripsi/drafts/docx_helpers.js": {
+    "mtime": 1782724006.255824,
+    "ast_hash": "eaefc8b74a681618ee0a271ab4dc740a",
+    "semantic_hash": ""
+  },
+  "skripsi/drafts/front_matter.js": {
+    "mtime": 1782800837.4258804,
+    "ast_hash": "b67d9ae2f420b652efd5ccb91dd5beea",
+    "semantic_hash": ""
+  },
+  "skripsi/drafts/generate_json.py": {
+    "mtime": 1782716070.696945,
+    "ast_hash": "3a73cfa5d19f248da1109333d770b8fe",
+    "semantic_hash": ""
+  },
+  "skripsi/drafts/test_build.js": {
+    "mtime": 1782788649.5063002,
+    "ast_hash": "76d7c5db7d665f1b3d38049477f72980",
+    "semantic_hash": ""
+  },
+  ".agents/AGENTS.md": {
+    "mtime": 1782808371.7052257,
+    "ast_hash": "061321038f7ba027ecde201aacc9f9e0",
+    "semantic_hash": ""
+  },
+  ".agents/skills/audit-skripsi/SKILL.md": {
+    "mtime": 1782315098.3801003,
+    "ast_hash": "539740103248145d1248802453102085",
+    "semantic_hash": ""
+  },
+  ".agents/skills/audit-skripsi/stages/01-audit-puebi.md": {
+    "mtime": 1782315115.8326764,
+    "ast_hash": "e4c9d91e2505f18b90ef67430e34fbf4",
+    "semantic_hash": ""
+  },
+  ".agents/skills/audit-skripsi/stages/02-audit-struktur.md": {
+    "mtime": 1782315117.851161,
+    "ast_hash": "cbe4cfc246cad3a69ecf153844ba0157",
+    "semantic_hash": ""
+  },
+  ".agents/skills/audit-skripsi/stages/03-audit-sitasi.md": {
+    "mtime": 1782315134.7729661,
+    "ast_hash": "6d5a7420739c75f9376e596f470340ee",
+    "semantic_hash": ""
+  },
+  ".agents/skills/audit-skripsi/stages/04-audit-logika.md": {
+    "mtime": 1782315136.7951152,
+    "ast_hash": "c3bb6d35c040735244522b6cf0df1db3",
+    "semantic_hash": ""
+  },
+  ".agents/skills/audit-skripsi/stages/05-final-report.md": {
+    "mtime": 1782315149.5222435,
+    "ast_hash": "a04e8cf89beea4a0d6db32dd6eae73fc",
+    "semantic_hash": ""
+  },
+  ".agents/skills/evaluasi-cuti-pns/SKILL.md": {
+    "mtime": 1782570927.8609986,
+    "ast_hash": "396ff5d6337f7e02df9dcb8ab7618541",
+    "semantic_hash": ""
+  },
+  ".agents/skills/roast/SKILL.md": {
+    "mtime": 1782535450.5548055,
+    "ast_hash": "6c8992bdebe434c39c5297a8a167bf8f",
+    "semantic_hash": ""
+  },
+  ".agents/skills/session-handoff/SKILL.md": {
+    "mtime": 1782535515.7333088,
+    "ast_hash": "4d94bc77943cf1fbf37dc2e6f22a4b15",
+    "semantic_hash": ""
+  },
+  ".claude/skills/audit-skripsi/SKILL.md": {
+    "mtime": 1782815078.2204375,
+    "ast_hash": "539740103248145d1248802453102085",
+    "semantic_hash": ""
+  },
+  ".claude/skills/audit-skripsi/stages/01-audit-puebi.md": {
+    "mtime": 1782815078.2214372,
+    "ast_hash": "e4c9d91e2505f18b90ef67430e34fbf4",
+    "semantic_hash": ""
+  },
+  ".claude/skills/audit-skripsi/stages/02-audit-struktur.md": {
+    "mtime": 1782815078.222439,
+    "ast_hash": "cbe4cfc246cad3a69ecf153844ba0157",
+    "semantic_hash": ""
+  },
+  ".claude/skills/audit-skripsi/stages/03-audit-sitasi.md": {
+    "mtime": 1782815078.2244391,
+    "ast_hash": "6d5a7420739c75f9376e596f470340ee",
+    "semantic_hash": ""
+  },
+  ".claude/skills/audit-skripsi/stages/04-audit-logika.md": {
+    "mtime": 1782815078.2264373,
+    "ast_hash": "c3bb6d35c040735244522b6cf0df1db3",
+    "semantic_hash": ""
+  },
+  ".claude/skills/audit-skripsi/stages/05-final-report.md": {
+    "mtime": 1782815078.2274377,
+    "ast_hash": "a04e8cf89beea4a0d6db32dd6eae73fc",
+    "semantic_hash": ""
+  },
+  ".claude/skills/evaluasi-cuti-pns/SKILL.md": {
+    "mtime": 1782815078.277564,
+    "ast_hash": "396ff5d6337f7e02df9dcb8ab7618541",
+    "semantic_hash": ""
+  },
+  ".claude/skills/karpathy-method/SKILL.md": {
+    "mtime": 1782815078.3221881,
+    "ast_hash": "381fd184ad7b5bee001ad33de10c453d",
+    "semantic_hash": ""
+  },
+  ".claude/skills/karpathy-method/templates/00-ideation.md": {
+    "mtime": 1782815078.3191888,
+    "ast_hash": "24c600e1c91ee095b86801a5cf90cb25",
+    "semantic_hash": ""
+  },
+  ".claude/skills/karpathy-method/templates/01-architecture.md": {
+    "mtime": 1782815078.3191888,
+    "ast_hash": "97726d4423de702ab8ba14fc6a32a341",
+    "semantic_hash": ""
+  },
+  ".claude/skills/karpathy-method/templates/02-quality-gate.md": {
+    "mtime": 1782815078.3211868,
+    "ast_hash": "e32ddb08b957599628b9397b574c5450",
+    "semantic_hash": ""
+  },
+  ".claude/skills/karpathy-method/templates/03-launch-plan.md": {
+    "mtime": 1782815078.3201876,
+    "ast_hash": "f52ef44e3aadcdfec1118808fbc34a92",
+    "semantic_hash": ""
+  },
+  ".claude/skills/karpathy-method/templates/04-retrospective.md": {
+    "mtime": 1782815078.3211868,
+    "ast_hash": "3f5c1fdc40d31a2719d28d075e9b9691",
+    "semantic_hash": ""
+  },
+  ".claude/skills/multi-pass-prompting/SKILL.md": {
+    "mtime": 1782815078.4016933,
+    "ast_hash": "7027e1064e9dc8909cadfc29786f75e8",
+    "semantic_hash": ""
+  },
+  ".claude/skills/roast/SKILL.md": {
+    "mtime": 1782815078.4475393,
+    "ast_hash": "6c8992bdebe434c39c5297a8a167bf8f",
+    "semantic_hash": ""
+  },
+  ".claude/skills/session-handoff/SKILL.md": {
+    "mtime": 1782815078.492574,
+    "ast_hash": "4d94bc77943cf1fbf37dc2e6f22a4b15",
+    "semantic_hash": ""
+  },
+  "archives/cleanup-audit-revisi-2026-06-30/README.md": {
+    "mtime": 1782831041.877931,
+    "ast_hash": "58974fabe46a77954e14b5a657f18312",
+    "semantic_hash": ""
+  },
+  "archives/cleanup-audit-revisi-2026-06-30/stub-root-lama/revisi audit/CLAUDE.md": {
+    "mtime": 1782357187.0243454,
+    "ast_hash": "23ce27c797d8eb2a66e97312b33ee62e",
+    "semantic_hash": ""
+  },
+  "archives/cleanup-audit-revisi-2026-06-30/stub-root-lama/revisi audit/SKILL.md": {
+    "mtime": 1782356127.1843371,
+    "ast_hash": "22537538b10e8c578f026141dfe02897",
+    "semantic_hash": ""
+  },
+  "archives/cleanup-audit-revisi-2026-06-30/stub-root-lama/revisi audit/stages/01-raw-extraction.md": {
+    "mtime": 1782356130.3061943,
+    "ast_hash": "e264e14b07ddf07c0a463937d5425de9",
+    "semantic_hash": ""
+  },
+  "archives/cleanup-audit-revisi-2026-06-30/stub-root-lama/revisi audit/stages/02-audit-puebi.md": {
+    "mtime": 1782356133.3843393,
+    "ast_hash": "9a1fc0659e48140b3cd0013ad2175874",
+    "semantic_hash": ""
+  },
+  "archives/cleanup-audit-revisi-2026-06-30/stub-root-lama/revisi audit/stages/03-audit-struktur-dan-sitasi.md": {
+    "mtime": 1782356135.405258,
+    "ast_hash": "5af5573277118af2559f8ef3c6bdb053",
+    "semantic_hash": ""
+  },
+  "archives/cleanup-audit-revisi-2026-06-30/stub-root-lama/revisi audit/stages/04-final-report.md": {
+    "mtime": 1782356137.4321282,
+    "ast_hash": "48153e73a04fa8c6c8a5f0eaeac7712e",
+    "semantic_hash": ""
+  },
+  "archives/cleanup-audit-revisi-2026-06-30/workflows-stages-lama/01-raw-extraction.md": {
+    "mtime": 1782357363.8443851,
+    "ast_hash": "e264e14b07ddf07c0a463937d5425de9",
+    "semantic_hash": ""
+  },
+  "archives/cleanup-audit-revisi-2026-06-30/workflows-stages-lama/02-audit-puebi.md": {
+    "mtime": 1782357366.2059207,
+    "ast_hash": "9a1fc0659e48140b3cd0013ad2175874",
+    "semantic_hash": ""
+  },
+  "archives/cleanup-audit-revisi-2026-06-30/workflows-stages-lama/03-audit-struktur-dan-sitasi.md": {
+    "mtime": 1782357368.273563,
+    "ast_hash": "5af5573277118af2559f8ef3c6bdb053",
+    "semantic_hash": ""
+  },
+  "archives/cleanup-audit-revisi-2026-06-30/workflows-stages-lama/04-final-report.md": {
+    "mtime": 1782357370.2977033,
+    "ast_hash": "48153e73a04fa8c6c8a5f0eaeac7712e",
+    "semantic_hash": ""
+  },
+  "outputs/demo-ajie/00-raw-ekstrak.md": {
+    "mtime": 1782315399.1644192,
+    "ast_hash": "88666f600ca26ffa257ba779a62943cf",
+    "semantic_hash": ""
+  },
+  "projects/Skripsi Revisor Writing/README - Links.md": {
+    "mtime": 1782371212.0,
+    "ast_hash": "880d8cfd5235b368847ed0dbb13bb3d3",
+    "semantic_hash": ""
+  },
+  "projects/Skripsi Revisor Writing/roast-SKILL.md": {
+    "mtime": 1782371208.0,
+    "ast_hash": "ad26753ac09c7ca379bfd660ec99f4c2",
+    "semantic_hash": ""
+  },
+  "projects/Skripsi Revisor Writing/session-handoff-SKILL.md": {
+    "mtime": 1782371210.0,
+    "ast_hash": "d65360b69541194742b6ee271cd0b678",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/CLAUDE.md": {
+    "mtime": 1782357268.8020246,
+    "ast_hash": "77b38f7b4a252b22f3e2a05e99582c18",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/README.md": {
+    "mtime": 1782830956.5537393,
+    "ast_hash": "803f959fa0a8d8a2f690df641b8f5df6",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/SKILL.md": {
+    "mtime": 1782830990.1391401,
+    "ast_hash": "f02e78055a9dc0e8bd632e281ccc84d4",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/analisis-anggaran-rudenim/revisi-v1/05-revisi-bab1.md": {
+    "mtime": 1782711660.1505382,
+    "ast_hash": "61fad740f9cba2af09e6b3779cc380cb",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/analisis-anggaran-rudenim/revisi-v1/05-revisi-bab2.md": {
+    "mtime": 1782711968.1649194,
+    "ast_hash": "88f40d5de3c81c11aad5cbda26d900c8",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/analisis-anggaran-rudenim/revisi-v1/05-revisi-bab3.md": {
+    "mtime": 1782712112.4479923,
+    "ast_hash": "c38a05f9840ac7accf8faf102b242cd0",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/analisis-anggaran-rudenim/revisi-v1/05-revisi-daftar-pustaka.md": {
+    "mtime": 1782712322.1066165,
+    "ast_hash": "feff5f40e6bfda3fa9679a8c2845d752",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/analisis-anggaran-rudenim/revisi-v1/06-verification-pass.md": {
+    "mtime": 1782721013.9132643,
+    "ast_hash": "6b1b0944c8d5e96cb6ed653dab7ad846",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/analisis-anggaran-rudenim/revisi-v1/audit-catatan-dosen-2026-06-11.md": {
+    "mtime": 1781161878.017585,
+    "ast_hash": "6513d028ca5dfd201d80e15e3f04cfc0",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/analisis-anggaran-rudenim/revisi-v1/catatan-dosen.md": {
+    "mtime": 1782711453.8520756,
+    "ast_hash": "e3b919e357ff731420b9d67f74630660",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/analisis-anggaran-rudenim/revisi-v1/coretan-dosen-revisi.md": {
+    "mtime": 1781150897.6122067,
+    "ast_hash": "4a6e579670250b82e83c5c262a9b4ea0",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/skripsi-akuntansi/revisi-v1/05-revisi-bab1.md": {
+    "mtime": 1782537720.9791317,
+    "ast_hash": "d3a4ac4f787a4e91c4dc2be93a783205",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/skripsi-akuntansi/revisi-v1/05-revisi-bab2.md": {
+    "mtime": 1782537810.577841,
+    "ast_hash": "26c885901432bf6ce5b22b6fb7f71969",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/skripsi-akuntansi/revisi-v1/05-revisi-bab3.md": {
+    "mtime": 1782537902.4818025,
+    "ast_hash": "ae11043d37e0d6601941a6fdb90ffd62",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/skripsi-akuntansi/revisi-v1/05-revisi-daftar-pustaka.md": {
+    "mtime": 1782537953.7043402,
+    "ast_hash": "2f693e6de91282de17dc830480bd52e3",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/skripsi-akuntansi/revisi-v1/06-verification-pass.md": {
+    "mtime": 1782569840.2855935,
+    "ast_hash": "c74138c3cb80e54d6b2f75ad8ebc7452",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/requirements.txt": {
+    "mtime": 1782360895.3360677,
+    "ast_hash": "78659cc46a8721045e2915766f0170d9",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/stages/01-raw-extraction.md": {
+    "mtime": 1782356565.098114,
+    "ast_hash": "e264e14b07ddf07c0a463937d5425de9",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/stages/02-audit-puebi.md": {
+    "mtime": 1782566222.5158134,
+    "ast_hash": "beae99887ddd2d859ca56d86a0c67caf",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/stages/03-audit-register.md": {
+    "mtime": 1782566228.9271152,
+    "ast_hash": "2d936365be22743960a4ab32cf18c184",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/stages/04-audit-sitasi.md": {
+    "mtime": 1782566235.807864,
+    "ast_hash": "38a7919f8010c6626e569cf3c12fd2ac",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/stages/05-audit-struktur.md": {
+    "mtime": 1782566242.0116055,
+    "ast_hash": "c858779bd98b9f81f34d95a7bd86bf41",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/stages/06-audit-metodologi.md": {
+    "mtime": 1782566250.5667646,
+    "ast_hash": "6f37e00380c3a8cc3f555eb7d32f1aad",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/stages/07-audit-koherensi.md": {
+    "mtime": 1782566255.5719733,
+    "ast_hash": "9a29fcf01220db9b29f88d9272dd6ccc",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/stages/08-final-report.md": {
+    "mtime": 1782566265.6574433,
+    "ast_hash": "9eb136779884f61e79a6dd028aa5af76",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/stages/09-writing-revisi.md": {
+    "mtime": 1782566892.2936969,
+    "ast_hash": "2e5b4fa0e86b3cff9b77cf641dac992c",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/stages/10-verification-pass.md": {
+    "mtime": 1782566274.0646396,
+    "ast_hash": "c78a502b65163986bd40b04bccf934ee",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/stages/11-build-document.md": {
+    "mtime": 1782831007.4205782,
+    "ast_hash": "ec3f90fb41a6d1fc7883313c89325197",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/templates/bab1_template.md": {
+    "mtime": 1782788459.322888,
+    "ast_hash": "7f7027c72eb5ef91d961473a646a7955",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/templates/bab2_template.md": {
+    "mtime": 1782788491.365743,
+    "ast_hash": "f823e6d148dff5c95f143726c2729bf9",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/templates/bab3_template.md": {
+    "mtime": 1782788493.3915815,
+    "ast_hash": "ff3adc6774a672f516fcb95211f8e6e2",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/templates/build_schema.md": {
+    "mtime": 1782788344.802563,
+    "ast_hash": "37b1c563c6786df88df56fa2a62411ac",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/workflows/revisi-audit-proposal.md": {
+    "mtime": 1782831028.5836596,
+    "ast_hash": "80c19692d0b0de83c7cad8c62f130198",
+    "semantic_hash": ""
+  },
+  "projects/evaluasi-cuti-pns/README.md": {
+    "mtime": 1782570792.8172696,
+    "ast_hash": "e5449831c01255f18deeeaa1b6758af4",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/CLAUDE.md": {
+    "mtime": 1782446313.0320516,
+    "ast_hash": "d4550f8748039c7ecc1dfa37260a1014",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/SKILL.md": {
+    "mtime": 1782446315.0997722,
+    "ast_hash": "3e943f84cc27bfa49496ce4a33248691",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/dokumen_pelengkap_mr_rudenim.md": {
+    "mtime": 1782455760.5059254,
+    "ast_hash": "5df8bbea507e460c545de622f711ac5d",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/flowchart_manajemen_risiko.html": {
+    "mtime": 1782456552.2059064,
+    "ast_hash": "95cd6f048af3dddf789c98967708048b",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/format_pemantauan_triwulanan.md": {
+    "mtime": 1782455758.1878076,
+    "ast_hash": "d2dad20b76182f88e019b44845413cc4",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/output_register_risiko.md": {
+    "mtime": 1782455514.3507812,
+    "ast_hash": "3eb1b62637301eb81b7bb697fac142c5",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/plan_implementasi_mr_rudenim.md": {
+    "mtime": 1782453876.1007962,
+    "ast_hash": "19d932e31bfad69eb1f7cc61c27e19a4",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/register_risiko_keuangan_rudenim.md": {
+    "mtime": 1782455737.1922064,
+    "ast_hash": "4ac83bee72e93690985b50e1c7e6a8e5",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/requirements.txt": {
+    "mtime": 1782455085.4547336,
+    "ast_hash": "8f464a7fc0914f5f4dc2d9a953805455",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/struktur_pedoman.md": {
+    "mtime": 1782447350.7876968,
+    "ast_hash": "154dc57d076c4d0d7beaadc6d448b83c",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/templates/A_Formulir_Penetapan_Konteks.md": {
+    "mtime": 1782457156.0445764,
+    "ast_hash": "6454ccf933745bff851ce862df8a03e4",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/templates/B_Register_Risiko_Analisis.md": {
+    "mtime": 1782457158.1170206,
+    "ast_hash": "a7b942cae33da621baa2779dbc49e340",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/templates/C_Peta_Risiko_RTP.md": {
+    "mtime": 1782457160.731152,
+    "ast_hash": "3f36a910a39d223fcee59f64b9518278",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/templates/D_Piagam_Manajemen_Risiko.md": {
+    "mtime": 1782457181.557167,
+    "ast_hash": "467f69e2c077d6d541e6939baa6be1b2",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/templates/E_F_Laporan_Pemantauan.md": {
+    "mtime": 1782457184.42269,
+    "ast_hash": "0ce8e2c1c958a542cd2371d57dcfff76",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/templates/G_Laporan_Tahunan_MR.md": {
+    "mtime": 1782457211.7858496,
+    "ast_hash": "d2cf46f439e53c016c3f7c9b27cb7e68",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/tes_mentah.txt": {
+    "mtime": 1782455301.8372376,
+    "ast_hash": "e98e865710dc3af7ce1013490d905f4d",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/workflows/manajemen-risiko-rudenim.md": {
+    "mtime": 1782446327.8257947,
+    "ast_hash": "eb9e063a52e7b99198d2a07bf3ee1929",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/workflows/stages/01-ekstraksi-pedoman.md": {
+    "mtime": 1782446329.9028397,
+    "ast_hash": "9f3780e7bccae0e9042573a7c74b4d63",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/workflows/stages/02-analisis-struktur.md": {
+    "mtime": 1782446340.5728385,
+    "ast_hash": "aeafd2108a478b506e2e95b6ca4d13c0",
+    "semantic_hash": ""
+  },
+  "projects/manajemen-risiko-rudenim/workflows/stages/03-plan-implementasi.md": {
+    "mtime": 1782446342.6045308,
+    "ast_hash": "c8a62b48210e861f44cd74c729ee17c5",
+    "semantic_hash": ""
+  },
+  "riset-pipeline/riset-pipeline/SKILL.md": {
+    "mtime": 1782311035.0,
+    "ast_hash": "21ec003a702dcf046c22306b344b5f48",
+    "semantic_hash": ""
+  },
+  "riset-pipeline/riset-pipeline/agents/deep-research.md": {
+    "mtime": 1782311053.0,
+    "ast_hash": "8aad669774758c0ed237e436e079b0c8",
+    "semantic_hash": ""
+  },
+  "riset-pipeline/riset-pipeline/stages/01-cari-referensi.md": {
+    "mtime": 1782311063.0,
+    "ast_hash": "9b0167f935e98fc83ada472d0e818da1",
+    "semantic_hash": ""
+  },
+  "riset-pipeline/riset-pipeline/stages/02-audit-konten.md": {
+    "mtime": 1782311076.0,
+    "ast_hash": "c874284983e58294f02f9f5dcb6504a9",
+    "semantic_hash": ""
+  },
+  "riset-pipeline/riset-pipeline/stages/03-audit-struktur.md": {
+    "mtime": 1782311091.0,
+    "ast_hash": "5b4f978c0198cc95f2f7d1002d742041",
+    "semantic_hash": ""
+  },
+  "riset-pipeline/riset-pipeline/stages/04-peta-html.md": {
+    "mtime": 1782311114.0,
+    "ast_hash": "9389a9fb3ed5d191f6b06ea5e3828d1b",
+    "semantic_hash": ""
+  },
+  "riset-pipeline/riset-pipeline/stages/05-markdown-format.md": {
+    "mtime": 1782311129.0,
+    "ast_hash": "c918611bd491becafd80e5779c049f4f",
+    "semantic_hash": ""
+  },
+  "riset-pipeline/riset-pipeline/stages/06-notion-inject.md": {
+    "mtime": 1782311144.0,
+    "ast_hash": "341705b50160bf7b563521b1a7eaf49b",
+    "semantic_hash": ""
+  },
+  "riset-pipeline/riset-pipeline/stages/07-obsidian-karpathy.md": {
+    "mtime": 1782311164.0,
+    "ast_hash": "1c382b5d67141ab635168da656ab39a9",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/analisis-anggaran-rudenim/revisi-v1/flowchart_alur_anggaran_1781345233177.png": {
+    "mtime": 1781935080.7980566,
+    "ast_hash": "4985ad300843d1b5839052dac742a4d3",
+    "semantic_hash": ""
+  },
+  "projects/audit revisi proposal/revisi audit/outputs/analisis-anggaran-rudenim/revisi-v1/kerangka_penelitian.png": {
+    "mtime": 1781935080.8039627,
+    "ast_hash": "e505b7dd13046818684520a3c0a59ce4",
     "semantic_hash": ""
   }
 }

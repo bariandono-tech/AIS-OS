@@ -45,7 +45,7 @@ Pipeline ini menggunakan arsitektur DAG (Directed Acyclic Graph) untuk mempercep
    - Verdik: **LULUS** (≥90% kepatuhan) atau **PERLU REVISI ULANG**.
 
 ## Instruksi Orkestrator
-- **Fase Audit:** `python tools/main.py <path-to-pdf>` — menjalankan 7 agen audit secara berurutan.
+- **Fase Audit:** `python tools/main.py <path-to-pdf>` — menjalankan 6 agen audit secara berurutan (PUEBI, Register, Sitasi, Struktur, Metodologi, Koherensi).
 - **Fase Writing:** `python tools/main_writing.py <topik> <versi>` — menjalankan revisi + verification.
 - Jangan libatkan *sub-agent* eksternal untuk *web search*. Fokus hanya pada dokumen lokal.
 - File intermediate audit disimpan di `.tmp/`.

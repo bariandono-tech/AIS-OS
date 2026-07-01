@@ -18,7 +18,7 @@ Tahap ini dieksekusi oleh `tools/convert_to_word.py` yang memanggil:
 node build_revisi.js <input_dir> <output_docx>
 ```
 
-`build_revisi.js` (di `skripsi/drafts/`) menggunakan `docx_helpers.js` — modul *shared* yang berisi semua formatting rules (heading, paragraf, tabel, daftar pustaka) yang identik dengan `build_makalah.js`.
+`build_revisi.js` (**self-contained, di folder ini** — bukan lagi di `skripsi/drafts/`) berisi semua formatting rules (heading, paragraf, tabel, daftar pustaka) sendiri. Konstanta format dibaca dari `pedoman/upb.json` dan identitas dokumen dari `config.thesis.json`.
 
 Langkah internal:
 1. Membaca setiap file `.md` revisi secara langsung (line-based parser).
@@ -31,6 +31,7 @@ Langkah internal:
 - `outputs/{topik}/revisi-{versi}/Makalah_Revisi.docx`
 
 ## Tool
-- `tools/convert_to_word.py` → memanggil `skripsi/drafts/build_revisi.js`
-- `skripsi/drafts/docx_helpers.js` — shared formatting module
+- `tools/convert_to_word.py` → memanggil `build_revisi.js` (self-contained, di folder ini)
+- `config.thesis.json` — identitas dokumen (cover, penulis, dosen, Kata Pengantar, Daftar Isi)
+- `pedoman/upb.json` — aturan format kampus (margin, font, spasi)
 - `templates/build_schema.md` — format rules yang di-inject ke prompt LLM

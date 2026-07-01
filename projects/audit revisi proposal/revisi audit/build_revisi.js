@@ -25,21 +25,33 @@ const {
   AlignmentType, LevelFormat, HeadingLevel, BorderStyle, WidthType,
   PageNumber, PageBreak, Header, Footer,
   PositionalTab, PositionalTabAlignment, PositionalTabRelativeTo, PositionalTabLeader,
-  NumberFormat, ImageRun,
+  NumberFormat, ImageRun, TableOfContents,
 } = require('docx');
 
 
 // ══════════════════════════════════════════════════════════════════════
-// LAYOUT CONSTANTS
+// LAYOUT CONSTANTS — dibaca dari pedoman/<kampus>.json (default: upb)
 // ══════════════════════════════════════════════════════════════════════
-// A4 margins: top 4cm, bottom 3cm, left 4cm, right 3cm
-const PAGE_W = 11906;
-const PAGE_H = 16838;
-const M_TOP = 2268;
-const M_BOTTOM = 1701;
-const M_LEFT = 2268;
-const M_RIGHT = 1701;
-const CONTENT_W = PAGE_W - M_LEFT - M_RIGHT; // 7937
+// Kampus baru = buat pedoman/<kampus>.json lalu set env PEDOMAN=<kampus>.
+function loadPedoman() {
+  const name = process.env.PEDOMAN || 'upb';
+  const p = path.join(__dirname, 'pedoman', name + '.json');
+  if (!fs.existsSync(p)) {
+    console.error(`❌ Pedoman tidak ditemukan: ${p}`);
+    console.error(`   Buat file pedoman/${name}.json (aturan format kampus) lalu jalankan lagi.`);
+    process.exit(1);
+  }
+  return JSON.parse(fs.readFileSync(p, 'utf-8'));
+}
+const PEDOMAN = loadPedoman();
+// A4 margins UPB: top 4cm, bottom 3cm, left 4cm, right 3cm
+const PAGE_W = PEDOMAN.page.width;
+const PAGE_H = PEDOMAN.page.height;
+const M_TOP = PEDOMAN.page.margin.top;
+const M_BOTTOM = PEDOMAN.page.margin.bottom;
+const M_LEFT = PEDOMAN.page.margin.left;
+const M_RIGHT = PEDOMAN.page.margin.right;
+const CONTENT_W = PAGE_W - M_LEFT - M_RIGHT;
 
 
 // ══════════════════════════════════════════════════════════════════════
@@ -49,6 +61,11 @@ const border0 = { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' };
 const borders0 = { top: border0, bottom: border0, left: border0, right: border0 };
 const borderSingle = { style: BorderStyle.SINGLE, size: 4, color: '000000' };
 const bordersAll = { top: borderSingle, bottom: borderSingle, left: borderSingle, right: borderSingle };
+// Tabel akademis "terbuka" (3 garis): header bergaris atas+bawah, baris tengah tanpa garis,
+// baris terakhir bergaris bawah. Tidak ada garis vertikal. (Sesuai pedoman + gaya makalah-sim.)
+const bordersHeader = { top: borderSingle, bottom: borderSingle, left: border0, right: border0 };
+const bordersMiddle = { top: border0, bottom: border0, left: border0, right: border0 };
+const bordersBottom = { top: border0, bottom: borderSingle, left: border0, right: border0 };
 
 
 // ══════════════════════════════════════════════════════════════════════
@@ -87,7 +104,7 @@ function heading2(text) {
     heading: HeadingLevel.HEADING_2,
     alignment: AlignmentType.LEFT,
     spacing: { after: 160, before: 240, line: 480 },
-    children: [new TextRun({ text, bold: true, size: 24, font: 'Times New Roman' })]
+    children: parseMarkdownRuns(text, { bold: true })
   });
 }
 
@@ -96,7 +113,32 @@ function heading3(text) {
     heading: HeadingLevel.HEADING_3,
     alignment: AlignmentType.LEFT,
     spacing: { after: 160, before: 240, line: 480 },
-    children: [new TextRun({ text, bold: true, size: 24, font: 'Times New Roman' })]
+    children: parseMarkdownRuns(text, { bold: true })
+  });
+}
+
+// Heading 1 untuk judul BAB: tampil DUA baris ("BAB I" lalu judul) tapi SATU entri di Daftar Isi.
+function chapterHeader(num, title) {
+  return new Paragraph({
+    heading: HeadingLevel.HEADING_1,
+    alignment: AlignmentType.CENTER,
+    spacing: { before: 480, after: 240, line: 480 },
+    keepNext: true,
+    children: [
+      new TextRun({ text: num, bold: true, size: 24, font: 'Times New Roman' }),
+      new TextRun({ text: title, bold: true, size: 24, font: 'Times New Roman', break: 1 }),
+    ],
+  });
+}
+
+// Heading 1 untuk judul satu baris (KATA PENGANTAR, DAFTAR ISI, DAFTAR PUSTAKA) — masuk Daftar Isi.
+function frontMatterHeader(title) {
+  return new Paragraph({
+    heading: HeadingLevel.HEADING_1,
+    alignment: AlignmentType.CENTER,
+    spacing: { before: 480, after: 240, line: 480 },
+    keepNext: true,
+    children: [new TextRun({ text: title, bold: true, size: 24, font: 'Times New Roman' })],
   });
 }
 
@@ -104,19 +146,19 @@ function pageBreak() {
   return new Paragraph({ children: [new PageBreak()] });
 }
 
-function numberedItem(runs) {
+function numberedItem(runs, reference = 'arabic-numbering') {
   return new Paragraph({
     alignment: AlignmentType.JUSTIFIED,
     spacing: { after: 0, before: 0, line: 480 },
     indent: { left: 720, hanging: 360 },
-    numbering: { reference: 'arabic-numbering', level: 0 },
+    numbering: { reference, level: 0 },
     children: Array.isArray(runs) ? runs : [tr(runs)]
   });
 }
 
-function cellPara(text, { width, bold = false, center = false, italic = false } = {}) {
+function cellPara(text, { width, bold = false, center = false, italic = false, borders = bordersAll } = {}) {
   return new TableCell({
-    borders: bordersAll,
+    borders: borders,
     width: { size: width, type: WidthType.DXA },
     margins: { top: 60, bottom: 60, left: 120, right: 120 },
     children: [new Paragraph({
@@ -144,7 +186,7 @@ function tableCaptionCentered(text) {
   return new Paragraph({
     alignment: AlignmentType.CENTER,
     spacing: { after: 80, before: 240, line: 480 },
-    children: [new TextRun({ text, bold: true, font: 'Times New Roman', size: 24 })]
+    children: parseMarkdownRuns(text, { bold: true })
   });
 }
 
@@ -232,9 +274,12 @@ function createChapterHeadersAndFooters() {
   };
 }
 
-const numberingConfig = [
-  {
-    reference: 'arabic-numbering',
+// Satu referensi penomoran per-list agar tiap daftar bernomor MULAI dari 1 lagi
+// (mencegah Word menyambung nomor antar sub-bab: 8,9,10,...). 'arabic-numbering'
+// dipakai front-matter (Kata Pengantar); 'list-1','list-2',... dipakai isi badan.
+function _numLevel(reference) {
+  return {
+    reference,
     levels: [{
       level: 0,
       format: LevelFormat.DECIMAL,
@@ -242,8 +287,10 @@ const numberingConfig = [
       alignment: AlignmentType.LEFT,
       style: { paragraph: { indent: { left: 720, hanging: 360 } } }
     }]
-  }
-];
+  };
+}
+const numberingConfig = [_numLevel('arabic-numbering')];
+for (let i = 1; i <= 200; i++) numberingConfig.push(_numLevel(`list-${i}`));
 
 const stylesConfig = {
   default: {
@@ -273,8 +320,14 @@ const stylesConfig = {
 // MARKDOWN PARSER
 // ══════════════════════════════════════════════════════════════════════
 
-function parseMarkdownRuns(text) {
-  if (!text || text.trim() === '') return [tr('')];
+// Parser inline Markdown REKURSIF + mewarisi format dasar (base).
+// - **tebal** → di-parse ulang isinya agar *miring* di DALAM tebal ikut jadi miring.
+// - *miring*  → di-parse ulang isinya (jaga-jaga ada **tebal** di dalam).
+// - ***tebal+miring***
+// `base` = format turunan (mis. { bold: true } untuk judul sub-bab yang seluruhnya tebal).
+function parseMarkdownRuns(text, base = {}) {
+  if (text === undefined || text === null) return [tr('', base)];
+  if (text === '') return [tr('', base)];
 
   const runs = [];
   const regex = /(\*\*\*(.+?)\*\*\*|\*\*(.+?)\*\*|\*(.+?)\*)/g;
@@ -283,23 +336,26 @@ function parseMarkdownRuns(text) {
 
   while ((match = regex.exec(text)) !== null) {
     if (match.index > lastIndex) {
-      runs.push(tr(text.substring(lastIndex, match.index)));
+      runs.push(tr(text.substring(lastIndex, match.index), base));
     }
-    if (match[2]) {
-      runs.push(tr(match[2], { bold: true, italics: true }));
-    } else if (match[3]) {
-      runs.push(trb(match[3]));
-    } else if (match[4]) {
-      runs.push(tri(match[4]));
+    if (match[2] !== undefined) {
+      // ***tebal+miring***
+      runs.push(tr(match[2], { ...base, bold: true, italics: true }));
+    } else if (match[3] !== undefined) {
+      // **tebal** → parse ulang isi untuk menangkap *miring* bersarang
+      runs.push(...parseMarkdownRuns(match[3], { ...base, bold: true }));
+    } else if (match[4] !== undefined) {
+      // *miring* → parse ulang isi untuk menangkap **tebal** bersarang
+      runs.push(...parseMarkdownRuns(match[4], { ...base, italics: true }));
     }
     lastIndex = match.index + match[0].length;
   }
 
   if (lastIndex < text.length) {
-    runs.push(tr(text.substring(lastIndex)));
+    runs.push(tr(text.substring(lastIndex), base));
   }
 
-  return runs.length > 0 ? runs : [tr(text)];
+  return runs.length > 0 ? runs : [tr(text, base)];
 }
 
 function parseMdFileToBlocks(mdContent) {
@@ -444,15 +500,25 @@ function parseMdFileToBlocks(mdContent) {
 
 function buildDocxChildren(blocks, imageDir) {
   const children = [];
+  let listCounter = 0;        // jumlah list bernomor yang sudah ditemui
+  let inNumberedList = false; // sedang di tengah satu list?
 
-  for (const block of blocks) {
+  for (let bi = 0; bi < blocks.length; bi++) {
+    const block = blocks[bi];
+    if (block.type !== 'numbered_item') inNumberedList = false;
     switch (block.type) {
-      case 'h1':
-        children.push(centered(block.text, {
-          bold: true, size: 24,
-          spaceAfter: block.text === 'DAFTAR PUSTAKA' ? 240 : 0
-        }));
+      case 'h1': {
+        const isBab = /^BAB\s+[IVX0-9]+$/i.test(block.text.trim());
+        if (isBab && blocks[bi + 1] && blocks[bi + 1].type === 'h1') {
+          // "BAB I" + judul → satu Heading 1 (dua baris, satu entri TOC)
+          children.push(chapterHeader(block.text, blocks[bi + 1].text));
+          bi++; // lewati baris judul yang sudah dipakai
+        } else {
+          // DAFTAR PUSTAKA / heading tunggal lain → Heading 1 satu baris
+          children.push(frontMatterHeader(block.text));
+        }
         break;
+      }
 
       case 'h2':
         children.push(heading2(block.text));
@@ -466,9 +532,12 @@ function buildDocxChildren(blocks, imageDir) {
         children.push(justifiedPara(parseMarkdownRuns(block.text)));
         break;
 
-      case 'numbered_item':
-        children.push(numberedItem(parseMarkdownRuns(block.text)));
+      case 'numbered_item': {
+        if (!inNumberedList) { listCounter++; inNumberedList = true; }
+        const listRef = listCounter <= 200 ? `list-${listCounter}` : 'arabic-numbering';
+        children.push(numberedItem(parseMarkdownRuns(block.text), listRef));
         break;
+      }
 
       case 'table_caption':
         children.push(tableCaptionCentered(block.text));
@@ -486,17 +555,21 @@ function buildDocxChildren(blocks, imageDir) {
         const colWidths = Array(numCols).fill(colWidth);
         colWidths[numCols - 1] = CONTENT_W - colWidth * (numCols - 1);
 
-        const tableRows = rows.map((row, rowIdx) =>
-          new TableRow({
+        const tableRows = rows.map((row, rowIdx) => {
+          const isHeader = rowIdx === 0;
+          const isLast = rowIdx === rows.length - 1;
+          const rowBorders = isHeader ? bordersHeader : (isLast ? bordersBottom : bordersMiddle);
+          return new TableRow({
             children: row.map((cellText, colIdx) =>
               cellPara(cellText.replace(/\*\*/g, '').replace(/\*/g, ''), {
                 width: colWidths[colIdx],
-                bold: rowIdx === 0,
-                center: rowIdx === 0 || colIdx === 0
+                bold: isHeader,
+                center: isHeader || colIdx === 0,
+                borders: rowBorders
               })
             )
-          })
-        );
+          });
+        });
 
         children.push(new Table({
           width: { size: CONTENT_W, type: WidthType.DXA },
@@ -568,179 +641,137 @@ function buildDocxChildren(blocks, imageDir) {
 // FRONT-MATTER SECTIONS (hardcoded)
 // ══════════════════════════════════════════════════════════════════════
 
-function buildFrontMatterSections() {
+function buildFrontMatterSections(config) {
   const frontMatterFooter = createFrontMatterFooter();
   const half = Math.floor(CONTENT_W / 2);
   const halfR = CONTENT_W - half;
+  const ins = config.institusi;
+  const ps = config.persetujuan;
+  const kp = config.kataPengantar;
 
+  // Sel tabel borderless berisi satu paragraf (spacing after 0, line 480).
+  // `margins` opsional — kalau diberikan, ikut ditambahkan (identik dengan kode lama).
+  function plainCell(width, runs, margins) {
+    const props = { borders: borders0, width: { size: width, type: WidthType.DXA } };
+    if (margins) props.margins = margins;
+    props.children = [new Paragraph({ spacing: { after: 0, line: 480 }, children: Array.isArray(runs) ? runs : [runs] })];
+    return new TableCell(props);
+  }
+  const labelMargins = { top: 40, bottom: 40, left: 0, right: 0 };
+  function konsultasiRow(label, value) {
+    return new TableRow({ children: [
+      plainCell(2800, tr(label), labelMargins),
+      plainCell(200, tr(':'), labelMargins),
+      plainCell(CONTENT_W - 3000, tr(value), labelMargins),
+    ]});
+  }
+
+  // ── COVER ──
+  const coverChildren = [emptyRow(), emptyRow()];
+  config.judulBaris.forEach((t, i) => {
+    coverChildren.push(centered(t, { bold: true, size: 24, spaceAfter: i === config.judulBaris.length - 1 ? 240 : 0 }));
+  });
+  coverChildren.push(
+    centered(config.jenisDokumen, { bold: true, size: 24, spaceAfter: 240 }),
+    centered('Oleh', { size: 24, spaceAfter: 240 }),
+    centered(config.penulis.nama, { bold: true, size: 24, spaceAfter: 0 }),
+    centered('NIM. ' + config.penulis.nim, { size: 24, spaceAfter: 960 }),
+    emptyRow(), emptyRow(), emptyRow(),
+    centered(ins.fakultas, { bold: true, size: 24, spaceAfter: 0 }),
+    centered(ins.universitas, { bold: true, size: 24, spaceAfter: 0 }),
+    centered(ins.kota, { bold: true, size: 24, spaceAfter: 0 }),
+    centered(ins.tahun, { bold: true, size: 24, spaceAfter: 0 }),
+  );
+
+  // ── LEMBAR PERSETUJUAN ──
+  const persetujuanChildren = [];
+  ps.judulHalaman.forEach((t, i) => {
+    persetujuanChildren.push(centered(t, { bold: true, size: 24, spaceAfter: i === ps.judulHalaman.length - 1 ? 480 : 0 }));
+  });
+  persetujuanChildren.push(
+    emptyRow(),
+    centered('LEMBAR KONSULTASI', { bold: true, size: 24, spaceAfter: 240 }),
+    new Table({
+      width: { size: CONTENT_W, type: WidthType.DXA },
+      columnWidths: [2800, 200, CONTENT_W - 3000],
+      borders: { top: border0, bottom: border0, left: border0, right: border0, insideH: border0, insideV: border0 },
+      rows: [
+        konsultasiRow('NAMA MAHASISWA', config.penulis.nama),
+        konsultasiRow('JUDUL PENELITIAN', config.judulKalimat),
+        konsultasiRow('TANGGAL SEMINAR', ps.tanggalSeminar),
+      ]
+    }),
+    emptyRow(),
+    new Table({
+      width: { size: CONTENT_W, type: WidthType.DXA },
+      columnWidths: [2000, 4866, 1800],
+      rows: [
+        new TableRow({ children: [cellPara('TANGGAL', { width: 2000, bold: true, center: true }), cellPara('KETERANGAN', { width: 4866, bold: true, center: true }), cellPara('PARAF', { width: 1800, bold: true, center: true })] }),
+        new TableRow({ children: [cellPara('', { width: 2000 }), cellPara('', { width: 4866 }), cellPara('', { width: 1800 })] }),
+        new TableRow({ children: [cellPara('', { width: 2000 }), cellPara('', { width: 4866 }), cellPara('', { width: 1800 })] }),
+        new TableRow({ children: [cellPara('', { width: 2000 }), cellPara('', { width: 4866 }), cellPara('', { width: 1800 })] }),
+      ]
+    }),
+    emptyRow(), emptyRow(),
+    new Table({
+      width: { size: CONTENT_W, type: WidthType.DXA },
+      columnWidths: [half, halfR],
+      borders: { top: border0, bottom: border0, left: border0, right: border0, insideH: border0, insideV: border0 },
+      rows: [
+        new TableRow({ children: [plainCell(half, tr(ps.penandatangan[0].kolomLabel)), plainCell(halfR, tr(ps.penandatangan[1].kolomLabel))] }),
+        new TableRow({ children: [plainCell(half, tr(ps.penandatangan[0].peran)), plainCell(halfR, tr(ps.penandatangan[1].peran))] }),
+        new TableRow({ children: [
+          new TableCell({ borders: borders0, width: { size: half, type: WidthType.DXA }, children: [emptyRow(), emptyRow(), emptyRow()] }),
+          new TableCell({ borders: borders0, width: { size: halfR, type: WidthType.DXA }, children: [emptyRow(), emptyRow(), emptyRow()] }),
+        ]}),
+        new TableRow({ children: [plainCell(half, trb(ps.penandatangan[0].nama)), plainCell(halfR, trb(ps.penandatangan[1].nama))] }),
+        new TableRow({ children: [plainCell(half, tr('NIDN: ' + ps.penandatangan[0].nidn)), plainCell(halfR, tr('NIDN: ' + ps.penandatangan[1].nidn))] }),
+      ]
+    }),
+  );
+
+  // ── KATA PENGANTAR ──
+  const kataPengantarChildren = [frontMatterHeader('KATA PENGANTAR')];
+  kp.paragrafPembuka.forEach(p => kataPengantarChildren.push(justifiedPara([tr(p)])));
+  kp.ucapanTerimaKasih.forEach(u => kataPengantarChildren.push(numberedItem([tr(u)])));
+  kataPengantarChildren.push(emptyRow());
+  kp.paragrafPenutup.forEach(p => kataPengantarChildren.push(justifiedPara([tr(p)])));
+  kataPengantarChildren.push(
+    emptyRow(),
+    new Paragraph({ alignment: AlignmentType.RIGHT, spacing: { after: 0, before: 0, line: 480 }, children: [tr(kp.kota + ', ' + kp.tanggal)] }),
+    new Paragraph({ alignment: AlignmentType.RIGHT, spacing: { after: 0, before: 0, line: 480 }, children: [tr(kp.penutupLabel)] }),
+    emptyRow(), emptyRow(), emptyRow(),
+    new Paragraph({ alignment: AlignmentType.RIGHT, spacing: { after: 0, before: 0, line: 480 }, children: [trb(config.penulis.nama)] }),
+  );
+
+  // ── DAFTAR ISI (auto via field TOC native Word; nomor halaman terisi saat dibuka/di-update) ──
+  const kedalaman = (config.daftarIsi && config.daftarIsi.kedalaman) ? config.daftarIsi.kedalaman : 2;
+  const daftarIsiChildren = [
+    frontMatterHeader('DAFTAR ISI'),
+    emptyRow(),
+    new TableOfContents('Daftar Isi', { hyperlink: true, headingStyleRange: '1-' + kedalaman }),
+  ];
+
+  const pageMargin = { top: M_TOP, right: M_RIGHT, bottom: M_BOTTOM, left: M_LEFT };
   return [
-    // ── COVER ──
     {
-      properties: {
-        page: {
-          size: { width: PAGE_W, height: PAGE_H },
-          margin: { top: M_TOP, right: M_RIGHT, bottom: M_BOTTOM, left: M_LEFT }
-        }
-      },
-      children: [
-        emptyRow(), emptyRow(),
-        centered('ANALISIS PELAKSANAAN ANGGARAN BELANJA', { bold: true, size: 24, spaceAfter: 0 }),
-        centered('PADA RUMAH DETENSI IMIGRASI PONTIANAK', { bold: true, size: 24, spaceAfter: 240 }),
-        centered('MAKALAH SEMINAR AKUNTANSI', { bold: true, size: 24, spaceAfter: 240 }),
-        centered('Oleh', { size: 24, spaceAfter: 240 }),
-        centered('AJIE BARIANDONO', { bold: true, size: 24, spaceAfter: 0 }),
-        centered('NIM. 2110426823', { size: 24, spaceAfter: 960 }),
-        emptyRow(), emptyRow(), emptyRow(),
-        centered('FAKULTAS EKONOMI DAN BISNIS', { bold: true, size: 24, spaceAfter: 0 }),
-        centered('UNIVERSITAS PANCA BHAKTI', { bold: true, size: 24, spaceAfter: 0 }),
-        centered('PONTIANAK', { bold: true, size: 24, spaceAfter: 0 }),
-        centered('2026', { bold: true, size: 24, spaceAfter: 0 }),
-      ]
+      properties: { page: { size: { width: PAGE_W, height: PAGE_H }, margin: pageMargin } },
+      children: coverChildren,
     },
-
-    // ── LEMBAR PERSETUJUAN ──
     {
-      properties: {
-        page: {
-          size: { width: PAGE_W, height: PAGE_H },
-          margin: { top: M_TOP, right: M_RIGHT, bottom: M_BOTTOM, left: M_LEFT },
-          pageNumbers: { start: 2, formatType: NumberFormat.LOWER_ROMAN }
-        }
-      },
+      properties: { page: { size: { width: PAGE_W, height: PAGE_H }, margin: pageMargin, pageNumbers: { start: 2, formatType: NumberFormat.LOWER_ROMAN } } },
       footers: frontMatterFooter,
-      children: [
-        centered('PERSETUJUAN MAKALAH SEMINAR', { bold: true, size: 24, spaceAfter: 0 }),
-        centered('UNIVERSITAS PANCA BHAKTI', { bold: true, size: 24, spaceAfter: 0 }),
-        centered('FAKULTAS EKONOMI DAN BISNIS', { bold: true, size: 24, spaceAfter: 480 }),
-        emptyRow(),
-        centered('LEMBAR KONSULTASI', { bold: true, size: 24, spaceAfter: 240 }),
-        new Table({
-          width: { size: CONTENT_W, type: WidthType.DXA },
-          columnWidths: [2800, 200, CONTENT_W - 3000],
-          borders: { top: border0, bottom: border0, left: border0, right: border0, insideH: border0, insideV: border0 },
-          rows: [
-            new TableRow({ children: [
-              new TableCell({ borders: borders0, width: { size: 2800, type: WidthType.DXA }, margins: { top: 40, bottom: 40, left: 0, right: 0 }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr('NAMA MAHASISWA')] })] }),
-              new TableCell({ borders: borders0, width: { size: 200, type: WidthType.DXA }, margins: { top: 40, bottom: 40, left: 0, right: 0 }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr(':')] })] }),
-              new TableCell({ borders: borders0, width: { size: CONTENT_W - 3000, type: WidthType.DXA }, margins: { top: 40, bottom: 40, left: 0, right: 0 }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr('AJIE BARIANDONO')] })] }),
-            ]}),
-            new TableRow({ children: [
-              new TableCell({ borders: borders0, width: { size: 2800, type: WidthType.DXA }, margins: { top: 40, bottom: 40, left: 0, right: 0 }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr('JUDUL PENELITIAN')] })] }),
-              new TableCell({ borders: borders0, width: { size: 200, type: WidthType.DXA }, margins: { top: 40, bottom: 40, left: 0, right: 0 }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr(':')] })] }),
-              new TableCell({ borders: borders0, width: { size: CONTENT_W - 3000, type: WidthType.DXA }, margins: { top: 40, bottom: 40, left: 0, right: 0 }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr('Analisis Pelaksanaan Anggaran Belanja Pada Rumah Detensi Imigrasi Pontianak')] })] }),
-            ]}),
-            new TableRow({ children: [
-              new TableCell({ borders: borders0, width: { size: 2800, type: WidthType.DXA }, margins: { top: 40, bottom: 40, left: 0, right: 0 }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr('TANGGAL SEMINAR')] })] }),
-              new TableCell({ borders: borders0, width: { size: 200, type: WidthType.DXA }, margins: { top: 40, bottom: 40, left: 0, right: 0 }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr(':')] })] }),
-              new TableCell({ borders: borders0, width: { size: CONTENT_W - 3000, type: WidthType.DXA }, margins: { top: 40, bottom: 40, left: 0, right: 0 }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr('7 Juni 2026')] })] }),
-            ]}),
-          ]
-        }),
-        emptyRow(),
-        new Table({
-          width: { size: CONTENT_W, type: WidthType.DXA },
-          columnWidths: [2000, 4866, 1800],
-          rows: [
-            new TableRow({ children: [cellPara('TANGGAL', { width: 2000, bold: true, center: true }), cellPara('KETERANGAN', { width: 4866, bold: true, center: true }), cellPara('PARAF', { width: 1800, bold: true, center: true })] }),
-            new TableRow({ children: [cellPara('', { width: 2000 }), cellPara('', { width: 4866 }), cellPara('', { width: 1800 })] }),
-            new TableRow({ children: [cellPara('', { width: 2000 }), cellPara('', { width: 4866 }), cellPara('', { width: 1800 })] }),
-            new TableRow({ children: [cellPara('', { width: 2000 }), cellPara('', { width: 4866 }), cellPara('', { width: 1800 })] }),
-          ]
-        }),
-        emptyRow(), emptyRow(),
-        new Table({
-          width: { size: CONTENT_W, type: WidthType.DXA },
-          columnWidths: [half, halfR],
-          borders: { top: border0, bottom: border0, left: border0, right: border0, insideH: border0, insideV: border0 },
-          rows: [
-            new TableRow({ children: [
-              new TableCell({ borders: borders0, width: { size: half, type: WidthType.DXA }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr('Mengetahui,')] })] }),
-              new TableCell({ borders: borders0, width: { size: halfR, type: WidthType.DXA }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr('Disetujui Oleh,')] })] }),
-            ]}),
-            new TableRow({ children: [
-              new TableCell({ borders: borders0, width: { size: half, type: WidthType.DXA }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr('Ketua Jurusan Akuntansi,')] })] }),
-              new TableCell({ borders: borders0, width: { size: halfR, type: WidthType.DXA }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr('Narasumber,')] })] }),
-            ]}),
-            new TableRow({ children: [
-              new TableCell({ borders: borders0, width: { size: half, type: WidthType.DXA }, children: [emptyRow(), emptyRow(), emptyRow()] }),
-              new TableCell({ borders: borders0, width: { size: halfR, type: WidthType.DXA }, children: [emptyRow(), emptyRow(), emptyRow()] }),
-            ]}),
-            new TableRow({ children: [
-              new TableCell({ borders: borders0, width: { size: half, type: WidthType.DXA }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [trb('Risal, S.E., M.Si., Ak.CA')] })] }),
-              new TableCell({ borders: borders0, width: { size: halfR, type: WidthType.DXA }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [trb('Endang Kristiawati, S.E., Ak., M.Si')] })] }),
-            ]}),
-            new TableRow({ children: [
-              new TableCell({ borders: borders0, width: { size: half, type: WidthType.DXA }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr('NIDN: 1104068701')] })] }),
-              new TableCell({ borders: borders0, width: { size: halfR, type: WidthType.DXA }, children: [new Paragraph({ spacing: { after: 0, line: 480 }, children: [tr('NIDN: 1123108201')] })] }),
-            ]}),
-          ]
-        }),
-      ]
+      children: persetujuanChildren,
     },
-
-    // ── KATA PENGANTAR ──
     {
-      properties: {
-        page: {
-          size: { width: PAGE_W, height: PAGE_H },
-          margin: { top: M_TOP, right: M_RIGHT, bottom: M_BOTTOM, left: M_LEFT },
-          pageNumbers: { formatType: NumberFormat.LOWER_ROMAN }
-        }
-      },
+      properties: { page: { size: { width: PAGE_W, height: PAGE_H }, margin: pageMargin, pageNumbers: { formatType: NumberFormat.LOWER_ROMAN } } },
       footers: frontMatterFooter,
-      children: [
-        centered('KATA PENGANTAR', { bold: true, size: 24, spaceAfter: 240 }),
-        justifiedPara([tr('Puji syukur peneliti panjatkan kehadirat Allah Yang Maha Esa atas limpahan rahmat dan karunia-Nya sehingga peneliti dapat menyelesaikan karya tulis dalam bentuk makalah seminar akuntansi untuk memenuhi sebagian persyaratan untuk menyelesaikan Seminar Mata Kuliah di Fakultas Ekonomi dan Bisnis Universitas Panca Bhakti Pontianak.')]),
-        justifiedPara([tr('Peneliti menyadari bahwa proses penulisan makalah seminar ini tidak akan dapat terlaksana tanpa dukungan, bantuan, dan bimbingan dari berbagai pihak. Oleh sebab itu, pada kesempatan yang baik ini, ucapan terima kasih dan penghargaan yang tinggi peneliti sampaikan kepada yang terhormat:')]),
-        numberedItem([tr('Bapak Dr. Purwanto, SH, M.Hum., FCBArb selaku Rektor Universitas Panca Bhakti Pontianak.')]),
-        numberedItem([tr('Bapak Dr. Sartono, M.M. selaku Dekan Fakultas Ekonomi dan Bisnis Universitas Panca Bhakti Pontianak.')]),
-        numberedItem([tr('Bapak Risal S.E, M.Si, CA selaku ketua jurusan Akuntansi Universitas Panca Bhakti Pontianak.')]),
-        numberedItem([tr('Ibu Wilda Sari S.E., M.Ak. selaku Dosen Pembimbing Akademik.')]),
-        numberedItem([tr('Segenap dosen pengajar dan staf di Fakultas Ekonomi dan Bisnis Universitas Panca Bhakti.')]),
-        numberedItem([tr('Kedua orang tua yang telah memberikan dukungan dan doa dalam penyusunan makalah seminar ini.')]),
-        numberedItem([tr('Teman-teman yang telah membantu dalam penyusunan makalah seminar ini.')]),
-        emptyRow(),
-        justifiedPara([tr('Kiranya jasa mulia yang diberikan kepada peneliti selama ini akan mendapat balasan yang setimpal dari Allah Yang Maha Kuasa. Harapan peneliti semoga makalah seminar ini dapat bermanfaat bagi kita semua.')]),
-        emptyRow(),
-        new Paragraph({ alignment: AlignmentType.RIGHT, spacing: { after: 0, before: 0, line: 480 }, children: [tr('Pontianak, 4 Juni 2026')] }),
-        new Paragraph({ alignment: AlignmentType.RIGHT, spacing: { after: 0, before: 0, line: 480 }, children: [tr('Peneliti,')] }),
-        emptyRow(), emptyRow(), emptyRow(),
-        new Paragraph({ alignment: AlignmentType.RIGHT, spacing: { after: 0, before: 0, line: 480 }, children: [trb('AJIE BARIANDONO')] }),
-      ]
+      children: kataPengantarChildren,
     },
-
-    // ── DAFTAR ISI ──
     {
-      properties: {
-        page: {
-          size: { width: PAGE_W, height: PAGE_H },
-          margin: { top: M_TOP, right: M_RIGHT, bottom: M_BOTTOM, left: M_LEFT },
-          pageNumbers: { formatType: NumberFormat.LOWER_ROMAN }
-        }
-      },
+      properties: { page: { size: { width: PAGE_W, height: PAGE_H }, margin: pageMargin, pageNumbers: { formatType: NumberFormat.LOWER_ROMAN } } },
       footers: frontMatterFooter,
-      children: [
-        centered('DAFTAR ISI', { bold: true, size: 24, spaceAfter: 240 }),
-        tocEntry('KATA PENGANTAR', 'iv', 0, true),
-        tocEntry('DAFTAR ISI', 'v', 0, true),
-        tocEntry('DAFTAR TABEL', 'vi', 0, true),
-        tocEntry('DAFTAR GAMBAR', 'vii', 0, true),
-        tocEntry('BAB I PENDAHULUAN', '1', 0, true),
-        tocEntry('1.1  Latar Belakang', '1', 1, false),
-        tocEntry('1.2  Rumusan Masalah', '9', 1, false),
-        tocEntry('1.3  Tujuan Penelitian', '10', 1, false),
-        tocEntry('1.4  Manfaat Penelitian', '10', 1, false),
-        tocEntry('BAB II TINJAUAN PUSTAKA', '13', 0, true),
-        tocEntry('2.1  Landasan Teori', '13', 1, false),
-        tocEntry('2.2  Ringkasan Penelitian Terdahulu', '24', 1, false),
-        tocEntry('2.3  Proposisi Penelitian', '27', 1, false),
-        tocEntry('2.4  Kerangka Penelitian', '28', 1, false),
-        tocEntry('BAB III METODE PENELITIAN', '29', 0, true),
-        tocEntry('3.1  Bentuk dan Subjek Penelitian', '29', 1, false),
-        tocEntry('3.2  Sumber dan Teknik Pengumpulan Data', '29', 1, false),
-        tocEntry('3.3  Teknik Analisis Data', '30', 1, false),
-        tocEntry('DAFTAR PUSTAKA', '32', 0, true),
-      ]
+      children: daftarIsiChildren,
     },
   ];
 }
@@ -802,8 +833,23 @@ async function main() {
     parsedBabs.push({ label, blocks });
   }
 
+  // Muat identitas dokumen (per-thesis): utamakan folder input, fallback ke folder builder.
+  const configCandidates = [
+    path.join(inputDir, 'config.thesis.json'),
+    path.join(__dirname, 'config.thesis.json'),
+  ];
+  const configPath = configCandidates.find(p => fs.existsSync(p));
+  if (!configPath) {
+    console.error('❌ config.thesis.json tidak ditemukan. Dicari di:');
+    configCandidates.forEach(p => console.error('   - ' + p));
+    console.error('   Buat file config.thesis.json (identitas dokumen) lalu jalankan lagi.');
+    process.exit(1);
+  }
+  const thesisConfig = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
+  console.log(`  Config: ${configPath}`);
+
   const chapterPageSetup = createChapterHeadersAndFooters();
-  const frontMatterSections = buildFrontMatterSections();
+  const frontMatterSections = buildFrontMatterSections(thesisConfig);
 
   const chapterSections = parsedBabs.map((bab, idx) => {
     const children = buildDocxChildren(bab.blocks, inputDir);
@@ -825,6 +871,7 @@ async function main() {
   });
 
   const doc = new Document({
+    features: { updateFields: true },
     numbering: { config: numberingConfig },
     styles: stylesConfig,
     sections: [...frontMatterSections, ...chapterSections],

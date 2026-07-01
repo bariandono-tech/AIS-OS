@@ -1,0 +1,67 @@
+{
+  "_comment": "Identitas dokumen — diisi per-thesis. Builder (build_revisi.js) membaca file ini untuk membuat front-matter (Cover, Lembar Persetujuan, Kata Pengantar, Daftar Isi). Thesis baru = salin file ini lalu ubah isinya. TIDAK perlu menyentuh kode .js.",
+
+  "jenisDokumen": "MAKALAH SEMINAR AKUNTANSI",
+  "judulBaris": [
+    "ANALISIS PELAKSANAAN ANGGARAN BELANJA",
+    "PADA RUMAH DETENSI IMIGRASI PONTIANAK"
+  ],
+  "judulKalimat": "Analisis Pelaksanaan Anggaran Belanja Pada Rumah Detensi Imigrasi Pontianak",
+
+  "penulis": { "nama": "AJIE BARIANDONO", "nim": "2110426823" },
+
+  "institusi": {
+    "fakultas": "FAKULTAS EKONOMI DAN BISNIS",
+    "universitas": "UNIVERSITAS PANCA BHAKTI",
+    "kota": "PONTIANAK",
+    "tahun": "2026"
+  },
+
+  "persetujuan": {
+    "judulHalaman": [
+      "PERSETUJUAN MAKALAH SEMINAR",
+      "UNIVERSITAS PANCA BHAKTI",
+      "FAKULTAS EKONOMI DAN BISNIS"
+    ],
+    "tanggalSeminar": "7 Juni 2026",
+    "penandatangan": [
+      {
+        "kolomLabel": "Mengetahui,",
+        "peran": "Ketua Jurusan Akuntansi,",
+        "nama": "Risal, S.E., M.Si., Ak.CA",
+        "nidn": "1104068701"
+      },
+      {
+        "kolomLabel": "Disetujui Oleh,",
+        "peran": "Narasumber,",
+        "nama": "Endang Kristiawati, S.E., Ak., M.Si",
+        "nidn": "1123108201"
+      }
+    ]
+  },
+
+  "kataPengantar": {
+    "paragrafPembuka": [
+      "Puji syukur peneliti panjatkan kehadirat Allah Yang Maha Esa atas limpahan rahmat dan karunia-Nya sehingga peneliti dapat menyelesaikan karya tulis dalam bentuk makalah seminar akuntansi untuk memenuhi sebagian persyaratan untuk menyelesaikan Seminar Mata Kuliah di Fakultas Ekonomi dan Bisnis Universitas Panca Bhakti Pontianak.",
+      "Peneliti menyadari bahwa proses penulisan makalah seminar ini tidak akan dapat terlaksana tanpa dukungan, bantuan, dan bimbingan dari berbagai pihak. Oleh sebab itu, pada kesempatan yang baik ini, ucapan terima kasih dan penghargaan yang tinggi peneliti sampaikan kepada yang terhormat:"
+    ],
+    "ucapanTerimaKasih": [
+      "Bapak Dr. Purwanto, SH, M.Hum., FCBArb selaku Rektor Universitas Panca Bhakti Pontianak.",
+      "Bapak Dr. Sartono, M.M. selaku Dekan Fakultas Ekonomi dan Bisnis Universitas Panca Bhakti Pontianak.",
+      "Bapak Risal S.E, M.Si, CA selaku ketua jurusan Akuntansi Universitas Panca Bhakti Pontianak.",
+      "Ibu Wilda Sari S.E., M.Ak. selaku Dosen Pembimbing Akademik.",
+      "Segenap dosen pengajar dan staf di Fakultas Ekonomi dan Bisnis Universitas Panca Bhakti.",
+      "Kedua orang tua yang telah memberikan dukungan dan doa dalam penyusunan makalah seminar ini.",
+      "Teman-teman yang telah membantu dalam penyusunan makalah seminar ini."
+    ],
+    "paragrafPenutup": [
+      "Kiranya jasa mulia yang diberikan kepada peneliti selama ini akan mendapat balasan yang setimpal dari Allah Yang Maha Kuasa. Harapan peneliti semoga makalah seminar ini dapat bermanfaat bagi kita semua."
+    ],
+    "kota": "Pontianak",
+    "tanggal": "4 Juni 2026",
+    "penutupLabel": "Peneliti,"
+  },
+
+  "_catatanDaftarIsi": "Daftar Isi sekarang OTOMATIS (field TOC native Word). Nomor halaman terisi sendiri saat dokumen dibuka di Word (atau klik kanan TOC > Update Field). 'kedalaman': 2 = tampil sampai sub-bab x.x saja, TANPA sub-sub-bab x.x.x (sesuai permintaan untuk thesis ini).",
+  "daftarIsi": { "kedalaman": 2 }
+}

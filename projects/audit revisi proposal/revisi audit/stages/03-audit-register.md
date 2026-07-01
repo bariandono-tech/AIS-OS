@@ -16,6 +16,11 @@ Mengevaluasi kualitas GAYA BAHASA akademik — bukan ejaan (itu Stage 2), tapi a
    - **Kalimat tidak efektif** (> 40 kata tanpa subordinasi jelas)
    - **Hedging akademik yang kurang**
    - **Penggunaan "akan" berlebihan**
+   - **Tanda pisah panjang em-dash (—) / en-dash (–)**: indikasi tulisan AI; WAJIB ditandai
+     untuk diganti koma/"yaitu"/titik/tanda hubung biasa. Rentang angka pakai `2023-2025`.
+   - **Placeholder tertinggal**: `hlm. xx`, `xx`, `[TBD]`, `(tahun?)` — WAJIB ditandai.
+   - **Konsistensi sitasi & vs dan**: `&` hanya di dalam kurung `(Penulis & Penulis, thn)`;
+     di narasi gunakan `dan`. Tandai yang salah tempat.
 3. Format laporan: tabel per bab | No | Kalimat Asli | Masalah | Saran |
 4. Simpan ke `.tmp/03-audit-register.md`.
 

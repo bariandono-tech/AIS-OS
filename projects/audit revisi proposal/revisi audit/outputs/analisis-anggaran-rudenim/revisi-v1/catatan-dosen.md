@@ -15,3 +15,6 @@ RM 1-3 HARUS direvisi agar menyebut "Belanja Modal" secara eksplisit. Contoh:
 
 ## 3. TUJUAN PENELITIAN (SESUAIKAN DENGAN RM)
 Tujuan 1-3 harus sinkron dengan RM baru di atas. Pastikan kata kerja operasional tetap: Mendeskripsikan (T1), Menganalisis (T2), Mengevaluasi (T3).
+
+## 4. INFORMAN UTAMA (INSTRUKSI DOSEN)
+Informan utama penelitian adalah **KPA (Kuasa Pengguna Anggaran / Kepala Rudenim)** dan **PPK (Pejabat Pembuat Komitmen)**, yaitu dua pengambil keputusan kunci dalam pelaksanaan Belanja Modal. Empat pejabat lain (PPSPM, BPG, SRKA, PBJ) berperan sebagai informan pendukung untuk triangulasi. Sudah diterapkan di Bab 3 (§3.1 dan Tabel 3.1).
