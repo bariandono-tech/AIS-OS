@@ -1,0 +1,44 @@
+{
+    "dashboard_title": "Zai's PARA Dashboard",
+    "tasks": [
+        {
+            "name": "Review PRD Architecture",
+            "status": "Doing",
+            "due": "Today"
+        },
+        {
+            "name": "Setup Notion API Integration",
+            "status": "To Do",
+            "due": "Tomorrow"
+        }
+    ],
+    "notes": [
+        {
+            "name": "The Design of Everyday Things - Summary",
+            "tags": [
+                "Reference"
+            ],
+            "project": "Design PKM"
+        },
+        {
+            "name": "Meeting with Stakeholders",
+            "tags": [
+                "Meeting"
+            ],
+            "project": "Work"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Design PKM",
+            "status": "Ongoing",
+            "area": "Personal"
+        }
+    ],
+    "areas": [
+        {
+            "name": "Personal",
+            "type": "Area"
+        }
+    ]
+}

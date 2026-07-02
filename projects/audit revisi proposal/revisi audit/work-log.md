@@ -98,3 +98,68 @@ gambar user dari file lama. Kriteria informan kini list sendiri (mulai dari 1).
 
 **Verifikasi:** smoke 7/7; output: 0 em-dash, 0 en-dash, 0 "hlm. xx", 0 "RKA-K/L Ditjen",
 "informan utama" muncul. File: `Makalah_Revisi_FINAL2.docx`.
+
+## 2026-07-01 (finalisasi) — Restruktur 3.3.2 + audit kumpul
+
+Konteks: user mau kumpulkan makalah. Ketahuan file `_arsip/.../KUMPUL DOSEN_...pdf` ternyata
+**versi ASLI pra-revisi** (judul tanpa sub-judul, RM "belanja" generik, 3.3.2 Miles-Huberman) —
+bukan file final. `CATATAN DOSEN.pdf` = coretan tangan 11 Juni (scan, tak ber-OCR).
+
+**Kebingungan 3.3.2 diselesaikan (keputusan user: ikuti dosen persis).** Dosen menulis tangan
+"3.3.2 Indepth Interview" (hlm 36), tapi draf menaruh wawancara di 3.2.1. Direstruktur di
+`05-revisi-bab3.md`:
+- In-depth Interview dipindah 3.2.1 → **3.3.2**; renumber 3.2.3→3.2.2, 3.3.2(Framework)→3.3.3,
+  3.3.3(Keabsahan)→3.3.4. Intro 3.2 & 3.3 disesuaikan; rujuk-silang informan ke 3.1 (Tabel 3.1).
+- Catatan Revisi bab3 +baris No.15.
+
+**BAB I dicek:** Catatan 3 (corong) & 5 (kasus Rudenim) ternyata **sudah tuntas** di versi 1 Juli
+(corong mulai UU 17/2003, Tabel 1.3 ada). Tidak perlu edit.
+
+**Build:** `node build_revisi.js` → `Makalah_Revisi_KUMPUL_FINAL.docx` (64 KB). Verifikasi
+document.xml: urutan 3.2.1 Dokumentasi → 3.2.2 Observasi → 3.3.1 Flowchart → **3.3.2 In-depth
+Interview** → 3.3.3 Framework → 3.3.4 Keabsahan; "3.2.3" sudah hilang.
+
+**Laporan:** `audit-finalisasi-2026-07-01.md` (diff asli vs final, status 10/10 catatan dosen).
+**Sisa manual:** tempel gambar flowchart (Gambar 3.1 masih placeholder); F9 update TOC di Word.
+Rekonsiliasi status: **10/10 catatan dosen selesai.**
+
+## 2026-07-01 (fix) — Bug penomoran list "mulai dari 4"
+
+User lapor list kriteria informan (3.1) & Pengkodean (3.3.3) mulai dari 4,5,6 di Word.
+**Root cause:** `listCounter` di `build_revisi.js` dideklarasi LOKAL di dalam
+`buildDocxChildren`, padahal fungsi itu dipanggil per-bab (loop line ~855). Counter reset tiap
+bab → list BAB III pakai ulang referensi `list-2`/`list-3` yang sama dgn RM/Tujuan BAB I →
+numId nabrak → satu list instance, Word nyambung nomornya (RM 1-3, kriteria lanjut 4-6).
+
+**Fix:** `listCounter` dinaikkan ke **scope modul** (persist antar pemanggilan). Sekarang tiap
+list dapat numId unik. Verifikasi document.xml: KP=numId2, RM=3, Tujuan=4, **kriteria=5,
+Pengkodean=6**, Etika=7 — semua unik, tiap numId startOverride=1 & abstractNum start=1
+(effectiveStart=1). Smoke 7/7 hijau. Rebuild `Makalah_Revisi_KUMPUL_FINAL.docx`.
+Fix ada di builder reusable → berlaku untuk thesis lain juga.
+
+## 2026-07-01 (poles) — Unbold badan teks + Daftar Isi bold
+
+User risih semua "Belanja Modal" & emphasis kalimat di-bold (takut dosen nanya).
+- **Unbold sumber markdown** (bab1/2/3 + daftar pustaka): buang `**...**` di teks paragraf,
+  `***x***`→`*x*` (italic dipertahankan). DIPERTAHANKAN: judul tabel/gambar (`**Tabel/Gambar**`),
+  sel tabel (builder strip sendiri), dan blok "Catatan Revisi" (log, tak masuk docx).
+  Hitung marker: bab1 50→16, bab2 122→22, bab3 136→18.
+- **Daftar Isi:** tambah paragraphStyle `TOC1` (bold) di `build_revisi.js` → entri level-1
+  (KATA PENGANTAR, DAFTAR ISI, BAB, DAFTAR PUSTAKA) tebal; sub-bab x.x normal.
+- Verifikasi docx: body "Belanja Modal" bold=false; caption Tabel 3.1 bold=true; style TOC1 bold=true;
+  numId list tetap unik & start=1. File: `Makalah_Revisi_KUMPUL_FINAL.docx` (ditimpa).
+
+## 2026-07-01 (koherensi) — Selaraskan kerangka & flowchart
+
+Review diagram atas permintaan user (mau bikin sendiri di Word, shape sederhana).
+- **Fix inkonsistensi 3 fase BAB II vs BAB III:** BAB II §2.4 tadinya Fase 2 = pengadaan
+  (pemilihan penyedia/kontrak/termin); disamakan ke BAB III → Fase 1 Perencanaan (RKA-K/L,
+  HPS/RAB), Fase 2 Penyusunan DIPA (DIPA + RPD Hal III), Fase 3 Pelaksanaan (pengadaan:
+  tender/kontrak/BAST + pencairan SPP-SPM-SP2D).
+- **Angka konsisten:** BAB II "60-70%" → "65,92%" (selaras Tabel 1.3 bab1).
+- **Typo BAB II:** "Deviasi Halaman III DIPA IKPA"→"...dalam IKPA"; "fenomenon"→"fenomena";
+  "DJ Pb"→"DJPb".
+- **Sitasi BAB III:** "Perpres 16/2018 Pasal 38" (nomor pasal meragukan utk 'tender gagal')
+  → digeneralkan "dalam Perpres 16/2018 jo. Perpres 12/2021". User cek pasal pastinya.
+- Diberikan cetak biru shape Word (vertikal, kotak polos) utk Gambar 3.1 & Gambar 2.1.
+- Verifikasi 8/8 di `_build_check.docx`; tinggal swap ke KUMPUL_FINAL (file kekunci Word).

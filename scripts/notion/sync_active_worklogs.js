@@ -109,8 +109,40 @@ async function checkIfTaskExists(projectId, targetDate) {
   }
 }
 
+// Recursively find folders (relative to projectsDir) that contain a work-log.md.
+// Scans up to maxDepth levels deep so nested projects like
+// "audit revisi proposal/revisi audit" are picked up. Skips build/noise dirs.
+function findWorklogFolders(projectsDir, maxDepth = 2) {
+  const SKIP = new Set(['node_modules', '_arsip', 'archives', 'outputs', 'audits', 'cache', 'dist', 'build', '.git']);
+  const results = [];
+
+  function walk(absDir, relDir, depth) {
+    if (fs.existsSync(path.join(absDir, 'work-log.md'))) {
+      results.push(relDir.split(path.sep).join('/'));
+    }
+    if (depth >= maxDepth) return;
+    for (const entry of fs.readdirSync(absDir)) {
+      if (SKIP.has(entry) || entry.startsWith('.')) continue;
+      const childAbs = path.join(absDir, entry);
+      if (fs.statSync(childAbs).isDirectory()) {
+        walk(childAbs, path.join(relDir, entry), depth + 1);
+      }
+    }
+  }
+
+  for (const entry of fs.readdirSync(projectsDir)) {
+    if (SKIP.has(entry) || entry.startsWith('.')) continue;
+    const abs = path.join(projectsDir, entry);
+    if (fs.statSync(abs).isDirectory()) {
+      walk(abs, entry, 1);
+    }
+  }
+
+  return results;
+}
+
 async function syncProjectWorklog(projectFolder, mapping, targetDate, targetDateLabel) {
-  const workLogPath = path.join(__dirname, '..', '..', 'projects', projectFolder, 'work-log.md');
+  const workLogPath = path.join(__dirname, '..', '..', 'projects', ...projectFolder.split('/'), 'work-log.md');
   if (!fs.existsSync(workLogPath)) {
     return;
   }
@@ -271,13 +303,9 @@ async function main() {
     process.exit(1);
   }
 
-  const items = fs.readdirSync(projectsDir);
-  const projectFolders = items.filter(item => {
-    const fullPath = path.join(projectsDir, item);
-    return fs.statSync(fullPath).isDirectory();
-  });
+  const projectFolders = findWorklogFolders(projectsDir);
 
-  console.log(`📂 Found ${projectFolders.length} project folders in workspace.`);
+  console.log(`📂 Found ${projectFolders.length} work-log folders in workspace.`);
 
   for (const folder of projectFolders) {
     await syncProjectWorklog(folder, mapping, targetDate, targetDateLabel);

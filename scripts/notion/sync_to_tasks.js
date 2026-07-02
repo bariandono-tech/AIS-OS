@@ -7,8 +7,8 @@ const notion = new Client({ auth: process.env.NOTION_TOKEN });
 
 const TASKS_DATABASE_ID = '37c78c4c-e388-8191-b128-dbab3b886793'; // Tasks database ID
 const DAILY_SYNC_PROJECT_ID = '37e78c4c-e388-80e4-ae54-f6ead1158289'; // daily-sync project ID
-const TARGET_DATE = '2026-06-20';
-const TARGET_DATE_LABEL = '20 Juni 2026';
+const TARGET_DATE = '2026-07-01';
+const TARGET_DATE_LABEL = '1 Juli 2026';
 
 function parseMarkdownToRichText(text) {
   const richText = [];
@@ -55,7 +55,7 @@ function parseMarkdownToRichText(text) {
 
 async function sync() {
   console.log(`Reading work-log.md...`);
-  const workLogPath = path.join(__dirname, '..', '..', 'projects', 'studios', 'work-log.md');
+  const workLogPath = path.join(__dirname, '..', '..', 'projects', 'audit revisi proposal', 'revisi audit', 'work-log.md');
   if (!fs.existsSync(workLogPath)) {
     console.error(`Error: Could not find work-log.md at ${workLogPath}`);
     return;

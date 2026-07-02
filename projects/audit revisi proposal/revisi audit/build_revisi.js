@@ -312,6 +312,13 @@ const stylesConfig = {
       run: { size: 24, bold: true, font: 'Times New Roman' },
       paragraph: { spacing: { before: 240, after: 160 }, outlineLevel: 2 }
     },
+    // Style entri Daftar Isi level-1 (BAB, KATA PENGANTAR, DAFTAR ISI, DAFTAR PUSTAKA)
+    // → dibuat TEBAL. Word memakai style "TOC1" saat mengisi field TOC untuk entri
+    // Heading 1. Level-2 (sub-bab x.x) dibiarkan normal.
+    {
+      id: 'TOC1', name: 'toc 1', basedOn: 'Normal', next: 'Normal',
+      run: { size: 24, bold: true, font: 'Times New Roman' }
+    },
   ]
 };
 
@@ -498,9 +505,14 @@ function parseMdFileToBlocks(mdContent) {
 // BLOCK → DOCX CONVERTER
 // ══════════════════════════════════════════════════════════════════════
 
+// Counter list bernomor bersifat MODUL (bukan per-call) supaya tiap daftar di
+// SELURUH dokumen dapat referensi numId unik. Kalau lokal, buildDocxChildren yang
+// dipanggil per-bab akan me-reset counter → list BAB III pakai ulang numId list
+// BAB I (RM/Tujuan) → Word menyambung nomornya jadi 4,5,6. Lihat catatan bug.
+let listCounter = 0;
+
 function buildDocxChildren(blocks, imageDir) {
   const children = [];
-  let listCounter = 0;        // jumlah list bernomor yang sudah ditemui
   let inNumberedList = false; // sedang di tengah satu list?
 
   for (let bi = 0; bi < blocks.length; bi++) {
@@ -591,14 +603,26 @@ function buildDocxChildren(blocks, imageDir) {
         const imgPath = path.resolve(imageDir, block.path);
         if (fs.existsSync(imgPath)) {
           const ext = path.extname(imgPath).replace('.', '').toLowerCase();
+          const imgData = fs.readFileSync(imgPath);
+          // Read native dimensions from PNG IHDR chunk (bytes 16-23: width & height, big-endian uint32)
+          let imgW = 540, imgH = 360; // fallback
+          if (ext === 'png' && imgData.length > 24) {
+            imgW = imgData.readUInt32BE(16);
+            imgH = imgData.readUInt32BE(20);
+          }
+          // Scale to fit content width (CONTENT_W is in twips; 1 inch = 1440 twips, 96 dpi → 1 px ≈ 15 twips)
+          const maxWidthPx = Math.round(CONTENT_W / 15);
+          const scale = Math.min(1, maxWidthPx / imgW);
+          const finalW = Math.round(imgW * scale);
+          const finalH = Math.round(imgH * scale);
           children.push(new Paragraph({
             alignment: AlignmentType.CENTER,
             spacing: { after: 240, before: 80, line: 480 },
             children: [
               new ImageRun({
-                data: fs.readFileSync(imgPath),
+                data: imgData,
                 type: ext,
-                transformation: { width: 540, height: 180 },
+                transformation: { width: finalW, height: finalH },
               }),
             ]
           }));
